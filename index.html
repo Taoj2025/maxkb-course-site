@@ -406,6 +406,65 @@ if (!localStorage.getItem('maxkb_guide_dismissed')) {
         </p>
         <a href="#" onclick="openArticle(13299); return false;" style="color: var(--purple); font-weight: 600; font-size: 14px;">阅读全文 →</a>
       </div>
+      <div class="news-card" data-article-id="13300">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:12px;">
+          <span style="background: var(--orange, #F59E0B); color:white; padding:4px 10px; border-radius:6px; font-size:12px;">部署指南</span>
+          <span style="color:var(--gray); font-size:12px;">2026-07-24</span>
+        </div>
+        <h3 style="font-size:18px; margin-bottom:12px; color:var(--purple-deep);">MaxKB 安装部署完整指南</h3>
+        <p style="color:var(--gray); font-size:14px; line-height:1.6; margin-bottom:16px;">
+          从 0 到 1 全流程 · 4 种部署方式 · 30 分钟跑通企业级 AI 平台。
+        </p>
+        <a href="#" onclick="openArticle(13300); return false;" style="color: var(--purple); font-weight: 600; font-size: 14px;">阅读全文 →</a>
+      </div>
+
+      <div class="news-card" data-article-id="13301">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:12px;">
+          <span style="background: var(--purple); color:white; padding:4px 10px; border-radius:6px; font-size:12px;">知识库</span>
+          <span style="color:var(--gray); font-size:12px;">2026-07-24</span>
+        </div>
+        <h3 style="font-size:18px; margin-bottom:12px; color:var(--purple-deep);">企业知识库构建 4 大要点</h3>
+        <p style="color:var(--gray); font-size:14px; line-height:1.6; margin-bottom:16px;">
+          文档切片策略 / 向量化模型选择 / 检索优化 / 持续运营 4 大关键。
+        </p>
+        <a href="#" onclick="openArticle(13301); return false;" style="color: var(--purple); font-weight: 600; font-size: 14px;">阅读全文 →</a>
+      </div>
+
+      <div class="news-card" data-article-id="13302">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:12px;">
+          <span style="background: var(--blue); color:white; padding:4px 10px; border-radius:6px; font-size:12px;">Agent</span>
+          <span style="color:var(--gray); font-size:12px;">2026-07-24</span>
+        </div>
+        <h3 style="font-size:18px; margin-bottom:12px; color:var(--purple-deep);">Agent 工作流设计实战案例</h3>
+        <p style="color:var(--gray); font-size:14px; line-height:1.6; margin-bottom:16px;">
+          单 Agent / 多 Agent / 工具调用 / 任务分解 4 大模式 + 完整代码。
+        </p>
+        <a href="#" onclick="openArticle(13302); return false;" style="color: var(--purple); font-weight: 600; font-size: 14px;">阅读全文 →</a>
+      </div>
+
+      <div class="news-card" data-article-id="13303">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:12px;">
+          <span style="background: var(--success-green); color:white; padding:4px 10px; border-radius:6px; font-size:12px;">教师专属</span>
+          <span style="color:var(--gray); font-size:12px;">2026-07-24</span>
+        </div>
+        <h3 style="font-size:18px; margin-bottom:12px; color:var(--purple-deep);">教师如何用 MaxKB 备课</h3>
+        <p style="color:var(--gray); font-size:14px; line-height:1.6; margin-bottom:16px;">
+          教师专属场景 · 5 步备课法 · 学科知识库构建 · 学生答疑机器人。
+        </p>
+        <a href="#" onclick="openArticle(13303); return false;" style="color: var(--purple); font-weight: 600; font-size: 14px;">阅读全文 →</a>
+      </div>
+
+      <div class="news-card" data-article-id="13304">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:12px;">
+          <span style="background: var(--warning-yellow); color:#333; padding:4px 10px; border-radius:6px; font-size:12px;">学员作品</span>
+          <span style="color:var(--gray); font-size:12px;">2026-07-24</span>
+        </div>
+        <h3 style="font-size:18px; margin-bottom:12px; color:var(--purple-deep);">学员项目展示与点评</h3>
+        <p style="color:var(--gray); font-size:14px; line-height:1.6; margin-bottom:16px;">
+          SKC4073 / SKC7423 / SKC7773 三门课程 · 5 位同学优秀作品 · 教师点评。
+        </p>
+        <a href="#" onclick="openArticle(13304); return false;" style="color: var(--purple); font-weight: 600; font-size: 14px;">阅读全文 →</a>
+      </div>
     </div>
 
     <div style="text-align:center; margin-top:40px;">
@@ -443,9 +502,14 @@ async function openArticle(articleId) {
   try {
     // 由于 CORS，实际通过后端代理更好；这里直接展示静态缓存
     const articles = {
-      13297: { title: 'MaxKB FDE 教学课程介绍', summary: '基于开源 MaxKB（1Panel-dev）的企业级智能体平台教学。' },
-      13298: { title: '5 大 MaxKB 应用场景实战 ROI 案例', summary: '高校客服 1:8 / 教师备课 1:6 / 文献精读 1:15 / 企业知识库 1:12 / 医院导诊 1:10。' },
-      13299: { title: 'MaxKB FDE 课程学员常见问题 FAQ', summary: '10 个高频问题 · 课程难度 / 学习路径 / 资料获取。' }
+      13297: { title: 'MaxKB FDE 教学课程介绍', summary: '基于开源 MaxKB（1Panel-dev）的企业级智能体平台教学，60 页 PPT + 8 章讲义 + 500+ 行源码。' },
+      13298: { title: '5 大 MaxKB 应用场景实战 ROI 案例', summary: '高校客服 ROI 1:8 / 教师备课 1:6 / 文献精读 1:15 / 企业知识库 1:12 / 医院导诊 1:10。' },
+      13299: { title: 'MaxKB FDE 课程学员常见问题 FAQ', summary: '10 个高频问题 · 课程难度 / 学习路径 / 资料获取 / 实战项目 / 就业方向。' },
+      13300: { title: 'MaxKB 安装部署完整指南', summary: '从 0 到 1 全流程 · 4 种部署方式（Docker / 1Panel / K8s / 源码）· 30 分钟跑通企业级 AI 平台。' },
+      13301: { title: '企业知识库构建 4 大要点', summary: '文档切片策略 / 向量化模型选择（BAAI / OpenAI / m3e）/ 检索优化 / 持续运营 4 大关键。' },
+      13302: { title: 'Agent 工作流设计实战案例', summary: '单 Agent / 多 Agent / 工具调用 / 任务分解 4 大模式 + 完整 Python SDK 代码。' },
+      13303: { title: '教师如何用 MaxKB 备课', summary: '教师专属场景 · 5 步备课法 · 学科知识库构建 · 学生答疑机器人 · SKC4073 真实案例。' },
+      13304: { title: '学员项目展示与点评（5 个学生作品）', summary: 'SKC4073 / SKC7423 / SKC7773 三门课程 · 5 位同学优秀作品 · 商业化程度 + 教师点评。' }
     };
     const article = articles[articleId];
     if (article) {
