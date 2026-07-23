@@ -111,8 +111,48 @@ function initSmoothScroll() {
   });
 }
 
+// ============ 5.5 顶部状态条 ============
+function updateTopStatusBar() {
+  const bar = document.getElementById('top-status-bar');
+  const text = document.getElementById('status-text');
+  if (!bar || !text) return;
+
+  const plan = MembershipStore.getPlan();
+  const user = MembershipStore.getCurrent();
+
+  if (!user || !plan) {
+    text.textContent = '💎 未登录 · 访问全部资源需会员';
+    bar.innerHTML = '<span id="status-text">💎 未登录 · 访问全部资源需会员</span><a href="membership.html" style="color: #FCD34D; text-decoration: none; margin-left: 12px; font-weight: 600;">👤 登录 / 注册</a>';
+  } else {
+    const joinedDate = new Date(user.joinedAt);
+    const expiresDate = new Date(joinedDate);
+    expiresDate.setFullYear(expiresDate.getFullYear() + 1);
+    const remainingDays = Math.max(0, Math.ceil((expiresDate - new Date()) / (1000 * 60 * 60 * 24)));
+    bar.style.background = plan.id === 'flagship' ? 'linear-gradient(90deg, #5B2EBF, #8B5CF6)' :
+                            plan.id === 'standard' ? 'linear-gradient(90deg, #3B82F6, #60A5FA)' :
+                            'rgba(0,0,0,0.2)';
+    bar.innerHTML = `
+      <span style="font-weight:600;">${plan.icon} 您是【${plan.name}】 · 邮箱：${user.email} · 剩余 ${remainingDays} 天</span>
+      <a href="membership.html" style="color: #FCD34D; text-decoration: none; margin-left: 12px; font-weight: 600;">${plan.id === 'free' ? '⚡ 升级会员' : '⚙️ 管理会员'}</a>
+      <a href="#" id="top-logout" style="color: rgba(255,255,255,0.7); text-decoration: none; margin-left: 12px; font-size: 12px;">退出</a>
+    `;
+    const logoutBtn = document.getElementById('top-logout');
+    if (logoutBtn) {
+      logoutBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (confirm('确认退出？')) {
+          MembershipStore.logout();
+          location.reload();
+        }
+      });
+    }
+  }
+}
+
 // ============ 5.5 会员资源权限拦截 ============
 function initMembershipGating() {
+  updateTopStatusBar();
+  updateTopStatusBar();
   const hint = document.getElementById('download-hint');
   const links = document.querySelectorAll('a[data-need-membership="true"]');
 
