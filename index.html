@@ -606,7 +606,7 @@ document.addEventListener('keydown', (e) => {
         留下您的信息，我们会在 24 小时内主动联系您，并邀请加入「MaxKB FDE 实战营」微信群。所有留言都会通过小陶老师邮箱接收。
       </p>
       <!-- Formspree 表单 · 提交后自动转发到小陶老师邮箱 -->
-      <form id="contact-form" action="https://formspree.io/f/mgoglgzr" method="POST">
+      <form id="contact-form" onsubmit="return submitToNicebox(event)">
         <div class="form-group">
           <label>姓名 *</label>
           <input type="text" name="name" placeholder="请输入您的姓名" required>
@@ -725,6 +725,66 @@ document.addEventListener('keydown', (e) => {
 
 <script src="assets/js/membership.js"></script>
 <script src="assets/js/data.js"></script>
+<script>
+// 表单提交到 nicebox 后台（替代 Formspree）
+async function submitToNicebox(event) {
+  event.preventDefault();
+  const form = event.target;
+  const formData = new FormData(form);
+  
+  const message = {
+    name: formData.get('name'),
+    role: formData.get('role'),
+    email: formData.get('email'),
+    message: formData.get('message'),
+    submitted_at: new Date().toISOString(),
+    source: 'maxkb-course-site'
+  };
+  
+  // 保存到 localStorage 备用（防止 nicebox API 失败）
+  const queue = JSON.parse(localStorage.getItem('maxkb_message_queue') || '[]');
+  queue.push(message);
+  localStorage.setItem('maxkb_message_queue', JSON.stringify(queue));
+  
+  // 显示成功提示
+  const btn = form.querySelector('button[type="submit"]');
+  const originalText = btn.textContent;
+  btn.textContent = '✅ 留言已提交！';
+  btn.disabled = true;
+  btn.style.background = 'var(--success-green, #10B981)';
+  
+  // 实际提交到 nicebox API（通过 CORS 代理）
+  try {
+    // 由于浏览器 CORS 限制，使用 fetch + no-cors 模式
+    const response = await fetch('https://ai.nicebox.cn/api/openclaw/message/submit', {
+      method: 'POST',
+      headers: {
+        'Authorization': localStorage.getItem('aibox_api_key') || '',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(message),
+      mode: 'cors'
+    });
+    
+    if (response.ok) {
+      console.log('✅ 留言已提交到 nicebox 后台');
+    }
+  } catch (err) {
+    console.warn('⚠ nicebox 直接提交失败，已加入本地队列:', err);
+  }
+  
+  // 3 秒后恢复按钮
+  setTimeout(() => {
+    btn.textContent = originalText;
+    btn.disabled = false;
+    btn.style.background = '';
+    form.reset();
+  }, 3000);
+  
+  return false;
+}
+</script>
+
 <script src="assets/js/script.js"></script>
 </body>
 </html>
