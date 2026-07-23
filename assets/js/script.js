@@ -111,6 +111,44 @@ function initSmoothScroll() {
   });
 }
 
+// ============ 5.5 会员资源权限拦截 ============
+function initMembershipGating() {
+  const hint = document.getElementById('download-hint');
+  const links = document.querySelectorAll('a[data-need-membership="true"]');
+
+  const plan = MembershipStore.getPlan();
+  const isLoggedIn = MembershipStore.isLoggedIn();
+
+  // 顶部提示
+  if (hint) {
+    if (!isLoggedIn) {
+      hint.textContent = '（会员资源 ·  会员中心注册后可解锁）';
+    } else if (plan) {
+      hint.textContent = `（当前为「${plan.name}」· ${plan.id === 'free' ? '升级到标准会员可下载完整资料' : '感谢支持！'}）`;
+    }
+  }
+
+  // 拦截下载点击
+  links.forEach(link => {
+    link.addEventListener('click', (e) => {
+      const resource = link.closest('.resource');
+      const minPlan = resource?.dataset.minPlan || 'standard';
+      if (!MembershipStore.hasAccess(minPlan)) {
+        e.preventDefault();
+        if (!isLoggedIn) {
+          if (confirm('🔒 此资源需会员下载。\n\n是否立即注册体验会员？')) {
+            window.location.href = 'membership.html';
+          }
+        } else {
+          if (confirm('🔒 此资源需标准会员及以上。\n\n是否立即升级？')) {
+            window.location.href = 'membership.html';
+          }
+        }
+      }
+    });
+  });
+}
+
 // ============ 初始化 ============
 document.addEventListener('DOMContentLoaded', () => {
   renderChapters();
@@ -118,5 +156,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initNavHighlight();
   initContactForm();
   initSmoothScroll();
+  initMembershipGating();
   console.log('✅ MaxKB FDE 教学网站已就绪 · 2026-07-23');
 });
