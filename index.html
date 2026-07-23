@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MaxKB FDE 教学实战课 · 小陶老师 · 广州华商学院</title>
+<meta name="description" content="基于 1Panel-dev/MaxKB 的开源企业级智能体平台教学课程，面向暑期 FDE 培训。涵盖 RAG、LangChain、Workflow、MCP 四大核心，6 步实操 + 5 大企业场景。">
+<meta name="keywords" content="MaxKB, FDE, 培训, RAG, LangChain, Workflow, MCP, 教学, 广州华商学院, 小陶老师">
+<meta name="author" content="小陶老师（陶建敏）· 广州华商学院">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%235B2EBF'/><text x='50' y='65' text-anchor='middle' fill='white' font-size='40' font-weight='bold' font-family='sans-serif'>M</text></svg>">
+</head>
+<body>
+
+<!-- ============ 顶部导航 ============ -->
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <div class="logo-dot">M</div>
+      <span>MaxKB · FDE 教学</span>
+    </div>
+    <div class="nav-links">
+      <a href="#home" class="active">首页</a>
+      <a href="#course">课程</a>
+      <a href="#practice">实操</a>
+      <a href="#scenarios">场景</a>
+      <a href="#download">下载</a>
+      <a href="#contact">联系</a>
+      <a href="#docs" class="nav-cta">📖 阅读文档</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ Hero 首页 ============ -->
+<section id="home" class="hero" style="max-width:100%;">
+  <div class="hero-content fade-in">
+    <div class="hero-badge">
+      <span>🔥</span>
+      <span>开源 · 易用 · 强落地 · FDE 培训</span>
+    </div>
+    <h1>MaxKB FDE 教学实战课</h1>
+    <p class="subtitle">基于 1Panel-dev/MaxKB 的企业级智能体平台教学课程</p>
+    <p class="desc">
+      面向暑期 FDE 培训 · 师生混合受众<br>
+      理论 30% + 实操 50% + 场景 20% 三段式教学
+    </p>
+    <div class="hero-actions">
+      <a href="#course" class="btn btn-primary">🚀 开始学习</a>
+      <a href="#download" class="btn btn-secondary">📦 下载资料包</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-card fade-in-delay-1">
+        <div class="stat-num">60+</div>
+        <div class="stat-label">PPT 教学页</div>
+      </div>
+      <div class="stat-card fade-in-delay-2">
+        <div class="stat-num">8 章</div>
+        <div class="stat-label">讲义章节</div>
+      </div>
+      <div class="stat-card fade-in-delay-2">
+        <div class="stat-num">5 大</div>
+        <div class="stat-label">企业场景</div>
+      </div>
+      <div class="stat-card fade-in-delay-3">
+        <div class="stat-num">18h</div>
+        <div class="stat-label">课时</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 课程章节 ============ -->
+<section id="course">
+  <div class="section-tag">PART 1</div>
+  <h2 class="section-title">从 0 到 1 <span class="highlight">理解 MaxKB</span></h2>
+  <p class="section-subtitle">
+    本部分用 8 章节讲清楚 MaxKB 是什么、解决什么问题，以及 RAG / LangChain / Workflow / MCP 四大核心技术底座。
+  </p>
+
+  <div class="chapter-tabs">
+    <button class="chapter-tab active" data-tab="all">全部</button>
+    <button class="chapter-tab" data-tab="theory">理论</button>
+    <button class="chapter-tab" data-tab="practice">实操</button>
+    <button class="chapter-tab" data-tab="scene">场景</button>
+  </div>
+
+  <div class="chapter-grid" id="chapter-grid">
+    <!-- 课程卡片由 JS 渲染 -->
+  </div>
+</section>
+
+<!-- ============ 6 步实操 ============ -->
+<section id="practice" style="background: white; max-width:100%; padding:80px 32px;">
+  <div style="max-width:1280px; margin:0 auto;">
+    <div class="section-tag">PART 2</div>
+    <h2 class="section-title">6 步端到端 <span class="highlight">实战落地</span></h2>
+    <p class="section-subtitle">从 Docker 部署到发布嵌入，整个流程 30 分钟内可完成。</p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div>
+          <h3>Docker 一键部署</h3>
+          <p>一条命令启动 MaxKB，开箱即用。</p>
+          <div class="code-block">docker run -d --name=maxkb --restart=always \\
+  -p 8080:8080 -v ~/.maxkb:/opt/maxkb 1panel/maxkb</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div>
+          <h3>接入大模型</h3>
+          <p>支持 DeepSeek / OpenAI / Claude / 通义千问 等 20+ 模型。</p>
+          <div class="code-block">模型管理 → 添加模型 → 选择 DeepSeek
+base_url: https://api.deepseek.com/v1
+model_name: deepseek-chat</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div>
+          <h3>创建知识库</h3>
+          <p>支持 PDF / Word / Markdown / Excel / 图片 OCR 等格式上传。</p>
+          <div class="code-block">知识库 → 创建 → 名称: hr_kb
+向量模型: bge-large-zh-v1.5
+拆分长度: 500-1000 字</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div>
+          <h3>上传文档</h3>
+          <p>自动提取 → 智能拆分 → 向量化入库，一条龙处理。</p>
+          <div class="code-block">解析 → 拆分 → Embedding → pgvector
+状态流转：解析中 → 已索引</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">5</div>
+        <div>
+          <h3>应用调试</h3>
+          <p>配置开场白、提示词模板、关联知识库，在调试窗口反复测试。</p>
+          <div class="code-block">简单应用 / 工作流应用 / 场景应用
+3 种类型任选 · 提示词模板是关键</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">6</div>
+        <div>
+          <h3>发布嵌入</h3>
+          <p>iframe / JS SDK / REST API 三种方式集成到任意系统。</p>
+          <div class="code-block">&lt;iframe src="https://your-domain.com:8080/chat/embed?app_id=xxx"
+  width="400" height="600"&gt;&lt;/iframe&gt;</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5 大场景 ============ -->
+<section id="scenarios">
+  <div class="section-tag">PART 3</div>
+  <h2 class="section-title">5 大企业 <span class="highlight">真实场景</span></h2>
+  <p class="section-subtitle">
+    从企业一线提炼 5 个高价值落地场景，全部基于真实业务数据。
+  </p>
+
+  <div class="scenarios">
+    <div class="scenario">
+      <div class="icon">🏫</div>
+      <h3>高校智能客服</h3>
+      <p>广州华商学院招生季案例，每天 200+ 家长咨询</p>
+      <div style="display: flex; gap:8px; flex-wrap:wrap; margin-bottom:16px;">
+        <span style="background:var(--gray-light); padding:4px 10px; border-radius:6px; font-size:12px;">FAQ 命中率 92%</span>
+        <span style="background:var(--gray-light); padding:4px 10px; border-radius:6px; font-size:12px;">1 周交付</span>
+      </div>
+      <span class="roi">ROI 1:8</span>
+    </div>
+
+    <div class="scenario">
+      <div class="icon">📚</div>
+      <h3>教师备课助手</h3>
+      <p>SKC4073 数据可视化课程，备课效率提升</p>
+      <div style="display: flex; gap:8px; flex-wrap:wrap; margin-bottom:16px;">
+        <span style="background:var(--gray-light); padding:4px 10px; border-radius:6px; font-size:12px;">效率 +60%</span>
+        <span style="background:var(--gray-light); padding:4px 10px; border-radius:6px; font-size:12px;">2 周交付</span>
+      </div>
+      <span class="roi">ROI 1:6</span>
+    </div>
+
+    <div class="scenario">
+      <div class="icon">🔬</div>
+      <h3>科研文献精读</h3>
+      <p>YOLO 西红柿检测项目，3h → 40min/篇</p>
+      <div style="display: flex; gap:8px; flex-wrap:wrap; margin-bottom:16px;">
+        <span style="background:var(--gray-light); padding:4px 10px; border-radius:6px; font-size:12px;">3 天交付</span>
+        <span style="background:var(--gray-light); padding:4px 10px; border-radius:6px; font-size:12px;">准确率 95%</span>
+      </div>
+      <span class="roi">ROI 1:15</span>
+    </div>
+
+    <div class="scenario">
+      <div class="icon">🏢</div>
+      <h3>企业内部知识库</h3>
+      <p>500 人制造业企业，5 类问题全覆盖</p>
+      <div style="display: flex; gap:8px; flex-wrap:wrap; margin-bottom:16px;">
+        <span style="background:var(--gray-light); padding:4px 10px; border-radius:6px; font-size:12px;">工单 -60%</span>
+        <span style="background:var(--gray-light); padding:4px 10px; border-radius:6px; font-size:12px;">2 周交付</span>
+      </div>
+      <span class="roi">ROI 1:12</span>
+    </div>
+
+    <div class="scenario">
+      <div class="icon">🏥</div>
+      <h3>医院导诊助手</h3>
+      <p>三甲医院日均 8000 人次门诊导诊</p>
+      <div style="display: flex; gap:8px; flex-wrap:wrap; margin-bottom:16px;">
+        <span style="background:var(--gray-light); padding:4px 10px; border-radius:6px; font-size:12px;">命中率 88%</span>
+        <span style="background:var(--gray-light); padding:4px 10px; border-radius:6px; font-size:12px;">3 周交付</span>
+      </div>
+      <span class="roi">ROI 1:10</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 资源下载 ============ -->
+<section id="download" style="background: white; max-width:100%; padding:80px 32px;">
+  <div style="max-width:1280px; margin:0 auto;">
+    <div class="section-tag">📦 资源下载</div>
+    <h2 class="section-title">一键获取 <span class="highlight">全套教学资料</span></h2>
+    <p class="section-subtitle">包含 PPT · 讲义 · 源码 · 配图 · README，一次性 ZIP 打包。</p>
+
+    <div class="resources">
+      <div class="resource">
+        <div class="icon">📘</div>
+        <div class="info">
+          <h3>教学讲义（Word）</h3>
+          <p>8 章节 · 174 段 · 紫色 AI 科技风</p>
+          <div class="size">46 KB · DOCX</div>
+        </div>
+        <a href="downloads/MaxKB_FDE教学讲义_小陶老师.docx" class="download" title="下载">↓</a>
+      </div>
+      <div class="resource">
+        <div class="icon">🎨</div>
+        <div class="info">
+          <h3>教学 PPT</h3>
+          <p>60 页 · 4 大 PART · 16:9 宽屏</p>
+          <div class="size">495 KB · PPTX</div>
+        </div>
+        <a href="downloads/MaxKB_FDE教学课件_小陶老师.pptx" class="download" title="下载">↓</a>
+      </div>
+      <div class="resource">
+        <div class="icon">💻</div>
+        <div class="info">
+          <h3>源码注释</h3>
+          <p>8 大核心模块 · 含完整 Python 代码</p>
+          <div class="size">19 KB · PY</div>
+        </div>
+        <a href="downloads/maxkb_core_modules.py" class="download" title="下载">↓</a>
+      </div>
+      <div class="resource">
+        <div class="icon">🖼️</div>
+        <div class="info">
+          <h3>配图素材</h3>
+          <p>6 张高清 PNG · 架构图 + 流程图</p>
+          <div class="size">370 KB · PNG</div>
+        </div>
+        <a href="downloads/images.zip" class="download" title="下载">↓</a>
+      </div>
+      <div class="resource">
+        <div class="icon">📦</div>
+        <div class="info">
+          <h3>一站式 ZIP 包</h3>
+          <p>PPT + 讲义 + 源码 + 配图 + README</p>
+          <div class="size">1.8 MB · ZIP</div>
+        </div>
+        <a href="downloads/MaxKB_FDE教学资料_v1.0.zip" class="download" title="下载">↓</a>
+      </div>
+      <div class="resource">
+        <div class="icon">📄</div>
+        <div class="info">
+          <h3>README.md</h3>
+          <p>使用指南 + 学时分配 + 教师建议</p>
+          <div class="size">7 KB · MD</div>
+        </div>
+        <a href="downloads/README.md" class="download" title="下载">↓</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 留言联系 ============ -->
+<section id="contact" class="contact-section">
+  <div class="contact-grid">
+    <div class="contact-form">
+      <h3>💌 加入实战营</h3>
+      <p style="color: rgba(255,255,255,0.7); margin-bottom: 24px; font-size: 14px;">
+        留下您的信息，我们会主动联系您，并邀请加入「MaxKB FDE 实战营」微信群。
+      </p>
+      <form id="contact-form">
+        <div class="form-group">
+          <label>姓名 *</label>
+          <input type="text" name="name" placeholder="请输入您的姓名" required>
+        </div>
+        <div class="form-group">
+          <label>身份</label>
+          <select name="role">
+            <option value="student">学生</option>
+            <option value="teacher">同行教师</option>
+            <option value="enterprise">企业项目</option>
+            <option value="other">其他</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>微信 / 邮箱 *</label>
+          <input type="text" name="contact" placeholder="微信号或邮箱" required>
+        </div>
+        <div class="form-group">
+          <label>您希望深入了解？</label>
+          <textarea name="message" placeholder="例如：想 1 周搭出可演示项目 / 想落地到课程 / 想交付企业项目..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
+          🚀 提交咨询
+        </button>
+      </form>
+    </div>
+    <div class="contact-info">
+      <h3>📚 关于本课程</h3>
+      <p style="color: rgba(255,255,255,0.8); margin-bottom: 24px;">
+        本课程由广州华商学院大数据专业小陶老师（陶建敏）主讲，
+        AI 小 Q 辅助设计，专为暑期 FDE 培训定制。
+      </p>
+      <div class="contact-item">
+        <div class="icon">🏫</div>
+        <div class="info">
+          <h4>授课单位</h4>
+          <p>广州华商学院 · 大数据专业</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="icon">👨‍🏫</div>
+        <div class="info">
+          <h4>授课教师</h4>
+          <p>小陶老师（陶建敏）</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="icon">📅</div>
+        <div class="info">
+          <h4>课程时间</h4>
+          <p>2026 年暑期 FDE 培训 · 18 学时</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="icon">📖</div>
+        <div class="info">
+          <h4>开源协议</h4>
+          <p>本课程资料基于 GPL v3 开源，可自由用于教学</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="icon">🌐</div>
+        <div class="info">
+          <h4>开源项目</h4>
+          <p><a href="https://github.com/1Panel-dev/MaxKB" style="color: var(--purple-light);">github.com/1Panel-dev/MaxKB</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 底部 ============ -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-brand">
+      <div class="nav-logo">
+        <div class="logo-dot">M</div>
+        <span>MaxKB FDE 教学</span>
+      </div>
+      <p>基于 1Panel-dev/MaxKB 的开源企业级智能体平台教学课程。AI 辅助设计 · 紫色 AI 科技风 · FDE 实战导向。</p>
+    </div>
+    <div class="footer-col">
+      <h4>课程导航</h4>
+      <a href="#course">课程章节</a>
+      <a href="#practice">实操指南</a>
+      <a href="#scenarios">5 大场景</a>
+      <a href="#download">资料下载</a>
+    </div>
+    <div class="footer-col">
+      <h4>开源资源</h4>
+      <a href="https://maxkb.cn/docs/v2/">官方文档</a>
+      <a href="https://github.com/1Panel-dev/MaxKB">GitHub 仓库</a>
+      <a href="https://hub.docker.com/r/1panel/maxkb">Docker Hub</a>
+      <a href="https://trendshift.io/repositories/9113">Trend Shift</a>
+    </div>
+    <div class="footer-col">
+      <h4>教师工具</h4>
+      <a href="#contact">联系小陶老师</a>
+      <a href="#">课件模板</a>
+      <a href="#">课程规划</a>
+      <a href="#">教研社区</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 小陶老师（陶建敏）· 广州华商学院 · 由 AI 小 Q 辅助设计 · 本课程资料基于 GPL v3 开源</p>
+  </div>
+</footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
