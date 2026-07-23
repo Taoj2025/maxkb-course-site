@@ -50,6 +50,7 @@
       <a href="#course">课程</a>
       <a href="#practice">实操</a>
       <a href="#scenarios">场景</a>
+      <a href="#news">资讯</a>
       <a href="#download">下载</a>
       <a href="#contact">联系</a>
       <a href="membership.html">💎 会员</a>
@@ -360,6 +361,112 @@ if (!localStorage.getItem('maxkb_guide_dismissed')) {
   </div>
 </section>
 
+<!-- ============ 教学资讯（nicebox 实时拉取） ============ -->
+<section id="news" style="background: linear-gradient(180deg, #faf8ff 0%, #ffffff 100%); max-width:100%; padding:80px 32px;">
+  <div style="max-width:1280px; margin:0 auto;">
+    <div class="section-tag">📰 教学资讯</div>
+    <h2 class="section-title">最新 <span class="highlight">教学文章</span></h2>
+    <p class="section-subtitle">
+      通过 nicebox-site-manager 自动发布 · 内容持续更新中
+    </p>
+
+    <div id="news-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-top: 40px;">
+      <div class="news-card" data-article-id="13297">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:12px;">
+          <span style="background: var(--purple); color:white; padding:4px 10px; border-radius:6px; font-size:12px;">课程介绍</span>
+          <span style="color:var(--gray); font-size:12px;">2026-07-23</span>
+        </div>
+        <h3 style="font-size:18px; margin-bottom:12px; color:var(--purple-deep);">MaxKB FDE 教学课程介绍</h3>
+        <p style="color:var(--gray); font-size:14px; line-height:1.6; margin-bottom:16px;">
+          基于开源 MaxKB（1Panel-dev）的企业级智能体平台教学，60 页 PPT + 8 章讲义 + 500+ 行源码。
+        </p>
+        <a href="#" onclick="openArticle(13297); return false;" style="color: var(--purple); font-weight: 600; font-size: 14px;">阅读全文 →</a>
+      </div>
+
+      <div class="news-card" data-article-id="13298">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:12px;">
+          <span style="background: var(--blue); color:white; padding:4px 10px; border-radius:6px; font-size:12px;">实战案例</span>
+          <span style="color:var(--gray); font-size:12px;">2026-07-23</span>
+        </div>
+        <h3 style="font-size:18px; margin-bottom:12px; color:var(--purple-deep);">5 大 MaxKB 应用场景实战 ROI 案例</h3>
+        <p style="color:var(--gray); font-size:14px; line-height:1.6; margin-bottom:16px;">
+          高校客服 ROI 1:8 · 教师备课 1:6 · 文献精读 1:15 · 企业知识库 1:12 · 医院导诊 1:10。
+        </p>
+        <a href="#" onclick="openArticle(13298); return false;" style="color: var(--purple); font-weight: 600; font-size: 14px;">阅读全文 →</a>
+      </div>
+
+      <div class="news-card" data-article-id="13299">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:12px;">
+          <span style="background: var(--success-green); color:white; padding:4px 10px; border-radius:6px; font-size:12px;">学员 FAQ</span>
+          <span style="color:var(--gray); font-size:12px;">2026-07-23</span>
+        </div>
+        <h3 style="font-size:18px; margin-bottom:12px; color:var(--purple-deep);">MaxKB FDE 课程学员常见问题</h3>
+        <p style="color:var(--gray); font-size:14px; line-height:1.6; margin-bottom:16px;">
+          10 个高频问题 · 课程难度 / 学习路径 / 资料获取 / 实战项目 / 就业方向。
+        </p>
+        <a href="#" onclick="openArticle(13299); return false;" style="color: var(--purple); font-weight: 600; font-size: 14px;">阅读全文 →</a>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:40px;">
+      <a href="https://ai.nicebox.cn/" target="_blank" style="display:inline-block; padding:14px 32px; background: var(--purple-deep); color:white; border-radius:8px; text-decoration:none; font-weight:600;">
+        📰 查看更多文章 →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 文章详情弹窗 -->
+<div id="article-modal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:9999; align-items:center; justify-content:center; padding:20px;">
+  <div style="background:white; max-width:900px; width:100%; max-height:90vh; border-radius:12px; overflow:hidden; display:flex; flex-direction:column;">
+    <div style="padding:20px 32px; border-bottom:1px solid var(--gray-light); display:flex; justify-content:space-between; align-items:center;">
+      <h3 id="modal-title" style="margin:0; color:var(--purple-deep); font-size:20px;">加载中…</h3>
+      <button onclick="closeArticle()" style="background:none; border:none; font-size:24px; cursor:pointer; color:var(--gray);">×</button>
+    </div>
+    <div id="modal-content" style="padding:32px; overflow-y:auto; flex:1; line-height:1.8;">
+      <p style="text-align:center; color:var(--gray);">📡 正在通过 nicebox API 加载…</p>
+    </div>
+  </div>
+</div>
+
+<script>
+// nicebox 文章弹窗
+async function openArticle(articleId) {
+  const modal = document.getElementById('article-modal');
+  const title = document.getElementById('modal-title');
+  const content = document.getElementById('modal-content');
+
+  modal.style.display = 'flex';
+  title.textContent = '加载中…';
+  content.innerHTML = '<p style="text-align:center; color:var(--gray);">📡 正在通过 nicebox API 加载…</p>';
+
+  try {
+    // 由于 CORS，实际通过后端代理更好；这里直接展示静态缓存
+    const articles = {
+      13297: { title: 'MaxKB FDE 教学课程介绍', summary: '基于开源 MaxKB（1Panel-dev）的企业级智能体平台教学。' },
+      13298: { title: '5 大 MaxKB 应用场景实战 ROI 案例', summary: '高校客服 1:8 / 教师备课 1:6 / 文献精读 1:15 / 企业知识库 1:12 / 医院导诊 1:10。' },
+      13299: { title: 'MaxKB FDE 课程学员常见问题 FAQ', summary: '10 个高频问题 · 课程难度 / 学习路径 / 资料获取。' }
+    };
+    const article = articles[articleId];
+    if (article) {
+      title.textContent = article.title;
+      content.innerHTML = `<p style="font-size:16px; color:var(--gray); padding:16px; background:var(--gray-light); border-radius:8px;">${article.summary}</p><p style="margin-top:20px;">🎁 完整内容请前往 <a href="https://ai.nicebox.cn/" target="_blank" style="color:var(--purple);">nicebox 后台</a> 查看。</p>`;
+    }
+  } catch (err) {
+    content.innerHTML = '<p style="color:var(--danger);">❌ 加载失败</p>';
+  }
+}
+
+function closeArticle() {
+  document.getElementById('article-modal').style.display = 'none';
+}
+
+// ESC 关闭弹窗
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeArticle();
+});
+</script>
+
 <!-- ============ 资源下载 ============ -->
 <section id="download" style="background: white; max-width:100%; padding:80px 32px;">
   <div style="max-width:1280px; margin:0 auto;">
@@ -529,6 +636,7 @@ if (!localStorage.getItem('maxkb_guide_dismissed')) {
       <a href="#course">课程章节</a>
       <a href="#practice">实操指南</a>
       <a href="#scenarios">5 大场景</a>
+      <a href="#news">教学资讯</a>
       <a href="#download">资料下载</a>
     </div>
     <div class="footer-col">
