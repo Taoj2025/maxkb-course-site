@@ -12,6 +12,12 @@
 </head>
 <body>
 
+<!-- ============ 顶部会员状态条（未登录时显示）============ -->
+<div id="top-status-bar" style="background: rgba(0,0,0,0.2); padding: 8px 32px; text-align: center; font-size: 13px; color: rgba(255,255,255,0.9);">
+  <span id="status-text">💎 未登录 · 访问全部资源需会员</span>
+  <a href="membership.html" style="color: #FCD34D; text-decoration: none; margin-left: 12px; font-weight: 600;">👤 登录 / 注册</a>
+</div>
+
 <!-- ============ 顶部导航 ============ -->
 <nav class="navbar">
   <div class="nav-container">
@@ -27,6 +33,7 @@
       <a href="#download">下载</a>
       <a href="#contact">联系</a>
       <a href="membership.html">💎 会员</a>
+      <a href="user.html">👤 个人中心</a>
       <a href="#docs" class="nav-cta">📖 阅读文档</a>
     </div>
   </div>
@@ -230,7 +237,7 @@ model_name: deepseek-chat</div>
   </p>
 
   <div class="scenarios">
-    <div class="scenario">
+    <div class="scenario" data-min-plan="free">
       <div class="icon">🏫</div>
       <h3>高校智能客服</h3>
       <p>广州华商学院招生季案例，每天 200+ 家长咨询</p>
@@ -241,7 +248,7 @@ model_name: deepseek-chat</div>
       <span class="roi">ROI 1:8</span>
     </div>
 
-    <div class="scenario">
+    <div class="scenario" data-min-plan="standard">
       <div class="icon">📚</div>
       <h3>教师备课助手</h3>
       <p>SKC4073 数据可视化课程，备课效率提升</p>
@@ -252,7 +259,7 @@ model_name: deepseek-chat</div>
       <span class="roi">ROI 1:6</span>
     </div>
 
-    <div class="scenario">
+    <div class="scenario" data-min-plan="standard">
       <div class="icon">🔬</div>
       <h3>科研文献精读</h3>
       <p>YOLO 西红柿检测项目，3h → 40min/篇</p>
@@ -263,7 +270,7 @@ model_name: deepseek-chat</div>
       <span class="roi">ROI 1:15</span>
     </div>
 
-    <div class="scenario">
+    <div class="scenario" data-min-plan="standard">
       <div class="icon">🏢</div>
       <h3>企业内部知识库</h3>
       <p>500 人制造业企业，5 类问题全覆盖</p>
@@ -274,7 +281,7 @@ model_name: deepseek-chat</div>
       <span class="roi">ROI 1:12</span>
     </div>
 
-    <div class="scenario">
+    <div class="scenario" data-min-plan="flagship">
       <div class="icon">🏥</div>
       <h3>医院导诊助手</h3>
       <p>三甲医院日均 8000 人次门诊导诊</p>
