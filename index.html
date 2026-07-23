@@ -248,6 +248,51 @@ model_name: deepseek-chat</div>
   </div>
 </section>
 
+<!-- ============ 首访引导弹窗 ============ -->
+<div id="welcome-guide" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.7); z-index: 999; align-items: center; justify-content: center;">
+  <div style="background: white; max-width: 520px; width: 90%; border-radius: 16px; padding: 32px; position: relative;">
+    <button onclick="document.getElementById('welcome-guide').style.display='none'; localStorage.setItem('maxkb_guide_dismissed', '1')" style="position: absolute; top: 12px; right: 16px; background: none; border: none; font-size: 24px; color: #9CA3AF; cursor: pointer;">×</button>
+    <div style="text-align: center; margin-bottom: 24px;">
+      <div style="font-size: 48px;">👋</div>
+      <h3 style="color: var(--purple-deep); margin-top: 8px;">欢迎来到 MaxKB FDE 教学</h3>
+      <p style="color: var(--gray); font-size: 14px;">3 步上手，仅需 1 分钟</p>
+    </div>
+    <div style="margin-bottom: 20px;">
+      <div style="display: flex; gap: 12px; align-items: flex-start; margin-bottom: 16px;">
+        <div style="background: var(--purple-deep); color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; flex-shrink: 0;">1</div>
+        <div>
+          <h4 style="color: var(--dark-gray); font-size: 15px; margin-bottom: 4px;">浏览课程大纲</h4>
+          <p style="color: var(--gray); font-size: 13px;">免费查看 8 章课程 + 5 大企业场景</p>
+        </div>
+      </div>
+      <div style="display: flex; gap: 12px; align-items: flex-start; margin-bottom: 16px;">
+        <div style="background: var(--purple-deep); color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; flex-shrink: 0;">2</div>
+        <div>
+          <h4 style="color: var(--dark-gray); font-size: 15px; margin-bottom: 4px;">注册会员</h4>
+          <p style="color: var(--gray); font-size: 13px;">「💎 会员」入口，邮箱注册即可</p>
+        </div>
+      </div>
+      <div style="display: flex; gap: 12px; align-items: flex-start;">
+        <div style="background: var(--purple-deep); color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; flex-shrink: 0;">3</div>
+        <div>
+          <h4 style="color: var(--dark-gray); font-size: 15px; margin-bottom: 4px;">微信扫码升级</h4>
+          <p style="color: var(--gray); font-size: 13px;">付款后小陶老师 24h 内人工开通</p>
+        </div>
+      </div>
+    </div>
+    <a href="membership.html" onclick="document.getElementById('welcome-guide').style.display='none'" class="btn btn-primary" style="display:block; text-align:center; padding: 14px;">立即注册体验</a>
+  </div>
+</div>
+<script>
+// 首访引导逻辑
+if (!localStorage.getItem('maxkb_guide_dismissed')) {
+  setTimeout(() => {
+    const guide = document.getElementById('welcome-guide');
+    if (guide) guide.style.display = 'flex';
+  }, 2000); // 2 秒后弹出
+}
+</script>
+
 <!-- ============ 5 大场景 ============ -->
 <section id="scenarios">
   <div class="section-tag">PART 3</div>
