@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>常见问题 FAQ · MaxKB FDE 教学</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+.faq-container { max-width: 880px; margin: 0 auto; padding: 60px 24px; }
+.faq-item { background: white; border-radius: 12px; margin-bottom: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.06); }
+.faq-q { padding: 20px 24px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600; color: var(--purple-deep); font-size: 16px; user-select: none; }
+.faq-q:hover { background: rgba(91,46,191,0.05); }
+.faq-icon { transition: transform 0.3s; font-size: 18px; color: var(--gray); }
+.faq-item.open .faq-icon { transform: rotate(180deg); }
+.faq-a { padding: 0 24px; max-height: 0; overflow: hidden; transition: all 0.3s; color: var(--dark-gray); font-size: 14px; line-height: 1.8; }
+.faq-item.open .faq-a { padding: 0 24px 20px; max-height: 500px; }
+</style>
+</head>
+<body>
+
+<!-- 顶部状态条 -->
+<div id="top-status-bar" style="background: rgba(0,0,0,0.2); padding: 8px 32px; text-align: center; font-size: 13px; color: rgba(255,255,255,0.9);">
+  <span id="status-text">💎 未登录</span>
+  <a href="membership.html" style="color: #FCD34D; text-decoration: none; margin-left: 12px; font-weight: 600;">👤 登录 / 注册</a>
+</div>
+
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <div class="logo-dot">?</div>
+      <span>MaxKB · FDE 教学</span>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">首页</a>
+      <a href="membership.html">会员</a>
+      <a href="faq.html" class="active">FAQ</a>
+      <a href="index.html#contact">联系</a>
+    </div>
+  </div>
+</nav>
+
+<div class="faq-container">
+  <div class="section-tag">❓ 常见问题</div>
+  <h2 class="section-title">FAQ · 您可能想知道的</h2>
+  <p class="section-subtitle">10 个最高频问题，点击展开查看答案</p>
+
+  <div style="margin-top: 32px;">
+    <div class="faq-item">
+      <div class="faq-q">1️⃣ 课程适合什么人群？<span class="faq-icon">▼</span></div>
+      <div class="faq-a">
+        · 学生：想找 AI 实战项目经验，毕设加分<br>
+        · 同行教师：想把 AI 融入自己的课程<br>
+        · 企业工程师：想交付客服/HR/导诊类项目<br>
+        · 创业者：想用 AI 解决业务问题<br>
+        零基础可学，课程配套 60 页 PPT 详细图解
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">2️⃣ 怎么注册和登录？<span class="faq-icon">▼</span></div>
+      <div class="faq-a">
+        · 浏览器访问 https://taoj2025.github.io/maxkb-course-site/<br>
+        · 顶部导航点击「💎 会员」<br>
+        · 在会员页填写邮箱 + 密码（≥6 位）<br>
+        · 点击「登录 / 注册」即可立即使用<br>
+        <strong>无需邮箱验证</strong>，注册即登录
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">3️⃣ 怎么升级到付费会员？<span class="faq-icon">▼</span></div>
+      <div class="faq-a">
+        · 会员页选择「标准会员 ¥99/年」或「旗舰会员 ¥299/年」<br>
+        · 微信扫码付款（页面上有二维码）<br>
+        · 转账时备注您的<strong>注册邮箱</strong><br>
+        · 同时在网站表单留言（小陶老师邮箱接收）<br>
+        · 24 小时内小陶老师会主动帮您开通权限
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">4️⃣ 会员有效多久？<span class="faq-icon">▼</span></div>
+      <div class="faq-a">
+        · 自开通日起 1 年（365 天）<br>
+        · 个人中心可查看剩余天数<br>
+        · 到期前 7 天会有顶部提示<br>
+        · 续费享 8 折优惠（联系小陶老师）
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">5️⃣ 资源下载被锁定怎么办？<span class="faq-icon">▼</span></div>
+      <div class="faq-a">
+        · 体验会员：可下载 README<br>
+        · 标准会员及以上：可下载全部 5 个资源<br>
+        · 点击被锁资源会弹窗引导升级<br>
+        · 后台开通后需<strong>刷新页面</strong>生效
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">6️⃣ 能开发票吗？<span class="faq-icon">▼</span></div>
+      <div class="faq-a">
+        · 个人会员：暂不开具发票（如需报销请联系小陶老师）<br>
+        · 企业批量采购：可开具增值税普通发票<br>
+        · 需提供：单位抬头、税号、邮箱<br>
+        · 课程费用含 6% 增值税
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">7️⃣ 支持退款吗？<span class="faq-icon">▼</span></div>
+      <div class="faq-a">
+        · 开通后 7 天内、下载量 ≤ 2 个 → 全额退款<br>
+        · 超过 7 天或下载 > 2 个 → 暂不支持退款<br>
+        · 特殊情况可联系小陶老师协商<br>
+        · 退款请发邮件到 2949465671@qq.com
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">8️⃣ 课程资料能商用吗？<span class="faq-icon">▼</span></div>
+      <div class="faq-a">
+        · 课程<strong>基于 GPL v3 开源</strong>，可自由用于教学<br>
+        · 不可将课程资料二次销售<br>
+        · 不可去除版权标识<br>
+        · MaxKB 本身遵循 GPL v3
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">9️⃣ 旗舰会员的 1V1 答疑怎么进行？<span class="faq-icon">▼</span></div>
+      <div class="faq-a">
+        · 微信群 7×24 提问，小陶老师工作时间内回复<br>
+        · 每月 1 次直播答疑（提前 3 天通知）<br>
+        · 复杂项目可预约 1V1 视频会议<br>
+        · 项目实战辅导：与企业项目实战结合
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">🔟 还有其他问题怎么办？<span class="faq-icon">▼</span></div>
+      <div class="faq-a">
+        · 微信：直接发消息给小陶老师<br>
+        · 邮箱：2949465671@qq.com<br>
+        · 网站表单：首页「💌 加入实战营」<br>
+        · 微信群：加入「MaxKB FDE 实战营」<br>
+        <strong>小陶老师亲自答复，24 小时内响应</strong>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align: center; margin-top: 40px;">
+    <a href="index.html#contact" class="btn btn-primary">💌 没找到答案？联系小陶老师</a>
+  </div>
+</div>
+
+<script src="assets/js/membership.js"></script>
+<script>
+// FAQ 折叠
+document.querySelectorAll('.faq-q').forEach(q => {
+  q.addEventListener('click', () => {
+    q.parentElement.classList.toggle('open');
+  });
+});
+
+// 顶部状态条
+function updateTopStatusBar() {
+  const bar = document.getElementById('top-status-bar');
+  const plan = MembershipStore.getPlan();
+  const user = MembershipStore.getCurrent();
+  if (plan && user) {
+    bar.style.background = plan.id === 'flagship' ? 'linear-gradient(90deg, #5B2EBF, #8B5CF6)' : plan.id === 'standard' ? 'linear-gradient(90deg, #3B82F6, #60A5FA)' : 'rgba(0,0,0,0.3)';
+    bar.innerHTML = `<span style="font-weight:600;">${plan.icon} 您是【${plan.name}】 · ${user.email}</span><a href="membership.html" style="color: #FCD34D; text-decoration: none; margin-left: 12px; font-weight: 600;">⚙️ 管理会员</a>`;
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  updateTopStatusBar();
+});
+</script>
+</body>
+</html>
