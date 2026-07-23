@@ -1,6 +1,44 @@
 // ============ MaxKB FDE 教学网站 · 交互脚本 ============
 // 作者：小 Q 为小陶老师定制 · 2026-07-23
 
+// ============ 0. 顶部会员状态条 ============
+function updateTopStatusBar() {
+  const bar = document.getElementById('top-status-bar');
+  const text = document.getElementById('status-text');
+  if (!bar) return;
+
+  const plan = MembershipStore.getPlan();
+  const user = MembershipStore.getCurrent();
+
+  if (!user || !plan) {
+    bar.style.background = 'rgba(0,0,0,0.25)';
+    bar.innerHTML = '<span id="status-text">💎 未登录 · 访问全部资源需会员</span><a href="membership.html" style="color: #FCD34D; text-decoration: none; margin-left: 12px; font-weight: 600;">👤 登录 / 注册</a>';
+  } else {
+    const joinedDate = new Date(user.joinedAt);
+    const expiresDate = new Date(joinedDate);
+    expiresDate.setFullYear(expiresDate.getFullYear() + 1);
+    const remainingDays = Math.max(0, Math.ceil((expiresDate - new Date()) / (1000 * 60 * 60 * 24)));
+    bar.style.background = plan.id === 'flagship' ? 'linear-gradient(90deg, #5B2EBF, #8B5CF6)' :
+                            plan.id === 'standard' ? 'linear-gradient(90deg, #3B82F6, #60A5FA)' :
+                            'rgba(0,0,0,0.3)';
+    bar.innerHTML = `
+      <span style="font-weight:600;">${plan.icon} 您是【${plan.name}】 · ${user.email} · 剩余 ${remainingDays} 天</span>
+      <a href="membership.html" style="color: #FCD34D; text-decoration: none; margin-left: 12px; font-weight: 600;">${plan.id === 'free' ? '⚡ 升级会员' : '⚙️ 管理会员'}</a>
+      <a href="#" id="top-logout" style="color: rgba(255,255,255,0.7); text-decoration: none; margin-left: 12px; font-size: 12px;">退出</a>
+    `;
+    const logoutBtn = document.getElementById('top-logout');
+    if (logoutBtn) {
+      logoutBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (confirm('确认退出？')) {
+          MembershipStore.logout();
+          location.reload();
+        }
+      });
+    }
+  }
+}
+
 // ============ 1. 渲染课程章节 ============
 function renderChapters(filter = 'all') {
   const grid = document.getElementById('chapter-grid');
@@ -111,91 +149,95 @@ function initSmoothScroll() {
   });
 }
 
-// ============ 5.5 顶部状态条 ============
-function updateTopStatusBar() {
-  const bar = document.getElementById('top-status-bar');
-  const text = document.getElementById('status-text');
-  if (!bar || !text) return;
+// ============ 6. 资源权限拦截（事件委托版 · 极稳健）============
+function initResourceGating() {
+  console.log('[会员拦截] 初始化中...');
+  console.log('[会员拦截] 当前 MembershipStore:', typeof MembershipStore !== 'undefined' ? '已加载' : '未加载');
 
-  const plan = MembershipStore.getPlan();
+  updateTopStatusBar();
+  updateDownloadHint();
+
+  // ⭐ 关键修改：使用事件委托，监听整个文档，避免动态加载的链接丢失
+  document.addEventListener('click', (e) => {
+    const link = e.target.closest('a[data-need-membership="true"]');
+    if (!link) return;
+
+    console.log('[会员拦截] 检测到点击:', link.getAttribute('href'));
+
+    const resource = link.closest('.resource');
+    const minPlan = resource?.dataset.minPlan || 'standard';
+
+    if (MembershipStore.hasAccess(minPlan)) {
+      console.log('[会员拦截] ✅ 权限通过，开始下载');
+      trackDownload(link.getAttribute('href'));
+      return; // 放行
+    }
+
+    // ⭐ 必须阻止默认行为 + 阻止冒泡（防止外层跳转）
+    e.preventDefault();
+    e.stopPropagation();
+
+    const isLoggedIn = MembershipStore.isLoggedIn();
+    const currentPlan = MembershipStore.getPlan();
+
+    if (!isLoggedIn) {
+      console.log('[会员拦截] ❌ 未登录，引导注册');
+      if (confirm(`🔒 此资源需要「${planName(minPlan)}」会员才能下载。\n\n您当前未登录。\n\n点击「确定」前往注册页面。`)) {
+        sessionStorage.setItem('pending_download', link.getAttribute('href'));
+        window.location.href = 'membership.html';
+      }
+    } else if (currentPlan) {
+      console.log('[会员拦截] ❌ 权限不足，引导升级');
+      if (confirm(`🔒 此资源需要「${planName(minPlan)}」会员才能下载。\n\n您当前是「${currentPlan.name}」。\n\n点击「确定」前往升级页面。`)) {
+        window.location.href = 'membership.html';
+      }
+    }
+  });
+}
+
+// ============ 7. 顶部下载提示 ============
+function updateDownloadHint() {
+  const hint = document.getElementById('download-hint');
+  if (!hint) return;
   const user = MembershipStore.getCurrent();
+  const plan = MembershipStore.getPlan();
 
-  if (!user || !plan) {
-    text.textContent = '💎 未登录 · 访问全部资源需会员';
-    bar.innerHTML = '<span id="status-text">💎 未登录 · 访问全部资源需会员</span><a href="membership.html" style="color: #FCD34D; text-decoration: none; margin-left: 12px; font-weight: 600;">👤 登录 / 注册</a>';
-  } else {
-    const joinedDate = new Date(user.joinedAt);
-    const expiresDate = new Date(joinedDate);
-    expiresDate.setFullYear(expiresDate.getFullYear() + 1);
-    const remainingDays = Math.max(0, Math.ceil((expiresDate - new Date()) / (1000 * 60 * 60 * 24)));
-    bar.style.background = plan.id === 'flagship' ? 'linear-gradient(90deg, #5B2EBF, #8B5CF6)' :
-                            plan.id === 'standard' ? 'linear-gradient(90deg, #3B82F6, #60A5FA)' :
-                            'rgba(0,0,0,0.2)';
-    bar.innerHTML = `
-      <span style="font-weight:600;">${plan.icon} 您是【${plan.name}】 · 邮箱：${user.email} · 剩余 ${remainingDays} 天</span>
-      <a href="membership.html" style="color: #FCD34D; text-decoration: none; margin-left: 12px; font-weight: 600;">${plan.id === 'free' ? '⚡ 升级会员' : '⚙️ 管理会员'}</a>
-      <a href="#" id="top-logout" style="color: rgba(255,255,255,0.7); text-decoration: none; margin-left: 12px; font-size: 12px;">退出</a>
-    `;
-    const logoutBtn = document.getElementById('top-logout');
-    if (logoutBtn) {
-      logoutBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        if (confirm('确认退出？')) {
-          MembershipStore.logout();
-          location.reload();
-        }
-      });
+  if (!user) {
+    hint.textContent = '（提示：5/6 资源需会员，README 免费可下）';
+    hint.style.color = 'var(--gray)';
+  } else if (plan) {
+    if (plan.id === 'flagship') {
+      hint.textContent = '（您是旗舰会员，全部资源已解锁 ✓）';
+      hint.style.color = '#34D399';
+    } else if (plan.id === 'standard') {
+      hint.textContent = '（您是标准会员，全部资源已解锁 ✓）';
+      hint.style.color = '#34D399';
+    } else {
+      hint.textContent = '（您是体验会员，仅 README 可下载）';
+      hint.style.color = 'var(--gray)';
     }
   }
 }
 
-// ============ 5.5 会员资源权限拦截 ============
-function initMembershipGating() {
-  updateTopStatusBar();
-  updateTopStatusBar();
-  const hint = document.getElementById('download-hint');
-  const links = document.querySelectorAll('a[data-need-membership="true"]');
+// ============ 8. 跟踪下载次数（个人中心用）============
+function trackDownload(url) {
+  const count = parseInt(localStorage.getItem('maxkb_downloads') || '0');
+  localStorage.setItem('maxkb_downloads', count + 1);
+  console.log('[下载追踪]', url, '总数:', count + 1);
+}
 
-  const plan = MembershipStore.getPlan();
-  const isLoggedIn = MembershipStore.isLoggedIn();
-
-  // 顶部提示
-  if (hint) {
-    if (!isLoggedIn) {
-      hint.textContent = '（会员资源 ·  会员中心注册后可解锁）';
-    } else if (plan) {
-      hint.textContent = `（当前为「${plan.name}」· ${plan.id === 'free' ? '升级到标准会员可下载完整资料' : '感谢支持！'}）`;
-    }
-  }
-
-  // 拦截下载点击
-  links.forEach(link => {
-    link.addEventListener('click', (e) => {
-      const resource = link.closest('.resource');
-      const minPlan = resource?.dataset.minPlan || 'standard';
-      if (!MembershipStore.hasAccess(minPlan)) {
-        e.preventDefault();
-        if (!isLoggedIn) {
-          if (confirm('🔒 此资源需会员下载。\n\n是否立即注册体验会员？')) {
-            window.location.href = 'membership.html';
-          }
-        } else {
-          if (confirm('🔒 此资源需标准会员及以上。\n\n是否立即升级？')) {
-            window.location.href = 'membership.html';
-          }
-        }
-      }
-    });
-  });
+function planName(planId) {
+  return { 'free': '体验', 'standard': '标准（¥99/年）', 'flagship': '旗舰（¥299/年）' }[planId] || planId;
 }
 
 // ============ 初始化 ============
 document.addEventListener('DOMContentLoaded', () => {
+  console.log('[初始化] DOMContentLoaded');
   renderChapters();
   initChapterTabs();
   initNavHighlight();
   initContactForm();
   initSmoothScroll();
-  initMembershipGating();
-  console.log('✅ MaxKB FDE 教学网站已就绪 · 2026-07-23');
+  initResourceGating();  // ⭐ 修改名称为 initResourceGating
+  console.log('[初始化] 完成');
 });
