@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>个人中心 · MaxKB FDE 教学</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+.user-panel { max-width: 980px; margin: 0 auto; padding: 60px 24px; color: white; }
+.user-card { background: white; color: var(--dark-gray); border-radius: 16px; padding: 32px; box-shadow: 0 8px 32px rgba(0,0,0,0.15); margin-bottom: 24px; }
+.user-header { display: flex; align-items: center; gap: 24px; padding-bottom: 24px; border-bottom: 1px solid #F3F4F6; }
+.user-avatar { width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 36px; }
+.user-info h2 { color: var(--purple-deep); margin: 0 0 4px 0; font-size: 24px; }
+.user-info p { color: var(--gray); margin: 0; font-size: 14px; }
+.user-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; margin-top: 24px; }
+.user-stat-item { background: var(--gray-light); padding: 16px; border-radius: 12px; text-align: center; }
+.user-stat-item .num { font-size: 28px; font-weight: 800; color: var(--purple-deep); }
+.user-stat-item .label { color: var(--gray); font-size: 12px; margin-top: 4px; }
+.quick-actions { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-top: 24px; }
+.quick-action { padding: 16px; border: 1px solid #E5E7EB; border-radius: 12px; text-align: center; text-decoration: none; color: var(--dark-gray); transition: all 0.2s; }
+.quick-action:hover { border-color: var(--purple-deep); transform: translateY(-2px); }
+.quick-action .icon { font-size: 28px; margin-bottom: 4px; }
+.not-logged-in { text-align: center; padding: 60px 24px; color: white; }
+</style>
+</head>
+<body>
+
+<!-- 顶部状态条 -->
+<div id="top-status-bar" style="background: rgba(0,0,0,0.2); padding: 8px 32px; text-align: center; font-size: 13px; color: rgba(255,255,255,0.9);">
+  <span id="status-text">💎 未登录</span>
+  <a href="membership.html" style="color: #FCD34D; text-decoration: none; margin-left: 12px; font-weight: 600;">👤 登录 / 注册</a>
+</div>
+
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <div class="logo-dot">M</div>
+      <span>MaxKB · FDE 教学</span>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">首页</a>
+      <a href="user.html" class="active">个人中心</a>
+      <a href="membership.html">会员订阅</a>
+    </div>
+  </div>
+</nav>
+
+<!-- 未登录提示 -->
+<div id="not-logged-in-panel" class="not-logged-in" style="display:none;">
+  <div style="font-size: 64px; margin-bottom: 16px;">🔐</div>
+  <h2>请先登录</h2>
+  <p style="color: rgba(255,255,255,0.7); margin-bottom: 24px;">查看个人会员信息，请先登录或注册。</p>
+  <a href="membership.html" class="btn btn-primary">立即登录 / 注册</a>
+</div>
+
+<!-- 个人中心主面板 -->
+<div id="user-panel" class="user-panel" style="display:none;">
+  <h2 style="color: white; margin-bottom: 8px;">👤 个人中心</h2>
+  <p style="color: rgba(255,255,255,0.7); margin-bottom: 32px;">查看您的会员状态、有效期与已获取资源。</p>
+
+  <div class="user-card">
+    <div class="user-header">
+      <div class="user-avatar" id="user-avatar-icon">🎓</div>
+      <div class="user-info">
+        <h2 id="user-email-display">user@example.com</h2>
+        <p>
+          当前套餐：
+          <span id="user-plan-badge" class="admin-badge" style="font-size: 14px; padding: 6px 14px;">体验会员</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="user-stats">
+      <div class="user-stat-item">
+        <div class="num" id="stat-joined">-</div>
+        <div class="label">注册日期</div>
+      </div>
+      <div class="user-stat-item">
+        <div class="num" id="stat-expires">-</div>
+        <div class="label">到期日期</div>
+      </div>
+      <div class="user-stat-item">
+        <div class="num" id="stat-remaining">-</div>
+        <div class="label">剩余天数</div>
+      </div>
+      <div class="user-stat-item">
+        <div class="num" id="stat-downloads">0</div>
+        <div class="label">累计下载</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 快捷操作 -->
+  <h3 style="color: white; margin-bottom: 16px;">🚀 快捷操作</h3>
+  <div class="quick-actions">
+    <a href="index.html#download" class="quick-action" style="background: white;">
+      <div class="icon">📦</div>
+      <div>下载资源</div>
+    </a>
+    <a href="membership.html" class="quick-action" style="background: white;">
+      <div class="icon">⚡</div>
+      <div>升级会员</div>
+    </a>
+    <a href="index.html#scenarios" class="quick-action" style="background: white;">
+      <div class="icon">🏢</div>
+      <div>查看场景</div>
+    </a>
+    <a href="index.html#contact" class="quick-action" style="background: white;">
+      <div class="icon">💌</div>
+      <div>联系小陶</div>
+    </a>
+  </div>
+
+  <!-- 我的会员特权 -->
+  <h3 style="color: white; margin: 40px 0 16px 0;">💎 我的会员特权</h3>
+  <div class="user-card" id="benefits-list">
+    <!-- 动态渲染 -->
+  </div>
+</div>
+
+<script src="assets/js/membership.js"></script>
+<script>
+// ============ 渲染个人中心 ============
+function renderUserPanel() {
+  const user = MembershipStore.getCurrent();
+  const notLoggedInPanel = document.getElementById('not-logged-in-panel');
+  const userPanel = document.getElementById('user-panel');
+
+  if (!user) {
+    notLoggedInPanel.style.display = 'block';
+    userPanel.style.display = 'none';
+    return;
+  }
+
+  notLoggedInPanel.style.display = 'none';
+  userPanel.style.display = 'block';
+
+  const plan = MembershipStore.getPlan();
+  const joinedDate = new Date(user.joinedAt);
+  const expiresDate = new Date(joinedDate);
+  expiresDate.setFullYear(expiresDate.getFullYear() + 1);
+  const remainingDays = Math.max(0, Math.ceil((expiresDate - new Date()) / (1000 * 60 * 60 * 24)));
+
+  document.getElementById('user-email-display').textContent = user.email;
+  document.getElementById('user-avatar-icon').textContent = plan?.icon || '🎓';
+  document.getElementById('user-avatar-icon').style.background = plan?.color || '#94A3B8';
+  document.getElementById('user-avatar-icon').style.color = 'white';
+
+  const badge = document.getElementById('user-plan-badge');
+  badge.textContent = plan?.name || '体验会员';
+  badge.style.background = plan?.color || '#94A3B8';
+  badge.style.color = 'white';
+
+  document.getElementById('stat-joined').textContent = joinedDate.toLocaleDateString('zh-CN');
+  document.getElementById('stat-expires').textContent = expiresDate.toLocaleDateString('zh-CN');
+  document.getElementById('stat-remaining').textContent = remainingDays + ' 天';
+
+  // 累计下载（localStorage 模拟）
+  const downloads = parseInt(localStorage.getItem('maxkb_downloads') || '0');
+  document.getElementById('stat-downloads').textContent = downloads;
+
+  // 渲染会员特权
+  const benefitsList = document.getElementById('benefits-list');
+  if (plan) {
+    benefitsList.innerHTML = `
+      <h4 style="color: ${plan.color}; margin-bottom: 16px;">${plan.icon} ${plan.name} · 已开通权益</h4>
+      <ul style="list-style: none; padding: 0; margin: 0;">
+        ${plan.features.map(f => `
+          <li style="padding: 10px 0; border-bottom: 1px solid #F3F4F6; display: flex; align-items: center; gap: 10px;">
+            <span style="color: ${f.ok ? '#34D399' : '#CBD5E1'}; font-size: 18px; font-weight: bold;">${f.ok ? '✓' : '×'}</span>
+            <span style="color: ${f.ok ? 'var(--dark-gray)' : '#CBD5E1'}; ${f.ok ? '' : 'text-decoration: line-through;'}">${f.text}</span>
+          </li>
+        `).join('')}
+      </ul>
+    `;
+  }
+}
+
+// ============ 顶部状态条 ============
+function updateTopStatusBar() {
+  const bar = document.getElementById('top-status-bar');
+  const plan = MembershipStore.getPlan();
+  const user = MembershipStore.getCurrent();
+  if (!plan || !user) return;
+  bar.style.background = plan.id === 'flagship' ? 'linear-gradient(90deg, #5B2EBF, #8B5CF6)' :
+                          plan.id === 'standard' ? 'linear-gradient(90deg, #3B82F6, #60A5FA)' :
+                          'rgba(0,0,0,0.2)';
+  bar.innerHTML = `
+    <span style="font-weight:600;">${plan.icon} 您是【${plan.name}】 · ${user.email}</span>
+    <a href="membership.html" style="color: #FCD34D; text-decoration: none; margin-left: 12px; font-weight: 600;">⚙️ 管理会员</a>
+    <a href="#" id="top-logout" style="color: rgba(255,255,255,0.7); text-decoration: none; margin-left: 12px; font-size: 12px;">退出</a>
+  `;
+  document.getElementById('top-logout').addEventListener('click', (e) => {
+    e.preventDefault();
+    if (confirm('确认退出？')) { MembershipStore.logout(); location.reload(); }
+  });
+}
+
+// ============ 初始化 ============
+document.addEventListener('DOMContentLoaded', () => {
+  updateTopStatusBar();
+  renderUserPanel();
+  console.log('✅ 个人中心已就绪 · 2026-07-23');
+});
+</script>
+</body>
+</html>
