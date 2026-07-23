@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>会员订阅 · MaxKB FDE 教学</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- 顶部导航 -->
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <div class="logo-dot">M</div>
+      <span>MaxKB · FDE 教学</span>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">首页</a>
+      <a href="membership.html" class="active">会员订阅</a>
+      <a href="#" id="nav-user-area">登录 / 注册</a>
+    </div>
+  </div>
+</nav>
+
+<!-- 用户信息条 -->
+<section id="user-bar" style="max-width:100%; padding: 16px 32px; background: rgba(255,255,255,0.05); display:none;">
+  <div style="max-width:1280px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; color: white;">
+    <div>
+      <span style="font-size: 14px;">👤 当前会员：</span>
+      <span id="user-email" style="font-weight:600;"></span>
+      <span id="user-plan-badge" style="margin-left: 12px; padding: 2px 10px; border-radius: 12px; font-size: 12px;"></span>
+    </div>
+    <button id="logout-btn" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white; padding: 6px 14px; border-radius: 6px; cursor: pointer;">退出登录</button>
+  </div>
+</section>
+
+<!-- 会员等级展示 -->
+<section style="padding: 60px 32px;">
+  <div style="max-width:1280px; margin:0 auto;">
+    <div class="section-tag">💎 会员订阅</div>
+    <h2 class="section-title">选择适合您的 <span class="highlight">学习方案</span></h2>
+    <p class="section-subtitle">从免费体验到旗舰会员，3 档套餐满足不同学习需求。所有会员订单通过微信扫码支付。</p>
+
+    <div id="plans-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-top: 40px;"></div>
+  </div>
+</section>
+
+<!-- 支付说明 -->
+<section style="background: white; max-width:100%; padding: 60px 32px;">
+  <div style="max-width:980px; margin:0 auto; text-align:center;">
+    <h3 style="color: var(--purple-deep); margin-bottom: 16px;">💳 微信扫码支付流程</h3>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; text-align:left;">
+      <div style="padding: 24px; border-radius: 12px; background: var(--gray-light);">
+        <div style="font-size: 36px; margin-bottom: 12px;">1️⃣</div>
+        <h4 style="color: var(--purple-deep); margin-bottom: 8px;">选择套餐</h4>
+        <p style="color: var(--gray); font-size: 14px;">选择标准会员 ¥99/年 或 旗舰会员 ¥299/年，点击「立即升级」</p>
+      </div>
+      <div style="padding: 24px; border-radius: 12px; background: var(--gray-light);">
+        <div style="font-size: 36px; margin-bottom: 12px;">2️⃣</div>
+        <h4 style="color: var(--purple-deep); margin-bottom: 8px;">扫码支付</h4>
+        <p style="color: var(--gray); font-size: 14px;">扫描小陶老师微信收款码，备注您的注册邮箱</p>
+      </div>
+      <div style="padding: 24px; border-radius: 12px; background: var(--gray-light);">
+        <div style="font-size: 36px; margin-bottom: 12px;">3️⃣</div>
+        <h4 style="color: var(--purple-deep); margin-bottom: 8px;">人工开通</h4>
+        <p style="color: var(--gray); font-size: 14px;">24 小时内小陶老师主动联系并开通权限（邮箱留言 → 升级会员）</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 二维码区 -->
+<section style="padding: 60px 32px;">
+  <div style="max-width:680px; margin:0 auto; text-align:center;">
+    <h3 style="color: white; margin-bottom: 24px;">📱 微信收款码</h3>
+    <div style="background: white; padding: 32px; border-radius: 16px; display:inline-block; box-shadow: 0 8px 32px rgba(91,46,191,0.2);">
+      <img src="assets/images/payment-qr.png" alt="微信收款码" style="width:280px; height:280px; display:block; margin-bottom: 16px;" onerror="this.outerHTML='<div style=&quot;width:280px;height:280px;background:#F3F4F6;display:flex;align-items:center;justify-content:center;border-radius:8px;color:#6B7280;text-align:center;padding:20px;&quot;>⚠️ 请联系小陶老师获取<br>微信收款码<br><br>📧 2949465671@qq.com</div>'">
+      <p style="color: var(--gray); font-size: 13px;">请扫描上方二维码付款<br>备注：<strong>注册邮箱</strong>，小陶老师 24 小时内开通</p>
+    </div>
+  </div>
+</section>
+
+<!-- 登录/注册模态框 -->
+<div id="auth-modal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.6); z-index: 100; align-items:center; justify-content:center;">
+  <div style="background: white; max-width:420px; width:90%; border-radius: 16px; padding: 36px;">
+    <h3 style="color: var(--purple-deep); margin-bottom: 8px; text-align:center;">📚 会员中心</h3>
+    <p style="color: var(--gray); font-size: 13px; margin-bottom: 24px; text-align:center;">使用邮箱注册或登录</p>
+    <form id="auth-form">
+      <div style="margin-bottom: 16px;">
+        <label style="display:block; font-size:13px; color: var(--gray); margin-bottom:6px;">邮箱</label>
+        <input type="email" id="auth-email" required style="width:100%; padding:10px 14px; border:1px solid #E5E7EB; border-radius:8px; font-size:14px;">
+      </div>
+      <div style="margin-bottom: 20px;">
+        <label style="display:block; font-size:13px; color: var(--gray); margin-bottom:6px;">密码</label>
+        <input type="password" id="auth-password" required style="width:100%; padding:10px 14px; border:1px solid #E5E7EB; border-radius:8px; font-size:14px;">
+      </div>
+      <button type="submit" style="width:100%; padding:12px; background: var(--purple-deep); color:white; border:none; border-radius:8px; font-weight:600; cursor:pointer; font-size: 15px;">登录 / 注册</button>
+      <p id="auth-error" style="color:#EF4444; font-size:13px; margin-top: 12px; text-align:center;"></p>
+    </form>
+    <button onclick="document.getElementById('auth-modal').style.display='none'" style="width:100%; padding:8px; background: transparent; color: var(--gray); border:none; margin-top: 12px; cursor:pointer; font-size: 13px;">关闭</button>
+  </div>
+</div>
+
+<!-- 开通申请模态框 -->
+<div id="upgrade-modal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.6); z-index: 100; align-items:center; justify-content:center;">
+  <div style="background: white; max-width:480px; width:90%; border-radius: 16px; padding: 36px;">
+    <h3 id="upgrade-title" style="color: var(--purple-deep); margin-bottom: 16px;">🚀 申请开通</h3>
+    <p id="upgrade-desc" style="color: var(--gray); font-size: 14px; margin-bottom: 20px;"></p>
+    <ol style="padding-left: 20px; color: var(--dark-gray); font-size: 13px; line-height: 1.8;">
+      <li>扫描下方微信收款码，付款相应金额</li>
+      <li>转账时备注您的<strong>注册邮箱</strong></li>
+      <li>支付完成后，<strong>同步给网站发一条留言</strong>（用您注册时的邮箱发到表单）</li>
+      <li>小陶老师 24 小时内会主动联系您开通权限</li>
+    </ol>
+    <button onclick="document.getElementById('upgrade-modal').style.display='none'" style="width:100%; padding:10px; background: var(--purple-deep); color:white; border:none; border-radius:8px; margin-top: 20px; cursor:pointer;">我知道了</button>
+  </div>
+</div>
+
+<script src="assets/js/membership.js"></script>
+<script>
+// ============ 渲染会员等级 ============
+function renderPlans() {
+  const grid = document.getElementById('plans-grid');
+  grid.innerHTML = MEMBERSHIP_PLANS.map(plan => `
+    <div class="plan-card ${plan.highlight ? 'plan-card-highlight' : ''}" style="background:white; border-radius: 16px; padding: 32px; position:relative; box-shadow: 0 4px 12px rgba(0,0,0,0.06); transition: all 0.3s;">
+      ${plan.badge ? `<div style="position:absolute; top:-12px; right: 24px; background: ${plan.color}; color:white; padding:4px 14px; border-radius: 12px; font-size: 12px; font-weight: 600;">${plan.badge}</div>` : ''}
+      <div style="font-size: 48px; margin-bottom: 8px;">${plan.icon}</div>
+      <h3 style="color: ${plan.color}; font-size: 24px; margin-bottom: 8px;">${plan.name}</h3>
+      <p style="color: var(--gray); font-size: 14px; margin-bottom: 20px; min-height: 40px;">${plan.description}</p>
+      <div style="margin-bottom: 24px;">
+        <span style="font-size: 36px; font-weight: 800; color: ${plan.color};">${plan.price === 0 ? '免费' : '¥' + plan.price}</span>
+        <span style="color: var(--gray); font-size: 14px; margin-left: 4px;">${plan.period}</span>
+      </div>
+      <ul style="list-style:none; padding:0; margin-bottom: 28px;">
+        ${plan.features.map(f => `
+          <li style="padding: 8px 0; color: ${f.ok ? 'var(--dark-gray)' : '#CBD5E1'}; font-size: 13px; display: flex; align-items: flex-start; gap: 8px;">
+            <span style="color: ${f.ok ? '#34D399' : '#CBD5E1'}; font-weight:bold;">${f.ok ? '✓' : '×'}</span>
+            <span style="text-decoration: ${f.ok ? 'none' : 'line-through'};">${f.text}</span>
+          </li>
+        `).join('')}
+      </ul>
+      <button onclick="selectPlan('${plan.id}')" class="plan-cta" data-plan="${plan.id}" style="width:100%; padding:14px; border:none; border-radius:10px; font-weight:600; cursor:pointer; font-size:15px; background:${plan.price === 0 ? 'var(--gray-light)' : plan.color}; color:${plan.price === 0 ? 'var(--dark-gray)' : 'white'};">${plan.cta}</button>
+    </div>
+  `).join('');
+}
+
+// ============ 选择套餐 ============
+function selectPlan(planId) {
+  const plan = MEMBERSHIP_PLANS.find(p => p.id === planId);
+  if (!plan) return;
+  const isLoggedIn = MembershipStore.isLoggedIn();
+  const current = MembershipStore.getCurrent();
+
+  if (planId === 'free') {
+    if (isLoggedIn) {
+      alert('您已经是体验会员了！');
+      return;
+    }
+    document.getElementById('auth-modal').style.display = 'flex';
+  } else if (!isLoggedIn) {
+    // 未登录 → 引导注册
+    sessionStorage.setItem('pending_plan', planId);
+    document.getElementById('auth-modal').style.display = 'flex';
+  } else {
+    // 已登录 → 显示开通说明
+    document.getElementById('upgrade-title').textContent = `🚀 升级到 ${plan.name}`;
+    document.getElementById('upgrade-desc').textContent = `您当前是「${MembershipStore.getPlan()?.name || '体验'}」，升级到「${plan.name}」享 ¥${plan.price}/年 权益。`;
+    document.getElementById('upgrade-modal').style.display = 'flex';
+  }
+}
+
+// ============ 登录/注册 ============
+document.getElementById('auth-form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  const email = document.getElementById('auth-email').value.trim();
+  const password = document.getElementById('auth-password').value.trim();
+  if (!email || !password) return;
+
+  MembershipStore.login(email, password, 'free');
+  document.getElementById('auth-modal').style.display = 'none';
+  updateUserBar();
+
+  // 检查是否有待开通的套餐
+  const pending = sessionStorage.getItem('pending_plan');
+  if (pending) {
+    sessionStorage.removeItem('pending_plan');
+    selectPlan(pending);
+  } else {
+    alert('✅ 注册成功！欢迎加入 MaxKB FDE 教学会员中心');
+  }
+});
+
+// ============ 用户条 ============
+function updateUserBar() {
+  const user = MembershipStore.getCurrent();
+  const plan = MembershipStore.getPlan();
+  const userBar = document.getElementById('user-bar');
+  const userEmail = document.getElementById('user-email');
+  const userBadge = document.getElementById('user-plan-badge');
+  const navArea = document.getElementById('nav-user-area');
+
+  if (user && plan) {
+    userBar.style.display = 'block';
+    userEmail.textContent = user.email;
+    userBadge.textContent = plan.name;
+    userBadge.style.background = plan.color;
+    userBadge.style.color = 'white';
+    navArea.textContent = `${user.email.split('@')[0]} ⚙️`;
+  } else {
+    userBar.style.display = 'none';
+    navArea.textContent = '登录 / 注册';
+  }
+}
+
+// ============ 退出 ============
+document.getElementById('logout-btn').addEventListener('click', () => {
+  MembershipStore.logout();
+  updateUserBar();
+  alert('已退出登录');
+});
+
+// ============ 初始化 ============
+document.addEventListener('DOMContentLoaded', () => {
+  renderPlans();
+  updateUserBar();
+  console.log('✅ 会员中心已就绪 · 2026-07-23');
+});
+</script>
+</body>
+</html>
