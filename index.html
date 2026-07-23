@@ -294,67 +294,43 @@ model_name: deepseek-chat</div>
   <div class="contact-grid">
     <div class="contact-form">
       <h3>💌 加入实战营</h3>
-
-      <!-- 面向未邀请用户：提示课程邀测状态 -->
-      <div id="invite-gate">
-        <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 12px; margin-bottom: 20px; text-align: center;">
-          <div style="font-size: 36px; margin-bottom: 12px;">🎓</div>
-          <h4 style="margin-bottom: 8px; color: white;">面向受邀学习者内部测试</h4>
-          <p style="color: rgba(255,255,255,0.85); font-size: 13px; line-height: 1.6; margin-bottom: 16px;">
-            本表单目前处于<strong style="color:#FCD34D;">受邀测试阶段</strong>。<br>
-            若您已收到邀请码，请输入后解锁表单，正式学习者通道预计 2026 年 8 月开启。
-          </p>
-          <div class="form-group" style="margin-bottom: 12px;">
-            <input type="text" id="invite-code-input" placeholder="例如：maxkb2026" autocomplete="off">
-          </div>
-          <button id="invite-submit" class="btn btn-primary" style="width:100%; justify-content:center; padding: 12px;">
-            🔓 解锁测试表单
-          </button>
-          <p id="invite-status" style="margin-top: 12px; font-size: 13px; min-height: 20px;"></p>
+      <p style="color: rgba(255,255,255,0.85); margin-bottom: 24px; font-size: 14px;">
+        留下您的信息，我们会在 24 小时内主动联系您，并邀请加入「MaxKB FDE 实战营」微信群。所有留言都会通过小陶老师邮箱接收。
+      </p>
+      <!-- Formspree 表单 · 提交后自动转发到小陶老师邮箱 -->
+      <form id="contact-form" action="https://formspree.io/f/mgoglgzr" method="POST">
+        <div class="form-group">
+          <label>姓名 *</label>
+          <input type="text" name="name" placeholder="请输入您的姓名" required>
         </div>
-      </div>
-
-      <!-- 受邀用户看到的正式表单（默认隐藏） -->
-      <div id="invite-form" style="display: none;">
-        <p style="color: rgba(255,255,255,0.7); margin-bottom: 24px; font-size: 14px;">
-          ✅ 欢迎加入实战营！请填写您的信息，我们会主动联系您，并邀请加入「MaxKB FDE 实战营」微信群。
-        </p>
-        <!-- Formspree 表单 · 提交后自动转发到小陶老师邮箱 -->
-        <form id="contact-form" action="https://formspree.io/f/mgoglgzr" method="POST">
-          <div class="form-group">
-            <label>姓名 *</label>
-            <input type="text" name="name" placeholder="请输入您的姓名" required>
-          </div>
-          <div class="form-group">
-            <label>身份</label>
-            <select name="role">
-              <option value="student">学生</option>
-              <option value="teacher">同行教师</option>
-              <option value="enterprise">企业项目</option>
-              <option value="other">其他</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>微信 / 邮箱 *</label>
-            <input type="email" name="email" placeholder="微信号或邮箱" required>
-          </div>
-          <div class="form-group">
-            <label>您希望深入了解？</label>
-            <textarea name="message" placeholder="例如：想 1 周搭出可演示项目 / 想落地到课程 / 想交付企业项目..."></textarea>
-          </div>
-          <!-- Formspree 反垃圾：蜜罐字段 + 提交后跳转 -->
-          <input type="text" name="_gotcha" style="display:none">
-          <input type="hidden" name="_subject" value="MaxKB FDE 教学网站 · 新留言">
-          <!-- 所有留言同时发到小陶老师邮箱 -->
-          <input type="hidden" name="_replyto" value="2949465671@qq.com">
-          <input type="hidden" name="_cc" value="2949465671@qq.com">
-          <!-- 防跨站重定向 SPA 友好 -->
-          <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
-            🚀 提交咨询
-          </button>
-          <p id="form-status" style="margin-top:16px; text-align:center; font-size:13px; min-height:20px;"></p>
-        </form>
-      </div>
+        <div class="form-group">
+          <label>身份</label>
+          <select name="role">
+            <option value="student">学生</option>
+            <option value="teacher">同行教师</option>
+            <option value="enterprise">企业项目</option>
+            <option value="other">其他</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>微信 / 邮箱 *</label>
+          <input type="email" name="email" placeholder="微信号或邮箱" required>
+        </div>
+        <div class="form-group">
+          <label>您希望深入了解？</label>
+          <textarea name="message" placeholder="例如：想 1 周搭出可演示项目 / 想落地到课程 / 想交付企业项目..."></textarea>
+        </div>
+        <!-- Formspree 反垃圾：蜜罐字段 + 提交后跳转 -->
+        <input type="text" name="_gotcha" style="display:none">
+        <input type="hidden" name="_subject" value="MaxKB FDE 教学网站 · 新留言">
+        <!-- 所有留言同时发到小陶老师邮箱 -->
+        <input type="hidden" name="_replyto" value="2949465671@qq.com">
+        <input type="hidden" name="_cc" value="2949465671@qq.com">
+        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
+          🚀 提交咨询
+        </button>
+        <p id="form-status" style="margin-top:16px; text-align:center; font-size:13px; min-height:20px;"></p>
+      </form>
     </div>
     <div class="contact-info">
       <h3>📚 关于本课程</h3>
