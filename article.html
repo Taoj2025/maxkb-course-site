@@ -201,6 +201,60 @@
         📡 正在加载文章…
       </div>
     </div>
+    <!-- Giscus 评论组件 -->
+    <section id="comments" style="max-width: 900px; margin: 40px auto 60px; padding: 0 60px;">
+      <h3 style="color: var(--purple-deep, #5B2EBF); margin-bottom: 24px; font-size: 22px;">💬 评论区</h3>
+      <div style="background: white; border-radius: 16px; padding: 32px; box-shadow: 0 4px 20px rgba(91, 46, 191, 0.08);">
+
+        <!-- Giscus 容器（动态注入） -->
+        <div id="giscus-container">
+          <p style="text-align: center; color: var(--gray, #6B7280); padding: 40px 20px;">
+            🔌 评论加载中…（使用 GitHub 账号登录评论）
+          </p>
+        </div>
+
+        <script>
+          // Giscus 动态注入
+          (function() {
+            const slug = new URLSearchParams(window.location.search).get('slug') || 'default';
+            const container = document.getElementById('giscus-container');
+
+            const script = document.createElement('script');
+            script.src = 'https://giscus.app/client.js';
+            script.setAttribute('data-repo', 'Taoj2025/maxkb-course-site');
+            script.setAttribute('data-repo-id', 'R_PLACEHOLDER_REPO_ID');  // 您配置后告诉我
+            script.setAttribute('data-category', 'General');
+            script.setAttribute('data-category-id', 'DIC_PLACEHOLDER_CATEGORY_ID');  // 您配置后告诉我
+            script.setAttribute('data-mapping', 'specific');
+            script.setAttribute('data-term', slug);
+            script.setAttribute('data-strict', '1');
+            script.setAttribute('data-reactions-enabled', '1');
+            script.setAttribute('data-emit-metadata', '0');
+            script.setAttribute('data-input-position', 'bottom');
+            script.setAttribute('data-theme', 'light');
+            script.setAttribute('data-lang', 'zh-CN');
+            script.setAttribute('crossorigin', 'anonymous');
+            script.async = true;
+
+            // 检测 Giscus 是否配置（repo-id 是否为占位符）
+            if (script.getAttribute('data-repo-id').includes('PLACEHOLDER')) {
+              container.innerHTML = `
+                <div style="text-align: center; padding: 40px 20px; background: #FFF8E1; border-radius: 8px;">
+                  <p style="color: #B45309; margin-bottom: 12px;">⏳ Giscus 评论组件待配置</p>
+                  <p style="color: var(--gray, #6B7280); font-size: 14px;">
+                    需要完成 GitHub Discussions 开启 + Giscus app 配置<br>
+                    （详见 GISCUS-SETUP.md）
+                  </p>
+                </div>
+              `;
+            } else {
+              container.innerHTML = '';  // 清空占位
+              container.appendChild(script);
+            }
+          })();
+        </script>
+      </div>
+    </section>
   </article>
 
   <!-- 页脚（与其他页面一致） -->
