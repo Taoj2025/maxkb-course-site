@@ -1,0 +1,82 @@
+[
+  {
+    "id": 13304,
+    "slug": "13304-student-projects",
+    "title": "学员项目展示与点评",
+    "date": "2026-07-24",
+    "tags": ["学员作品"],
+    "summary": "SKC4073 / SKC7423 / SKC7773 三门课程 · 5 位同学优秀作品 · 教师点评",
+    "category": "学员作品",
+    "color": "warning-yellow"
+  },
+  {
+    "id": 13303,
+    "slug": "13303-teacher-course-prep",
+    "title": "教师如何用 MaxKB 备课",
+    "date": "2026-07-24",
+    "tags": ["教师专属"],
+    "summary": "教师专属场景 · 5 步备课法 · 学科知识库构建 · 学生答疑机器人",
+    "category": "教师专属",
+    "color": "success-green"
+  },
+  {
+    "id": 13302,
+    "slug": "13302-agent-workflow",
+    "title": "Agent 工作流设计实战案例",
+    "date": "2026-07-24",
+    "tags": ["Agent"],
+    "summary": "单 Agent / 多 Agent / 工具调用 / 任务分解 4 大模式 + 完整代码",
+    "category": "Agent",
+    "color": "blue"
+  },
+  {
+    "id": 13301,
+    "slug": "13301-knowledge-base",
+    "title": "企业知识库构建 4 大要点",
+    "date": "2026-07-24",
+    "tags": ["知识库"],
+    "summary": "文档切片策略 / 向量化模型选择 / 检索优化 / 持续运营 4 大关键",
+    "category": "知识库",
+    "color": "purple"
+  },
+  {
+    "id": 13300,
+    "slug": "13300-deployment",
+    "title": "MaxKB 安装部署完整指南",
+    "date": "2026-07-24",
+    "tags": ["部署指南"],
+    "summary": "从 0 到 1 全流程 · 4 种部署方式 · 30 分钟跑通企业级 AI 平台",
+    "category": "部署指南",
+    "color": "orange"
+  },
+  {
+    "id": 13299,
+    "slug": "13299-faq",
+    "title": "MaxKB FDE 课程学员常见问题 FAQ",
+    "date": "2026-07-23",
+    "tags": ["学员FAQ"],
+    "summary": "10 个高频问题 · 课程难度 / 学习路径 / 资料获取 / 实战项目 / 就业方向",
+    "category": "学员FAQ",
+    "color": "success-green"
+  },
+  {
+    "id": 13298,
+    "slug": "13298-scenarios",
+    "title": "5 大 MaxKB 应用场景实战 ROI 案例",
+    "date": "2026-07-23",
+    "tags": ["实战案例", "ROI"],
+    "summary": "高校客服 ROI 1:8 · 教师备课 1:6 · 文献精读 1:15 · 企业知识库 1:12 · 医院导诊 1:10",
+    "category": "实战案例",
+    "color": "blue"
+  },
+  {
+    "id": 13297,
+    "slug": "13297-course-intro",
+    "title": "MaxKB FDE 教学课程介绍",
+    "date": "2026-07-23",
+    "tags": ["课程介绍", "MaxKB"],
+    "summary": "基于开源 MaxKB（1Panel-dev）的企业级智能体平台教学，60 页 PPT + 8 章讲义 + 500+ 行源码",
+    "category": "课程介绍",
+    "color": "purple"
+  }
+]
