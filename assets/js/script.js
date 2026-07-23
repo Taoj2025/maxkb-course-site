@@ -1,6 +1,49 @@
 // ============ MaxKB FDE 教学网站 · 交互脚本 ============
 // 作者：小 Q 为小陶老师定制 · 2026-07-23
 
+// ============ 0. 邀请码验证（受邀测试模式）============
+const INVITE_CODE = 'maxkb2026';
+function initInviteGate() {
+  const gate = document.getElementById('invite-gate');
+  const form = document.getElementById('invite-form');
+  const input = document.getElementById('invite-code-input');
+  const submit = document.getElementById('invite-submit');
+  const status = document.getElementById('invite-status');
+  if (!gate || !form) return;
+
+  // 已解锁过？直接跳过闸门
+  const unlocked = localStorage.getItem('maxkb_invite') === '1';
+  if (unlocked) {
+    gate.style.display = 'none';
+    form.style.display = 'block';
+    return;
+  }
+
+  submit.addEventListener('click', () => {
+    const code = (input.value || '').trim().toLowerCase();
+    if (code === INVITE_CODE) {
+      status.style.color = '#34D399';
+      status.textContent = '✅ 邀请码正确！解锁中...';
+      localStorage.setItem('maxkb_invite', '1');
+      setTimeout(() => {
+        gate.style.display = 'none';
+        form.style.display = 'block';
+      }, 600);
+    } else {
+      status.style.color = '#FCA5A5';
+      status.textContent = '❌ 邀请码不正确，请联系小陶老师获取。';
+    }
+  });
+
+  // 按 Enter 也能验证
+  input.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      submit.click();
+    }
+  });
+}
+
 // ============ 1. 渲染课程章节 ============
 function renderChapters(filter = 'all') {
   const grid = document.getElementById('chapter-grid');
@@ -113,6 +156,7 @@ function initSmoothScroll() {
 
 // ============ 初始化 ============
 document.addEventListener('DOMContentLoaded', () => {
+  initInviteGate();
   renderChapters();
   initChapterTabs();
   initNavHighlight();
