@@ -62,16 +62,39 @@ function initNavHighlight() {
   });
 }
 
-// ============ 4. 表单提交 ============
+// ============ 4. 表单提交（Formspree AJAX）============
 function initContactForm() {
   const form = document.getElementById('contact-form');
   if (!form) return;
+  const status = document.getElementById('form-status');
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const data = Object.fromEntries(new FormData(form).entries());
-    // 演示：前端 mock 提交
-    alert(`✅ 提交成功！\n\n姓名：${data.name}\n身份：${data.role}\n联系方式：${data.contact}\n\n稍后小陶老师会主动联系您！`);
-    form.reset();
+    if (status) {
+      status.style.color = 'rgba(255,255,255,0.7)';
+      status.textContent = '⏳ 正在提交...';
+    }
+    const data = new FormData(form);
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+      if (res.ok) {
+        if (status) {
+          status.style.color = '#34D399';
+          status.textContent = '✅ 提交成功！小陶老师会通过微信/邮箱主动联系您（24 小时内）。';
+        }
+        form.reset();
+      } else {
+        throw new Error('提交失败');
+      }
+    } catch (err) {
+      if (status) {
+        status.style.color = '#FCA5A5';
+        status.textContent = '❌ 提交失败，请稍后重试或直接微信联系小陶老师。';
+      }
+    }
   });
 }
 
