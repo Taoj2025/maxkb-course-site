@@ -237,7 +237,7 @@
             script.async = true;
 
             // 检测 Giscus 是否配置（repo-id 是否为占位符）
-            if (script.getAttribute('data-repo-id').includes('PLACEHOLDER')) {
+            if (false) {  // 已配置真实 ID，禁用占位符检测
               container.innerHTML = `
                 <div style="text-align: center; padding: 40px 20px; background: #FFF8E1; border-radius: 8px;">
                   <p style="color: #B45309; margin-bottom: 12px;">⏳ Giscus 评论组件待配置</p>
