@@ -132,10 +132,18 @@
 
 <script src="assets/js/membership.js"></script>
 <script>
-// ============ 管理员认证（极简版 · MVP）============
+// ============ 管理员认证（SHA-256 哈希验证）============
 const ADMIN_EMAIL = '2949465671@qq.com';
-// 简化：admin = 您本人 QQ 邮箱即视为管理员
-// （生产环境应使用密码哈希 + 后端验证）
+
+// SHA-256 哈希后的密码（明文 'Tjm2026!MaxKB'）
+const ADMIN_PASSWORD_HASH = '23767d3e9d8fe7a7bb39c3ae7fb52d429dbccd846a6eff66a30d2a6b5c53e642';
+
+async function sha256(text) {
+  const buffer = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(text));
+  return Array.from(new Uint8Array(buffer))
+    .map(b => b.toString(16).padStart(2, '0'))
+    .join('');
+}
 
 // 用户数据库（模拟 · 实际应接 Supabase）
 const UserDB = {
@@ -247,27 +255,47 @@ function upgradeUser(email, planId) {
   }
 }
 
-// ============ 登录 ============
-document.getElementById('admin-login-form').addEventListener('submit', (e) => {
+// ============ 登录（SHA-256 哈希验证）============
+document.getElementById('admin-login-form').addEventListener('submit', async (e) => {
   e.preventDefault();
   const email = document.getElementById('admin-email').value.trim();
   const password = document.getElementById('admin-password').value.trim();
+  const errEl = document.getElementById('login-error');
+  errEl.textContent = '';
 
   if (email !== ADMIN_EMAIL) {
-    document.getElementById('login-error').textContent = '❌ 仅限管理员本人登录';
-    return;
-  }
-  if (password.length < 6) {
-    document.getElementById('login-error').textContent = '❌ 密码长度至少 6 位';
+    errEl.textContent = '❌ 邮箱不是管理员邮箱';
     return;
   }
 
-  // 简化：邮箱 + 长度验证即视为通过
-  // 真实环境必须用后端验证 + 密码哈希
+  // 哈希验证
+  const hash = await sha256(password);
+  if (hash !== ADMIN_PASSWORD_HASH) {
+    errEl.textContent = '❌ 密码错误（连5 次将被锁5分钟）';
+    lockoutCheck();
+    return;
+  }
+
+  // 成功
   localStorage.setItem('admin_auth', '1');
   localStorage.setItem('admin_auth_time', new Date().toISOString());
+  sessionStorage.removeItem('admin_fail_count');
   showAdminPanel();
 });
+
+// ============ 登录锁定（防暴力破解）============
+function lockoutCheck() {
+  let count = parseInt(sessionStorage.getItem('admin_fail_count') || '0');
+  count++;
+  sessionStorage.setItem('admin_fail_count', count);
+  if (count >= 5) {
+    sessionStorage.setItem('admin_locked_until', Date.now() + 300000);
+    document.querySelector('#admin-login-form button').disabled = true;
+    setTimeout(() => {
+      document.querySelector('#admin-login-form button').disabled = false;
+    }, 300000);
+  }
+}
 
 // ============ 退出 ============
 document.getElementById('admin-logout-btn').addEventListener('click', adminLogout);
