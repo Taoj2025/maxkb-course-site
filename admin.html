@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>管理员后台 · MaxKB FDE 教学</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+.admin-panel { max-width: 1100px; margin: 0 auto; padding: 60px 24px; }
+.admin-table { width: 100%; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.06); }
+.admin-table th { background: var(--purple-deep); color: white; padding: 14px 16px; text-align: left; font-weight: 600; font-size: 14px; }
+.admin-table td { padding: 14px 16px; border-bottom: 1px solid #F3F4F6; font-size: 14px; color: var(--dark-gray); }
+.admin-table tr:last-child td { border-bottom: none; }
+.admin-table tr:hover { background: #FAFAFA; }
+.admin-badge { display: inline-block; padding: 4px 10px; border-radius: 8px; font-size: 12px; font-weight: 600; }
+.badge-free { background: #F1F5F9; color: #64748B; }
+.badge-standard { background: #EDE9FE; color: #8B5CF6; }
+.badge-flagship { background: #FEF3C7; color: #C00000; }
+.btn-admin { padding: 6px 12px; border-radius: 6px; font-size: 12px; cursor: pointer; border: none; margin-right: 4px; transition: all 0.2s; }
+.btn-up { background: var(--purple-deep); color: white; }
+.btn-up:hover { background: #7C3AED; }
+.btn-down { background: #94A3B8; color: white; }
+.btn-down:hover { background: #64748B; }
+.btn-remove { background: #EF4444; color: white; }
+.btn-remove:hover { background: #DC2626; }
+.admin-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-bottom: 32px; }
+.stat-card-admin { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); }
+.stat-card-admin .num { font-size: 32px; font-weight: 800; color: var(--purple-deep); }
+.stat-card-admin .label { color: var(--gray); font-size: 13px; margin-top: 4px; }
+.login-box { max-width: 380px; margin: 80px auto; background: white; padding: 40px; border-radius: 16px; box-shadow: 0 8px 32px rgba(91,46,191,0.15); }
+.admin-user-info { background: rgba(255,255,255,0.1); padding: 12px 20px; border-radius: 8px; color: white; font-size: 13px; margin-bottom: 24px; display: flex; justify-content: space-between; align-items: center; }
+</style>
+</head>
+<body>
+
+<!-- 顶部导航 -->
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <div class="logo-dot">A</div>
+      <span>MaxKB · 管理员后台</span>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">← 返回网站</a>
+      <a href="#" id="logout-link">退出</a>
+    </div>
+  </div>
+</nav>
+
+<!-- 登录界面（未登录时显示） -->
+<div id="login-screen">
+  <div class="login-box">
+    <h3 style="color: var(--purple-deep); margin-bottom: 8px; text-align:center;">🔐 管理员登录</h3>
+    <p style="color: var(--gray); font-size: 13px; margin-bottom: 24px; text-align:center;">仅限小陶老师本人使用</p>
+    <form id="admin-login-form">
+      <div style="margin-bottom: 16px;">
+        <label style="display:block; font-size:13px; color: var(--gray); margin-bottom:6px;">管理员邮箱</label>
+        <input type="email" id="admin-email" value="2949465671@qq.com" required style="width:100%; padding:10px 14px; border:1px solid #E5E7EB; border-radius:8px; font-size:14px;">
+      </div>
+      <div style="margin-bottom: 20px;">
+        <label style="display:block; font-size:13px; color: var(--gray); margin-bottom:6px;">管理员密码</label>
+        <input type="password" id="admin-password" placeholder="小陶老师的 QQ 邮箱密码" required style="width:100%; padding:10px 14px; border:1px solid #E5E7EB; border-radius:8px; font-size:14px;">
+      </div>
+      <button type="submit" style="width:100%; padding:12px; background: var(--purple-deep); color:white; border:none; border-radius:8px; font-weight:600; cursor:pointer; font-size: 15px;">登录后台</button>
+      <p id="login-error" style="color:#EF4444; font-size:13px; margin-top: 12px; text-align:center;"></p>
+    </form>
+  </div>
+</div>
+
+<!-- 管理后台主界面（登录后显示） -->
+<div id="admin-panel" style="display:none;">
+  <div class="admin-panel">
+    <div class="admin-user-info">
+      <span>👤 已登录：<strong id="admin-display-email">2949465671@qq.com</strong> · 您是 <span style="color: #FCD34D;">超级管理员</span></span>
+      <button id="admin-logout-btn" style="background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); color: white; padding: 6px 14px; border-radius: 6px; cursor: pointer; font-size: 12px;">退出</button>
+    </div>
+
+    <h2 style="color: white; margin-bottom: 8px;">💼 会员管理后台</h2>
+    <p style="color: rgba(255,255,255,0.7); margin-bottom: 32px;">用户支付后，您可在此一键开通 / 升级 / 降级会员。所有操作写入 localStorage，对该用户浏览器立即生效。</p>
+
+    <!-- 统计卡片 -->
+    <div class="admin-stats">
+      <div class="stat-card-admin">
+        <div class="num" id="stat-total">0</div>
+        <div class="label">注册用户总数</div>
+      </div>
+      <div class="stat-card-admin">
+        <div class="num" id="stat-standard">0</div>
+        <div class="label">标准会员</div>
+      </div>
+      <div class="stat-card-admin">
+        <div class="num" id="stat-flagship">0</div>
+        <div class="label">旗舰会员</div>
+      </div>
+      <div class="stat-card-admin">
+        <div class="num" style="color: #FCD34D;" id="stat-revenue">¥0</div>
+        <div class="label">预估收入（理论上限）</div>
+      </div>
+    </div>
+
+    <!-- 用户列表 -->
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+      <h3 style="color: white;">👥 会员列表</h3>
+      <div>
+        <button id="refresh-btn" style="background: rgba(255,255,255,0.1); color: white; border: 1px solid rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 6px; cursor: pointer; font-size: 13px;">🔄 刷新</button>
+        <button id="export-btn" style="background: var(--purple-deep); color: white; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-size: 13px; margin-left: 8px;">📥 导出 CSV</button>
+      </div>
+    </div>
+
+    <table class="admin-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>邮箱</th>
+          <th>当前套餐</th>
+          <th>注册时间</th>
+          <th>升级时间</th>
+          <th>操作</th>
+        </tr>
+      </thead>
+      <tbody id="users-tbody">
+        <tr><td colspan="6" style="text-align:center; padding: 40px; color: var(--gray);">加载中...</td></tr>
+      </tbody>
+    </table>
+
+    <p style="color: rgba(255,255,255,0.6); font-size: 12px; margin-top: 16px;">
+      💡 提示：用户注册信息保存在用户各自浏览器的 localStorage，本后台读取的是当前管理员浏览器的数据。<br>
+      实际生产建议接入 Supabase 后端统一管理用户数据库。
+    </p>
+  </div>
+</div>
+
+<script src="assets/js/membership.js"></script>
+<script>
+// ============ 管理员认证（极简版 · MVP）============
+const ADMIN_EMAIL = '2949465671@qq.com';
+// 简化：admin = 您本人 QQ 邮箱即视为管理员
+// （生产环境应使用密码哈希 + 后端验证）
+
+// 用户数据库（模拟 · 实际应接 Supabase）
+const UserDB = {
+  getAll() {
+    // 当前 demo 中只有当前管理员的记录
+    // 真实环境应该从后端拉所有注册用户
+    const users = [];
+    const adminUser = localStorage.getItem('maxkb_membership');
+    if (adminUser) {
+      users.push(JSON.parse(adminUser));
+    }
+    // 模拟一些假数据用于演示（仅本浏览器）
+    const mockUsers = localStorage.getItem('mock_users');
+    if (mockUsers) {
+      users.push(...JSON.parse(mockUsers));
+    }
+    return users;
+  },
+
+  addMock(email, planId) {
+    const mockUsers = JSON.parse(localStorage.getItem('mock_users') || '[]');
+    mockUsers.push({
+      email,
+      planId,
+      joinedAt: new Date().toISOString(),
+      upgradedAt: planId !== 'free' ? new Date().toISOString() : null,
+    });
+    localStorage.setItem('mock_users', JSON.stringify(mockUsers));
+  },
+
+  updatePlan(email, newPlanId) {
+    // 当前 demo：只能修改当前管理员账号的套餐
+    const u = MembershipStore.getCurrent();
+    if (u && u.email === email) {
+      MembershipStore.upgrade(newPlanId);
+      return true;
+    }
+    // 修改 mock 用户
+    const mockUsers = JSON.parse(localStorage.getItem('mock_users') || '[]');
+    const idx = mockUsers.findIndex(u => u.email === email);
+    if (idx >= 0) {
+      mockUsers[idx].planId = newPlanId;
+      mockUsers[idx].upgradedAt = new Date().toISOString();
+      localStorage.setItem('mock_users', JSON.stringify(mockUsers));
+      return true;
+    }
+    return false;
+  },
+
+  remove(email) {
+    const mockUsers = JSON.parse(localStorage.getItem('mock_users') || '[]');
+    const filtered = mockUsers.filter(u => u.email !== email);
+    localStorage.setItem('mock_users', JSON.stringify(filtered));
+  },
+};
+
+// ============ 渲染用户列表 ============
+function renderUsers() {
+  const users = UserDB.getAll();
+  const tbody = document.getElementById('users-tbody');
+
+  if (users.length === 0) {
+    tbody.innerHTML = '<tr><td colspan="6" style="text-align:center; padding: 40px; color: var(--gray);">📭 暂无注册用户<br><br><small>用户访问网站后填写表单/注册会员后，将在此显示</small></td></tr>';
+  } else {
+    tbody.innerHTML = users.map((u, i) => {
+      const plan = MEMBERSHIP_PLANS.find(p => p.id === u.planId);
+      const joined = new Date(u.joinedAt).toLocaleString('zh-CN');
+      const upgraded = u.upgradedAt ? new Date(u.upgradedAt).toLocaleString('zh-CN') : '-';
+      const badgeClass = `badge-${u.planId}`;
+
+      return `<tr>
+        <td>${i + 1}</td>
+        <td><strong>${u.email}</strong></td>
+        <td><span class="admin-badge ${badgeClass}">${plan?.icon || ''} ${plan?.name || u.planId}</span></td>
+        <td>${joined}</td>
+        <td>${upgraded}</td>
+        <td>
+          <button class="btn-admin btn-up" onclick="upgradeUser('${u.email}', 'standard')">升标准</button>
+          <button class="btn-admin btn-up" onclick="upgradeUser('${u.email}', 'flagship')">升旗舰</button>
+          <button class="btn-admin btn-down" onclick="upgradeUser('${u.email}', 'free')">降免费</button>
+        </td>
+      </tr>`;
+    }).join('');
+  }
+
+  // 统计
+  document.getElementById('stat-total').textContent = users.length;
+  document.getElementById('stat-standard').textContent = users.filter(u => u.planId === 'standard').length;
+  document.getElementById('stat-flagship').textContent = users.filter(u => u.planId === 'flagship').length;
+
+  // 预估收入
+  const revenue = users.reduce((sum, u) => {
+    if (u.planId === 'standard') return sum + 99;
+    if (u.planId === 'flagship') return sum + 299;
+    return sum;
+  }, 0);
+  document.getElementById('stat-revenue').textContent = '¥' + revenue;
+}
+
+// ============ 操作：升级用户 ============
+function upgradeUser(email, planId) {
+  if (!confirm(`确认将 ${email} 调整为「${planId}」套餐？`)) return;
+  const ok = UserDB.updatePlan(email, planId);
+  if (ok) {
+    alert('✅ 调整成功！该用户刷新页面后立即生效。');
+    renderUsers();
+  } else {
+    alert('❌ 操作失败');
+  }
+}
+
+// ============ 登录 ============
+document.getElementById('admin-login-form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  const email = document.getElementById('admin-email').value.trim();
+  const password = document.getElementById('admin-password').value.trim();
+
+  if (email !== ADMIN_EMAIL) {
+    document.getElementById('login-error').textContent = '❌ 仅限管理员本人登录';
+    return;
+  }
+  if (password.length < 6) {
+    document.getElementById('login-error').textContent = '❌ 密码长度至少 6 位';
+    return;
+  }
+
+  // 简化：邮箱 + 长度验证即视为通过
+  // 真实环境必须用后端验证 + 密码哈希
+  localStorage.setItem('admin_auth', '1');
+  localStorage.setItem('admin_auth_time', new Date().toISOString());
+  showAdminPanel();
+});
+
+// ============ 退出 ============
+document.getElementById('admin-logout-btn').addEventListener('click', adminLogout);
+document.getElementById('logout-link').addEventListener('click', (e) => { e.preventDefault(); adminLogout(); });
+
+function adminLogout() {
+  if (!confirm('确认退出后台？')) return;
+  localStorage.removeItem('admin_auth');
+  location.reload();
+}
+
+// ============ 刷新 ============
+document.getElementById('refresh-btn').addEventListener('click', renderUsers);
+
+// ============ 导出 CSV ============
+document.getElementById('export-btn').addEventListener('click', () => {
+  const users = UserDB.getAll();
+  if (users.length === 0) {
+    alert('暂无用户数据');
+    return;
+  }
+  const csv = ['邮箱,套餐,注册时间,升级时间'].concat(
+    users.map(u => `${u.email},${u.planId},${u.joinedAt},${u.upgradedAt || '-'}`)
+  ).join('\n');
+
+  const blob = new Blob(['\uFEFF' + csv], { type: 'text/csv;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `maxkb会员列表_${new Date().toISOString().split('T')[0]}.csv`;
+  a.click();
+  URL.revokeObjectURL(url);
+});
+
+// ============ 显示后台 ============
+function showAdminPanel() {
+  document.getElementById('login-screen').style.display = 'none';
+  document.getElementById('admin-panel').style.display = 'block';
+}
+
+// ============ 初始化 ============
+document.addEventListener('DOMContentLoaded', () => {
+  const isAuth = localStorage.getItem('admin_auth') === '1';
+  if (isAuth) {
+    showAdminPanel();
+    renderUsers();
+  }
+});
+</script>
+</body>
+</html>
