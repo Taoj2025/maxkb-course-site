@@ -297,7 +297,8 @@ model_name: deepseek-chat</div>
       <p style="color: rgba(255,255,255,0.7); margin-bottom: 24px; font-size: 14px;">
         留下您的信息，我们会主动联系您，并邀请加入「MaxKB FDE 实战营」微信群。
       </p>
-      <form id="contact-form">
+      <!-- Formspree 表单 · 提交后自动转发到小陶老师邮箱 -->
+      <form id="contact-form" action="https://formspree.io/f/mgoglgzr" method="POST">
         <div class="form-group">
           <label>姓名 *</label>
           <input type="text" name="name" placeholder="请输入您的姓名" required>
@@ -313,15 +314,20 @@ model_name: deepseek-chat</div>
         </div>
         <div class="form-group">
           <label>微信 / 邮箱 *</label>
-          <input type="text" name="contact" placeholder="微信号或邮箱" required>
+          <input type="email" name="email" placeholder="微信号或邮箱" required>
         </div>
         <div class="form-group">
           <label>您希望深入了解？</label>
           <textarea name="message" placeholder="例如：想 1 周搭出可演示项目 / 想落地到课程 / 想交付企业项目..."></textarea>
         </div>
+        <!-- Formspree 反垃圾：蜜罐字段 + 提交后跳转 -->
+        <input type="text" name="_gotcha" style="display:none">
+        <input type="hidden" name="_subject" value="MaxKB FDE 教学网站 · 来自网站留言">
+        <!-- 防跨站重定向 SPA 友好 -->
         <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
           🚀 提交咨询
         </button>
+        <p id="form-status" style="margin-top:16px; text-align:center; font-size:13px; min-height:20px;"></p>
       </form>
     </div>
     <div class="contact-info">
