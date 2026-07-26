@@ -10,6 +10,14 @@
 https://<GitHub用户名>.github.io/maxkb-course-site/
 ```
 
+## 🔥 最新 FDE 前沿资讯（2026-07-27 新增）
+
+独立动态栏目·每日 8:00 自动抓取更新:
+- 页面地址: https://<GitHub用户名>.github.io/maxkb-course-site/latest.html
+- 数据源: 新榜 / 微博 / 知乎 / RSSHub 4 路并发抓取
+- AI 重写 + 自动审核 + 自动发布
+- 当前已收录 5 篇种子文章（AI Agent / Vercel Edge / MCP 协议 / Edge Runtime / FDE 就业）
+
 ## 📚 课程内容
 
 - **理论基座**（PART 1）：MaxKB / RAG / LangChain / Workflow / MCP / Agent
