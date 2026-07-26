@@ -1,10 +1,77 @@
 [
   {
+    "id": 13305,
+    "slug": "13305-ai-frontend-agent",
+    "title": "AI Agent 重塑前端开发：FDE 的下一个 3 年",
+    "date": "2026-07-27",
+    "tags": [
+      "FDE前沿",
+      "AI Agent"
+    ],
+    "summary": "GitHub Copilot Workspace + Cursor Composer + Vercel v0 · 三大 AI 前端 Agent 横评 · FDE 工程师能力模型重塑",
+    "category": "最新动态",
+    "color": "purple"
+  },
+  {
+    "id": 13306,
+    "slug": "13306-vercel-edge-2026",
+    "title": "Vercel 2026 边缘计算新特性：FDE 部署成本直降 80%",
+    "date": "2026-07-27",
+    "tags": [
+      "FDE前沿",
+      "Vercel"
+    ],
+    "summary": "Vercel Edge Functions + ISR 2.0 + Fluid Compute · 三件套让部署成本暴降 · 真实案例数据",
+    "category": "最新动态",
+    "color": "blue"
+  },
+  {
+    "id": 13307,
+    "slug": "13307-mcp-protocol-frontend",
+    "title": "MCP 协议在前端的落地：让 AI Agent 安全调用你的 API",
+    "date": "2026-07-27",
+    "tags": [
+      "FDE前沿",
+      "MCP"
+    ],
+    "summary": "Model Context Protocol 入门到实战 · 5 分钟给前端项目接入 MCP Server · 真实可运行代码",
+    "category": "最新动态",
+    "color": "purple"
+  },
+  {
+    "id": 13308,
+    "slug": "13308-edge-runtime-ssr-comparison",
+    "title": "Edge Runtime vs SSR vs SSG：2026 年前端渲染方案终极对决",
+    "date": "2026-07-27",
+    "tags": [
+      "FDE前沿",
+      "前端架构"
+    ],
+    "summary": "三大渲染方案性能/成本/SEO 全维度对比 · 2026 年选型决策树 · Next.js 15 + Hono 实战",
+    "category": "最新动态",
+    "color": "orange"
+  },
+  {
+    "id": 13309,
+    "slug": "13309-fde-job-market-2026",
+    "title": "2026 年 FDE 就业市场报告：AI 时代前端工程师的真实薪资",
+    "date": "2026-07-27",
+    "tags": [
+      "FDE前沿",
+      "就业市场"
+    ],
+    "summary": "BOSS 直聘 + 拉勾 + LinkedIn 三平台数据 · FDE 薪资分布 · 5 类高薪技能 · 转岗路径",
+    "category": "最新动态",
+    "color": "success-green"
+  },
+  {
     "id": 13304,
     "slug": "13304-student-projects",
     "title": "学员项目展示与点评",
     "date": "2026-07-24",
-    "tags": ["学员作品"],
+    "tags": [
+      "学员作品"
+    ],
     "summary": "SKC4073 / SKC7423 / SKC7773 三门课程 · 5 位同学优秀作品 · 教师点评",
     "category": "学员作品",
     "color": "warning-yellow"
@@ -14,7 +81,9 @@
     "slug": "13303-teacher-course-prep",
     "title": "教师如何用 MaxKB 备课",
     "date": "2026-07-24",
-    "tags": ["教师专属"],
+    "tags": [
+      "教师专属"
+    ],
     "summary": "教师专属场景 · 5 步备课法 · 学科知识库构建 · 学生答疑机器人",
     "category": "教师专属",
     "color": "success-green"
@@ -24,7 +93,9 @@
     "slug": "13302-agent-workflow",
     "title": "Agent 工作流设计实战案例",
     "date": "2026-07-24",
-    "tags": ["Agent"],
+    "tags": [
+      "Agent"
+    ],
     "summary": "单 Agent / 多 Agent / 工具调用 / 任务分解 4 大模式 + 完整代码",
     "category": "Agent",
     "color": "blue"
@@ -34,7 +105,9 @@
     "slug": "13301-knowledge-base",
     "title": "企业知识库构建 4 大要点",
     "date": "2026-07-24",
-    "tags": ["知识库"],
+    "tags": [
+      "知识库"
+    ],
     "summary": "文档切片策略 / 向量化模型选择 / 检索优化 / 持续运营 4 大关键",
     "category": "知识库",
     "color": "purple"
@@ -44,7 +117,9 @@
     "slug": "13300-deployment",
     "title": "MaxKB 安装部署完整指南",
     "date": "2026-07-24",
-    "tags": ["部署指南"],
+    "tags": [
+      "部署指南"
+    ],
     "summary": "从 0 到 1 全流程 · 4 种部署方式 · 30 分钟跑通企业级 AI 平台",
     "category": "部署指南",
     "color": "orange"
@@ -54,7 +129,9 @@
     "slug": "13299-faq",
     "title": "MaxKB FDE 课程学员常见问题 FAQ",
     "date": "2026-07-23",
-    "tags": ["学员FAQ"],
+    "tags": [
+      "学员FAQ"
+    ],
     "summary": "10 个高频问题 · 课程难度 / 学习路径 / 资料获取 / 实战项目 / 就业方向",
     "category": "学员FAQ",
     "color": "success-green"
@@ -64,7 +141,10 @@
     "slug": "13298-scenarios",
     "title": "5 大 MaxKB 应用场景实战 ROI 案例",
     "date": "2026-07-23",
-    "tags": ["实战案例", "ROI"],
+    "tags": [
+      "实战案例",
+      "ROI"
+    ],
     "summary": "高校客服 ROI 1:8 · 教师备课 1:6 · 文献精读 1:15 · 企业知识库 1:12 · 医院导诊 1:10",
     "category": "实战案例",
     "color": "blue"
@@ -74,7 +154,10 @@
     "slug": "13297-course-intro",
     "title": "MaxKB FDE 教学课程介绍",
     "date": "2026-07-23",
-    "tags": ["课程介绍", "MaxKB"],
+    "tags": [
+      "课程介绍",
+      "MaxKB"
+    ],
     "summary": "基于开源 MaxKB（1Panel-dev）的企业级智能体平台教学，60 页 PPT + 8 章讲义 + 500+ 行源码",
     "category": "课程介绍",
     "color": "purple"
