@@ -59,7 +59,7 @@
       </div>
       <div style="margin-bottom: 20px;">
         <label style="display:block; font-size:13px; color: var(--gray); margin-bottom:6px;">管理员密码</label>
-        <input type="password" id="admin-password" placeholder="小陶老师的 QQ 邮箱密码" required style="width:100%; padding:10px 14px; border:1px solid #E5E7EB; border-radius:8px; font-size:14px;">
+        <input type="password" id="admin-password" placeholder="管理员密码" required style="width:100%; padding:10px 14px; border:1px solid #E5E7EB; border-radius:8px; font-size:14px;">
       </div>
       <button type="submit" style="width:100%; padding:12px; background: var(--purple-deep); color:white; border:none; border-radius:8px; font-weight:600; cursor:pointer; font-size: 15px;">登录后台</button>
       <p id="login-error" style="color:#EF4444; font-size:13px; margin-top: 12px; text-align:center;"></p>
@@ -136,7 +136,7 @@
 const ADMIN_EMAIL = '2949465671@qq.com';
 
 
-const ADMIN_PASSWORD_HASH = '23767d3e9d8fe7a7bb39c3ae7fb52d429dbccd846a6eff66a30d2a6b5c53e642';
+const ADMIN_PASSWORD_HASH = '3b9fb0fda9600f10596ed7397204b801196a5b8f262454cd62cc88c67aebc326'; // tjmtaotao2026
 
 async function sha256(text) {
   const buffer = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(text));
