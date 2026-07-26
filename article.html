@@ -187,6 +187,107 @@
         font-size: 26px;
       }
     }
+
+    /* 错误页面 + 加载页面 + 文章样式 */
+    .article-error {
+      padding: 48px 24px;
+      text-align: center;
+      color: #EF4444;
+      font-size: 16px;
+      background: #FEF2F2;
+      border-radius: 12px;
+      border: 1px solid #FECACA;
+      margin: 24px 0;
+    }
+    .article-error a {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 10px 20px;
+      background: #5B2EBF;
+      color: white !important;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .article-error a:hover { background: #3B82F6; }
+    .article-loading {
+      padding: 60px 24px;
+      text-align: center;
+      color: #6B7280;
+      font-size: 16px;
+    }
+    .article-header h1 {
+      font-size: 32px;
+      color: #1F2937;
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+    .article-meta {
+      color: #6B7280;
+      font-size: 14px;
+      margin-bottom: 32px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #F3F4F6;
+    }
+    .article-tag {
+      display: inline-block;
+      background: #EDE9FE;
+      color: #5B2EBF;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      margin-right: 6px;
+      font-weight: 600;
+    }
+    .article-body {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #252525;
+    }
+    .article-body h2 { color: #5B2EBF; margin-top: 32px; }
+    .article-body h3 { color: #3B82F6; margin-top: 24px; }
+    .article-body pre {
+      background: #1F2937;
+      color: #F9FAFB;
+      padding: 16px;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-size: 13px;
+    }
+    .article-body code {
+      background: #F3F4F6;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: 'Fira Code', monospace;
+      font-size: 14px;
+    }
+    .article-body pre code {
+      background: transparent;
+      padding: 0;
+      color: inherit;
+    }
+    .article-body blockquote {
+      border-left: 4px solid #5B2EBF;
+      padding-left: 16px;
+      color: #4B5563;
+      font-style: italic;
+      margin: 16px 0;
+    }
+    .article-body table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+    }
+    .article-body th, .article-body td {
+      border: 1px solid #E5E7EB;
+      padding: 8px 12px;
+      text-align: left;
+    }
+    .article-body th {
+      background: #F9FAFB;
+      font-weight: 600;
+      color: #5B2EBF;
+    }
   </style>
 </head>
 <body>
@@ -359,12 +460,26 @@
           Prism.highlightAll();
         }
 
+        // 8. 调试模式：URL 加 ?debug=1 会在页面底部显示加载详情
+        if (params.get('debug') === '1') {
+          const debugInfo = document.createElement('div');
+          debugInfo.style.cssText = 'position:fixed; bottom:0; left:0; right:0; background:#1F2937; color:white; padding:12px; font-size:12px; z-index:9999; font-family:monospace;';
+          debugInfo.innerHTML = `✅ ID: ${article.id} · Slug: ${article.slug} · Title: ${article.title.substring(0, 30)} · Date: ${article.date} · Category: ${article.category || 'N/A'} · Markdown: ${md.length} bytes`;
+          document.body.appendChild(debugInfo);
+        }
+
       } catch (err) {
-        root.innerHTML = `<div class="article-error">❌ 文章加载失败：${err.message}<br><br><a href="./#news">返回教学资讯</a></div>`;
+        console.error('文章加载失败:', err);
+        root.innerHTML = `<div class="article-error">❌ 文章加载失败：${err.message}<br><small style="color:#9CA3AF;display:block;margin-top:8px;">可能是 GitHub Pages 部署未生效或网络问题，请刷新重试</small><br><a href="./latest.html">← 返回最新动态</a></div>`;
       }
     }
 
-    loadArticle();
+    // 页面加载即启动
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', loadArticle);
+    } else {
+      loadArticle();
+    }
   </script>
 
 </body>
