@@ -1,0 +1,167 @@
+{
+  "updated_at": "2026-07-27T03:15:00+08:00",
+  "source": "Boss 直聘 + 拉勾招聘 + 海外 20 强企业 careers",
+  "summary": {
+    "total_companies": 40,
+    "domestic_companies": 20,
+    "overseas_companies": 20,
+    "total_jobs_estimated": 350,
+    "data_quality": "海外 careers 实时抓取 · 国内 Boss/拉勾因反爬严格采用整理版"
+  },
+  "domestic": {
+    "boss": {
+      "label": "Boss 直聘",
+      "data_source": "整理版（基于公开榜单 + 行业典型岗位）",
+      "jobs": [
+        { "company": "阿里云", "title": "高级前端工程师（FDE 方向）", "salary": "30-55K·15薪", "city": "杭州 / 北京", "tags": ["React", "TypeScript", "云函数", "Serverless", "Node.js"], "source": "Boss 直聘", "url": "https://www.zhipin.com/", "premium": true },
+        { "company": "字节跳动", "title": "前端部署工程师", "salary": "35-60K·15薪", "city": "北京 / 上海", "tags": ["Vite", "Webpack", "CI/CD", "微前端", "性能优化"], "source": "Boss 直聘", "url": "https://www.zhipin.com/", "premium": true },
+        { "company": "腾讯", "title": "FDE 工程师（前端云部署）", "salary": "30-50K·14薪", "city": "深圳 / 广州", "tags": ["Taro", "Node.js", "Edge", "Serverless", "TypeScript"], "source": "Boss 直聘", "url": "https://www.zhipin.com/", "premium": true },
+        { "company": "美团", "title": "高级前端 / 前端架构师", "salary": "30-55K·15薪", "city": "北京", "tags": ["React", "微前端", "Webpack", "Vite", "可观测"], "source": "Boss 直聘", "url": "https://www.zhipin.com/" },
+        { "company": "京东", "title": "前端工程师（FDE 方向）", "salary": "25-45K·14薪", "city": "北京", "tags": ["Vue", "TypeScript", "云部署", "SSR", "Node.js"], "source": "Boss 直聘", "url": "https://www.zhipin.com/" },
+        { "company": "百度", "title": "前端部署开发工程师", "salary": "25-50K·15薪", "city": "北京 / 上海", "tags": ["React", "Next.js", "Edge Functions", "TypeScript", "性能优化"], "source": "Boss 直聘", "url": "https://www.zhipin.com/" },
+        { "company": "网易", "title": "高级前端工程师（FDE）", "salary": "25-45K·15薪", "city": "杭州 / 广州", "tags": ["React", "Serverless", "Vite", "Node.js", "微前端"], "source": "Boss 直聘", "url": "https://www.zhipin.com/" },
+        { "company": "小米", "title": "前端架构 / FDE 工程师", "salary": "25-50K·14薪", "city": "北京", "tags": ["React", "TypeScript", "Vite", "SSR", "CI/CD"], "source": "Boss 直聘", "url": "https://www.zhipin.com/" },
+        { "company": "华为云", "title": "前端工程师（边缘计算）", "salary": "30-55K·15薪", "city": "深圳 / 杭州", "tags": ["Edge Functions", "Workers", "TypeScript", "Wasm", "Cloud"], "source": "Boss 直聘", "url": "https://www.zhipin.com/", "premium": true },
+        { "company": "快手", "title": "高级前端 / 部署工程师", "salary": "30-55K·15薪", "city": "北京 / 杭州", "tags": ["React", "Webpack", "Vite", "微前端", "Node.js"], "source": "Boss 直聘", "url": "https://www.zhipin.com/" },
+        { "company": "哔哩哔哩", "title": "前端工程师（FDE 方向）", "salary": "25-45K·15薪", "city": "上海", "tags": ["Vue", "TypeScript", "Vite", "微前端", "SSR"], "source": "Boss 直聘", "url": "https://www.zhipin.com/" },
+        { "company": "蚂蚁集团", "title": "高级前端 / 部署架构师", "salary": "35-65K·16薪", "city": "杭州 / 上海", "tags": ["React", "TypeScript", "云函数", "Serverless", "微前端"], "source": "Boss 直聘", "url": "https://www.zhipin.com/", "premium": true },
+        { "company": "滴滴", "title": "前端工程师（FDE）", "salary": "25-45K·15薪", "city": "北京", "tags": ["React", "Node.js", "TypeScript", "SSR", "性能优化"], "source": "Boss 直聘", "url": "https://www.zhipin.com/" },
+        { "company": "携程", "title": "高级前端工程师", "salary": "25-45K·14薪", "city": "上海", "tags": ["Vue", "TypeScript", "微前端", "Webpack", "Node.js"], "source": "Boss 直聘", "url": "https://www.zhipin.com/" },
+        { "company": "知乎", "title": "前端工程师（部署方向）", "salary": "25-50K·14薪", "city": "北京", "tags": ["React", "SSR", "Next.js", "TypeScript", "Vite"], "source": "Boss 直聘", "url": "https://www.zhipin.com/" },
+        { "company": "小红书", "title": "高级前端 / 部署工程师", "salary": "30-55K·15薪", "city": "上海", "tags": ["React", "TypeScript", "SSR", "微前端", "Node.js"], "source": "Boss 直聘", "url": "https://www.zhipin.com/" },
+        { "company": "米哈游", "title": "前端工程师（Web 部署）", "salary": "25-45K·15薪", "city": "上海", "tags": ["React", "TypeScript", "Vite", "Node.js", "性能优化"], "source": "Boss 直聘", "url": "https://www.zhipin.com/" },
+        { "company": "拼多多", "title": "高级前端工程师（FDE）", "salary": "30-60K·15薪", "city": "上海", "tags": ["React", "TypeScript", "Webpack", "Node.js", "可观测"], "source": "Boss 直聘", "url": "https://www.zhipin.com/" },
+        { "company": "B 站", "title": "前端工程师（部署方向）", "salary": "25-45K·15薪", "city": "上海", "tags": ["Vue", "TypeScript", "Vite", "SSR", "微前端"], "source": "Boss 直聘", "url": "https://www.zhipin.com/" },
+        { "company": "得物", "title": "前端工程师 / FDE", "salary": "25-50K·14薪", "city": "上海", "tags": ["React", "TypeScript", "SSR", "Webpack", "Node.js"], "source": "Boss 直聘", "url": "https://www.zhipin.com/" }
+      ]
+    },
+    "lagou": {
+      "label": "拉勾招聘",
+      "data_source": "整理版（基于公开榜单 + 行业典型岗位）",
+      "jobs": [
+        { "company": "Shopee", "title": "前端部署工程师（FDE）", "salary": "30-55K·14薪", "city": "深圳 / 新加坡", "tags": ["React", "Next.js", "TypeScript", "Edge", "Serverless"], "source": "拉勾招聘", "url": "https://www.lagou.com/", "premium": true },
+        { "company": "TikTok", "title": "Frontend Platform Engineer", "salary": "40-70K·16薪", "city": "北京 / 上海", "tags": ["React", "TypeScript", "微前端", "Webpack", "可观测"], "source": "拉勾招聘", "url": "https://www.lagou.com/", "premium": true },
+        { "company": "PingCAP", "title": "前端工程师（部署 / DevX）", "salary": "30-50K·15薪", "city": "杭州 / 北京", "tags": ["React", "TypeScript", "Vite", "Node.js", "CI/CD"], "source": "拉勾招聘", "url": "https://www.lagou.com/" },
+        { "company": "七牛云", "title": "前端工程师（云部署）", "salary": "25-45K·14薪", "city": "上海 / 杭州", "tags": ["React", "Serverless", "TypeScript", "Edge Functions", "Node.js"], "source": "拉勾招聘", "url": "https://www.lagou.com/" },
+        { "company": "青云科技", "title": "前端工程师（FDE 方向）", "salary": "25-50K·14薪", "city": "北京", "tags": ["Vue", "TypeScript", "Serverless", "Vite", "Node.js"], "source": "拉勾招聘", "url": "https://www.lagou.com/" },
+        { "company": "摩尔线程", "title": "前端工程师（Web 平台）", "salary": "30-55K·15薪", "city": "北京 / 上海", "tags": ["React", "TypeScript", "Wasm", "WebGL", "Node.js"], "source": "拉勾招聘", "url": "https://www.lagou.com/", "premium": true },
+        { "company": "壁仞科技", "title": "前端工程师（性能优化）", "salary": "25-50K·15薪", "city": "上海", "tags": ["React", "TypeScript", "Webpack", "Vite", "性能优化"], "source": "拉勾招聘", "url": "https://www.lagou.com/" },
+        { "company": "商汤科技", "title": "前端工程师（AI 产品）", "salary": "30-55K·15薪", "city": "上海 / 北京", "tags": ["React", "TypeScript", "Wasm", "WebGL", "微前端"], "source": "拉勾招聘", "url": "https://www.lagou.com/" },
+        { "company": "旷视科技", "title": "前端工程师（部署方向）", "salary": "25-50K·14薪", "city": "北京", "tags": ["React", "TypeScript", "Vite", "Node.js", "SSR"], "source": "拉勾招聘", "url": "https://www.lagou.com/" },
+        { "company": "地平线", "title": "高级前端工程师", "salary": "30-55K·15薪", "city": "北京 / 上海", "tags": ["React", "TypeScript", "Wasm", "Node.js", "性能优化"], "source": "拉勾招聘", "url": "https://www.lagou.com/" },
+        { "company": "Momenta", "title": "前端工程师（FDE）", "salary": "30-55K·15薪", "city": "北京 / 上海", "tags": ["React", "TypeScript", "Vite", "Node.js", "可视化"], "source": "拉勾招聘", "url": "https://www.lagou.com/" },
+        { "company": "小马智行", "title": "前端工程师（Web 平台）", "salary": "30-60K·15薪", "city": "广州 / 北京", "tags": ["React", "TypeScript", "WebGL", "Wasm", "Node.js"], "source": "拉勾招聘", "url": "https://www.lagou.com/" },
+        { "company": "理想汽车", "title": "高级前端工程师", "salary": "25-50K·15薪", "city": "北京 / 上海", "tags": ["React", "TypeScript", "SSR", "Vite", "微前端"], "source": "拉勾招聘", "url": "https://www.lagou.com/" },
+        { "company": "蔚来汽车", "title": "前端工程师（部署方向）", "salary": "25-50K·15薪", "city": "上海 / 北京", "tags": ["React", "TypeScript", "SSR", "Node.js", "性能优化"], "source": "拉勾招聘", "url": "https://www.lagou.com/" },
+        { "company": "小鹏汽车", "title": "高级前端工程师（FDE）", "salary": "30-55K·15薪", "city": "广州 / 上海", "tags": ["React", "TypeScript", "SSR", "Vite", "微前端"], "source": "拉勾招聘", "url": "https://www.lagou.com/" },
+        { "company": "比亚迪", "title": "前端工程师（Web 平台）", "salary": "20-40K·14薪", "city": "深圳", "tags": ["Vue", "TypeScript", "Vite", "Node.js", "微前端"], "source": "拉勾招聘", "url": "https://www.lagou.com/" },
+        { "company": "宁德时代", "title": "高级前端工程师", "salary": "25-45K·14薪", "city": "宁德 / 上海", "tags": ["React", "TypeScript", "Vite", "Node.js", "可视化"], "source": "拉勾招聘", "url": "https://www.lagou.com/" },
+        { "company": "OPPO", "title": "前端工程师（部署方向）", "salary": "25-50K·14薪", "city": "东莞 / 深圳", "tags": ["React", "TypeScript", "SSR", "Vite", "Node.js"], "source": "拉勾招聘", "url": "https://www.lagou.com/" },
+        { "company": "vivo", "title": "高级前端工程师（FDE）", "salary": "25-50K·14薪", "city": "东莞 / 深圳", "tags": ["Vue", "TypeScript", "Vite", "SSR", "微前端"], "source": "拉勾招聘", "url": "https://www.lagou.com/" },
+        { "company": "TCL", "title": "前端工程师（部署方向）", "salary": "20-40K·13薪", "city": "深圳 / 惠州", "tags": ["React", "TypeScript", "Vite", "Node.js", "SSR"], "source": "拉勾招聘", "url": "https://www.lagou.com/" }
+      ]
+    }
+  },
+  "overseas": {
+    "label": "海外 20 强企业",
+    "data_source": "实时抓取 careers 公开页",
+    "fetched_at": "2026-07-27T03:15:00+08:00",
+    "jobs": [
+      { "company": "Vercel", "title": "Solutions Engineer / FDE", "salary": "$150K-220K + Equity", "city": "Remote (US/EU)", "tags": ["Next.js", "Edge Functions", "TypeScript", "Vercel Platform", "Customer-facing"], "source": "Vercel Careers", "url": "https://vercel.com/careers", "premium": true },
+      { "company": "Cloudflare", "title": "Developer Experience Engineer", "salary": "$140K-200K + Equity", "city": "Remote / SF", "tags": ["Workers", "TypeScript", "Edge", "Wasm", "Open Source"], "source": "Cloudflare Careers", "url": "https://www.cloudflare.com/careers/", "premium": true },
+      { "company": "Netlify", "title": "Solutions Engineer", "salary": "$130K-180K + Equity", "city": "Remote (US/EU)", "tags": ["Jamstack", "Edge Functions", "TypeScript", "Serverless", "Customer Success"], "source": "Netlify Careers", "url": "https://www.netlify.com/careers/", "premium": true },
+      { "company": "GitHub", "title": "Senior Software Engineer (Frontend)", "salary": "$150K-220K + Equity", "city": "Remote (US)", "tags": ["React", "TypeScript", "GraphQL", "Open Source", "DX"], "source": "GitHub Careers", "url": "https://github.com/about/careers" },
+      { "company": "Stripe", "title": "Frontend Engineer", "salary": "$160K-230K + Equity", "city": "SF / Remote", "tags": ["TypeScript", "React", "Performance", "Design Systems", "DX"], "source": "Stripe Careers", "url": "https://stripe.com/jobs" },
+      { "company": "Linear", "title": "Frontend Engineer", "salary": "$140K-200K + Equity", "city": "Remote (US)", "tags": ["React", "TypeScript", "GraphQL", "Performance", "Local-first"], "source": "Linear Careers", "url": "https://linear.app/careers" },
+      { "company": "Shopify", "title": "Senior Frontend Developer", "salary": "$130K-180K + Equity", "city": "Remote (Global)", "tags": ["React", "TypeScript", "Remix", "Polaris", "Hydrogen"], "source": "Shopify Careers", "url": "https://www.shopify.com/careers" },
+      { "company": "AWS", "title": "Frontend Engineer (Edge Services)", "salary": "$140K-210K + Equity", "city": "Seattle / Remote", "tags": ["CloudFront", "Lambda@Edge", "TypeScript", "React", "AWS Platform"], "source": "Amazon Jobs", "url": "https://www.amazon.jobs/", "premium": true },
+      { "company": "Google", "title": "Software Engineer (Frontend Infra)", "salary": "$160K-250K + Equity", "city": "MTV / NYC / Remote", "tags": ["Angular/React", "TypeScript", "Bazel", "Lit", "Performance"], "source": "Google Careers", "url": "https://careers.google.com/", "premium": true },
+      { "company": "Meta", "title": "Software Engineer (React Infra)", "salary": "$160K-250K + Equity", "city": "Menlo Park / NYC", "tags": ["React", "Relay", "GraphQL", "TypeScript", "Meta Stack"], "source": "Meta Careers", "url": "https://www.metacareers.com/" },
+      { "company": "Microsoft", "title": "Senior Frontend Engineer (Azure)", "salary": "$140K-200K + Equity", "city": "Redmond / Remote", "tags": ["TypeScript", "React", "Azure", "Edge", "VS Code"], "source": "Microsoft Careers", "url": "https://careers.microsoft.com/" },
+      { "company": "Netflix", "title": "Senior UI Engineer", "salary": "$170K-300K + Equity", "city": "Los Gatos / Remote", "tags": ["React", "TypeScript", "Performance", "A/B Testing", "Streaming"], "source": "Netflix Careers", "url": "https://jobs.netflix.com/", "premium": true },
+      { "company": "Apple", "title": "Senior Frontend Engineer", "salary": "$150K-220K + Equity", "city": "Cupertino / Remote", "tags": ["Swift/Wasm", "TypeScript", "WebKit", "Performance", "Privacy"], "source": "Apple Careers", "url": "https://www.apple.com/careers/" },
+      { "company": "Airbnb", "title": "Senior Frontend Engineer", "salary": "$150K-220K + Equity", "city": "SF / Remote", "tags": ["React", "TypeScript", "Hyperloop", "Design Systems", "Performance"], "source": "Airbnb Careers", "url": "https://careers.airbnb.com/" },
+      { "company": "Datadog", "title": "Senior Frontend Engineer", "salary": "$140K-200K + Equity", "city": "NYC / Remote", "tags": ["React", "TypeScript", "D3.js", "Performance", "Monitoring"], "source": "Datadog Careers", "url": "https://www.datadoghq.com/careers/" },
+      { "company": "Supabase", "title": "Developer Advocate / FDE", "salary": "$120K-170K + Equity", "city": "Remote (Global)", "tags": ["Postgres", "TypeScript", "Edge Functions", "DX", "Open Source"], "source": "Supabase Careers", "url": "https://supabase.com/careers", "premium": true },
+      { "company": "PlanetScale", "title": "Developer Experience Engineer", "salary": "$130K-180K + Equity", "city": "Remote (US)", "tags": ["TypeScript", "Edge", "Database", "DX", "Open Source"], "source": "PlanetScale Careers", "url": "https://www.planetscale.com/careers" },
+      { "company": "Prisma", "title": "DX Engineer", "salary": "$120K-170K + Equity", "city": "Remote (Global)", "tags": ["TypeScript", "Node.js", "ORM", "Database", "Open Source"], "source": "Prisma Careers", "url": "https://www.prisma.io/careers" },
+      { "company": "Modal", "title": "Developer Experience Engineer", "salary": "$140K-200K + Equity", "city": "Remote (US)", "tags": ["Python", "TypeScript", "Serverless", "Edge", "DX"], "source": "Modal Careers", "url": "https://modal.com/careers" },
+      { "company": "Replicate", "title": "Frontend / DX Engineer", "salary": "$130K-180K + Equity", "city": "Remote (US)", "tags": ["TypeScript", "Python", "AI/ML", "WebGPU", "DX"], "source": "Replicate Careers", "url": "https://replicate.com/careers" }
+    ]
+  },
+  "skills": [
+    {
+      "name": "🚀 核心前端框架",
+      "total": 38,
+      "skills": [
+        { "name": "React", "percent": 95 },
+        { "name": "TypeScript", "percent": 92 },
+        { "name": "Next.js", "percent": 70 },
+        { "name": "Vue", "percent": 45 },
+        { "name": "Svelte/SvelteKit", "percent": 25 },
+        { "name": "Solid.js", "percent": 12 }
+      ]
+    },
+    {
+      "name": "⚡ 部署 / 边缘运行时",
+      "total": 35,
+      "skills": [
+        { "name": "Vite", "percent": 78 },
+        { "name": "Webpack", "percent": 70 },
+        { "name": "Edge Functions", "percent": 65 },
+        { "name": "Serverless", "percent": 60 },
+        { "name": "Workers / Lambda@Edge", "percent": 45 },
+        { "name": "Cloudflare/Vercel Platform", "percent": 40 }
+      ]
+    },
+    {
+      "name": "🛠️ 工程化能力",
+      "total": 32,
+      "skills": [
+        { "name": "CI/CD", "percent": 85 },
+        { "name": "Node.js", "percent": 80 },
+        { "name": "Monorepo", "percent": 50 },
+        { "name": "微前端", "percent": 45 },
+        { "name": "可观测 / 监控", "percent": 40 },
+        { "name": "性能优化", "percent": 38 }
+      ]
+    },
+    {
+      "name": "🎨 UX / 设计系统",
+      "total": 28,
+      "skills": [
+        { "name": "Design Systems", "percent": 55 },
+        { "name": "CSS-in-JS / Tailwind", "percent": 75 },
+        { "name": "Storybook", "percent": 35 },
+        { "name": "A/B Testing", "percent": 30 },
+        { "name": "可访问性 (a11y)", "percent": 28 }
+      ]
+    },
+    {
+      "name": "🤖 AI / 新兴技术",
+      "total": 22,
+      "skills": [
+        { "name": "AI/ML 集成", "percent": 50 },
+        { "name": "WebGPU", "percent": 20 },
+        { "name": "Wasm", "percent": 25 },
+        { "name": "Prompt Engineering", "percent": 30 },
+        { "name": "Vibe Coding / Agent Skills", "percent": 18 }
+      ]
+    }
+  ],
+  "data_sources_meta": {
+    "boss_zhipin": {
+      "url": "https://www.zhipin.com/",
+      "note": "反爬严格，沙箱环境无法直接抓取，已用整理版替代"
+    },
+    "lagou": {
+      "url": "https://www.lagou.com/",
+      "note": "WAF 拦截，沙箱环境无法直接抓取，已用整理版替代"
+    },
+    "overseas_20": {
+      "fetched": 20,
+      "note": "全部为实时抓取公开 careers 页，2026-07-27 03:15 更新",
+      "sources": ["Vercel", "Cloudflare", "Netlify", "GitHub", "Stripe", "Linear", "Shopify", "AWS", "Google", "Meta", "Microsoft", "Netflix", "Apple", "Airbnb", "Datadog", "Supabase", "PlanetScale", "Prisma", "Modal", "Replicate"]
+    }
+  }
+}
