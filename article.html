@@ -294,10 +294,13 @@
     async function loadArticle() {
       const root = document.getElementById('article-root');
       const params = new URLSearchParams(window.location.search);
+      // 同时支持 ?id=13309 和 ?slug=xxx（向后兼容）
+      const id = params.get('id');
       const slug = params.get('slug');
 
-      if (!slug) {
-        root.innerHTML = '<div class="article-error">❌ 文章 slug 参数缺失<br><br><a href="./#news">返回教学资讯</a></div>';
+      // 先用 id，再用 slug
+      if (!id && !slug) {
+        root.innerHTML = '<div class="article-error">❌ 文章参数缺失（需要 id 或 slug）<br><br><a href="./#news">返回教学资讯</a></div>';
         return;
       }
 
@@ -305,15 +308,19 @@
         // 1. 加载文章列表，找到对应文章
         const listResp = await fetch('articles.json');
         const articles = await listResp.json();
-        const article = articles.find(a => a.slug === slug);
+        // 同时支持 id 查找和 slug 查找
+        const article = articles.find(a =>
+          (id && String(a.id) === String(id)) ||
+          (slug && a.slug === slug)
+        );
 
         if (!article) {
           root.innerHTML = '<div class="article-error">❌ 未找到该文章<br><br><a href="./#news">返回教学资讯</a></div>';
           return;
         }
 
-        // 2. 加载 Markdown 文件
-        const mdResp = await fetch(`articles/${slug}.md`);
+        // 2. 加载 Markdown 文件（用找到的 article.slug）
+        const mdResp = await fetch(`articles/${article.slug}.md`);
         if (!mdResp.ok) throw new Error('Markdown 文件不存在');
         const md = await mdResp.text();
 
