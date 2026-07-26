@@ -1,5 +1,26 @@
 [
   {
+    "id": 13310,
+    "title": "⚡ Vercel Edge Functions 完全实战指南：从 Serverless 到 Fluid Compute",
+    "slug": "vercel-edge-functions-fde",
+    "summary": "2026 Vercel Functions 5 大核心能力 + 3 种 Runtime 选型 + Region 配置 + 性能对比 + FDE 5 步实战。Fluid Compute 全面替代传统 Serverless。",
+    "category": "最新动态",
+    "tags": [
+      "Vercel",
+      "Edge Functions",
+      "Serverless",
+      "FDE",
+      "Fluid Compute",
+      "边缘计算"
+    ],
+    "color": "blue",
+    "date": "2026-07-27",
+    "author": "小Q",
+    "source": "AI 重写 · Vercel 官方文档",
+    "file": "13310-vercel-edge-functions-fde.md",
+    "estimated_read_time": "8 分钟"
+  },
+  {
     "id": 13305,
     "slug": "13305-ai-frontend-agent",
     "title": "AI Agent 重塑前端开发：FDE 的下一个 3 年",
