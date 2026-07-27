@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FDE 技能与知识要求 · MaxKB FDE 教学</title>
+  <meta name="description" content="FDE（前端部署开发工程师）岗位核心技能图谱 · 知识要求矩阵 · 学习路径推荐。基于 2026 年最新招聘市场数据，助你精准规划职业方向。">
+  <meta name="keywords" content="FDE, 前端部署工程师, 技能图谱, 学习路径, 职业规划, MaxKB, AI Agent">
+  <meta property="og:title" content="FDE 技能与知识要求 · MaxKB FDE 教学">
+  <meta property="og:description" content="FDE 岗位核心技能图谱 + 知识要求矩阵 + 学习路径推荐">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://taoj2025.github.io/maxkb-course-site/fde-skills.html">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%235B2EBF'/><text x='50' y='65' text-anchor='middle' fill='white' font-size='40' font-weight='bold' font-family='sans-serif'>⚡</text></svg>">
+  <style>
+    /* FDE 技能页专属样式 */
+    .skills-hero {
+      background: linear-gradient(135deg, #5B2EBF 0%, #8B5CF6 50%, #3B82F6 100%);
+      color: white;
+      padding: 100px 20px 60px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .skills-hero::before {
+      content: '';
+      position: absolute; top: -50%; left: -50%;
+      width: 200%; height: 200%;
+      background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+      background-size: 40px 40px;
+      animation: float 25s linear infinite;
+    }
+    @keyframes float {
+      from { transform: translate(0, 0); }
+      to { transform: translate(40px, 40px); }
+    }
+    .skills-hero h1 { font-size: 48px; margin: 0 0 16px; font-weight: 800; position: relative; }
+    .skills-hero .subtitle { font-size: 20px; opacity: 0.95; margin: 0 0 24px; position: relative; }
+    .skills-hero .badges {
+      display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; position: relative;
+    }
+    .skills-hero .badge {
+      background: rgba(255,255,255,0.2); backdrop-filter: blur(10px);
+      padding: 8px 16px; border-radius: 20px; font-size: 14px;
+      border: 1px solid rgba(255,255,255,0.3);
+    }
+    .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+
+    /* 六大技能聚类卡片网格 */
+    .skills-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px; margin-bottom: 60px;
+    }
+    .skill-card {
+      background: white; border-radius: 12px; overflow: hidden;
+      box-shadow: 0 2px 12px rgba(91,46,191,0.08);
+      border: 1px solid #E5E7EB; transition: all 0.3s;
+    }
+    .skill-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(91,46,191,0.15);
+    }
+    .skill-card-header {
+      padding: 24px; color: white; position: relative;
+      display: flex; align-items: center; gap: 16px;
+    }
+    .skill-card-header.purple { background: linear-gradient(135deg, #5B2EBF, #8B5CF6); }
+    .skill-card-header.blue { background: linear-gradient(135deg, #3B82F6, #60A5FA); }
+    .skill-card-header.green { background: linear-gradient(135deg, #10B981, #34D399); }
+    .skill-card-header.orange { background: linear-gradient(135deg, #F59E0B, #FBBF24); }
+    .skill-card-header.red { background: linear-gradient(135deg, #EF4444, #F87171); }
+    .skill-card-header.indigo { background: linear-gradient(135deg, #6366F1, #818CF8); }
+    .skill-card-icon { font-size: 36px; }
+    .skill-card-title { font-size: 20px; font-weight: 700; margin: 0; }
+    .skill-card-tagline { font-size: 13px; opacity: 0.9; margin: 4px 0 0; }
+    .skill-card-body { padding: 20px 24px 24px; }
+    .skill-item {
+      padding: 10px 0; border-bottom: 1px solid #F3F4F6;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .skill-item:last-child { border-bottom: none; }
+    .skill-item-name { font-size: 14px; color: #1F2937; font-weight: 500; }
+    .skill-item-level {
+      display: inline-flex; gap: 2px;
+    }
+    .level-dot {
+      width: 10px; height: 10px; border-radius: 50%;
+      background: #E5E7EB;
+    }
+    .level-dot.filled { background: #5B2EBF; }
+
+    /* 知识要求矩阵 */
+    .matrix-section { background: #F9FAFB; padding: 60px 20px; margin: 0 -20px 60px; }
+    .matrix-table {
+      width: 100%; border-collapse: collapse;
+      background: white; border-radius: 12px; overflow: hidden;
+      box-shadow: 0 2px 12px rgba(91,46,191,0.06);
+    }
+    .matrix-table th {
+      background: linear-gradient(135deg, #5B2EBF, #3B82F6);
+      color: white; padding: 14px 16px; text-align: left;
+      font-size: 14px; font-weight: 600;
+    }
+    .matrix-table td {
+      padding: 12px 16px; font-size: 14px; color: #374151;
+      border-bottom: 1px solid #F3F4F6;
+    }
+    .matrix-table tr:hover td { background: #F9FAFB; }
+    .matrix-tag {
+      display: inline-block; padding: 3px 10px; border-radius: 12px;
+      font-size: 12px; font-weight: 600;
+    }
+    .matrix-tag.core { background: #FEE2E2; color: #DC2626; }
+    .matrix-tag.important { background: #FED7AA; color: #EA580C; }
+    .matrix-tag.basic { background: #D1FAE5; color: #059669; }
+    .matrix-tag.optional { background: #E5E7EB; color: #6B7280; }
+
+    /* 学习路径 */
+    .path-section { margin-bottom: 60px; }
+    .path-timeline {
+      position: relative; padding-left: 40px;
+    }
+    .path-timeline::before {
+      content: ''; position: absolute; left: 15px; top: 0; bottom: 0;
+      width: 2px; background: linear-gradient(180deg, #5B2EBF, #3B82F6);
+    }
+    .path-step {
+      position: relative; padding: 0 0 32px 0;
+    }
+    .path-step::before {
+      content: attr(data-step);
+      position: absolute; left: -33px; top: 0;
+      width: 32px; height: 32px; border-radius: 50%;
+      background: linear-gradient(135deg, #5B2EBF, #3B82F6);
+      color: white; display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 14px;
+      box-shadow: 0 4px 12px rgba(91,46,191,0.3);
+    }
+    .path-step-title { font-size: 20px; font-weight: 700; color: #1F2937; margin: 0 0 8px; }
+    .path-step-duration { font-size: 13px; color: #5B2EBF; font-weight: 600; margin-bottom: 8px; }
+    .path-step-desc { font-size: 15px; color: #6B7280; line-height: 1.7; }
+    .path-step-tags { margin-top: 10px; display: flex; gap: 8px; flex-wrap: wrap; }
+    .path-step-tag {
+      background: #EDE9FE; color: #5B2EBF;
+      padding: 3px 10px; border-radius: 4px; font-size: 12px; font-weight: 500;
+    }
+
+    /* CTA 区 */
+    .cta-section {
+      background: linear-gradient(135deg, #5B2EBF 0%, #3B82F6 100%);
+      color: white; padding: 60px 40px; border-radius: 16px;
+      text-align: center; margin: 60px 0;
+    }
+    .cta-section h2 { font-size: 32px; margin: 0 0 16px; font-weight: 800; }
+    .cta-section p { font-size: 18px; opacity: 0.95; margin: 0 0 24px; }
+    .cta-btn {
+      display: inline-block; background: white; color: #5B2EBF;
+      padding: 14px 32px; border-radius: 8px; font-weight: 700;
+      text-decoration: none; font-size: 16px;
+      transition: transform 0.2s;
+    }
+    .cta-btn:hover { transform: translateY(-2px); }
+    .cta-btn.secondary { background: transparent; color: white; border: 2px solid white; margin-left: 12px; }
+
+    .nav-links { text-align: center; margin-top: 40px; padding-top: 40px; border-top: 1px solid #E5E7EB; }
+    .nav-links a {
+      color: #5B2EBF; text-decoration: none; margin: 0 12px;
+      font-weight: 500; font-size: 14px;
+    }
+    .nav-links a:hover { text-decoration: underline; }
+
+    .section-title {
+      font-size: 32px; font-weight: 700; color: #1F2937;
+      margin: 0 0 32px; text-align: center;
+    }
+    .section-title::before {
+      content: '⚡'; margin-right: 12px;
+    }
+
+    @media (max-width: 768px) {
+      .skills-hero h1 { font-size: 32px; }
+      .matrix-table { font-size: 12px; }
+      .matrix-table th, .matrix-table td { padding: 8px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- 顶部导航 -->
+  <header class="site-header">
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;padding:16px 20px;">
+      <a href="index.html" style="text-decoration:none;color:#1F2937;font-weight:700;font-size:18px;">
+        ⚡ MaxKB FDE 教学
+      </a>
+      <nav style="display:flex;gap:20px;font-size:14px;">
+        <a href="index.html" style="color:#6B7280;text-decoration:none;">首页</a>
+        <a href="latest.html" style="color:#EF4444;text-decoration:none;font-weight:600;">🔥 最新动态</a>
+        <a href="fde-skills.html" style="color:#5B2EBF;text-decoration:none;font-weight:600;">⚡ 技能图谱</a>
+        <a href="fde-jobs.html" style="color:#3B82F6;text-decoration:none;font-weight:600;">💼 招聘市场</a>
+        <a href="membership.html" style="color:#F59E0B;text-decoration:none;font-weight:600;">👑 会员</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero 区 -->
+  <section class="skills-hero">
+    <h1>FDE 技能图谱与知识要求</h1>
+    <p class="subtitle">基于 2026 年招聘市场数据 · 6 大核心技能聚类 · 完整学习路径</p>
+    <div class="badges">
+      <span class="badge">📊 真实招聘数据驱动</span>
+      <span class="badge">🎯 6 大核心技能聚类</span>
+      <span class="badge">🛤️ 0 → 资深完整路径</span>
+      <span class="badge">🔄 持续更新 2026</span>
+    </div>
+  </section>
+
+  <div class="container">
+
+    <!-- 六大技能聚类 -->
+    <h2 class="section-title">六大核心技能聚类</h2>
+    <div class="skills-grid">
+
+      <!-- 1. 前端工程基础 -->
+      <div class="skill-card">
+        <div class="skill-card-header purple">
+          <span class="skill-card-icon">🎨</span>
+          <div>
+            <h3 class="skill-card-title">前端工程基础</h3>
+            <p class="skill-card-tagline">必备底层能力 · 入职敲门砖</p>
+          </div>
+        </div>
+        <div class="skill-card-body">
+          <div class="skill-item"><span class="skill-item-name">HTML5 / CSS3 / 现代布局</span><span class="skill-item-level"><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span></span></div>
+          <div class="skill-item"><span class="skill-item-name">JavaScript ES2024+</span><span class="skill-item-level"><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span></span></div>
+          <div class="skill-item"><span class="skill-item-name">TypeScript 类型系统</span><span class="skill-item-level"><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot"></span></span></div>
+          <div class="skill-item"><span class="skill-item-name">React / Vue / Svelte</span><span class="skill-item-level"><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot"></span></span></div>
+          <div class="skill-item"><span class="skill-item-name">Next.js / Nuxt 全栈框架</span><span class="skill-item-level"><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot"></span><span class="level-dot"></span></span></div>
+          <div class="skill-item"><span class="skill-item-name">响应式 / 可访问性</span><span class="skill-item-level"><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot"></span><span class="level-dot"></span></span></div>
+        </div>
+      </div>
+
+      <!-- 2. AI Agent 集成 -->
+      <div class="skill-card">
+        <div class="skill-card-header blue">
+          <span class="skill-card-icon">🤖</span>
+          <div>
+            <h3 class="skill-card-title">AI Agent 集成</h3>
+            <p class="skill-card-tagline">2026 新风口 · 差异化竞争力</p>
+          </div>
+        </div>
+        <div class="skill-card-body">
+          <div class="skill-item"><span class="skill-item-name">Prompt Engineering 进阶</span><span class="skill-item-level"><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot"></span></span></div>
+          <div class="skill-item"><span class="skill-item-name">MCP 协议调用</span><span class="skill-item-level"><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot"></span></span></div>
+          <div class="skill-item"><span class="skill-item-name">Function Calling / Tool Use</span><span class="skill-item-level"><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot"></span></span></div>
+          <div class="skill-item"><span class="skill-item-name">RAG / 向量检索</span><span class="skill-item-level"><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot"></span><span class="level-dot"></span></span></div>
+          <div class="skill-item"><span class="skill-item-name">LangChain / LlamaIndex</span><span class="skill-item-level"><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot"></span><span class="level-dot"></span></span></div>
+          <div class="skill-item"><span class="skill-item-name">Agent 工作流编排</span><span class="skill-item-level"><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot"></span><span class="level-dot"></span></span></div>
+        </div>
+      </div>
+
+      <!-- 3. 云端部署与 DevOps -->
+      <div class="skill-card">
+        <div class="skill-card-header green">
+          <span class="skill-card-icon">☁️</span>
+          <div>
+            <h3 class="skill-card-title">云端部署 & DevOps</h3>
+            <p class="skill-card-tagline">FDE 核心区别点 · 拉开差距</p>
+          </div>
+        </div>
+        <div class="skill-card-body">
+          <div class="skill-item"><span class="skill-item-name">Vercel / Netlify 平台</span><span class="skill-item-level"><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot"></span></span></div>
+          <div class="skill-item"><span class="skill-item-name">Docker 容器化</span><span class="skill-item-level"><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot"></span></span></div>
+          <div class="skill-item"><span class="skill-item-name">CI/CD（GitHub Actions）</span><span class="skill-item-level"><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot"></span></span></div>
+          <div class="skill-item"><span class="skill-item-name">AWS / 阿里云 / 腾讯云</span><span class="skill-item-level"><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot"></span><span class="level-dot"></span></span></div>
+          <div class="skill-item"><span class="skill-item-name">Serverless 架构</span><span class="skill-item-level"><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot"></span><span class="level-dot"></span></span></div>
+          <div class="skill-item"><span class="skill-item-name">监控 / 日志 / 告警</span><span class="skill-item-level"><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot"></span><span class="level-dot"></span></span></div>
+        </div>
+      </div>
+
+      <!-- 4. 边缘计算 & 性能 -->
+      <div class="skill-card">
+        <div class="skill-card-header orange">
+          <span class="skill-card-icon">⚡</span>
+          <div>
+            <h3 class="skill-card-title">边缘计算 & 性能</h3>
+            <p class="skill-card-tagline">2026 前沿 · 面试加分项</p>
+          </div>
+        </div>
+        <div class="skill-card-body">
+          <div class="skill-item"><span class="skill-item-name">Edge Runtime / Edge Functions</span><span class="skill-item-level"><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot"></span></span></div>
+          <div class="skill-item"><span class="skill-item-name">CDN / 缓存策略</span><span class="skill-item-level"><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot"></span></span></div>
+          <div class="skill-item"><span class="skill-item-name">Web Vitals / 性能优化</span><span class="skill-item-level"><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot"></span></span></div>
+          <div class="skill-item"><span class="skill-item-name">SSR / SSG / ISR 选择</span><span class="skill-item-level"><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot"></span><span class="level-dot"></span></span></div>
+          <div class="skill-item"><span class="skill-item-name">Streaming / Suspense</span><span class="skill-item-level"><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot"></span><span class="level-dot"></span></span></div>
+          <div class="skill-item"><span class="skill-item-name">冷启动 / 成本优化</span><span class="skill-item-level"><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot"></span><span class="level-dot"></span><span class="level-dot"></span></span></div>
+        </div>
+      </div>
+
+      <!-- 5. 工程化与协作 -->
+      <div class="skill-card">
+        <div class="skill-card-header red">
+          <span class="skill-card-icon">🛠️</span>
+          <div>
+            <h3 class="skill-card-title">工程化与协作</h3>
+            <p class="skill-card-tagline">团队效率引擎 · 资深必备</p>
+          </div>
+        </div>
+        <div class="skill-card-body">
+          <div class="skill-item"><span class="skill-item-name">Git / Git Flow / PR 流程</span><span class="skill-item-level"><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span></span></div>
+          <div class="skill-item"><span class="skill-item-name">Monorepo（pnpm / Turborepo）</span><span class="skill-item-level"><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot"></span><span class="level-dot"></span></span></div>
+          <div class="skill-item"><span class="skill-item-name">代码规范（ESLint / Prettier）</span><span class="skill-item-level"><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot"></span></span></div>
+          <div class="skill-item"><span class="skill-item-name">单元测试 / E2E 测试</span><span class="skill-item-level"><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot"></span><span class="level-dot"></span></span></div>
+          <div class="skill-item"><span class="skill-item-name">Storybook 组件库</span><span class="skill-item-level"><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot"></span><span class="level-dot"></span></span></div>
+          <div class="skill-item"><span class="skill-item-name">技术文档 / ADR</span><span class="skill-item-level"><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot"></span><span class="level-dot"></span></span></div>
+        </div>
+      </div>
+
+      <!-- 6. 安全与数据 -->
+      <div class="skill-card">
+        <div class="skill-card-header indigo">
+          <span class="skill-card-icon">🔒</span>
+          <div>
+            <h3 class="skill-card-title">安全与数据</h3>
+            <p class="skill-card-tagline">合规底线 · 高薪分水岭</p>
+          </div>
+        </div>
+        <div class="skill-card-body">
+          <div class="skill-item"><span class="skill-item-name">OAuth 2.0 / JWT / OIDC</span><span class="skill-item-level"><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot"></span></span></div>
+          <div class="skill-item"><span class="skill-item-name">HTTPS / CSP / CORS</span><span class="skill-item-level"><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot"></span></span></div>
+          <div class="skill-item"><span class="skill-item-name">XSS / CSRF / SQL 注入</span><span class="skill-item-level"><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot"></span><span class="level-dot"></span></span></div>
+          <div class="skill-item"><span class="skill-item-name">数据脱敏 / 加密存储</span><span class="skill-item-level"><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot"></span><span class="level-dot"></span></span></div>
+          <div class="skill-item"><span class="skill-item-name">GDPR / 数据合规</span><span class="skill-item-level"><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot"></span><span class="level-dot"></span><span class="level-dot"></span></span></div>
+          <div class="skill-item"><span class="skill-item-name">API 限流 / 防爬</span><span class="skill-item-level"><span class="level-dot filled"></span><span class="level-dot filled"></span><span class="level-dot"></span><span class="level-dot"></span><span class="level-dot"></span></span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 知识要求矩阵 -->
+    <section class="matrix-section">
+      <h2 class="section-title">知识要求矩阵</h2>
+      <table class="matrix-table">
+        <thead>
+          <tr>
+            <th>知识领域</th>
+            <th>重要度</th>
+            <th>初级 FDE</th>
+            <th>中级 FDE</th>
+            <th>资深 FDE</th>
+            <th>学习资源</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>现代前端框架（React/Vue）</td>
+            <td><span class="matrix-tag core">核心</span></td>
+            <td>熟练使用</td>
+            <td>深入原理</td>
+            <td>源码级掌握</td>
+            <td>官方文档 + 实战项目</td>
+          </tr>
+          <tr>
+            <td>TypeScript 类型体操</td>
+            <td><span class="matrix-tag core">核心</span></td>
+            <td>基础类型</td>
+            <td>泛型 / 工具类型</td>
+            <td>类型推导 / 高级技巧</td>
+            <td>Type Challenges</td>
+          </tr>
+          <tr>
+            <td>Next.js / 全栈框架</td>
+            <td><span class="matrix-tag core">核心</span></td>
+            <td>页面开发</td>
+            <td>路由 + API 路由</td>
+            <td>SSR/ISR 架构设计</td>
+            <td>Next.js 官方教程</td>
+          </tr>
+          <tr>
+            <td>Vercel / 部署平台</td>
+            <td><span class="matrix-tag core">核心</span></td>
+            <td>基础部署</td>
+            <td>环境变量 / 域名</td>
+            <td>Edge Functions 调优</td>
+            <td>Vercel 文档</td>
+          </tr>
+          <tr>
+            <td>AI Agent / MCP 协议</td>
+            <td><span class="matrix-tag core">核心</span></td>
+            <td>了解概念</td>
+            <td>能集成 SDK</td>
+            <td>自建 Agent 工作流</td>
+            <td>Anthropic MCP 文档</td>
+          </tr>
+          <tr>
+            <td>Docker / 容器化</td>
+            <td><span class="matrix-tag important">重要</span></td>
+            <td>Dockerfile 编写</td>
+            <td>多阶段构建</td>
+            <td>镜像优化 / 安全扫描</td>
+            <td>Docker 官方文档</td>
+          </tr>
+          <tr>
+            <td>CI/CD 流水线</td>
+            <td><span class="matrix-tag important">重要</span></td>
+            <td>GitHub Actions 基础</td>
+            <td>多环境部署</td>
+            <td>自动化测试 + 回滚</td>
+            <td>GitHub Actions 实战</td>
+          </tr>
+          <tr>
+            <td>云服务（AWS/阿里云）</td>
+            <td><span class="matrix-tag important">重要</span></td>
+            <td>单一服务使用</td>
+            <td>多服务编排</td>
+            <td>成本优化 + 架构</td>
+            <td>云厂商官方课程</td>
+          </tr>
+          <tr>
+            <td>性能优化 / Web Vitals</td>
+            <td><span class="matrix-tag important">重要</span></td>
+            <td>Lighthouse 跑分</td>
+            <td>关键指标优化</td>
+            <td>监控体系搭建</td>
+            <td>Web Vitals 官方</td>
+          </tr>
+          <tr>
+            <td>单元测试 / E2E</td>
+            <td><span class="matrix-tag basic">基础</span></td>
+            <td>会用工具</td>
+            <td>覆盖率 60%+</td>
+            <td>测试金字塔设计</td>
+            <td>Vitest / Playwright</td>
+          </tr>
+          <tr>
+            <td>Monorepo 工具链</td>
+            <td><span class="matrix-tag basic">基础</span></td>
+            <td>了解概念</td>
+            <td>能搭建结构</td>
+            <td>大规模团队治理</td>
+            <td>Turborepo 官方</td>
+          </tr>
+          <tr>
+            <td>数据安全 / 合规</td>
+            <td><span class="matrix-tag basic">基础</span></td>
+            <td>了解常见风险</td>
+            <td>实施防护</td>
+            <td>合规体系设计</td>
+            <td>OWASP Top 10</td>
+          </tr>
+          <tr>
+            <td>Storybook / 组件库</td>
+            <td><span class="matrix-tag optional">可选</span></td>
+            <td>组件开发</td>
+            <td>文档化</td>
+            <td>设计系统</td>
+            <td>Storybook 官方</td>
+          </tr>
+          <tr>
+            <td>监控 / 告警体系</td>
+            <td><span class="matrix-tag optional">可选</span></td>
+            <td>会用工具</td>
+            <td>配置告警</td>
+            <td>Observability 全栈</td>
+            <td>Sentry / Datadog</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 学习路径 -->
+    <section class="path-section">
+      <h2 class="section-title">0 → 资深 FDE 学习路径</h2>
+      <div class="path-timeline">
+
+        <div class="path-step" data-step="1">
+          <h3 class="path-step-title">夯实前端基础</h3>
+          <p class="path-step-duration">⏱️ 2-3 个月</p>
+          <p class="path-step-desc">HTML5 / CSS3 现代布局 / JavaScript ES2024+ / TypeScript 入门 / React 或 Vue 任一框架 / 响应式与可访问性</p>
+          <div class="path-step-tags">
+            <span class="path-step-tag">HTML/CSS</span>
+            <span class="path-step-tag">JavaScript</span>
+            <span class="path-step-tag">TypeScript</span>
+            <span class="path-step-tag">React/Vue</span>
+          </div>
+        </div>
+
+        <div class="path-step" data-step="2">
+          <h3 class="path-step-title">Next.js 全栈开发</h3>
+          <p class="path-step-duration">⏱️ 2 个月</p>
+          <p class="path-step-desc">Next.js App Router / 服务端组件 / 路由处理 / API Routes / Server Actions / 数据库集成（Prisma）/ 鉴权方案（NextAuth）</p>
+          <div class="path-step-tags">
+            <span class="path-step-tag">Next.js</span>
+            <span class="path-step-tag">Prisma</span>
+            <span class="path-step-tag">NextAuth</span>
+            <span class="path-step-tag">SSR/SSG</span>
+          </div>
+        </div>
+
+        <div class="path-step" data-step="3">
+          <h3 class="path-step-title">部署 + DevOps 入门</h3>
+          <p class="path-step-duration">⏱️ 1.5 个月</p>
+          <p class="path-step-desc">Vercel / Netlify 一键部署 / 环境变量管理 / 自定义域名 / GitHub Actions 自动化 / Docker 容器化基础 / 阿里云/AWS 基础服务</p>
+          <div class="path-step-tags">
+            <span class="path-step-tag">Vercel</span>
+            <span class="path-step-tag">GitHub Actions</span>
+            <span class="path-step-tag">Docker</span>
+            <span class="path-step-tag">云服务</span>
+          </div>
+        </div>
+
+        <div class="path-step" data-step="4">
+          <h3 class="path-step-title">AI Agent 集成实战</h3>
+          <p class="path-step-duration">⏱️ 1.5 个月</p>
+          <p class="path-step-desc">MCP 协议理解与对接 / Function Calling 实现 / RAG 检索增强 / LangChain / LlamaIndex / Agent 工作流（ReAct / Plan-and-Execute）</p>
+          <div class="path-step-tags">
+            <span class="path-step-tag">MCP 协议</span>
+            <span class="path-step-tag">Function Calling</span>
+            <span class="path-step-tag">RAG</span>
+            <span class="path-step-tag">LangChain</span>
+            <span class="path-step-tag">Agent</span>
+          </div>
+        </div>
+
+        <div class="path-step" data-step="5">
+          <h3 class="path-step-title">边缘计算 + 性能优化</h3>
+          <p class="path-step-duration">⏱️ 1 个月</p>
+          <p class="path-step-desc">Edge Runtime 原理 / Vercel Edge Functions / CDN 缓存策略 / Web Vitals 优化（LCP/FID/CLS）/ Streaming SSR / 成本调优</p>
+          <div class="path-step-tags">
+            <span class="path-step-tag">Edge Functions</span>
+            <span class="path-step-tag">CDN</span>
+            <span class="path-step-tag">Web Vitals</span>
+            <span class="path-step-tag">SSR 调优</span>
+          </div>
+        </div>
+
+        <div class="path-step" data-step="6">
+          <h3 class="path-step-title">工程化 + 团队协作</h3>
+          <p class="path-step-duration">⏱️ 1 个月</p>
+          <p class="path-step-desc">Monorepo（pnpm + Turborepo）/ 测试金字塔（单元 + E2E）/ Storybook 组件库 / CI/CD 完整流水线 / 监控告警体系</p>
+          <div class="path-step-tags">
+            <span class="path-step-tag">Monorepo</span>
+            <span class="path-step-tag">测试</span>
+            <span class="path-step-tag">CI/CD</span>
+            <span class="path-step-tag">监控</span>
+          </div>
+        </div>
+
+        <div class="path-step" data-step="7">
+          <h3 class="path-step-title">资深 FDE · 架构与决策</h3>
+          <p class="path-step-duration">⏱️ 持续 6+ 个月</p>
+          <p class="path-step-desc">技术选型决策 / 微服务架构 / 数据合规设计 / 大规模团队治理 / 成本与性能平衡 / 复杂业务系统设计 / 技术布道</p>
+          <div class="path-step-tags">
+            <span class="path-step-tag">架构设计</span>
+            <span class="path-step-tag">合规</span>
+            <span class="path-step-tag">团队治理</span>
+            <span class="path-step-tag">技术布道</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA 区 -->
+    <section class="cta-section">
+      <h2>🎯 想立即开始 FDE 转型？</h2>
+      <p>MaxKB FDE 教学实战课 · 60 页 PPT + 8 章节讲义 + 完整源码 + 5 大企业场景</p>
+      <a href="membership.html" class="cta-btn">👑 升级会员 · 解锁全部资源</a>
+      <a href="latest.html" class="cta-btn secondary">🔥 查看最新动态</a>
+    </section>
+
+    <!-- 底部导航 -->
+    <div class="nav-links">
+      <a href="index.html">🏠 首页</a>
+      <a href="latest.html">🔥 最新动态</a>
+      <a href="fde-skills.html">⚡ 技能图谱</a>
+      <a href="fde-jobs.html">💼 招聘市场</a>
+      <a href="membership.html">👑 会员</a>
+      <a href="faq.html">❓ 常见问题</a>
+    </div>
+
+  </div>
+
+  <footer style="background:#1F2937;color:#9CA3AF;padding:40px 20px;text-align:center;font-size:13px;margin-top:60px;">
+    <p style="margin:0 0 8px;">⚡ MaxKB FDE 教学实战课 · 由小陶老师（陶建敏）出品 · 广州华商学院</p>
+    <p style="margin:0 0 8px;">📧 邮箱：2949465671@qq.com · GitHub：<a href="https://github.com/Taoj2025/maxkb-course-site" style="color:#A78BFA;text-decoration:none;">Taoj2025/maxkb-course-site</a></p>
+    <p style="margin:0;opacity:0.7;">© 2026 MaxKB FDE 教学 · 基于 1Panel-dev/MaxKB 开源项目</p>
+  </footer>
+</body>
+</html>
