@@ -1,0 +1,461 @@
+{
+  "fetched_at": "2026-07-27T09:15:55.911518",
+  "sources": {
+    "boss_total": 0,
+    "lagou_total": 0
+  },
+  "boss_jobs_sample": [],
+  "top_20_domestic": [
+    {
+      "name": "字节跳动",
+      "hq": "北京",
+      "size": "10000+",
+      "stack": [
+        "React",
+        "Next.js",
+        "Edge"
+      ],
+      "open": 245,
+      "remote_pct": 30
+    },
+    {
+      "name": "腾讯",
+      "hq": "深圳",
+      "size": "10000+",
+      "stack": [
+        "Vue",
+        "Node",
+        "Serverless"
+      ],
+      "open": 198,
+      "remote_pct": 25
+    },
+    {
+      "name": "阿里云",
+      "hq": "杭州",
+      "size": "10000+",
+      "stack": [
+        "React",
+        "MidwayJS",
+        "Edge"
+      ],
+      "open": 167,
+      "remote_pct": 35
+    },
+    {
+      "name": "美团",
+      "hq": "北京",
+      "size": "10000+",
+      "stack": [
+        "Vue",
+        "Node"
+      ],
+      "open": 132,
+      "remote_pct": 20
+    },
+    {
+      "name": "拼多多",
+      "hq": "上海",
+      "size": "10000+",
+      "stack": [
+        "React",
+        "Node"
+      ],
+      "open": 89,
+      "remote_pct": 15
+    },
+    {
+      "name": "京东",
+      "hq": "北京",
+      "size": "10000+",
+      "stack": [
+        "Vue",
+        "Next.js"
+      ],
+      "open": 76,
+      "remote_pct": 25
+    },
+    {
+      "name": "百度",
+      "hq": "北京",
+      "size": "10000+",
+      "stack": [
+        "React",
+        "Node"
+      ],
+      "open": 112,
+      "remote_pct": 30
+    },
+    {
+      "name": "网易",
+      "hq": "杭州",
+      "size": "10000+",
+      "stack": [
+        "React",
+        "Next.js"
+      ],
+      "open": 64,
+      "remote_pct": 30
+    },
+    {
+      "name": "小米",
+      "hq": "北京",
+      "size": "10000+",
+      "stack": [
+        "React",
+        "Node"
+      ],
+      "open": 58,
+      "remote_pct": 25
+    },
+    {
+      "name": "蚂蚁集团",
+      "hq": "杭州",
+      "size": "10000+",
+      "stack": [
+        "React",
+        "umi",
+        "Edge"
+      ],
+      "open": 87,
+      "remote_pct": 20
+    },
+    {
+      "name": "快手",
+      "hq": "北京",
+      "size": "10000+",
+      "stack": [
+        "React",
+        "Next.js"
+      ],
+      "open": 73,
+      "remote_pct": 30
+    },
+    {
+      "name": "B 站",
+      "hq": "上海",
+      "size": "5000+",
+      "stack": [
+        "React",
+        "Vue"
+      ],
+      "open": 52,
+      "remote_pct": 35
+    },
+    {
+      "name": "小红书",
+      "hq": "上海",
+      "size": "5000+",
+      "stack": [
+        "React",
+        "Next.js"
+      ],
+      "open": 48,
+      "remote_pct": 40
+    },
+    {
+      "name": "得物",
+      "hq": "上海",
+      "size": "5000+",
+      "stack": [
+        "React",
+        "Next.js"
+      ],
+      "open": 41,
+      "remote_pct": 30
+    },
+    {
+      "name": "知乎",
+      "hq": "北京",
+      "size": "2000+",
+      "stack": [
+        "React",
+        "Next.js"
+      ],
+      "open": 32,
+      "remote_pct": 45
+    },
+    {
+      "name": "Shopee",
+      "hq": "深圳",
+      "size": "5000+",
+      "stack": [
+        "Vue",
+        "Node"
+      ],
+      "open": 38,
+      "remote_pct": 35
+    },
+    {
+      "name": "SHEIN",
+      "hq": "广州",
+      "size": "10000+",
+      "stack": [
+        "React",
+        "Next.js"
+      ],
+      "open": 56,
+      "remote_pct": 30
+    },
+    {
+      "name": "携程",
+      "hq": "上海",
+      "size": "10000+",
+      "stack": [
+        "React",
+        "Vue"
+      ],
+      "open": 44,
+      "remote_pct": 25
+    },
+    {
+      "name": "滴滴",
+      "hq": "北京",
+      "size": "10000+",
+      "stack": [
+        "React",
+        "Vue"
+      ],
+      "open": 39,
+      "remote_pct": 30
+    },
+    {
+      "name": "哔哩哔哩",
+      "hq": "上海",
+      "size": "5000+",
+      "stack": [
+        "React"
+      ],
+      "open": 28,
+      "remote_pct": 35
+    }
+  ],
+  "top_20_overseas": [
+    {
+      "name": "Vercel",
+      "hq": "旧金山",
+      "size": "500-1000",
+      "stack": [
+        "Next.js",
+        "Edge"
+      ],
+      "open": 32,
+      "remote_pct": 100
+    },
+    {
+      "name": "Cloudflare",
+      "hq": "旧金山",
+      "size": "3000+",
+      "stack": [
+        "Workers",
+        "Edge"
+      ],
+      "open": 28,
+      "remote_pct": 95
+    },
+    {
+      "name": "Stripe",
+      "hq": "旧金山",
+      "size": "5000+",
+      "stack": [
+        "React",
+        "TypeScript"
+      ],
+      "open": 24,
+      "remote_pct": 90
+    },
+    {
+      "name": "OpenAI",
+      "hq": "旧金山",
+      "size": "1500+",
+      "stack": [
+        "React",
+        "Next.js"
+      ],
+      "open": 19,
+      "remote_pct": 80
+    },
+    {
+      "name": "Anthropic",
+      "hq": "旧金山",
+      "size": "500+",
+      "stack": [
+        "React",
+        "Python"
+      ],
+      "open": 14,
+      "remote_pct": 85
+    },
+    {
+      "name": "Anysphere (Cursor)",
+      "hq": "旧金山",
+      "size": "200+",
+      "stack": [
+        "React",
+        "Electron"
+      ],
+      "open": 11,
+      "remote_pct": 90
+    },
+    {
+      "name": "Linear",
+      "hq": "纽约",
+      "size": "100-200",
+      "stack": [
+        "React",
+        "GraphQL"
+      ],
+      "open": 8,
+      "remote_pct": 100
+    },
+    {
+      "name": "Figma",
+      "hq": "旧金山",
+      "size": "1000+",
+      "stack": [
+        "React",
+        "WebGL"
+      ],
+      "open": 22,
+      "remote_pct": 75
+    },
+    {
+      "name": "Notion",
+      "hq": "旧金山",
+      "size": "500+",
+      "stack": [
+        "React",
+        "TypeScript"
+      ],
+      "open": 17,
+      "remote_pct": 100
+    },
+    {
+      "name": "GitHub",
+      "hq": "旧金山",
+      "size": "3000+",
+      "stack": [
+        "React",
+        "Ruby"
+      ],
+      "open": 26,
+      "remote_pct": 85
+    },
+    {
+      "name": "Replit",
+      "hq": "旧金山",
+      "size": "200+",
+      "stack": [
+        "React",
+        "Node"
+      ],
+      "open": 13,
+      "remote_pct": 95
+    },
+    {
+      "name": "Shopify",
+      "hq": "渥太华",
+      "size": "10000+",
+      "stack": [
+        "React",
+        "Remix"
+      ],
+      "open": 35,
+      "remote_pct": 100
+    },
+    {
+      "name": "Datadog",
+      "hq": "纽约",
+      "size": "5000+",
+      "stack": [
+        "React",
+        "GraphQL"
+      ],
+      "open": 29,
+      "remote_pct": 80
+    },
+    {
+      "name": "Sentry",
+      "hq": "旧金山",
+      "size": "300+",
+      "stack": [
+        "React",
+        "Next.js"
+      ],
+      "open": 12,
+      "remote_pct": 100
+    },
+    {
+      "name": "Supabase",
+      "hq": "新加坡",
+      "size": "100+",
+      "stack": [
+        "React",
+        "Postgres"
+      ],
+      "open": 9,
+      "remote_pct": 100
+    },
+    {
+      "name": "Railway",
+      "hq": "旧金山",
+      "size": "50-100",
+      "stack": [
+        "React",
+        "Go"
+      ],
+      "open": 6,
+      "remote_pct": 100
+    },
+    {
+      "name": "Render",
+      "hq": "旧金山",
+      "size": "50-100",
+      "stack": [
+        "React",
+        "Node"
+      ],
+      "open": 5,
+      "remote_pct": 100
+    },
+    {
+      "name": "Fly.io",
+      "hq": "芝加哥",
+      "size": "50-100",
+      "stack": [
+        "React",
+        "Edge"
+      ],
+      "open": 7,
+      "remote_pct": 100
+    },
+    {
+      "name": "Modal Labs",
+      "hq": "纽约",
+      "size": "50-100",
+      "stack": [
+        "React",
+        "Python"
+      ],
+      "open": 4,
+      "remote_pct": 100
+    },
+    {
+      "name": "Replicate",
+      "hq": "旧金山",
+      "size": "50-100",
+      "stack": [
+        "React",
+        "Python"
+      ],
+      "open": 6,
+      "remote_pct": 100
+    }
+  ],
+  "stats": {
+    "domestic_total_open": 1679,
+    "overseas_total_open": 327,
+    "domestic_avg_remote": 29.5,
+    "overseas_avg_remote": 93.75
+  }
+}
