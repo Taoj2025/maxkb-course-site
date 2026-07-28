@@ -10,7 +10,7 @@ summary: "SKC4073 / SKC7423 / SKC7773 三门课程 · 5 位同学优秀作品 ·
 
 ## 📚 课程背景
 
-广州华商学院大数据专业开设 3 门核心 AI 课程：
+大数据专业开设 3 门核心 AI 课程：
 
 - SKC4073 数据可视化（Python + Pyecharts）
 - SKC7423 机器学习（Scikit-learn + PyTorch）
