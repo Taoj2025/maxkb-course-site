@@ -155,8 +155,7 @@ def main():
             filename, code = publish_article(art, idx)
             print(f"  📝 {filename} → HTTP {code}")
         
-        # 更新 articles.json
-        from datetime import datetime
+        # 更新 articles.json（datetime 已在模块顶部导入）
         articles_json_path = Path('/root/.openclaw/workspace/projects/maxkb-course-site/site/articles.json')
         if articles_json_path.exists():
             with open(articles_json_path, 'r', encoding='utf-8') as f:
