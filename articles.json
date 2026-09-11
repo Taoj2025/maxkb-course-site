@@ -182,5 +182,21 @@
     "summary": "基于开源 MaxKB（1Panel-dev）的企业级智能体平台教学，9 章讲义 + 配套源码 + 5 大场景模板 + 深度学习原理",
     "category": "课程介绍",
     "color": "purple"
+  },
+  {
+    "id": 13311,
+    "slug": "deep-learning-fundamentals",
+    "title": "深度学习与 LLM 原理：从神经网络到 Agent 调用（6 节系统讲解）",
+    "date": "2026-09-12",
+    "tags": [
+      "深度学习",
+      "Transformer",
+      "LoRA",
+      "Agent",
+      "原理"
+    ],
+    "summary": "MaxKB 学员补原理层的必修课。6 节系统讲解神经网络、Transformer、预训练演进、微调与 LoRA、推理优化、Agent 调用。配套 PyTorch / HuggingFace / vLLM / LangChain 代码示例。",
+    "category": "课程资料",
+    "color": "indigo"
   }
 ]

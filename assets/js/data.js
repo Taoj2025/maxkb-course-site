@@ -88,6 +88,13 @@ const chapters = [
     tag: 'theory',
     duration: '7h',
     pages: 'P62-P68',
-    outputs: ['PyTorch 神经网络示例', 'LoRA 微调脚本', 'vLLM 部署示例'],
+    outputs: [
+      'PyTorch MLP 示例（MNIST）',
+      'Transformer Self-Attention 解读',
+      'HuggingFace AutoModel 调用脚本',
+      'LoRA / QLoRA 微调脚本（PEFT）',
+      'vLLM 部署 + bitsandbytes 量化',
+      'LangChain create_tool_calling_agent 示例',
+    ],
   },
 ];
