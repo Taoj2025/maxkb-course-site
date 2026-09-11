@@ -488,3 +488,341 @@ section {
 .fade-in-delay-1 { animation-delay: .1s; animation-fill-mode: both; }
 .fade-in-delay-2 { animation-delay: .2s; animation-fill-mode: both; }
 .fade-in-delay-3 { animation-delay: .3s; animation-fill-mode: both; }
+
+/* ===========================================================
+   SaaS 商业化组件 · v2 (2026-09-11)
+   在原紫色 AI 科技风基础上追加的商业站点常见元素
+   =========================================================== */
+
+/* ---------- 顶部信任徽章条 ---------- */
+.trust-bar {
+  background: linear-gradient(90deg, rgba(91,46,191,0.92), rgba(59,130,246,0.92));
+  color: #fff;
+  font-size: 13px;
+  padding: 10px 24px;
+  display: flex; gap: 28px; flex-wrap: wrap;
+  justify-content: center; align-items: center;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.trust-bar .tb-item { display: inline-flex; gap: 6px; align-items: center; opacity: 0.95; }
+.trust-bar .tb-item strong { color: #FCD34D; font-weight: 700; }
+
+/* ---------- 数据大字报 ---------- */
+.stat-mega {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 32px;
+  padding: 64px 32px;
+  background: linear-gradient(135deg, #1E1B4B 0%, #5B2EBF 60%, #3B82F6 100%);
+  color: #fff;
+  text-align: center;
+}
+.stat-mega .stat-item .num {
+  font-size: 56px; font-weight: 900; line-height: 1;
+  background: linear-gradient(135deg, #FCD34D, #fff);
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.stat-mega .stat-item .label {
+  color: rgba(255,255,255,0.85); margin-top: 8px; font-size: 14px;
+  letter-spacing: 0.5px;
+}
+.stat-mega .stat-item .sub { font-size: 11px; color: rgba(255,255,255,0.6); margin-top: 4px; }
+
+/* ---------- 客户 Logo 墙 ---------- */
+.logo-wall {
+  padding: 56px 32px;
+  background: #FAFAFB;
+  text-align: center;
+}
+.logo-wall h3 {
+  color: var(--gray); font-size: 13px; font-weight: 500;
+  letter-spacing: 2px; margin-bottom: 28px; text-transform: uppercase;
+}
+.logo-wall .logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 20px;
+  max-width: 1080px; margin: 0 auto;
+}
+.logo-wall .logo-item {
+  background: #fff;
+  border: 1px solid var(--gray-light);
+  border-radius: 10px;
+  padding: 18px 12px;
+  font-weight: 700;
+  color: var(--gray);
+  display: flex; align-items: center; justify-content: center;
+  height: 64px;
+  transition: all .2s;
+}
+.logo-wall .logo-item:hover {
+  border-color: var(--purple-light);
+  color: var(--purple-deep);
+  transform: translateY(-2px);
+}
+
+/* ---------- 客户证言 ---------- */
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  padding: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.testimonial-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  display: flex; flex-direction: column; gap: 16px;
+  border: 1px solid var(--gray-light);
+  transition: all .3s;
+}
+.testimonial-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(91,46,191,0.12);
+  border-color: var(--purple-light);
+}
+.testimonial-card .stars { color: #FCD34D; font-size: 16px; letter-spacing: 2px; }
+.testimonial-card .quote {
+  font-size: 15px; line-height: 1.75; color: var(--dark);
+  flex: 1;
+}
+.testimonial-card .author {
+  display: flex; align-items: center; gap: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--gray-light);
+}
+.testimonial-card .avatar {
+  width: 44px; height: 44px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--purple-deep), var(--blue));
+  color: #fff; font-weight: 700; font-size: 16px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.testimonial-card .info .name { font-weight: 700; color: var(--purple-deep); font-size: 14px; }
+.testimonial-card .info .role { font-size: 12px; color: var(--gray); margin-top: 2px; }
+
+/* ---------- 套餐对比表 ---------- */
+.comparison-table-wrap {
+  overflow-x: auto;
+  max-width: 1080px; margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+.comparison-table {
+  width: 100%; border-collapse: collapse; background: #fff;
+}
+.comparison-table th, .comparison-table td {
+  padding: 14px 18px; border-bottom: 1px solid var(--gray-light); text-align: center;
+  font-size: 14px;
+}
+.comparison-table thead th {
+  background: linear-gradient(135deg, var(--purple-deep), var(--blue));
+  color: #fff; font-weight: 700;
+}
+.comparison-table thead th.featured {
+  background: linear-gradient(135deg, #F59E0B, #EF4444);
+}
+.comparison-table tbody tr:hover { background: #FAFAFB; }
+.comparison-table td:first-child, .comparison-table th:first-child { text-align: left; font-weight: 600; }
+.comparison-table .yes { color: #34D399; font-weight: 700; font-size: 18px; }
+.comparison-table .no  { color: #CBD5E1; font-size: 18px; }
+
+/* ---------- FAQ Accordion ---------- */
+.faq-accordion {
+  max-width: 800px; margin: 0 auto;
+}
+.faq-accordion .faq-item {
+  border-bottom: 1px solid var(--gray-light);
+  background: #fff;
+}
+.faq-accordion .faq-item:first-child { border-top-left-radius: 12px; border-top-right-radius: 12px; }
+.faq-accordion .faq-item:last-child  { border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; }
+.faq-accordion .faq-q {
+  width: 100%; background: none; border: none; text-align: left;
+  padding: 20px 24px; font-size: 16px; font-weight: 600;
+  color: var(--purple-deep);
+  cursor: pointer; display: flex; justify-content: space-between; align-items: center;
+  gap: 16px;
+  font-family: inherit;
+}
+.faq-accordion .faq-q:hover { background: #FAFAFB; }
+.faq-accordion .faq-q::after {
+  content: '+'; font-size: 24px; color: var(--purple); font-weight: 300;
+  flex-shrink: 0; transition: transform .2s;
+}
+.faq-accordion .faq-item.open .faq-q::after { content: '−'; }
+.faq-accordion .faq-a {
+  display: none;
+  padding: 0 24px 24px;
+  color: var(--gray); line-height: 1.8; font-size: 14px;
+}
+.faq-accordion .faq-item.open .faq-a { display: block; }
+
+/* ---------- 终极 CTA Banner ---------- */
+.cta-banner {
+  background: linear-gradient(135deg, #5B2EBF 0%, #3B82F6 60%, #EF4444 100%);
+  color: #fff;
+  padding: 80px 32px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.cta-banner::before {
+  content: ''; position: absolute; top: -50%; left: -10%; width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(252,211,77,0.3) 0%, transparent 70%);
+  filter: blur(60px);
+}
+.cta-banner::after {
+  content: ''; position: absolute; bottom: -50%; right: -10%; width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(139,92,246,0.3) 0%, transparent 70%);
+  filter: blur(60px);
+}
+.cta-banner .cta-content { position: relative; z-index: 1; }
+.cta-banner h2 { font-size: 38px; font-weight: 800; margin-bottom: 16px; }
+.cta-banner .subtitle { font-size: 16px; opacity: 0.9; margin-bottom: 32px; max-width: 600px; margin-left: auto; margin-right: auto; }
+.cta-banner .cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.cta-banner .btn-cta-primary {
+  background: #fff; color: var(--purple-deep); padding: 16px 36px;
+  border-radius: 10px; font-weight: 700; font-size: 16px;
+  text-decoration: none; display: inline-block;
+  transition: transform .2s;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+.cta-banner .btn-cta-primary:hover { transform: translateY(-2px); }
+.cta-banner .btn-cta-secondary {
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+  padding: 16px 36px;
+  border-radius: 10px;
+  font-weight: 700; font-size: 16px;
+  border: 2px solid rgba(255,255,255,0.4);
+  text-decoration: none; display: inline-block;
+  transition: all .2s;
+}
+.cta-banner .btn-cta-secondary:hover { background: rgba(255,255,255,0.25); }
+
+/* ---------- 案例卡 ---------- */
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+  max-width: 1200px; margin: 0 auto;
+}
+.case-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  transition: all .3s;
+  border: 1px solid var(--gray-light);
+  display: flex; flex-direction: column;
+}
+.case-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(91,46,191,0.15);
+}
+.case-card .case-thumb {
+  height: 160px;
+  background: linear-gradient(135deg, var(--purple-deep), var(--blue));
+  color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 56px;
+  position: relative;
+}
+.case-card .case-tag {
+  position: absolute; top: 14px; left: 14px;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.case-card .case-body { padding: 24px; flex: 1; display: flex; flex-direction: column; }
+.case-card .case-body h3 { color: var(--purple-deep); margin-bottom: 10px; font-size: 20px; }
+.case-card .case-body .industry { color: var(--gray); font-size: 12px; margin-bottom: 12px; }
+.case-card .case-body p { color: var(--gray); font-size: 14px; line-height: 1.7; flex: 1; }
+.case-card .case-roi {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--gray-light);
+}
+.case-card .roi-label { font-size: 12px; color: var(--gray); }
+.case-card .roi-value { font-size: 22px; font-weight: 800; color: var(--purple-deep); }
+
+/* ---------- Plan Badge (admin) ---------- */
+.plan-badge, .status-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* ---------- Mini Buttons (admin) ---------- */
+.btn-mini {
+  padding: 6px 12px;
+  font-size: 12px;
+  border-radius: 6px;
+  border: 1px solid var(--gray-light);
+  background: #fff;
+  cursor: pointer;
+  margin-right: 4px;
+  transition: all .15s;
+  font-family: inherit;
+}
+.btn-mini:hover { background: var(--gray-light); }
+.btn-mini.btn-standard { background: #8B5CF6; color: #fff; border-color: #8B5CF6; }
+.btn-mini.btn-flagship { background: #5B2EBF; color: #fff; border-color: #5B2EBF; }
+.btn-mini.btn-danger   { background: #EF4444; color: #fff; border-color: #EF4444; }
+.btn-mini.btn-success  { background: #34D399; color: #fff; border-color: #34D399; }
+.btn-mini:disabled { opacity: 0.5; cursor: not-allowed; }
+
+/* ---------- Hamburger (mobile) ---------- */
+.hamburger {
+  display: none;
+  background: none; border: none;
+  font-size: 24px; cursor: pointer;
+  color: var(--purple-deep);
+  padding: 4px 8px;
+}
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .nav-links.open {
+    display: flex; flex-direction: column; gap: 12px;
+    position: absolute; top: 100%; left: 0; right: 0;
+    background: #fff; padding: 20px 32px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    border-top: 1px solid var(--gray-light);
+  }
+  .hamburger { display: block; }
+  .stat-mega .stat-item .num { font-size: 40px; }
+  .cta-banner h2 { font-size: 26px; }
+}
+
+/* ---------- Pricing Card Refinement (membership) ---------- */
+.save-tag {
+  position: absolute; top: -10px; right: 20px;
+  background: linear-gradient(135deg, #FCD34D, #F59E0B);
+  color: #7c2d12;
+  padding: 4px 12px; border-radius: 12px;
+  font-size: 11px; font-weight: 700;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.plan-card-highlight {
+  border: 2px solid var(--purple);
+  transform: scale(1.02);
+  box-shadow: 0 12px 40px rgba(91,46,191,0.2);
+}
+
+/* ---------- Section Padding Override ---------- */
+.section-tight { padding: 60px 32px !important; }
+
+.fade-in-delay-3 { animation-delay: .3s; animation-fill-mode: both; }

@@ -4,228 +4,568 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>会员订阅 · MaxKB FDE 教学</title>
+<meta name="description" content="MaxKB FDE 教学会员订阅：3 档套餐 · 微信扫码支付 · 24h 开通。500+ 学员选择标准 / 100+ 学员选择旗舰。">
 <link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%235B2EBF'/><text x='50' y='65' text-anchor='middle' fill='white' font-size='40' font-weight='bold' font-family='sans-serif'>M</text></svg>">
+<style>
+/* 本页专属 · 全去内联 */
+.membership-hero {
+  padding: 80px 32px 40px;
+  text-align: center;
+  background: linear-gradient(180deg, #FAFAFB 0%, white 100%);
+}
+.membership-hero h1 { color: var(--purple-deep); font-size: 38px; margin-bottom: 12px; }
+.membership-hero p  { color: var(--gray); font-size: 16px; max-width: 600px; margin: 0 auto; }
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 32px;
+}
+.plan-card {
+  background: white;
+  border-radius: 16px;
+  padding: 36px 28px;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: all .3s;
+  border: 1px solid var(--gray-light);
+  display: flex; flex-direction: column;
+}
+.plan-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(91,46,191,0.15);
+}
+.plan-card.featured {
+  border: 2px solid var(--purple);
+  box-shadow: 0 12px 40px rgba(91,46,191,0.2);
+}
+.plan-badge-floating {
+  position: absolute; top: -12px; right: 24px;
+  background: linear-gradient(135deg, #FCD34D, #F59E0B);
+  color: #7c2d12;
+  padding: 4px 14px; border-radius: 12px;
+  font-size: 12px; font-weight: 700;
+}
+.plan-card .plan-icon { font-size: 48px; margin-bottom: 12px; }
+.plan-card .plan-name { font-size: 24px; font-weight: 700; margin-bottom: 8px; }
+.plan-card .plan-desc { color: var(--gray); font-size: 14px; margin-bottom: 20px; min-height: 40px; }
+.plan-card .plan-price {
+  font-size: 36px; font-weight: 800; margin-bottom: 4px;
+}
+.plan-card .plan-price small { font-size: 14px; font-weight: 400; color: var(--gray); margin-left: 4px; }
+.plan-card .plan-features { list-style: none; padding: 0; margin: 24px 0; flex: 1; }
+.plan-card .plan-features li {
+  padding: 6px 0; font-size: 13px;
+  display: flex; align-items: flex-start; gap: 8px;
+}
+.plan-card .plan-features li .icon-yes { color: #34D399; font-weight: bold; flex-shrink: 0; }
+.plan-card .plan-features li .icon-no  { color: #CBD5E1; font-weight: bold; flex-shrink: 0; }
+.plan-card .plan-features li.disabled { color: #CBD5E1; text-decoration: line-through; }
+.plan-card .plan-cta {
+  width: 100%; padding: 14px; border: none; border-radius: 10px;
+  font-weight: 600; font-size: 15px; cursor: pointer;
+  transition: all .2s;
+  font-family: inherit;
+}
+.plan-card .plan-cta:hover { transform: translateY(-2px); }
+.trust-row {
+  background: linear-gradient(135deg, rgba(91,46,191,0.05), rgba(59,130,246,0.05));
+  padding: 40px 32px; text-align: center;
+}
+.trust-row .nums { display: flex; gap: 32px; justify-content: center; flex-wrap: wrap; margin-top: 16px; }
+.trust-row .nums div { font-size: 14px; color: var(--gray); }
+.trust-row .nums strong { color: var(--purple-deep); font-size: 28px; display: block; font-weight: 800; }
+
+.payment-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px; max-width: 1080px; margin: 32px auto;
+  padding: 0 32px;
+}
+.payment-step {
+  background: white; padding: 24px; border-radius: 12px;
+  border: 1px solid var(--gray-light);
+  text-align: left;
+}
+.payment-step .num {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 40px; height: 40px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--purple-deep), var(--blue));
+  color: white; font-weight: 700; margin-bottom: 12px;
+}
+.payment-step h4 { color: var(--purple-deep); margin-bottom: 8px; }
+.payment-step p  { color: var(--gray); font-size: 13px; line-height: 1.6; }
+
+.qr-section { padding: 40px 32px; text-align: center; background: #FAFAFB; }
+.qr-section h3 { color: var(--purple-deep); margin-bottom: 24px; font-size: 22px; }
+.qr-box {
+  display: inline-block; background: white; padding: 32px;
+  border-radius: 16px; box-shadow: 0 8px 32px rgba(91,46,191,0.15);
+}
+.qr-box img { width: 280px; height: 280px; display: block; margin-bottom: 16px; }
+.qr-box p  { color: var(--gray); font-size: 13px; line-height: 1.6; }
+
+.modal-overlay {
+  display: none; position: fixed; inset: 0;
+  background: rgba(0,0,0,0.6); z-index: 9999;
+  align-items: center; justify-content: center; padding: 20px;
+}
+.modal-overlay.open { display: flex; }
+.modal-box {
+  background: white; max-width: 480px; width: 100%;
+  border-radius: 16px; padding: 32px;
+}
+.modal-box h3 { color: var(--purple-deep); margin-bottom: 12px; }
+.modal-box p { color: var(--gray); font-size: 14px; margin-bottom: 20px; }
+.modal-box ol { padding-left: 20px; color: var(--dark); font-size: 13px; line-height: 1.8; }
+.modal-box .btn-ok {
+  width: 100%; padding: 12px; background: var(--purple-deep); color: white;
+  border: none; border-radius: 8px; margin-top: 20px; cursor: pointer; font-size: 15px;
+}
+.modal-box .input {
+  width: 100%; padding: 10px 14px; border: 1px solid #E5E7EB; border-radius: 8px;
+  font-size: 14px; margin-bottom: 16px; font-family: inherit;
+}
+.modal-box .label {
+  display: block; font-size: 13px; color: var(--gray); margin-bottom: 6px;
+}
+.modal-box .err { color: #EF4444; font-size: 13px; margin-top: 8px; text-align: center; min-height: 18px; }
+</style>
 </head>
 <body>
 
-<!-- 顶部导航 -->
+<!-- 顶部信任徽章条 -->
+<section class="trust-bar">
+  <span class="tb-item">💎 <strong>500+</strong> 学员选择标准会员</span>
+  <span class="tb-item">👑 <strong>100+</strong> 学员选择旗舰会员</span>
+  <span class="tb-item">⏱️ 24 小时内人工开通</span>
+  <span class="tb-item">📜 GPL v3 开源协议</span>
+</section>
+
+<!-- 导航 -->
 <nav class="navbar">
   <div class="nav-container">
     <div class="nav-logo">
       <div class="logo-dot">M</div>
       <span>MaxKB · FDE 教学</span>
     </div>
-    <div class="nav-links">
+    <button class="hamburger" id="nav-hamburger" aria-label="菜单">☰</button>
+    <div class="nav-links" id="nav-links">
       <a href="index.html">首页</a>
+      <a href="index.html#course">课程</a>
       <a href="membership.html" class="active">会员订阅</a>
-      <a href="#" id="nav-user-area">登录 / 注册</a>
+      <a href="cases.html">客户案例</a>
+      <a href="enterprise.html" style="color:#F59E0B; font-weight:700;">🏢 企业服务</a>
+      <a href="trial.html" class="nav-cta">📅 预约演示</a>
     </div>
   </div>
 </nav>
 
-<!-- 用户信息条 -->
-<section id="user-bar" style="max-width:100%; padding: 16px 32px; background: rgba(255,255,255,0.05); display:none;">
-  <div style="max-width:1280px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; color: white;">
+<!-- 用户信息条（登录后显示）-->
+<section id="user-bar" style="display:none; max-width:100%; padding: 12px 32px; background: linear-gradient(90deg, #5B2EBF, #3B82F6); color: white;">
+  <div style="max-width:1280px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap: 12px;">
     <div>
       <span style="font-size: 14px;">👤 当前会员：</span>
       <span id="user-email" style="font-weight:600;"></span>
-      <span id="user-plan-badge" style="margin-left: 12px; padding: 2px 10px; border-radius: 12px; font-size: 12px;"></span>
+      <span id="user-plan-badge" style="margin-left: 12px; padding: 3px 10px; border-radius: 12px; font-size: 12px;"></span>
     </div>
-    <button id="logout-btn" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white; padding: 6px 14px; border-radius: 6px; cursor: pointer;">退出登录</button>
+    <button id="logout-btn" style="background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); color: white; padding: 6px 14px; border-radius: 6px; cursor: pointer; font-family: inherit;">退出登录</button>
   </div>
 </section>
 
-<!-- 会员等级展示 -->
-<section style="padding: 60px 32px;">
+<!-- 头部 -->
+<section class="membership-hero">
+  <div class="section-tag">💎 会员订阅</div>
+  <h1>选择适合您的 <span class="highlight" style="color: var(--purple-deep);">学习方案</span></h1>
+  <p>从免费体验到旗舰会员，3 档套餐满足不同学习需求。所有订单通过微信扫码支付，<strong>24 小时内人工开通</strong>。</p>
+</section>
+
+<!-- 套餐 -->
+<section>
+  <div class="plans-grid" id="plans-grid"></div>
+</section>
+
+<!-- 信任数据 -->
+<section class="trust-row">
+  <div style="color: var(--gray); font-size: 13px; letter-spacing: 1px;">学员选择</div>
+  <div class="nums">
+    <div><strong>500+</strong>标准会员</div>
+    <div><strong>100+</strong>旗舰会员</div>
+    <div><strong>4.9/5</strong>学员评分</div>
+    <div><strong>98%</strong>续费率</div>
+  </div>
+</section>
+
+<!-- 套餐对比表 -->
+<section style="background: white; padding: 80px 32px;">
   <div style="max-width:1280px; margin:0 auto;">
-    <div class="section-tag">💎 会员订阅</div>
-    <h2 class="section-title">选择适合您的 <span class="highlight">学习方案</span></h2>
-    <p class="section-subtitle">从免费体验到旗舰会员，3 档套餐满足不同学习需求。所有会员订单通过微信扫码支付。</p>
-
-    <div id="plans-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-top: 40px;"></div>
+    <div class="section-tag">📊 套餐对比</div>
+    <h2 class="section-title">一表看清 <span class="highlight">所有权益</span></h2>
+    <p class="section-subtitle">三大套餐横向对比，帮你做出最合适的选择。</p>
+    <div class="comparison-table-wrap">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th style="text-align:left;">功能权益</th>
+            <th>体验会员<br><small style="font-weight:400;">永久免费</small></th>
+            <th class="featured">标准会员<br><small style="font-weight:400;">¥99/年</small></th>
+            <th>旗舰会员<br><small style="font-weight:400;">¥299/年</small></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>查看 8 章课程大纲</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td>浏览 5 大企业场景</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td>60 页 PPT 完整下载</td><td class="no">×</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td>8 章节讲义完整下载</td><td class="no">×</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td>8 大核心模块源码</td><td class="no">×</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td>3 个实验指导手册</td><td class="no">×</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td>5 大企业场景包</td><td class="no">×</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td>微信群 1V1 答疑</td><td class="no">×</td><td class="no">×</td><td class="yes">✓</td></tr>
+          <tr><td>每月 1 次直播答疑</td><td class="no">×</td><td class="no">×</td><td class="yes">✓</td></tr>
+          <tr><td>实战项目 1V1 辅导</td><td class="no">×</td><td class="no">×</td><td class="yes">✓</td></tr>
+          <tr><td>专属会员证书</td><td class="no">×</td><td class="no">×</td><td class="yes">✓</td></tr>
+          <tr><td>新课件优先获取</td><td class="no">×</td><td class="no">×</td><td class="yes">✓</td></tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </section>
 
-<!-- 支付说明 -->
-<section style="background: white; max-width:100%; padding: 60px 32px;">
-  <div style="max-width:980px; margin:0 auto; text-align:center;">
-    <h3 style="color: var(--purple-deep); margin-bottom: 16px;">💳 微信扫码支付流程</h3>
-    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; text-align:left;">
-      <div style="padding: 24px; border-radius: 12px; background: var(--gray-light);">
-        <div style="font-size: 36px; margin-bottom: 12px;">1️⃣</div>
-        <h4 style="color: var(--purple-deep); margin-bottom: 8px;">选择套餐</h4>
-        <p style="color: var(--gray); font-size: 14px;">选择标准会员 ¥99/年 或 旗舰会员 ¥299/年，点击「立即升级」</p>
+<!-- 支付流程 -->
+<section style="background: linear-gradient(180deg, #FAFAFB, white); padding: 80px 32px;">
+  <div style="max-width:1080px; margin:0 auto; text-align:center;">
+    <div class="section-tag">💳 开通流程</div>
+    <h2 class="section-title">3 步 <span class="highlight">完成订阅</span></h2>
+    <div class="payment-grid">
+      <div class="payment-step">
+        <div class="num">1</div>
+        <h4>选择套餐</h4>
+        <p>选择标准会员 ¥99/年 或 旗舰会员 ¥299/年，点击「立即升级」</p>
       </div>
-      <div style="padding: 24px; border-radius: 12px; background: var(--gray-light);">
-        <div style="font-size: 36px; margin-bottom: 12px;">2️⃣</div>
-        <h4 style="color: var(--purple-deep); margin-bottom: 8px;">扫码支付</h4>
-        <p style="color: var(--gray); font-size: 14px;">扫描小陶老师微信收款码，备注您的注册邮箱</p>
+      <div class="payment-step">
+        <div class="num">2</div>
+        <h4>扫码支付</h4>
+        <p>扫描小陶老师微信收款码，<strong>备注您的注册邮箱</strong></p>
       </div>
-      <div style="padding: 24px; border-radius: 12px; background: var(--gray-light);">
-        <div style="font-size: 36px; margin-bottom: 12px;">3️⃣</div>
-        <h4 style="color: var(--purple-deep); margin-bottom: 8px;">人工开通</h4>
-        <p style="color: var(--gray); font-size: 14px;">24 小时内小陶老师主动联系并开通权限（邮箱留言 → 升级会员）</p>
+      <div class="payment-step">
+        <div class="num">3</div>
+        <h4>人工开通</h4>
+        <p>支付完成后，<strong>同步给网站发一条留言</strong>（用您注册时的邮箱）<br>小陶老师 24 小时内联系并开通权限</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 二维码区 -->
-<section style="padding: 60px 32px;">
-  <div style="max-width:680px; margin:0 auto; text-align:center;">
-    <h3 style="color: white; margin-bottom: 24px;">📱 微信收款码</h3>
-    <div style="background: white; padding: 32px; border-radius: 16px; display:inline-block; box-shadow: 0 8px 32px rgba(91,46,191,0.2);">
-      <img src="assets/images/payment-qr.png" alt="微信收款码" style="width:280px; height:280px; display:block; margin-bottom: 16px;" onerror="this.outerHTML='<div style=&quot;width:280px;height:280px;background:#F3F4F6;display:flex;align-items:center;justify-content:center;border-radius:8px;color:#6B7280;text-align:center;padding:20px;&quot;>⚠️ 请联系小陶老师获取<br>微信收款码<br><br>📧 2949465671@qq.com</div>'">
-      <p style="color: var(--gray); font-size: 13px;">请扫描上方二维码付款<br>备注：<strong>注册邮箱</strong>，小陶老师 24 小时内开通</p>
+<!-- 微信收款码 -->
+<section class="qr-section">
+  <h3>📱 微信收款码</h3>
+  <div class="qr-box">
+    <img src="assets/images/payment-qr.png" alt="微信收款码"
+         onerror="this.outerHTML='<div style="width:280px;height:280px;background:#F3F4F6;display:flex;align-items:center;justify-content:center;border-radius:8px;color:#6B7280;text-align:center;padding:20px;">⚠️ 请联系小陶老师获取<br>微信收款码<br><br>📧 2949465671@qq.com</div>'">
+    <p>请扫描上方二维码付款<br>备注：<strong>注册邮箱</strong>，小陶老师 24 小时内开通</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="background: white; padding: 80px 32px;">
+  <div style="max-width:1280px; margin:0 auto;">
+    <div class="section-tag">❓ 会员 FAQ</div>
+    <h2 class="section-title">关于 <span class="highlight">会员</span> 的问题</h2>
+    <div class="faq-accordion">
+      <div class="faq-item">
+        <button class="faq-q">会员可以退订吗？</button>
+        <div class="faq-a">可以。7 天内未下载任何资料可全额退款。开通 30 天内按已使用月份比例退款。联系小陶老师微信（同 2949465671@qq.com）即可处理。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">会员时长从什么时候算起？</button>
+        <div class="faq-a">从您付款当日算起，标准 / 旗舰会员均为 1 年有效期。到期前 7 天我们会通过站内消息提醒续费。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">会员可以转让给同事 / 同学吗？</button>
+        <div class="faq-a">目前不支持会员权益转让。一个会员账号绑定一个邮箱，所有下载记录与该邮箱关联。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">支付后多久可以下载资料？</button>
+        <div class="faq-a">支付并留言后，小陶老师 24 小时内会通过站内消息确认开通。开通后立即可在「个人中心」看到对应套餐，并下载所有解锁资料。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">企业采购有什么优惠？</button>
+        <div class="faq-a">10 套以上 8 折，50 套以上 7 折，100 套以上提供定制培训 + 私有部署 + 现场授课。请访问 <a href="enterprise.html">企业服务页</a>。</div>
+      </div>
     </div>
+  </div>
+</section>
+
+<!-- 终极 CTA -->
+<section class="cta-banner">
+  <div class="cta-content">
+    <h2>🚀 还有问题？直接与小陶老师对话</h2>
+    <p class="subtitle">企业定制 · 1v1 试用 · 技术咨询</p>
+    <div class="cta-buttons">
+      <a href="trial.html" class="btn-cta-primary">📅 预约 1v1 演示</a>
+      <a href="enterprise.html" class="btn-cta-secondary">🏢 企业服务咨询</a>
+      <a href="#contact" class="btn-cta-secondary">💌 留言咨询</a>
+    </div>
+  </div>
+</section>
+
+<!-- 留言联系 -->
+<section id="contact" class="contact-section" style="max-width:100%; padding: 60px 32px; background: linear-gradient(180deg, #FAFAFB, white);">
+  <div style="max-width:680px; margin:0 auto;">
+    <div class="section-tag">💌 留言咨询</div>
+    <h2 class="section-title">还有 <span class="highlight">其他问题</span>？</h2>
+    <p class="section-subtitle">留下您的信息，小陶老师 24 小时内回复。</p>
+    <form id="contact-form" action="https://formspree.io/f/mgoglgzr" method="POST"
+          style="background: white; padding: 32px; border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.06); margin-top: 32px;">
+      <div style="margin-bottom: 16px;">
+        <label class="label">姓名</label>
+        <input type="text" name="name" class="input" placeholder="请输入您的姓名" required>
+      </div>
+      <div style="margin-bottom: 16px;">
+        <label class="label">邮箱</label>
+        <input type="email" name="email" class="input" placeholder="微信号或邮箱" required>
+      </div>
+      <div style="margin-bottom: 16px;">
+        <label class="label">您的问题</label>
+        <textarea name="message" class="input" style="min-height: 120px; resize: vertical;" placeholder="例如：想了解企业版 MaxKB 部署方案 / 想试用旗舰会员 / 想谈课程合作..." required></textarea>
+      </div>
+      <input type="hidden" name="_subject" value="MaxKB FDE · 会员咨询">
+      <button type="submit" class="plan-cta" style="background: var(--purple-deep); color: white; width: 100%; padding: 14px; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 15px;">
+        🚀 提交咨询
+      </button>
+      <p id="form-status" style="margin-top:16px; text-align:center; font-size:13px; min-height:20px; color: var(--gray);"></p>
+    </form>
   </div>
 </section>
 
 <!-- 登录/注册模态框 -->
-<div id="auth-modal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.6); z-index: 100; align-items:center; justify-content:center;">
-  <div style="background: white; max-width:420px; width:90%; border-radius: 16px; padding: 36px;">
-    <h3 style="color: var(--purple-deep); margin-bottom: 8px; text-align:center;">📚 会员中心</h3>
-    <p style="color: var(--gray); font-size: 13px; margin-bottom: 24px; text-align:center;">使用邮箱注册或登录</p>
+<div id="auth-modal" class="modal-overlay">
+  <div class="modal-box">
+    <h3>📚 会员中心</h3>
+    <p style="color: var(--gray); font-size: 13px; margin-bottom: 24px; text-align: center;">使用邮箱注册或登录（密码至少 6 位）</p>
     <form id="auth-form">
-      <div style="margin-bottom: 16px;">
-        <label style="display:block; font-size:13px; color: var(--gray); margin-bottom:6px;">邮箱</label>
-        <input type="email" id="auth-email" required style="width:100%; padding:10px 14px; border:1px solid #E5E7EB; border-radius:8px; font-size:14px;">
-      </div>
-      <div style="margin-bottom: 20px;">
-        <label style="display:block; font-size:13px; color: var(--gray); margin-bottom:6px;">密码</label>
-        <input type="password" id="auth-password" required style="width:100%; padding:10px 14px; border:1px solid #E5E7EB; border-radius:8px; font-size:14px;">
-      </div>
-      <button type="submit" style="width:100%; padding:12px; background: var(--purple-deep); color:white; border:none; border-radius:8px; font-weight:600; cursor:pointer; font-size: 15px;">登录 / 注册</button>
-      <p id="auth-error" style="color:#EF4444; font-size:13px; margin-top: 12px; text-align:center;"></p>
+      <label class="label">邮箱</label>
+      <input type="email" id="auth-email" required class="input">
+      <label class="label">密码</label>
+      <input type="password" id="auth-password" required class="input" minlength="6">
+      <button type="submit" class="btn-ok">登录 / 注册</button>
+      <p id="auth-error" class="err"></p>
     </form>
-    <button onclick="document.getElementById('auth-modal').style.display='none'" style="width:100%; padding:8px; background: transparent; color: var(--gray); border:none; margin-top: 12px; cursor:pointer; font-size: 13px;">关闭</button>
+    <button onclick="document.getElementById('auth-modal').classList.remove('open')"
+            style="width:100%; padding:8px; background: transparent; color: var(--gray); border:none; margin-top: 12px; cursor:pointer; font-size: 13px; font-family: inherit;">关闭</button>
   </div>
 </div>
 
 <!-- 开通申请模态框 -->
-<div id="upgrade-modal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.6); z-index: 100; align-items:center; justify-content:center;">
-  <div style="background: white; max-width:480px; width:90%; border-radius: 16px; padding: 36px;">
-    <h3 id="upgrade-title" style="color: var(--purple-deep); margin-bottom: 16px;">🚀 申请开通</h3>
-    <p id="upgrade-desc" style="color: var(--gray); font-size: 14px; margin-bottom: 20px;"></p>
-    <ol style="padding-left: 20px; color: var(--dark-gray); font-size: 13px; line-height: 1.8;">
+<div id="upgrade-modal" class="modal-overlay">
+  <div class="modal-box">
+    <h3 id="upgrade-title">🚀 申请开通</h3>
+    <p id="upgrade-desc"></p>
+    <ol>
       <li>扫描下方微信收款码，付款相应金额</li>
       <li>转账时备注您的<strong>注册邮箱</strong></li>
-      <li>支付完成后，<strong>同步给网站发一条留言</strong>（用您注册时的邮箱发到表单）</li>
+      <li>支付完成后，<strong>同步给网站发一条留言</strong>（用您注册时的邮箱）</li>
       <li>小陶老师 24 小时内会主动联系您开通权限</li>
     </ol>
-    <button onclick="document.getElementById('upgrade-modal').style.display='none'" style="width:100%; padding:10px; background: var(--purple-deep); color:white; border:none; border-radius:8px; margin-top: 20px; cursor:pointer;">我知道了</button>
+    <button onclick="document.getElementById('upgrade-modal').classList.remove('open')" class="btn-ok">我知道了</button>
   </div>
 </div>
 
+<script src="assets/js/config.js"></script>
+<script src="assets/js/api.js"></script>
 <script src="assets/js/membership.js"></script>
 <script>
-// ============ 渲染会员等级 ============
-function renderPlans() {
-  const grid = document.getElementById('plans-grid');
-  grid.innerHTML = MEMBERSHIP_PLANS.map(plan => `
-    <div class="plan-card ${plan.highlight ? 'plan-card-highlight' : ''}" style="background:white; border-radius: 16px; padding: 32px; position:relative; box-shadow: 0 4px 12px rgba(0,0,0,0.06); transition: all 0.3s;">
-      ${plan.badge ? `<div style="position:absolute; top:-12px; right: 24px; background: ${plan.color}; color:white; padding:4px 14px; border-radius: 12px; font-size: 12px; font-weight: 600;">${plan.badge}</div>` : ''}
-      <div style="font-size: 48px; margin-bottom: 8px;">${plan.icon}</div>
-      <h3 style="color: ${plan.color}; font-size: 24px; margin-bottom: 8px;">${plan.name}</h3>
-      <p style="color: var(--gray); font-size: 14px; margin-bottom: 20px; min-height: 40px;">${plan.description}</p>
-      <div style="margin-bottom: 24px;">
-        <span style="font-size: 36px; font-weight: 800; color: ${plan.color};">${plan.price === 0 ? '免费' : '¥' + plan.price}</span>
-        <span style="color: var(--gray); font-size: 14px; margin-left: 4px;">${plan.period}</span>
+(async function () {
+  // ============ 渲染会员等级 ============
+  function renderPlans() {
+    const grid = document.getElementById('plans-grid');
+    grid.innerHTML = (window.MEMBERSHIP_PLANS || []).map(plan => `
+      <div class="plan-card ${plan.highlight ? 'featured' : ''}">
+        ${plan.badge ? `<div class="plan-badge-floating">${plan.badge}</div>` : ''}
+        <div class="plan-icon">${plan.icon}</div>
+        <h3 class="plan-name" style="color:${plan.color};">${plan.name}</h3>
+        <p class="plan-desc">${plan.description}</p>
+        <div class="plan-price" style="color:${plan.color};">
+          ${plan.price === 0 ? '免费' : '¥' + plan.price}
+          <small>${plan.period}</small>
+        </div>
+        <ul class="plan-features">
+          ${plan.features.map(f => `
+            <li class="${f.ok ? '' : 'disabled'}">
+              <span class="${f.ok ? 'icon-yes' : 'icon-no'}">${f.ok ? '✓' : '×'}</span>
+              <span>${f.text}</span>
+            </li>
+          `).join('')}
+        </ul>
+        <button class="plan-cta"
+                onclick="selectPlan('${plan.id}')"
+                style="background:${plan.price === 0 ? '#F3F4F6' : plan.color}; color:${plan.price === 0 ? '#1F2937' : 'white'};">
+          ${plan.cta}
+        </button>
       </div>
-      <ul style="list-style:none; padding:0; margin-bottom: 28px;">
-        ${plan.features.map(f => `
-          <li style="padding: 8px 0; color: ${f.ok ? 'var(--dark-gray)' : '#CBD5E1'}; font-size: 13px; display: flex; align-items: flex-start; gap: 8px;">
-            <span style="color: ${f.ok ? '#34D399' : '#CBD5E1'}; font-weight:bold;">${f.ok ? '✓' : '×'}</span>
-            <span style="text-decoration: ${f.ok ? 'none' : 'line-through'};">${f.text}</span>
-          </li>
-        `).join('')}
-      </ul>
-      <button onclick="selectPlan('${plan.id}')" class="plan-cta" data-plan="${plan.id}" style="width:100%; padding:14px; border:none; border-radius:10px; font-weight:600; cursor:pointer; font-size:15px; background:${plan.price === 0 ? 'var(--gray-light)' : plan.color}; color:${plan.price === 0 ? 'var(--dark-gray)' : 'white'};">${plan.cta}</button>
-    </div>
-  `).join('');
-}
+    `).join('');
+  }
 
-// ============ 选择套餐 ============
-function selectPlan(planId) {
-  const plan = MEMBERSHIP_PLANS.find(p => p.id === planId);
-  if (!plan) return;
-  const isLoggedIn = MembershipStore.isLoggedIn();
-  const current = MembershipStore.getCurrent();
+  // ============ 选择套餐 ============
+  function selectPlan(planId) {
+    const plan = (window.MEMBERSHIP_PLANS || []).find(p => p.id === planId);
+    if (!plan) return;
+    const user = window.MAXKB_API_USER.get();
 
-  if (planId === 'free') {
-    if (isLoggedIn) {
-      alert('您已经是体验会员了！');
+    if (planId === 'free') {
+      if (user) { alert('您已经是体验会员了！'); return; }
+      sessionStorage.setItem('pending_plan', planId);
+      document.getElementById('auth-modal').classList.add('open');
       return;
     }
-    document.getElementById('auth-modal').style.display = 'flex';
-  } else if (!isLoggedIn) {
-    // 未登录 → 引导注册
-    sessionStorage.setItem('pending_plan', planId);
-    document.getElementById('auth-modal').style.display = 'flex';
-  } else {
-    // 已登录 → 显示开通说明
+
+    if (!user) {
+      sessionStorage.setItem('pending_plan', planId);
+      document.getElementById('auth-modal').classList.add('open');
+      return;
+    }
+
     document.getElementById('upgrade-title').textContent = `🚀 升级到 ${plan.name}`;
-    document.getElementById('upgrade-desc').textContent = `您当前是「${MembershipStore.getPlan()?.name || '体验'}」，升级到「${plan.name}」享 ¥${plan.price}/年 权益。`;
-    document.getElementById('upgrade-modal').style.display = 'flex';
+    document.getElementById('upgrade-desc').textContent =
+      `您当前是「${(window.MEMBERSHIP_PLANS.find(p => p.id === user.plan_id) || {}).name || '体验'}」，` +
+      `升级到「${plan.name}」享 ¥${plan.price}/年 权益。`;
+    document.getElementById('upgrade-modal').classList.add('open');
   }
-}
 
-// ============ 登录/注册 ============
-document.getElementById('auth-form').addEventListener('submit', (e) => {
-  e.preventDefault();
-  const email = document.getElementById('auth-email').value.trim();
-  const password = document.getElementById('auth-password').value.trim();
-  if (!email || !password) return;
+  // ============ 登录/注册 ============
+  document.getElementById('auth-form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const email = document.getElementById('auth-email').value.trim();
+    const password = document.getElementById('auth-password').value;
+    const errEl = document.getElementById('auth-error');
+    errEl.textContent = '';
 
-  MembershipStore.login(email, password, 'free');
-  document.getElementById('auth-modal').style.display = 'none';
-  updateUserBar();
+    if (!email || !password) { errEl.textContent = '请输入邮箱和密码'; return; }
+    if (password.length < 6) { errEl.textContent = '密码至少 6 位'; return; }
 
-  // 检查是否有待开通的套餐
-  const pending = sessionStorage.getItem('pending_plan');
-  if (pending) {
-    sessionStorage.removeItem('pending_plan');
-    selectPlan(pending);
-  } else {
-    alert('✅ 注册成功！欢迎加入 MaxKB FDE 教学会员中心');
+    try {
+      await window.MembershipStore.register(email, password);
+      document.getElementById('auth-modal').classList.remove('open');
+      updateUserBar();
+      const pending = sessionStorage.getItem('pending_plan');
+      if (pending) {
+        sessionStorage.removeItem('pending_plan');
+        selectPlan(pending);
+      } else {
+        alert('✅ 注册成功！欢迎加入 MaxKB FDE 教学会员中心');
+      }
+    } catch (e) {
+      // 如果已注册，则尝试登录
+      if (e.message && e.message.includes('已注册')) {
+        try {
+          await window.MembershipStore.login(email, password);
+          document.getElementById('auth-modal').classList.remove('open');
+          updateUserBar();
+          const pending = sessionStorage.getItem('pending_plan');
+          if (pending) {
+            sessionStorage.removeItem('pending_plan');
+            selectPlan(pending);
+          }
+        } catch (e2) {
+          errEl.textContent = e2.message || '登录失败';
+        }
+      } else {
+        errEl.textContent = e.message || '注册失败';
+      }
+    }
+  });
+
+  // ============ 用户条 ============
+  async function updateUserBar() {
+    const user = await window.MembershipStore.getCurrent();
+    const userBar = document.getElementById('user-bar');
+    const userEmail = document.getElementById('user-email');
+    const userBadge = document.getElementById('user-plan-badge');
+    if (user) {
+      const plan = (window.MEMBERSHIP_PLANS || []).find(p => p.id === user.plan_id);
+      userBar.style.display = 'block';
+      userEmail.textContent = user.email;
+      userBadge.textContent = plan ? plan.name : user.plan_id;
+      userBadge.style.background = plan ? plan.color : '#8B5CF6';
+      userBadge.style.color = 'white';
+    } else {
+      userBar.style.display = 'none';
+    }
   }
-});
 
-// ============ 用户条 ============
-function updateUserBar() {
-  const user = MembershipStore.getCurrent();
-  const plan = MembershipStore.getPlan();
-  const userBar = document.getElementById('user-bar');
-  const userEmail = document.getElementById('user-email');
-  const userBadge = document.getElementById('user-plan-badge');
-  const navArea = document.getElementById('nav-user-area');
+  // ============ 退出 ============
+  document.getElementById('logout-btn').addEventListener('click', () => {
+    window.MembershipStore.logout();
+    updateUserBar();
+    alert('已退出登录');
+    location.reload();
+  });
 
-  if (user && plan) {
-    userBar.style.display = 'block';
-    userEmail.textContent = user.email;
-    userBadge.textContent = plan.name;
-    userBadge.style.background = plan.color;
-    userBadge.style.color = 'white';
-    navArea.textContent = `${user.email.split('@')[0]} ⚙️`;
-  } else {
-    userBar.style.display = 'none';
-    navArea.textContent = '登录 / 注册';
+  // ============ 联系表单 ============
+  document.getElementById('contact-form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const status = document.getElementById('form-status');
+    status.style.color = 'var(--gray)';
+    status.textContent = '⏳ 正在提交...';
+    const data = Object.fromEntries(new FormData(e.target));
+
+    try {
+      await window.api.contact({ ...data, source: 'membership' });
+      status.style.color = '#34D399';
+      status.textContent = '✅ 提交成功！小陶老师会尽快联系您。';
+      e.target.reset();
+    } catch (err) {
+      try {
+        const res = await fetch(e.target.action, {
+          method: 'POST', body: new FormData(e.target),
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+          status.style.color = '#34D399';
+          status.textContent = '✅ 提交成功！';
+          e.target.reset();
+        } else { throw new Error('Formspree fail'); }
+      } catch (err2) {
+        status.style.color = '#EF4444';
+        status.textContent = '❌ 提交失败，请稍后再试或微信联系小陶老师。';
+      }
+    }
+  });
+
+  // ============ FAQ & Hamburger ============
+  function initFAQ() {
+    document.querySelectorAll('.faq-accordion .faq-q').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const wasOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-accordion .faq-item.open').forEach(el => el.classList.remove('open'));
+        if (!wasOpen) item.classList.add('open');
+      });
+    });
   }
-}
 
-// ============ 退出 ============
-document.getElementById('logout-btn').addEventListener('click', () => {
-  MembershipStore.logout();
-  updateUserBar();
-  alert('已退出登录');
-});
+  function initHamburger() {
+    const btn = document.getElementById('nav-hamburger');
+    const links = document.getElementById('nav-links');
+    if (!btn || !links) return;
+    btn.addEventListener('click', () => {
+      links.classList.toggle('open');
+      btn.textContent = links.classList.contains('open') ? '✕' : '☰';
+    });
+  }
 
-// ============ 初始化 ============
-document.addEventListener('DOMContentLoaded', () => {
-  renderPlans();
-  updateUserBar();
-  console.log('✅ 会员中心已就绪 · 2026-07-23');
-});
+  // ============ 初始化 ============
+  document.addEventListener('DOMContentLoaded', async () => {
+    renderPlans();
+    await updateUserBar();
+    initFAQ();
+    initHamburger();
+  });
+
+  window.selectPlan = selectPlan;
+})();
 </script>
 </body>
 </html>

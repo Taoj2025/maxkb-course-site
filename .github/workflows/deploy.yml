@@ -1,18 +1,77 @@
-name: Deploy to Server
+# 前端部署 · GitHub Pages
+# 触发：push main（路径过滤确保不带 backend/ 变动）
+# 后端部署见 deploy-backend.yml
+
+name: Deploy Frontend
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
+    paths:
+      - 'index.html'
+      - 'membership.html'
+      - 'user.html'
+      - 'admin.html'
+      - 'article.html'
+      - 'latest.html'
+      - 'faq.html'
+      - 'fde-jobs.html'
+      - 'fde-skills.html'
+      - 'cases.html'
+      - 'enterprise.html'
+      - 'about.html'
+      - 'trial.html'
+      - 'assets/**'
+      - 'articles/**'
+      - 'articles.json'
+      - 'data/**'
+      - 'downloads/**'
+      - 'sitemap.xml'
+      - 'robots.txt'
+      - 'CNAME'
+      - '.nojekyll'
+      - 'promotion.md'
+      - '.github/workflows/deploy.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy via SSH
-        uses: appleboy/ssh-action@v1.0.3
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      # 显式拷贝前端文件列表，剔除 backend/ 和 site/
+      - name: Package frontend (exclude backend)
+        run: |
+          mkdir _site
+          cp -r index.html membership.html user.html admin.html \
+                 article.html latest.html faq.html fde-jobs.html fde-skills.html \
+                 cases.html enterprise.html about.html trial.html \
+                 assets articles articles.json data downloads \
+                 CNAME .nojekyll sitemap.xml robots.txt promotion.md \
+                 _site/
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: bash ~/deploy.sh
+          path: ./_site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

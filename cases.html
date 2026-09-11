@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>客户案例 · MaxKB FDE 教学</title>
+<meta name="description" content="MaxKB FDE 教学 · 真实客户案例：高校客服、教师备课、文献精读、企业知识库、医院导诊、政务问答。">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%235B2EBF'/><text x='50' y='65' text-anchor='middle' fill='white' font-size='40' font-weight='bold' font-family='sans-serif'>M</text></svg>">
+<style>
+/* 本页专属 */
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  max-width: 1280px;
+  margin: 40px auto;
+  padding: 0 32px;
+}
+.case-card {
+  background: white; border-radius: 16px; overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: all .3s; cursor: pointer;
+  border: 1px solid var(--gray-light);
+  display: flex; flex-direction: column;
+}
+.case-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(91,46,191,0.15);
+}
+.case-hero {
+  height: 160px; position: relative; overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 64px;
+}
+.case-hero::before {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(135deg, rgba(91,46,191,0.85), rgba(59,130,246,0.85));
+}
+.case-hero .icon { position: relative; z-index: 1; font-size: 64px; }
+.case-body { padding: 24px; flex: 1; display: flex; flex-direction: column; }
+.case-tag {
+  display: inline-block; padding: 4px 10px; border-radius: 6px;
+  font-size: 11px; font-weight: 600; margin-bottom: 12px; align-self: flex-start;
+}
+.case-title { font-size: 18px; font-weight: 700; margin-bottom: 8px; color: var(--purple-deep); }
+.case-client { font-size: 13px; color: var(--gray); margin-bottom: 12px; }
+.case-desc { font-size: 14px; color: var(--dark); line-height: 1.7; flex: 1; }
+.case-metrics {
+  display: flex; gap: 16px; margin-top: 16px;
+  padding-top: 16px; border-top: 1px solid var(--gray-light);
+}
+.case-metric { flex: 1; text-align: center; }
+.case-metric .num { font-size: 22px; font-weight: 800; color: var(--purple-deep); display: block; }
+.case-metric .label { font-size: 11px; color: var(--gray); }
+
+.industry-bar {
+  background: linear-gradient(135deg, rgba(91,46,191,0.05), rgba(59,130,246,0.05));
+  padding: 60px 32px; text-align: center;
+}
+.industry-tags { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 24px; }
+.industry-tag {
+  padding: 8px 16px; background: white; border-radius: 20px;
+  border: 1px solid var(--gray-light); font-size: 14px;
+  color: var(--dark); box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+.industry-tag strong { color: var(--purple-deep); margin-right: 6px; }
+
+.timeline-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px; max-width: 1080px; margin: 40px auto;
+  padding: 0 32px;
+}
+.timeline-step {
+  background: white; padding: 24px; border-radius: 12px;
+  border-left: 4px solid var(--purple);
+}
+.timeline-step .when {
+  font-size: 12px; color: var(--purple);
+  font-weight: 600; letter-spacing: 1px; margin-bottom: 8px;
+}
+.timeline-step h4 { color: var(--purple-deep); margin-bottom: 8px; }
+.timeline-step p  { color: var(--gray); font-size: 13px; line-height: 1.6; }
+</style>
+</head>
+<body>
+
+<!-- 顶部信任条 -->
+<section class="trust-bar">
+  <span class="tb-item">💼 <strong>6+</strong> 行业落地</span>
+  <span class="tb-item">🎓 <strong>3+</strong> 985 高校</span>
+  <span class="tb-item">🏥 <strong>3</strong> 三甲医院</span>
+  <span class="tb-item">🏛️ <strong>2</strong> 政务部门</span>
+</section>
+
+<!-- 导航 -->
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <div class="logo-dot">M</div>
+      <span>MaxKB · FDE 教学</span>
+    </div>
+    <button class="hamburger" id="nav-hamburger" aria-label="菜单">☰</button>
+    <div class="nav-links" id="nav-links">
+      <a href="index.html">首页</a>
+      <a href="index.html#course">课程</a>
+      <a href="membership.html">会员订阅</a>
+      <a href="cases.html" class="active">客户案例</a>
+      <a href="enterprise.html" style="color:#F59E0B; font-weight:700;">🏢 企业服务</a>
+      <a href="trial.html" class="nav-cta">📅 预约演示</a>
+    </div>
+  </div>
+</nav>
+
+<!-- 头部 -->
+<section class="page-hero">
+  <div class="section-tag">💼 真实案例</div>
+  <h1>6 大行业 <span class="highlight">实战落地</span></h1>
+  <p>从高校到医院，从企业到政务——看看 MaxKB 如何在不同场景中真正解决问题。</p>
+</section>
+
+<!-- 行业分布 -->
+<section class="industry-bar">
+  <div style="color: var(--gray); font-size: 13px; letter-spacing: 1px;">行业分布</div>
+  <h2 style="color: var(--purple-deep); margin-top: 8px;">覆盖 <span class="highlight">6+ 行业</span> 的真实场景</h2>
+  <div class="industry-tags">
+    <span class="industry-tag"><strong>🎓</strong>高校</span>
+    <span class="industry-tag"><strong>📚</strong>教育</span>
+    <span class="industry-tag"><strong>🏥</strong>医疗</span>
+    <span class="industry-tag"><strong>🏛️</strong>政务</span>
+    <span class="industry-tag"><strong>💼</strong>企业</span>
+    <span class="industry-tag"><strong>🔬</strong>科研</span>
+    <span class="industry-tag"><strong>💰</strong>金融</span>
+    <span class="industry-tag"><strong>📦</strong>零售</span>
+  </div>
+</section>
+
+<!-- 6 大案例 -->
+<section>
+  <div class="case-grid">
+
+    <div class="case-card">
+      <div class="case-hero" style="background: linear-gradient(135deg, #6366F1, #8B5CF6);">
+        <span class="icon">🎓</span>
+      </div>
+      <div class="case-body">
+        <span class="case-tag" style="background: #EDE9FE; color: #5B2EBF;">高校客服</span>
+        <h3 class="case-title">某 985 高校招生智能问答</h3>
+        <div class="case-client">📍 985 高校 · 招生办</div>
+        <p class="case-desc">基于 MaxKB 构建招生智能问答系统，集成历年录取数据、专业介绍、招生章程。家长和学生 7×24 小时自助查询，自动转人工复杂问题。</p>
+        <div class="case-metrics">
+          <div class="case-metric"><span class="num">85%</span><span class="label">首问解决</span></div>
+          <div class="case-metric"><span class="num">3s</span><span class="label">平均响应</span></div>
+          <div class="case-metric"><span class="num">90%</span><span class="label">用户满意</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-card">
+      <div class="case-hero" style="background: linear-gradient(135deg, #F59E0B, #EF4444);">
+        <span class="icon">📚</span>
+      </div>
+      <div class="case-body">
+        <span class="case-tag" style="background: #FEF3C7; color: #B45309;">教师备课</span>
+        <h3 class="case-title">教师备课 AI 助手</h3>
+        <div class="case-client">📍 211 高校 · 文学院</div>
+        <p class="case-desc">教师上传教学大纲、参考教材，AI 自动生成课件框架、出习题、推荐案例。备课时间从 6 小时缩短到 1 小时。</p>
+        <div class="case-metrics">
+          <div class="case-metric"><span class="num">6×</span><span class="label">备课提速</span></div>
+          <div class="case-metric"><span class="num">100+</span><span class="label">教师使用</span></div>
+          <div class="case-metric"><span class="num">4.8</span><span class="label">评分</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-card">
+      <div class="case-hero" style="background: linear-gradient(135deg, #06B6D4, #3B82F6);">
+        <span class="icon">🔬</span>
+      </div>
+      <div class="case-body">
+        <span class="case-tag" style="background: #DBEAFE; color: #1E40AF;">文献精读</span>
+        <h3 class="case-title">科研文献精读系统</h3>
+        <div class="case-client">📍 中科院 · 实验室</div>
+        <p class="case-desc">支持中英文 PDF 上传，自动提取关键观点、方法、结论，对比多篇文献生成综述草稿。支持 LaTeX 公式识别。</p>
+        <div class="case-metrics">
+          <div class="case-metric"><span class="num">10×</span><span class="label">阅读提速</span></div>
+          <div class="case-metric"><span class="num">5000+</span><span class="label">文献/库</span></div>
+          <div class="case-metric"><span class="num">95%</span><span class="label">识别准确</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-card">
+      <div class="case-hero" style="background: linear-gradient(135deg, #10B981, #059669);">
+        <span class="icon">💼</span>
+      </div>
+      <div class="case-body">
+        <span class="case-tag" style="background: #D1FAE5; color: #065F46;">企业知识库</span>
+        <h3 class="case-title">互联网公司内部知识库</h3>
+        <div class="case-client">📍 上市互联网公司 · 运维部</div>
+        <p class="case-desc">整合 Confluence、Notion、Jira、内部 Wiki，员工一句话查到跨系统答案。新人 onboarding 从 2 周缩短到 3 天。</p>
+        <div class="case-metrics">
+          <div class="case-metric"><span class="num">70%</span><span class="label">问题自助</span></div>
+          <div class="case-metric"><span class="num">5×</span><span class="label">新人上手</span></div>
+          <div class="case-metric"><span class="num">3000+</span><span class="label">员工</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-card">
+      <div class="case-hero" style="background: linear-gradient(135deg, #EC4899, #F43F5E);">
+        <span class="icon">🏥</span>
+      </div>
+      <div class="case-body">
+        <span class="case-tag" style="background: #FCE7F3; color: #9F1239;">医院导诊</span>
+        <h3 class="case-title">三甲医院智能导诊</h3>
+        <div class="case-client">📍 三甲医院 · 门诊部</div>
+        <p class="case-desc">基于症状描述推荐科室、医生、检查项目。分流非紧急咨询，减轻导诊台压力。患者候诊平均缩短 20 分钟。</p>
+        <div class="case-metrics">
+          <div class="case-metric"><span class="num">92%</span><span class="label">导诊准确</span></div>
+          <div class="case-metric"><span class="num">-20min</span><span class="label">候诊缩短</span></div>
+          <div class="case-metric"><span class="num">5000+</span><span class="label">日咨询</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-card">
+      <div class="case-hero" style="background: linear-gradient(135deg, #8B5CF6, #5B2EBF);">
+        <span class="icon">🏛️</span>
+      </div>
+      <div class="case-body">
+        <span class="case-tag" style="background: #EDE9FE; color: #5B21B6;">政务问答</span>
+        <h3 class="case-title">政务大厅办事指南</h3>
+        <div class="case-client">📍 区级政务服务中心</div>
+        <p class="case-desc">集成 200+ 政务事项办事指南，市民用自然语言咨询，自动推荐事项、材料清单、办理流程。</p>
+        <div class="case-metrics">
+          <div class="case-metric"><span class="num">88%</span><span class="label">一次办清</span></div>
+          <div class="case-metric"><span class="num">200+</span><span class="label">事项覆盖</span></div>
+          <div class="case-metric"><span class="num">4.7</span><span class="label">市民评分</span></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 实施流程时间线 -->
+<section style="background: linear-gradient(180deg, #FAFAFB, white); padding: 80px 32px;">
+  <div style="max-width:1280px; margin:0 auto;">
+    <div class="section-tag">⏱️ 实施流程</div>
+    <h2 class="section-title">一个标准项目 <span class="highlight">4 步落地</span></h2>
+    <p class="section-subtitle">从需求到上线，平均 2-4 周。</p>
+    <div class="timeline-grid">
+      <div class="timeline-step">
+        <div class="when">第 1 周 · 第 1 步</div>
+        <h4>需求调研</h4>
+        <p>梳理业务场景、整理知识源、对接 API、明确指标。</p>
+      </div>
+      <div class="timeline-step">
+        <div class="when">第 2 周 · 第 2 步</div>
+        <h4>系统部署</h4>
+        <p>私有化部署、导入知识、配置工作流、嵌入业务系统。</p>
+      </div>
+      <div class="timeline-step">
+        <div class="when">第 3 周 · 第 3 步</div>
+        <h4>试运行</h4>
+        <p>小范围试运行、收集反馈、调优回答、上线评审。</p>
+      </div>
+      <div class="timeline-step">
+        <div class="when">第 4 周 · 第 4 步</div>
+        <h4>正式上线</h4>
+        <p>全员培训、监控告警、季度优化、长期运维。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner">
+  <div class="cta-content">
+    <h2>🚀 想看更多案例 / 想聊您的场景？</h2>
+    <p class="subtitle">40 分钟 1v1 沟通，免费给方案</p>
+    <div class="cta-buttons">
+      <a href="trial.html" class="btn-cta-primary">📅 预约 1v1 沟通</a>
+      <a href="enterprise.html" class="btn-cta-secondary">🏢 企业服务咨询</a>
+    </div>
+  </div>
+</section>
+
+<!-- 联系 -->
+<section id="contact" style="max-width: 680px; margin: 0 auto; padding: 60px 32px;">
+  <div class="section-tag">💌 案例咨询</div>
+  <h2 class="section-title">您的行业 <span class="highlight">如何落地</span>？</h2>
+  <p class="section-subtitle">告诉我们您的场景，我们给方案。</p>
+  <form id="contact-form" action="https://formspree.io/f/mgoglgzr" method="POST"
+        style="background: white; padding: 32px; border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.06); margin-top: 32px;">
+    <div style="margin-bottom: 16px;">
+      <label class="label">姓名</label>
+      <input type="text" name="name" class="input" placeholder="请输入您的姓名" required>
+    </div>
+    <div style="margin-bottom: 16px;">
+      <label class="label">邮箱 / 微信</label>
+      <input type="text" name="email" class="input" required>
+    </div>
+    <div style="margin-bottom: 16px;">
+      <label class="label">所属行业</label>
+      <select name="industry" class="input">
+        <option>🎓 高校 / 教育</option>
+        <option>🏥 医疗 / 医院</option>
+        <option>🏛️ 政府 / 事业单位</option>
+        <option>💼 企业 / 公司</option>
+        <option>🔬 科研 / 实验室</option>
+        <option>其他</option>
+      </select>
+    </div>
+    <div style="margin-bottom: 16px;">
+      <label class="label">您的需求</label>
+      <textarea name="message" class="input" style="min-height: 120px; resize: vertical;"
+                placeholder="例如：想给高校做智能问答 / 想给医院做导诊 / 想咨询企业部署方案..." required></textarea>
+    </div>
+    <input type="hidden" name="_subject" value="MaxKB FDE · 案例咨询">
+    <button type="submit" style="background: var(--purple-deep); color: white; width: 100%; padding: 14px; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 15px; font-family: inherit;">
+      🚀 提交咨询
+    </button>
+    <p id="form-status" style="margin-top:16px; text-align:center; font-size:13px; min-height:20px; color: var(--gray);"></p>
+  </form>
+</section>
+
+<!-- 页脚 -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="footer-logo">
+        <div class="logo-dot">M</div>
+        <span>MaxKB · FDE 教学</span>
+      </div>
+      <p>专注企业级 AI Agent 落地实践的开源教学品牌</p>
+      <p style="color: var(--gray); font-size: 12px;">© 2026 MaxKB-edu.com · GPL v3 · 由小陶老师维护</p>
+    </div>
+    <div class="footer-col">
+      <h4>课程</h4>
+      <a href="index.html#course">课程大纲</a>
+      <a href="index.html#practice">实战场景</a>
+      <a href="index.html#download">课件下载</a>
+    </div>
+    <div class="footer-col">
+      <h4>服务</h4>
+      <a href="membership.html">会员订阅</a>
+      <a href="enterprise.html">企业服务</a>
+      <a href="trial.html">预约演示</a>
+    </div>
+    <div class="footer-col">
+      <h4>关于</h4>
+      <a href="about.html">讲师介绍</a>
+      <a href="cases.html">客户案例</a>
+      <a href="https://github.com/1Panel-dev/MaxKB" target="_blank" rel="noopener">MaxKB 开源</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/api.js"></script>
+<script>
+// 联系表单（API 优先 + Formspree fallback）
+document.getElementById('contact-form').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const status = document.getElementById('form-status');
+  status.style.color = 'var(--gray)';
+  status.textContent = '⏳ 正在提交...';
+  const data = Object.fromEntries(new FormData(e.target));
+  try {
+    await window.api.contact({ ...data, source: 'cases' });
+    status.style.color = '#34D399';
+    status.textContent = '✅ 提交成功！小陶老师 24 小时内联系您。';
+    e.target.reset();
+  } catch (err) {
+    try {
+      const res = await fetch(e.target.action, { method: 'POST', body: new FormData(e.target), headers: { 'Accept': 'application/json' } });
+      if (res.ok) { status.style.color = '#34D399'; status.textContent = '✅ 提交成功！'; e.target.reset(); }
+      else { throw new Error('Formspree fail'); }
+    } catch (err2) { status.style.color = '#EF4444'; status.textContent = '❌ 提交失败，请稍后再试。'; }
+  }
+});
+
+// Hamburger
+function initHamburger() {
+  const btn = document.getElementById('nav-hamburger');
+  const links = document.getElementById('nav-links');
+  if (!btn || !links) return;
+  btn.addEventListener('click', () => {
+    links.classList.toggle('open');
+    btn.textContent = links.classList.contains('open') ? '✕' : '☰';
+  });
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    links.classList.remove('open');
+    btn.textContent = '☰';
+  }));
+}
+document.addEventListener('DOMContentLoaded', initHamburger);
+</script>
+</body>
+</html>

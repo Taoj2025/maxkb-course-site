@@ -13,3 +13,13 @@ Thumbs.db
 # 临时文件
 *.tmp
 *.bak
+
+# 后端 · 不进仓库（敏感 + 部署独立）
+backend/node_modules/
+backend/.env
+backend/.pgdata/
+backend/.logs/
+backend/dist/
+
+# 站点冗余镜像（GitHub Actions 会重新打包前端）
+site/

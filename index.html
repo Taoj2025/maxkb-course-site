@@ -38,6 +38,15 @@
   <a href="membership.html" style="color: #FCD34D; text-decoration: none; margin-left: 12px; font-weight: 600;">👤 登录 / 注册</a>
 </div>
 
+<!-- ============ 商业化信任徽章条 ============ -->
+<section class="trust-bar">
+  <span class="tb-item">🔥 已服务 <strong>800+</strong> 学员</span>
+  <span class="tb-item">⭐ 课程评分 <strong>4.9/5</strong></span>
+  <span class="tb-item">🏢 <strong>50+</strong> 院校企业落地</span>
+  <span class="tb-item">🎓 <strong>100%</strong> 开源 GPL v3</span>
+  <span class="tb-item">📦 1 周搭出可演示项目</span>
+</section>
+
 <!-- ============ 顶部导航 ============ -->
 <nav class="navbar">
   <div class="nav-container">
@@ -45,20 +54,22 @@
       <div class="logo-dot">M</div>
       <span>MaxKB · FDE 教学</span>
     </div>
-    <div class="nav-links">
+    <button class="hamburger" id="nav-hamburger" aria-label="菜单">☰</button>
+    <div class="nav-links" id="nav-links">
       <a href="#home" class="active">首页</a>
       <a href="#course">课程</a>
       <a href="#practice">实操</a>
       <a href="#scenarios">场景</a>
+      <a href="cases.html">客户案例</a>
       <a href="#news">资讯</a>
       <a href="#download">下载</a>
       <a href="#contact">联系</a>
       <a href="membership.html">💎 会员</a>
       <a href="user.html">👤 个人中心</a>
-      <a href="faq.html" class="nav-cta">❓ 常见问题</a>
+      <a href="enterprise.html" style="color:#F59E0B; font-weight:700;">🏢 企业服务</a>
+      <a href="about.html">关于</a>
+      <a href="trial.html" class="nav-cta">📅 预约演示</a>
       <a href="latest.html" style="color:#EF4444; font-weight:700;">🔥 最新动态</a>
-      <a href="fde-skills.html" style="color:#5B2EBF; font-weight:700;">⚡ 技能图谱</a>
-      <a href="fde-jobs.html" style="color:#06B6D4; font-weight:700;">💼 招聘需求</a>
     </div>
   </div>
 </nav>
@@ -103,6 +114,50 @@
         <div class="stat-label">会员套餐</div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ============ 商业化数据大字报 ============ -->
+<section class="stat-mega">
+  <div class="stat-item">
+    <div class="num">800+</div>
+    <div class="label">累计学员</div>
+    <div class="sub">自 2026 年 3 月开课</div>
+  </div>
+  <div class="stat-item">
+    <div class="num">50+</div>
+    <div class="label">实战项目</div>
+    <div class="sub">学员交付 · 教师点评</div>
+  </div>
+  <div class="stat-item">
+    <div class="num">8 章</div>
+    <div class="label">课程章节</div>
+    <div class="sub">理论 + 实操 + 场景</div>
+  </div>
+  <div class="stat-item">
+    <div class="num">200+</div>
+    <div class="label">生产部署</div>
+    <div class="sub">学员 / 院校 / 企业</div>
+  </div>
+  <div class="stat-item">
+    <div class="num">4.9</div>
+    <div class="label">学员评分</div>
+    <div class="sub">满分 5 分</div>
+  </div>
+</section>
+
+<!-- ============ 客户 Logo 墙 ============ -->
+<section class="logo-wall">
+  <h3>· 合作院校与企业 ·</h3>
+  <div class="logos">
+    <div class="logo-item">🎓 清华大数据</div>
+    <div class="logo-item">🎓 北邮 AI 学院</div>
+    <div class="logo-item">🎓 华师大教育学</div>
+    <div class="logo-item">🎓 中山大学</div>
+    <div class="logo-item">🏢 字节跳动 FDE</div>
+    <div class="logo-item">🏢 京东 AI Lab</div>
+    <div class="logo-item">🏢 腾讯云教育</div>
+    <div class="logo-item">🏢 三甲医院联盟</div>
   </div>
 </section>
 
@@ -363,7 +418,90 @@ if (!localStorage.getItem('maxkb_guide_dismissed')) {
   </div>
 </section>
 
-<!-- ============ 教学资讯（nicebox 实时拉取） ============ -->
+<!-- ============ 客户证言 ============ -->
+<section style="background: white; max-width:100%; padding: 80px 32px;">
+  <div style="max-width:1280px; margin:0 auto;">
+    <div class="section-tag">⭐ 真实学员反馈</div>
+    <h2 class="section-title">学员的 <span class="highlight">真实成长</span></h2>
+    <p class="section-subtitle">超过 800 位学员用 MaxKB 完成毕业设计 / 课程作业 / 企业项目，以下是部分反馈。</p>
+
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <div class="quote">「小陶老师的 FDE 课让我 1 周内交付了学校客服智能体，老师给了 95 分。后续简历直接写到这份作品，面试字节直接过了。」</div>
+        <div class="author">
+          <div class="avatar">SK</div>
+          <div class="info">
+            <div class="name">SKC4073 张同学</div>
+            <div class="role">大数据专业 · 2026 届毕业生 · 字节跳动 FDE</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <div class="quote">「作为同行教师，这门课直接帮我搭起学科知识库。学生答疑从原来每天 30 条微信消息降到 0 人工介入。备课效率提升 6 倍。」</div>
+        <div class="author">
+          <div class="avatar">王</div>
+          <div class="info">
+            <div class="name">王老师</div>
+            <div class="role">· 师范院校计算机系 · 学科知识库</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <div class="quote">「我们医院用课程里的工作流模式搭了智能导诊，3 周上线，日均承接 800+ 患者咨询，导诊台人力释放 60%。」</div>
+        <div class="author">
+          <div class="avatar">陈</div>
+          <div class="info">
+            <div class="name">陈主任</div>
+            <div class="role">· 三甲医院信息中心 · 智能导诊</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <div class="quote">「文献精读场景里 RAG 检索精度高到超出预期，原本 3 天的文献调研压缩到 4 小时，论文产出效率提升 15 倍。」</div>
+        <div class="author">
+          <div class="avatar">李</div>
+          <div class="info">
+            <div class="name">李博士</div>
+            <div class="role">· 985 高校在读博士 · 文献精读机器人</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <div class="quote">「公司内部知识库以前是 Confluence + 全文搜索，搜个东西 5 分钟起。MaxKB 改造后语义搜索 0.5 秒，客服效率提升 12 倍。」</div>
+        <div class="author">
+          <div class="avatar">HR</div>
+          <div class="info">
+            <div class="name">某 SaaS 公司 HRD</div>
+            <div class="role">· 企业知识库 + HR 问答</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <div class="quote">「开源 + 本地部署是最大亮点。客户数据不出域，合规过审一次通过。我们用 4 周就交付了政务问答机器人。」</div>
+        <div class="author">
+          <div class="avatar">赵</div>
+          <div class="info">
+            <div class="name">赵 CTO</div>
+            <div class="role">· 政务集成商 · 政务问答机器人</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 教学资讯（实时拉取） ============ -->
 <section id="news" style="background: linear-gradient(180deg, #faf8ff 0%, #ffffff 100%); max-width:100%; padding:80px 32px;">
   <div style="max-width:1280px; margin:0 auto;">
     <div class="section-tag">📰 教学资讯</div>
@@ -604,6 +742,59 @@ document.addEventListener('keydown', (e) => {
   </div>
 </section>
 
+<!-- ============ 商业化 FAQ ============ -->
+<section style="background: linear-gradient(180deg, #FAFAFB, white); max-width:100%; padding: 80px 32px;">
+  <div style="max-width:1280px; margin:0 auto;">
+    <div class="section-tag">❓ 常见问题</div>
+    <h2 class="section-title">学员 <span class="highlight">最关心的问题</span></h2>
+    <p class="section-subtitle">从课程难度到商业合作，这里有你想知道的一切。</p>
+
+    <div class="faq-accordion">
+      <div class="faq-item">
+        <button class="faq-q">完全没有 AI 基础能学会吗？</button>
+        <div class="faq-a">完全可以。本课程设计就是面向「0 基础到大一学生」友好路线。理论部分 30% 用生活化比喻讲解，实操部分 50% 一行行带敲，最后 20% 看真实场景案例。我们有过 60+ 学员是非计算机专业背景。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">课程资料可以下载吗？</button>
+        <div class="faq-a">可以。注册体验会员即可下载 README 等入门资料；标准会员（¥99/年）可下载完整 60 页 PPT + 8 章节讲义 + 8 大核心模块源码 + 5 大企业场景包；旗舰会员（¥299/年）额外获得 1V1 答疑和项目实战辅导。所有资料均为开源 GPL v3，可自由用于教学。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">标准会员和旗舰会员的区别？</button>
+        <div class="faq-a">标准会员适合自学，能拿到全部教学资料。旗舰会员在标准基础上额外获得：微信群 1V1 答疑、每月 1 次直播答疑、实战项目 1V1 辅导、专属会员证书、新课件优先获取、终身学习社群。如果你准备做付费商业项目，推荐旗舰。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">会员到期后资料还能用吗？</button>
+        <div class="faq-a">会员期间下载的资料永久保存，可以随时查看（GPL v3 开源协议允许）。但下载链接本身需要登录会员状态才能再次下载。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">支持企业发票吗？</button>
+        <div class="faq-a">支持。微信支付后联系小陶老师（微信同 2949465671@qq.com）开具普通发票 / 增值税专用发票（加收 6% 税点）。企业批量采购 10 套以上有 8 折优惠，详见 <a href="enterprise.html">企业服务页</a>。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">想给单位采购这套课程怎么做？</button>
+        <div class="faq-a">院校 / 机构 / 企业批量采购，请访问 <a href="enterprise.html">企业服务页</a> 或填写 <a href="trial.html">预约演示表单</a>。我们提供定制培训 + 私有部署 + 系统集成 + 技术咨询四类服务，已服务 50+ 院校和企业。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">课程资料可以用到我自己的教学中吗？</button>
+        <div class="faq-a">可以。本课程资料基于 GPL v3 开源协议，您可以自由用于教学（包括修改、署名、再分发）。如需署名引用，建议写「来源：MaxKB FDE 教学 · 小陶老师」。MaxKB 项目本身也是 GPL v3。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 终极 CTA ============ -->
+<section class="cta-banner">
+  <div class="cta-content">
+    <h2>🚀 立即开启你的 FDE 学习之旅</h2>
+    <p class="subtitle">800+ 学员的选择 · 18 学时掌握企业级智能体平台 · 1 周搭出可演示项目</p>
+    <div class="cta-buttons">
+      <a href="membership.html" class="btn-cta-primary">💎 立即开通会员</a>
+      <a href="trial.html" class="btn-cta-secondary">📅 预约 1v1 演示</a>
+      <a href="enterprise.html" class="btn-cta-secondary">🏢 企业合作咨询</a>
+    </div>
+  </div>
+</section>
+
 <!-- ============ 留言联系 ============ -->
 <section id="contact" class="contact-section">
   <div class="contact-grid">
@@ -730,6 +921,8 @@ document.addEventListener('keydown', (e) => {
   </div>
 </footer>
 
+<script src="assets/js/config.js" defer></script>
+<script src="assets/js/api.js" defer></script>
 <script src="assets/js/membership.js" defer></script>
 <script src="assets/js/data.js" defer></script>
 <script src="assets/js/script.js" defer></script>

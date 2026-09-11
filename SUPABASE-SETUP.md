@@ -1,4 +1,19 @@
-# Supabase 后端接入完整指南（30-60 分钟）
+# ⚠️ 本文档已废弃 · 2026-09-11
+
+> **弃用说明**：本项目已从 Supabase 切换到自建 Node.js + Express + PostgreSQL 后端架构。
+>
+> 当前架构：
+> - 前端：GitHub Pages 静态托管（`https://maxkb-edu.com`）
+> - 后端：Node.js + Express（独立服务器部署，PM2/systemd/Docker 三选一）
+> - 数据库：PostgreSQL 16（用户提供密码 + Docker Compose / 云数据库）
+>
+> 📖 **请参阅新的部署文档**：[`backend/DEPLOY-BACKEND.md`](./backend/DEPLOY-BACKEND.md)
+>
+> 旧 Supabase 文档保留作为历史参考。新功能、新部署、新增配置请使用新文档。
+
+---
+
+# Supabase 后端接入完整指南（30-60 分钟 · 历史参考）
 
 > **作者**：小 Q 为小陶老师定制 · 2026-07-23 22:40
 > **目的**：把 localStorage（假数据库）升级到 Supabase（真云数据库）

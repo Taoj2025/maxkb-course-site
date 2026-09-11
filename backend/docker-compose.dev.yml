@@ -1,0 +1,23 @@
+# 本地开发用 PostgreSQL（仅本机，不入 git）
+# 用法：docker compose -f docker-compose.dev.yml up -d
+# 端口：5432（与生产一致，方便本地测试）
+# 数据：./.pgdata 持久化
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: maxkb-pg-dev
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: tjm2026
+      POSTGRES_DB: postgres
+    ports:
+      - "5433:5432"
+    volumes:
+      - ./.pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 3s
+      retries: 10

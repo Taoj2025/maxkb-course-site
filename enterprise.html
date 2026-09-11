@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>企业服务 · MaxKB FDE 教学</title>
+<meta name="description" content="MaxKB 企业级服务：定制培训 · 私有部署 · 系统集成 · 技术咨询。10 套 8 折，50 套 7 折。">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%235B2EBF'/><text x='50' y='65' text-anchor='middle' fill='white' font-size='40' font-weight='bold' font-family='sans-serif'>M</text></svg>">
+<style>
+/* 本页专属 */
+.enterprise-hero {
+  background: linear-gradient(135deg, #5B2EBF 0%, #3B82F6 100%);
+  padding: 100px 32px 60px;
+  text-align: center; color: white;
+  position: relative; overflow: hidden;
+}
+.enterprise-hero::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(circle at 20% 30%, rgba(255,255,255,0.1), transparent 50%),
+              radial-gradient(circle at 80% 70%, rgba(255,255,255,0.08), transparent 50%);
+}
+.enterprise-hero > * { position: relative; z-index: 1; }
+.enterprise-hero h1 { font-size: 42px; margin-bottom: 16px; }
+.enterprise-hero p  { font-size: 16px; max-width: 600px; margin: 0 auto; opacity: 0.95; }
+.enterprise-hero .section-tag {
+  background: rgba(255,255,255,0.15); color: white;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+.service-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px; max-width: 1280px; margin: -40px auto 0;
+  padding: 0 32px; position: relative; z-index: 2;
+}
+.service-card {
+  background: white; border-radius: 16px; padding: 32px;
+  box-shadow: 0 8px 32px rgba(91,46,191,0.12);
+  border: 1px solid var(--gray-light);
+  transition: all .3s;
+}
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(91,46,191,0.2);
+}
+.service-icon {
+  width: 64px; height: 64px; border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 32px; margin-bottom: 16px;
+  background: linear-gradient(135deg, rgba(91,46,191,0.1), rgba(59,130,246,0.1));
+}
+.service-card h3 { color: var(--purple-deep); font-size: 20px; margin-bottom: 8px; }
+.service-card .desc { color: var(--gray); font-size: 14px; line-height: 1.7; margin-bottom: 16px; }
+.service-card ul { list-style: none; padding: 0; margin: 0 0 16px; }
+.service-card ul li {
+  padding: 6px 0; font-size: 13px;
+  display: flex; gap: 8px; color: var(--dark);
+}
+.service-card ul li::before {
+  content: '✓'; color: #34D399; font-weight: bold; flex-shrink: 0;
+}
+.service-card .price-tag {
+  display: inline-block; padding: 6px 14px; border-radius: 8px;
+  background: linear-gradient(135deg, #FCD34D, #F59E0B);
+  color: #7c2d12; font-size: 13px; font-weight: 700;
+}
+
+.pricing-table-wrap {
+  max-width: 1080px; margin: 40px auto;
+  padding: 0 32px;
+}
+.pricing-table {
+  width: 100%; border-collapse: collapse;
+  background: white; border-radius: 12px; overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+}
+.pricing-table th {
+  background: linear-gradient(135deg, var(--purple-deep), var(--blue));
+  color: white; padding: 16px; text-align: center;
+  font-weight: 600;
+}
+.pricing-table td {
+  padding: 16px; border-bottom: 1px solid var(--gray-light);
+  text-align: center; font-size: 14px;
+}
+.pricing-table td:first-child {
+  text-align: left; font-weight: 600; color: var(--purple-deep);
+}
+.pricing-table tr:last-child td { border-bottom: none; }
+.pricing-table tr.highlight td {
+  background: linear-gradient(90deg, rgba(91,46,191,0.05), rgba(59,130,246,0.05));
+}
+.pricing-table .price-cell {
+  font-size: 22px; font-weight: 800; color: var(--purple-deep);
+}
+
+.process-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px; max-width: 1080px; margin: 40px auto;
+  padding: 0 32px;
+}
+.process-step {
+  background: white; padding: 24px; border-radius: 12px;
+  border: 1px solid var(--gray-light);
+  position: relative;
+}
+.process-step .step-num {
+  position: absolute; top: -16px; left: 20px;
+  background: linear-gradient(135deg, var(--purple-deep), var(--blue));
+  color: white; width: 40px; height: 40px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; box-shadow: 0 4px 12px rgba(91,46,191,0.3);
+}
+.process-step h4 { color: var(--purple-deep); margin: 16px 0 8px; }
+.process-step p  { color: var(--gray); font-size: 13px; line-height: 1.6; }
+
+.sales-form-wrap {
+  max-width: 680px; margin: 40px auto; padding: 0 32px;
+}
+.sales-form {
+  background: white; padding: 32px; border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(91,46,191,0.1);
+}
+.sales-form h3 { color: var(--purple-deep); margin-bottom: 8px; }
+.sales-form p  { color: var(--gray); font-size: 13px; margin-bottom: 20px; }
+
+.input {
+  width: 100%; padding: 10px 14px; border: 1px solid #E5E7EB;
+  border-radius: 8px; font-size: 14px; font-family: inherit;
+  box-sizing: border-box;
+}
+.input:focus { outline: none; border-color: var(--purple); box-shadow: 0 0 0 3px rgba(91,46,191,0.1); }
+.label {
+  display: block; font-size: 13px; color: var(--gray); margin-bottom: 6px;
+}
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 640px) { .row { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<!-- 顶部信任条 -->
+<section class="trust-bar">
+  <span class="tb-item">🏢 <strong>50+</strong> 企业客户</span>
+  <span class="tb-item">🎓 <strong>10+</strong> 高校签约</span>
+  <span class="tb-item">🏥 <strong>3</strong> 三甲医院</span>
+  <span class="tb-item">📜 完整交付文档</span>
+</section>
+
+<!-- 导航 -->
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <div class="logo-dot">M</div>
+      <span>MaxKB · FDE 教学</span>
+    </div>
+    <button class="hamburger" id="nav-hamburger" aria-label="菜单">☰</button>
+    <div class="nav-links" id="nav-links">
+      <a href="index.html">首页</a>
+      <a href="index.html#course">课程</a>
+      <a href="membership.html">会员订阅</a>
+      <a href="cases.html">客户案例</a>
+      <a href="enterprise.html" class="active" style="color:#F59E0B; font-weight:700;">🏢 企业服务</a>
+      <a href="trial.html" class="nav-cta">📅 预约演示</a>
+    </div>
+  </div>
+</nav>
+
+<!-- 头部 -->
+<section class="enterprise-hero">
+  <div class="section-tag">🏢 企业级服务</div>
+  <h1>不只是课程，是 <span style="color: #FCD34D;">整套落地能力</span></h1>
+  <p>私有部署 · 定制培训 · 系统集成 · 技术咨询 —— 4 大模块一站式交付，让企业真正用起来。</p>
+</section>
+
+<!-- 4 大服务 -->
+<section>
+  <div class="service-grid">
+    <div class="service-card">
+      <div class="service-icon">🎓</div>
+      <h3>定制培训</h3>
+      <p class="desc">面向企业 AI 团队的实战培训，覆盖 MaxKB 架构、应用开发、生产化部署。</p>
+      <ul>
+        <li>1-3 天企业内训</li>
+        <li>线上 / 线下灵活选择</li>
+        <li>课后 30 天答疑群</li>
+        <li>赠送全套课件源码</li>
+      </ul>
+      <span class="price-tag">¥9,800 / 天起</span>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🏗️</div>
+      <h3>私有部署</h3>
+      <p class="desc">提供 MaxKB 全栈私有化部署，支持离线 / 局域网 / 国产化环境。</p>
+      <ul>
+        <li>单机 / 集群 / K8s</li>
+        <li>国产 CPU + OS 适配</li>
+        <li>数据全程不出网</li>
+        <li>1 年远程技术支持</li>
+      </ul>
+      <span class="price-tag">¥39,800 起</span>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🔌</div>
+      <h3>系统集成</h3>
+      <p class="desc">把 MaxKB 接入您现有 OA / 客服 / 工单 / IM 系统，对接企业知识源。</p>
+      <ul>
+        <li>对接钉钉 / 企微 / 飞书</li>
+        <li>对接 Confluence / Notion / Wiki</li>
+        <li>对接 CRM / 工单系统</li>
+        <li>API + Webhook 全开放</li>
+      </ul>
+      <span class="price-tag">¥19,800 起</span>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">💼</div>
+      <h3>技术咨询</h3>
+      <p class="desc">小陶老师 1v1 咨询，按小时付费，解决您具体的架构 / 选型 / 落地问题。</p>
+      <ul>
+        <li>1v1 视频会议</li>
+        <li>48 小时内回复</li>
+        <li>提供书面方案</li>
+        <li>可累计抵扣项目款</li>
+      </ul>
+      <span class="price-tag">¥1,200 / 小时</span>
+    </div>
+  </div>
+</section>
+
+<!-- 套餐定价表 -->
+<section style="background: linear-gradient(180deg, #FAFAFB, white); padding: 80px 32px;">
+  <div style="max-width:1280px; margin:0 auto;">
+    <div class="section-tag">💎 套餐定价</div>
+    <h2 class="section-title">按规模 <span class="highlight">批量订阅</span></h2>
+    <p class="section-subtitle">团队订阅越多，单价越优惠。</p>
+    <div class="pricing-table-wrap">
+      <table class="pricing-table">
+        <thead>
+          <tr>
+            <th style="text-align:left;">套餐类型</th>
+            <th>适用规模</th>
+            <th>单价</th>
+            <th>折扣</th>
+            <th>服务时长</th>
+            <th>赠送</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>🥉 起步版</td>
+            <td>10 套</td>
+            <td class="price-cell">¥89</td>
+            <td>9 折</td>
+            <td>1 年</td>
+            <td>2 小时咨询</td>
+          </tr>
+          <tr class="highlight">
+            <td>🥈 标准版</td>
+            <td>50 套</td>
+            <td class="price-cell">¥69</td>
+            <td>7 折</td>
+            <td>1 年</td>
+            <td>5 小时咨询</td>
+          </tr>
+          <tr>
+            <td>🥇 企业版</td>
+            <td>100 套</td>
+            <td class="price-cell">¥49</td>
+            <td>5 折</td>
+            <td>1 年</td>
+            <td>10 小时咨询</td>
+          </tr>
+          <tr class="highlight">
+            <td>👑 定制版</td>
+            <td>200+</td>
+            <td class="price-cell">面议</td>
+            <td>专属优惠</td>
+            <td>1-3 年</td>
+            <td>内训 + 部署</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- 实施流程 -->
+<section style="background: white; padding: 80px 32px;">
+  <div style="max-width:1280px; margin:0 auto;">
+    <div class="section-tag">⏱️ 合作流程</div>
+    <h2 class="section-title">5 步 <span class="highlight">完成合作</span></h2>
+    <p class="section-subtitle">从咨询到交付，平均 2-6 周。</p>
+    <div class="process-grid">
+      <div class="process-step">
+        <div class="step-num">1</div>
+        <h4>需求沟通</h4>
+        <p>40 分钟 1v1 沟通，明确场景、规模、时间表。</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">2</div>
+        <h4>方案设计</h4>
+        <p>3 个工作日内提交书面方案 + 报价单。</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">3</div>
+        <h4>签订合同</h4>
+        <p>电子合同 / 纸质合同均可，分阶段付款。</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">4</div>
+        <h4>实施交付</h4>
+        <p>培训 / 部署 / 集成 / 上线，全过程文档化。</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">5</div>
+        <h4>长期运维</h4>
+        <p>1 年免费远程支持，企业版 7×24 应急通道。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="background: linear-gradient(180deg, #FAFAFB, white); padding: 80px 32px;">
+  <div style="max-width:1280px; margin:0 auto;">
+    <div class="section-tag">❓ 企业 FAQ</div>
+    <h2 class="section-title">企业服务 <span class="highlight">常见问题</span></h2>
+    <div class="faq-accordion">
+      <div class="faq-item">
+        <button class="faq-q">私有部署能完全离线吗？</button>
+        <div class="faq-a">可以。MaxKB 支持完全离线部署，模型、知识库、API 调用全部走内网。适配国产 CPU（鲲鹏 / 海光 / 飞腾）+ 麒麟 / UOS 等国产操作系统。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">数据安全如何保障？</button>
+        <div class="faq-a">所有数据全程不出您的网络。我们不接触任何客户业务数据，不上传日志。提供完整的数据脱敏方案，支持私有 LLM + 私有 Embedding。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">能和我们现有系统对接吗？</button>
+        <div class="faq-a">支持。MaxKB 提供 REST API + Webhook + SSO 单点登录。已对接过：钉钉、企微、飞书、Slack、Confluence、Notion、Jira、Salesforce 等。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">培训可以定制内容吗？</button>
+        <div class="faq-a">可以。我们会根据您的业务场景提前调研，定制 30%-50% 的实战案例。课后提供完整录屏 + 课件 + 习题库。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">付款方式有哪些？</button>
+        <div class="faq-a">支持对公转账、微信、支付宝。10 万以上项目分 3 期付款（30% 预付 + 40% 中期 + 30% 验收）。可开具增值税专用发票。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 销售联系表单 -->
+<section id="contact" style="padding: 80px 32px; background: white;">
+  <div class="sales-form-wrap">
+    <div class="section-tag">💼 销售咨询</div>
+    <h2 class="section-title">聊聊您的 <span class="highlight">企业需求</span></h2>
+    <p class="section-subtitle">留下信息，48 小时内回复，提供书面方案。</p>
+    <form id="contact-form" action="https://formspree.io/f/mgoglgzr" method="POST" class="sales-form">
+      <div class="row">
+        <div>
+          <label class="label">姓名 *</label>
+          <input type="text" name="name" class="input" required>
+        </div>
+        <div>
+          <label class="label">职位</label>
+          <input type="text" name="title" class="input" placeholder="如：技术总监">
+        </div>
+      </div>
+      <div class="row" style="margin-top: 16px;">
+        <div>
+          <label class="label">工作邮箱 *</label>
+          <input type="email" name="email" class="input" required>
+        </div>
+        <div>
+          <label class="label">手机 / 微信</label>
+          <input type="text" name="phone" class="input">
+        </div>
+      </div>
+      <div style="margin-top: 16px;">
+        <label class="label">公司 / 机构</label>
+        <input type="text" name="company" class="input">
+      </div>
+      <div style="margin-top: 16px;">
+        <label class="label">您感兴趣的服务</label>
+        <select name="service" class="input">
+          <option>🎓 定制培训</option>
+          <option>🏗️ 私有部署</option>
+          <option>🔌 系统集成</option>
+          <option>💼 技术咨询</option>
+          <option>👑 批量订阅会员</option>
+          <option>其他</option>
+        </select>
+      </div>
+      <div style="margin-top: 16px;">
+        <label class="label">预算区间</label>
+        <select name="budget" class="input">
+          <option>1 万以下</option>
+          <option>1-5 万</option>
+          <option>5-10 万</option>
+          <option>10-50 万</option>
+          <option>50 万以上</option>
+        </select>
+      </div>
+      <div style="margin-top: 16px;">
+        <label class="label">需求详情 *</label>
+        <textarea name="message" class="input" style="min-height: 120px; resize: vertical;"
+                  placeholder="例如：50 人团队想用 MaxKB 做内部知识库，希望私有化部署..." required></textarea>
+      </div>
+      <input type="hidden" name="_subject" value="MaxKB FDE · 企业服务咨询">
+      <button type="submit" style="margin-top: 20px; background: linear-gradient(135deg, var(--purple-deep), var(--blue)); color: white; width: 100%; padding: 14px; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 15px; font-family: inherit;">
+        🚀 提交咨询（48 小时内回复）
+      </button>
+      <p id="form-status" style="margin-top:16px; text-align:center; font-size:13px; min-height:20px; color: var(--gray);"></p>
+    </form>
+  </div>
+</section>
+
+<!-- 页脚 -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="footer-logo">
+        <div class="logo-dot">M</div>
+        <span>MaxKB · FDE 教学</span>
+      </div>
+      <p>专注企业级 AI Agent 落地实践的开源教学品牌</p>
+      <p style="color: var(--gray); font-size: 12px;">© 2026 MaxKB-edu.com · GPL v3 · 由小陶老师维护</p>
+    </div>
+    <div class="footer-col">
+      <h4>课程</h4>
+      <a href="index.html#course">课程大纲</a>
+      <a href="index.html#practice">实战场景</a>
+      <a href="index.html#download">课件下载</a>
+    </div>
+    <div class="footer-col">
+      <h4>服务</h4>
+      <a href="membership.html">会员订阅</a>
+      <a href="enterprise.html">企业服务</a>
+      <a href="trial.html">预约演示</a>
+    </div>
+    <div class="footer-col">
+      <h4>关于</h4>
+      <a href="about.html">讲师介绍</a>
+      <a href="cases.html">客户案例</a>
+      <a href="https://github.com/1Panel-dev/MaxKB" target="_blank" rel="noopener">MaxKB 开源</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/api.js"></script>
+<script>
+// 联系表单
+document.getElementById('contact-form').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const status = document.getElementById('form-status');
+  status.style.color = 'var(--gray)';
+  status.textContent = '⏳ 正在提交...';
+  const data = Object.fromEntries(new FormData(e.target));
+  try {
+    await window.api.contact({ ...data, source: 'enterprise' });
+    status.style.color = '#34D399';
+    status.textContent = '✅ 提交成功！48 小时内回复。';
+    e.target.reset();
+  } catch (err) {
+    try {
+      const res = await fetch(e.target.action, { method: 'POST', body: new FormData(e.target), headers: { 'Accept': 'application/json' } });
+      if (res.ok) { status.style.color = '#34D399'; status.textContent = '✅ 提交成功！'; e.target.reset(); }
+      else { throw new Error('Formspree fail'); }
+    } catch (err2) { status.style.color = '#EF4444'; status.textContent = '❌ 提交失败，请稍后再试。'; }
+  }
+});
+
+// FAQ
+function initFAQ() {
+  document.querySelectorAll('.faq-accordion .faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-accordion .faq-item.open').forEach(el => el.classList.remove('open'));
+      if (!wasOpen) item.classList.add('open');
+    });
+  });
+}
+
+// Hamburger
+function initHamburger() {
+  const btn = document.getElementById('nav-hamburger');
+  const links = document.getElementById('nav-links');
+  if (!btn || !links) return;
+  btn.addEventListener('click', () => {
+    links.classList.toggle('open');
+    btn.textContent = links.classList.contains('open') ? '✕' : '☰';
+  });
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    links.classList.remove('open');
+    btn.textContent = '☰';
+  }));
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  initFAQ();
+  initHamburger();
+});
+</script>
+</body>
+</html>
