@@ -3,7 +3,7 @@
 > **版本**：v2.0 · 2026-09-11
 > **架构**：Node.js 20 + Express 4 + PostgreSQL 16
 > **目标读者**：小陶老师（部署上线到独立服务器）
-> **目标服务器**：公网 `http://119.91.234.159/` · 域名 `maxkb-edu.com`
+> **目标服务器**：公网 `http://119.91.234.159/` · 域名 `taotaoedu.ltd`
 
 ## 🌐 完整链路（推荐方案 · Nginx 反代）
 
@@ -13,7 +13,7 @@
    │ HTTPS
    ▼
 ┌─────────────────────────────────┐
-│ maxkb-edu.com (443)             │  ← Let's Encrypt 证书
+│ taotaoedu.ltd (443)             │  ← Let's Encrypt 证书
 │ Nginx (主机进程)                 │
 │   ├─ /api/*  ──► 127.0.0.1:3001 │  ← 反代到 API 容器
 │   └─ 其他      ──► GitHub Pages  │  ← 前端静态（自动部署）
@@ -34,10 +34,10 @@
 
 **前端调用示例**（已写入 `assets/js/config.js`）：
 ```js
-API_BASE = 'https://maxkb-edu.com/api'   // Nginx 反代后的同源路径
+API_BASE = 'https://taotaoedu.ltd/api'   // Nginx 反代后的同源路径
 ```
 
-**公网可达 API**：`https://maxkb-edu.com/api/health`
+**公网可达 API**：`https://taotaoedu.ltd/api/health`
 
 ---
 
@@ -117,7 +117,7 @@ sudo rm -f /etc/nginx/sites-enabled/default   # 删默认页
 # 首次申请证书（standalone 模式，需要先停 nginx）
 sudo systemctl stop nginx
 sudo certbot certonly --standalone \
-  -d maxkb-edu.com -d www.maxkb-edu.com \
+  -d taotaoedu.ltd -d www.taotaoedu.ltd \
   --email 2949465671@qq.com --agree-tos --no-eff-email
 sudo systemctl start nginx
 
@@ -129,7 +129,7 @@ sudo systemctl reload nginx
 sudo systemctl list-timers | grep certbot
 ```
 
-**⚠️ 重要**：DNS 必须先把 `maxkb-edu.com` 和 `www.maxkb-edu.com` 都解析到 `119.91.234.159`，certbot 才能签出证书。
+**⚠️ 重要**：DNS 必须先把 `taotaoedu.ltd` 和 `www.taotaoedu.ltd` 都解析到 `119.91.234.159`，certbot 才能签出证书。
 
 如暂时无法用域名，可先用 HTTP 模式调试（注释掉 `ssl_certificate` 几行 + 改 listen 80）。
 
@@ -190,7 +190,7 @@ PGPASSWORD=<上面 openssl rand -hex 16 的结果>
 JWT_SECRET=<上面 openssl rand -hex 32 的结果>
 
 # CORS 白名单 · 改成您的前端域名
-CORS_ORIGINS=https://maxkb-edu.com,https://taoj2025.github.io
+CORS_ORIGINS=https://taotaoedu.ltd,https://taoj2025.github.io
 
 # 管理员
 ADMIN_EMAIL=2949465671@qq.com
@@ -296,10 +296,10 @@ pm2 logs maxkb-api --lines 100
 ### Nginx 反向代理
 
 ```nginx
-# /etc/nginx/sites-available/api.maxkb-edu.com
+# /etc/nginx/sites-available/api.taotaoedu.ltd
 server {
     listen 80;
-    server_name api.maxkb-edu.com;
+    server_name api.taotaoedu.ltd;
 
     location / {
         proxy_pass http://127.0.0.1:3001;
@@ -317,9 +317,9 @@ server {
 ```
 
 ```bash
-sudo ln -s /etc/nginx/sites-available/api.maxkb-edu.com /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/api.taotaoedu.ltd /etc/nginx/sites-enabled/
 sudo nginx -t && sudo systemctl reload nginx
-sudo certbot --nginx -d api.maxkb-edu.com
+sudo certbot --nginx -d api.taotaoedu.ltd
 ```
 
 ---
@@ -334,7 +334,7 @@ sudo certbot --nginx -d api.maxkb-edu.com
 sudo tee /etc/systemd/system/maxkb-api.service > /dev/null <<'EOF'
 [Unit]
 Description=MaxKB FDE API
-Documentation=https://maxkb-edu.com
+Documentation=https://taotaoedu.ltd
 After=network.target postgresql.service
 Requires=postgresql.service
 
@@ -381,27 +381,27 @@ sudo journalctl -u maxkb-api -f
 
 ```bash
 # 1. 健康检查
-curl https://api.maxkb-edu.com/api/health
+curl https://api.taotaoedu.ltd/api/health
 # → {"status":"ok","db":"up"}
 
 # 2. 注册一个测试用户
-curl -X POST https://api.maxkb-edu.com/api/auth/register \
+curl -X POST https://api.taotaoedu.ltd/api/auth/register \
   -H "Content-Type: application/json" \
   -d '{"email":"verify@example.com","password":"test123456"}'
 
 # 3. 登录拿 token
-TOKEN=$(curl -X POST https://api.maxkb-edu.com/api/auth/login \
+TOKEN=$(curl -X POST https://api.taotaoedu.ltd/api/auth/login \
   -H "Content-Type: application/json" \
   -d '{"email":"verify@example.com","password":"test123456"}' | jq -r .token)
 
 # 4. 拉文章列表
-curl https://api.maxkb-edu.com/api/articles?size=3
+curl https://api.taotaoedu.ltd/api/articles?size=3
 
 # 5. 拉课程章节
-curl https://api.maxkb-edu.com/api/chapters
+curl https://api.taotaoedu.ltd/api/chapters
 
 # 6. 留言（限流 10/分钟）
-curl -X POST https://api.maxkb-edu.com/api/contact \
+curl -X POST https://api.taotaoedu.ltd/api/contact \
   -H "Content-Type: application/json" \
   -d '{"name":"验证","email":"v@v.com","message":"部署验证"}'
 ```
@@ -410,7 +410,7 @@ curl -X POST https://api.maxkb-edu.com/api/contact \
 
 ### 浏览器侧验证
 
-1. 访问 `https://maxkb-edu.com`
+1. 访问 `https://taotaoedu.ltd`
 2. 注册一个测试账号
 3. 顶部状态条显示「体验会员」
 4. 点击下载资源 → 提示「需升级」
@@ -495,8 +495,8 @@ gunzip -c /backup/maxkb-20260911.sql.gz | docker exec -i maxkb-postgres psql -U 
 
 ## 🌐 域名与 DNS 配置建议
 
-- `maxkb-edu.com` → CNAME → `taoj2025.github.io` （前端）
-- `api.maxkb-edu.com` → A → 您的服务器 IP （后端）
+- `taotaoedu.ltd` → CNAME → `taoj2025.github.io` （前端）
+- `api.taotaoedu.ltd` → A → 您的服务器 IP （后端）
 - 推荐加 `www` 301 重定向到主域
 
 ---
@@ -507,7 +507,7 @@ gunzip -c /backup/maxkb-20260911.sql.gz | docker exec -i maxkb-postgres psql -U 
 
 - 📧 邮箱：2949465671@qq.com
 - 💬 微信：taotao_maxkb
-- 📚 课程问题：[MaxKB FDE 教学](https://maxkb-edu.com)
+- 📚 课程问题：[MaxKB FDE 教学](https://taotaoedu.ltd)
 
 ---
 

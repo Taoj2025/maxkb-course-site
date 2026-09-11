@@ -1,14 +1,14 @@
-# maxkb-edu.com DNS 解析配置（购买后立即执行）
+# taotaoedu.ltd DNS 解析配置（购买后立即执行）
 
 > **作者**：小 Q 为小陶老师定制 · 2026-07-23 22:40
-> **域名**：maxkb-edu.com · 腾讯云 / DNSPod
+> **域名**：taotaoedu.ltd · 腾讯云 / DNSPod
 
 ---
 
 ## 🎯 完成后效果
 
-- ✅ 用户访问 `https://maxkb-edu.com` 自动看到 MaxKB FDE 教学网站
-- ✅ 用户访问 `https://www.maxkb-edu.com` 也自动重定向
+- ✅ 用户访问 `https://taotaoedu.ltd` 自动看到 MaxKB FDE 教学网站
+- ✅ 用户访问 `https://www.taotaoedu.ltd` 也自动重定向
 - ✅ HTTPS 自动签发（GitHub Pages）
 - ✅ 全球 CDN 加速（GitHub CDN）
 
@@ -19,7 +19,7 @@
 ### 在腾讯云 DNSPod 控制台
 
 1. 打开 https://console.dnspod.cn/
-2. 进入「我的域名」→ `maxkb-edu.com`
+2. 进入「我的域名」→ `taotaoedu.ltd`
 3. 点击「解析」标签
 
 ### 添加 5 条记录
@@ -49,7 +49,7 @@
 ### 在 GitHub 仓库设置
 
 1. 打开 https://github.com/Taoj2025/maxkb-course-site/settings/pages
-2. 在「Custom domain」输入框填：`maxkb-edu.com`
+2. 在「Custom domain」输入框填：`taotaoedu.ltd`
 3. 点击「Save」
 4. 勾选「Enforce HTTPS」
 5. 等待 GitHub 验证 DNS（5-30 分钟）
@@ -62,17 +62,17 @@
 
 ```bash
 # 域名解析测试
-nslookup maxkb-edu.com
+nslookup taotaoedu.ltd
 # 应返回 185.199.108.153 等 IP
 
 # HTTPS 访问测试
-curl -I https://maxkb-edu.com
+curl -I https://taotaoedu.ltd
 # 应返回 HTTP 200
 ```
 
 ### 浏览器验证
 
-打开 https://maxkb-edu.com 应该看到 MaxKB FDE 教学网站
+打开 https://taotaoedu.ltd 应该看到 MaxKB FDE 教学网站
 
 ### HTTPS 锁标志
 
@@ -86,13 +86,13 @@ curl -I https://maxkb-edu.com
 A：在腾讯云检查 4 条 A 记录是否正确，等待 30 分钟以上
 
 ### Q2：GitHub 显示 "Domain verification failed"？
-A：检查 DNS 是否生效（命令：nslookup maxkb-edu.com）
+A：检查 DNS 是否生效（命令：nslookup taotaoedu.ltd）
 
 ### Q3：HTTPS 灰色锁？
 A：在 GitHub Pages 设置里重新勾选「Enforce HTTPS」，等待证书签发（5-30 分钟）
 
 ### Q4：访问 404？
-A：检查仓库根目录的 `CNAME` 文件是否包含 `maxkb-edu.com`（已配置）
+A：检查仓库根目录的 `CNAME` 文件是否包含 `taotaoedu.ltd`（已配置）
 
 ---
 

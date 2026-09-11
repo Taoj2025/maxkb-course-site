@@ -1,15 +1,15 @@
 /**
  * MaxKB 前端配置
  * 用户部署后端后，把 API_BASE 改为真实地址，例如：
- *   - https://api.maxkb-edu.com （子域名反代）
- *   - https://maxkb-edu.com/api （同源路径反代，Nginx 推荐）
+ *   - https://api.taotaoedu.ltd （子域名反代）
+ *   - https://taotaoedu.ltd/api （同源路径反代，Nginx 推荐）
  *   - http://localhost:3001 （本地调试）
  *
  * Fallback 路径：后端不可达时使用，保证前端永不白屏
  */
 window.MAXKB_CONFIG = {
-  // 生产环境：Nginx 反代 · https://maxkb-edu.com/api → 127.0.0.1:3001
-  API_BASE: 'https://maxkb-edu.com/api',
+  // 生产环境：Nginx 反代 · https://taotaoedu.ltd/api → 127.0.0.1:3001
+  API_BASE: 'https://taotaoedu.ltd/api',
 
   // 后端不可达时的静态回退
   FALLBACK_ARTICLES:  'articles.json',

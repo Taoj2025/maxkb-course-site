@@ -3,7 +3,7 @@
 > **弃用说明**：本项目已从 Supabase 切换到自建 Node.js + Express + PostgreSQL 后端架构。
 >
 > 当前架构：
-> - 前端：GitHub Pages 静态托管（`https://maxkb-edu.com`）
+> - 前端：GitHub Pages 静态托管（`https://taotaoedu.ltd`）
 > - 后端：Node.js + Express（独立服务器部署，PM2/systemd/Docker 三选一）
 > - 数据库：PostgreSQL 16（用户提供密码 + Docker Compose / 云数据库）
 >

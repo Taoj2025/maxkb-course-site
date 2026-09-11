@@ -43,7 +43,7 @@ services:
       PGDATABASE: ${PGDATABASE:-postgres}
       PGPASSWORD: ${PGPASSWORD:?必须在 .env 设置 PGPASSWORD！}
       JWT_SECRET: ${JWT_SECRET:?必须在 .env 设置 JWT_SECRET！}
-      CORS_ORIGINS: ${CORS_ORIGINS:-https://maxkb-edu.com,https://taoj2025.github.io}
+      CORS_ORIGINS: ${CORS_ORIGINS:-https://taotaoedu.ltd,https://www.taotaoedu.ltd,https://taoj2025.github.io}
       ADMIN_EMAIL: ${ADMIN_EMAIL:-2949465671@qq.com}
       ADMIN_DEFAULT_PASSWORD: ${ADMIN_DEFAULT_PASSWORD:?必须在 .env 设置！}
     ports:
