@@ -34,7 +34,7 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: 22
+          port: 2222
           command_timeout: 2m
           script: |
             echo "===== SSH 连接成功 $(date) ====="
@@ -47,7 +47,7 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: 22
+          port: 2222
           command_timeout: 10m
           script: |
             set -e
