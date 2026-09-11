@@ -1,14 +1,33 @@
+# 后端部署 · SSH 到独立服务器拉取最新代码
+# ⚠️ 必须在 GitHub Settings > Secrets 配置：
+#   SSH_HOST           服务器 IP 或域名（如 119.91.234.159）
+#   SSH_USER           SSH 用户名（如 deploy / ubuntu / root）
+#   SSH_PRIVATE_KEY    SSH 私钥（id_rsa 内容，保密！）
+#   SSH_PORT           SSH 端口（默认 22，服务器为 2222 时改此值）
+
 name: Deploy to Server
 
 on:
   push:
     branches:
       - main
+    paths:
+      - 'backend/**'
+      - '.github/workflows/deploy-backend.yml'
+  workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
+      - name: Debug · 列出 secrets 元信息
+        run: |
+          echo "SSH_HOST: ${{ secrets.SSH_HOST }}"
+          echo "SSH_USER: ${{ secrets.SSH_USER }}"
+          echo "SSH_PRIVATE_KEY 长度: ${#SSH_PRIVATE_KEY}"
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
       - name: Deploy via SSH
         uses: appleboy/ssh-action@v1.0.3
         with:
@@ -17,5 +36,10 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 2222
           script: |
+            set -e
+            echo "===== 部署开始 $(date) ====="
+            echo "当前用户: $(whoami)"
+            echo "===== 拉取最新代码 ====="
             cd /var/www/maxkb-course-site
             sudo -u www-data git pull origin main
+            echo "===== 部署完成 ====="
