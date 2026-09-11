@@ -5,6 +5,7 @@
 #   SSH_USER           SSH 用户名（如 deploy / ubuntu / root）
 #   SSH_PRIVATE_KEY    SSH 私钥（id_rsa 内容，保密！）
 # 端口：2222（用户最终选择）
+# 服务器上 ~/.ssh/authorized_keys 权限 600，~/.ssh 权限 700（2026-09-12 修复）
 
 name: Deploy to Server
 
