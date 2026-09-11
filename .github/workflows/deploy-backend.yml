@@ -1,9 +1,3 @@
-# 后端部署 · 仅在 backend/ 变更时触发 · SSH 到独立服务器跑 Docker Compose
-# ⚠️ 必须在 GitHub Settings > Secrets 配置：
-#   SSH_HOST           服务器 IP 或域名
-#   SSH_USER           SSH 用户名（如 deploy / ubuntu）
-#   SSH_PRIVATE_KEY    SSH 私钥（id_rsa 内容，保密！）
-
 name: Deploy to Server
 
 on:
@@ -22,4 +16,6 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 2222
-          script: bash ~/deploy.sh
+          script: |
+            cd /var/www/maxkb-course-site
+            sudo -u www-data git pull origin main
