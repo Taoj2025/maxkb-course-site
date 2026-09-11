@@ -3,7 +3,7 @@ id: 13297
 title: "MaxKB FDE 教学课程介绍"
 date: 2026-07-23
 tags: ["课程介绍", "MaxKB"]
-summary: "基于开源 MaxKB（1Panel-dev）的企业级智能体平台教学，60 页 PPT + 8 章讲义 + 500+ 行源码"
+summary: "基于开源 MaxKB（1Panel-dev）的企业级智能体平台教学，8 章讲义 + 配套源码 + 5 大场景模板"
 ---
 
 # MaxKB FDE 教学课程
@@ -31,9 +31,8 @@ summary: "基于开源 MaxKB（1Panel-dev）的企业级智能体平台教学，
 ## 📦 课程资料
 
 - 60 页紫色 AI 科技风 PPT
-- 8 章 Word 讲义（约 4 万字）
-- 500+ 行 Python 核心源码
-- 6 张高清配图
-- 5 大真实应用场景 ROI 分析
+- 8 章 Word 讲义
+- 配套源码与部署脚本
+- 5 大场景 Prompt 与工作流模板
 
 👉 [访问课程网站获取完整资料](https://taoj2025.github.io/maxkb-course-site/)

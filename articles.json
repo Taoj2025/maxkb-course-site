@@ -153,20 +153,20 @@
     "tags": [
       "学员FAQ"
     ],
-    "summary": "10 个高频问题 · 课程难度 / 学习路径 / 资料获取 / 实战项目 / 就业方向",
+    "summary": "课程难度 / 学习路径 / 资料获取 / 实战项目 / 答疑支持",
     "category": "学员FAQ",
     "color": "success-green"
   },
   {
     "id": 13298,
     "slug": "13298-scenarios",
-    "title": "5 大 MaxKB 应用场景实战 ROI 案例",
+    "title": "5 大 MaxKB 应用场景实战模板",
     "date": "2026-07-23",
     "tags": [
       "实战案例",
-      "ROI"
+      "场景模板"
     ],
-    "summary": "高校客服 ROI 1:8 · 教师备课 1:6 · 文献精读 1:15 · 企业知识库 1:12 · 医院导诊 1:10",
+    "summary": "高校客服 / 教师备课 / 文献精读 / 企业知识库 / 政务问答，配套 Prompt 模板与工作流示例",
     "category": "实战案例",
     "color": "blue"
   },
@@ -179,7 +179,7 @@
       "课程介绍",
       "MaxKB"
     ],
-    "summary": "基于开源 MaxKB（1Panel-dev）的企业级智能体平台教学，60 页 PPT + 8 章讲义 + 500+ 行源码",
+    "summary": "基于开源 MaxKB（1Panel-dev）的企业级智能体平台教学，8 章讲义 + 配套源码 + 5 大场景模板",
     "category": "课程介绍",
     "color": "purple"
   }
