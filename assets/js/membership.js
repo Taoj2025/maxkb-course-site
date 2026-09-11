@@ -10,7 +10,7 @@ const MEMBERSHIP_PLANS = [
     color: '#94A3B8', icon: '🎓',
     description: '免费浏览课程大纲、章节简介、5 大企业场景',
     features: [
-      { ok: true,  text: '查看 8 章课程大纲' },
+      { ok: true,  text: '查看 9 章课程大纲' },
       { ok: true,  text: '浏览 5 大企业场景' },
       { ok: true,  text: '查看演示截图' },
       { ok: false, text: '完整课件下载' },
@@ -27,7 +27,7 @@ const MEMBERSHIP_PLANS = [
     features: [
       { ok: true, text: '体验会员所有权益' },
       { ok: true, text: '60 页 PPT 完整下载' },
-      { ok: true, text: '8 章节讲义完整下载' },
+      { ok: true, text: '9 章节讲义完整下载' },
       { ok: true, text: '8 大核心模块源码' },
       { ok: true, text: '3 个实验指导手册' },
       { ok: true, text: '5 大企业场景包' },

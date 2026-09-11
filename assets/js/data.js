@@ -3,7 +3,7 @@ const chapters = [
   {
     id: 1,
     title: '课程概述 · FDE 培训定位',
-    desc: '理解 MaxKB 在企业 AI 落地中的位置与价值，掌握 18 学时学习路径。',
+    desc: '理解 MaxKB 在企业 AI 落地中的位置与价值，掌握 25 学时学习路径。',
     icon: '🎯',
     tag: 'theory',
     duration: '0.5h',
@@ -79,5 +79,15 @@ const chapters = [
     duration: '2h',
     pages: 'P46-P55',
     outputs: ['场景模板', '工作流示例'],
+  },
+  {
+    id: 9,
+    title: '深度学习与 LLM 原理',
+    desc: '从神经网络 → Transformer → 预训练 → 微调 → 推理优化 → Agent 调用，6 节补原理层。MaxKB 学员理解底层的必修课。',
+    icon: '🧠',
+    tag: 'theory',
+    duration: '7h',
+    pages: 'P62-P68',
+    outputs: ['PyTorch 神经网络示例', 'LoRA 微调脚本', 'vLLM 部署示例'],
   },
 ];
