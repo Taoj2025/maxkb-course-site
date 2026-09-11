@@ -21,6 +21,7 @@ on:
       - 'enterprise.html'
       - 'about.html'
       - 'trial.html'
+      - 'syllabus.html'
       - 'assets/**'
       - 'articles/**'
       - 'articles.json'
@@ -62,7 +63,7 @@ jobs:
           mkdir _site
           cp -r index.html membership.html user.html admin.html \
                  article.html latest.html faq.html fde-jobs.html fde-skills.html \
-                 cases.html enterprise.html about.html trial.html \
+                 cases.html enterprise.html about.html trial.html syllabus.html \
                  assets articles articles.json data downloads \
                  CNAME .nojekyll sitemap.xml robots.txt promotion.md \
                  _site/

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>课程大纲 · MaxKB FDE 教学 · 小陶老师</title>
+<meta name="description" content="MaxKB FDE 教学完整课程大纲：8 章系统讲解 RAG / LangChain / Workflow / MCP 四大核心 + 6 步实操 + 5 大企业场景。">
+<meta name="keywords" content="MaxKB, FDE, 课程大纲, RAG, LangChain, Workflow, MCP, 小陶老师">
+<meta name="author" content="小陶老师（陶建敏）">
+
+<!-- Open Graph -->
+<meta property="og:title" content="MaxKB FDE 课程大纲 · 8 章系统教学">
+<meta property="og:description" content="8 章讲义 + 配套源码 + 5 大场景模板，开源 GPL v3 可商用">
+<meta property="og:image" content="https://taoj2025.github.io/maxkb-course-site/assets/images/og-cover.png">
+<meta property="og:url" content="https://taoj2025.github.io/maxkb-course-site/syllabus.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MaxKB FDE 教学">
+
+<meta name="theme-color" content="#5B2EBF">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%235B2EBF'/><text x='50' y='65' text-anchor='middle' fill='white' font-size='40' font-weight='bold' font-family='sans-serif'>M</text></svg>">
+
+<style>
+  /* ============ 大纲页专属样式 ============ */
+  .syllabus-hero {
+    background: linear-gradient(135deg, #5B2EBF 0%, #8B5CF6 100%);
+    color: white;
+    padding: 100px 32px 60px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .syllabus-hero::before {
+    content: ''; position: absolute; inset: 0;
+    background: radial-gradient(circle at 30% 40%, rgba(255,255,255,0.1), transparent 50%);
+  }
+  .syllabus-hero h1 {
+    font-size: 48px; margin-bottom: 16px; font-weight: 800;
+    position: relative; z-index: 1;
+  }
+  .syllabus-hero .subtitle {
+    font-size: 20px; opacity: 0.95; margin-bottom: 32px;
+    position: relative; z-index: 1;
+  }
+  .syllabus-hero-stats {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 16px; max-width: 900px; margin: 0 auto;
+    position: relative; z-index: 1;
+  }
+  .syllabus-hero-stats .stat {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 12px;
+    padding: 20px 12px;
+  }
+  .syllabus-hero-stats .stat-num {
+    font-size: 32px; font-weight: 800; color: #FCD34D;
+    margin-bottom: 4px;
+  }
+  .syllabus-hero-stats .stat-label {
+    font-size: 13px; opacity: 0.9;
+  }
+
+  /* 章节详情卡片 */
+  .syllabus-list { max-width: 980px; margin: 0 auto; padding: 60px 32px; }
+  .syllabus-item {
+    background: var(--white);
+    border: 1px solid var(--gray-light);
+    border-radius: 16px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: all .3s;
+  }
+  .syllabus-item:hover { border-color: var(--purple-light); }
+  .syllabus-item.open {
+    border-color: var(--purple);
+    box-shadow: 0 12px 32px rgba(91,46,191,0.12);
+  }
+  .syllabus-header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 20px;
+    align-items: center;
+    padding: 24px 28px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .syllabus-num {
+    width: 48px; height: 48px;
+    background: linear-gradient(135deg, var(--purple-deep), var(--blue));
+    color: white;
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px; font-weight: 800;
+    flex-shrink: 0;
+  }
+  .syllabus-item.open .syllabus-num {
+    background: linear-gradient(135deg, #FCD34D, #F59E0B);
+    color: #1E1B4B;
+  }
+  .syllabus-title-area { min-width: 0; }
+  .syllabus-title-area h3 {
+    font-size: 18px; color: var(--purple-deep);
+    margin-bottom: 6px; font-weight: 700;
+  }
+  .syllabus-meta {
+    display: flex; gap: 12px; flex-wrap: wrap;
+    font-size: 13px; color: var(--gray);
+  }
+  .syllabus-meta .tag {
+    background: var(--gray-light);
+    padding: 2px 10px; border-radius: 4px;
+    font-weight: 600;
+  }
+  .syllabus-meta .tag.theory { background: #DBEAFE; color: #1E40AF; }
+  .syllabus-meta .tag.practice { background: #D1FAE5; color: #065F46; }
+  .syllabus-meta .tag.scene { background: #FEF3C7; color: #B45309; }
+  .syllabus-toggle {
+    font-size: 24px; color: var(--purple);
+    transition: transform .3s;
+    flex-shrink: 0;
+  }
+  .syllabus-item.open .syllabus-toggle { transform: rotate(180deg); }
+  .syllabus-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .4s ease;
+  }
+  .syllabus-item.open .syllabus-body { max-height: 600px; }
+  .syllabus-body-inner {
+    padding: 0 28px 24px;
+    border-top: 1px dashed var(--gray-light);
+    padding-top: 20px;
+    color: var(--dark); font-size: 15px; line-height: 1.7;
+  }
+  .syllabus-body-inner h4 {
+    color: var(--purple-deep); margin: 16px 0 8px;
+    font-size: 14px; font-weight: 700;
+  }
+  .syllabus-body-inner h4:first-child { margin-top: 8px; }
+  .syllabus-body-inner ul {
+    margin: 8px 0; padding-left: 20px; color: var(--gray);
+  }
+  .syllabus-body-inner ul li { margin: 4px 0; }
+  .syllabus-body-inner code {
+    background: #F3F4F6; padding: 2px 6px; border-radius: 4px;
+    font-size: 13px; color: #4338CA;
+  }
+  .syllabus-body-inner .prompt-block {
+    background: #1F2937; color: #E5E7EB;
+    padding: 14px 16px; border-radius: 8px;
+    margin: 12px 0; font-family: monospace;
+    font-size: 13px; line-height: 1.6;
+    white-space: pre-wrap;
+  }
+
+  /* 进度条 */
+  .syllabus-progress {
+    max-width: 980px; margin: 32px auto 0; padding: 0 32px;
+  }
+  .progress-bar-wrap {
+    background: var(--gray-light);
+    border-radius: 999px;
+    height: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  .progress-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--purple), #FCD34D);
+    border-radius: 999px;
+    transition: width .4s ease;
+  }
+  .progress-text {
+    text-align: center;
+    color: var(--gray);
+    font-size: 13px;
+    margin-top: 8px;
+  }
+
+  /* 课程路径图 */
+  .path-section {
+    background: linear-gradient(180deg, #faf8ff 0%, #ffffff 100%);
+    padding: 60px 32px;
+  }
+  .path-flow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    max-width: 980px;
+    margin: 32px auto 0;
+  }
+  .path-step {
+    background: white;
+    border: 2px solid var(--purple-light);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+  }
+  .path-step .step-icon { font-size: 32px; margin-bottom: 8px; }
+  .path-step h4 { color: var(--purple-deep); font-size: 14px; margin-bottom: 4px; }
+  .path-step p { color: var(--gray); font-size: 12px; }
+  .path-step::after {
+    content: '→';
+    position: absolute;
+    right: -14px; top: 50%;
+    transform: translateY(-50%);
+    color: var(--purple);
+    font-size: 20px; font-weight: 700;
+    z-index: 1;
+  }
+  .path-step:last-child::after { display: none; }
+  @media (max-width: 720px) {
+    .syllabus-hero h1 { font-size: 32px; }
+    .syllabus-hero .subtitle { font-size: 16px; }
+    .path-flow { grid-template-columns: repeat(2, 1fr); }
+    .syllabus-header { grid-template-columns: auto 1fr; gap: 12px; padding: 16px 20px; }
+    .syllabus-toggle { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ 顶部会员状态条 ============ -->
+<div id="top-status-bar" style="background: rgba(0,0,0,0.2); padding: 8px 32px; text-align: center; font-size: 13px; color: rgba(255,255,255,0.9);">
+  <span id="status-text">💎 未登录 · 访问全部资源需会员</span>
+  <a href="membership.html" style="color: #FCD34D; text-decoration: none; margin-left: 12px; font-weight: 600;">👤 登录 / 注册</a>
+</div>
+
+<!-- 顶部信任条 -->
+<section class="trust-bar">
+  <span class="tb-item">📚 <strong>8 章</strong>系统教学</span>
+  <span class="tb-item">⏱️ <strong>18h</strong> 课时</span>
+  <span class="tb-item">🎯 <strong>5 大</strong> 场景模板</span>
+  <span class="tb-item">📜 <strong>GPL v3</strong> 开源可商用</span>
+</section>
+
+<!-- 顶部导航 -->
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <div class="logo-dot">M</div>
+      <span>MaxKB · FDE 教学</span>
+    </div>
+    <button class="hamburger" id="nav-hamburger" aria-label="菜单">☰</button>
+    <div class="nav-links" id="nav-links">
+      <a href="index.html">首页</a>
+      <a href="syllabus.html" class="active">课程大纲</a>
+      <a href="cases.html">客户案例</a>
+      <a href="article.html">资讯</a>
+      <a href="#download">下载</a>
+      <a href="enterprise.html" style="color:#F59E0B; font-weight:700;">🏢 企业服务</a>
+      <a href="about.html">关于</a>
+      <a href="trial.html" class="nav-cta">📅 预约演示</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ 大纲页 Hero ============ -->
+<section class="syllabus-hero">
+  <div class="section-tag" style="background: rgba(255,255,255,0.2); color: white; display: inline-block;">📚 完整课程大纲</div>
+  <h1>MaxKB FDE 课程大纲</h1>
+  <p class="subtitle">8 章系统教学 · 18 学时掌握企业级智能体平台</p>
+
+  <div class="syllabus-hero-stats">
+    <div class="stat">
+      <div class="stat-num">8 章</div>
+      <div class="stat-label">系统章节</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">18h</div>
+      <div class="stat-label">课时</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">60 页</div>
+      <div class="stat-label">教学课件</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">5 大</div>
+      <div class="stat-label">场景模板</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">3 档</div>
+      <div class="stat-label">会员套餐</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 课程路径 ============ -->
+<section class="path-section">
+  <div class="section-tag">🛣️ 学习路径</div>
+  <h2 class="section-title">从 0 到 1 <span class="highlight">系统学习</span></h2>
+  <p class="section-subtitle">理论 30% + 实操 50% + 场景 20% · 三段式渐进</p>
+
+  <div class="path-flow">
+    <div class="path-step">
+      <div class="step-icon">📖</div>
+      <h4>理论篇</h4>
+      <p>理解 MaxKB 架构与 RAG / LangChain / Workflow / MCP</p>
+    </div>
+    <div class="path-step">
+      <div class="step-icon">🔧</div>
+      <h4>实操篇</h4>
+      <p>6 步端到端部署 · Docker / 模型 / 知识库</p>
+    </div>
+    <div class="path-step">
+      <div class="step-icon">🏢</div>
+      <h4>场景篇</h4>
+      <p>5 大企业场景 · Prompt + 工作流模板</p>
+    </div>
+    <div class="path-step">
+      <div class="step-icon">🚀</div>
+      <h4>实战篇</h4>
+      <p>独立交付企业级 AI 智能体项目</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 章节详情 ============ -->
+<section style="padding: 40px 32px 60px;">
+  <div style="text-align:center; max-width: 980px; margin: 0 auto 16px;">
+    <div class="section-tag">📋 章节目录</div>
+    <h2 class="section-title">8 章 <span class="highlight">课程详情</span></h2>
+    <p class="section-subtitle">点击章节展开 · 查看要点、产出物与代码示例</p>
+  </div>
+
+  <!-- 进度跟踪 -->
+  <div class="syllabus-progress">
+    <div class="progress-bar-wrap">
+      <div class="progress-bar-fill" id="progress-fill" style="width: 0%"></div>
+    </div>
+    <div class="progress-text" id="progress-text">已完成 0 / 8 章</div>
+  </div>
+
+  <div class="syllabus-list" id="syllabus-list">
+    <!-- 由 JS 渲染 -->
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta-banner">
+  <div class="cta-content">
+    <h2>🚀 开始你的 MaxKB 学习之旅</h2>
+    <p class="subtitle">8 章节系统教学 · 18 学时掌握企业级智能体平台 · 开源 GPL v3 可商用</p>
+    <div class="cta-buttons">
+      <a href="membership.html" class="btn-cta-primary">💎 立即开通会员</a>
+      <a href="trial.html" class="btn-cta-secondary">📅 预约 1v1 演示</a>
+      <a href="enterprise.html" class="btn-cta-secondary">🏢 企业合作咨询</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Footer ============ -->
+<footer style="background: #1F2937; color: rgba(255,255,255,0.7); padding: 40px 32px; text-align: center;">
+  <p style="margin-bottom: 8px;">© 2026 MaxKB FDE 教学 · 由小陶老师（陶建敏）维护</p>
+  <p style="font-size: 12px;">
+    <a href="about.html" style="color: rgba(255,255,255,0.5); margin: 0 8px;">关于</a> ·
+    <a href="membership.html" style="color: rgba(255,255,255,0.5); margin: 0 8px;">会员</a> ·
+    <a href="enterprise.html" style="color: rgba(255,255,255,0.5); margin: 0 8px;">企业服务</a> ·
+    协议：GPL v3
+  </p>
+</footer>
+
+<!-- ============ 数据 + 渲染脚本 ============ -->
+<script src="assets/js/data.js"></script>
+<script>
+  // 章节详情扩展（每章的「要点 + 产出物 + 代码示例」）
+  const chapterDetails = {
+    1: {
+      points: [
+        'MaxKB 在企业 AI 落地中的位置与价值',
+        'FDE（Forward Deployed Engineer）岗位定位',
+        '课程 18 学时分配：理论 30% + 实操 50% + 场景 20%',
+      ],
+      prompt: null,
+    },
+    2: {
+      points: [
+        '硬件选型建议（4C8G 起步 / GPU 可选）',
+        'Docker / Docker Compose 安装与配置',
+        '大模型 API 申请：DeepSeek / 通义千问 / OpenAI / Claude',
+        '本地 MaxKB 一键启动验证',
+      ],
+      prompt: null,
+    },
+    3: {
+      points: [
+        'RAG 范式：检索 → 重排 → 生成',
+        '向量数据库选型：pgvector / Milvus / Chroma',
+        'Embedding 模型：BAAI / bge / m3e',
+        '召回率与生成质量的权衡',
+      ],
+      prompt: '你是 MaxKB 助教。基于以下知识库内容回答用户问题。\n若知识库无相关内容，诚实告知用户，不要编造。\n回答简洁准确，附带原文出处。',
+    },
+    4: {
+      points: [
+        'LangChain 6 大组件：Models / Prompts / Indexes / Chains / Agents / Memory',
+        'MaxKB 在 LangChain 之上的工程化封装',
+        '模型中立的设计理念',
+        '何时用 LangChain，何时直接用 MaxKB',
+      ],
+      prompt: null,
+    },
+    5: {
+      points: [
+        '可视化拖拽编排',
+        '从 Prompt → Agent 的渐进式升级',
+        '函数调用 / 工具集成',
+        '条件分支 / 循环节点 / 异常处理',
+      ],
+      prompt: null,
+    },
+    6: {
+      points: [
+        'MCP（Model Context Protocol）2024 年开源',
+        '让 LLM 调用任意外部系统（数据库 / API / 文件）',
+        'MCP Server 开发与部署',
+        'MaxKB 接入 MCP 生态',
+      ],
+      prompt: null,
+    },
+    7: {
+      points: [
+        'Docker 部署 MaxKB（一条命令）',
+        '接入大模型 + 配置 API Key',
+        '创建知识库 + 上传文档',
+        '调试简单应用 / 工作流应用 / 场景应用',
+        'iframe / JS SDK / REST API 发布嵌入',
+      ],
+      prompt: '你是客服助手。请基于下方知识库回答用户问题，语气友好专业。\n- 优先用知识库内容\n- 知识库无答案时引导转人工\n- 涉及金额 / 隐私时务必谨慎',
+    },
+    8: {
+      points: [
+        '高校 / 机构客服：FAQ + 转人工',
+        '教师备课：学科知识库 + 出题答疑',
+        '科研文献精读：PDF 解析 + 检索 + 摘要',
+        '企业内部知识库：多源接入 + 权限隔离',
+        '政务 / 公共服务问答：合规清单 + 私有部署',
+      ],
+      prompt: null,
+    },
+  };
+
+  // 渲染章节目录
+  const tagLabel = { theory: '理论', practice: '实操', scene: '场景' };
+  const listEl = document.getElementById('syllabus-list');
+
+  function render() {
+    if (typeof chapters === 'undefined') {
+      listEl.innerHTML = '<p style="text-align:center; color:var(--gray);">课程数据加载中…</p>';
+      return;
+    }
+    listEl.innerHTML = chapters.map((c, idx) => {
+      const detail = chapterDetails[c.id] || { points: [], prompt: null };
+      const tagName = tagLabel[c.tag] || c.tag;
+      const pointsHtml = detail.points && detail.points.length
+        ? `<h4>本章要点</h4><ul>${detail.points.map(p => `<li>${p}</li>`).join('')}</ul>`
+        : '';
+      const outputsHtml = c.outputs && c.outputs.length
+        ? `<h4>产出物</h4><ul>${c.outputs.map(o => `<li>${o}</li>`).join('')}</ul>`
+        : '';
+      const promptHtml = detail.prompt
+        ? `<h4>示例 Prompt</h4><div class="prompt-block">${detail.prompt.replace(/</g, '&lt;')}</div>`
+        : '';
+      return `
+        <div class="syllabus-item" data-chapter="${c.id}">
+          <div class="syllabus-header" onclick="toggleChapter(${c.id})">
+            <div class="syllabus-num">${idx + 1}</div>
+            <div class="syllabus-title-area">
+              <h3>${c.icon} ${c.title}</h3>
+              <div class="syllabus-meta">
+                <span class="tag ${c.tag}">${tagName}</span>
+                <span>⏱ ${c.duration}</span>
+                <span>📄 ${c.pages}</span>
+              </div>
+            </div>
+            <div class="syllabus-toggle">▼</div>
+          </div>
+          <div class="syllabus-body">
+            <div class="syllabus-body-inner">
+              <p style="color: var(--dark); margin-bottom: 12px;">${c.desc}</p>
+              ${pointsHtml}
+              ${outputsHtml}
+              ${promptHtml}
+            </div>
+          </div>
+        </div>`;
+    }).join('');
+
+    // 恢复上次展开状态
+    chapters.forEach(c => {
+      const key = `syllabus_open_${c.id}`;
+      if (localStorage.getItem(key) === '1') {
+        const item = document.querySelector(`[data-chapter="${c.id}"]`);
+        if (item) item.classList.add('open');
+      }
+    });
+    updateProgress();
+  }
+
+  function toggleChapter(id) {
+    const item = document.querySelector(`[data-chapter="${id}"]`);
+    if (!item) return;
+    item.classList.toggle('open');
+    localStorage.setItem(`syllabus_open_${id}`, item.classList.contains('open') ? '1' : '0');
+    updateProgress();
+  }
+
+  function updateProgress() {
+    const total = chapters ? chapters.length : 8;
+    const opened = document.querySelectorAll('.syllabus-item.open').length;
+    const pct = Math.round((opened / total) * 100);
+    const fill = document.getElementById('progress-fill');
+    const text = document.getElementById('progress-text');
+    if (fill) fill.style.width = pct + '%';
+    if (text) text.textContent = `已展开 ${opened} / ${total} 章 · 学习进度 ${pct}%`;
+  }
+
+  // 折叠菜单 + 渲染
+  document.addEventListener('DOMContentLoaded', render);
+  if (document.readyState !== 'loading') render();
+
+  const hamburger = document.getElementById('nav-hamburger');
+  const navLinks = document.getElementById('nav-links');
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+  }
+</script>
+</body>
+</html>
