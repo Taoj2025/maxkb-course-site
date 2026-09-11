@@ -4,30 +4,22 @@
 #   SSH_USER           SSH 用户名（如 deploy / ubuntu）
 #   SSH_PRIVATE_KEY    SSH 私钥（id_rsa 内容，保密！）
 
-name: Deploy Backend
+name: Deploy to Server
 
 on:
   push:
-    branches: [ main ]
-    paths:
-      - 'backend/**'
-      - '.github/workflows/deploy-backend.yml'
-  workflow_dispatch:    # 允许手动触发
-
-concurrency:
-  group: backend-deploy
-  cancel-in-progress: false
+    branches:
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
     steps:
-      - name: Deploy via SSH (Docker Compose)
+      - name: Deploy via SSH
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: bash /opt/maxkb-api/deploy.sh
-          command_timeout: 10m
+          port: 2222
+          script: bash ~/deploy.sh
