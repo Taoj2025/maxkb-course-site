@@ -70,7 +70,14 @@ jobs:
           script: |
             set -e
             echo "===== 部署开始 $(date) ====="
-            echo "===== 拉取最新代码 ====="
             cd /var/www/maxkb-course-site
-            sudo -u www-data git pull origin main
-            echo "===== 部署完成 ====="
+            # 解决目录拥有者是 www-data，root 写入会触发 'dubious ownership'
+            git config --global --add safe.directory /var/www/maxkb-course-site
+            # 修正目录拥有者为 root（之前是 www-data，root 写入会留下 root-owned 文件）
+            # 如果后续 nginx/php-fpm 需要 www-data 读权限，保留读权限即可（其他默认 755/644）
+            chown -R root:root /var/www/maxkb-course-site/.git
+            echo "===== 拉取最新代码 ====="
+            git pull origin main
+            echo "===== 当前 HEAD ====="
+            git log -1 --oneline
+            echo "===== 部署完成 $(date) ====="
