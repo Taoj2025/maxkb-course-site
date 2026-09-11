@@ -24,23 +24,32 @@ jobs:
     steps:
       - name: Debug · 检查密钥指纹（不打印私钥内容）
         run: |
+          echo "===== Debug step 开始 ====="
           echo "SSH_USER: ${{ secrets.SSH_USER }}"
           KEY="${{ secrets.SSH_PRIVATE_KEY }}"
           echo "SSH_PRIVATE_KEY 字节长度: ${#KEY}"
           echo "SSH_PRIVATE_KEY 行数: $(printf '%s\n' "$KEY" | wc -l)"
-          # 把密钥写到临时文件算指纹，算完立刻删，绝不打印内容
           TMPKEY=$(mktemp)
           chmod 600 "$TMPKEY"
           printf '%s\n' "$KEY" > "$TMPKEY"
-          if ssh-keygen -y -f "$TMPKEY" >/dev/null 2>&1; then
-            echo "===== SSH_PRIVATE_KEY 公钥指纹（服务器应有对应授权） ====="
-            ssh-keygen -lf "$TMPKEY"
-            echo "===== 完整公钥（用于对比服务器 authorized_keys） ====="
-            ssh-keygen -y -f "$TMPKEY"
-          else
-            echo "===== 私钥解析失败！可能不是合法 OpenSSH 私钥 ====="
-          fi
+          # 把诊断结果写入工件文件，下游 step 一定会 echo
+          DEBUGOUT=/tmp/sshkey-debug.txt
+          {
+            echo "===== SSH_PRIVATE_KEY 公钥指纹 ====="
+            if ssh-keygen -y -f "$TMPKEY" >/dev/null 2>&1; then
+              ssh-keygen -lf "$TMPKEY"
+              echo "===== 完整公钥（用于对比服务器 authorized_keys） ====="
+              ssh-keygen -y -f "$TMPKEY"
+            else
+              echo "===== 私钥解析失败！可能不是合法 OpenSSH 私钥 ====="
+            fi
+            echo "===== END ====="
+          } > "$DEBUGOUT"
           rm -f "$TMPKEY"
+          cat "$DEBUGOUT"
+          echo ""
+          echo "===== ⚠️ Debug step 故意失败，方便定位诊断输出 ====="
+          exit 99
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
       - name: 验证 SSH 连通性
