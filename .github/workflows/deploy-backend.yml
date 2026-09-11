@@ -28,6 +28,20 @@ jobs:
           echo "SSH_PRIVATE_KEY 长度: ${#SSH_PRIVATE_KEY}"
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+      - name: 验证 SSH 连通性（无密钥）
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 2222
+          command_timeout: 2m
+          debug: true
+          script: |
+            echo "===== SSH 连接成功 $(date) ====="
+            echo "用户: $(whoami)"
+            echo "路径: $(pwd)"
+            echo "磁盘: $(df -h /var/www 2>&1 | tail -2 || echo 'N/A')"
       - name: Deploy via SSH
         uses: appleboy/ssh-action@v1.0.3
         with:
@@ -35,10 +49,11 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 2222
+          command_timeout: 10m
+          debug: true
           script: |
             set -e
             echo "===== 部署开始 $(date) ====="
-            echo "当前用户: $(whoami)"
             echo "===== 拉取最新代码 ====="
             cd /var/www/maxkb-course-site
             sudo -u www-data git pull origin main
