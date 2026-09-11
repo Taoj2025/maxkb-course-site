@@ -32,8 +32,6 @@ jobs:
           TMPKEY=$(mktemp)
           chmod 600 "$TMPKEY"
           printf '%s\n' "$KEY" > "$TMPKEY"
-          # 把诊断结果写入工件文件，下游 step 一定会 echo
-          DEBUGOUT=/tmp/sshkey-debug.txt
           {
             echo "===== SSH_PRIVATE_KEY 公钥指纹 ====="
             if ssh-keygen -y -f "$TMPKEY" >/dev/null 2>&1; then
@@ -44,12 +42,8 @@ jobs:
               echo "===== 私钥解析失败！可能不是合法 OpenSSH 私钥 ====="
             fi
             echo "===== END ====="
-          } > "$DEBUGOUT"
+          }
           rm -f "$TMPKEY"
-          cat "$DEBUGOUT"
-          echo ""
-          echo "===== ⚠️ Debug step 故意失败，方便定位诊断输出 ====="
-          exit 99
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
       - name: 验证 SSH 连通性
