@@ -581,6 +581,292 @@
   </div>
 </section>
 
+<!-- 📚 9 章深度学习笔记区块 -->
+<section class="chapter-notes" style="background:linear-gradient(135deg, #1E1B4B 0%, #312E81 100%); color:white; padding:80px 32px; margin-top:60px;">
+  <div style="max-width:1080px; margin:0 auto;">
+    <h2 style="text-align:center; font-size:32px; margin-bottom:16px;">📚 9 章深度学习笔记</h2>
+    <p style="text-align:center; color:#A78BFA; margin-bottom:40px;">每章核心要点 + 关键公式 + 学习路径</p>
+
+    <!-- 第 1 章 -->
+    <div style="background:rgba(255,255,255,0.05); border:1px solid rgba(167,139,250,0.3); border-radius:12px; padding:24px; margin-bottom:16px;">
+      <h3 style="color:#FCD34D; font-size:22px; margin-bottom:12px;">第 1 章 · AI 概述与数学基础</h3>
+      <p style="color:#E5E7EB; line-height:1.8; margin-bottom:12px;"><b>核心要点</b>：AI 四大浪潮（符号主义→统计学习→深度学习→大模型时代）；数学三大基石（线性代数、微积分、概率论）。</p>
+      <p style="color:#E5E7EB; line-height:1.8; margin-bottom:12px;"><b>关键公式</b>：矩阵乘法 $A \cdot B$、梯度 $
+abla f$、贝叶斯 $P(A|B) = \frac{P(B|A)P(A)}{P(B)}$</p>
+      <p style="color:#A78BFA; line-height:1.8;"><b>学习路径</b>：吴恩达 ML 课程 → 周志华《机器学习》→ 复现经典算法</p>
+    </div>
+
+    <!-- 第 2 章 -->
+    <div style="background:rgba(255,255,255,0.05); border:1px solid rgba(167,139,250,0.3); border-radius:12px; padding:24px; margin-bottom:16px;">
+      <h3 style="color:#FCD34D; font-size:22px; margin-bottom:12px;">第 2 章 · 全连接神经网络（MLP）</h3>
+      <p style="color:#E5E7EB; line-height:1.8; margin-bottom:12px;"><b>核心要点</b>：感知机→MLP→反向传播算法（链式法则）；激活函数对比（Sigmoid/ReLU/Tanh）；优化器演进（SGD→Adam）。</p>
+      <p style="color:#E5E7EB; line-height:1.8; margin-bottom:12px;"><b>关键公式</b>：前向 $y = \sigma(Wx + b)$；反向 $\frac{\partial L}{\partial W} = \frac{\partial L}{\partial y} \cdot \frac{\partial y}{\partial W}$</p>
+      <p style="color:#A78BFA; line-height:1.8;"><b>学习路径</b>：手写 MLP → 调参对比 → MNIST 98%</p>
+    </div>
+
+    <!-- 第 3 章 -->
+    <div style="background:rgba(255,255,255,0.05); border:1px solid rgba(167,139,250,0.3); border-radius:12px; padding:24px; margin-bottom:16px;">
+      <h3 style="color:#FCD34D; font-size:22px; margin-bottom:12px;">第 3 章 · CNN 卷积神经网络</h3>
+      <p style="color:#E5E7EB; line-height:1.8; margin-bottom:12px;"><b>核心要点</b>：卷积操作（局部连接+权值共享）；池化层（最大/平均）；经典架构演进（LeNet→AlexNet→VGG→GoogLeNet→ResNet）。</p>
+      <p style="color:#E5E7EB; line-height:1.8; margin-bottom:12px;"><b>关键公式</b>：卷积 $(f * g)[i,j] = \sum_{m,n} f[m,n] g[i-m, j-n]$；感受野</p>
+      <p style="color:#A78BFA; line-height:1.8;"><b>学习路径</b>：CS231n → 复现 ResNet → 迁移学习</p>
+    </div>
+
+    <!-- 第 4 章 -->
+    <div style="background:rgba(255,255,255,0.05); border:1px solid rgba(167,139,250,0.3); border-radius:12px; padding:24px; margin-bottom:16px;">
+      <h3 style="color:#FCD34D; font-size:22px; margin-bottom:12px;">第 4 章 · ResNet 与现代 CNN</h3>
+      <p style="color:#E5E7EB; line-height:1.8; margin-bottom:12px;"><b>核心要点</b>：残差连接 $F(x) + x$ 解决梯度消失；BatchNorm 加速收敛；ResNet-18/50/101 对比；EfficientNet 复合缩放。</p>
+      <p style="color:#E5E7EB; line-height:1.8; margin-bottom:12px;"><b>关键公式</b>：$y = F(x, \{W_i\}) + x$；梯度 $\frac{\partial}{\partial x} = 1 + \frac{\partial F}{\partial x}$</p>
+      <p style="color:#A78BFA; line-height:1.8;"><b>学习路径</b>：阅读 ResNet 论文 → 实现 50 层 → 迁移到 CIFAR-10</p>
+    </div>
+
+    <!-- 第 5 章 -->
+    <div style="background:rgba(255,255,255,0.05); border:1px solid rgba(167,139,250,0.3); border-radius:12px; padding:24px; margin-bottom:16px;">
+      <h3 style="color:#FCD34D; font-size:22px; margin-bottom:12px;">第 5 章 · RNN / LSTM 时序建模</h3>
+      <p style="color:#E5E7EB; line-height:1.8; margin-bottom:12px;"><b>核心要点</b>：循环神经网络（序列建模）；LSTM 三门控（遗忘/输入/输出）解决长期依赖；GRU 简化版；双向 RNN。</p>
+      <p style="color:#E5E7EB; line-height:1.8; margin-bottom:12px;"><b>关键公式</b>：$f_t = \sigma(W_f \cdot [h_{t-1}, x_t] + b_f)$</p>
+      <p style="color:#A78BFA; line-height:1.8;"><b>学习路径</b>：手写 RNN → LSTM → 情感分析</p>
+    </div>
+
+    <!-- 第 6 章 -->
+    <div style="background:rgba(255,255,255,0.05); border:1px solid rgba(167,139,250,0.3); border-radius:12px; padding:24px; margin-bottom:16px;">
+      <h3 style="color:#FCD34D; font-size:22px; margin-bottom:12px;">第 6 章 · Transformer 注意力机制</h3>
+      <p style="color:#E5E7EB; line-height:1.8; margin-bottom:12px;"><b>核心要点</b>：Self-Attention（QKV 三矩阵）；Multi-Head（多视角并行）；Positional Encoding（位置信息）；LayerNorm。</p>
+      <p style="color:#E5E7EB; line-height:1.8; margin-bottom:12px;"><b>关键公式</b>：$\text{Attention}(Q,K,V) = \text{softmax}(\frac{QK^T}{\sqrt{d_k}})V$</p>
+      <p style="color:#A78BFA; line-height:1.8;"><b>学习路径</b>：Attention Is All You Need 精读 → 实现 Self-Attention → 多头</p>
+    </div>
+
+    <!-- 第 7 章 -->
+    <div style="background:rgba(255,255,255,0.05); border:1px solid rgba(167,139,250,0.3); border-radius:12px; padding:24px; margin-bottom:16px;">
+      <h3 style="color:#FCD34D; font-size:22px; margin-bottom:12px;">第 7 章 · BERT / GPT 预训练大模型</h3>
+      <p style="color:#E5E7EB; line-height:1.8; margin-bottom:12px;"><b>核心要点</b>：BERT 双向 MLM（掩码语言模型）；GPT 单向自回归；下游任务微调；HuggingFace Transformers 实战。</p>
+      <p style="color:#E5E7EB; line-height:1.8; margin-bottom:12px;"><b>关键公式</b>：$L_{MLM} = -\sum_{masked} \log P(x_i | x_{\text{context}})$</p>
+      <p style="color:#A78BFA; line-height:1.8;"><b>学习路径</b>：BERT 论文 → HuggingFace 微调 → IMDB 92%</p>
+    </div>
+
+    <!-- 第 8 章 -->
+    <div style="background:rgba(255,255,255,0.05); border:1px solid rgba(167,139,250,0.3); border-radius:12px; padding:24px; margin-bottom:16px;">
+      <h3 style="color:#FCD34D; font-size:22px; margin-bottom:12px;">第 8 章 · 生成模型（GAN / VAE / 扩散）</h3>
+      <p style="color:#E5E7EB; line-height:1.8; margin-bottom:12px;"><b>核心要点</b>：GAN 对抗训练（生成器 vs 判别器）；VAE 变分自编码器（隐空间）；Stable Diffusion 潜在扩散模型。</p>
+      <p style="color:#E5E7EB; line-height:1.8; margin-bottom:12px;"><b>关键公式</b>：$\min_G \max_D V(D,G) = \mathbb{E}[\log D(x)] + \mathbb{E}[\log(1-D(G(z)))]$</p>
+      <p style="color:#A78BFA; line-height:1.8;"><b>学习路径</b>：手写 DCGAN → 调参生成人脸 → 扩散模型</p>
+    </div>
+
+    <!-- 第 9 章 -->
+    <div style="background:rgba(255,255,255,0.05); border:1px solid rgba(167,139,250,0.3); border-radius:12px; padding:24px; margin-bottom:16px;">
+      <h3 style="color:#FCD34D; font-size:22px; margin-bottom:12px;">第 9 章 · 迁移学习与工程化部署</h3>
+      <p style="color:#E5E7EB; line-height:1.8; margin-bottom:12px;"><b>核心要点</b>：预训练 + 微调范式；边缘部署（Jetson Nano / 树莓派）；模型压缩（量化/剪枝/蒸馏）；ONNX + TensorRT 加速。</p>
+      <p style="color:#E5E7EB; line-height:1.8; margin-bottom:12px;"><b>关键公式</b>：$\text{size}_{INT8} = \frac{\text{size}_{FP32}}{4}$</p>
+      <p style="color:#A78BFA; line-height:1.8;"><b>学习路径</b>：预训练模型 → 微调 → ONNX 导出 → 树莓派部署</p>
+    </div>
+  </div>
+</section>
+
+<!-- 📖 推荐学习书籍 -->
+<section class="books" style="max-width:1080px; margin:80px auto; padding:0 32px;">
+  <h2 style="text-align:center; font-size:32px; color:#5B2EBF; margin-bottom:16px;">📖 推荐学习书籍（10 本经典）</h2>
+  <p style="text-align:center; color:#6B7280; margin-bottom:40px;">教学使用 · 可商用 · 保留原作者署名</p>
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:16px;">
+    <div style="background:white; border:2px solid #E5E7EB; border-radius:12px; padding:20px; transition:all 0.3s;">
+      <div style="font-size:36px; margin-bottom:8px;">📘</div>
+      <h4 style="color:#1E1B4B; font-size:15px; margin-bottom:6px;">深度学习（花书）</h4>
+      <p style="color:#6B7280; font-size:12px;">Ian Goodfellow 等</p>
+      <p style="color:#34D399; font-size:11px; margin-top:8px;">⭐⭐⭐⭐⭐ 经典必读</p>
+    </div>
+    <div style="background:white; border:2px solid #E5E7EB; border-radius:12px; padding:20px; transition:all 0.3s;">
+      <div style="font-size:36px; margin-bottom:8px;">📗</div>
+      <h4 style="color:#1E1B4B; font-size:15px; margin-bottom:6px;">机器学习（西瓜书）</h4>
+      <p style="color:#6B7280; font-size:12px;">周志华</p>
+      <p style="color:#34D399; font-size:11px; margin-top:8px;">⭐⭐⭐⭐⭐ 国内经典</p>
+    </div>
+    <div style="background:white; border:2px solid #E5E7EB; border-radius:12px; padding:20px; transition:all 0.3s;">
+      <div style="font-size:36px; margin-bottom:8px;">📙</div>
+      <h4 style="color:#1E1B4B; font-size:15px; margin-bottom:6px;">统计学习方法</h4>
+      <p style="color:#6B7280; font-size:12px;">李航</p>
+      <p style="color:#34D399; font-size:11px; margin-top:8px;">⭐⭐⭐⭐⭐ 理论基础</p>
+    </div>
+    <div style="background:white; border:2px solid #E5E7EB; border-radius:12px; padding:20px; transition:all 0.3s;">
+      <div style="font-size:36px; margin-bottom:8px;">📕</div>
+      <h4 style="color:#1E1B4B; font-size:15px; margin-bottom:6px;">动手学深度学习</h4>
+      <p style="color:#6B7280; font-size:12px;">李沐（d2l）</p>
+      <p style="color:#34D399; font-size:11px; margin-top:8px;">⭐⭐⭐⭐⭐ 实战入门</p>
+    </div>
+    <div style="background:white; border:2px solid #E5E7EB; border-radius:12px; padding:20px; transition:all 0.3s;">
+      <div style="font-size:36px; margin-bottom:8px;">📓</div>
+      <h4 style="color:#1E1B4B; font-size:15px; margin-bottom:6px;">PyTorch 深度学习实战</h4>
+      <p style="color:#6B7280; font-size:12px;">Eli Stevens</p>
+      <p style="color:#34D399; font-size:11px; margin-top:8px;">⭐⭐⭐⭐ 工业实战</p>
+    </div>
+    <div style="background:white; border:2px solid #E5E7EB; border-radius:12px; padding:20px; transition:all 0.3s;">
+      <div style="font-size:36px; margin-bottom:8px;">📔</div>
+      <h4 style="color:#1E1B4B; font-size:15px; margin-bottom:6px;">深度学习入门：基于 Python 的实现</h4>
+      <p style="color:#6B7280; font-size:12px;">斋藤康毅（鱼书）</p>
+      <p style="color:#34D399; font-size:11px; margin-top:8px;">⭐⭐⭐⭐ 零基础友好</p>
+    </div>
+    <div style="background:white; border:2px solid #E5E7EB; border-radius:12px; padding:20px; transition:all 0.3s;">
+      <div style="font-size:36px; margin-bottom:8px;">📒</div>
+      <h4 style="color:#1E1B4B; font-size:15px; margin-bottom:6px;">计算机视觉：算法与应用</h4>
+      <p style="color:#6B7280; font-size:12px;">Richard Szeliski</p>
+      <p style="color:#34D399; font-size:11px; margin-top:8px;">⭐⭐⭐⭐ 视觉圣经</p>
+    </div>
+    <div style="background:white; border:2px solid #E5E7EB; border-radius:12px; padding:20px; transition:all 0.3s;">
+      <div style="font-size:36px; margin-bottom:8px;">📚</div>
+      <h4 style="color:#1E1B4B; font-size:15px; margin-bottom:6px;">自然语言处理综论</h4>
+      <p style="color:#6B7280; font-size:12px;">Daniel Jurafsky</p>
+      <p style="color:#34D399; font-size:11px; margin-top:8px;">⭐⭐⭐⭐ NLP 经典</p>
+    </div>
+    <div style="background:white; border:2px solid #E5E7EB; border-radius:12px; padding:20px; transition:all 0.3s;">
+      <div style="font-size:36px; margin-bottom:8px;">📕</div>
+      <h4 style="color:#1E1B4B; font-size:15px; margin-bottom:6px;">Hands-On ML（Scikit-Learn + TensorFlow）</h4>
+      <p style="color:#6B7280; font-size:12px;">Aurélien Géron</p>
+      <p style="color:#34D399; font-size:11px; margin-top:8px;">⭐⭐⭐⭐ 工业实战</p>
+    </div>
+    <div style="background:white; border:2px solid #E5E7EB; border-radius:12px; padding:20px; transition:all 0.3s;">
+      <div style="font-size:36px; margin-bottom:8px;">📙</div>
+      <h4 style="color:#1E1B4B; font-size:15px; margin-bottom:6px;">强化学习（第 2 版）</h4>
+      <p style="color:#6B7280; font-size:12px;">Sutton & Barto</p>
+      <p style="color:#34D399; font-size:11px; margin-top:8px;">⭐⭐⭐⭐⭐ RL 圣经</p>
+    </div>
+  </div>
+</section>
+
+<!-- 🎬 短视频嵌入区块 -->
+<section class="videos" style="background:#F9FAFB; padding:60px 32px; margin-top:40px;">
+  <div style="max-width:1080px; margin:0 auto;">
+    <h2 style="text-align:center; font-size:32px; color:#5B2EBF; margin-bottom:16px;">🎬 配套短视频（3 集 · 60s）</h2>
+    <p style="text-align:center; color:#6B7280; margin-bottom:40px;">3 大实验 · 工业级实战 · 紫色 AI 科技风</p>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:20px;">
+      <div style="background:white; border-radius:16px; overflow:hidden; box-shadow:0 4px 16px rgba(0,0,0,0.06);">
+        <div style="background:linear-gradient(135deg, #5B2EBF, #8B5CF6); color:white; padding:60px 20px; text-align:center; font-size:48px;">
+          🎬
+        </div>
+        <div style="padding:20px;">
+          <h4 style="color:#1E1B4B; font-size:16px; margin-bottom:8px;">EP1 · 选课前必看</h4>
+          <p style="color:#6B7280; font-size:13px; line-height:1.6; margin-bottom:12px;">SKC5053 到底有多硬核 · 52.4s</p>
+          <span style="display:inline-block; background:#5B2EBF; color:white; padding:4px 12px; border-radius:999px; font-size:11px;">9 章 + 7 实验</span>
+        </div>
+      </div>
+      <div style="background:white; border-radius:16px; overflow:hidden; box-shadow:0 4px 16px rgba(0,0,0,0.06);">
+        <div style="background:linear-gradient(135deg, #3B82F6, #60A5FA); color:white; padding:60px 20px; text-align:center; font-size:48px;">
+          🎬
+        </div>
+        <div style="padding:20px;">
+          <h4 style="color:#1E1B4B; font-size:16px; margin-bottom:8px;">EP2 · 难度地图</h4>
+          <p style="color:#6B7280; font-size:13px; line-height:1.6; margin-bottom:12px;">7 大实验一张图看懂 · 55.8s</p>
+          <span style="display:inline-block; background:#3B82F6; color:white; padding:4px 12px; border-radius:999px; font-size:11px;">3 色分级</span>
+        </div>
+      </div>
+      <div style="background:white; border-radius:16px; overflow:hidden; box-shadow:0 4px 16px rgba(0,0,0,0.06);">
+        <div style="background:linear-gradient(135deg, #34D399, #10B981); color:white; padding:60px 20px; text-align:center; font-size:48px;">
+          🎬
+        </div>
+        <div style="padding:20px;">
+          <h4 style="color:#1E1B4B; font-size:16px; margin-bottom:8px;">EP3 · 工业项目</h4>
+          <p style="color:#6B7280; font-size:13px; line-height:1.6; margin-bottom:12px;">3 节课搞定 3 个工业项目 · 60.5s</p>
+          <span style="display:inline-block; background:#34D399; color:white; padding:4px 12px; border-radius:999px; font-size:11px;">医疗/自动驾驶/电商</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 💼 7 大实验详细卡片 -->
+<section class="exps-detail" style="max-width:1080px; margin:80px auto; padding:0 32px;">
+  <h2 style="text-align:center; font-size:32px; color:#5B2EBF; margin-bottom:16px;">💼 7 大实验详细卡片</h2>
+  <p style="text-align:center; color:#6B7280; margin-bottom:40px;">每个实验配数据集 + 评估指标 + 部署建议</p>
+
+  <div style="background:white; border:2px solid #E5E7EB; border-radius:12px; padding:24px; margin-bottom:16px;">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+      <h3 style="color:#5B2EBF; font-size:20px;">实验 1 · PyTorch 张量与自动微分</h3>
+      <span style="background:#34D399; color:white; padding:4px 14px; border-radius:999px; font-size:12px;">⭐ 入门</span>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:12px; margin-top:12px;">
+      <div style="background:#F3F4F6; padding:12px; border-radius:8px;"><b style="color:#5B2EBF;">📊 数据集</b><br><span style="color:#374151; font-size:13px;">内置 torch.randn 演示</span></div>
+      <div style="background:#F3F4F6; padding:12px; border-radius:8px;"><b style="color:#5B2EBF;">📈 指标</b><br><span style="color:#374151; font-size:13px;">GPU 加速比 ≥ 50x</span></div>
+      <div style="background:#F3F4F6; padding:12px; border-radius:8px;"><b style="color:#5B2EBF;">💻 代码</b><br><span style="color:#374151; font-size:13px;">PyTorch + autograd</span></div>
+      <div style="background:#F3F4F6; padding:12px; border-radius:8px;"><b style="color:#5B2EBF;">🚀 部署</b><br><span style="color:#374151; font-size:13px;">本地 Jupyter 即可</span></div>
+    </div>
+  </div>
+
+  <div style="background:white; border:2px solid #E5E7EB; border-radius:12px; padding:24px; margin-bottom:16px;">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+      <h3 style="color:#5B2EBF; font-size:20px;">实验 2 · MLP 手写数字识别</h3>
+      <span style="background:#34D399; color:white; padding:4px 14px; border-radius:999px; font-size:12px;">⭐ 入门</span>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:12px; margin-top:12px;">
+      <div style="background:#F3F4F6; padding:12px; border-radius:8px;"><b style="color:#5B2EBF;">📊 数据集</b><br><span style="color:#374151; font-size:13px;">MNIST 7 万张</span></div>
+      <div style="background:#F3F4F6; padding:12px; border-radius:8px;"><b style="color:#5B2EBF;">📈 指标</b><br><span style="color:#374151; font-size:13px;">准确率 ≥ 97%</span></div>
+      <div style="background:#F3F4F6; padding:12px; border-radius:8px;"><b style="color:#5B2EBF;">💻 代码</b><br><span style="color:#374151; font-size:13px;">手写反向传播</span></div>
+      <div style="background:#F3F4F6; padding:12px; border-radius:8px;"><b style="color:#5B2EBF;">🚀 部署</b><br><span style="color:#374151; font-size:13px;">CPU/GPU 通用</span></div>
+    </div>
+  </div>
+
+  <div style="background:white; border:2px solid #E5E7EB; border-radius:12px; padding:24px; margin-bottom:16px;">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+      <h3 style="color:#5B2EBF; font-size:20px;">实验 3 · CNN 图像分类</h3>
+      <span style="background:#FCD34D; color:#92400E; padding:4px 14px; border-radius:999px; font-size:12px;">⭐⭐ 综合</span>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:12px; margin-top:12px;">
+      <div style="background:#F3F4F6; padding:12px; border-radius:8px;"><b style="color:#5B2EBF;">📊 数据集</b><br><span style="color:#374151; font-size:13px;">CIFAR-10 6 万张</span></div>
+      <div style="background:#F3F4F6; padding:12px; border-radius:8px;"><b style="color:#5B2EBF;">📈 指标</b><br><span style="color:#374151; font-size:13px;">准确率 ≥ 93%</span></div>
+      <div style="background:#F3F4F6; padding:12px; border-radius:8px;"><b style="color:#5B2EBF;">💻 代码</b><br><span style="color:#374151; font-size:13px;">ResNet-18/50</span></div>
+      <div style="background:#F3F4F6; padding:12px; border-radius:8px;"><b style="color:#5B2EBF;">🚀 部署</b><br><span style="color:#374151; font-size:13px;">RTX 3060+</span></div>
+    </div>
+  </div>
+
+  <div style="background:white; border:2px solid #E5E7EB; border-radius:12px; padding:24px; margin-bottom:16px;">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+      <h3 style="color:#5B2EBF; font-size:20px;">实验 4 · YOLOv8 + U-Net 检测</h3>
+      <span style="background:#FCD34D; color:#92400E; padding:4px 14px; border-radius:999px; font-size:12px;">⭐⭐ 综合</span>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:12px; margin-top:12px;">
+      <div style="background:#F3F4F6; padding:12px; border-radius:8px;"><b style="color:#5B2EBF;">📊 数据集</b><br><span style="color:#374151; font-size:13px;">自采葡萄叶片 1 万张</span></div>
+      <div style="background:#F3F4F6; padding:12px; border-radius:8px;"><b style="color:#5B2EBF;">📈 指标</b><br><span style="color:#374151; font-size:13px;">mAP@0.5 ≥ 76%</span></div>
+      <div style="background:#F3F4F6; padding:12px; border-radius:8px;"><b style="color:#5B2EBF;">💻 代码</b><br><span style="color:#374151; font-size:13px;">Ultralytics + OpenCV</span></div>
+      <div style="background:#F3F4F6; padding:12px; border-radius:8px;"><b style="color:#5B2EBF;">🚀 部署</b><br><span style="color:#374151; font-size:13px;">树莓派 + RTX 4090</span></div>
+    </div>
+  </div>
+
+  <div style="background:white; border:2px solid #E5E7EB; border-radius:12px; padding:24px; margin-bottom:16px;">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+      <h3 style="color:#5B2EBF; font-size:20px;">实验 5 · LSTM 情感分析</h3>
+      <span style="background:#FCD34D; color:#92400E; padding:4px 14px; border-radius:999px; font-size:12px;">⭐⭐ 综合</span>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:12px; margin-top:12px;">
+      <div style="background:#F3F4F6; padding:12px; border-radius:8px;"><b style="color:#5B2EBF;">📊 数据集</b><br><span style="color:#374151; font-size:13px;">IMDB 5 万条</span></div>
+      <div style="background:#F3F4F6; padding:12px; border-radius:8px;"><b style="color:#5B2EBF;">📈 指标</b><br><span style="color:#374151; font-size:13px;">准确率 ≥ 89%</span></div>
+      <div style="background:#F3F4F6; padding:12px; border-radius:8px;"><b style="color:#5B2EBF;">💻 代码</b><br><span style="color:#374151; font-size:13px;">PyTorch LSTM</span></div>
+      <div style="background:#F3F4F6; padding:12px; border-radius:8px;"><b style="color:#5B2EBF;">🚀 部署</b><br><span style="color:#374151; font-size:13px;">CPU 可跑</span></div>
+    </div>
+  </div>
+
+  <div style="background:white; border:2px solid #E5E7EB; border-radius:12px; padding:24px; margin-bottom:16px;">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+      <h3 style="color:#5B2EBF; font-size:20px;">实验 6 · BERT 微调</h3>
+      <span style="background:#EF4444; color:white; padding:4px 14px; border-radius:999px; font-size:12px;">⭐⭐⭐ 设计</span>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:12px; margin-top:12px;">
+      <div style="background:#F3F4F6; padding:12px; border-radius:8px;"><b style="color:#5B2EBF;">📊 数据集</b><br><span style="color:#374151; font-size:13px;">IMDB 5 万条</span></div>
+      <div style="background:#F3F4F6; padding:12px; border-radius:8px;"><b style="color:#5B2EBF;">📈 指标</b><br><span style="color:#374151; font-size:13px;">准确率 ≥ 92%</span></div>
+      <div style="background:#F3F4F6; padding:12px; border-radius:8px;"><b style="color:#5B2EBF;">💻 代码</b><br><span style="color:#374151; font-size:13px;">HuggingFace Trainer</span></div>
+      <div style="background:#F3F4F6; padding:12px; border-radius:8px;"><b style="color:#5B2EBF;">🚀 部署</b><br><span style="color:#374151; font-size:13px;">A10 24GB</span></div>
+    </div>
+  </div>
+
+  <div style="background:white; border:2px solid #E5E7EB; border-radius:12px; padding:24px; margin-bottom:16px;">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+      <h3 style="color:#5B2EBF; font-size:20px;">实验 7 · DCGAN + 迁移学习（毕设）</h3>
+      <span style="background:#EF4444; color:white; padding:4px 14px; border-radius:999px; font-size:12px;">⭐⭐⭐⭐ 毕设</span>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:12px; margin-top:12px;">
+      <div style="background:#F3F4F6; padding:12px; border-radius:8px;"><b style="color:#5B2EBF;">📊 数据集</b><br><span style="color:#374151; font-size:13px;">CelebA + 自采</span></div>
+      <div style="background:#F3F4F6; padding:12px; border-radius:8px;"><b style="color:#5B2EBF;">📈 指标</b><br><span style="color:#374151; font-size:13px;">FID ≤ 50 + 论文</span></div>
+      <div style="background:#F3F4F6; padding:12px; border-radius:8px;"><b style="color:#5B2EBF;">💻 代码</b><br><span style="color:#374151; font-size:13px;">PyTorch DCGAN</span></div>
+      <div style="background:#F3F4F6; padding:12px; border-radius:8px;"><b style="color:#5B2EBF;">🚀 部署</b><br><span style="color:#374151; font-size:13px;">A10 24GB · 12 学时</span></div>
+    </div>
+  </div>
+</section>
+
 <section class="dl-cta">
   <h2>🚀 立刻开始 SKC5053 学习</h2>
   <p>云端 Ubuntu + A10 GPU · 学生不用买显卡 · md 格式实验报告 + R1-R10 评分</p>
