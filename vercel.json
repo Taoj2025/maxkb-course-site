@@ -1,0 +1,114 @@
+{
+  "version": 2,
+  "buildCommand": "echo 'Static site, no build needed'",
+  "outputDirectory": "site",
+  "framework": null,
+  "functions": {
+    "api/articles.js": {
+      "maxDuration": 10,
+      "memory": 128
+    },
+    "api/article.js": {
+      "maxDuration": 10,
+      "memory": 128
+    },
+    "api/auth.js": {
+      "maxDuration": 5,
+      "memory": 128
+    },
+    "api/save.js": {
+      "maxDuration": 15,
+      "memory": 256
+    },
+    "api/upload.js": {
+      "maxDuration": 30,
+      "memory": 512
+    },
+    "api/comments.js": {
+      "maxDuration": 10,
+      "memory": 128
+    },
+    "api/membership.js": {
+      "maxDuration": 5,
+      "memory": 128
+    },
+    "api/admin-list.js": {
+      "maxDuration": 10,
+      "memory": 128
+    },
+    "api/dl-course.js": {
+      "maxDuration": 10,
+      "memory": 128
+    },
+    "api/dl-course/chapters.js": {
+      "maxDuration": 10,
+      "memory": 128
+    },
+    "api/dl-course/experiments.js": {
+      "maxDuration": 10,
+      "memory": 128
+    },
+    "api/dl-course/projects.js": {
+      "maxDuration": 5,
+      "memory": 128
+    },
+    "api/dl-course/videos.js": {
+      "maxDuration": 5,
+      "memory": 128
+    },
+    "api/dl-course/ppt.js": {
+      "maxDuration": 5,
+      "memory": 128
+    }
+  },
+  "rewrites": [
+    { "source": "/api/articles", "destination": "/api/articles" },
+    { "source": "/api/article/:slug", "destination": "/api/article" },
+    { "source": "/api/comments/:articleId", "destination": "/api/comments" },
+    { "source": "/api/dl-course", "destination": "/api/dl-course" },
+    { "source": "/api/dl-course/chapters", "destination": "/api/dl-course/chapters" },
+    { "source": "/api/dl-course/experiments", "destination": "/api/dl-course/experiments" },
+    { "source": "/api/dl-course/projects", "destination": "/api/dl-course/projects" },
+    { "source": "/api/dl-course/videos", "destination": "/api/dl-course/videos" },
+    { "source": "/api/dl-course/ppt", "destination": "/api/dl-course/ppt" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" }
+      ]
+    },
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-store, no-cache, must-revalidate" }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    }
+  ],
+  "env": {
+    "POSTGRES_HOST": "119.91.234.159",
+    "POSTGRES_PORT": "5432",
+    "POSTGRES_DB": "maxkb",
+    "POSTGRES_USER": "maxkb_app",
+    "POSTGRES_PASSWORD": "@maxkb_app_password_from_user_secrets",
+    "POSTGRES_SSL": "require",
+    "JWT_SECRET": "@maxkb_jwt_secret_from_user_secrets",
+    "ADMIN_EMAIL": "admin@taoj2025.com",
+    "WECHAT_APPID": "@maxkb_wechat_appid_from_user_secrets",
+    "WECHAT_SECRET": "@maxkb_wechat_secret_from_user_secrets",
+    "OSS_ACCESS_KEY_ID": "@maxkb_oss_key_from_user_secrets",
+    "OSS_ACCESS_KEY_SECRET": "@maxkb_oss_secret_from_user_secrets",
+    "OSS_BUCKET": "maxkb-assets",
+    "OSS_REGION": "oss-cn-guangzhou"
+  }
+}

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>深度学习课程 · SKC5053 · MaxKB FDE 教学</title>
+<meta name="description" content="SKC5053 深度学习专业课完整教学 · 9 章 + 7 大实验 + 54 学时 · CNN/YOLO/BERT/GAN 全覆盖 · 小陶老师 广州华商学院">
+<meta name="keywords" content="深度学习,SKC5053,CNN,YOLO,BERT,DCGAN,广州华商学院,小陶老师,MaxKB">
+<meta name="author" content="小陶老师">
+
+<!-- Open Graph -->
+<meta property="og:title" content="深度学习课程 · SKC5053 · MaxKB FDE 教学">
+<meta property="og:description" content="SKC5053 深度学习专业课 · 9 章 + 7 大实验 + 54 学时 · 工业级 AI 工程师入门">
+<meta property="og:image" content="https://taoj2025.github.io/maxkb-course-site/assets/images/og-cover.png">
+<meta property="og:url" content="https://taoj2025.github.io/maxkb-course-site/dl-course.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MaxKB FDE 教学">
+
+<meta name="theme-color" content="#5B2EBF">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%235B2EBF'/><text x='50' y='65' text-anchor='middle' fill='white' font-size='40' weight='bold' font-family='sans-serif'>DL</text></svg>">
+
+<style>
+  .dl-hero {
+    background: linear-gradient(135deg, #1E1B4B 0%, #5B2EBF 50%, #8B5CF6 100%);
+    color: white;
+    padding: 100px 32px 60px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .dl-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 30% 50%, rgba(167, 139, 250, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 70% 50%, rgba(59, 130, 246, 0.3) 0%, transparent 50%);
+    pointer-events: none;
+  }
+  .dl-hero h1 {
+    font-size: 48px;
+    margin-bottom: 16px;
+    font-weight: 700;
+    position: relative;
+  }
+  .dl-hero .code-badge {
+    display: inline-block;
+    background: rgba(252, 211, 77, 0.2);
+    border: 2px solid #FCD34D;
+    color: #FCD34D;
+    padding: 6px 20px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 16px;
+    position: relative;
+  }
+  .dl-hero p {
+    font-size: 18px;
+    max-width: 720px;
+    margin: 0 auto;
+    opacity: 0.95;
+    position: relative;
+  }
+  .dl-meta {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 32px;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .dl-meta-item { text-align: center; }
+  .dl-meta-num {
+    font-size: 32px;
+    font-weight: 700;
+    color: #FCD34D;
+    display: block;
+  }
+  .dl-meta-label {
+    font-size: 12px;
+    opacity: 0.8;
+  }
+
+  .timeline {
+    max-width: 1080px;
+    margin: 60px auto;
+    padding: 0 32px;
+  }
+  .timeline h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #5B2EBF;
+    margin-bottom: 40px;
+  }
+  .timeline-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+  }
+  .chapter-card {
+    background: white;
+    border: 2px solid #A78BFA;
+    border-radius: 16px;
+    padding: 24px;
+    transition: all 0.3s;
+    position: relative;
+  }
+  .chapter-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(91, 46, 191, 0.15);
+    border-color: #5B2EBF;
+  }
+  .chapter-num {
+    position: absolute;
+    top: -16px;
+    left: 24px;
+    background: #5B2EBF;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .chapter-title {
+    font-size: 18px;
+    color: #1E1B4B;
+    margin: 8px 0;
+    font-weight: 700;
+  }
+  .chapter-desc {
+    color: #6B7280;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-top: 8px;
+  }
+  .chapter-tag {
+    display: inline-block;
+    background: #F3F4F6;
+    color: #5B2EBF;
+    padding: 3px 10px;
+    border-radius: 999px;
+    font-size: 11px;
+    margin-top: 12px;
+    margin-right: 4px;
+  }
+
+  .exps {
+    max-width: 1080px;
+    margin: 80px auto;
+    padding: 0 32px;
+  }
+  .exps h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #5B2EBF;
+    margin-bottom: 16px;
+  }
+  .exps .sub {
+    text-align: center;
+    color: #6B7280;
+    margin-bottom: 40px;
+  }
+  .exp-card {
+    background: white;
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 20px;
+    border-left: 6px solid #5B2EBF;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  }
+  .exp-card.tier-verified { border-left-color: #34D399; }
+  .exp-card.tier-comprehensive { border-left-color: #FCD34D; }
+  .exp-card.tier-design { border-left-color: #EF4444; }
+  .exp-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  .exp-name {
+    font-size: 20px;
+    color: #1E1B4B;
+    font-weight: 700;
+  }
+  .exp-hours {
+    background: #5B2EBF;
+    color: white;
+    padding: 4px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+  }
+  .exp-desc {
+    color: #6B7280;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+  .exp-hard {
+    background: #FEF3C7;
+    color: #92400E;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    margin-top: 12px;
+  }
+
+  .api-section {
+    background: linear-gradient(135deg, #1E1B4B 0%, #312E81 100%);
+    color: white;
+    padding: 80px 32px;
+    margin-top: 80px;
+  }
+  .api-section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  .api-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  .api-card {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(167,139,250,0.3);
+    border-radius: 12px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+  }
+  .api-endpoint {
+    font-family: 'Consolas', 'Monaco', monospace;
+    background: rgba(91,46,191,0.4);
+    color: #FCD34D;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    display: inline-block;
+    margin-bottom: 12px;
+  }
+  .api-desc {
+    font-size: 14px;
+    opacity: 0.9;
+    line-height: 1.6;
+  }
+
+  .dl-cta {
+    text-align: center;
+    margin: 80px auto;
+    max-width: 720px;
+    padding: 0 32px;
+  }
+  .dl-cta h2 {
+    font-size: 28px;
+    color: #5B2EBF;
+    margin-bottom: 16px;
+  }
+  .dl-cta p {
+    color: #6B7280;
+    margin-bottom: 24px;
+  }
+  .dl-cta-btn {
+    display: inline-block;
+    background: #5B2EBF;
+    color: white;
+    padding: 14px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+  }
+  .dl-cta-btn:hover { background: #8B5CF6; }
+</style>
+</head>
+<body>
+
+<nav style="background:#1E1B4B; padding:16px 32px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+  <div style="max-width:1280px; margin:0 auto; display:flex; justify-content:space-between; align-items:center;">
+    <a href="index.html" style="color:white; font-weight:700; font-size:18px; text-decoration:none;">⚡ MaxKB FDE</a>
+    <div style="display:flex; gap:24px;">
+      <a href="index.html" style="color:white; opacity:0.85; text-decoration:none; font-size:14px;">首页</a>
+      <a href="syllabus.html" style="color:white; opacity:0.85; text-decoration:none; font-size:14px;">课程大纲</a>
+      <a href="dl-course.html" style="color:#FCD34D; font-weight:600; text-decoration:none; font-size:14px;">深度学习</a>
+      <a href="cases.html" style="color:white; opacity:0.85; text-decoration:none; font-size:14px;">客户案例</a>
+      <a href="enterprise.html" style="color:white; opacity:0.85; text-decoration:none; font-size:14px;">企业服务</a>
+      <a href="about.html" style="color:white; opacity:0.85; text-decoration:none; font-size:14px;">讲师介绍</a>
+      <a href="faq.html" style="color:white; opacity:0.85; text-decoration:none; font-size:14px;">FAQ</a>
+    </div>
+  </div>
+</nav>
+
+<section class="dl-hero">
+  <span class="code-badge">SKC5053 · 深度学习专业课</span>
+  <h1>深度学习 · 从原理到工业级实战</h1>
+  <p>9 章系统讲解 + 7 大实验 · CNN / RNN / Transformer / GAN 全覆盖 · 54 学时从零搭建 AI 工程师能力</p>
+  <div class="dl-meta">
+    <div class="dl-meta-item">
+      <span class="dl-meta-num">9</span>
+      <span class="dl-meta-label">章节</span>
+    </div>
+    <div class="dl-meta-item">
+      <span class="dl-meta-num">7</span>
+      <span class="dl-meta-label">实验</span>
+    </div>
+    <div class="dl-meta-item">
+      <span class="dl-meta-num">54</span>
+      <span class="dl-meta-label">学时</span>
+    </div>
+    <div class="dl-meta-item">
+      <span class="dl-meta-num">3</span>
+      <span class="dl-meta-label">学分</span>
+    </div>
+    <div class="dl-meta-item">
+      <span class="dl-meta-num">A10</span>
+      <span class="dl-meta-label">云端 GPU</span>
+    </div>
+  </div>
+</section>
+
+<section class="timeline">
+  <h2>📚 9 大章节</h2>
+  <div class="timeline-grid">
+    <div class="chapter-card">
+      <span class="chapter-num">第 1 章</span>
+      <div class="chapter-title">AI 概述与数学基础</div>
+      <div class="chapter-desc">AI 发展史 4 大浪潮 · 数学基础（线性代数 / 微积分 / 概率）</div>
+      <span class="chapter-tag">理论</span>
+      <span class="chapter-tag">2 学时</span>
+    </div>
+    <div class="chapter-card">
+      <span class="chapter-num">第 2 章</span>
+      <div class="chapter-title">全连接神经网络（MLP）</div>
+      <div class="chapter-desc">感知机 · 反向传播 · 激活函数 · 优化器（SGD / Adam）</div>
+      <span class="chapter-tag">理论</span>
+      <span class="chapter-tag">2 学时</span>
+    </div>
+    <div class="chapter-card">
+      <span class="chapter-num">第 3 章</span>
+      <div class="chapter-title">CNN 卷积神经网络</div>
+      <div class="chapter-desc">卷积层 · 池化 · 经典架构（LeNet / AlexNet / VGG）</div>
+      <span class="chapter-tag">核心</span>
+      <span class="chapter-tag">3 学时</span>
+    </div>
+    <div class="chapter-card">
+      <span class="chapter-num">第 4 章</span>
+      <div class="chapter-title">ResNet 与现代 CNN</div>
+      <div class="chapter-desc">残差连接 · 深度网络训练 · ResNet-18 / 50 / 101</div>
+      <span class="chapter-tag">重点</span>
+      <span class="chapter-tag">3 学时</span>
+    </div>
+    <div class="chapter-card">
+      <span class="chapter-num">第 5 章</span>
+      <div class="chapter-title">RNN / LSTM 时序建模</div>
+      <div class="chapter-desc">循环神经网络 · 长短期记忆 · 序列数据处理</div>
+      <span class="chapter-tag">理论</span>
+      <span class="chapter-tag">3 学时</span>
+    </div>
+    <div class="chapter-card">
+      <span class="chapter-num">第 6 章</span>
+      <div class="chapter-title">Transformer 注意力机制</div>
+      <div class="chapter-desc">Self-Attention · Multi-Head · Positional Encoding</div>
+      <span class="chapter-tag">核心</span>
+      <span class="chapter-tag">3 学时</span>
+    </div>
+    <div class="chapter-card">
+      <span class="chapter-num">第 7 章</span>
+      <div class="chapter-title">BERT / GPT 预训练大模型</div>
+      <div class="chapter-desc">BERT 双向注意力 · GPT 自回归 · 微调实战</div>
+      <span class="chapter-tag">前沿</span>
+      <span class="chapter-tag">3 学时</span>
+    </div>
+    <div class="chapter-card">
+      <span class="chapter-num">第 8 章</span>
+      <div class="chapter-title">生成模型（GAN / VAE / 扩散）</div>
+      <div class="chapter-desc">DCGAN · Stable Diffusion · 图像生成原理</div>
+      <span class="chapter-tag">前沿</span>
+      <span class="chapter-tag">3 学时</span>
+    </div>
+    <div class="chapter-card">
+      <span class="chapter-num">第 9 章</span>
+      <div class="chapter-title">迁移学习与工程化部署</div>
+      <div class="chapter-desc">预训练 + 微调 · 边缘部署（Jetson / 树莓派）· ONNX</div>
+      <span class="chapter-tag">实战</span>
+      <span class="chapter-tag">2 学时</span>
+    </div>
+  </div>
+</section>
+
+<section class="exps">
+  <h2>🧪 7 大实验（验证性 → 综合性 → 设计性）</h2>
+  <p class="sub">每集实验配云端 Ubuntu + A10 GPU + Jupyter Notebook</p>
+
+  <div class="exp-card tier-verified">
+    <div class="exp-head">
+      <div class="exp-name">实验 1 · PyTorch 张量与自动微分</div>
+      <span class="exp-hours">2 学时</span>
+    </div>
+    <div class="exp-desc">张量创建 / 索引 / 广播 · 自动微分原理 · GPU 加速对比</div>
+    <div class="exp-hard">🔥 <b>难点</b>：理解 autograd 计算图 · GPU 内存管理</div>
+  </div>
+
+  <div class="exp-card tier-verified">
+    <div class="exp-head">
+      <div class="exp-name">实验 2 · MLP 手写数字识别</div>
+      <span class="exp-hours">2 学时</span>
+    </div>
+    <div class="exp-desc">手写反向传播算法 · MNIST 数据集 · 训练可视化</div>
+    <div class="exp-hard">🔥 <b>难点</b>：手写反向传播（不调包）· 激活函数选择</div>
+  </div>
+
+  <div class="exp-card tier-comprehensive">
+    <div class="exp-head">
+      <div class="exp-name">实验 3 · CNN 图像分类</div>
+      <span class="exp-hours">4 学时</span>
+    </div>
+    <div class="exp-desc">LeNet → AlexNet → ResNet 三代经典 · CIFAR-10 精度对比 · 数据增强</div>
+    <div class="exp-hard">🔥 <b>难点</b>：ResNet 残差连接设计 · 训练稳定性</div>
+  </div>
+
+  <div class="exp-card tier-comprehensive">
+    <div class="exp-head">
+      <div class="exp-name">实验 4 · YOLOv8 + U-Net 工业级检测</div>
+      <span class="exp-hours">4 学时</span>
+    </div>
+    <div class="exp-desc">YOLOv8 目标检测 · U-Net 语义分割 · mAP 76%+ 调参实战</div>
+    <div class="exp-hard">🔥 <b>难点</b>：工业级 mAP 调参 · 数据不平衡处理</div>
+  </div>
+
+  <div class="exp-card tier-comprehensive">
+    <div class="exp-head">
+      <div class="exp-name">实验 5 · LSTM 情感分析</div>
+      <span class="exp-hours">4 学时</span>
+    </div>
+    <div class="exp-desc">LSTM 时序建模 · IMDB 影评数据集 · 情感二分类</div>
+    <div class="exp-hard">🔥 <b>难点</b>：padding / mask / tokenize 三大坑</div>
+  </div>
+
+  <div class="exp-card tier-design">
+    <div class="exp-head">
+      <div class="exp-name">实验 6 · BERT 微调</div>
+      <span class="exp-hours">6 学时</span>
+    </div>
+    <div class="exp-desc">BERT-base-uncased 微调 · IMDB 准确率 92.7% · 注意力可视化</div>
+    <div class="exp-hard">🔥 <b>难点</b>：理解注意力机制 · 1.1 亿参数微调</div>
+  </div>
+
+  <div class="exp-card tier-design">
+    <div class="exp-head">
+      <div class="exp-name">实验 7 · DCGAN + 迁移学习（毕设）</div>
+      <span class="exp-hours">12 学时</span>
+    </div>
+    <div class="exp-desc">DCGAN 图像生成 · 迁移学习 · 论文级研究</div>
+    <div class="exp-hard">🔥 <b>难点</b>：对抗训练稳定性 · 研究级挑战</div>
+  </div>
+</section>
+
+<section class="api-section">
+  <h2>🔌 配套 API 接口（Vercel Serverless）</h2>
+  <div class="api-cards">
+    <div class="api-card">
+      <span class="api-endpoint">GET /api/dl-course</span>
+      <div class="api-desc">返回 9 章节 + 7 实验完整课程数据（JSON）· 含学时 · 学分 · 难点标签</div>
+    </div>
+    <div class="api-card">
+      <span class="api-endpoint">GET /api/dl-course/chapters</span>
+      <div class="api-desc">返回 9 章详情（章节名 / 时长 / 核心概念 / 推荐资料）</div>
+    </div>
+    <div class="api-card">
+      <span class="api-endpoint">GET /api/dl-course/experiments</span>
+      <div class="api-desc">返回 7 实验详情（实验名 / 学时 / 难度 / GPU 配置）</div>
+    </div>
+    <div class="api-card">
+      <span class="api-endpoint">GET /api/dl-course/projects</span>
+      <div class="api-desc">返回学生实战项目集（医疗 / 自动驾驶 / 电商客服 3 大场景）</div>
+    </div>
+    <div class="api-card">
+      <span class="api-endpoint">GET /api/dl-course/videos</span>
+      <div class="api-desc">返回 3 集抖音短视频链接（EP1/2/3 · 60s · 带字幕）</div>
+    </div>
+    <div class="api-card">
+      <span class="api-endpoint">GET /api/dl-course/ppt</span>
+      <div class="api-desc">返回 18 页 PPT 下载链接（紫色 AI 科技风 · 可商用）</div>
+    </div>
+  </div>
+</section>
+
+<section class="dl-cta">
+  <h2>🚀 立刻开始 SKC5053 学习</h2>
+  <p>云端 Ubuntu + A10 GPU · 学生不用买显卡 · md 格式实验报告 + R1-R10 评分</p>
+  <a href="syllabus.html" class="dl-cta-btn">查看完整课程大纲 →</a>
+</section>
+
+<footer style="background:#1E1B4B; color:white; padding:40px 32px; text-align:center; margin-top:60px;">
+  <p style="opacity:0.85; font-size:14px;">MaxKB FDE 教学 · 小陶老师 · 广州华商学院 · 2026</p>
+  <p style="opacity:0.6; font-size:12px; margin-top:8px;">深度学习课程 SKC5053 · 开源 GPL v3 · 可商用</p>
+</footer>
+
+</body>
+</html>
