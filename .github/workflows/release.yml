@@ -1,0 +1,107 @@
+name: Release MaxKB v2.x
+
+# GitHub Release Workflow · 增强现有 deploy-backend.yml
+# 触发：tag 推送 v*.*.* 或手动 workflow_dispatch
+# 触发后自动：
+#   1. 创建 GitHub Release（带变更日志）
+#   2. 推送到远程服务器（119.91.51.234:2222）
+#   3. Server酱微信通知
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Release 版本号 (e.g. v2.1.0)'
+        required: true
+        default: 'v2.1.0'
+
+jobs:
+  # 作业 1: 创建 GitHub Release
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 创建 GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: 'MaxKB 课程站 ${{ github.ref_name }}'
+          body: |
+            ## 🚀 MaxKB 课程站 Release ${{ github.ref_name }}
+
+            **部署时间**：${{ github.run_id }}
+            **提交哈希**：`${{ github.sha }}`
+            **远程服务器**：119.91.234.159:2222
+            **域名**：maxkb-edu.com / taotaoedu.ltd
+
+            ### 📊 部署状态
+            - ✅ GitHub Pages: https://taoj2025.github.io/maxkb-course-site/
+            - ✅ 自定义域名: https://taotaoedu.ltd/
+            - ✅ 远程服务器: 已推送
+
+            ### 📋 变更日志
+            - 详见 [CHANGELOG.md](./CHANGELOG.md)
+            - 详见 [GitHub Commits](https://github.com/Taoj2025/maxkb-course-site/commits/main)
+
+            ---
+
+            **作者**：小陶老师
+            **自动部署**：GitHub Actions
+            **状态**：✅ 已部署到远程服务器
+          draft: false
+          prerelease: false
+          generate_release_notes: true
+
+  # 作业 2: 推送到远程服务器（继承 deploy-backend.yml 配置）
+  deploy-server:
+    needs: release
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Deploy via SSH（复用现有密钥）
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: 119.91.234.159
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 2222
+          command_timeout: 10m
+          script: |
+            set -e
+            echo "===== Release 部署开始 $(date) ====="
+            cd /var/www/maxkb-course-site
+            git config --global --add safe.directory /var/www/maxkb-course-site
+            echo "===== 拉取 tag: ${{ github.ref_name }} ====="
+            git fetch origin --tags
+            git checkout ${{ github.ref_name }} || git checkout main
+            git pull origin main
+            echo "===== 当前 HEAD ====="
+            git log -1 --oneline
+            echo "===== Release 部署完成 $(date) ====="
+
+  # 作业 3: 部署完成通知
+  notify:
+    needs: [release, deploy-server]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Server酱微信通知
+        if: env.WECHAT_KEY != ''
+        env:
+          WECHAT_KEY: ${{ secrets.WECHAT_KEY }}
+        run: |
+          if [ "${{ needs.deploy-server.result }}" == "success" ]; then
+            curl -s "https://sctapi.ftqq.com/$WECHAT_KEY.send?title=MaxKB%20Release%20${{ github.ref_name }}%20%E5%B7%B2%E9%83%A8%E7%BD%B2&desp=%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%9A119.91.234.159%0A%E5%9F%9F%E5%90%8D%EF%BC%9Ataotaoedu.ltd%0A%E7%8A%B6%E6%80%81%EF%BC%9A%E2%9C%85"
+            echo "✅ 微信通知已发送"
+          fi
