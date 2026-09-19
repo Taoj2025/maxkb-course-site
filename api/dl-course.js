@@ -22,7 +22,7 @@ const COURSE_DATA = {
         courseCode: 'SKC5053',
         courseName: '深度学习专业课',
         instructor: '小陶老师',
-        institution: '广州华商学院',
+        institution: '本校',
         college: '人工智能学院',
         credits: 3,
         hours: 54,
