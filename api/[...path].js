@@ -17,7 +17,7 @@
  *       多段路径（/api/auth/login、/api/download/<slug>…）会落到
  *       Vercel 自己的 404 页，函数根本不会被调用。
  *
- * 定位：**兜底**。正式的 /api/* 转发由根目录的 proxy.mjs（Routing Middleware，
+ * 定位：**兜底**。正式的 /api/* 转发由根目录的 proxy.js（Routing Middleware，
  *       matcher = /api/:func*）负责 —— 它在路由之前执行，任意深度的路径都拦得住。
  *       本文件留着，是为了中间件万一没生效时，单段路径至少还能用。
  *

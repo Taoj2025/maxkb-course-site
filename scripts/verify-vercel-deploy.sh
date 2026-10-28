@@ -89,7 +89,7 @@ check "/api/auth/me 未登录→401"  401 "$(code "$BASE/api/auth/me")"
 #   api/[...path].js 的正则是 ^/api/([^/]+)$ —— 多段路径（/api/auth/me、
 #   /api/download/<slug>）会落到 Vercel 自己的 404 页，函数根本不被调用，
 #   登录、会员校验、付费下载全断。
-#   现在由 proxy.mjs（Routing Middleware，matcher=/api/:func*）接管。
+#   现在由 proxy.js（Routing Middleware，matcher=/api/:func*）接管。
 check "/api/auth/me 多段→401"   401 "$(code "$BASE/api/auth/me")"
 check "/api/dl-course/chapters 多段→200" 200 "$(code "$BASE/api/dl-course/chapters")"
 

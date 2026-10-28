@@ -23,8 +23,20 @@
  *   /api/:func*（:func* = 零段或多段），任意深度的路径都能进到这里，
  *   而且拿到的是原始请求路径，不用猜。
  *
- * 运行时：Node.js runtime。仓库根 package.json 没有 "type": "module"，
- *         所以这个文件用 .mjs（原生 ESM），api/[...path].js 保持 CommonJS。
+ * 运行时：Node.js runtime。
+ *
+ * ⚠️ 文件名必须是 proxy.js，不能是 proxy.mjs：
+ *    Vercel 只接受 .js / .ts（或 Python 的 module:attr）作为 proxy 入口，
+ *    写成 .mjs 会在部署时被直接拒掉：
+ *      The `proxy.entrypoint` must be a `.js` or `.ts` file path,
+ *      or a Python `module:attr`.
+ *    线上表现是「部署不生效」—— 旧版本继续跑，多段 API 路径照旧 404。
+ *    （2026-10-29 就是这么白查了一轮。）
+ *
+ *    本文件用 ESM 语法（export const config / export default），
+ *    仓库根 package.json 没有 "type": "module"，
+ *    但 Vercel 构建中间件时用 esbuild 打包，ESM 语法照样认。
+ *    api/[...path].js 保持 CommonJS。
  */
 
 const ORIGIN = (process.env.ORIGIN_URL || 'https://taotaoedu.ltd').replace(/\/+$/, '');

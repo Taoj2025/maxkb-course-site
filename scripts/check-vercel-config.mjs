@@ -3,13 +3,18 @@
  *
  * 用法：node scripts/check-vercel-config.mjs
  *
- * 专门盯两类「构建时才炸、线上却看不出来」的坑：
+ * 专门盯三类「构建时才炸、线上却看不出来」的坑：
  *
  *   1) matcher 配两处 → Vercel 构建直接失败 → 部署不生效，
  *      线上还是旧版本（症状：改了半天没反应）。
  *   2) api/ 目录里的 [...xxx].js 不是 catch-all —— Vercel 生成路由时
  *      把文件名里的 [...] 当成单段动态参数，只匹配一段路径。
  *      多段路径（/api/auth/login）会落到 Vercel 自己的 404 页。
+ *   3) proxy.entrypoint 的扩展名不对 —— Vercel 只认 .js / .ts
+ *      （或 Python 的 module:attr），写成 .mjs 会被部署接口直接拒掉：
+ *        The `proxy.entrypoint` must be a `.js` or `.ts` file path,
+ *        or a Python `module:attr`.
+ *      表现同样是「部署不生效」，而且没有任何本地提示。
  *
  * 检查完还会拿前端真正调用的 /api 路径逐条过中间件的正则，
  * 确保没有漏网的路径会绕开转发层。
@@ -60,6 +65,20 @@ check('vercel.json 有 proxy.entrypoint', typeof proxy.entrypoint === 'string' &
 const entryPath = path.join(ROOT, proxy.entrypoint || '');
 check('proxy.entrypoint 文件存在', fs.existsSync(entryPath), proxy.entrypoint);
 const entrySrc = fs.existsSync(entryPath) ? fs.readFileSync(entryPath, 'utf8') : '';
+
+// ← 扩展名必须是 .js / .ts（Python 入口例外：module:attr）
+//   .mjs 会被部署接口拒掉，而本地 CLI 的校验器查不出来，
+//   部署接口才会报：The `proxy.entrypoint` must be a `.js` or `.ts` file path
+const entryExt = path.extname(proxy.entrypoint || '');
+const isPythonEntry = /^[A-Za-z_]\w*(?:\.[A-Za-z_]\w*)*:[A-Za-z_]\w*$/.test(proxy.entrypoint || '');
+check('proxy.entrypoint 扩展名合法（.js / .ts）',
+  isPythonEntry || ['.js', '.ts'].includes(entryExt),
+  isPythonEntry ? 'Python module:attr' : `${entryExt || '(无扩展名)'} —— .mjs 会被部署接口拒掉`);
+
+if (!isPythonEntry && entryExt && !['.js', '.ts'].includes(entryExt)) {
+  console.log('     └─ Vercel 报错原文：The `proxy.entrypoint` must be a `.js` or `.ts` file path,');
+  console.log('        or a Python `module:attr`.');
+}
 
 // ← 本次事故的元凶：matcher 只能配一处
 const fileHasMatcher = /export\s+const\s+config\s*=\s*\{[^}]*\bmatcher\b/s.test(entrySrc);

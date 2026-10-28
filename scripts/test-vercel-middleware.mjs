@@ -1,5 +1,5 @@
 /**
- * proxy.mjs（Vercel Routing Middleware）的本地测试
+ * proxy.js（Vercel Routing Middleware）的本地测试
  *
  * 跑法：node scripts/test-vercel-middleware.mjs
  *
@@ -12,10 +12,10 @@
 
 const ORIGIN = process.env.ORIGIN_URL || 'https://taotaoedu.ltd';
 
-// 必须在 import 之前设好 —— proxy.mjs 在模块加载时就读了这个变量
+// 必须在 import 之前设好 —— proxy.js 在模块加载时就读了这个变量
 process.env.ORIGIN_URL = ORIGIN;
 
-const { default: proxy } = await import('../proxy.mjs');
+const { default: proxy } = await import('../proxy.js');
 
 let pass = 0;
 let fail = 0;
@@ -36,7 +36,7 @@ function mkRequest(path, init = {}) {
 }
 
 console.log('═══════════════════════════════════════════════════');
-console.log(`proxy.mjs 本地测试 · 源站 ${ORIGIN}`);
+console.log(`proxy.js 本地测试 · 源站 ${ORIGIN}`);
 console.log('═══════════════════════════════════════════════════');
 
 console.log('\n【1】单段路径（原来就能用的）');
@@ -130,7 +130,7 @@ console.log('\n【7】响应头完整性');
 console.log('\n【8】源站不可达时要给出 502 而不是崩');
 {
   process.env.ORIGIN_URL = 'https://127.0.0.1:9';
-  const { default: broken } = await import(`../proxy.mjs?bust=${Date.now()}`);
+  const { default: broken } = await import(`../proxy.js?bust=${Date.now()}`);
   const res = await broken(mkRequest('/api/health'));
   check('源站连不上 → 502', res.status === 502, `实际 ${res.status}`);
   process.env.ORIGIN_URL = ORIGIN;
