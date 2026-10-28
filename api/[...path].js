@@ -14,8 +14,14 @@
  *       （auth / articles / chapters / contact / aihot / resources /
  *        download / dl-course / admin）。
  *
- * 运行时：Vercel Node.js runtime。仓库根目录没有 package.json，
- *         所以 .js 按 CommonJS 处理。
+ * 定位：**兜底**。正式的 /api/* 转发由根目录的 proxy.mjs（Routing Middleware，
+ *       matcher = /api/:func*）负责 —— 因为这套配置下 api 目录的 catch-all
+ *       文件名只匹配单段路径，多段路径（/api/auth/login、/api/download/<slug>…）
+ *       会落到 Vercel 自己的 404 页，函数根本不会被调用。
+ *       本文件留着，是为了中间件万一没生效时，单段路径至少还能用。
+ *
+ * 运行时：Vercel Node.js runtime。仓库根目录的 package.json 没有
+ *         "type": "module"，所以 .js 按 CommonJS 处理。
  */
 
 // 源站地址。Vercel 环境变量里可以覆盖（多环境部署时有用）。
@@ -29,11 +35,20 @@ module.exports = async function handler(req, res) {
   const target = `${ORIGIN}/api${rest}${incoming.search}`;
 
   // ── 预检 ──
-  // 浏览器访问 Vercel 是同源的，正常不会发预检；
-  // 万一有人跨域直连这个函数，这里给个放行。
+  // 浏览器访问 Vercel 是同源的，正常不会发预检。
+  // 万一有人跨域直连这个函数：不回显任意 Origin（那等于对全世界开放），
+  // 只认白名单里的源。
   if (req.method === 'OPTIONS') {
-    res.setHeader('Access-Control-Allow-Origin', req.headers.origin || '*');
-    res.setHeader('Access-Control-Allow-Credentials', 'true');
+    const allowed = (process.env.CORS_ORIGINS || '')
+      .split(',')
+      .map((s) => s.trim())
+      .filter(Boolean);
+    const origin = req.headers.origin;
+    if (origin && allowed.includes(origin)) {
+      res.setHeader('Access-Control-Allow-Origin', origin);
+      res.setHeader('Access-Control-Allow-Credentials', 'true');
+    }
+    res.setHeader('Vary', 'Origin');
     res.setHeader('Access-Control-Allow-Methods', 'GET,POST,PUT,DELETE,OPTIONS');
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type,Authorization');
     return res.status(204).end();

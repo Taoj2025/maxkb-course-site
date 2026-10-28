@@ -57,13 +57,42 @@ O_COUNT=$(curl -s --max-time 25 "$ORIGIN/articles.json" | grep -c '"id":' 2>/dev
 check "articles.json 条数与源站一致" "$O_COUNT" "$V_COUNT"
 
 echo
-echo "【3】API 转发（catch-all 函数 → 源站）"
+echo "【3】API 转发（Routing Middleware → 源站）"
 check "/api/health"              200 "$(code "$BASE/api/health")"
 check "/api/articles"            200 "$(code "$BASE/api/articles")"
-check "/api/dl-course/chapters"  200 "$(code "$BASE/api/dl-course/chapters")"
 check "/api/aihot"               200 "$(code "$BASE/api/aihot")"
 # 未登录访问 /api/auth/me 应该是 401（说明请求真的到了后端，而不是被静态文件糊弄）
 check "/api/auth/me 未登录→401"  401 "$(code "$BASE/api/auth/me")"
+
+# ↓ 多段路径。这一批是踩过坑的：
+#   api/[...path].js 这种 catch-all 文件名在这套配置下只匹配单段，
+#   /api/auth/me、/api/download/<slug> 这种多段路径会落到 Vercel 自己的 404 页，
+#   函数根本不被调用 —— 登录、会员校验、付费下载全断。
+#   现在由 proxy.mjs（Routing Middleware，matcher=/api/:func*）接管。
+check "/api/auth/me 多段→401"   401 "$(code "$BASE/api/auth/me")"
+check "/api/dl-course/chapters 多段→200" 200 "$(code "$BASE/api/dl-course/chapters")"
+
+# 文章详情（带路径参数的多段路径）
+SLUG=$(curl -s --max-time 25 "$BASE/articles.json" | grep -oE '"slug"[[:space:]]*:[[:space:]]*"[^"]+"' | head -1 | sed -E 's/.*"([^"]+)"/\1/')
+if [ -n "$SLUG" ]; then
+  check "/api/articles/<slug> 多段→200" 200 "$(code "$BASE/api/articles/$SLUG")"
+else
+  echo "  ⚠️  没取到 slug，跳过 /api/articles/<slug>"
+fi
+
+# POST 请求体转发（登录就是 POST；body 丢了后端就认不出「错密码」）
+LOGIN_CODE=$(curl -s -o /tmp/.vlogin -w "%{http_code}" --max-time 25 \
+  -X POST "$BASE/api/auth/login" \
+  -H "Content-Type: application/json" \
+  -H "Origin: $BASE" \
+  -d '{"email":"nobody@example.com","password":"wrong-password"}')
+LOGIN_BODY=$(head -c 120 /tmp/.vlogin 2>/dev/null | tr -d '\r\n')
+rm -f /tmp/.vlogin
+check "POST /api/auth/login 错密码→401" 401 "$LOGIN_CODE"
+case "$LOGIN_BODY" in
+  *密码*|*邮箱*) echo "  ✅ 请求体完整到达后端：$LOGIN_BODY" ;;
+  *) echo "  ❌ 后端没读到请求体：$LOGIN_BODY"; FAIL=$((FAIL + 1)) ;;
+esac
 
 echo
 echo "【4】付费墙（downloads 必须转发到源站，让 Nginx 的白名单生效）"

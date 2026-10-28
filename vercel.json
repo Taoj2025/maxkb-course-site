@@ -11,6 +11,11 @@
     }
   },
 
+  "proxy": {
+    "entrypoint": "proxy.mjs",
+    "matcher": "/api/:func*"
+  },
+
   "rewrites": [
     { "source": "/articles.json",       "destination": "https://taotaoedu.ltd/articles.json" },
     { "source": "/articles/:path*",     "destination": "https://taotaoedu.ltd/articles/:path*" },

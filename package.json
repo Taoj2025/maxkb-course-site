@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "build": "bash scripts/build-vercel-site.sh",
-    "test:proxy": "node scripts/test-vercel-proxy.cjs"
+    "test:proxy": "node scripts/test-vercel-proxy.cjs",
+    "test:middleware": "node scripts/test-vercel-middleware.mjs"
   },
   "engines": {
     "node": ">=18"
