@@ -5,6 +5,8 @@ FDE（前端部署开发工程师）每日文章抓取脚本
 作者：小 Q 为小陶老师定制 · 2026-07-27 修复版
 """
 import json
+import os
+import re
 import requests
 import feedparser
 from datetime import datetime, timedelta
@@ -63,7 +65,9 @@ def fetch_one_rss(url: str, source_name: str, max_items: int = 15):
             print(f"    ⚠ {source_name}: 无内容")
             return results
         for entry in feed.entries[:max_items]:
-            title = entry.get('title', '').strip()
+            # 标题同样要清 HTML —— 它会一路写进 articles.json / .md，
+            # 最后被 latest.html、article.html 直接渲染出来。
+            title = re.sub(r'<[^>]+>', '', entry.get('title', '')).strip()
             if not title:
                 continue
             if not matches_keywords(title):
@@ -71,7 +75,6 @@ def fetch_one_rss(url: str, source_name: str, max_items: int = 15):
             link = entry.get('link', '')
             summary = entry.get('summary', '') or entry.get('description', '')
             # 清理 HTML
-            import re
             summary = re.sub(r'<[^>]+>', '', summary)[:200]
             published = entry.get('published', '') or entry.get('updated', '')
             results.append({

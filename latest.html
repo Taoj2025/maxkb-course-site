@@ -487,6 +487,22 @@
 </footer>
 
 <script>
+  // 内容由机器人每小时从第三方 RSS 抓回来，标题/摘要里可能带 <、& 之类字符。
+  // 直接拼进 innerHTML 会破坏页面结构，恶意源甚至能注入脚本 —— 统一转义。
+  function esc(s) {
+    return String(s == null ? '' : s)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+  // 外链只放行 http/https，防止 javascript: 之类的协议混进来
+  function safeUrl(u) {
+    u = String(u || '').trim();
+    return /^https?:\/\//i.test(u) ? u : '#';
+  }
+
   // ===== 模块 1: 加载并渲染 articles.json 中的精选文章 =====
   let selectedCategory = '全部';
   let searchKeyword = '';
@@ -509,15 +525,15 @@
         }
         const tagColors = { purple: 'purple', blue: 'blue', green: 'green', orange: 'orange', red: 'red' };
         grid.innerHTML = latest.map(a => `
-          <a href="article.html?id=${a.id}" class="article-card" style="text-decoration:none; color:inherit;">
+          <a href="article.html?id=${encodeURIComponent(a.id)}" class="article-card" style="text-decoration:none; color:inherit;">
             <div class="article-card-header">
-              ${a.tags.map((t, i) => `<span class="article-card-tag ${i === 0 ? tagColors[a.color] || '' : ''}">#${t}</span>`).join('')}
-              <span class="article-card-date">📅 ${a.date}</span>
+              ${(a.tags || []).map((t, i) => `<span class="article-card-tag ${i === 0 ? tagColors[a.color] || '' : ''}">#${esc(t)}</span>`).join('')}
+              <span class="article-card-date">📅 ${esc(a.date)}</span>
             </div>
-            <h3 class="article-card-title">${a.title}</h3>
-            <div class="article-card-summary">${a.summary}</div>
+            <h3 class="article-card-title">${esc(a.title)}</h3>
+            <div class="article-card-summary">${esc(a.summary)}</div>
             <div class="article-card-footer">
-              <span class="article-card-source">📰 ${a.id >= 13305 ? 'AI 重写 · 自动发布' : '人工整理'}</span>
+              <span class="article-card-source">📰 ${Number(a.id) >= 13305 ? 'AI 重写 · 自动发布' : '人工整理'}</span>
               <span class="article-card-cta">阅读全文 →</span>
             </div>
           </a>
@@ -598,14 +614,14 @@
     list.innerHTML = filtered.map(item => `
       <div class="aihot-item">
         <div class="aihot-item-header">
-          <span class="aihot-cat" data-cat="${item.category}">${item.category}</span>
-          <span class="aihot-date">📅 ${item.pub_date}</span>
+          <span class="aihot-cat" data-cat="${esc(item.category)}">${esc(item.category)}</span>
+          <span class="aihot-date">📅 ${esc(item.pub_date)}</span>
         </div>
-        <div class="aihot-title">${item.title}</div>
-        <div class="aihot-summary">${item.summary}</div>
+        <div class="aihot-title">${esc(item.title)}</div>
+        <div class="aihot-summary">${esc(item.summary)}</div>
         <div class="aihot-footer">
-          <span class="aihot-source">📰 ${item.author.replace(/\s*\(.+?\)\s*$/, '')}</span>
-          <a href="${item.link}" target="_blank" rel="noopener" class="aihot-link">阅读原文 →</a>
+          <span class="aihot-source">📰 ${esc(String(item.author || '').replace(/\s*\(.+?\)\s*$/, ''))}</span>
+          <a href="${esc(safeUrl(item.link))}" target="_blank" rel="noopener" class="aihot-link">阅读原文 →</a>
         </div>
       </div>
     `).join('');

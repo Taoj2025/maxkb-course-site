@@ -97,7 +97,9 @@ def parse_feed(xml: str) -> list:
 
     items = []
     for entry in entries:
-        title = (entry.get("title") or "").strip()
+        # 标题也要走 strip_html：RSS 标题里带 < 的情况不多但确实有，
+        # 不过滤的话会一路进到 latest.html 的 innerHTML 里。
+        title = strip_html(entry.get("title") or "")
         if not title:
             continue
         if title.startswith("【AIHOT 通知】"):
