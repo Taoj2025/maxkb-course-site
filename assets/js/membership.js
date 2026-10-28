@@ -54,7 +54,7 @@ const MEMBERSHIP_PLANS = [
 
 const RESOURCE_ACCESS = {
   'PPT': 1, 'Word 讲义': 1, '源码': 1, 'README': 1,
-  'images.zip': 1, 'MaxKB_FDE教学资料_v1.0.zip': 1,
+  'images.zip': 1, 'MaxKB_FDE教学资料_v1.0_小陶老师.zip': 1,
 };
 
 // 会员状态管理 · 完全走后端

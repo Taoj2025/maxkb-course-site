@@ -23,14 +23,16 @@ ON CONFLICT (id) DO NOTHING;
 SELECT setval('chapters_id_seq', 8, true);
 
 -- 6 个资源（与 downloads/ 文件名一致）
+-- file_size 必须和磁盘上的真实大小一致：下载接口用它算 Content-Length，
+-- 对不上就会把文件截断，用户那边表现为「下载失败」。
 INSERT INTO resources (slug, title, description, file_size, min_plan) VALUES
 ('r_a1b2c3d4.docx',                     'MaxKB FDE 教学讲义',     '8 章节精讲 Word 讲义 · 46 KB',                          47092,   'standard'),
 ('r_e5f6g7h8.pptx',                     'MaxKB FDE 教学课件',     '60 页紫色 AI 科技风 PPT · 495 KB',                      506489,  'standard'),
-('r_i9j0k1l2.py',                       'MaxKB 核心模块源码',     '8 大核心模块 Python 源码 · 500+ 行',                    19385,   'standard'),
-('r_m3n4o5p6.md',                       'README',                 '完整使用说明 · 免费',                                   7183,    'free'),
+('r_i9j0k1l2.py',                       'MaxKB 核心模块源码',     '8 大核心模块 Python 源码 · 500+ 行',                    18814,   'standard'),
+('r_m3n4o5p6.md',                       'README',                 '完整使用说明 · 免费',                                   6952,    'free'),
 ('MaxKB_FDE教学资料_v1.0_小陶老师.zip', '总压缩包',               '完整教学资料 · 1.8 MB',                                 1791715, 'standard'),
 ('images.zip',                          '教学配图包',             '6 张高清配图 · 355 KB',                                 355379,  'standard')
-ON CONFLICT (slug) DO NOTHING;
+ON CONFLICT (slug) DO UPDATE SET file_size = EXCLUDED.file_size;
 
 -- 14 篇文章元数据（正文后续 import-articles.js 灌入）
 INSERT INTO articles (slug, title, summary, category, tags, color, published_at) VALUES

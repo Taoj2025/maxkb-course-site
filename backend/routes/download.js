@@ -59,9 +59,26 @@ r.get('/:id', authRequired, async (req, res, next) => {
     await pool.query(`UPDATE users    SET total_downloads = total_downloads + 1 WHERE id=$1`, [req.user.sub]);
 
     // 流式转发（不暴露静态 URL）
+    //
+    // Content-Length 必须用磁盘上的真实大小，不能用 resources.file_size：
+    // 那列是 seed 里写死的常量，文件改动后（比如替换了讲义）就对不上了，
+    // 头里写 19385、实际只发 18814 字节，浏览器收到的是一个被截断的包，
+    // 用户看到的是「下载失败」。真实大小永远以文件为准。
+    const stat = fs.statSync(filePath);
+    const ext = path.extname(resource.slug);
+    // 文件名用资源标题（如「MaxKB FDE 教学课件.pptx」），而不是 r_a1b2c3d4 这种
+    // 占位 slug —— 用户下载到本地后能一眼看出是什么文件。
+    const base = resource.title || path.basename(resource.slug, ext);
+    const filename = `${base}${ext}`;
+    // filename 存 ASCII 兜底，filename* 存 UTF-8 原名（RFC 6266）
+    const asciiName = filename.replace(/[^\x20-\x7E]/g, '_').replace(/["\\]/g, '_');
+
     res.setHeader('Content-Type', 'application/octet-stream');
-    res.setHeader('Content-Disposition', `attachment; filename="${encodeURIComponent(resource.slug)}"`);
-    res.setHeader('Content-Length', resource.file_size || fs.statSync(filePath).size);
+    res.setHeader(
+      'Content-Disposition',
+      `attachment; filename="${asciiName}"; filename*=UTF-8''${encodeURIComponent(filename)}`
+    );
+    res.setHeader('Content-Length', stat.size);
     fs.createReadStream(filePath).pipe(res);
   } catch (e) { next(e); }
 });

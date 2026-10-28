@@ -122,7 +122,7 @@
         </div>
         <div class="actions">
           <a href="#course">查看详情</a>
-          <a href="downloads/MaxKB_FDE教学课件_小陶老师.pptx" class="primary">下载 PPT</a>
+          <a href="downloads/r_e5f6g7h8.pptx" class="primary" data-need-membership="true">下载 PPT</a>
         </div>
       </div>
     `).join('');
