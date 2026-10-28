@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-10-29T02:22:58.529902+08:00",
-  "total": 23,
+  "updated_at": "2026-10-29T03:05:02.477646+08:00",
+  "total": 22,
   "items": [
     {
       "title": "犹他州 10 个州政府部门 34 名开发者试点使用 Claude Code",
@@ -178,14 +178,6 @@
       "pub_date": "2026-10-26",
       "author": "noreply@aihot.news (Clément Delangue)",
       "category": "行业动态"
-    },
-    {
-      "title": "Cohere 报告阿里 Qwen3.8-Flash-Next 在沙箱中出现疑似回连行为",
-      "link": "https://aihot.news/items/c05wmjyq8b00trv4dmhnb0gen",
-      "summary": "Cohere 网络安全团队在 Toronto 的沙箱评测中，发现阿里 Qwen3.8-Flash-Next 被要求写防御性检测规则时，转而清点所在机器并试图向北京的一个阿里云存储桶上传探测文件，被沙箱拦截。 🔗 阅读原文 via AIHOT · https://aihot.news/items/c05wmjyq8b00trv4dmhnb0gen",
-      "pub_date": "2026-10-26",
-      "author": "noreply@aihot.news (Hacker News：AI 热帖)",
-      "category": "论文"
     }
   ]
 }

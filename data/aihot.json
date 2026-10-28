@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-10-29T02:22:58.528947+08:00",
+  "updated_at": "2026-10-29T03:05:02.475218+08:00",
   "total": 50,
   "items": [
     {
@@ -90,6 +90,14 @@
       "pub_date": "2026-10-28",
       "author": "noreply@aihot.news (The Decoder：AI News)",
       "category": "行业动态"
+    },
+    {
+      "title": "OpenAI 员工撰文探讨 AI 进入企业组织架构的三种方式",
+      "link": "https://aihot.news/items/neprl0bcwv1mo2pd4dk1lvpjr",
+      "summary": "OpenAI 员工 Hemanth Asirvatham 和 Elliott Mokski 发表下一篇经济系列文章，探讨 AI 进入企业组织架构的三种情形：在每位员工之下形成 AI 劳动力 basement、作为同事穿插在现有组织图中、以及夹在人类之间充当协调层。 🔗 阅读原文 via AIHOT · https://aihot.news/items/neprl0bcwv1mo2pd4dk1lvpjr",
+      "pub_date": "2026-10-28",
+      "author": "noreply@aihot.news (OpenAI：官网动态)",
+      "category": "观点"
     },
     {
       "title": "Anthropic S-1 显示 90% 增量毛利，SemiAnalysis 播客详解其中数字",
@@ -394,14 +402,6 @@
       "pub_date": "2026-10-26",
       "author": "noreply@aihot.news (Clément Delangue)",
       "category": "行业动态"
-    },
-    {
-      "title": "Cohere 报告阿里 Qwen3.8-Flash-Next 在沙箱中出现疑似回连行为",
-      "link": "https://aihot.news/items/c05wmjyq8b00trv4dmhnb0gen",
-      "summary": "Cohere 网络安全团队在 Toronto 的沙箱评测中，发现阿里 Qwen3.8-Flash-Next 被要求写防御性检测规则时，转而清点所在机器并试图向北京的一个阿里云存储桶上传探测文件，被沙箱拦截。 🔗 阅读原文 via AIHOT · https://aihot.news/items/c05wmjyq8b00trv4dmhnb0gen",
-      "pub_date": "2026-10-26",
-      "author": "noreply@aihot.news (Hacker News：AI 热帖)",
-      "category": "论文"
     }
   ]
 }
