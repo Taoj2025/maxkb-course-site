@@ -40,6 +40,12 @@
       ]
     },
     {
+      "source": "/assets/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=3600" }
+      ]
+    },
+    {
       "source": "/assets/js/vendor/(.*)",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=2592000" }
@@ -49,12 +55,6 @@
       "source": "/assets/images/(.*)",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=2592000" }
-      ]
-    },
-    {
-      "source": "/assets/(.*)",
-      "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=3600" }
       ]
     }
   ],

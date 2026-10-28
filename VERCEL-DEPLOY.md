@@ -142,6 +142,26 @@ curl -s https://<域名>/build-info.json
 
 ## 其它
 
+### `headers` 数组是「后写的覆盖先写的」
+
+`vercel.json` 里每条 `headers` 规则都会生成一条带 `continue: true` 的路由，
+**同一个 header key 被多条规则命中时，靠后的那条赢**。
+
+所以通用规则必须放在前面、具体规则放后面：
+
+```jsonc
+{ "source": "/assets/(.*)",          "Cache-Control": "public, max-age=3600" },   // 兜底
+{ "source": "/assets/js/vendor/(.*)", "Cache-Control": "public, max-age=2592000" }, // 30 天
+{ "source": "/assets/images/(.*)",    "Cache-Control": "public, max-age=2592000" }  // 30 天
+```
+
+反过来的话，兜底规则在最后，
+`/assets/js/vendor/marked.min.js` 只会拿到 1 小时缓存（2026-10-29 实测过）。
+
+---
+
+## 目录里有什么
+
 - `site/` 是构建产物，不进仓库（`.gitignore`）
 - `articles/` `articles.json` `data/` `downloads/` **不在快照里**，
   走 `vercel.json` 的 rewrites 实时转发源站 ——
