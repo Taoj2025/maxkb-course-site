@@ -3,13 +3,27 @@
 > **弃用说明**：本项目已从 Supabase 切换到自建 Node.js + Express + PostgreSQL 后端架构。
 >
 > 当前架构：
-> - 前端：GitHub Pages 静态托管（`https://taotaoedu.ltd`）
-> - 后端：Node.js + Express（独立服务器部署，PM2/systemd/Docker 三选一）
-> - 数据库：PostgreSQL 16（用户提供密码 + Docker Compose / 云数据库）
+> - 主站：自建服务器的 Nginx 直接托管 Git 仓库（`git commit` 即上线，秒级生效）
+> - 前端 CDN：Vercel 作为**纯转发层**（`api/[...path].js` 代理 + `vercel.json` rewrites 指向源站），**不碰数据库、不存任何密钥**
+> - GitHub Pages：只是 CNAME 跳板，不是镜像
+> - 后端：Node.js + Express，部署在服务器 `/opt/maxkb-api/backend`（**不在 Web 根目录**）
+> - 数据库：自建 PostgreSQL（库名 `postgres`，表：users / resources / downloads / articles / chapters / aihot_items / contact_messages / admin_logs）
 >
 > 📖 **请参阅新的部署文档**：[`backend/DEPLOY-BACKEND.md`](./backend/DEPLOY-BACKEND.md)
 >
 > 旧 Supabase 文档保留作为历史参考。新功能、新部署、新增配置请使用新文档。
+>
+> ---
+>
+> **实测记录（2026-10-29）**：曾经的 Supabase 项目 `uwojtcvyugczexotvrxh` 是**空项目**——
+> `public` schema 下**一张表都没有**（`users` / `resources` / `downloads` / `articles` / `todos` 等全部返回
+> `PGRST205 Could not find the table ... in the schema cache`）。
+> 附带说明：`anon` key 是有效的（故意用错签名会返回 `401 Invalid API key`，本 key 则能通过鉴权
+> 走到 schema 查询这一步），所以上面的 `404` 确实是「表不存在」而不是「key 无效」。
+> OpenAPI 根路径需要 `service_role` key 才能读表清单，anon key 无权枚举。
+>
+> 结论：**这个 Supabase 项目可以直接停用/删除**，站点不依赖它。
+> 需要用 Supabase 时请重新按下面的旧文档建表，并同步改后端 —— 别只改前端。
 
 ---
 
