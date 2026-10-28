@@ -11,8 +11,10 @@
  *   不需要任何数据库 / OSS / 微信凭证，也不需要在云平台存任何密钥。
  *
  * 为什么用 Routing Middleware 而不是 api/[...path].js：
- *   api 目录里的 catch-all 文件名（[...path].js）在这套配置下只匹配到
- *   单段路径 —— /api/health、/api/articles 走函数，而 /api/auth/login、
+ *   Vercel 生成 api 目录路由时（createRouteFromPath），文件名里的
+ *   [xxx] 一律当成「单段动态参数」—— 哪怕写的是 [...path]。
+ *   实测：api/[...path].js 生成的正则是 ^/api/([^/]+)$ ，
+ *   只匹配一段。/api/health、/api/articles 走函数，而 /api/auth/login、
  *   /api/auth/me、/api/download/<slug>、/api/dl-course/chapters 这些
  *   多段路径全部落到 Vercel 自己的 404 页，函数根本没被调用。
  *   而登录、会员校验、付费下载全是多段路径 —— 等于核心链路全断。
@@ -53,8 +55,16 @@ const SKIP_RESPONSE_HEADERS = new Set([
   'x-powered-by',
 ]);
 
+// ⚠️ 这里绝对不要再写 matcher！
+//    matcher 只能在一处配置：要么 vercel.json 的 proxy.matcher，
+//    要么本文件导出的 config.matcher —— 两处都写，Vercel 构建会直接失败：
+//      "proxy.matcher in vercel.json conflicts with config.matcher
+//       exported from the proxy entrypoint. Configure the matcher in
+//       only one location."
+//    构建失败 = 部署不生效，线上还是旧版本（2026-10-29 就踩过这个坑，
+//    症状是多段 API 路径继续 404）。
+//    本仓库把 matcher 放在 vercel.json 里（和 entrypoint 挨着，方便看）。
 export const config = {
-  matcher: '/api/:func*',
   runtime: 'nodejs',
 };
 

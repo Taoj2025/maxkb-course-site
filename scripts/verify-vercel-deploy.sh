@@ -46,6 +46,26 @@ check "/latest.html"             200 "$(code "$BASE/latest.html")"
 check "/membership.html"         200 "$(code "$BASE/membership.html")"
 check "/assets/css/style.css"    200 "$(code "$BASE/assets/css/style.css")"
 
+# 部署指纹 —— 确认线上跑的是哪一次构建。
+# 静态文件基本不变时，光看页面分不出新旧部署（2026-10-29 就是因为构建
+# 失败、部署没换，页面看着一样，排查了半天）。
+echo
+echo "【1.5】部署指纹（build-info.json）"
+LOCAL_SHA="$(git rev-parse --short HEAD 2>/dev/null || echo unknown)"
+REMOTE_SHA=$(curl -s --max-time 25 "$BASE/build-info.json" \
+  | grep -oE '"sha"[[:space:]]*:[[:space:]]*"[^"]+"' \
+  | sed -E 's/.*"([^"]+)"/\1/')
+if [ -z "$REMOTE_SHA" ]; then
+  echo "  ❌ 拿不到 build-info.json —— 部署可能是旧的，或者构建脚本没跑到"
+  FAIL=$((FAIL + 1))
+elif [ "$REMOTE_SHA" = "$LOCAL_SHA" ]; then
+  echo "  ✅ 线上 commit = 本地 HEAD = $REMOTE_SHA"
+  PASS=$((PASS + 1))
+else
+  echo "  ❌ 线上 commit = $REMOTE_SHA，本地 HEAD = $LOCAL_SHA —— 部署没更新"
+  FAIL=$((FAIL + 1))
+fi
+
 echo
 echo "【2】动态内容转发（rewrite → 源站，必须是实时最新的）"
 check "/articles.json"           200 "$(code "$BASE/articles.json")"
@@ -65,9 +85,10 @@ check "/api/aihot"               200 "$(code "$BASE/api/aihot")"
 check "/api/auth/me 未登录→401"  401 "$(code "$BASE/api/auth/me")"
 
 # ↓ 多段路径。这一批是踩过坑的：
-#   api/[...path].js 这种 catch-all 文件名在这套配置下只匹配单段，
-#   /api/auth/me、/api/download/<slug> 这种多段路径会落到 Vercel 自己的 404 页，
-#   函数根本不被调用 —— 登录、会员校验、付费下载全断。
+#   Vercel 生成 api 目录路由时，文件名里的 [...] 只当「单段动态参数」，
+#   api/[...path].js 的正则是 ^/api/([^/]+)$ —— 多段路径（/api/auth/me、
+#   /api/download/<slug>）会落到 Vercel 自己的 404 页，函数根本不被调用，
+#   登录、会员校验、付费下载全断。
 #   现在由 proxy.mjs（Routing Middleware，matcher=/api/:func*）接管。
 check "/api/auth/me 多段→401"   401 "$(code "$BASE/api/auth/me")"
 check "/api/dl-course/chapters 多段→200" 200 "$(code "$BASE/api/dl-course/chapters")"
@@ -81,13 +102,31 @@ else
 fi
 
 # POST 请求体转发（登录就是 POST；body 丢了后端就认不出「错密码」）
-LOGIN_CODE=$(curl -s -o /tmp/.vlogin -w "%{http_code}" --max-time 25 \
-  -X POST "$BASE/api/auth/login" \
-  -H "Content-Type: application/json" \
-  -H "Origin: $BASE" \
-  -d '{"email":"nobody@example.com","password":"wrong-password"}')
-LOGIN_BODY=$(head -c 120 /tmp/.vlogin 2>/dev/null | tr -d '\r\n')
-rm -f /tmp/.vlogin
+# 这一段用 Python urllib 而不是 curl —— 响应体是中文，
+# bash curl 在 Windows 上会把 UTF-8 弄乱（见记忆 curl-utf8-chinese）。
+# 顺带带上 Origin 头：如果转发层没把 Origin 摘掉，
+# 源站的 cors 白名单会把这个请求打成 500 而不是 401。
+LOGIN_RESULT=$(python - "$BASE" <<'PY'
+import sys, json, urllib.request, urllib.error
+base = sys.argv[1]
+req = urllib.request.Request(
+    base + '/api/auth/login',
+    data=json.dumps({"email": "nobody@example.com", "password": "wrong-password"}).encode('utf-8'),
+    headers={"Content-Type": "application/json", "Origin": base},
+    method="POST",
+)
+try:
+    r = urllib.request.urlopen(req, timeout=25)
+    code, body = r.status, r.read().decode('utf-8', 'replace')
+except urllib.error.HTTPError as e:
+    code, body = e.code, e.read().decode('utf-8', 'replace')
+except Exception as e:
+    code, body = 0, str(e)
+print(code, body[:200].replace('\n', ' '))
+PY
+)
+LOGIN_CODE=$(printf '%s' "$LOGIN_RESULT" | awk '{print $1}')
+LOGIN_BODY=$(printf '%s' "$LOGIN_RESULT" | cut -d' ' -f2-)
 check "POST /api/auth/login 错密码→401" 401 "$LOGIN_CODE"
 case "$LOGIN_BODY" in
   *密码*|*邮箱*) echo "  ✅ 请求体完整到达后端：$LOGIN_BODY" ;;

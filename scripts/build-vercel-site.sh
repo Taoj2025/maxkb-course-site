@@ -30,4 +30,17 @@ for f in robots.txt sitemap.xml; do
 done
 
 echo "✅ Vercel 静态快照已生成：$OUT"
+
+# 部署指纹 —— 静态文件基本不变时，从页面看不出线上是新是旧部署；
+# 这个文件带着 commit 和构建时间，部署后拉一下 /build-info.json 就知道
+# 线上跑的是哪一次构建（2026-10-29 排查多段 API 404 时被这个坑过）。
+SHA="$(git -C "$ROOT" rev-parse --short HEAD 2>/dev/null || echo unknown)"
+cat > "$OUT/build-info.json" <<EOF
+{
+  "sha": "$SHA",
+  "builtAt": "$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+}
+EOF
+echo "   构建指纹：$SHA"
+
 ls -1 "$OUT"
