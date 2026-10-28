@@ -16,6 +16,8 @@ CANDIDATES_DIR = WORK_DIR / "fde-candidates"
 ARTICLES_DIR = SITE_DIR / "articles"
 API_KEY = os.environ.get('MINIMAX_API_KEY', '')
 API_BASE = os.environ.get('MINIMAX_API_BASE', 'https://api.minimaxi.com')
+# 机器摘要模式下正文至少要有这么多字，太短的摘要发出去没意义
+MIN_SUMMARY_LEN = 80
 
 def rewrite_with_ai(title, summary, source):
     """调用 LLM API 重写文章。
@@ -100,17 +102,28 @@ def main():
         content = rewrite_with_ai(c['title'], c.get('summary', ''), c['source'])
         if not content:
             failed += 1
-            continue
+            # AI 挂了就退回「机器摘要」模式：直接把 RSS 摘要当正文，
+            # 标记 machine_summary，交给审核环节用更严格的规则把关。
+            # 不用 AI 就完全不发的话，站点内容会一直停在最后一篇手动文章。
+            summary = (c.get('summary') or '').strip()
+            if len(summary) >= MIN_SUMMARY_LEN:
+                print(f"   ↩️ 退回机器摘要模式（{len(summary)} 字）")
+                content = summary
+            else:
+                print("   ⛔ 摘要太短，两种模式都不可用，跳过")
+                continue
         rewritten.append({
             'title': c['title'],
             'source': c['source'],
             'url': c['url'],
-            'content': content
+            'content': content,
+            # 只有走机器摘要兜底时才是 True
+            'machine_summary': content == (c.get('summary') or '').strip(),
         })
 
     if not rewritten:
         # 一篇都没写成功就不要生成待审文件 —— 审核环节会把它当成正常文章放行
-        print(f"\n❌ {failed}/{len(top5)} 篇全部重写失败，不生成待审核文件")
+        print(f"\n❌ {failed}/{len(top5)} 篇全部失败，不生成待审核文件")
         sys.exit(1)
 
     # 输出到待审核目录

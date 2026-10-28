@@ -14,6 +14,7 @@ FDE 文章 · AI 自动审核 + 自动发布
 import json
 import os
 import re
+import hashlib
 import subprocess
 import sys
 from datetime import datetime
@@ -29,6 +30,9 @@ PUBLISH_SCRIPT = SITE_DIR / "scripts" / "publish-site.sh"
 
 API_KEY = os.environ.get('MINIMAX_API_KEY', '')
 API_BASE = os.environ.get('MINIMAX_API_BASE', 'https://api.minimaxi.com')
+# AI 不可用时是否允许发布「机器摘要」文章（RSS 原文摘要，不经 AI 改写）。
+# 关着 = AI 不通就一天不发；开着 = 站点照样每天有更新，但文章会明确标注来源。
+ALLOW_NO_AI = os.environ.get('PUBLISH_WITHOUT_AI', '0') == '1'
 
 BAD_KEYWORDS = ['博彩', '赌博', '色情', '广告', '营销', '标题党']
 
@@ -43,10 +47,18 @@ def log(msg):
     print(f"[publish] {msg}", flush=True)
 
 
+def keyword_review(title, content):
+    """不依赖 AI 的相关性把关：只看关键词命中数"""
+    score = sum(1 for kw in ['FDE', '前端', 'AI', 'LLM', '工程化', '部署', '开发',
+                             'MaxKB', 'Vercel', '教学'] if kw in (title + content[:500]))
+    return score
+
+
 def ai_review(article):
     """AI 自动审核"""
     title = article.get('title', '')
     content = article.get('content', '')
+    machine = bool(article.get('machine_summary'))
 
     # 1. 基础过滤
     for bad in BAD_KEYWORDS:
@@ -56,16 +68,24 @@ def ai_review(article):
     if len(title) < 8 or len(title) > 100:
         return False, f"标题长度异常：{len(title)} 字符"
 
-    if len(content) < 200:
+    # 机器摘要模式下正文就是 RSS 摘要，没有 AI 扩写，长度门槛放低一点
+    min_len = 80 if machine else 200
+    if len(content) < min_len:
         return False, f"内容过短：{len(content)} 字符"
 
     # 2. AI 质量评分
     #
-    # 必须「失败关闭」：AI 调不通时直接拒稿，不能降级成关键词规则。
-    # 降级放行的后果很严重 —— 重写环节失败时产出的占位文本
-    # 照样能命中几个关键词，然后被当成正常文章发到线上。
+    # AI 调不通时不能像以前那样静默降级成关键词规则 —— 降级放行的后果很严重：
+    # 重写环节失败时产出的占位文本照样能命中几个关键词，
+    # 然后被当成正常文章发到线上。现在是「失败关闭」。
+    #
+    # 例外：显式开启 PUBLISH_WITHOUT_AI=1 时，允许走机器摘要模式，
+    # 但门槛更严（关键词命中数要求更高），并且文章会被明确标注来源。
     if not API_KEY:
+        if ALLOW_NO_AI and machine:
+            return machine_review(title, content)
         return False, "未配置 MINIMAX_API_KEY，无法审核（本轮不发布）"
+
     try:
         prompt = f"""请评分（0-5）以下 FDE 文章质量：
 标题：{title}
@@ -100,19 +120,30 @@ def ai_review(article):
             return False, f"AI 评分过低：{score}"
         return True, f"AI 评分：{score}"
     except Exception as e:
+        if ALLOW_NO_AI and machine:
+            log(f"⚠️ AI 审核不可用（{e}），改走机器摘要模式")
+            return machine_review(title, content)
         return False, f"AI 审核不可用（{e}），本轮不发布"
 
-    # 3. 兜底：基于关键词相关性（仅在显式关闭 AI 审核时才会走到）
-    score = sum(1 for kw in ['FDE', '前端', 'AI', 'LLM', '工程化', '部署', '开发',
-                             'MaxKB', 'Vercel', '教学'] if kw in (title + content[:500]))
-    if score < 2:
-        return False, f"相关性低：命中 {score} 个关键词"
-    return True, f"关键词命中：{score}"
+
+def machine_review(title, content):
+    """机器摘要模式的把关：没有 AI 质量评分，只能靠更严的相关性门槛"""
+    score = keyword_review(title, content)
+    if score < 3:
+        return False, f"相关性不足：仅命中 {score} 个关键词（机器模式要求 ≥3）"
+    return True, f"机器摘要 · 关键词命中 {score}"
 
 
 def make_slug(title: str) -> str:
-    slug = re.sub(r'[^\w\s-]', '', title)[:30].strip().replace(' ', '-').lower()
-    return slug or 'article'
+    """生成 ASCII slug。
+
+    中文标题直接拿来做 slug 会得到一串要 URL 编码的中文地址，
+    这里先留下能用的 ASCII 部分，不够就用标题的短哈希补上。
+    """
+    slug = re.sub(r'[^a-zA-Z0-9]+', '-', title).strip('-').lower()
+    if len(slug) < 3:
+        slug = 'post-' + hashlib.md5(title.encode('utf-8')).hexdigest()[:8]
+    return slug[:40].strip('-')
 
 
 def next_article_id(articles_data: list) -> int:
@@ -129,6 +160,13 @@ def publish_article(article: dict, article_id: int, index: int) -> tuple:
 
     date_str = datetime.now().strftime('%Y-%m-%d')
     content = article['content']
+    machine = bool(article.get('machine_summary'))
+
+    # 机器摘要模式的内容没有经过 AI 改写，页脚和来源必须如实标注，
+    # 不能让读者以为这是「小陶老师」写的深度文章。
+    byline = ('*本文由小Q自动抓取 · 机器摘要（未经 AI 改写） · 来源：'
+              f"[{article['source']}]({article['url']})*") if machine else (
+        f"*本文由小Q自动抓取 + AI 重写 · 来源：[{article['source']}]({article['url']})*")
 
     md_content = f"""---
 title: "{article['title']}"
@@ -136,13 +174,14 @@ source: "{article['source']}"
 source_url: "{article['url']}"
 date: "{date_str}"
 auto: true
+machine_summary: {str(machine).lower()}
 ---
 
 {content}
 
 ---
 
-*本文由小Q自动抓取 + AI 重写 · 来源：[{article['source']}]({article['url']})*
+{byline}
 """
     filepath.write_text(md_content, encoding='utf-8')
 
@@ -155,8 +194,8 @@ auto: true
         'tags': DEFAULT_TAGS,
         'color': TAG_COLORS[index % len(TAG_COLORS)],
         'date': date_str,
-        'author': '小Q',
-        'source': f"AI 重写 · {article['source']}",
+        'author': '小Q（机器摘要）' if machine else '小Q',
+        'source': f"机器摘要 · {article['source']}" if machine else f"AI 重写 · {article['source']}",
         'file': filename,
         'estimated_read_time': f"{max(1, round(len(content) / 500))} 分钟",
     }
@@ -185,10 +224,14 @@ def main():
     log("=" * 50)
 
     if not API_KEY:
-        # 没有 key 就没法判断文章质量 —— 不发比发错强
-        log("❌ 未配置 MINIMAX_API_KEY，本轮不发布任何文章")
-        log("   （检查 /root/.secrets/minimax.env 是否存在且 cron 有没有 source 它）")
-        sys.exit(1)
+        # 没有 key 就没法做 AI 质量审核。
+        # 开了机器摘要模式就继续走（门槛更严），否则本轮不发。
+        if ALLOW_NO_AI:
+            log("⚠️ 未配置 MINIMAX_API_KEY，本轮走机器摘要模式（PUBLISH_WITHOUT_AI=1）")
+        else:
+            log("❌ 未配置 MINIMAX_API_KEY，本轮不发布任何文章")
+            log("   （检查 /root/.secrets/minimax.env 是否存在且 cron 有没有 source 它）")
+            sys.exit(1)
 
     pending_files = sorted(PENDING_DIR.glob('pending_*.json'), reverse=True)
     if not pending_files:
