@@ -173,11 +173,14 @@
       background: linear-gradient(135deg, #5B2EBF, #3B82F6); color: white;
       padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600;
     }
-    .aihot-cat.行业动态 { background: linear-gradient(135deg, #EF4444, #F59E0B); }
-    .aihot-cat.技巧观点 { background: linear-gradient(135deg, #10B981, #059669); }
-    .aihot-cat.AI产品, .aihot-cat.AI产品 { background: linear-gradient(135deg, #3B82F6, #2563EB); }
-    .aihot-cat.AI模型 { background: linear-gradient(135deg, #8B5CF6, #6D28D9); }
-    .aihot-cat.论文 { background: linear-gradient(135deg, #6366F1, #4F46E5); }
+    /* 类别名含空格（"AI 产品"），用属性选择器而不是 class 选择器 */
+    .aihot-cat[data-cat="行业动态"] { background: linear-gradient(135deg, #EF4444, #F59E0B); }
+    .aihot-cat[data-cat="技巧观点"],
+    .aihot-cat[data-cat="观点"] { background: linear-gradient(135deg, #10B981, #059669); }
+    .aihot-cat[data-cat="AI 产品"] { background: linear-gradient(135deg, #3B82F6, #2563EB); }
+    .aihot-cat[data-cat="AI 模型"] { background: linear-gradient(135deg, #8B5CF6, #6D28D9); }
+    .aihot-cat[data-cat="论文"] { background: linear-gradient(135deg, #6366F1, #4F46E5); }
+    .aihot-cat[data-cat="教程"] { background: linear-gradient(135deg, #0EA5E9, #0284C7); }
     .aihot-date { color: #9CA3AF; font-size: 12px; }
     .aihot-title {
       font-weight: 600; color: #1F2937; margin: 6px 0;
@@ -489,7 +492,7 @@
   let searchKeyword = '';
 
   function renderArticles() {
-    fetch('articles.json')
+    fetch('articles.json?t=' + Date.now())
       .then(r => r.json())
       .then(articles => {
         const latest = articles.filter(a => a.category === '最新动态');
@@ -533,7 +536,7 @@
     const statusText = document.getElementById('aihot-status-text');
     const info = document.getElementById('aihot-info');
 
-    fetch('data/aihot.json')
+    fetch('data/aihot.json?t=' + Date.now())
       .then(r => r.json())
       .then(data => {
         const items = data.items || [];
@@ -541,7 +544,7 @@
 
         // 元信息
         const updateTime = new Date(data.updated_at).toLocaleString('zh-CN', { hour12: false });
-        info.innerHTML = `从 aihot.virxact.com RSS 实时拉取 · <b>${items.length} 条</b>最新 AI 行业热点 · 最后更新 ${updateTime} · 数据缓存 1 小时`;
+        info.innerHTML = `从 aihot.virxact.com RSS 实时拉取 · <b>${items.length} 条</b>最新 AI 行业热点 · 最后更新 ${updateTime} · 每小时自动刷新`;
 
         // 提取所有类别
         const categories = ['全部', ...new Set(items.map(i => i.category))];
@@ -595,7 +598,7 @@
     list.innerHTML = filtered.map(item => `
       <div class="aihot-item">
         <div class="aihot-item-header">
-          <span class="aihot-cat ${item.category}">${item.category}</span>
+          <span class="aihot-cat" data-cat="${item.category}">${item.category}</span>
           <span class="aihot-date">📅 ${item.pub_date}</span>
         </div>
         <div class="aihot-title">${item.title}</div>

@@ -76,3 +76,47 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  # ================================================================
+  # 自建服务器同步（taotaoedu.ltd）
+  # ----------------------------------------------------------------
+  # 线上站点 taotaoedu.ltd 由 119.91.234.159 上的 Nginx 直接托管，
+  # web root 就是服务器上的 git 仓库 /var/www/maxkb-course-site。
+  # 只部署到 GitHub Pages 的话，线上站点不会更新 —— 这个 job 负责把
+  # main 分支同步到服务器，让自动发布的文章 / AI 热点真正出现在线上。
+  # ================================================================
+  deploy-server:
+    name: 同步到自建服务器 (taotaoedu.ltd)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: 同步 main 分支到服务器 web root
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: 119.91.234.159
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 2222
+          command_timeout: 8m
+          script: |
+            set -e
+            cd /var/www/maxkb-course-site
+            git config --global --add safe.directory /var/www/maxkb-course-site
+            git fetch origin main
+
+            # 工作区有未提交改动时跳过 —— 避免覆盖内容机器人刚生成还没推送的数据
+            if ! git diff --quiet || ! git diff --cached --quiet; then
+              echo "⚠️  工作区有未提交改动，本次跳过同步"
+              exit 0
+            fi
+
+            # 只快进，不做硬重置 —— 本地若有未推送的提交不会被抹掉
+            git merge --ff-only origin/main
+            echo "服务器 HEAD: $(git log -1 --oneline)"
+
+            # 顺手确认后端还活着
+            if curl -fsS --max-time 5 http://127.0.0.1:3001/api/health >/dev/null; then
+              echo "✅ API 健康检查通过"
+            else
+              echo "⚠️  API 健康检查未通过（后端服务可能需要重启）"
+            fi

@@ -420,10 +420,19 @@
           return;
         }
 
-        // 2. 加载 Markdown 文件（用找到的 article.slug）
-        const mdResp = await fetch(`articles/${article.slug}.md`);
-        if (!mdResp.ok) throw new Error('Markdown 文件不存在');
-        const md = await mdResp.text();
+        // 2. 加载 Markdown 文件
+        //    历史数据两种命名都存在：<id>-<slug>.md（file 字段）和 <slug>.md（slug 直接拼）
+        //    先按 file 字段找，找不到再回退到 slug，保证老链接和新发布文章都能打开
+        const mdCandidates = [
+          article.file,
+          `${article.slug}.md`,
+        ].filter(Boolean);
+        let md = null;
+        for (const name of mdCandidates) {
+          const resp = await fetch(`articles/${name}`);
+          if (resp.ok) { md = await resp.text(); break; }
+        }
+        if (md === null) throw new Error('Markdown 文件不存在');
 
         // 3. 解析 front matter（极简解析）
         const fmMatch = md.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);

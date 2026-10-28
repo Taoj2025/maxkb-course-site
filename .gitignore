@@ -23,3 +23,7 @@ backend/dist/
 
 # 站点冗余镜像（GitHub Actions 会重新打包前端）
 site/
+
+# Python 缓存
+__pycache__/
+*.pyc

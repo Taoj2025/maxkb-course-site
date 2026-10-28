@@ -9,8 +9,10 @@ import requests
 from datetime import datetime
 from pathlib import Path
 
-CANDIDATES_DIR = Path('/root/.openclaw/workspace/projects/maxkb-course-site/fde-candidates')
-ARTICLES_DIR = Path('/root/.openclaw/workspace/projects/maxkb-course-site/site/articles')
+SITE_DIR = Path(os.environ.get("SITE_DIR", Path(__file__).resolve().parent.parent.parent))
+WORK_DIR = Path(os.environ.get("WORK_DIR", "/root/.openclaw/workspace/projects/maxkb-course-site"))
+CANDIDATES_DIR = WORK_DIR / "fde-candidates"
+ARTICLES_DIR = SITE_DIR / "articles"
 API_KEY = os.environ.get('MINIMAX_API_KEY', '')
 
 def rewrite_with_ai(title, summary, source):
@@ -84,7 +86,7 @@ def main():
         })
     
     # 输出到待审核目录
-    output = Path('/root/.openclaw/workspace/projects/maxkb-course-site/fde-pending')
+    output = WORK_DIR / "fde-pending"
     output.mkdir(parents=True, exist_ok=True)
     pending_file = output / f"pending_{datetime.now().strftime('%Y%m%d_%H%M')}.json"
     with open(pending_file, 'w', encoding='utf-8') as f:

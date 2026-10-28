@@ -10,7 +10,8 @@ import feedparser
 from datetime import datetime, timedelta
 from pathlib import Path
 
-OUT_DIR = Path('/root/.openclaw/workspace/projects/maxkb-course-site/fde-candidates')
+WORK_DIR = Path(os.environ.get("WORK_DIR", "/root/.openclaw/workspace/projects/maxkb-course-site"))
+OUT_DIR = WORK_DIR / "fde-candidates"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 KEYWORDS = [
