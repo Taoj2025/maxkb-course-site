@@ -1,0 +1,14 @@
+{
+  "name": "maxkb-course-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MaxKB FDE 教学站 · 静态前端 + Vercel 边缘代理（后端在自建服务器）",
+  "license": "MIT",
+  "scripts": {
+    "build": "bash scripts/build-vercel-site.sh",
+    "test:proxy": "node scripts/test-vercel-proxy.cjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
