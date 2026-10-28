@@ -74,6 +74,21 @@ async function main() {
 
   console.log(`📄 清单 ${items.length} 篇，开始同步…`);
 
+  // 先给现有行拍个快照：旧数据的 slug 是文件名，而清单里的 slug 是语义化的，
+  // 两边 id 也对不上，所以要靠 slug/文件名把 view_count 带过来。
+  const { rows: existing } = await pool.query(
+    `SELECT id, slug, view_count FROM articles`
+  );
+  const viewCountByKey = new Map();
+  for (const row of existing) viewCountByKey.set(row.slug, row.view_count);
+
+  // 把现有 slug 挪进临时命名空间。
+  // 清单里的 slug 和旧数据的 slug 会撞名（唯一约束），直接 upsert 会报
+  // duplicate key。先挪走，后面再把不在清单里的行整个删掉。
+  await pool.query(
+    `UPDATE articles SET slug = '__tmp__' || id::text || '__' || slug`
+  );
+
   let inserted = 0, updated = 0, missingFile = 0;
   const ids = [];
 
@@ -100,11 +115,17 @@ async function main() {
       ? new Date(`${entry.date}T00:00:00+08:00`)
       : new Date();
 
+    // 旧数据的 slug 是文件名，新清单是语义 slug —— 两边都试一遍，
+    // 把浏览量带过来，别让每次同步都把计数清零
+    const viewCount = [slug, entry.file?.replace(/\.md$/, ''), `${id}-${slug}`]
+      .filter(Boolean)
+      .reduce((n, key) => (viewCountByKey.has(key) ? viewCountByKey.get(key) : n), 0);
+
     const r = await pool.query(
       `INSERT INTO articles
          (id, slug, title, summary, category, tags, color, content_md,
-          author, source, estimated_read_time, is_published, published_at)
-       VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,TRUE,$12)
+          author, source, estimated_read_time, is_published, published_at, view_count)
+       VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,TRUE,$12,$13)
        ON CONFLICT (id) DO UPDATE SET
          slug            = EXCLUDED.slug,
          title           = EXCLUDED.title,
@@ -117,6 +138,7 @@ async function main() {
          source          = EXCLUDED.source,
          estimated_read_time = EXCLUDED.estimated_read_time,
          published_at    = EXCLUDED.published_at,
+         view_count      = GREATEST(articles.view_count, EXCLUDED.view_count),
          updated_at      = NOW()
        RETURNING (xmax = 0) AS inserted`,
       [
@@ -132,6 +154,7 @@ async function main() {
         entry.source || '',
         entry.estimated_read_time || '5 分钟',
         publishedAt,
+        viewCount,
       ]
     );
 
