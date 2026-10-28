@@ -20,6 +20,10 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
+# 相关性词表和匹配规则（和抓取阶段共用同一份）
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from relevance import count_keywords
+
 SITE_DIR = Path(os.environ.get("SITE_DIR", Path(__file__).resolve().parent.parent.parent))
 WORK_DIR = Path(os.environ.get(
     "WORK_DIR", "/root/.openclaw/workspace/projects/maxkb-course-site"))
@@ -42,16 +46,21 @@ TAG_COLORS = ['purple', 'blue', 'green', 'orange', 'red']
 # 自动生成条目的默认标签
 DEFAULT_TAGS = ['FDE', 'AI 资讯', '前端部署']
 
+# 机器摘要模式（没有 AI 质量评分）要求的相关词命中数下限
+MACHINE_MIN_HITS = 2
+
 
 def log(msg):
     print(f"[publish] {msg}", flush=True)
 
 
 def keyword_review(title, content):
-    """不依赖 AI 的相关性把关：只看关键词命中数"""
-    score = sum(1 for kw in ['FDE', '前端', 'AI', 'LLM', '工程化', '部署', '开发',
-                             'MaxKB', 'Vercel', '教学'] if kw in (title + content[:500]))
-    return score
+    """不依赖 AI 的相关性把关：算命中了几个不同的相关词。
+
+    词表和匹配规则统一放在 relevance.py，和抓取阶段用的是同一份 ——
+    以前两边各写一套，审核用的词表更窄，抓取放进来的一堆文章被全部否掉。
+    """
+    return count_keywords(title + ' ' + content[:500])
 
 
 def ai_review(article):
@@ -127,11 +136,11 @@ def ai_review(article):
 
 
 def machine_review(title, content):
-    """机器摘要模式的把关：没有 AI 质量评分，只能靠更严的相关性门槛"""
+    """机器摘要模式的把关：没有 AI 质量评分，只能靠相关性门槛"""
     score = keyword_review(title, content)
-    if score < 3:
-        return False, f"相关性不足：仅命中 {score} 个关键词（机器模式要求 ≥3）"
-    return True, f"机器摘要 · 关键词命中 {score}"
+    if score < MACHINE_MIN_HITS:
+        return False, f"相关性不足：仅命中 {score} 个相关词（机器模式要求 ≥{MACHINE_MIN_HITS}）"
+    return True, f"机器摘要 · 命中 {score} 个相关词"
 
 
 def make_slug(title: str) -> str:

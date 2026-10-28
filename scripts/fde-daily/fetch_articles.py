@@ -7,6 +7,7 @@ FDE（前端部署开发工程师）每日文章抓取脚本
 import json
 import os
 import re
+import sys
 import requests
 import feedparser
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -17,13 +18,9 @@ WORK_DIR = Path(os.environ.get("WORK_DIR", "/root/.openclaw/workspace/projects/m
 OUT_DIR = WORK_DIR / "fde-candidates"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
-KEYWORDS = [
-    'FDE', '前端部署', '前端开发工程师', 'AI前端', 'LLM前端',
-    '前端AI', '智能前端', '前端工程化', 'Vercel', 'Netlify',
-    '前端自动化', 'CI/CD前端', 'Edge', 'MCP', 'AI Agent',
-    'Cursor', 'Copilot', 'Astro', 'Hono', 'Next.js',
-    'Cloudflare', 'Workers', '工程化', '部署', '前端架构'
-]
+# 词表和匹配规则统一放在 relevance.py，审核阶段用的是同一份
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from relevance import is_relevant
 
 # RSSHub 镜像。rsshub.app 官方实例在境内经常连不上（实测 12 秒超时），
 # rssforever 这个镜像稳定，用它兜住原来那些 RSSHub 路由。
@@ -64,8 +61,8 @@ MAX_WORKERS = 6
 
 
 def matches_keywords(title: str) -> bool:
-    """检查标题是否包含关键词"""
-    return any(kw.lower() in title.lower() for kw in KEYWORDS)
+    """检查标题是否相关（词表和匹配规则见 relevance.py）"""
+    return is_relevant(title)
 
 
 def fetch_one_rss(url: str, source_name: str, max_items: int = 15):
