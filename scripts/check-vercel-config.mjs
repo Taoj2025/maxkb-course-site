@@ -15,6 +15,9 @@
  *        The `proxy.entrypoint` must be a `.js` or `.ts` file path,
  *        or a Python `module:attr`.
  *      表现同样是「部署不生效」，而且没有任何本地提示。
+ *   4) 构建指纹取不到 commit —— Vercel 构建机里没有 .git，
+ *      只写 git rev-parse 的话 build-info.json 里的 sha 永远是 unknown，
+ *      线上跑的是哪一次构建就再也分不出来了。
  *
  * 检查完还会拿前端真正调用的 /api 路径逐条过中间件的正则，
  * 确保没有漏网的路径会绕开转发层。
@@ -164,6 +167,23 @@ if (apiPaths.size === 0) {
   }
   check('前端用到的所有 /api 路径都在 matcher 内', uncovered.length === 0,
     uncovered.length ? `漏了：${uncovered.join(', ')}` : `${apiPaths.size} 条路径全覆盖`);
+}
+
+// ── 部署指纹 ──
+console.log('\n【5】部署指纹（build-info.json 里的 sha）');
+const buildSh = path.join(ROOT, 'scripts', 'build-vercel-site.sh');
+if (fs.existsSync(buildSh)) {
+  const bsrc = fs.readFileSync(buildSh, 'utf8');
+  // Vercel 的构建机里没有 .git，git rev-parse 一定失败。
+  // 只写 git rev-parse 的话指纹永远是 "unknown"，
+  // scripts/verify-vercel-deploy.sh 就没法比对线上跑的是哪次构建。
+  check('构建脚本用 VERCEL_GIT_COMMIT_SHA 取 commit',
+    /VERCEL_GIT_COMMIT_SHA/.test(bsrc),
+    /VERCEL_GIT_COMMIT_SHA/.test(bsrc) ? '有' : '没有 —— 线上指纹会永远是 unknown');
+  check('构建脚本产出 build-info.json',
+    /build-info\.json/.test(bsrc), '');
+} else {
+  note('没有 scripts/build-vercel-site.sh', '检查不到构建脚本');
 }
 
 console.log('\n═══════════════════════════════════════════════════');

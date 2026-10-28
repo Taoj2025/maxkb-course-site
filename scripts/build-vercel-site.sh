@@ -34,7 +34,13 @@ echo "✅ Vercel 静态快照已生成：$OUT"
 # 部署指纹 —— 静态文件基本不变时，从页面看不出线上是新是旧部署；
 # 这个文件带着 commit 和构建时间，部署后拉一下 /build-info.json 就知道
 # 线上跑的是哪一次构建（2026-10-29 排查多段 API 404 时被这个坑过）。
-SHA="$(git -C "$ROOT" rev-parse --short HEAD 2>/dev/null || echo unknown)"
+#
+# ⚠️ Vercel 的构建机里没有 .git 目录，`git rev-parse` 一定失败 ——
+#    只写 git rev-parse 的话指纹永远是 "unknown"，验证脚本就没法比对线上新舊。
+#    优先用 Vercel 注入的环境变量 VERCEL_GIT_COMMIT_SHA（自动部署和
+#    CLI 部署都有），本地跑才退回 git rev-parse。
+SHA="${VERCEL_GIT_COMMIT_SHA:-$(git -C "$ROOT" rev-parse --short HEAD 2>/dev/null || echo unknown)}"
+SHA="${SHA:0:7}"
 cat > "$OUT/build-info.json" <<EOF
 {
   "sha": "$SHA",

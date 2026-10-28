@@ -15,18 +15,22 @@
 ```bash
 vercel link --project maxkb-course-site-bk10 --yes   # 关联项目（写 .vercel/project.json）
 vercel --prod --yes                                  # 生产部署
+npm run deploy:alias                                 # 把别名指到这次部署（见坑四）
 ```
 
 部署后验证：
 
 ```bash
-bash scripts/verify-vercel-deploy.sh <域名>          # 多段 API 路径、POST 体、部署指纹
+npm run verify:deploy -- v.taotaoedu.ltd             # 多段 API 路径、POST 体、部署指纹
 bash scripts/verify-custom-domain.sh v.taotaoedu.ltd  # 国内服务器上跑，五组检查
 ```
 
+> ⚠️ `vercel --prod` 成功 **不等于** 线上换版本了。
+> 一定要跟着跑 `npm run deploy:alias`（坑四），再跑验证脚本。
+
 ---
 
-## 三个会静默失败的坑
+## 四个会静默失败的坑
 
 ### 坑一：`proxy.entrypoint` 的扩展名必须是 `.js` / `.ts`
 
@@ -83,6 +87,39 @@ to create deployments for this project.
 2. 在 Vercel 账号里验证 `taojianmin@jc2009.com`
    （Account Settings → Emails），这样机器人以外的作者也能部署
 
+### 坑四：别名不一定会自己跟过去（最阴的一个）
+
+Vercel 给每次 production 部署挂一个 `deployment-alias` 检查。
+**这次部署可以是 READY、构建成功、sha 都对，但这个检查卡在 `pending`** ——
+别名压根没动，线上跑的还是上一次（甚至是十天前）的部署。
+
+2026-10-29 实测：部署 `dpl_GNV8adw...` 状态 READY、构建日志里
+`proxy.js` 编译成功、静态快照也生成了，但
+`GET /v4/aliases/v.taotaoedu.ltd` 指向的还是 `dpl_5vdQfht6...`（10-28 的老部署）。
+
+线上表现（首页照常打开，从页面上完全看不出没更新）：
+
+| 请求 | 老部署 | 新部署应有的结果 |
+|---|---|---|
+| `/build-info.json` | 404 | 200 + 部署指纹 |
+| `/api/health` | 200（老部署的 `api/[...path].js`，只匹配单段） | 200（走中间件） |
+| `/api/dl-course/chapters` | **404** | 200（多段路径必须走中间件） |
+
+**所以每次部署完必须显式指一次别名，并核对它真的动了：**
+
+```bash
+npm run deploy:alias
+```
+
+脚本会：找出最新的 READY production 部署 → 把所有别名
+（`v.taotaoedu.ltd` + 两个 `*.vercel.app`）指过去 → 再逐个查回来核对指向。
+核对不过就退出码 1。
+
+别名是可逆的 —— 重新指回旧部署就是回滚。
+
+`vercel inspect` 看不出这个问题（它显示的是这次部署自己的配置，
+不是线上实际在跑的那次）。
+
 ---
 
 ## 部署指纹
@@ -92,10 +129,14 @@ to create deployments for this project.
 
 ```bash
 curl -s https://<域名>/build-info.json
-# {"sha":"862c9bc","builtAt":"2026-10-29T06:20:11Z"}
+# {"sha":"583a905","builtAt":"2026-10-29T06:15:41Z"}
 ```
 
 拉一下就知道线上跑的是哪一次构建。
+
+> ⚠️ 取 sha 要用 `VERCEL_GIT_COMMIT_SHA`，不能用 `git rev-parse` ——
+> Vercel 的构建机里没有 `.git` 目录，`git rev-parse` 一定失败，
+> 指纹会永远是 `"unknown"`（`npm run check:vercel` 现在会查这条）。
 
 ---
 

@@ -8,7 +8,9 @@
     "build": "bash scripts/build-vercel-site.sh",
     "test:proxy": "node scripts/test-vercel-proxy.cjs",
     "test:middleware": "node scripts/test-vercel-middleware.mjs",
-    "check:vercel": "node scripts/check-vercel-config.mjs"
+    "check:vercel": "node scripts/check-vercel-config.mjs",
+    "deploy:alias": "node scripts/assign-vercel-alias.mjs",
+    "verify:deploy": "bash scripts/verify-vercel-deploy.sh"
   },
   "engines": {
     "node": ">=18"
