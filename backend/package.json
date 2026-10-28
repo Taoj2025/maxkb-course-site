@@ -13,6 +13,7 @@
     "db:schema": "node scripts/run-sql.js db/schema.sql",
     "db:seed": "node scripts/run-sql.js db/seed.sql",
     "db:import-articles": "node scripts/import-articles.js",
+    "db:import-aihot": "node scripts/import-aihot.js",
     "init:admin": "node scripts/init-admin.js"
   },
   "dependencies": {

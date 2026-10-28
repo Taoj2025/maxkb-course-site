@@ -53,7 +53,10 @@ app.use(notFoundHandler);
 app.use(errorHandler);
 
 const port = process.env.PORT || 3001;
-app.listen(port, () => {
-  console.log(`🚀 MaxKB backend listening on http://localhost:${port}`);
+// 监听地址：默认 0.0.0.0（Docker 容器内必须如此，否则宿主机反代连不上）；
+// 生产环境直接跑在主机上时用 HOST=127.0.0.1 收窄到本机，只允许 Nginx 反代接入。
+const host = process.env.HOST || '0.0.0.0';
+app.listen(port, host, () => {
+  console.log(`🚀 MaxKB backend listening on http://${host}:${port}`);
   console.log(`   NODE_ENV=${process.env.NODE_ENV || 'development'}`);
 });

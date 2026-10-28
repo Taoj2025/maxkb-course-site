@@ -1,0 +1,44 @@
+# MaxKB FDE 后端 API · systemd 服务单元
+# 安装：sudo cp backend/systemd/maxkb-api.service /etc/systemd/system/
+# 启用：sudo systemctl daemon-reload && sudo systemctl enable --now maxkb-api
+#
+# 关键约束：
+#   - 应用代码在 /opt/maxkb-api/backend，**不在** nginx 的 web root 里，
+#     否则 .env / 源码会被公网直接下载。
+#   - .env 权限 600，属主 www-data，仅服务用户可读。
+#   - 服务监听 127.0.0.1:3001（由 backend/.env 的 HOST 控制），
+#     公网流量一律经 nginx :443 反代进来。
+
+[Unit]
+Description=MaxKB FDE 后端 API (Node.js + Express + PostgreSQL)
+Documentation=file:///opt/maxkb-api/backend/DEPLOY-BACKEND.md
+After=network-online.target postgresql.service
+Wants=network-online.target
+Requires=postgresql.service
+
+[Service]
+Type=simple
+User=www-data
+Group=www-data
+WorkingDirectory=/opt/maxkb-api/backend
+EnvironmentFile=/opt/maxkb-api/backend/.env
+ExecStart=/usr/bin/node /opt/maxkb-api/backend/server.js
+Restart=always
+RestartSec=5
+TimeoutStopSec=15
+
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=maxkb-api
+
+# 加固
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+
+[Install]
+WantedBy=multi-user.target

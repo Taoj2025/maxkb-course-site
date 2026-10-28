@@ -15,20 +15,20 @@
 ┌─────────────────────────────────┐
 │ taotaoedu.ltd (443)             │  ← Let's Encrypt 证书
 │ Nginx (主机进程)                 │
-│   ├─ /api/*  ──► 127.0.0.1:3001 │  ← 反代到 API 容器
-│   └─ 其他      ──► GitHub Pages  │  ← 前端静态（自动部署）
+│   ├─ /api/*  ──► 127.0.0.1:3001 │  ← 反代到 API 进程
+│   └─ 其他      ──► 本机静态文件   │  ← web root = /var/www/maxkb-course-site
 └─────────────────────────────────┘
                 │
                 ▼
 ┌─────────────────────────────────┐
-│ Docker Compose                  │
-│  ├─ maxkb-postgres  127.0.0.1:5432 │
-│  └─ maxkb-api       127.0.0.1:3001 │
+│ systemd                         │
+│  ├─ maxkb-api.service  127.0.0.1:3001 │
+│  └─ postgresql.service      127.0.0.1:5432 │
 └─────────────────────────────────┘
                 │
                 ▼
 ┌─────────────────────────────────┐
-│ PostgreSQL 16 · 9 张表           │
+│ PostgreSQL 16 · 8 张表           │
 └─────────────────────────────────┘
 ```
 
@@ -45,11 +45,64 @@ API_BASE = 'https://taotaoedu.ltd/api'   // Nginx 反代后的同源路径
 
 | 方式 | 难度 | 推荐度 | 适用场景 |
 |---|---|---|---|
-| **A. Docker Compose + Nginx 反代** | ⭐ | ⭐⭐⭐⭐⭐ | **推荐** · 一次配置，跨机器复现 |
-| **B. PM2** | ⭐⭐ | ⭐⭐⭐⭐ | 单机部署，简单直接 |
-| **C. systemd** | ⭐⭐⭐ | ⭐⭐⭐ | 系统级服务，自启动 |
+| **A. systemd + Nginx 反代** | ⭐⭐ | ⭐⭐⭐⭐⭐ | **当前生产在用** · 见下方「当前生产部署」 |
+| **B. Docker Compose + Nginx 反代** | ⭐ | ⭐⭐⭐⭐ | 跨机器复现 / 需要容器隔离 |
+| **C. PM2** | ⭐⭐ | ⭐⭐⭐ | 单机部署，简单直接 |
 
 下面以**方式 A**为主线，含 Nginx 反代 + Let's Encrypt + 防火墙完整步骤。
+
+---
+
+## ✅ 当前生产部署（2026-10-29 实测落地）
+
+> 服务器：`119.91.234.159`（Ubuntu 24.04）· 域名 `taotaoedu.ltd` · 端口 `2222`
+
+### 目录布局（关键）
+
+```
+/var/www/maxkb-course-site/     ← nginx web root，只放前端文件（git clone）
+/opt/maxkb-api/backend/         ← 后端应用代码 + .env + node_modules
+/var/www/maxkb-course-site/backend/.env  ← ❌ 不存在
+```
+
+**后端代码必须放在 web root 之外。** 放在里面的话 `.env` 和源码会被公网直接下载
+（`https://taotaoedu.ltd/backend/.env` → 200，PG 密码和 JWT 密钥直接泄露）。
+
+### 服务组成
+
+| 组件 | 运行方式 | 说明 |
+|---|---|---|
+| PostgreSQL 16 | systemd（宿主机原生） | 数据库 `postgres`，库内 8 张表 |
+| Node API | systemd · `maxkb-api.service` | 监听 `127.0.0.1:3001`，用户 `www-data` |
+| Nginx | systemd | `443` 反代 `/api/` → `127.0.0.1:3001`，同时托管前端静态站 |
+| 证书 | certbot（venv `/opt/certbot`） | webroot 续期，timer 每 12 小时检查 |
+
+### 常用运维命令
+
+```bash
+# 服务状态 / 日志
+systemctl status maxkb-api
+journalctl -u maxkb-api -f
+
+# 手动部署（等价于 GitHub Actions 里跑的）
+cd /var/www/maxkb-course-site && bash backend/scripts/prod-deploy.sh
+
+# 健康检查
+curl -s http://127.0.0.1:3001/api/health
+curl -s https://taotaoedu.ltd/api/health
+
+# 重置管理员密码（会覆盖现有密码，慎用）
+cd /opt/maxkb-api/backend && npm run init:admin
+```
+
+### 证书续期
+
+系统 apt 版 certbot 与系统 python 的 pyOpenSSL 冲突（`AttributeError: X509Req`），
+所以装在独立 venv 里，定时器用 drop-in 指向它：
+
+```bash
+/opt/certbot/bin/certbot renew --dry-run   # 验证续期链路
+```
 
 ---
 

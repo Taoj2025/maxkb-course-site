@@ -1,14 +1,22 @@
-# 后端部署 · SSH 到独立服务器拉取最新代码
-# 服务器 IP 硬编码（DNS 解析失败的临时方案）：
-#   host: 119.91.234.159（用户确认）
+# 后端部署 · SSH 到独立服务器拉取最新代码并重启服务
+# 服务器：119.91.234.159（DNS 解析到该 IP 的独立服务器，非 GitHub Pages）
+# 端口：2222
+#
 # ⚠️ 必须在 GitHub Settings > Secrets 配置：
-#   SSH_USER           SSH 用户名（如 deploy / ubuntu / root）
+#   SSH_USER           SSH 用户名（如 root / deploy / ubuntu）
 #   SSH_PRIVATE_KEY    SSH 私钥（id_rsa 内容，保密！）
-# 端口：2222（用户最终选择）
+#
 # 服务器上 ~/.ssh/authorized_keys 权限 600，~/.ssh 权限 700（2026-09-12 修复）
 # PermitRootLogin 已改为 prohibit-password（2026-09-12 修复）
+#
+# 部署链路（实际生效的部分在 backend/scripts/prod-deploy.sh 里）：
+#   git pull → rsync backend/ → /opt/maxkb-api/backend → npm ci → 数据库迁移
+#   → systemctl restart maxkb-api → 健康检查
+#
+# 注意：应用代码部署在 /opt/maxkb-api（nginx web root 之外），
+#      避免 backend/.env 与源码被公网直接下载。
 
-name: Deploy to Server
+name: Deploy Backend to Server
 
 on:
   push:
@@ -18,6 +26,10 @@ on:
       - 'backend/**'
       - '.github/workflows/deploy-backend.yml'
   workflow_dispatch:
+
+concurrency:
+  group: deploy-backend
+  cancel-in-progress: false
 
 jobs:
   deploy:
@@ -30,7 +42,6 @@ jobs:
           echo "SSH_USER: ${{ secrets.SSH_USER }}"
           KEY="${{ secrets.SSH_PRIVATE_KEY }}"
           echo "SSH_PRIVATE_KEY 字节长度: ${#KEY}"
-          echo "SSH_PRIVATE_KEY 行数: $(printf '%s\n' "$KEY" | wc -l)"
           TMPKEY=$(mktemp)
           chmod 600 "$TMPKEY"
           printf '%s\n' "$KEY" > "$TMPKEY"
@@ -48,6 +59,7 @@ jobs:
           rm -f "$TMPKEY"
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+
       - name: 验证 SSH 连通性
         uses: appleboy/ssh-action@v1.0.3
         with:
@@ -59,9 +71,10 @@ jobs:
           script: |
             echo "===== SSH 连接成功 $(date) ====="
             echo "用户: $(whoami)"
-            echo "路径: $(pwd)"
-            echo "磁盘: $(df -h /var/www 2>&1 | tail -2 || echo 'N/A')"
-      - name: Deploy via SSH
+            echo "磁盘: $(df -h / | tail -1)"
+            echo "服务: $(systemctl is-active maxkb-api 2>/dev/null || echo '未安装')"
+
+      - name: 部署（同步代码 · 装依赖 · 迁移 · 重启 · 健康检查）
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: 119.91.234.159
@@ -73,13 +86,6 @@ jobs:
             set -e
             echo "===== 部署开始 $(date) ====="
             cd /var/www/maxkb-course-site
-            # 解决目录拥有者是 www-data，root 写入会触发 'dubious ownership'
             git config --global --add safe.directory /var/www/maxkb-course-site
-            # 修正目录拥有者为 root（之前是 www-data，root 写入会留下 root-owned 文件）
-            # 如果后续 nginx/php-fpm 需要 www-data 读权限，保留读权限即可（其他默认 755/644）
-            chown -R root:root /var/www/maxkb-course-site/.git
-            echo "===== 拉取最新代码 ====="
-            git pull origin main
-            echo "===== 当前 HEAD ====="
-            git log -1 --oneline
+            bash backend/scripts/prod-deploy.sh
             echo "===== 部署完成 $(date) ====="
