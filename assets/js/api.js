@@ -24,8 +24,50 @@ class ApiError extends Error {
   }
 }
 
+// ── API 基址自适应 ──
+//
+// 同源优先，探不通再退回源站绝对地址：
+//   Nginx 部署  → 同源 /api 有反代，能探通 → 用同源（不触发 CORS）
+//   Vercel 部署 → 同源 /api 有函数转发，能探通 → 用同源
+//   GitHub Pages → 同源没有 /api，探不通 → 退回绝对地址跨域直连源站
+//
+// 探路请求只发一次（GET /api/health），结果缓存在内存里。
+// 不用在 POST 上做「失败重试」—— 那会导致注册/提交被发两遍。
+let apiBaseResolved = null;
+let apiBasePromise = null;
+
+async function resolveApiBase() {
+  if (apiBaseResolved !== null) return apiBaseResolved;
+  if (apiBasePromise) return apiBasePromise;
+
+  const cfg = window.MAXKB_CONFIG || {};
+  const primary = cfg.API_BASE || '';
+  const fallback = cfg.API_BASE_FALLBACK || '';
+
+  // 没配兜底地址就不用探了
+  if (!fallback || fallback === primary) {
+    apiBaseResolved = primary;
+    return primary;
+  }
+
+  apiBasePromise = (async () => {
+    try {
+      const res = await fetch(primary + '/api/health', { method: 'GET', cache: 'no-store' });
+      if (res.ok) {
+        apiBaseResolved = primary;
+        return primary;
+      }
+    } catch (e) {
+      // 网络错误 → 换兜底
+    }
+    apiBaseResolved = fallback;
+    return fallback;
+  })();
+  return apiBasePromise;
+}
+
 async function apiFetch(path, opts = {}) {
-  const base = (window.MAXKB_CONFIG && window.MAXKB_CONFIG.API_BASE) || '';
+  const base = await resolveApiBase();
   const url = base + path;
   const headers = {
     'Content-Type': 'application/json',
@@ -94,7 +136,9 @@ const api = {
 
   // ============ 下载 ============
   downloadUrl: (slug) => {
-    const base = (window.MAXKB_CONFIG && window.MAXKB_CONFIG.API_BASE) || '';
+    const cfg = window.MAXKB_CONFIG || {};
+    // 还没探明就先给同源地址（探路在页面加载时就跑，通常已经探好了）
+    const base = apiBaseResolved !== null ? apiBaseResolved : (cfg.API_BASE || '');
     return base + '/api/download/' + encodeURIComponent(slug);
   },
 
@@ -105,7 +149,7 @@ const api = {
     const token = getToken();
     if (!token) return { ok: false, reason: 'not_logged_in' };
 
-    const base = (window.MAXKB_CONFIG && window.MAXKB_CONFIG.API_BASE) || '';
+    const base = await resolveApiBase();
     try {
       const res = await fetch(base + '/api/download/' + encodeURIComponent(slug), {
         headers: { Authorization: 'Bearer ' + token },
@@ -155,3 +199,6 @@ window.api = api;
 window.MAXKB_API = api;
 window.MAXKB_API_TOKEN = { get: getToken, set: setToken, clear: clearToken };
 window.MAXKB_API_USER  = { get: getCachedUser, set: setCachedUser };
+
+// 页面加载就把 API 基址探明，等首个真实请求时就不用再等了
+resolveApiBase().catch(() => {});

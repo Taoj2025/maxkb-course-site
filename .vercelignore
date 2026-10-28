@@ -1,0 +1,16 @@
+# Vercel 部署不需要的东西。
+# 注意：scripts/ 不能忽略 —— buildCommand 要用 scripts/build-vercel-site.sh。
+# api/ 也不能忽略 —— 那是边缘代理函数。
+
+.git/
+.github/
+backend/
+_site/
+site/
+node_modules/
+*.log
+
+# 这三个走 vercel.json 的 rewrites 实时转发源站，放进部署包纯属浪费
+articles/
+data/
+downloads/
