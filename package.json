@@ -10,7 +10,7 @@
     "test:middleware": "node scripts/test-vercel-middleware.mjs",
     "check:vercel": "node scripts/check-vercel-config.mjs",
     "deploy:alias": "node scripts/assign-vercel-alias.mjs",
-    "verify:deploy": "bash scripts/verify-vercel-deploy.sh"
+    "verify:deploy": "python scripts/verify-vercel-deploy.py"
   },
   "engines": {
     "node": ">=18"
