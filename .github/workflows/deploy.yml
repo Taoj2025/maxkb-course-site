@@ -100,6 +100,12 @@ jobs:
           command_timeout: 8m
           script: |
             set -e
+            # 与内容机器人（scripts/publish-site.sh）共用同一把锁：
+            # 机器人每小时推送一次，可能正好和 CI 同步撞上，
+            # 两个 git 进程同时操作同一个工作区会互相抢 index.lock
+            exec 9>/tmp/maxkb-publish.lock
+            flock -w 180 9 || { echo "❌  等待发布锁超时，本次跳过同步"; exit 0; }
+
             cd /var/www/maxkb-course-site
             git config --global --add safe.directory /var/www/maxkb-course-site
             git fetch origin main
