@@ -746,7 +746,7 @@
       <div style="font-size:40px; margin-bottom:12px;">🎓</div>
       <h3 style="color:#1E1B4B; margin-bottom:8px; font-size:18px;">完整课件 PPT</h3>
       <p style="color:#6B7280; font-size:13px; line-height:1.6; margin-bottom:16px;">18 页 · 紫色 AI 科技风 · 9 章节全景 · 7 大实验分布</p>
-      <a href="../output/SKC5053_教学课件_小陶老师.pptx" download style="display:inline-block; background:#5B2EBF; color:white; padding:8px 16px; border-radius:6px; text-decoration:none; font-size:13px; font-weight:600;">下载 PPT</a>
+      <a id="skc-ppt-link" href="/api/dl-course/ppt" target="_blank" style="display:inline-block; background:#5B2EBF; color:white; padding:8px 16px; border-radius:6px; text-decoration:none; font-size:13px; font-weight:600;">查看课件信息</a>
     </div>
     <div style="background:white; border:2px solid #A78BFA; border-radius:16px; padding:24px; transition:all 0.3s;">
       <div style="font-size:40px; margin-bottom:12px;">💻</div>
@@ -2169,4 +2169,30 @@ mo --input_model yolov8s.onnx --data_type FP16
 </footer>
 
 </body>
+<script>
+// 课件下载：素材不一定已经传到服务器上，先问后端一句再决定按钮怎么显示，
+// 免得用户点下去只看到一个 404。
+(function () {
+  var btn = document.getElementById('skc-ppt-link');
+  if (!btn) return;
+  fetch('/api/dl-course/ppt')
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (d) {
+      if (!d) return;
+      if (d.available) {
+        btn.textContent = '下载 PPT';
+        btn.href = d.downloadUrl;
+        btn.removeAttribute('target');
+        btn.setAttribute('download', '');
+        btn.title = d.title || '';
+      } else {
+        btn.textContent = '课件信息';
+        btn.title = '课件文件尚未上传，可先查看课程信息';
+        btn.style.background = '#9CA3AF';
+      }
+    })
+    .catch(function () { /* 接口不通就保持原样，不影响页面 */ });
+})();
+</script>
+
 </html>

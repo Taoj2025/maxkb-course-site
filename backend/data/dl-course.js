@@ -1,13 +1,16 @@
 /**
- * GET /api/dl-course
+ * SKC5053 深度学习课程数据（后端数据源）
  *
+ * 由 /api/dl-course 及其子路由返回，见 backend/routes/dl-course.js。
+ *
+ * 原始文件：
  * 返回 SKC5053 深度学习课程完整数据：
  * - 9 章课程
  * - 7 大实验
  * - 3 集抖音短视频链接
  * - 18 页 PPT 链接
  *
- * 部署位置：Vercel Serverless Function
+ * 部署位置：backend/data/dl-course.js（Express 路由引用）
  * 数据源：硬编码（教学场景 · 静态数据）
  * 
  * 安全设计：
@@ -17,7 +20,7 @@
  */
 
 // 课程数据
-const COURSE_DATA = {
+export const COURSE_DATA = {
     meta: {
         courseCode: 'SKC5053',
         courseName: '深度学习专业课',
@@ -257,23 +260,4 @@ const COURSE_DATA = {
         reportFormat: 'md 格式实验报告',
         selfCheck: '[PASS] 阻断式自检',
     },
-};
-
-// Serverless Function
-module.exports = async (req, res) => {
-    // CORS 配置
-    res.setHeader('Access-Control-Allow-Origin', 'https://taoj2025.github.io');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
-    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-    res.setHeader('Cache-Control', 'public, max-age=3600'); // 缓存 1 小时
-
-    if (req.method === 'OPTIONS') {
-        return res.status(200).end();
-    }
-
-    if (req.method !== 'GET') {
-        return res.status(405).json({ error: 'Method not allowed' });
-    }
-
-    return res.status(200).json(COURSE_DATA);
 };

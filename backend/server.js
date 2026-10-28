@@ -15,6 +15,7 @@ import contactRouter   from './routes/contact.js';
 import aihotRouter     from './routes/aihot.js';
 import resourcesRouter from './routes/resources.js';
 import downloadRouter  from './routes/download.js';
+import dlCourseRouter from './routes/dl-course.js';
 import adminRouter     from './routes/admin.js';
 
 const app = express();
@@ -47,6 +48,7 @@ app.use('/api/contact',   contactRouter);
 app.use('/api/aihot',     aihotRouter);
 app.use('/api/resources', resourcesRouter);
 app.use('/api/download',  downloadRouter);
+app.use('/api/dl-course', dlCourseRouter);
 app.use('/api/admin',     adminRouter);
 
 app.use(notFoundHandler);
