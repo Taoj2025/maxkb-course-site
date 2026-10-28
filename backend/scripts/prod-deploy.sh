@@ -38,6 +38,12 @@ log "开始部署 $(date '+%Y-%m-%d %H:%M:%S')"
 # ============ 1. 拉取最新代码 ============
 cd "$REPO_DIR"
 git config --global --add safe.directory "$REPO_DIR" 2>/dev/null || true
+
+# 和内容机器人、CI 同步脚本共用同一把锁：
+# 三者都会在 /var/www/maxkb-course-site 里跑 git，同时操作会互相抢 index.lock
+exec 9>/tmp/maxkb-publish.lock
+flock -w 180 9 || { log "❌ 等待仓库锁超时，中止部署"; exit 1; }
+
 log "拉取最新代码…"
 git pull --ff-only origin main
 log "当前 HEAD: $(git log -1 --oneline)"
