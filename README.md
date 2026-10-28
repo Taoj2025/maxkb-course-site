@@ -16,8 +16,8 @@
 | 渠道 | URL |
 |------|-----|
 | **正式域名** | https://taotaoedu.ltd/ |
-| **GitHub Pages** | https://taoj2025.github.io/maxkb-course-site/ |
-| **API（Vercel）** | https://maxkb-course-site.vercel.app/api/ |
+| **备用线路（Vercel）** | https://v.taotaoedu.ltd/ |
+| **GitHub Pages（旧跳板）** | https://taoj2025.github.io/maxkb-course-site/ （会 301 到正式域名） |
 | **GitHub 仓库** | https://github.com/Taoj2025/maxkb-course-site |
 
 ---

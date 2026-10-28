@@ -1,5 +1,12 @@
 # 真实域名接入完整指南（15-30 分钟）
 
+> [!WARNING]
+> **这份文档已经过时了**（写于 2026-07-23，当时还没定下最终域名）。
+> 实际用的域名是 **taotaoedu.ltd**，托管在国内服务器 `119.91.234.159` 的 nginx 上，
+> 不是 GitHub Pages，也没有用文里说的 `maxkb.xiaotao.cn`。
+> 现在的 DNS 记录和操作步骤看 **[DNS-CONFIG.md](DNS-CONFIG.md)**。
+> 下面这份保留作历史参考，别照着配。
+
 > **作者**：小 Q 为小陶老师定制 · 2026-07-23 22:35
 > **目的**：从 `taoj2025.github.io/maxkb-course-site/` 升级到 `maxkb.xiaotao.cn` 真实域名
 

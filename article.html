@@ -8,10 +8,19 @@
   <!-- SEO -->
   <meta name="description" content="MaxKB FDE 教学文章 · 基于开源 MaxKB（1Panel-dev）的企业级智能体平台教学">
 
-  <!-- Open Graph -->
+  <!-- Open Graph / 微信分享卡 -->
   <meta property="og:title" content="MaxKB FDE 教学文章">
+  <meta property="og:description" content="MaxKB FDE 教学文章 · 基于开源 MaxKB（1Panel-dev）的企业级智能体平台教学">
+  <meta property="og:image" content="https://taotaoedu.ltd/assets/images/og-cover.png">
+  <meta property="og:url" content="https://taotaoedu.ltd/article.html">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://taoj2025.github.io/maxkb-course-site/article.html">
+  <meta property="og:site_name" content="MaxKB FDE 教学">
+
+  <!-- Twitter / X 卡片 -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MaxKB FDE 教学文章">
+  <meta name="twitter:description" content="MaxKB FDE 教学文章 · 基于开源 MaxKB（1Panel-dev）的企业级智能体平台教学">
+  <meta name="twitter:image" content="https://taotaoedu.ltd/assets/images/og-cover.png">
 
   <!-- Markdown 渲染器：marked.js -->
   <script src="assets/js/vendor/marked.min.js"></script>
@@ -20,9 +29,6 @@
   <link href="assets/js/vendor/prism-core.min.css" rel="stylesheet">
   <script src="assets/js/vendor/prism-core.min.js" defer></script>
   <script src="assets/js/vendor/prism-autoloader.min.js" defer></script>
-  
-  
-  
 
   <link rel="stylesheet" href="assets/css/style.css">
 
@@ -483,6 +489,27 @@
 
         // 6. 更新页面标题
         document.title = `${article.title} | MaxKB FDE 教学`;
+
+        // 6.5 规范链接 / 分享链接跟着文章走
+        //     20 篇文章共用这一个 HTML 文件，静态 canonical 会把它们全折叠成同一页，
+        //     所以 canonical 和 og:url 在这里按 slug 动态写。
+        //     顺带把 ?id=xxx 也统一成 ?slug=xxx（同一篇文章的两种 URL 只留一个）。
+        const slugKey = article.slug || String(article.file || '').replace(/\.md$/, '');
+        const canonicalUrl = 'https://taotaoedu.ltd/article.html?slug=' + encodeURIComponent(slugKey);
+        let canonical = document.querySelector('link[rel="canonical"]');
+        if (!canonical) {
+          canonical = document.createElement('link');
+          canonical.rel = 'canonical';
+          document.head.appendChild(canonical);
+        }
+        canonical.href = canonicalUrl;
+        const setOg = (prop, value) => {
+          const el = document.querySelector(`meta[property="${prop}"]`);
+          if (el) el.setAttribute('content', value);
+        };
+        setOg('og:url', canonicalUrl);
+        setOg('og:title', article.title);
+        setOg('og:description', article.summary || `${article.title} · MaxKB FDE 教学`);
 
         // 7. 触发代码高亮
         if (window.Prism) {

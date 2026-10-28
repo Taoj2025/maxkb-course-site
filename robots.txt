@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /admin.html
 Disallow: /downloads/
-Sitemap: https://taoj2025.github.io/maxkb-course-site/sitemap.xml
+Sitemap: https://taotaoedu.ltd/sitemap.xml

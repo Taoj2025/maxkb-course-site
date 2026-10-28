@@ -46,7 +46,7 @@ jobs:
             **域名**：maxkb-edu.com / taotaoedu.ltd
 
             ### 📊 部署状态
-            - ✅ GitHub Pages: https://taoj2025.github.io/maxkb-course-site/
+            - ✅ 正式站点: https://taotaoedu.ltd/（GitHub Pages 只是跳板，会 301 过去）
             - ✅ 自定义域名: https://taotaoedu.ltd/
             - ✅ 远程服务器: 已推送
 

@@ -35,4 +35,4 @@ summary: "基于开源 MaxKB（1Panel-dev）的企业级智能体平台教学，
 - 配套源码与部署脚本
 - 5 大场景 Prompt 与工作流模板
 
-👉 [访问课程网站获取完整资料](https://taoj2025.github.io/maxkb-course-site/)
+👉 [访问课程网站获取完整资料](https://taotaoedu.ltd/)

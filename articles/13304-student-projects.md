@@ -41,4 +41,4 @@ summary: "标准 / 旗舰会员差异 · 课程目录 · 配套源码与课件"
 
 所有课程资料基于 GPL v3 协议开源，可商用、可二次分发。
 
-👉 [查看完整会员套餐](https://taoj2025.github.io/maxkb-course-site/membership.html)
+👉 [查看完整会员套餐](https://taotaoedu.ltd/membership.html)

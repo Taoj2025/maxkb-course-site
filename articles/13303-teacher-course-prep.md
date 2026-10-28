@@ -61,4 +61,4 @@ summary: "教师专属场景 · 5 步备课法 · 学科知识库构建 · 学�
 
 欢迎高校教师联系咨询「学科知识库」搭建方案：
 
-👉 [联系企业服务](https://taoj2025.github.io/maxkb-course-site/enterprise.html)
+👉 [联系企业服务](https://taotaoedu.ltd/enterprise.html)

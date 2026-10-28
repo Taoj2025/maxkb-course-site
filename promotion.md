@@ -1,7 +1,7 @@
 # MaxKB FDE 教学网站 · 推广文案合集
 
 > **作者**：小 Q 为小陶老师定制 · 2026-07-23 22:05
-> **网站地址**：https://taoj2025.github.io/maxkb-course-site/
+> **网站地址**：https://taotaoedu.ltd/
 
 ---
 
@@ -13,7 +13,7 @@
 60 页 PPT + 9 章节讲义 + 完整源码 + 5 大企业场景实战 + 深度学习原理
 （开源企业级智能体平台 · 1Panel-dev/MaxKB）
 
-👉 https://taoj2025.github.io/maxkb-course-site/
+👉 https://taotaoedu.ltd/
 
 免费看大纲，¥99/年解锁全部资源
 （学生/教师/企业工程师都能用）
@@ -33,7 +33,7 @@
 5 大企业真实场景（高校客服/教师备课/文献精读/企业知识库/医院导诊）
 
 免费体验，¥99/年全解锁
-👉 https://taoj2025.github.io/maxkb-course-site/
+👉 https://taotaoedu.ltd/
 ```
 
 ---
@@ -92,7 +92,7 @@ MaxKB 是 1Panel-dev 开源的企业级智能体平台，GitHub 上 Star 已超 
 标准会员：¥99/年，解锁全部资源
 旗舰会员：¥299/年，含 1V1 答疑 + 项目实战辅导
 
-👉 立即访问：https://taoj2025.github.io/maxkb-course-site/
+👉 立即访问：https://taotaoedu.ltd/
 
 ---
 
@@ -104,7 +104,7 @@ MaxKB 是 1Panel-dev 开源的企业级智能体平台，GitHub 上 Star 已超 
 价格：¥99/年起
 立即访问：扫描下方二维码 / 点击链接
 
-二维码位置：https://taoj2025.github.io/maxkb-course-site/
+二维码位置：https://taotaoedu.ltd/
 
 ---
 

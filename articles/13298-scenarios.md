@@ -40,4 +40,4 @@ summary: "高校客服 / 教师备课 / 文献精读 / 企业知识库 / 政务�
 
 **课程提供**：合规清单 · 私有部署脚本 · 数据本地化配置。
 
-🎁 [立即查看课程套餐](https://taoj2025.github.io/maxkb-course-site/membership.html)
+🎁 [立即查看课程套餐](https://taotaoedu.ltd/membership.html)

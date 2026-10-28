@@ -77,4 +77,4 @@ print(result)
 - **错误处理**：每个步骤都要 try/except
 - **可观测性**：每个 Agent 都有日志和监控
 
-👉 [获取完整工作流设计手册](https://taoj2025.github.io/maxkb-course-site/)
+👉 [获取完整工作流设计手册](https://taotaoedu.ltd/)

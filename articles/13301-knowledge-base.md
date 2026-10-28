@@ -51,4 +51,4 @@ MaxKB 支持 3 种检索方式：
 - Top-5 准确率 > 70% 为优秀
 - 响应时延 < 3 秒为可接受
 
-👉 [获取完整企业知识库实战手册](https://taoj2025.github.io/maxkb-course-site/)
+👉 [获取完整企业知识库实战手册](https://taotaoedu.ltd/)

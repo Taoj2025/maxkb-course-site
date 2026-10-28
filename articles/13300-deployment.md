@@ -47,4 +47,4 @@ A：检查 DB_PASSWORD 是否与 PostgreSQL 一致
 **Q：忘记 admin 密码？**
 A：`docker exec -it maxkb bash` 进入容器，运行 `python manage.py changepassword admin`
 
-👉 [完整部署文档（含 K8s / 1Panel）](https://taoj2025.github.io/maxkb-course-site/)
+👉 [完整部署文档（含 K8s / 1Panel）](https://taotaoedu.ltd/)

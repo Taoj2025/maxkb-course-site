@@ -1,81 +1,185 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://taoj2025.github.io/maxkb-course-site/</loc>
+    <loc>https://taotaoedu.ltd/</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://taoj2025.github.io/maxkb-course-site/latest.html</loc>
+    <loc>https://taotaoedu.ltd/latest.html</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://taoj2025.github.io/maxkb-course-site/membership.html</loc>
+    <loc>https://taotaoedu.ltd/membership.html</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://taoj2025.github.io/maxkb-course-site/cases.html</loc>
+    <loc>https://taotaoedu.ltd/cases.html</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://taoj2025.github.io/maxkb-course-site/enterprise.html</loc>
+    <loc>https://taotaoedu.ltd/enterprise.html</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://taoj2025.github.io/maxkb-course-site/fde-jobs.html</loc>
+    <loc>https://taotaoedu.ltd/fde-jobs.html</loc>
     <lastmod>2026-07-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://taoj2025.github.io/maxkb-course-site/fde-skills.html</loc>
+    <loc>https://taotaoedu.ltd/fde-skills.html</loc>
     <lastmod>2026-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://taoj2025.github.io/maxkb-course-site/about.html</loc>
+    <loc>https://taotaoedu.ltd/about.html</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://taoj2025.github.io/maxkb-course-site/trial.html</loc>
+    <loc>https://taotaoedu.ltd/trial.html</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://taoj2025.github.io/maxkb-course-site/article.html</loc>
-    <lastmod>2026-07-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://taoj2025.github.io/maxkb-course-site/faq.html</loc>
+    <loc>https://taotaoedu.ltd/faq.html</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://taoj2025.github.io/maxkb-course-site/user.html</loc>
+    <loc>https://taotaoedu.ltd/user.html</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://taoj2025.github.io/maxkb-course-site/admin.html</loc>
+    <loc>https://taotaoedu.ltd/admin.html</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
-</urlset>
+  <url>
+    <loc>https://taotaoedu.ltd/dl-course.html</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>  <url>
+    <loc>https://taotaoedu.ltd/syllabus.html</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>  <url>
+    <loc>https://taotaoedu.ltd/article.html?slug=13316-github-universe-2026-evolving-every-laye</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>  <url>
+    <loc>https://taotaoedu.ltd/article.html?slug=13315-mac-siri-ai</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>  <url>
+    <loc>https://taotaoedu.ltd/article.html?slug=13314-post-4eccf954</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>  <url>
+    <loc>https://taotaoedu.ltd/article.html?slug=13313-artificial-analysis-intelligence-index-v</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>  <url>
+    <loc>https://taotaoedu.ltd/article.html?slug=13312-post-3f110ee3</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>  <url>
+    <loc>https://taotaoedu.ltd/article.html?slug=deep-learning-fundamentals</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>  <url>
+    <loc>https://taotaoedu.ltd/article.html?slug=vercel-edge-functions-fde</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>  <url>
+    <loc>https://taotaoedu.ltd/article.html?slug=13309-fde-job-market-2026</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>  <url>
+    <loc>https://taotaoedu.ltd/article.html?slug=13308-edge-runtime-ssr-comparison</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>  <url>
+    <loc>https://taotaoedu.ltd/article.html?slug=13307-mcp-protocol-frontend</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>  <url>
+    <loc>https://taotaoedu.ltd/article.html?slug=13306-vercel-edge-2026</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>  <url>
+    <loc>https://taotaoedu.ltd/article.html?slug=13305-ai-frontend-agent</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>  <url>
+    <loc>https://taotaoedu.ltd/article.html?slug=13304-student-projects</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>  <url>
+    <loc>https://taotaoedu.ltd/article.html?slug=13303-teacher-course-prep</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>  <url>
+    <loc>https://taotaoedu.ltd/article.html?slug=13302-agent-workflow</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>  <url>
+    <loc>https://taotaoedu.ltd/article.html?slug=13301-knowledge-base</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>  <url>
+    <loc>https://taotaoedu.ltd/article.html?slug=13300-deployment</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>  <url>
+    <loc>https://taotaoedu.ltd/article.html?slug=13299-faq</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>  <url>
+    <loc>https://taotaoedu.ltd/article.html?slug=13298-scenarios</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>  <url>
+    <loc>https://taotaoedu.ltd/article.html?slug=13297-course-intro</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url></urlset>
