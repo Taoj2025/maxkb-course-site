@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-10-29T06:05:02.067572+08:00",
-  "total": 22,
+  "updated_at": "2026-10-29T07:05:01.648873+08:00",
+  "total": 21,
   "items": [
     {
       "title": "Alphabet Q3 财报：年化收入达 5000 亿美元，Google Cloud 增长 103%",
@@ -170,14 +170,6 @@
       "pub_date": "2026-10-26",
       "author": "noreply@aihot.news (Anthropic：Research)",
       "category": "论文"
-    },
-    {
-      "title": "Unsloth 发布 MiniMax-M3.1-Flash 量化 GGUF，2-bit 版可在 150GB 内存本地运行",
-      "link": "https://aihot.news/items/pkw262qrrom8w7qv6lq7nquxh",
-      "summary": "Unsloth 发布 MiniMax-M3.1-Flash 的量化 GGUF，2-bit 版在缩小 45% 体积的同时保留 91.5% top 1 精度，可在 150GB 内存上本地运行，1-bit 版约 89.9%，4-bit UD-Q4_K_XL 达 98.0%。作者称其为同尺寸最强开源模型之一，并给出 Hugging Face 权重链接与本地运行指南。 🔗 阅读原文 via AIHOT · https://aihot.news/items/pkw262qrrom8w7qv6lq7nquxh",
-      "pub_date": "2026-10-26",
-      "author": "noreply@aihot.news (Unsloth)",
-      "category": "AI 产品"
     }
   ]
 }
