@@ -28,6 +28,7 @@ ARTICLES_JSON = SITE_DIR / "articles.json"
 PUBLISH_SCRIPT = SITE_DIR / "scripts" / "publish-site.sh"
 
 API_KEY = os.environ.get('MINIMAX_API_KEY', '')
+API_BASE = os.environ.get('MINIMAX_API_BASE', 'https://api.minimaxi.com')
 
 BAD_KEYWORDS = ['博彩', '赌博', '色情', '广告', '营销', '标题党']
 
@@ -58,10 +59,15 @@ def ai_review(article):
     if len(content) < 200:
         return False, f"内容过短：{len(content)} 字符"
 
-    # 2. AI 质量评分（仅当 API 可用）
-    if API_KEY:
-        try:
-            prompt = f"""请评分（0-5）以下 FDE 文章质量：
+    # 2. AI 质量评分
+    #
+    # 必须「失败关闭」：AI 调不通时直接拒稿，不能降级成关键词规则。
+    # 降级放行的后果很严重 —— 重写环节失败时产出的占位文本
+    # 照样能命中几个关键词，然后被当成正常文章发到线上。
+    if not API_KEY:
+        return False, "未配置 MINIMAX_API_KEY，无法审核（本轮不发布）"
+    try:
+        prompt = f"""请评分（0-5）以下 FDE 文章质量：
 标题：{title}
 内容前 300 字：{content[:300]}
 
@@ -73,24 +79,30 @@ def ai_review(article):
 - 1 = 低质或内容过少
 
 仅回复一个数字（0-5）。"""
-            import requests
-            resp = requests.post(
-                'https://api.minimax.chat/v1/text/chatcompletion_v2',
-                headers={'Authorization': f'Bearer {API_KEY}'},
-                json={'model': 'MiniMax-Text-01',
-                      'messages': [{'role': 'user', 'content': prompt}],
-                      'temperature': 0.3},
-                timeout=15
-            )
-            score_text = resp.json()['choices'][0]['message']['content'].strip()
-            score = float(re.search(r'\d+\.?\d*', score_text).group())
-            if score < 3.0:
-                return False, f"AI 评分过低：{score}"
-            return True, f"AI 评分：{score}"
-        except Exception:
-            pass  # AI 失败时降级为基础规则
+        import requests
+        resp = requests.post(
+            f'{API_BASE}/v1/text/chatcompletion_v2',
+            headers={'Authorization': f'Bearer {API_KEY}'},
+            json={'model': 'MiniMax-Text-01',
+                  'messages': [{'role': 'user', 'content': prompt}],
+                  'temperature': 0.3},
+            timeout=15
+        )
+        data = resp.json()
+        # MiniMax 的业务错误不走 HTTP 状态码：HTTP 200 + base_resp.status_code != 0
+        base = data.get('base_resp') or {}
+        code = base.get('status_code')
+        if code not in (0, None):
+            raise RuntimeError(base.get('status_msg') or f'API 返回 status_code={code}')
+        score_text = data['choices'][0]['message']['content'].strip()
+        score = float(re.search(r'\d+\.?\d*', score_text).group())
+        if score < 3.0:
+            return False, f"AI 评分过低：{score}"
+        return True, f"AI 评分：{score}"
+    except Exception as e:
+        return False, f"AI 审核不可用（{e}），本轮不发布"
 
-    # 3. 兜底：基于关键词相关性
+    # 3. 兜底：基于关键词相关性（仅在显式关闭 AI 审核时才会走到）
     score = sum(1 for kw in ['FDE', '前端', 'AI', 'LLM', '工程化', '部署', '开发',
                              'MaxKB', 'Vercel', '教学'] if kw in (title + content[:500]))
     if score < 2:
@@ -171,6 +183,12 @@ def main():
     log(f"🤖 AI 自动审核 + 自动发布 · {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     log(f"   SITE_DIR = {SITE_DIR}")
     log("=" * 50)
+
+    if not API_KEY:
+        # 没有 key 就没法判断文章质量 —— 不发比发错强
+        log("❌ 未配置 MINIMAX_API_KEY，本轮不发布任何文章")
+        log("   （检查 /root/.secrets/minimax.env 是否存在且 cron 有没有 source 它）")
+        sys.exit(1)
 
     pending_files = sorted(PENDING_DIR.glob('pending_*.json'), reverse=True)
     if not pending_files:

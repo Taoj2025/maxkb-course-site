@@ -9,6 +9,7 @@ import os
 import re
 import requests
 import feedparser
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta
 from pathlib import Path
 
@@ -24,31 +25,42 @@ KEYWORDS = [
     'Cloudflare', 'Workers', '工程化', '部署', '前端架构'
 ]
 
-# RSSHub 公共实例（无需 API key）
-RSSHUB = "https://rsshub.app"
+# RSSHub 镜像。rsshub.app 官方实例在境内经常连不上（实测 12 秒超时），
+# rssforever 这个镜像稳定，用它兜住原来那些 RSSHub 路由。
+RSSHUB = "https://rsshub.rssforever.com"
 
-# 各数据源的 RSSHub 路由
+# 各数据源的 RSS 路由。
+#
+# 这里的每个源都在生产服务器（119.91.234.159，境内）上实测过能连通并返回条目：
+# 之前用的是 rsshub.app + 一串国内站点的自建路由，实测基本全超时，
+# 整条管线一个候选都抓不到。
 SOURCES = [
-    # 36氪 - 前端/AI 资讯
+    # ── 直连源（最稳，优先）──
+    ("https://www.ruanyifeng.com/blog/atom.xml", "阮一峰"),
+    ("https://juejin.cn/rss", "掘金"),
+    ("https://www.infoq.cn/feed", "InfoQ"),
+    ("https://sspai.com/feed", "少数派"),
+    ("https://www.solidot.org/index.rss", "Solidot"),
+    ("https://www.ithome.com/rss/", "IT之家"),
+    ("https://www.leiphone.com/feed", "雷峰网"),
+    ("https://blog.cloudflare.com/rss/", "Cloudflare"),
+    ("https://github.blog/feed/", "GitHub Blog"),
+    ("https://hnrss.org/frontpage", "Hacker News"),
+
+    # ── RSSHub 镜像（补充国内聚合源）──
     (f"{RSSHUB}/36kr/information/AI", "36氪-AI"),
     (f"{RSSHUB}/36kr/information/technology", "36氪-科技"),
-    # InfoQ 中文
-    (f"{RSSHUB}/infoq/recommend", "InfoQ-推荐"),
-    (f"{RSSHUB}/infoq/topic/前端", "InfoQ-前端"),
-    # 掘金 - 热门文章
     (f"{RSSHUB}/juejin/category/frontend", "掘金-前端"),
     (f"{RSSHUB}/juejin/category/ai", "掘金-AI"),
-    # 腾讯云前端
     (f"{RSSHUB}/cloud.tencent/developer", "腾讯云-开发者"),
-    # 知乎 - 前端话题
-    (f"{RSSHUB}/zhihu/topic/19551432/top_answers", "知乎-前端话题"),
-    # GitHub Trending
-    ("https://mshibanami.github.io/GitHubTrendingRSS/weekly/all.xml", "GitHub-Trending"),
-    # 阮一峰的网络日志
-    (f"{RSSHUB}/ruanyifeng/blog", "阮一峰"),
-    # 独立博客
-    (f"{RSSHUB}/blog/williamfzc", "好工具分享"),
+    (f"{RSSHUB}/ruanyifeng/blog", "阮一峰-镜像"),
 ]
+
+# 单个源最多等 12 秒。feedparser 自己不设超时的时候，
+# 一个连不上的源能把整条管线拖住十几分钟。
+FEED_TIMEOUT = 12
+# 并发抓取：原来是串行，15 个源最坏要跑好几分钟
+MAX_WORKERS = 6
 
 
 def matches_keywords(title: str) -> bool:
@@ -60,7 +72,15 @@ def fetch_one_rss(url: str, source_name: str, max_items: int = 15):
     """抓取单个 RSS 源"""
     results = []
     try:
-        feed = feedparser.parse(url, agent='Mozilla/5.0 (FDE-Bot/1.0)')
+        # 自己用 requests 抓再交给 feedparser 解析，
+        # 这样超时可控（feedparser 自己不设 socket 超时，能把进程挂住）
+        resp = requests.get(
+            url,
+            timeout=FEED_TIMEOUT,
+            headers={'User-Agent': 'Mozilla/5.0 (FDE-Bot/1.0)'},
+        )
+        resp.raise_for_status()
+        feed = feedparser.parse(resp.content)
         if not feed.entries:
             print(f"    ⚠ {source_name}: 无内容")
             return results
@@ -73,6 +93,9 @@ def fetch_one_rss(url: str, source_name: str, max_items: int = 15):
             if not matches_keywords(title):
                 continue
             link = entry.get('link', '')
+            # Atom 源（阮一峰等）的 link 是 dict，取 href
+            if isinstance(link, dict):
+                link = link.get('href', '')
             summary = entry.get('summary', '') or entry.get('description', '')
             # 清理 HTML
             summary = re.sub(r'<[^>]+>', '', summary)[:200]
@@ -92,20 +115,27 @@ def fetch_one_rss(url: str, source_name: str, max_items: int = 15):
 
 def main():
     print("=" * 60)
-    print(f"📡 FDE 文章抓取（RSSHub 公共源）· {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f"📡 FDE 文章抓取 · {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print("=" * 60)
 
     all_results = []
 
-    print(f"【扫描 {len(SOURCES)} 个数据源】")
-    for url, name in SOURCES:
-        print(f"  · {name} ... ", end='', flush=True)
-        items = fetch_one_rss(url, name)
-        if items:
-            print(f"✅ {len(items)} 篇")
-            all_results.extend(items)
-        else:
-            print("0")
+    print(f"【并发扫描 {len(SOURCES)} 个数据源，超时 {FEED_TIMEOUT}s】")
+    # 并发抓：一个源卡住不影响别的源，整体耗时取决于最慢的那个而不是总和
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
+        futures = {pool.submit(fetch_one_rss, url, name): name for url, name in SOURCES}
+        for fut in as_completed(futures):
+            name = futures[fut]
+            try:
+                items = fut.result()
+            except Exception as e:
+                print(f"  ❌ {name}: {str(e)[:60]}")
+                continue
+            if items:
+                print(f"  ✅ {name}: {len(items)} 篇")
+                all_results.extend(items)
+            else:
+                print(f"  · {name}: 0")
 
     # 去重（按标题）
     seen = set()
