@@ -23,6 +23,7 @@
   {
     "id": 13305,
     "slug": "13305-ai-frontend-agent",
+    "file": "13305-ai-frontend-agent.md",
     "title": "AI Agent 重塑前端开发：FDE 的下一个 3 年",
     "date": "2026-07-27",
     "tags": [
@@ -36,6 +37,7 @@
   {
     "id": 13306,
     "slug": "13306-vercel-edge-2026",
+    "file": "13306-vercel-edge-2026.md",
     "title": "Vercel 2026 边缘计算新特性：FDE 部署成本直降 80%",
     "date": "2026-07-27",
     "tags": [
@@ -49,6 +51,7 @@
   {
     "id": 13307,
     "slug": "13307-mcp-protocol-frontend",
+    "file": "13307-mcp-protocol-frontend.md",
     "title": "MCP 协议在前端的落地：让 AI Agent 安全调用你的 API",
     "date": "2026-07-27",
     "tags": [
@@ -62,6 +65,7 @@
   {
     "id": 13308,
     "slug": "13308-edge-runtime-ssr-comparison",
+    "file": "13308-edge-runtime-ssr-comparison.md",
     "title": "Edge Runtime vs SSR vs SSG：2026 年前端渲染方案终极对决",
     "date": "2026-07-27",
     "tags": [
@@ -75,6 +79,7 @@
   {
     "id": 13309,
     "slug": "13309-fde-job-market-2026",
+    "file": "13309-fde-job-market-2026.md",
     "title": "2026 年 FDE 就业市场报告：AI 时代前端工程师的真实薪资",
     "date": "2026-07-27",
     "tags": [
@@ -88,6 +93,7 @@
   {
     "id": 13304,
     "slug": "13304-student-projects",
+    "file": "13304-student-projects.md",
     "title": "学员项目展示与点评",
     "date": "2026-07-24",
     "tags": [
@@ -100,6 +106,7 @@
   {
     "id": 13303,
     "slug": "13303-teacher-course-prep",
+    "file": "13303-teacher-course-prep.md",
     "title": "教师如何用 MaxKB 备课",
     "date": "2026-07-24",
     "tags": [
@@ -112,6 +119,7 @@
   {
     "id": 13302,
     "slug": "13302-agent-workflow",
+    "file": "13302-agent-workflow.md",
     "title": "Agent 工作流设计实战案例",
     "date": "2026-07-24",
     "tags": [
@@ -124,6 +132,7 @@
   {
     "id": 13301,
     "slug": "13301-knowledge-base",
+    "file": "13301-knowledge-base.md",
     "title": "企业知识库构建 4 大要点",
     "date": "2026-07-24",
     "tags": [
@@ -136,6 +145,7 @@
   {
     "id": 13300,
     "slug": "13300-deployment",
+    "file": "13300-deployment.md",
     "title": "MaxKB 安装部署完整指南",
     "date": "2026-07-24",
     "tags": [
@@ -148,6 +158,7 @@
   {
     "id": 13299,
     "slug": "13299-faq",
+    "file": "13299-faq.md",
     "title": "MaxKB FDE 课程学员常见问题 FAQ",
     "date": "2026-07-23",
     "tags": [
@@ -160,6 +171,7 @@
   {
     "id": 13298,
     "slug": "13298-scenarios",
+    "file": "13298-scenarios.md",
     "title": "5 大 MaxKB 应用场景实战模板",
     "date": "2026-07-23",
     "tags": [
@@ -173,6 +185,7 @@
   {
     "id": 13297,
     "slug": "13297-course-intro",
+    "file": "13297-course-intro.md",
     "title": "MaxKB FDE 教学课程介绍",
     "date": "2026-07-23",
     "tags": [
@@ -186,6 +199,7 @@
   {
     "id": 13311,
     "slug": "deep-learning-fundamentals",
+    "file": "13311-deep-learning-fundamentals.md",
     "title": "深度学习与 LLM 原理：从神经网络到 Agent 调用（6 节系统讲解）",
     "date": "2026-09-12",
     "tags": [

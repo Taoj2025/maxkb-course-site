@@ -407,7 +407,7 @@
 
       try {
         // 1. 加载文章列表，找到对应文章
-        const listResp = await fetch('articles.json');
+        const listResp = await fetch('articles.json?t=' + Date.now());
         const articles = await listResp.json();
         // 同时支持 id 查找和 slug 查找
         const article = articles.find(a =>
@@ -421,11 +421,16 @@
         }
 
         // 2. 加载 Markdown 文件
-        //    历史数据两种命名都存在：<id>-<slug>.md（file 字段）和 <slug>.md（slug 直接拼）
-        //    先按 file 字段找，找不到再回退到 slug，保证老链接和新发布文章都能打开
+        //    历史数据三种命名都存在过：
+        //      <id>-<slug>.md（多数文章的 file 字段）
+        //      <slug>.md        （老数据，file 字段为空时靠 slug 拼）
+        //      <id>.md          （兜底）
+        //    按顺序都试一遍，保证老链接和新发布文章都能打开
         const mdCandidates = [
           article.file,
-          `${article.slug}.md`,
+          article.id && article.slug ? `${article.id}-${article.slug}.md` : null,
+          article.slug ? `${article.slug}.md` : null,
+          article.id ? `${article.id}.md` : null,
         ].filter(Boolean);
         let md = null;
         for (const name of mdCandidates) {
