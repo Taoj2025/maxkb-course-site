@@ -52,9 +52,22 @@ rsync -a --delete \
       --exclude .logs/ \
       "$REPO_DIR/backend/" "$BACKEND_DIR/"
 
-# 资源与文章目录用软链指回仓库，服务器上只有一份
-ln -sfn "$REPO_DIR/articles"  "$APP_DIR/articles"
-ln -sfn "$REPO_DIR/downloads" "$APP_DIR/downloads"
+# 资源与文章目录用软链指回仓库，服务器上只有一份。
+#
+# 注意不能直接用 `ln -sfn`：目标路径已经是一个真实目录时，ln 会把软链
+# 建到目录里面去（/opt/maxkb-api/articles/articles），原目录里的旧文件
+# 还在 —— 后端读到的就是那份陈旧副本，文章列表和下载文件永远不更新。
+# 所以先删再建。
+link_repo_dir() {
+  local name="$1"
+  rm -rf "$APP_DIR/$name"
+  ln -s "$REPO_DIR/$name" "$APP_DIR/$name"
+  log "   软链 → $APP_DIR/$name  ⇒  $REPO_DIR/$name"
+}
+link_repo_dir articles
+link_repo_dir downloads
+link_repo_dir data
+link_repo_dir articles.json
 
 # .env 是本机配置，不随代码更新；缺失时用模板兜底
 if [ ! -f "$BACKEND_DIR/.env" ]; then
@@ -122,6 +135,11 @@ ensure_bcrypt || exit 1
 log "执行数据库迁移…"
 npm run --silent db:schema
 npm run --silent db:seed
+
+# 文章表以 articles.json 为准做全量对齐 —— 内容机器人每天往清单里加文章，
+# 不同步的话 /api/articles 会一直返回旧列表，首页资讯点进去全是 404。
+log "同步文章清单到数据库…"
+npm run --silent db:import-articles || log "⚠️  文章同步失败（不影响服务启动）"
 
 # 管理员账号只做检查、不自动重置 —— 避免覆盖用户自己改过的密码。
 # 需要重置时手动执行： cd /opt/maxkb-api/backend && npm run init:admin

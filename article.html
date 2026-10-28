@@ -410,9 +410,13 @@
         const listResp = await fetch('articles.json?t=' + Date.now());
         const articles = await listResp.json();
         // 同时支持 id 查找和 slug 查找
+        // slug 除了 articles.json 里的 slug 字段，也兼容用文件名来指代
+        //（历史上数据库里的 slug 是文件名，两种写法都出现过）
         const article = articles.find(a =>
           (id && String(a.id) === String(id)) ||
-          (slug && a.slug === slug)
+          (slug && a.slug === slug) ||
+          (slug && a.file === slug) ||
+          (slug && a.file === `${slug}.md`)
         );
 
         if (!article) {

@@ -15,6 +15,7 @@ set -uo pipefail
 
 SITE_DIR="${SITE_DIR:-/var/www/maxkb-course-site}"
 WORK_DIR="${WORK_DIR:-/root/.openclaw/workspace/projects/maxkb-course-site}"
+BACKEND_DIR="${BACKEND_DIR:-/opt/maxkb-api/backend}"
 SCRIPTS_DIR="$SITE_DIR/scripts/fde-daily"
 MODE="${1:-all}"
 export SITE_DIR WORK_DIR
@@ -36,20 +37,37 @@ run_aihot() {
   echo "【AI 热点】推送到 GitHub…"
   bash "$SITE_DIR/scripts/publish-site.sh" \
     "auto: 刷新 AI 热点 · $(date '+%Y-%m-%d %H:%M')" || true
+
+  # /api/aihot 读的是数据库，得跟着一起刷，否则接口一直返回几个月前的旧热点
+  if [ -d "$BACKEND_DIR" ]; then
+    (cd "$BACKEND_DIR" && npm run --silent db:import-aihot) \
+      || echo "⚠️  热点入库失败（静态 JSON 不受影响）"
+  fi
 }
 
 run_articles() {
   echo ""
-  echo "【1/3】抓取 FDE 文章..."
+  echo "【1/4】抓取 FDE 文章..."
   python3 "$SCRIPTS_DIR/fetch_articles.py"
 
   echo ""
-  echo "【2/3】AI 重写…"
+  echo "【2/4】AI 重写…"
   python3 "$SCRIPTS_DIR/rewrite_articles.py"
 
   echo ""
-  echo "【3/3】AI 自动审核 + 自动发布…"
+  echo "【3/4】AI 自动审核 + 自动发布…"
   python3 "$SCRIPTS_DIR/auto_review_and_publish.py"
+
+  echo ""
+  echo "【4/4】同步文章清单到数据库…"
+  # articles.json 是文章的唯一真相，/api/articles 读的是数据库。
+  # 不同步的话，首页资讯会继续显示旧列表，点进去全是 404。
+  if [ -d "$BACKEND_DIR" ]; then
+    (cd "$BACKEND_DIR" && npm run --silent db:import-articles) \
+      || echo "⚠️  数据库同步失败（站点文章列表仍可正常访问）"
+  else
+    echo "   （跳过：没找到后端目录 $BACKEND_DIR）"
+  fi
 }
 
 case "$MODE" in
