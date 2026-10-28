@@ -212,5 +212,23 @@
     "summary": "MaxKB 学员补原理层的必修课。6 节系统讲解神经网络、Transformer、预训练演进、微调与 LoRA、推理优化、Agent 调用。配套 PyTorch / HuggingFace / vLLM / LangChain 代码示例。",
     "category": "课程资料",
     "color": "indigo"
+  },
+  {
+    "id": 13312,
+    "title": "字节辟谣\"群演数据喂大模型\"：严重失实！",
+    "slug": "13312-post-3f110ee3",
+    "summary": "近日，有网络传言称&quot;横店与字节合作，将15万名群演的肖像和声音喂给字节大模型&quot;。字节豆包公关负责人刘星今日通过微博作出回应，表示该传言严重失实。据介绍，此次引发讨论的项目为横店影视AI服务平台建设项目。刘星表示，该项目的初衷是希望建设一套影视行业的公共数字基础设施，把影视基地实景",
+    "category": "最新动态",
+    "tags": [
+      "FDE",
+      "AI 资讯",
+      "前端部署"
+    ],
+    "color": "purple",
+    "date": "2026-10-29",
+    "author": "小Q（机器摘要）",
+    "source": "机器摘要 · 雷峰网",
+    "file": "13312-post-3f110ee3.md",
+    "estimated_read_time": "1 分钟"
   }
 ]
