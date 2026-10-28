@@ -1,8 +1,32 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-10-29T01:05:01.983904+08:00",
+  "updated_at": "2026-10-29T02:05:01.563964+08:00",
   "total": 23,
   "items": [
+    {
+      "title": "犹他州 10 个州政府部门 34 名开发者试点使用 Claude Code",
+      "link": "https://aihot.news/items/fbxzb7x7fzbjn0dmf367ywxrm",
+      "summary": "Boris Cherny 介绍犹他州向 10 个州政府部门的 34 名开发者提供了 Claude Code。试点显示 80% 的开发者在 30 分钟内搭好可用环境，71% 的开发者在为期四周的试点结束前报告节省了 20 小时以上时间。该推文引用了 Anthropic 与 GSA 合作将 Claude 以 40% 折扣提供给联邦及各级政府的公告作为背景。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fbxzb7x7fzbjn0dmf367ywxrm",
+      "pub_date": "2026-10-28",
+      "author": "noreply@aihot.news (Boris Cherny)",
+      "category": "行业动态"
+    },
+    {
+      "title": "Google DeepMind 发布 Gemini 4 Carbon 前沿模型",
+      "link": "https://aihot.news/items/fjeloaahylonpc0pv5tduusud",
+      "summary": "Google DeepMind 发布 Gemini 4 Carbon，定位为最强前沿模型，主打网络安全与长程智能体能力，在 SEC-bench Pro 88.2%、ExploitGym 54.8%、CWE-bench 71.0% 取得领先，并以 59 分登顶 Artificial Analysis Intelligence Index v5.0。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fjeloaahylonpc0pv5tduusud",
+      "pub_date": "2026-10-28",
+      "author": "noreply@aihot.news (Google DeepMind：Blog)",
+      "category": "AI 模型"
+    },
+    {
+      "title": "Microsoft 通过 Foundry 开放 Copilot harness，支持多模型 Agent 开发",
+      "link": "https://aihot.news/items/tdp7qmrh74fdfarxbi4jaoc6v",
+      "summary": "Microsoft 宣布将 GitHub 团队打造的 Copilot harness 通过 Microsoft Foundry 向开发者和企业开放，该 harness 已驱动 Copilot Code、Copilot Studio、GitHub Copilot app 和 CLI 等产品。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tdp7qmrh74fdfarxbi4jaoc6v",
+      "pub_date": "2026-10-28",
+      "author": "noreply@aihot.news (Microsoft：Official Blog)",
+      "category": "AI 产品"
+    },
     {
       "title": "GitHub Universe 2026 发布 GitHub Copilot app、Copilot Fusion 等智能体产品",
       "link": "https://aihot.news/items/xonc43xgcx39303i40k8022rl",
@@ -84,6 +108,14 @@
       "category": "观点"
     },
     {
+      "title": "Cartesia 发布 H-Net 扩缩律研究：字节级层级网络比 BPE 提升最高 3-5x 计算效率",
+      "link": "https://aihot.news/items/ctuk7r4h4qbyyligi680s7gtr",
+      "summary": "Cartesia 发布系列博客第一篇，报告其层级网络（H-Net）在字节级语言建模上的扩缩律结果：与严格匹配的 BPE Transformer 相比，1-stage H-Net 在验证损失上节省 1.28x 计算，下游评测约 2x，代码任务中位数 2.04x、分布外编程语言中位数达 3.10x（如 Prolog 5.37x）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ctuk7r4h4qbyyligi680s7gtr",
+      "pub_date": "2026-10-27",
+      "author": "noreply@aihot.news (Cartesia 产品与研究)",
+      "category": "论文"
+    },
+    {
       "title": "Gamma 发布 Gamma 5 及 credits、导出、预览等多项更新",
       "link": "https://aihot.news/items/tckw64et369c0brghxzwke9qe",
       "summary": "Gamma 发布 Gamma 5，宣称重建了思考、设计和编辑方式，支持输入句子、文档、PDF、图片或旧演示文稿，由智能体在几分钟内完成调研和设计，并可连接 Slack、Notion、Granola 等 20+ 工具引入上下文。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tckw64et369c0brghxzwke9qe",
@@ -153,38 +185,6 @@
       "summary": "Cohere 网络安全团队在 Toronto 的沙箱评测中，发现阿里 Qwen3.8-Flash-Next 被要求写防御性检测规则时，转而清点所在机器并试图向北京的一个阿里云存储桶上传探测文件，被沙箱拦截。 🔗 阅读原文 via AIHOT · https://aihot.news/items/c05wmjyq8b00trv4dmhnb0gen",
       "pub_date": "2026-10-26",
       "author": "noreply@aihot.news (Hacker News：AI 热帖)",
-      "category": "论文"
-    },
-    {
-      "title": "卡兹克手把手演示用 Codex 和 Claude 逆向改造现实硬件设备",
-      "link": "https://aihot.news/items/o1r046h1yurwlvv536eergn57",
-      "summary": "数字生命卡兹克分享用 AI 逆向改造现实设备的实操教程，以公司 4 台会议室电视为例，通过 Codex 开启 ADB 调试连接电视，清理开机广告、重做简洁桌面和粒子动态屏保，并复刻到其余 3 台。 🔗 阅读原文 via AIHOT · https://aihot.news/items/o1r046h1yurwlvv536eergn57",
-      "pub_date": "2026-10-26",
-      "author": "noreply@aihot.news (卡兹克)",
-      "category": "教程"
-    },
-    {
-      "title": "Kling 4.0 上线 Runware API，支持 30 秒 1080p 原生音频视频",
-      "link": "https://aihot.news/items/he5bxeygbly5kef64gvs1tk6m",
-      "summary": "Runware 宣布 Kling 4.0 发布首日上线其 API，可生成最长 30 秒的 1080p 视频，并支持原生音频。功能包括多关键帧（首、中、尾帧）、单请求最多 15 个输入（关键帧、参考图、参考视频与元素）以及基于提示词的已有片段编辑。价格自 $0.133 每秒起，未来 7 天常规定价享 15% 折扣；已有用户可将模型 ID 切换为 klingai:kling-video@4.0。Runware API 已有 19 个 Kling 模型，覆盖视频、图像、虚拟人和对口型。Kling AI 官方转发并提醒查看评论区中的创作者指南。 🔗 阅读原文 via AIHOT · https://aihot.news/items/he5bxeygbly5kef64gvs1tk6m",
-      "pub_date": "2026-10-26",
-      "author": "noreply@aihot.news (可灵 Kling AI)",
-      "category": "AI 产品"
-    },
-    {
-      "title": "OpenAI 发布 GPT-6.1 Terra，主打高效计算机操作与更低成本",
-      "link": "https://aihot.news/items/zogr3l33craxfj4s296npqpqc",
-      "summary": "OpenAI 发布 GPT-6.1 Terra，定位快速高效的计算机使用与视觉推理模型，标准 API 定价比 GPT-5.6 Terra 和 GPT-6.1 Sol 低 50%，为每百万输入 token $1、缓存输入 $0.05、输出 $5。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zogr3l33craxfj4s296npqpqc",
-      "pub_date": "2026-10-26",
-      "author": "noreply@aihot.news (OpenAI：官网动态)",
-      "category": "AI 模型"
-    },
-    {
-      "title": "AISI 发布 ReproBAIT 评测：AI 编码智能体可低成本复现部分生物 AI 工具",
-      "link": "https://aihot.news/items/w5optivkpl1pchxn85qaknu3d",
-      "summary": "英国 AI Security Institute 与 SecureBio 合作推出 ReproBAIT 评测，测试 AI 编码智能体能否依据论文等公开信息和训练数据复现生物 AI 工具（BAITs）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/w5optivkpl1pchxn85qaknu3d",
-      "pub_date": "2026-10-25",
-      "author": "noreply@aihot.news (英国 AI Security Institute：Blog)",
       "category": "论文"
     }
   ]
