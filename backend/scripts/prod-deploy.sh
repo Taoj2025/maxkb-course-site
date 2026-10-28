@@ -68,7 +68,55 @@ chmod 600 "$BACKEND_DIR/.env"
 # ============ 3. 安装依赖 ============
 log "安装依赖…"
 cd "$BACKEND_DIR"
-npm ci --omit=dev --no-audit --no-fund
+
+# 3.1 npm 走国内镜像，node-gyp 编译 bcrypt 时也要能拿到 node 头文件。
+#     服务器在境内，直连 nodejs.org 会一直挂着不返回（曾导致部署卡死 10 分钟超时）。
+export npm_config_disturl="${npm_config_disturl:-https://npmmirror.com/mirrors/node}"
+export npm_config_registry="${npm_config_registry:-https://mirrors.tencent.com/npm/}"
+export npm_config_fetch_retries="${npm_config_fetch_retries:-3}"
+export npm_config_fetch_timeout="${npm_config_fetch_timeout:-120000}"
+
+# 3.2 用 npm install 而不是 npm ci。
+#     npm ci 会先删掉整个 node_modules 再重装 → 每次部署都要重新编译 bcrypt 等
+#     原生模块，而原生模块的编译/下载在境内极慢甚至挂死，失败后服务就是坏的。
+#     npm install 会复用已装好的包（含已编译的 .node），只在缺包时才补。
+#
+#     --ignore-scripts：跳过所有 install 脚本（node-pre-gyp / node-gyp），
+#     这是部署卡死的根因。本项目唯一的原生依赖是 bcrypt，由下面的
+#     ensure_bcrypt() 显式处理，其余依赖（express / pg / helmet…）都是纯 JS。
+npm install --omit=dev --no-audit --no-fund --prefer-offline --ignore-scripts
+
+# 3.3 bcrypt 是唯一的原生依赖，必须确认它真的能加载，否则重启就会把 API 打挂。
+#     装不上时直接拉官方预编译二进制兜底（napi-v3，linux-x64-glibc）。
+ensure_bcrypt() {
+  if node -e 'import("bcrypt").then(()=>process.exit(0)).catch(()=>process.exit(1))' 2>/dev/null; then
+    return 0
+  fi
+  log "⚠️  bcrypt 原生模块加载失败，尝试安装官方预编译二进制…"
+  local ver url tmp
+  ver=$(node -e 'import("node:fs").then(fs=>console.log(JSON.parse(fs.readFileSync("./node_modules/bcrypt/package.json","utf8")).version)).catch(()=>process.exit(1))' 2>/dev/null || echo "")
+  [ -n "$ver" ] || ver="5.1.1"
+  url="https://github.com/kelektiv/node.bcrypt.js/releases/download/v${ver}/bcrypt_lib-v${ver}-napi-v3-linux-x64-glibc.tar.gz"
+  tmp=$(mktemp -d)
+  if curl -fsSL --max-time 120 -o "$tmp/bc.tar.gz" "$url" \
+     && tar -xzf "$tmp/bc.tar.gz" -C "$tmp" \
+     && mkdir -p node_modules/bcrypt/lib/binding/napi-v3 \
+     && cp "$tmp"/napi-v3/bcrypt_lib.node node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node; then
+    log "✅ bcrypt 预编译二进制已就位"
+  else
+    rm -rf "$tmp"
+    log "❌ bcrypt 安装失败，中止部署（不重启服务，避免把线上 API 打挂）"
+    return 1
+  fi
+  rm -rf "$tmp"
+  node -e 'import("bcrypt").then(()=>process.exit(0)).catch(()=>process.exit(1))' 2>/dev/null || {
+    log "❌ bcrypt 仍无法加载，中止部署"
+    return 1
+  }
+  return 0
+}
+
+ensure_bcrypt || exit 1
 
 # ============ 4. 数据库迁移（幂等）============
 log "执行数据库迁移…"
