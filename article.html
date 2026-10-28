@@ -391,6 +391,17 @@
   <script src="assets/js/script.js"></script>
 
   <script>
+    // 文章标题/标签来自机器人抓取的 RSS，转义后再插进 innerHTML，
+    // 免得标题里带个 < 就把页面结构弄坏。
+    function esc(s) {
+      return String(s == null ? '' : s)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
     // 渲染文章
     async function loadArticle() {
       const root = document.getElementById('article-root');
@@ -456,10 +467,10 @@
         // 5. 注入文章结构
         root.innerHTML = `
           <div class="article-header">
-            <h1>${article.title}</h1>
+            <h1>${esc(article.title)}</h1>
             <div class="article-meta">
-              ${article.tags.map(t => `<span class="article-tag">${t}</span>`).join('')}
-              <span>📅 ${article.date}</span>
+              ${(article.tags || []).map(t => `<span class="article-tag">${esc(t)}</span>`).join('')}
+              <span>📅 ${esc(article.date)}</span>
               <span>· 小陶老师</span>
             </div>
           </div>
@@ -488,7 +499,7 @@
 
       } catch (err) {
         console.error('文章加载失败:', err);
-        root.innerHTML = `<div class="article-error">❌ 文章加载失败：${err.message}<br><small style="color:#9CA3AF;display:block;margin-top:8px;">可能是 GitHub Pages 部署未生效或网络问题，请刷新重试</small><br><a href="./latest.html">← 返回最新动态</a></div>`;
+        root.innerHTML = `<div class="article-error">❌ 文章加载失败：${esc(err.message)}<br><small style="color:#9CA3AF;display:block;margin-top:8px;">可能是 GitHub Pages 部署未生效或网络问题，请刷新重试</small><br><a href="./latest.html">← 返回最新动态</a></div>`;
       }
     }
 

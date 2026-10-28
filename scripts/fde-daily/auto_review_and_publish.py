@@ -160,6 +160,18 @@ def next_article_id(articles_data: list) -> int:
     return (max(ids) + 1) if ids else 13312
 
 
+def yaml_quote(value: str) -> str:
+    """把值安全地放进 YAML front matter 的双引号里。
+
+    标题里带引号很常见（比如「字节辟谣"群演数据喂大模型"」），
+    不转义的话 front matter 就不是合法 YAML 了 ——
+    title: "字节辟谣"群演数据喂大模型"：严重失实！"
+    """
+    text = str(value).replace('\\', '\\\\').replace('"', '\\"')
+    text = text.replace('\n', ' ').replace('\r', ' ')
+    return f'"{text}"'
+
+
 def publish_article(article: dict, article_id: int, index: int) -> tuple:
     """写 markdown + 返回 articles.json 条目"""
     slug = f"{article_id}-{make_slug(article['title'])}"
@@ -178,9 +190,9 @@ def publish_article(article: dict, article_id: int, index: int) -> tuple:
         f"*本文由小Q自动抓取 + AI 重写 · 来源：[{article['source']}]({article['url']})*")
 
     md_content = f"""---
-title: "{article['title']}"
-source: "{article['source']}"
-source_url: "{article['url']}"
+title: {yaml_quote(article['title'])}
+source: {yaml_quote(article['source'])}
+source_url: {yaml_quote(article['url'])}
 date: "{date_str}"
 auto: true
 machine_summary: {str(machine).lower()}
