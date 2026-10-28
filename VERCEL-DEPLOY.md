@@ -81,6 +81,11 @@ to create deployments for this project.
 **注意**：构建其实已经成功了（build 是过的），只是拿不到 production 别名，
 所以 `vercel inspect` 里显示的 Routes 是新配置、但线上还是旧的。
 
+> 每次 `git push` 之后，Vercel 的 Git 集成也会自己试着部署一次，
+> 那一次**一定是 BLOCKED**（同一个检查拦的）——这是正常的，不用管。
+> 真正生效的是 CLI 部署（`vercel --prod`）出来的那次 READY 部署，
+> 再配上 `npm run deploy:alias` 把别名指过去。
+
 两个修法：
 
 1. **让仓库的提交作者邮箱 = Vercel 账号已验证的邮箱**（现在用的就是这个）
