@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-10-29T04:05:02.517564+08:00",
+  "updated_at": "2026-10-29T05:05:01.748409+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Alphabet Q3 财报：年化收入达 5000 亿美元，Google Cloud 增长 103%",
+      "link": "https://aihot.news/items/m5st8pvirbas7phreshbzkrc9",
+      "summary": "Sundar Pichai 发布 Alphabet Q3 业绩：年化收入 run rate 达 5000 亿美元，总收入同比增长 25%。Google Cloud 收入增长 103%，1P 模型 API 每分钟处理近 32B tokens（环比增 40%）；Search 查询同比增速为五年来最高，并提到 Argon、Carbon 领跑前沿及最新世界模型 Genie 4。 🔗 阅读原文 via AIHOT · https://aihot.news/items/m5st8pvirbas7phreshbzkrc9",
+      "pub_date": "2026-10-28",
+      "author": "noreply@aihot.news (Sundar Pichai)",
+      "category": "行业动态"
+    },
     {
       "title": "Ed Zitron 长文解析 Anthropic S-1：称其把散户当作退出流动性",
       "link": "https://aihot.news/items/x2h1bp5shee6v508nw7pjtvas",
@@ -394,14 +402,6 @@
       "pub_date": "2026-10-26",
       "author": "noreply@aihot.news (Unsloth)",
       "category": "AI 产品"
-    },
-    {
-      "title": "Hugging Face CEO 转评前 DOGE 研究人员用 AI 智能体渗透 Anthropic 系统事件",
-      "link": "https://aihot.news/items/oq7hr7grajldk8bmtv95e180v",
-      "summary": "Hugging Face CEO Clément Delangue 转引《华盛顿邮报》独家报道并评论称，认为把 AI 集中在封闭大门后就是安全的想法需要更新认知。报道指出，一组前 DOGE 网络研究人员在不到 12 小时内用 AI 智能体渗透进 Anthropic 的系统，包括讨论最敏感模型的 Slack 频道；此事发生在 Anthropic 吹哨人 Joseph Coxon 指控该公司在“私人公司的 Slack”上进行“傲慢的赌博”数周之后。 🔗 阅读原文 via AIHOT · https://aihot.news/items/oq7hr7grajldk8bmtv95e180v",
-      "pub_date": "2026-10-26",
-      "author": "noreply@aihot.news (Clément Delangue)",
-      "category": "行业动态"
     }
   ]
 }
