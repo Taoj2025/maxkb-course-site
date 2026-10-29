@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-10-29T18:05:02.465191+08:00",
-  "total": 22,
+  "updated_at": "2026-10-29T19:05:01.871642+08:00",
+  "total": 21,
   "items": [
     {
       "title": "Addy Osmani 谈你可能对 Claude 过度提示了",
@@ -170,14 +170,6 @@
       "pub_date": "2026-10-26",
       "author": "noreply@aihot.news (Apple：Newsroom)",
       "category": "AI 产品"
-    },
-    {
-      "title": "Liquid AI 发布 LFM3 多模态开源权重模型家族，2B 级覆盖文本、视觉、音频、omni 和决策模型",
-      "link": "https://aihot.news/items/vx4t4ldzajj3lhb8luhg9dy9s",
-      "summary": "Liquid AI 发布新一代 LFM3 模型家族，以 LFM3-1.7B-Base 为共享骨干，首批开放六个 2B 级模型（文本、视觉、音频、omni 及两个决策模型）的开放权重，可在 Hugging Face、Playground 和 Liquid AI API 获取。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vx4t4ldzajj3lhb8luhg9dy9s",
-      "pub_date": "2026-10-26",
-      "author": "noreply@aihot.news (Liquid AI 模型与工程博客)",
-      "category": "AI 模型"
     }
   ]
 }
