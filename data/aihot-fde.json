@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-10-29T21:05:02.179750+08:00",
-  "total": 21,
+  "updated_at": "2026-10-29T22:05:01.867294+08:00",
+  "total": 20,
   "items": [
     {
       "title": "Addy Osmani 谈你可能对 Claude 过度提示了",
@@ -162,14 +162,6 @@
       "pub_date": "2026-10-26",
       "author": "noreply@aihot.news (Epoch AI：Gradient Updates)",
       "category": "论文"
-    },
-    {
-      "title": "Apple Creator Studio 推出更新：Final Cut Pro 集成 MotionVFX，Keynote、Pages、Numbers 新增智能助手与 MCP 支持",
-      "link": "https://aihot.news/items/z7h3xpbyfp9laquaq2njijzfo",
-      "summary": "Apple 为 Creator Studio 推出更新，Final Cut Pro for Mac 内置 MotionVFX 视觉效果库并接入含视频素材的 Content Hub。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z7h3xpbyfp9laquaq2njijzfo",
-      "pub_date": "2026-10-26",
-      "author": "noreply@aihot.news (Apple：Newsroom)",
-      "category": "AI 产品"
     }
   ]
 }

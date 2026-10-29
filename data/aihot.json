@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-10-29T21:05:02.178902+08:00",
+  "updated_at": "2026-10-29T22:05:01.866389+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "The Verge 解读 Anthropic S-1：约 8500 亿美元 compute 承诺押注递归自我改进",
+      "link": "https://aihot.news/items/iuma7p8unle567lzy6hp5jpw9",
+      "summary": "The Verge 作者分析 Anthropic S-1，认为其商业模式依赖高速增长：2026 上半年营收同比增长 14 倍至 $16.3 billion，净收入留存率 900%，但不可撤销采购承诺合计 $265.6 billion，加上未开始的租赁协议 $321.4 billion 及其他协议，未来 20 年承诺至少约 $850 billion。 🔗 阅读原文 via AIHOT · https://aihot.news/items/iuma7p8unle567lzy6hp5jpw9",
+      "pub_date": "2026-10-29",
+      "author": "noreply@aihot.news (The Verge：AI)",
+      "category": "行业动态"
+    },
     {
       "title": "Google 三季度搜索增速不及预期，投资者担忧 AI 搜索变现拖累核心业务",
       "link": "https://aihot.news/items/wry19y87ktlbmfwu581jjffj7",
@@ -394,14 +402,6 @@
       "pub_date": "2026-10-26",
       "author": "noreply@aihot.news (Epoch AI：Gradient Updates)",
       "category": "论文"
-    },
-    {
-      "title": "Apple Creator Studio 推出更新：Final Cut Pro 集成 MotionVFX，Keynote、Pages、Numbers 新增智能助手与 MCP 支持",
-      "link": "https://aihot.news/items/z7h3xpbyfp9laquaq2njijzfo",
-      "summary": "Apple 为 Creator Studio 推出更新，Final Cut Pro for Mac 内置 MotionVFX 视觉效果库并接入含视频素材的 Content Hub。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z7h3xpbyfp9laquaq2njijzfo",
-      "pub_date": "2026-10-26",
-      "author": "noreply@aihot.news (Apple：Newsroom)",
-      "category": "AI 产品"
     }
   ]
 }
