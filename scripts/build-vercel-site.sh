@@ -21,6 +21,9 @@ mkdir -p "$OUT"
 # HTML 外壳
 cp "$ROOT"/*.html "$OUT"/
 
+# 页面模板（含 <!--PAPER_CARDS--> 之类的占位符）不是真页面，别发到线上
+rm -f "$OUT"/*.template.html
+
 # 静态资源
 cp -r "$ROOT/assets" "$OUT"/
 
