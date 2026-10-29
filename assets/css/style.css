@@ -826,3 +826,111 @@ section {
 .section-tight { padding: 60px 32px !important; }
 
 .fade-in-delay-3 { animation-delay: .3s; animation-fill-mode: both; }
+
+/* ===========================================================
+   图文并茂 · 配图区块（首页）
+   课程已有的 7 张配图（01~07）第一次被真正摆到页面上，
+   之前只在「资源下载」里当压缩包附件出现。
+   =========================================================== */
+.figure-band {
+  background: #fff;
+  max-width: 100%; padding: 80px 32px;
+}
+.figure-band.alt {
+  background: linear-gradient(180deg, #faf8ff 0%, #ffffff 100%);
+}
+
+/* ---------- 一张大图 + 文字说明 ---------- */
+.figure-main {
+  max-width: 1280px; margin: 48px auto 0;
+  display: grid; grid-template-columns: 1.25fr 1fr;
+  gap: 48px; align-items: center;
+}
+.figure-main.reverse { grid-template-columns: 1fr 1.25fr; }
+.figure-big { margin: 0; }
+.figure-big img {
+  width: 100%; height: auto; display: block;
+  border-radius: 16px; border: 1px solid var(--gray-light);
+  box-shadow: 0 12px 32px rgba(91, 46, 191, 0.12);
+  background: #fff; cursor: zoom-in;
+}
+.figure-big figcaption {
+  margin-top: 14px; font-size: 13px; color: var(--gray);
+  text-align: center; line-height: 1.7;
+}
+.figure-side h3 { font-size: 24px; color: var(--purple-deep); margin-bottom: 12px; }
+.figure-side p { color: var(--gray); font-size: 15px; line-height: 1.9; margin-bottom: 16px; }
+.figure-side ul { list-style: none; margin-bottom: 24px; }
+.figure-side li {
+  position: relative; padding-left: 26px;
+  font-size: 14px; color: var(--dark); margin-bottom: 10px; line-height: 1.7;
+}
+.figure-side li::before {
+  content: '✓'; position: absolute; left: 0;
+  color: var(--purple); font-weight: 700;
+}
+.figure-side li strong { color: var(--purple-deep); }
+
+/* ---------- 配图网格 ---------- */
+.figure-grid {
+  max-width: 1280px; margin: 48px auto 0;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+/* ---------- 宽图上方的「标题 + 说明」行 ---------- */
+.figure-lead { display: flex; gap: 16px; align-items: flex-start; margin-bottom: 18px; }
+.figure-lead .lead-icon {
+  flex: 0 0 auto; width: 44px; height: 44px; border-radius: 12px;
+  background: linear-gradient(135deg, #5B2EBF 0%, #8B5CF6 100%);
+  color: #fff; display: flex; align-items: center; justify-content: center;
+  font-size: 22px; box-shadow: 0 6px 16px rgba(91, 46, 191, 0.25);
+}
+.figure-lead h3 { font-size: 20px; color: var(--purple-deep); margin: 2px 0 6px; }
+.figure-lead p { font-size: 14px; color: var(--gray); line-height: 1.8; margin: 0; }
+
+/* ---------- 整幅宽图（场景对比 / 工作流） ---------- */
+.figure-wide { max-width: 1280px; margin: 40px auto 0; }
+.figure-wide img {
+  width: 100%; height: auto; display: block;
+  border-radius: 16px; border: 1px solid var(--gray-light);
+  box-shadow: 0 12px 32px rgba(91, 46, 191, 0.1);
+  background: #fff; cursor: zoom-in;
+}
+.figure-wide figcaption {
+  margin-top: 12px; text-align: center;
+  font-size: 13px; color: var(--gray); line-height: 1.7;
+}
+
+/* ---------- 深度学习入口卡里的配图 ---------- */
+.dl-figure {
+  margin-top: 24px; border-radius: 16px; overflow: hidden;
+  background: #fff; box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+}
+.dl-figure img { width: 100%; height: auto; display: block; }
+
+/* ---------- 图片灯箱 ---------- */
+.figure-lightbox {
+  display: none; position: fixed; inset: 0;
+  background: rgba(15, 12, 40, 0.9); z-index: 10000;
+  align-items: center; justify-content: center; padding: 32px;
+}
+.figure-lightbox.open { display: flex; }
+.figure-lightbox img {
+  max-width: 92vw; max-height: 82vh;
+  border-radius: 12px; background: #fff;
+}
+.figure-lightbox .lb-cap {
+  color: #fff; text-align: center; margin-top: 16px;
+  font-size: 14px; line-height: 1.7;
+}
+.figure-lightbox .lb-close {
+  position: absolute; top: 24px; right: 28px;
+  background: none; border: none; color: #fff;
+  font-size: 34px; cursor: pointer; line-height: 1;
+}
+
+@media (max-width: 900px) {
+  .figure-main, .figure-main.reverse { grid-template-columns: 1fr; gap: 28px; }
+  .figure-lead { flex-direction: column; gap: 10px; }
+}

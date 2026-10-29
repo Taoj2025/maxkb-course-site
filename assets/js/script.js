@@ -304,9 +304,46 @@
     initSmoothScroll();
     initFaqAccordion();
     initHamburger();
+    initFigureLightbox();
     await initResourceGating();
     await renderArticles(8);
   });
+
+  // ============ 配图灯箱（点击放大课程示意图） ============
+  function initFigureLightbox() {
+    const box = document.getElementById('figure-lightbox');
+    if (!box) return;
+    const img = box.querySelector('img');
+    const cap = box.querySelector('.lb-cap');
+    const close = box.querySelector('.lb-close');
+
+    function open(src, caption) {
+      img.src = src;
+      img.alt = caption || '';
+      cap.textContent = caption || '';
+      box.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function hide() {
+      box.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    // 任何带 data-figure 的图片或卡片都可点开
+    document.querySelectorAll('[data-figure]').forEach(el => {
+      el.addEventListener('click', () => {
+        const fig = el.closest('[data-figure]');
+        open(fig.getAttribute('data-figure'), fig.getAttribute('data-caption') || '');
+      });
+    });
+
+    box.addEventListener('click', e => {
+      if (e.target === box || e.target === close) hide();
+    });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') hide();
+    });
+  }
 
   // ============ FAQ Accordion 切换 ============
   function initFaqAccordion() {

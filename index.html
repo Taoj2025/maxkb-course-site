@@ -149,6 +149,40 @@
   </div>
 </section>
 
+<!-- ============ 图解：一张图看懂课程体系 ============ -->
+<section class="figure-band">
+  <div style="max-width:1280px; margin:0 auto;">
+    <div class="section-tag">🖼 图解课程</div>
+    <h2 class="section-title">一张图看懂 <span class="highlight">MaxKB 课程体系</span></h2>
+    <p class="section-subtitle">
+      整门课就是这一张架构图 —— 上层搭应用，中层做知识库，底层接模型。
+      9 章讲义按这三层展开，6 步实操把每一层都亲手跑通一遍。
+    </p>
+
+    <div class="figure-main">
+      <figure class="figure-big">
+        <img src="assets/images/04_三层架构图.png"
+             alt="MaxKB 三层技术架构图：应用层 Vue.js 工作流与场景应用，服务层 Python Django LangChain RAG Pipeline 与 MCP Client，基础层 PostgreSQL pgvector 向量库与 DeepSeek OpenAI Claude 通义千问等大模型"
+             width="953" height="670" loading="lazy"
+             data-figure="assets/images/04_三层架构图.png"
+             data-caption="MaxKB 三层技术架构 · 第 1~3 章讲原理，第 4~6 章做实操">
+        <figcaption>MaxKB 三层技术架构 · 第 1~3 章讲原理，第 4~6 章做实操（点击放大）</figcaption>
+      </figure>
+      <div class="figure-side">
+        <h3>三层架构，一门课讲透</h3>
+        <p>很多人学智能体平台卡在「术语太多」。这门课的做法是：先给一张全景图，再按层拆开讲，最后每层都动手做一遍。</p>
+        <ul>
+          <li><strong>应用层</strong> —— 工作流、场景应用、嵌入式问答组件，前端怎么接</li>
+          <li><strong>服务层</strong> —— RAG Pipeline、Workflow Engine、MCP Client、REST API 网关</li>
+          <li><strong>基础层</strong> —— PostgreSQL + pgvector 存向量，DeepSeek / OpenAI / Claude / 通义千问接模型</li>
+          <li><strong>一条主线</strong> —— 6 步实操把三层串成一条完整链路，不跳步</li>
+        </ul>
+        <a href="syllabus.html" style="display:inline-block; padding:13px 28px; background:var(--purple-deep); color:#fff; border-radius:8px; text-decoration:none; font-weight:600;">📚 对照大纲看 9 章详情 →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ============ 课程章节 ============ -->
 <section id="course">
   <div class="section-tag">PART 1</div>
@@ -157,6 +191,7 @@
     本部分用 9 章节讲清楚 MaxKB 是什么、解决什么问题，以及 RAG / LangChain / Workflow / MCP 四大核心技术底座，附加深度学习原理章节。
   </p>
 
+  <!-- 两大核心技术底座 · 图解 -->
   <div class="chapter-tabs">
     <button class="chapter-tab active" data-tab="all">全部</button>
     <button class="chapter-tab" data-tab="theory">理论</button>
@@ -173,6 +208,63 @@
       📚 查看完整课程大纲（9 章详情 + 示例 Prompt）→
     </a>
   </div>
+
+  <!-- ============ 技术底座图解 ============ -->
+  <div style="max-width:1280px; margin:72px auto 0; padding-top:48px; border-top:1px dashed var(--gray-light);">
+    <div class="section-tag">🧩 技术底座图解</div>
+    <h3 style="font-size:24px; color:var(--purple-deep); margin:12px 0 8px;">RAG · Workflow · MCP，三个底座一张图一个</h3>
+    <p style="color:var(--gray); font-size:14px; line-height:1.8; margin-bottom:8px;">
+      这三张图是课件里的核心插图，章节里会逐个拆开讲。点图可放大。
+    </p>
+
+    <figure class="figure-wide" style="max-width:1100px;">
+      <div class="figure-lead">
+        <span class="lead-icon">🔍</span>
+        <div>
+          <h3>RAG 检索增强生成 · 第 2 章</h3>
+          <p>先检索、再生成：文档切分 → 向量化入库 → Top-K 召回 → 重排 → 组装 Prompt → 大模型作答。这是知识库场景能落地、且不乱说的关键，也是整套课讲得最细的一块。</p>
+        </div>
+      </div>
+      <img src="assets/images/02_RAG原理流程图.png"
+           alt="RAG 检索增强生成流程图：文档解析与切分、向量化入库、用户提问、向量检索召回 Top-K、重排、组装 Prompt、大模型生成答案"
+           width="1047" height="486" loading="lazy"
+           data-figure="assets/images/02_RAG原理流程图.png"
+           data-caption="RAG 检索增强生成流程：文档解析 → 向量化 → 检索召回 → 重排 → Prompt 组装 → LLM 生成">
+      <figcaption>RAG 检索增强生成 · 完整检索链路</figcaption>
+    </figure>
+
+    <figure class="figure-wide" style="max-width:1000px;">
+      <div class="figure-lead">
+        <span class="lead-icon">🔀</span>
+        <div>
+          <h3>工作流编排引擎 · 第 4 章</h3>
+          <p>一次问答不止一步：问题分类（LLM 判断）→ 咨询类走知识库查询、投诉类走工单创建 → 汇总结束。拖拽节点就能编排复杂业务流，支持自定义函数节点、条件分支与循环。</p>
+        </div>
+      </div>
+      <img src="assets/images/03_工作流编排.png"
+           alt="MaxKB 可视化工作流编排图：开始 → 问题分类（LLM）→ 咨询类分支走知识库查询、投诉类分支走工单创建 → 结束"
+           width="1047" height="578" loading="lazy"
+           data-figure="assets/images/03_工作流编排.png"
+           data-caption="工作流编排引擎：问题分类 → 知识库查询 / 工单创建 → 结束">
+      <figcaption>工作流编排 · 问题分类后分流到不同处理节点</figcaption>
+    </figure>
+
+    <figure class="figure-wide" style="max-width:900px;">
+      <div class="figure-lead">
+        <span class="lead-icon">🔌</span>
+        <div>
+          <h3>MCP 工具生态 · 第 5 章</h3>
+          <p>用 Model Context Protocol 把外部系统接成工具：数据库、搜索、办公系统各接一个 MCP Server，一套协议复用整个生态。</p>
+        </div>
+      </div>
+      <img src="assets/images/05_MCP工具生态.png"
+           alt="MCP 工具生态图：MaxKB 作为 MCP Client 连接多个 MCP Server，把数据库查询、网页搜索、企业办公系统等外部能力接成可调用工具"
+           width="1047" height="670" loading="lazy"
+           data-figure="assets/images/05_MCP工具生态.png"
+           data-caption="MCP 工具生态：MaxKB 作为 MCP Client 接入外部 MCP Server">
+      <figcaption>MCP 工具生态 · 一个协议接一片系统</figcaption>
+    </figure>
+  </div>
 </section>
 
 <!-- 🧠 深度学习课程入口卡 -->
@@ -188,7 +280,14 @@
       <div style="text-align: center;"><div style="font-size: 32px; font-weight: 700; color: #FCD34D;">3</div><div style="font-size: 12px; opacity: 0.8;">学分</div></div>
       <div style="text-align: center;"><div style="font-size: 32px; font-weight: 700; color: #FCD34D;">A10</div><div style="font-size: 12px; opacity: 0.8;">GPU</div></div>
     </div>
-    <a href="dl-course.html" style="display: inline-block; background: #FCD34D; color: #5B2EBF; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 16px;">立即开始深度学习 →</a>
+    <div class="dl-figure">
+      <img src="assets/images/07_深度学习课程体系.png"
+           alt="深度学习课程体系图：CNN 卷积神经网络、RNN 循环神经网络、Transformer 注意力机制、GAN 生成对抗网络四大模块，串联模型选型、数据处理、训练调优、推理部署、上线监控的能力沉淀链路"
+           width="1427" height="767" loading="lazy"
+           data-figure="assets/images/07_深度学习课程体系.png"
+           data-caption="SKC5053 深度学习课程体系 · 9 章讲解 + 7 大实验，覆盖 CNN / RNN / Transformer / GAN">
+    </div>
+    <a href="dl-course.html" style="display: inline-block; margin-top: 24px; background: #FCD34D; color: #5B2EBF; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 16px;">立即开始深度学习 →</a>
   </div>
 </section>
 
@@ -371,6 +470,15 @@ if (!localStorage.getItem('maxkb_guide_dismissed')) {
     5 个课程覆盖的高价值场景，每个场景有专属 Prompt 模板 + 工作流示例 + 部署脚本。
   </p>
 
+  <figure class="figure-wide" style="margin-top:32px;">
+    <img src="assets/images/06_五大场景对比.png"
+         alt="5 大企业场景业务价值对比柱状图：高校客服、教师备课、文献精读、企业知识库、政务导诊五个场景，在实施周期（周）、ROI 评分（满分 10）、实现难度（1-5）三个维度的对比"
+         width="1427" height="767" loading="lazy"
+         data-figure="assets/images/06_五大场景对比.png"
+         data-caption="5 大场景对比：实施周期 / ROI 评分 / 实现难度 —— 文献精读 ROI 9.5 最高，高校客服 1 周最快落地">
+    <figcaption>5 大场景的实施周期 / ROI 评分 / 实现难度对比（点击放大）</figcaption>
+  </figure>
+
   <div class="scenarios">
     <div class="scenario" data-min-plan="free">
       <div class="icon">🏫</div>
@@ -435,6 +543,30 @@ if (!localStorage.getItem('maxkb_guide_dismissed')) {
     <div class="section-tag">⭐ 课程特点</div>
     <h2 class="section-title">这套课 <span class="highlight">解决什么</span></h2>
     <p class="section-subtitle">从课程设计出发，看 6 步实操能给你带来什么。</p>
+
+    <!-- 五维核心能力雷达 -->
+    <div class="figure-main">
+      <figure class="figure-big">
+        <img src="assets/images/01_五维能力雷达图.png"
+             alt="MaxKB 五维核心能力雷达图：RAG 检索 100 分、工作流 90 分、模型中立 90 分、多模态 85 分、MCP 工具 85 分，五个维度构成平台完整能力画像"
+             width="697" height="706" loading="lazy"
+             data-figure="assets/images/01_五维能力雷达图.png"
+             data-caption="MaxKB 五维核心能力 · 课程逐维拆解">
+        <figcaption>MaxKB 五维核心能力 · 这门课把五维逐个拆开讲</figcaption>
+      </figure>
+      <div class="figure-side">
+        <h3>五个维度，才是完整的能力画像</h3>
+        <p>MaxKB 不是一个「套壳大模型」，而是五个可以分别学、分别验收的维度。这门课把它们逐个拆开：每一维都有对应章节、配套实操和可交付的产出。</p>
+        <ul>
+          <li><strong>RAG 检索</strong> —— 切分、向量化、召回与重排调优，让回答有据可查</li>
+          <li><strong>工作流编排</strong> —— 意图分流、多节点协同、条件分支与循环</li>
+          <li><strong>多模态</strong> —— 图片 OCR、文档解析接入，非纯文本资料也能问答</li>
+          <li><strong>模型中立</strong> —— DeepSeek / OpenAI / Claude / 通义千问等 20+ 模型自由切换</li>
+          <li><strong>MCP 工具</strong> —— 一套协议接数据库、搜索、ERP、CRM 等外部系统</li>
+        </ul>
+        <a href="syllabus.html" style="display:inline-block; padding:13px 28px; background:var(--purple-deep); color:#fff; border-radius:8px; text-decoration:none; font-weight:600;">📚 看每个维度的章节安排 →</a>
+      </div>
+    </div>
 
     <div class="testimonial-grid">
       <div class="testimonial-card">
@@ -963,5 +1095,14 @@ document.addEventListener('keydown', (e) => {
 <script src="assets/js/membership.js" defer></script>
 <script src="assets/js/data.js" defer></script>
 <script src="assets/js/script.js" defer></script>
+
+<!-- 配图灯箱 -->
+<div id="figure-lightbox" class="figure-lightbox" role="dialog" aria-modal="true" aria-label="配图放大查看">
+  <button class="lb-close" type="button" aria-label="关闭">✕</button>
+  <div style="text-align:center;">
+    <img src="" alt="">
+    <div class="lb-cap"></div>
+  </div>
+</div>
 </body>
 </html>
