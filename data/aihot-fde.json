@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-10-29T22:05:01.867294+08:00",
-  "total": 20,
+  "updated_at": "2026-10-29T23:05:02.378358+08:00",
+  "total": 19,
   "items": [
+    {
+      "title": "Unsloth 发布 Mistral Le Chonk 1-bit GGUF 量化版，可本地运行 1T 参数模型",
+      "link": "https://aihot.news/items/rph54wkrnzjpvov4cv0mxqatl",
+      "summary": "Unsloth 发布 Mistral Le Chonk（Mistral Large 4，1T 参数 MoE，52B 激活）的 Dynamic 1-bit GGUF，可在 Mac Studio 上本地运行，保留 91% top-1 准确率，体积约 233GB（较 1.1TB FP8 小 80%）。图为各量化档位给出硬件需求，1-bit 需 256-270GB 内存，最小 UD-IQ1_S 约占 233GB 磁盘，并支持文本与图像输入、1M 上下文和 160+ 语言。GGUF 与指南见 huggingface.co/unsloth/Mistral-Large-4-1T-A52B-GGUF 和 unsloth.ai/docs/models/mistral-large-4。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rph54wkrnzjpvov4cv0mxqatl",
+      "pub_date": "2026-10-29",
+      "author": "noreply@aihot.news (Unsloth)",
+      "category": "AI 产品"
+    },
     {
       "title": "Addy Osmani 谈你可能对 Claude 过度提示了",
       "link": "https://aihot.news/items/m1cx9dfhpep0da323x3tk7vht",
@@ -10,6 +18,14 @@
       "pub_date": "2026-10-29",
       "author": "noreply@aihot.news (Addy Osmani)",
       "category": "教程"
+    },
+    {
+      "title": "Mistral Large 4（Le Chonk）登陆 Hugging Face：1T 参数 MoE 多模态开源权重模型",
+      "link": "https://aihot.news/items/upsd8u37hkkquohy3w3sjvszi",
+      "summary": "Hugging Face 发布 Mistral Large 4（Le Chonk）的上线博客，模型为多模态多语言 MoE 架构，总参数约 1T、激活 49B、上下文窗口 1M token。 🔗 阅读原文 via AIHOT · https://aihot.news/items/upsd8u37hkkquohy3w3sjvszi",
+      "pub_date": "2026-10-29",
+      "author": "noreply@aihot.news (Hugging Face 社区博客)",
+      "category": "AI 模型"
     },
     {
       "title": "Alphabet Q3 财报：年化收入达 5000 亿美元，Google Cloud 增长 103%",
@@ -137,30 +153,6 @@
       "summary": "Cartesia 发布系列博客第一篇，报告其层级网络（H-Net）在字节级语言建模上的扩缩律结果：与严格匹配的 BPE Transformer 相比，1-stage H-Net 在验证损失上节省 1.28x 计算，下游评测约 2x，代码任务中位数 2.04x、分布外编程语言中位数达 3.10x（如 Prolog 5.37x）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ctuk7r4h4qbyyligi680s7gtr",
       "pub_date": "2026-10-27",
       "author": "noreply@aihot.news (Cartesia 产品与研究)",
-      "category": "论文"
-    },
-    {
-      "title": "Gamma 发布 Gamma 5 及 credits、导出、预览等多项更新",
-      "link": "https://aihot.news/items/tckw64et369c0brghxzwke9qe",
-      "summary": "Gamma 发布 Gamma 5，宣称重建了思考、设计和编辑方式，支持输入句子、文档、PDF、图片或旧演示文稿，由智能体在几分钟内完成调研和设计，并可连接 Slack、Notion、Granola 等 20+ 工具引入上下文。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tckw64et369c0brghxzwke9qe",
-      "pub_date": "2026-10-26",
-      "author": "noreply@aihot.news (Gamma Changelog)",
-      "category": "AI 产品"
-    },
-    {
-      "title": "OpenAI GPT-6.1 Terra 上线 OpenRouter，定价 $1/M input、$5/M output",
-      "link": "https://aihot.news/items/yims6bdgwsy052wrmjytgak8p",
-      "summary": "OpenRouter 宣布 OpenAI 的 GPT-6.1 Terra 上线。该模型在 Agents&apos; Last Exam 上与 GPT-6 Astra 得分相当，每 token 价格约为其十分之一，平均完成任务速度比 Astra 和 GPT-6.1 Sol 快 3 倍以上。定价 $1/M input、$5/M output，上下文 1.05M，链接 https://openrouter.ai/openai/gpt-6.1-terra 。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yims6bdgwsy052wrmjytgak8p",
-      "pub_date": "2026-10-26",
-      "author": "noreply@aihot.news (OpenRouter)",
-      "category": "AI 产品"
-    },
-    {
-      "title": "Epoch AI 用内部工作任务评测前沿模型：Claude Fable 5.1 与 GPT-6 Astra 平均只得 65%",
-      "link": "https://aihot.news/items/dgly2r4fwb6y80t3im8yqqvt1",
-      "summary": "Epoch AI 发布 Epoch Automation Reports，把机构内部的图表设计、研究规划等真实任务按人类员工评估标准测试 AI，领先的 Claude Fable 5.1 和 GPT-6 Astra 平均得分 65%，未达到 100% 的可自动化门槛。 🔗 阅读原文 via AIHOT · https://aihot.news/items/dgly2r4fwb6y80t3im8yqqvt1",
-      "pub_date": "2026-10-26",
-      "author": "noreply@aihot.news (Epoch AI：Gradient Updates)",
       "category": "论文"
     }
   ]
