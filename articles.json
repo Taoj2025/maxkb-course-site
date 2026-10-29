@@ -302,5 +302,77 @@
     "source": "AI 重写 · GitHub Blog",
     "file": "13316-github-universe-2026-evolving-every-laye.md",
     "estimated_read_time": "2 分钟"
+  },
+  {
+    "id": 13317,
+    "title": "腾讯网盘开启内测申请：支持连接多个 AI 应用，共享存储、聚合上下文",
+    "slug": "13317-post-b9cadf1d",
+    "summary": "# 腾讯网盘：AI时代的教学新利器 亲爱的同学们和老师们， 在当今这个AI技术飞速发展的时代，我们都在寻找能够提升学习和工作效率的工具。最近，腾讯网盘开启内测申请的消息引起了我的注意。作为大数据专业的教师，我深知这款工具对于我们教学和科研的潜在价值。 ## 腾讯网盘的四大核心能力 ### 1. **",
+    "category": "最新动态",
+    "tags": [
+      "FDE",
+      "AI 资讯",
+      "前端部署"
+    ],
+    "color": "purple",
+    "date": "2026-10-29",
+    "author": "小Q",
+    "source": "AI 重写 · IT之家",
+    "file": "13317-post-b9cadf1d.md",
+    "estimated_read_time": "2 分钟"
+  },
+  {
+    "id": 13318,
+    "title": "AI 行业重磅并购：彭博社称美满电子最快下周宣布收购光通信龙头 Lumentum",
+    "slug": "13318-ai-lumentum",
+    "summary": "# 探索 AI 硬件供应链：理解美满电子收购 Lumentum 的意义 亲爱的同学们和老师们， 今天我们来聊聊最近 AI 行业的一则重磅新闻：美国半导体公司美满电子（Marvell）计划收购光通信设备制造商朗美通（Lumentum）。根据彭博社的报道，这笔交易最快可能于下周宣布。如果交易达成，将成为",
+    "category": "最新动态",
+    "tags": [
+      "FDE",
+      "AI 资讯",
+      "前端部署"
+    ],
+    "color": "blue",
+    "date": "2026-10-29",
+    "author": "小Q",
+    "source": "AI 重写 · IT之家",
+    "file": "13318-ai-lumentum.md",
+    "estimated_read_time": "2 分钟"
+  },
+  {
+    "id": 13319,
+    "title": "Valve 回应 Steam AI 垃圾游戏泛滥：不禁用 AI，但要改推荐机制",
+    "slug": "13319-valve-steam-ai-ai",
+    "summary": "# Valve 对 Steam AI 游戏争议的回应：AI 工具的合理使用与推荐机制优化 ## 教学场景引入 在近期的一次课程中，我与大数据专业的同学们讨论了 AI 技术在不同领域的应用，其中一个热门话题便是 AI 在游戏开发中的角色。就在上周，韩国召开的 Steam Indie Connect 活",
+    "category": "最新动态",
+    "tags": [
+      "FDE",
+      "AI 资讯",
+      "前端部署"
+    ],
+    "color": "green",
+    "date": "2026-10-29",
+    "author": "小Q",
+    "source": "AI 重写 · IT之家",
+    "file": "13319-valve-steam-ai-ai.md",
+    "estimated_read_time": "2 分钟"
+  },
+  {
+    "id": 13320,
+    "title": "想聊就聊，没收 AI 对话框的中止按钮！一天让你的 Agent 支持异步后台深度研究",
+    "slug": "13320-ai-agent",
+    "summary": "# 一天让你的 Agent 支持异步后台深度研究：高校教学视角 在人工智能（AI）教学中，我们常常会遇到这样的问题：**当AI正在进行长时间的研究任务时，用户是否还能继续提问或调整任务呢？** 这是一个非常重要且实用的课题，尤其对于那些正在学习如何开发智能对话系统（Agent）的高校学生和教师来说。",
+    "category": "最新动态",
+    "tags": [
+      "FDE",
+      "AI 资讯",
+      "前端部署"
+    ],
+    "color": "orange",
+    "date": "2026-10-29",
+    "author": "小Q",
+    "source": "AI 重写 · 掘金",
+    "file": "13320-ai-agent.md",
+    "estimated_read_time": "3 分钟"
   }
 ]
