@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-10-30T00:05:01.372740+08:00",
+  "updated_at": "2026-10-30T01:05:01.567187+08:00",
   "total": 50,
   "items": [
     {
@@ -20,9 +20,9 @@
       "category": "AI 产品"
     },
     {
-      "title": "404 Media 调查 Proton 内部 AI 转型：CEO Andy Yen 强推全面用 AI 并重面试员工",
+      "title": "404 Media 起底 Proton 内部 AI 转型之争：CEO Andy Yen 强推 AI 引发恐惧文化",
       "link": "https://aihot.news/items/x7qd347blfo2409za7srbypzw",
-      "summary": "404 Media 采访八名在职和一名前 Proton 员工，并查阅 Slack 记录、会议录音和 CTO 的 AI 宣言，披露 CEO Andy Yen 强推 AI 导致的恐惧文化。 🔗 阅读原文 via AIHOT · https://aihot.news/items/x7qd347blfo2409za7srbypzw",
+      "summary": "404 Media 采访九名现任与离职 Proton 员工并查阅内部文件，报道 CEO Andy Yen 强推 AI 转型引发的内部冲突。10 月公司 90% 代码由 AI 编写，多使用 Anthropic 的 Claude；Yen 称今年是最后一年招聘工程师，并宣布将以可能决定去留的重新面试评估员工 AI 使用情况。 🔗 阅读原文 via AIHOT · https://aihot.news/items/x7qd347blfo2409za7srbypzw",
       "pub_date": "2026-10-29",
       "author": "noreply@aihot.news (404 Media)",
       "category": "行业动态"
@@ -220,6 +220,14 @@
       "category": "行业动态"
     },
     {
+      "title": "Trakkr 研究：追踪 1285 条 AI 引用统计的溯源路径",
+      "link": "https://aihot.news/items/dmi67weoeety92021tvuyf1hs",
+      "summary": "Trakkr Research 向 ChatGPT、Perplexity、Gemini、Claude 和 Google AI Overviews 提出 200 个要求数字的问题，并追踪其中 1285 条统计的引用链路，结果只有 40% 到达说法一致的研究，8% 到达但数字或语境已变，40% 无法核查，11% 无处可溯。 🔗 阅读原文 via AIHOT · https://aihot.news/items/dmi67weoeety92021tvuyf1hs",
+      "pub_date": "2026-10-28",
+      "author": "noreply@aihot.news (Hacker News：AI 热帖)",
+      "category": "论文"
+    },
+    {
       "title": "Addy Osmani 讲解如何上手 Claude Code Mods",
       "link": "https://aihot.news/items/tw5fe5mj6a2zyp6ica2ec3qpb",
       "summary": "Addy Osmani 发布 Claude Code Mods 上手指南，说明 mods 是运行在会话中的 JavaScript/TypeScript 文件，可通过 hooks 观察事件、改写行为或渲染自定义界面。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tw5fe5mj6a2zyp6ica2ec3qpb",
@@ -394,14 +402,6 @@
       "pub_date": "2026-10-27",
       "author": "noreply@aihot.news (Cartesia 产品与研究)",
       "category": "论文"
-    },
-    {
-      "title": "OpenAI 宣布 AI 模型取得三项科学突破，涉及局部光滑猜想、指数时间假设与杨–米尔斯理论",
-      "link": "https://aihot.news/items/jxpzj0z4beg1r0cktwzc0tmwe",
-      "summary": "OpenAI 于 10 月 27 日宣布其 AI 模型在数学、计算机科学和物理学领域取得三项研究突破。数学上给出了所有维度下局部光滑猜想的证明，从而解决挂谷猜想与斯坦因限制猜想；计算机科学上给出推翻指数时间假设（ETH）的证明，暗示相关计算任务可能有更快算法；物理学上提出量子色动力学及标准模型一种统一完备化的严格存在性证明，涉及杨–米尔斯千禧年难题的一部分。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jxpzj0z4beg1r0cktwzc0tmwe",
-      "pub_date": "2026-10-26",
-      "author": "noreply@aihot.news (IT之家·人工智能)",
-      "category": "AI 模型"
     }
   ]
 }
