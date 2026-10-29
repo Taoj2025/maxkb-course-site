@@ -41,12 +41,47 @@
 | 首页 | `/` | 60+ PPT + 9 章节概览 |
 | 课程大纲 | `/syllabus.html` | 完整 9 章课程结构 |
 | **深度学习** | `/dl-course.html` | SKC5053 深度学习专业课 |
+| **目标检测** | `/object-detection.html` | 30 篇 arXiv 论文精读 + 9 张原理架构图 |
 | 最新前沿 | `/latest.html` | AI 热点实时聚合 |
 | 客户案例 | `/cases.html` | FDE 实战案例 |
 | 企业服务 | `/enterprise.html` | 企业级定制方案 |
 | 讲师介绍 | `/about.html` | 教学团队 |
 | 会员服务 | `/membership.html` | 3 档会员套餐 |
+| 预约演示 | `/trial.html` | 企业内训 / 1v1 咨询 |
+| 常见问题 | `/faq.html` | 购买与退订须知 |
+| FDE 技能图谱 | `/fde-skills.html` | 能力矩阵与自评 |
+| 招聘需求 | `/fde-jobs.html` | 岗位画像与技能要求 |
 | 资源下载 | `/downloads/` | 教学资源 · 工具 · 案例 |
+
+---
+
+## 🧩 站点外壳（全站统一模板）
+
+15 个页面的导航、状态条、面包屑、页脚、吸底 CTA **不是各写各的**，
+统一由 `scripts/shell.py` 一份模板生成，`scripts/sync-shell.py` 灌进每个页面。
+
+> ⚠️ **不要手改各页面的导航和页脚** —— 改 `scripts/shell.py` 然后重跑脚本。
+> 手改的部分会被下一次同步覆盖，或者更糟 —— 各页导航又对不上了。
+
+```bash
+# 改完 shell.py 后：生成 → 灌进 15 个页面 → 检查一致性
+python scripts/sync-shell.py          # 写文件
+python scripts/sync-shell.py --check  # 只检查（CI 用，有差异退出码 1）
+
+# 统一各页面的分区样式（行内 style → .sec / .sec-wrap）
+python scripts/normalize-sections.py
+
+# 生成 Vercel 静态快照 + 全站布局体检
+npm run build
+python scripts/audit-layout.py        # 加 --shots 会输出截图到 .audit/
+```
+
+体检脚本会检查：横向溢出、裂图、JS 报错、资源 404、导航高度、
+**重复 id**、**非法属性名**、**内层容器限宽**、**外壳区域份数**。
+后四项是踩过坑才加的 —— 脚本重复执行会积出多份吸底 CTA，
+`class="class="x""` 这种嵌套写法会让限宽规则静默失效。
+
+脚本必须可重复执行（幂等）。改完跑两遍 `--check`，第二次应该是 0 改动。
 
 ---
 
@@ -133,6 +168,7 @@ open http://localhost:3000
 
 | 版本 | 日期 | 主要变更 |
 |------|------|---------|
+| **v3.2.0** | 2026-10-30 | 全站商业化改版：统一外壳模板 + 分区节奏 + 转化组件 + 布局体检脚本 |
 | **v3.1.1** | 2026-09-19 | 清理「广州华商学院」字段（用户硬约束）|
 | v3.1.0 | 2026-09-19 | 深度学习课程接口（dl-course.html + 6 个 API）|
 | v3.0.0 | 2026-09-19 | GitHub Release workflow + 远程服务器自动部署 |
