@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-10-30T01:05:01.568136+08:00",
-  "total": 21,
+  "updated_at": "2026-10-30T02:05:02.351664+08:00",
+  "total": 22,
   "items": [
+    {
+      "title": "Codex 宣布即日起 Pro 及 Business Premium 各档位用量上限翻倍",
+      "link": "https://aihot.news/items/funx6p4g0gju509j6n0oyxmqu",
+      "summary": "Tibo 宣布即日起将 Pro 100/200/500 档位与 Business Premium 的所有用量上限翻倍。Pro 200 的上限不会下调，Work 与 Codex 用量保持不变；dots 的扩展用量上限继续提供，且仍与默认用量分开计算，后续还会通过更好的模型和效率改进提升实际可用量。 🔗 阅读原文 via AIHOT · https://aihot.news/items/funx6p4g0gju509j6n0oyxmqu",
+      "pub_date": "2026-10-29",
+      "author": "noreply@aihot.news (Tibo)",
+      "category": "AI 产品"
+    },
     {
       "title": "Wiz 分析智能体攻击的七大指纹与发展趋势",
       "link": "https://aihot.news/items/mdcygre4ettjdbca7sq6vu7zx",
@@ -18,6 +26,14 @@
       "pub_date": "2026-10-29",
       "author": "noreply@aihot.news (Unsloth)",
       "category": "AI 产品"
+    },
+    {
+      "title": "OpenAI 详解如何检测前沿模型失准行为",
+      "link": "https://aihot.news/items/ck2bk0ns12i2hkg4ae0eoeabv",
+      "summary": "OpenAI 发布长文，详解其针对前沿模型失准行为的多层监测系统，包括激活探针、基于模型的审查、调查智能体和自动化调查四层架构，并对 GPT‑6 Astra 及以上模型的全部 RL 运行、评估和内部 Codex 流量进行监测。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ck2bk0ns12i2hkg4ae0eoeabv",
+      "pub_date": "2026-10-29",
+      "author": "noreply@aihot.news (OpenAI：官网动态)",
+      "category": "论文"
     },
     {
       "title": "Addy Osmani 谈你可能对 Claude 过度提示了",
@@ -162,14 +178,6 @@
       "pub_date": "2026-10-27",
       "author": "noreply@aihot.news (a16z：News)",
       "category": "观点"
-    },
-    {
-      "title": "Cartesia 发布 H-Net 扩缩律研究：字节级层级网络比 BPE 提升最高 3-5x 计算效率",
-      "link": "https://aihot.news/items/ctuk7r4h4qbyyligi680s7gtr",
-      "summary": "Cartesia 发布系列博客第一篇，报告其层级网络（H-Net）在字节级语言建模上的扩缩律结果：与严格匹配的 BPE Transformer 相比，1-stage H-Net 在验证损失上节省 1.28x 计算，下游评测约 2x，代码任务中位数 2.04x、分布外编程语言中位数达 3.10x（如 Prolog 5.37x）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ctuk7r4h4qbyyligi680s7gtr",
-      "pub_date": "2026-10-27",
-      "author": "noreply@aihot.news (Cartesia 产品与研究)",
-      "category": "论文"
     }
   ]
 }

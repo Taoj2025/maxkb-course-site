@@ -1,8 +1,40 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-10-30T01:05:01.567187+08:00",
+  "updated_at": "2026-10-30T02:05:02.350822+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "腾讯混元发布 Hy-Nomas 技术报告并开源 Hy-Nomas-Bench",
+      "link": "https://aihot.news/items/nb40aoihhydhoo0acp0rcyaol",
+      "summary": "腾讯混元发布 Hy-Nomas 开源交互式视频世界模型的技术报告（arXiv:2610.36729），并开源 Hy-Nomas-Bench 数据集用于可复现研究。官方还用 Hy-Nomas 重现 Genie 4 示例并放出对比视频，演示无需排队即可试用，地址为 https://hy-nomas.hy.tencent.com/。 🔗 阅读原文 via AIHOT · https://aihot.news/items/nb40aoihhydhoo0acp0rcyaol",
+      "pub_date": "2026-10-29",
+      "author": "noreply@aihot.news (腾讯混元)",
+      "category": "AI 产品"
+    },
+    {
+      "title": "OpenAI 更新 Model Spec，围绕五项核心价值观重组模型行为准则",
+      "link": "https://aihot.news/items/rccreyesa3aeph7jasj5spv29",
+      "summary": "OpenAI 更新其公开的 Model Spec，将指导原则重组为五项核心价值观：忠实于人类意图、最小化伤害、诚实透明、促进人类自主和关怀。更新新增了关于上下文理解、监督和自主性的指导，调整了部分行为默认值，退出了大部分详细风格指南，并将模型称呼从 the assistant 改为 GPT。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rccreyesa3aeph7jasj5spv29",
+      "pub_date": "2026-10-29",
+      "author": "noreply@aihot.news (OpenAI：官网动态)",
+      "category": "行业动态"
+    },
+    {
+      "title": "Codex 宣布即日起 Pro 及 Business Premium 各档位用量上限翻倍",
+      "link": "https://aihot.news/items/funx6p4g0gju509j6n0oyxmqu",
+      "summary": "Tibo 宣布即日起将 Pro 100/200/500 档位与 Business Premium 的所有用量上限翻倍。Pro 200 的上限不会下调，Work 与 Codex 用量保持不变；dots 的扩展用量上限继续提供，且仍与默认用量分开计算，后续还会通过更好的模型和效率改进提升实际可用量。 🔗 阅读原文 via AIHOT · https://aihot.news/items/funx6p4g0gju509j6n0oyxmqu",
+      "pub_date": "2026-10-29",
+      "author": "noreply@aihot.news (Tibo)",
+      "category": "AI 产品"
+    },
+    {
+      "title": "Gemini 新增文档、PDF、演示文稿和表格的直接生成、预览与编辑功能",
+      "link": "https://aihot.news/items/nfbnpnzdrebu4kbq6uqxhkc2h",
+      "summary": "Google Gemini 宣布可直接在应用内生成、预览和编辑文档、PDF、演示文稿、表格等多种文件。支持把手写笔记转成 PDF 学习指南、手动调整内容、高亮部分让 Gemini 修改文字或视觉元素，并可继续追问。 🔗 阅读原文 via AIHOT · https://aihot.news/items/nfbnpnzdrebu4kbq6uqxhkc2h",
+      "pub_date": "2026-10-29",
+      "author": "noreply@aihot.news (Gemini)",
+      "category": "AI 产品"
+    },
     {
       "title": "Wiz 分析智能体攻击的七大指纹与发展趋势",
       "link": "https://aihot.news/items/mdcygre4ettjdbca7sq6vu7zx",
@@ -58,6 +90,14 @@
       "pub_date": "2026-10-29",
       "author": "noreply@aihot.news (The Decoder：AI News)",
       "category": "行业动态"
+    },
+    {
+      "title": "OpenAI 详解如何检测前沿模型失准行为",
+      "link": "https://aihot.news/items/ck2bk0ns12i2hkg4ae0eoeabv",
+      "summary": "OpenAI 发布长文，详解其针对前沿模型失准行为的多层监测系统，包括激活探针、基于模型的审查、调查智能体和自动化调查四层架构，并对 GPT‑6 Astra 及以上模型的全部 RL 运行、评估和内部 Codex 流量进行监测。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ck2bk0ns12i2hkg4ae0eoeabv",
+      "pub_date": "2026-10-29",
+      "author": "noreply@aihot.news (OpenAI：官网动态)",
+      "category": "论文"
     },
     {
       "title": "Addy Osmani 谈你可能对 Claude 过度提示了",
@@ -361,46 +401,6 @@
       "summary": "Ai2 发布研究 Old Ideas, Novel Problems、配套 benchmark、数据、代码和自动化流水线，测试 LLM 作为研究想法新颖性裁判的可靠性。 🔗 阅读原文 via AIHOT · https://aihot.news/items/p92a4pkxkheznj9nmt50o08l6",
       "pub_date": "2026-10-27",
       "author": "noreply@aihot.news (Ai2 / Allen Institute for AI)",
-      "category": "论文"
-    },
-    {
-      "title": "Latent Space 解读 Anthropic 提交 S-1：拟以代码 AN 上市纳斯达克，H1 2026 营收 16.3B 美元",
-      "link": "https://aihot.news/items/nbvleghbxraalsahhggnc6qov",
-      "summary": "Latent Space 汇总解读 Anthropic 公开提交的 S-1 文件，公司计划以代码 AN 上市纳斯达克，营收从 2023 年的 41M 美元增至 H1 2026 的 16.3B 美元，Q2 营收 11.6B 美元同比增长 1,368%，营业利润 974M 美元，H1 2026 毛利率达 85%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/nbvleghbxraalsahhggnc6qov",
-      "pub_date": "2026-10-27",
-      "author": "noreply@aihot.news (Latent Space)",
-      "category": "行业动态"
-    },
-    {
-      "title": "OpenAI 扩大与 Oracle 合作，将 Oracle 应用与数据接入 ChatGPT",
-      "link": "https://aihot.news/items/zbp5qzehshqnvgimabeu27cb1",
-      "summary": "OpenAI 宣布扩大与 Oracle 的合作，将 Oracle 应用和数据接入 ChatGPT，并用 OpenAI 模型驱动 Oracle 新产品。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zbp5qzehshqnvgimabeu27cb1",
-      "pub_date": "2026-10-27",
-      "author": "noreply@aihot.news (OpenAI：官网动态)",
-      "category": "行业动态"
-    },
-    {
-      "title": "Anthropic 招股书拆解：IPO 计划募资约 1000 亿美元背后的 11 个细节",
-      "link": "https://aihot.news/items/t6evqsenxfytsi8wl7h1urjxr",
-      "summary": "作者总结 Anthropic IPO 招股书的 11 个细节，计划募资约 1000 亿美元、估值或达 1.5万亿～2万亿。收入五个季度涨 30 倍，今年二季度经营利润首次转正 9.74 亿美元，但上半年净亏 807 亿美元，主要来自可转换票据公允价值变动；调整后净利润为正 26.71 亿美元。 🔗 阅读原文 via AIHOT · https://aihot.news/items/t6evqsenxfytsi8wl7h1urjxr",
-      "pub_date": "2026-10-27",
-      "author": "noreply@aihot.news (卡兹克)",
-      "category": "行业动态"
-    },
-    {
-      "title": "Anthropic IPO 招股书11个细节解读：千亿募资、807亿美元亏损与7美元控股权",
-      "link": "https://aihot.news/items/dw9465ajr0oz1vf6ricf2074f",
-      "summary": "作者梳理了 Anthropic 提交的 IPO 招股书中的11个细节。 🔗 阅读原文 via AIHOT · https://aihot.news/items/dw9465ajr0oz1vf6ricf2074f",
-      "pub_date": "2026-10-27",
-      "author": "noreply@aihot.news (公众号：数字生命卡兹克)",
-      "category": "行业动态"
-    },
-    {
-      "title": "Cartesia 发布 H-Net 扩缩律研究：字节级层级网络比 BPE 提升最高 3-5x 计算效率",
-      "link": "https://aihot.news/items/ctuk7r4h4qbyyligi680s7gtr",
-      "summary": "Cartesia 发布系列博客第一篇，报告其层级网络（H-Net）在字节级语言建模上的扩缩律结果：与严格匹配的 BPE Transformer 相比，1-stage H-Net 在验证损失上节省 1.28x 计算，下游评测约 2x，代码任务中位数 2.04x、分布外编程语言中位数达 3.10x（如 Prolog 5.37x）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ctuk7r4h4qbyyligi680s7gtr",
-      "pub_date": "2026-10-27",
-      "author": "noreply@aihot.news (Cartesia 产品与研究)",
       "category": "论文"
     }
   ]
