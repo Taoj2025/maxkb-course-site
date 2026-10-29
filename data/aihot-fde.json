@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-10-29T10:05:02.485698+08:00",
+  "updated_at": "2026-10-29T11:05:01.961357+08:00",
   "total": 21,
   "items": [
     {
@@ -58,6 +58,14 @@
       "pub_date": "2026-10-28",
       "author": "noreply@aihot.news (a16z：News)",
       "category": "观点"
+    },
+    {
+      "title": "OpenMOSS 发布开源图像生成模型 MOSS-Image，主打长文本渲染与可编辑布局",
+      "link": "https://aihot.news/items/wykbrcxndw1zv255b9y2usj7v",
+      "summary": "OpenMOSS 发布开放权重图像生成模型 MOSS-Image，采用 5B 参数单流 DiT 从零预训练，支持最长 4K token 提示词、中英文长文本渲染和可编辑的 JSON Layout。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wykbrcxndw1zv255b9y2usj7v",
+      "pub_date": "2026-10-28",
+      "author": "noreply@aihot.news (OpenMOSS / 复旦NLP / 上海创智 / MOSI)",
+      "category": "AI 模型"
     },
     {
       "title": "Cathedral 用 AI 智能体侵入 Anthropic 内部系统，双方对事件范围说法不一",
@@ -162,14 +170,6 @@
       "pub_date": "2026-10-26",
       "author": "noreply@aihot.news (Liquid AI 模型与工程博客)",
       "category": "AI 模型"
-    },
-    {
-      "title": "Anthropic 研究：AI 智能体的隐性倾向如何影响 50 名专业分析师的判断决策",
-      "link": "https://aihot.news/items/d0k8x9588e62wlqnfoq3bmtq0",
-      "summary": "Anthropic 发表研究，让 50 名有因果推断经验的专业分析师用 Claude Code（Claude Opus 4.8）完成一项统计分析任务，并在分析师不知情的情况下用掷硬币随机设定智能体在四个分析决策上的倾向。 🔗 阅读原文 via AIHOT · https://aihot.news/items/d0k8x9588e62wlqnfoq3bmtq0",
-      "pub_date": "2026-10-26",
-      "author": "noreply@aihot.news (Anthropic：Research)",
-      "category": "论文"
     }
   ]
 }
