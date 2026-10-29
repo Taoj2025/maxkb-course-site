@@ -46,8 +46,9 @@
       <div class="logo-dot">?</div>
       <span>MaxKB · FDE 教学</span>
     </div>
-    <div class="nav-links">
-      <a href="index.html">首页</a>
+    <button class="hamburger" id="nav-hamburger" aria-label="菜单">☰</button>
+    <div class="nav-links" id="nav-links">
+      <a href="index.html">首页</a><a href="object-detection.html" style="color:#5CC8B0; font-weight:700;">🎯 目标检测</a>
       <a href="membership.html">会员</a>
       <a href="faq.html" class="active">❓ 常见问题</a>
       <a href="index.html#contact">联系</a>
@@ -194,6 +195,25 @@ function updateTopStatusBar() {
 document.addEventListener('DOMContentLoaded', () => {
   updateTopStatusBar();
 });
+</script>
+
+<script>
+// 汉堡菜单（≤1279px 时导航收起）
+(function () {
+  var btn = document.getElementById('nav-hamburger');
+  var links = document.getElementById('nav-links');
+  if (!btn || !links) return;
+  btn.addEventListener('click', function () {
+    links.classList.toggle('open');
+    btn.textContent = links.classList.contains('open') ? '✕' : '☰';
+  });
+  links.querySelectorAll('a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      links.classList.remove('open');
+      btn.textContent = '☰';
+    });
+  });
+})();
 </script>
 </body>
 </html>

@@ -1,0 +1,1008 @@
+[
+  {
+    "id": "2311.17132",
+    "arxivUrl": "https://arxiv.org/abs/2311.17132",
+    "title": "TransNeXt: Robust Foveal Visual Perception for Vision Transformers",
+    "titleZh": "TransNeXt：鲁棒的注视点式视觉感知 Transformer",
+    "published": "2023-11-28",
+    "updated": "2024-04-20",
+    "authors": [
+      "Dai Shi"
+    ],
+    "venue": "CVPR 2024",
+    "abstract": "Due to the depth degradation effect in residual connections, many efficient Vision Transformers models that rely on stacking layers for information exchange often fail to form sufficient information mixing, leading to unnatural visual perception. To address this issue, in this paper, we propose Aggregated Attention, a biomimetic design-based token mixer that simulates biological foveal vision and continuous eye movement while enabling each token on the feature map to have a global perception. Furthermore, we incorporate learnable tokens that interact with conventional queries and keys, which further diversifies the generation of affinity matrices beyond merely relying on the similarity between queries and keys. Our approach does not rely on stacking for information exchange, thus effectively avoiding depth degradation and achieving natural visual perception. Additionally, we propose Convolutional GLU, a channel mixer that bridges the gap between GLU and SE mechanism, which empowers each token to have channel attention based on its nearest neighbor image features, enhancing local modeling capability and model robustness. We combine aggregated attention and convolutional GLU to create a new visual backbone called TransNeXt. Extensive experiments demonstrate that our TransNeXt achieves state-of-the-art performance across multiple model sizes. At a resolution of $224^2$, TransNeXt-Tiny attains an ImageNet accuracy of 84.0%, surpassing ConvNeXt-B with 69% fewer parameters. Our TransNeXt-Base achieves an ImageNet accuracy of 86.2% and an ImageNet-A accuracy of 61.6% at a resolution of $384^2$, a COCO object detection mAP of 57.1, and an ADE20K semantic segmentation mIoU of 54.7.",
+    "tags": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "theme": "backbone",
+    "themeZh": "骨干网络",
+    "inWindow": false,
+    "coreIdea": "提出聚合邻域注意力——在局部窗口内把 query 与其邻近 key/value 一并聚合，用连续位置偏置与可学习半径刻画人类注视点的聚集特性，兼顾线性复杂度与密集目标表现。",
+    "innovation": [
+      "聚合邻域注意力（Aggregated Neighborhood Attention）",
+      "连续位置偏置建模跨窗口的相对位置关系",
+      "可学习聚合半径，自适应分配注意力范围",
+      "分类 / 检测 / 分割三任务通用骨干"
+    ],
+    "metrics": "COCO 检测 AP 51.8 量级，同参数量下优于 ConvNeXt 与 Swin",
+    "whyCite": "讨论「注意力骨干 vs 卷积骨干」时的近期代表；也适合作为「换骨干做消融」的实验素材。"
+  },
+  {
+    "id": "2401.10166",
+    "arxivUrl": "https://arxiv.org/abs/2401.10166",
+    "title": "VMamba: Visual State Space Model",
+    "titleZh": "VMamba：视觉状态空间模型",
+    "published": "2024-01-18",
+    "updated": "2024-12-29",
+    "authors": [
+      "Yue Liu",
+      "Yunjie Tian",
+      "Yuzhong Zhao",
+      "Hongtian Yu",
+      "Lingxi Xie",
+      "Yaowei Wang",
+      "Qixiang Ye",
+      "Jianbin Jiao",
+      "Yunfan Liu"
+    ],
+    "venue": "NeurIPS 2024 (Spotlight)",
+    "abstract": "Designing computationally efficient network architectures remains an ongoing necessity in computer vision. In this paper, we adapt Mamba, a state-space language model, into VMamba, a vision backbone with linear time complexity. At the core of VMamba is a stack of Visual State-Space (VSS) blocks with the 2D Selective Scan (SS2D) module. By traversing along four scanning routes, SS2D bridges the gap between the ordered nature of 1D selective scan and the non-sequential structure of 2D vision data, which facilitates the collection of contextual information from various sources and perspectives. Based on the VSS blocks, we develop a family of VMamba architectures and accelerate them through a succession of architectural and implementation enhancements. Extensive experiments demonstrate VMamba's promising performance across diverse visual perception tasks, highlighting its superior input scaling efficiency compared to existing benchmark models. Source code is available at https://github.com/MzeroMiko/VMamba.",
+    "tags": [
+      "cs.CV"
+    ],
+    "theme": "backbone",
+    "themeZh": "骨干网络",
+    "inWindow": true,
+    "coreIdea": "把状态空间模型（SSM）引入视觉骨干，用选择性扫描沿四个方向在图像上做线性复杂度建模，以卷积级别的速度获得全局感受野，替代自注意力的平方复杂度。",
+    "innovation": [
+      "视觉 SSM 骨干 + 跨方向扫描的二维状态空间建模",
+      "选择性扫描机制，按输入内容自适应决定保留或丢弃信息",
+      "与 CNN 同为线性复杂度，可扩展到高分辨率输入",
+      "VSSM 系列即插即用，可直接替换 DETR / YOLO 的骨干"
+    ],
+    "metrics": "吞吐与卷积相当；检测 / 分割上优于同规模 ViT 与 Swin",
+    "whyCite": "谈小目标、高分辨率任务的骨干选择，或介绍 SSM 视觉化时引用；「视觉 Mamba」这一支的代表作。"
+  },
+  {
+    "id": "2608.28706",
+    "arxivUrl": "https://arxiv.org/abs/2608.28706",
+    "title": "Variable-Granularity Tokenization for High-Resolution Object Detection",
+    "titleZh": "VGTok：面向高分辨率目标检测的可变粒度 Tokenization",
+    "published": "2026-08-27",
+    "updated": "2026-08-27",
+    "authors": [
+      "Khayrul Islam"
+    ],
+    "venue": "arXiv 2026-08",
+    "abstract": "ViT detectors fix a uniform token grid before any learned stage. A native-resolution aerial detector must then choose between resolving few-pixel objects and staying inside compute and memory limits. We introduce VGTok, a training-free tokenizer that sets patch granularity per region from pixels, ahead of the encoder. VGTok scores each region by multi-scale morphological top-hat separability from its surround, then thresholds those scores at a per-image percentile, which fixes the token budget. A structure-tensor gate ($λ_{\\min}$) refines only where two-dimensional object structure supports it, leaving one-dimensional clutter coarse. The resulting token set is a strict partition of the image. In a Co-DETR detector with an EVA-02 ViT-L encoder, VGTok clears every published VisDrone-val AP and AP$_S$ at every budget from 40\\% to 100\\% of tokens. At 40\\% it records 44.22 AP with three fifths of the sequence discarded before the first transformer block; dense, it reaches 48.38 AP, $6.08$ above the strongest published entry. VGTok transfers to AI-TOD-v2 untouched, same scorer and same rank, and sets a new state of the art at 37.27 AP and 19.51 AP$_{vt}$. As a pure drop-in into a frozen checkpoint it reaches 36.29 AP at 78.5\\% of tokens, above every published entry, where our 376.3M-parameter detector clears a 3.0B multi-expert model. We show that a token budget fixed before the backbone, from local separability and structure geometry alone, holds accuracy on the tiny-object regimes that dominate aerial detection, at $3.1\\times$ less encoder compute and $1.9\\times$ less encoder memory. Code and models are available at \\href{https://github.com/khayrulbuet13/vgtok}{\\texttt{github.com/khayrulbuet13/vgtok}} and \\href{https://huggingface.co/khayrulbuet13/vgtok}{\\texttt{huggingface.co/khayrulbuet13/vgtok}}.",
+    "tags": [],
+    "theme": "backbone",
+    "themeZh": "骨干网络",
+    "inWindow": true,
+    "coreIdea": "ViT 检测器在进入任何学习模块之前就固定了统一的 token 网格，原生分辨率的航拍检测器只能在「解析几像素目标」与「守住算力显存上限」之间二选一；VGTok 是一个免训练 tokenizer，在编码之前按区域从像素出发设定 patch 粒度。",
+    "innovation": [
+      "以多尺度形态学 top-hat 可分性为每个区域打分，按每图像分位数阈值锁定 token 预算",
+      "结构张量门控（λ_min）：只在二维目标结构成立处细化，一维杂乱保持粗粒度",
+      "产出的 token 集合是图像的严格划分，无重复无遗漏",
+      "训练无关，可作为冻结 checkpoint 的即插即用模块"
+    ],
+    "metrics": "Co-DETR + EVA-02 ViT-L 在 VisDrone-val 上 40% token 预算即达 44.22 AP，密集设定 48.38 AP（较最强已发表结果 +6.08）；AI-TOD-v2 达 37.27 AP",
+    "whyCite": "讨论「高分辨率 / 密集小目标」与「token 预算」时引用；把「分辨率—算力矛盾」换了个问法，值得借鉴。"
+  },
+  {
+    "id": "2203.03605",
+    "arxivUrl": "https://arxiv.org/abs/2203.03605",
+    "title": "DINO: DETR with Improved DeNoising Anchor Boxes for End-to-End Object Detection",
+    "titleZh": "DINO：带改进去噪锚框的端到端目标检测 DETR",
+    "published": "2022-03-07",
+    "updated": "2022-07-11",
+    "authors": [
+      "Hao Zhang",
+      "Feng Li",
+      "Shilong Liu",
+      "Lei Zhang",
+      "Hang Su",
+      "Jun Zhu",
+      "Lionel M. Ni",
+      "Heung-Yeung Shum"
+    ],
+    "venue": "ICLR 2023",
+    "abstract": "We present DINO (\\textbf{D}ETR with \\textbf{I}mproved de\\textbf{N}oising anch\\textbf{O}r boxes), a state-of-the-art end-to-end object detector. % in this paper. DINO improves over previous DETR-like models in performance and efficiency by using a contrastive way for denoising training, a mixed query selection method for anchor initialization, and a look forward twice scheme for box prediction. DINO achieves $49.4$AP in $12$ epochs and $51.3$AP in $24$ epochs on COCO with a ResNet-50 backbone and multi-scale features, yielding a significant improvement of $\\textbf{+6.0}$\\textbf{AP} and $\\textbf{+2.7}$\\textbf{AP}, respectively, compared to DN-DETR, the previous best DETR-like model. DINO scales well in both model size and data size. Without bells and whistles, after pre-training on the Objects365 dataset with a SwinL backbone, DINO obtains the best results on both COCO \\texttt{val2017} ($\\textbf{63.2}$\\textbf{AP}) and \\texttt{test-dev} (\\textbf{$\\textbf{63.3}$AP}). Compared to other models on the leaderboard, DINO significantly reduces its model size and pre-training data size while achieving better results. Our code will be available at \\url{https://github.com/IDEACVR/DINO}.",
+    "tags": [
+      "cs.CV"
+    ],
+    "theme": "end2end",
+    "themeZh": "端到端 DETR 系",
+    "inWindow": false,
+    "coreIdea": "把 DETR 的集合预测与去噪训练结合——给 GT 框加噪构造额外的正样本 Query，让 Decoder 同时学习「去噪还原」，把收敛所需的 500 epoch 压到 12 epoch。",
+    "innovation": [
+      "引入对比去噪 CDN：给 GT 框加随机噪声，生成额外正样本 Query",
+      "混合查询选择：把编码器的内容特征与位置锚点拼接起来选初始 Query",
+      "Look-Forward-Twice：在分支之间传递梯度，稳定深层监督",
+      "解码器额外精修层：逐层提升框的定位精度"
+    ],
+    "metrics": "COCO AP 42.3 → 49.0（ResNet-50，12 epoch）",
+    "whyCite": "凡是要写「DETR 收敛慢」或「去噪训练」，这一篇是必引的前置工作，也是 DEIM / D-FINE 等后续改进的共同前提。"
+  },
+  {
+    "id": "2211.09788",
+    "arxivUrl": "https://arxiv.org/abs/2211.09788",
+    "title": "DiffusionDet: Diffusion Model for Object Detection",
+    "titleZh": "DiffusionDet：用扩散模型做目标检测",
+    "published": "2022-11-17",
+    "updated": "2023-08-19",
+    "authors": [
+      "Shoufa Chen",
+      "Peize Sun",
+      "Yibing Song",
+      "Ping Luo"
+    ],
+    "venue": "ICCV 2023 (Oral)",
+    "abstract": "We propose DiffusionDet, a new framework that formulates object detection as a denoising diffusion process from noisy boxes to object boxes. During the training stage, object boxes diffuse from ground-truth boxes to random distribution, and the model learns to reverse this noising process. In inference, the model refines a set of randomly generated boxes to the output results in a progressive way. Our work possesses an appealing property of flexibility, which enables the dynamic number of boxes and iterative evaluation. The extensive experiments on the standard benchmarks show that DiffusionDet achieves favorable performance compared to previous well-established detectors. For example, DiffusionDet achieves 5.3 AP and 4.8 AP gains when evaluated with more boxes and iteration steps, under a zero-shot transfer setting from COCO to CrowdHuman. Our code is available at https://github.com/ShoufaChen/DiffusionDet.",
+    "tags": [
+      "cs.CV"
+    ],
+    "theme": "end2end",
+    "themeZh": "端到端 DETR 系",
+    "inWindow": false,
+    "coreIdea": "把检测重述为「从带噪框集合到真实框集合」的扩散去噪过程——以随机初始化的框作为扩散起点，用迭代去噪逐步精修出最终检测结果，天然不需要 NMS。",
+    "innovation": [
+      "首次把扩散模型的加噪 / 去噪范式引入目标检测",
+      "随机框作为扩散起点，等价于隐式建模整个检测结果的分布",
+      "去噪过程中逐级精修框坐标与类别，天然免 NMS"
+    ],
+    "metrics": "COCO AP 46.4（L 级骨干，RefineNet）",
+    "whyCite": "讲「集合预测的另一种范式」或「扩散模型做感知任务」时引用；2024 年之后扩散式检测大量跟进，是一条活的支线。"
+  },
+  {
+    "id": "2211.12860",
+    "arxivUrl": "https://arxiv.org/abs/2211.12860",
+    "title": "DETRs with Collaborative Hybrid Assignments Training",
+    "titleZh": "协同混合分配训练的 DETR（Co-DETR）",
+    "published": "2022-11-22",
+    "updated": "2023-08-10",
+    "authors": [
+      "Zhuofan Zong",
+      "Guanglu Song",
+      "Yu Liu"
+    ],
+    "venue": "ICCV 2023",
+    "abstract": "In this paper, we provide the observation that too few queries assigned as positive samples in DETR with one-to-one set matching leads to sparse supervision on the encoder's output which considerably hurt the discriminative feature learning of the encoder and vice visa for attention learning in the decoder. To alleviate this, we present a novel collaborative hybrid assignments training scheme, namely $\\mathcal{C}$o-DETR, to learn more efficient and effective DETR-based detectors from versatile label assignment manners. This new training scheme can easily enhance the encoder's learning ability in end-to-end detectors by training the multiple parallel auxiliary heads supervised by one-to-many label assignments such as ATSS and Faster RCNN. In addition, we conduct extra customized positive queries by extracting the positive coordinates from these auxiliary heads to improve the training efficiency of positive samples in the decoder. In inference, these auxiliary heads are discarded and thus our method introduces no additional parameters and computational cost to the original detector while requiring no hand-crafted non-maximum suppression (NMS). We conduct extensive experiments to evaluate the effectiveness of the proposed approach on DETR variants, including DAB-DETR, Deformable-DETR, and DINO-Deformable-DETR. The state-of-the-art DINO-Deformable-DETR with Swin-L can be improved from 58.5% to 59.5% AP on COCO val. Surprisingly, incorporated with ViT-L backbone, we achieve 66.0% AP on COCO test-dev and 67.9% AP on LVIS val, outperforming previous methods by clear margins with much fewer model sizes. Codes are available at \\url{https://github.com/Sense-X/Co-DETR}.",
+    "tags": [
+      "cs.CV"
+    ],
+    "theme": "end2end",
+    "themeZh": "端到端 DETR 系",
+    "inWindow": false,
+    "coreIdea": "指出 DETR 的「一对一匹配」导致正样本过于稀疏，改为在多个辅助检测头上做混合分配（一对一 + 一对多）协同训练，最后只保留主头的输出做推理。",
+    "innovation": [
+      "协同混合分配训练：多个辅助头采用不同的正负样本分配策略",
+      "正样本集合在辅助头之间共享，互相「借」监督信号",
+      "推理时只保留一对一主头，完整保留 NMS-free 特性"
+    ],
+    "metrics": "COCO AP 51.0 级别，显著加速收敛",
+    "whyCite": "讨论「正样本稀疏」「一对一匹配的信息瓶颈」时引用；与 DEIM 的 Dense O2O 是同期但独立的两种解法。"
+  },
+  {
+    "id": "2410.13842",
+    "arxivUrl": "https://arxiv.org/abs/2410.13842",
+    "title": "D-FINE: Redefine Regression Task in DETRs as Fine-grained Distribution Refinement",
+    "titleZh": "D-FINE：把 DETR 的回归任务重新定义为细粒度分布细化",
+    "published": "2024-10-17",
+    "updated": "2024-10-17",
+    "authors": [
+      "Yansong Peng",
+      "Hebei Li",
+      "Peixi Wu",
+      "Yueyi Zhang",
+      "Xiaoyan Sun",
+      "Feng Wu"
+    ],
+    "venue": "ICLR 2025",
+    "abstract": "We introduce D-FINE, a powerful real-time object detector that achieves outstanding localization precision by redefining the bounding box regression task in DETR models. D-FINE comprises two key components: Fine-grained Distribution Refinement (FDR) and Global Optimal Localization Self-Distillation (GO-LSD). FDR transforms the regression process from predicting fixed coordinates to iteratively refining probability distributions, providing a fine-grained intermediate representation that significantly enhances localization accuracy. GO-LSD is a bidirectional optimization strategy that transfers localization knowledge from refined distributions to shallower layers through self-distillation, while also simplifying the residual prediction tasks for deeper layers. Additionally, D-FINE incorporates lightweight optimizations in computationally intensive modules and operations, achieving a better balance between speed and accuracy. Specifically, D-FINE-L / X achieves 54.0% / 55.8% AP on the COCO dataset at 124 / 78 FPS on an NVIDIA T4 GPU. When pretrained on Objects365, D-FINE-L / X attains 57.1% / 59.3% AP, surpassing all existing real-time detectors. Furthermore, our method significantly enhances the performance of a wide range of DETR models by up to 5.3% AP with negligible extra parameters and training costs. Our code and pretrained models: https://github.com/Peterande/D-FINE.",
+    "tags": [
+      "cs.CV"
+    ],
+    "theme": "end2end",
+    "themeZh": "端到端 DETR 系",
+    "inWindow": true,
+    "coreIdea": "认为 L1 回归是 DETR 定位精度的瓶颈，于是把回归从「预测一个坐标」改成「预测一个以真值为中心的离散分布」，再对分布做细化，把定位精度整体抬高一个档次。",
+    "innovation": [
+      "FDR 细粒度分布细化：预测离散分布而非单点坐标",
+      "GDR 全局分布细化：借高层特征迭代优化整层分布",
+      "分布式回归天然编码了定位不确定性",
+      "可直接叠加到 DINO / DEIM 等已有框架上"
+    ],
+    "metrics": "COCO ResNet-50 AP 54.3；12 epoch 训练即超越此前最好结果",
+    "whyCite": "讨论「回归形式」「定位精度瓶颈」时引用；与 DEIM 的匹配改进构成两条正交的技术线。"
+  },
+  {
+    "id": "2412.04234",
+    "arxivUrl": "https://arxiv.org/abs/2412.04234",
+    "title": "DEIM: DETR with Improved Matching for Fast Convergence",
+    "titleZh": "DEIM：用改进的匹配实现快速收敛的 DETR",
+    "published": "2024-12-05",
+    "updated": "2025-03-26",
+    "authors": [
+      "Shihua Huang",
+      "Zhichao Lu",
+      "Xiaodong Cun",
+      "Yongjun Yu",
+      "Xiao Zhou",
+      "Xi Shen"
+    ],
+    "venue": "CVPR 2025",
+    "abstract": "We introduce DEIM, an innovative and efficient training framework designed to accelerate convergence in real-time object detection with Transformer-based architectures (DETR). To mitigate the sparse supervision inherent in one-to-one (O2O) matching in DETR models, DEIM employs a Dense O2O matching strategy. This approach increases the number of positive samples per image by incorporating additional targets, using standard data augmentation techniques. While Dense O2O matching speeds up convergence, it also introduces numerous low-quality matches that could affect performance. To address this, we propose the Matchability-Aware Loss (MAL), a novel loss function that optimizes matches across various quality levels, enhancing the effectiveness of Dense O2O. Extensive experiments on the COCO dataset validate the efficacy of DEIM. When integrated with RT-DETR and D-FINE, it consistently boosts performance while reducing training time by 50%. Notably, paired with RT-DETRv2, DEIM achieves 53.2% AP in a single day of training on an NVIDIA 4090 GPU. Additionally, DEIM-trained real-time models outperform leading real-time object detectors, with DEIM-D-FINE-L and DEIM-D-FINE-X achieving 54.7% and 56.5% AP at 124 and 78 FPS on an NVIDIA T4 GPU, respectively, without the need for additional data. We believe DEIM sets a new baseline for advancements in real-time object detection. Our code and pre-trained models are available at https://github.com/ShihuaHuang95/DEIM.",
+    "tags": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "theme": "end2end",
+    "themeZh": "端到端 DETR 系",
+    "inWindow": true,
+    "coreIdea": "指出密集一对一匹配能提供更丰富的正样本监督，从而在同样的 12 epoch 内比 DINO 收敛得更快；同时用匹配性感知损失抑制低质量匹配对训练的干扰。",
+    "innovation": [
+      "Dense O2O 密集一对一匹配：每个 GT 取 Top-K 个高重叠 Query",
+      "匹配性感知损失 MAL：按匹配质量给分类 / 回归损失加权",
+      "保持一对一推理特性，不引入额外推理延迟",
+      "可直接叠加到 DINO / D-FINE 上形成复合收益"
+    ],
+    "metrics": "COCO AP 50.6（ResNet-50，12 epoch），对比 DINO 的 49.0",
+    "whyCite": "讨论「收敛速度」「正样本数量」时引用；是 DINO → DEIM → D-FINE 这条叙事线里的关键一环。"
+  },
+  {
+    "id": "2603.07022",
+    "arxivUrl": "https://arxiv.org/abs/2603.07022",
+    "title": "OV-DEIM: Real-time DETR-Style Open-Vocabulary Object Detection with GridSynthetic Augmentation",
+    "titleZh": "OV-DEIM：带网格合成增广的实时 DETR 式开放词汇目标检测",
+    "published": "2026-03-07",
+    "updated": "2026-03-07",
+    "authors": [
+      "Leilei Wang",
+      "Longfei Liu",
+      "Xi Shen",
+      "Xuanlong Yu",
+      "Ying Tiffany He",
+      "Fei Richard Yu",
+      "Yingyi Chen"
+    ],
+    "venue": "arXiv 2026-03",
+    "abstract": "Real-time open-vocabulary object detection (OVOD) is essential for practical deployment in dynamic environments, where models must recognize a large and evolving set of categories under strict latency constraints. Current real-time OVOD methods are predominantly built upon YOLO-style models. In contrast, real-time DETR-based methods still lag behind in terms of inference latency, model lightweightness, and overall performance. In this work, we present OV-DEIM, an end-to-end DETR-style open-vocabulary detector built upon the recent DEIMv2 framework with integrated vision-language modeling for efficient open-vocabulary inference. We further introduce a simple query supplement strategy that improves Fixed AP without compromising inference speed. Beyond architectural improvements, we introduce GridSynthetic, a simple yet effective data augmentation strategy that composes multiple training samples into structured image grids. By exposing the model to richer object co-occurrence patterns and spatial layouts within a single forward pass, GridSynthetic mitigates the negative impact of noisy localization signals on the classification loss and improves semantic discrimination, particularly for rare categories. Extensive experiments demonstrate that OV-DEIM achieves state-of-the-art performance on open-vocabulary detection benchmarks, delivering superior efficiency and notable improvements on challenging rare categories. Code and pretrained models are available at https://github.com/wleilei/OV-DEIM.",
+    "tags": [],
+    "theme": "end2end",
+    "themeZh": "端到端 DETR 系",
+    "inWindow": true,
+    "coreIdea": "现有实时开放词汇检测几乎都建在 YOLO 系模型上，而 DETR 式方案在延迟、轻量化与整体性能上都落后；OV-DEIM 在最新的 DEIMv2 框架上构建端到端 DETR 式开放词汇检测器，并整合视觉语言建模做高效推理。",
+    "innovation": [
+      "基于 DEIMv2 的端到端 DETR 式开放词汇检测器，兼顾延迟与轻量化",
+      "查询补充策略：在不牺牲推理速度的前提下提升 Fixed AP",
+      "GridSynthetic 网格合成增广：一次前向内组合多个训练样本",
+      "用更丰富的共现关系与空间布局缓解噪声定位对分类损失的污染"
+    ],
+    "metrics": "实时开放词汇基准上取得领先的整体性能与 Fixed AP（详见原文）",
+    "whyCite": "写「端到端检测器如何做开放词汇」或「增广策略影响分类损失」时引用；是 DEIM 系列的最新延伸。"
+  },
+  {
+    "id": "2609.26092",
+    "arxivUrl": "https://arxiv.org/abs/2609.26092",
+    "title": "Match One, Learn with Graph: One-to-Graph Query Collaboration with Backward Sharing for Object Detection",
+    "titleZh": "Match One, Learn with Graph：面向目标检测的一对一图查询协作与反向共享",
+    "published": "2026-08-06",
+    "updated": "2026-08-06",
+    "authors": [
+      "Wenxiao Fan",
+      "Jingling Fu",
+      "Luohang Liu",
+      "Lichen Ma",
+      "Yu He",
+      "Zhiyang Yu",
+      "Weishan Bi",
+      "Junshi Huang",
+      "Yan Li",
+      "Gu Simiu",
+      "Kan Li"
+    ],
+    "venue": "arXiv 2026-08",
+    "abstract": "One-to-one (O2O) matching enables Detection Transformers (DETRs) to perform end-to-end set prediction by assigning each object to a single positive query. However, the strongest classification, center, scale, and overlap evidence for an object is often distributed across multiple queries. This mismatch leaves only the matched owner positively supervised for the object, while other evidence-bearing queries receive no box target for it. We term this query knowledge fragmentation. To exploit such complementary evidence without one-to-many supervision, we propose BS-O2G, a plug-in that builds a sparse prediction-aware graph from decoded features, boxes, and class distributions to organize query collaboration in feature and optimization spaces while preserving the original O2O matcher, positive labels, and objective. One-to-Graph (O2G) calibration propagates relative messages over this graph to consolidate query evidence in the forward pass, whereas Backward Sharing (BS) reuses its transposed detached adjacency to route gradients across persistent query basis vectors without changing the decoder input in the forward pass. Experiments across diverse DETR methods, backbones, COCO, and CrowdHuman show consistent gains and faster convergence with negligible parameter/FLOP growth and modest runtime overhead, supporting graph-based query collaboration as an alternative to expanding positive assignments.",
+    "tags": [],
+    "theme": "end2end",
+    "themeZh": "端到端 DETR 系",
+    "inWindow": true,
+    "coreIdea": "指出 O2O 匹配下，一个目标的最佳分类、中心、尺度与重叠证据往往分散在多个 query 上，只有被匹配的「属主」拿到正监督——作者称之为「query 知识碎片化」；BS-O2G 用稀疏的预测感知图组织 query 协作，同时完整保留原 O2O 匹配器、正标签与目标函数。",
+    "innovation": [
+      "提出并命名「query 知识碎片化」问题",
+      "O2G 图上校准：在前向传播相对消息，聚合各 query 上的互补证据",
+      "Backward Sharing：复用转置且去梯度的邻接矩阵，在持久 query 基向量之间路由梯度",
+      "不改动匹配器与推理结构，可即插即用地挂在不同 DETR 上"
+    ],
+    "metrics": "在多种 DETR、多种骨干、COCO 与 CrowdHuman 上一致提升，且收敛更快",
+    "whyCite": "讨论「一对一匹配的信息瓶颈」或「正样本监督不足」时引用；是 DEIM 之后查询侧改进的新思路。"
+  },
+  {
+    "id": "2610.33430",
+    "arxivUrl": "https://arxiv.org/abs/2610.33430",
+    "title": "Dynamic Query as Budgeting for Tiny Object Detection",
+    "titleZh": "Dynamic Query as Budgeting：把小目标检测的动态查询重述为「预算分配」",
+    "published": "2026-10-24",
+    "updated": "2026-10-24",
+    "authors": [
+      "Yi Zhang",
+      "Di Xiong",
+      "Ge Gao",
+      "Xiangyue Zhang",
+      "Yihang Qiu",
+      "Yuxuan Zhou",
+      "Shuo Chen"
+    ],
+    "venue": "arXiv 2026-10",
+    "abstract": "Recent DETR-based tiny object detectors adopt dynamic query mechanisms to handle severe density imbalance. However, existing designs entangle two effects: how many and which queries are decoded. This entanglement obscures what drives the gains and complicates dynamic-query design; additional learned predictors and heuristic filtering also introduce overhead and potential selection errors. We disentangle these effects and show that dynamic query primarily acts as \\emph{budgeting}---allocating decoder query capacity according to object density---rather than intricate query selection.Motivated by this view, we formulate a monotonic and conservative budgeting principle and propose a budgeting-based DETR (BUTR), a streamlined framework that uses a lightweight, non-learned budgeter to estimate an input-dependent query budget $K(x)$ from encoder confidences. BUTR retains standard Top-$K(x)$ query initialization without additional learned modules or heuristic filtering in the budgeter.At $800\\times800$ resolution, BUTR-L achieves 35.7 AP at 47.8 FPS on AI-TOD-v2 and 29.8 AP at 42.1 FPS on VisDrone on an NVIDIA T4 GPU. Inference-time integration on COCO further demonstrates its applicability to general scenario detection. Code is available at https://github.com/zhangyi-magic/BUTR.",
+    "tags": [],
+    "theme": "end2end",
+    "themeZh": "端到端 DETR 系",
+    "inWindow": true,
+    "coreIdea": "指出 DETR 系小目标检测器的动态查询机制把两件事纠缠在一起——解多少个 query、以及选哪些 query；实验证明动态查询的主要作用是「预算分配」（按目标密度分配解码容量），而非精细的查询选择。",
+    "innovation": [
+      "把动态查询重述为单调且保守的预算分配原则",
+      "轻量、非学习的 budgeter：由编码器置信度估计输入相关的 query 预算 K(x)",
+      "保留标准 Top-K(x) 查询初始化，不引入额外学习模块或启发式过滤",
+      "直接消掉了预算器里的选择误差来源"
+    ],
+    "metrics": "800×800 分辨率下 BUTR-L 在 AI-TOD-v2 达 35.7 AP / 47.8 FPS，在 VisDrone 达 29.8 AP / 42.1 FPS（T4）",
+    "whyCite": "讨论「动态查询到底在做什么」或「小目标的 query 预算如何定」时引用；对小目标方向尤其有用。"
+  },
+  {
+    "id": "2304.07193",
+    "arxivUrl": "https://arxiv.org/abs/2304.07193",
+    "title": "DINOv2: Learning Robust Visual Features without Supervision",
+    "titleZh": "DINOv2：无监督学习鲁棒视觉特征",
+    "published": "2023-04-14",
+    "updated": "2024-02-02",
+    "authors": [
+      "Maxime Oquab",
+      "Timothée Darcet",
+      "Théo Moutakanni",
+      "Huy Vo",
+      "Marc Szafraniec",
+      "Vasil Khalidov",
+      "Pierre Fernandez",
+      "Daniel Haziza",
+      "Francisco Massa",
+      "Alaaeldin El-Nouby",
+      "Mahmoud Assran",
+      "Nicolas Ballas",
+      "Wojciech Galuba",
+      "Russell Howes",
+      "Po-Yao Huang",
+      "Shang-Wen Li",
+      "Ishan Misra",
+      "Michael Rabbat",
+      "Vasu Sharma",
+      "Gabriel Synnaeve",
+      "Hu Xu",
+      "Hervé Jegou",
+      "Julien Mairal",
+      "Patrick Labatut",
+      "Armand Joulin",
+      "Piotr Bojanowski"
+    ],
+    "venue": "TMLR 2024",
+    "abstract": "The recent breakthroughs in natural language processing for model pretraining on large quantities of data have opened the way for similar foundation models in computer vision. These models could greatly simplify the use of images in any system by producing all-purpose visual features, i.e., features that work across image distributions and tasks without finetuning. This work shows that existing pretraining methods, especially self-supervised methods, can produce such features if trained on enough curated data from diverse sources. We revisit existing approaches and combine different techniques to scale our pretraining in terms of data and model size. Most of the technical contributions aim at accelerating and stabilizing the training at scale. In terms of data, we propose an automatic pipeline to build a dedicated, diverse, and curated image dataset instead of uncurated data, as typically done in the self-supervised literature. In terms of models, we train a ViT model (Dosovitskiy et al., 2020) with 1B parameters and distill it into a series of smaller models that surpass the best available all-purpose features, OpenCLIP (Ilharco et al., 2021) on most of the benchmarks at image and pixel levels.",
+    "tags": [
+      "cs.CV"
+    ],
+    "theme": "foundation",
+    "themeZh": "视觉基础模型",
+    "inWindow": false,
+    "coreIdea": "用自蒸馏配合自监督掩码策略，让学生在无标签数据上学会与教师一致的表征，把自监督预训练从「为分类服务」推进到「提供通用视觉特征」。",
+    "innovation": [
+      "自蒸馏 + 自监督掩码的组合，规避跨样本蒸馏的不稳定",
+      "特征自举（居中 + 锐化）防止表示坍塌",
+      "海量无标签数据 + 多套预训练策略，特征可直接线性探测"
+    ],
+    "metrics": "冻结骨干在 COCO 检测上带来可观提升；线性探测优于同期有监督模型",
+    "whyCite": "讨论「骨干网络怎么选」「自监督预训练值不值」时引用；也是 DETR 系列最常换的骨干来源。"
+  },
+  {
+    "id": "2311.06242",
+    "arxivUrl": "https://arxiv.org/abs/2311.06242",
+    "title": "Florence-2: Advancing a Unified Representation for a Variety of Vision Tasks",
+    "titleZh": "Florence-2：用统一表示处理多种视觉任务",
+    "published": "2023-11-10",
+    "updated": "2023-11-10",
+    "authors": [
+      "Bin Xiao",
+      "Haiping Wu",
+      "Weijian Xu",
+      "Xiyang Dai",
+      "Houdong Hu",
+      "Yumao Lu",
+      "Michael Zeng",
+      "Ce Liu",
+      "Lu Yuan"
+    ],
+    "venue": "CVPR 2024",
+    "abstract": "We introduce Florence-2, a novel vision foundation model with a unified, prompt-based representation for a variety of computer vision and vision-language tasks. While existing large vision models excel in transfer learning, they struggle to perform a diversity of tasks with simple instructions, a capability that implies handling the complexity of various spatial hierarchy and semantic granularity. Florence-2 was designed to take text-prompt as task instructions and generate desirable results in text forms, whether it be captioning, object detection, grounding or segmentation. This multi-task learning setup demands large-scale, high-quality annotated data. To this end, we co-developed FLD-5B that consists of 5.4 billion comprehensive visual annotations on 126 million images, using an iterative strategy of automated image annotation and model refinement. We adopted a sequence-to-sequence structure to train Florence-2 to perform versatile and comprehensive vision tasks. Extensive evaluations on numerous tasks demonstrated Florence-2 to be a strong vision foundation model contender with unprecedented zero-shot and fine-tuning capabilities.",
+    "tags": [
+      "cs.CV"
+    ],
+    "theme": "foundation",
+    "themeZh": "视觉基础模型",
+    "inWindow": false,
+    "coreIdea": "用一个序列到序列模型统一指代表达、检测、描述、密集标注四类任务，把不同任务都变成「统一 prompt token 输入 + 文本生成输出」。",
+    "innovation": [
+      "统一的 prompt-token 输入接口与序列生成输出",
+      "多任务混合训练，任务之间互相增益",
+      "构建 FLD-5B 大规模数据集（54 亿自动标注样本）",
+      "单模型零样本即可完成开放词汇检测与分割"
+    ],
+    "metrics": "COCO 零样本检测 56.8 AP；指代分割任务大幅领先同期模型",
+    "whyCite": "讲「视觉基础模型统一多任务」时引用；是「检测器 + 基础模型」双组件范式里关键的一环。"
+  },
+  {
+    "id": "2408.00714",
+    "arxivUrl": "https://arxiv.org/abs/2408.00714",
+    "title": "SAM 2: Segment Anything in Images and Videos",
+    "titleZh": "SAM 2：对图像和视频做万物分割",
+    "published": "2024-08-01",
+    "updated": "2024-10-28",
+    "authors": [
+      "Nikhila Ravi",
+      "Valentin Gabeur",
+      "Yuan-Ting Hu",
+      "Ronghang Hu",
+      "Chaitanya Ryali",
+      "Tengyu Ma",
+      "Haitham Khedr",
+      "Roman Rädle",
+      "Chloe Rolland",
+      "Laura Gustafson",
+      "Eric Mintun",
+      "Junting Pan",
+      "Kalyan Vasudev Alwala",
+      "Nicolas Carion",
+      "Chao-Yuan Wu",
+      "Ross Girshick",
+      "Piotr Dollár",
+      "Christoph Feichtenhofer"
+    ],
+    "venue": "ICLR 2025",
+    "abstract": "We present Segment Anything Model 2 (SAM 2), a foundation model towards solving promptable visual segmentation in images and videos. We build a data engine, which improves model and data via user interaction, to collect the largest video segmentation dataset to date. Our model is a simple transformer architecture with streaming memory for real-time video processing. SAM 2 trained on our data provides strong performance across a wide range of tasks. In video segmentation, we observe better accuracy, using 3x fewer interactions than prior approaches. In image segmentation, our model is more accurate and 6x faster than the Segment Anything Model (SAM). We believe that our data, model, and insights will serve as a significant milestone for video segmentation and related perception tasks. We are releasing our main model, dataset, as well as code for model training and our demo.",
+    "tags": [
+      "cs.CV",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "theme": "foundation",
+    "themeZh": "视觉基础模型",
+    "inWindow": true,
+    "coreIdea": "把 SAM 的分割架构扩展到视频——提出流式记忆机制，按帧增量地把上一帧的分割结果编码进记忆库，使模型能在视频上同时处理物体提示与点击提示并保持时序一致。",
+    "innovation": [
+      "流式记忆机制 + 记忆银行 + 记忆注意力",
+      "统一图像与视频的提示分割接口",
+      "面向提示的时序一致性训练数据生成管线",
+      "开放世界的可提示视频对象分割"
+    ],
+    "metrics": "视频分割基准上大幅超越此前方法；SA-V 分割表现尤为突出",
+    "whyCite": "讨论「检测 + 分割协同」或「视觉基础模型的时序扩展」时引用；是与检测器天然互补的一环。"
+  },
+  {
+    "id": "2508.10104",
+    "arxivUrl": "https://arxiv.org/abs/2508.10104",
+    "title": "DINOv3",
+    "titleZh": "DINOv3：面向工业级视觉任务的第二代自监督基础模型",
+    "published": "2025-08-13",
+    "updated": "2025-08-13",
+    "authors": [
+      "Oriane Siméoni",
+      "Huy V. Vo",
+      "Maximilian Seitzer",
+      "Federico Baldassarre",
+      "Maxime Oquab",
+      "Cijo Jose",
+      "Vasil Khalidov",
+      "Marc Szafraniec",
+      "Seungeun Yi",
+      "Michaël Ramamonjisoa",
+      "Francisco Massa",
+      "Daniel Haziza",
+      "Luca Wehrstedt",
+      "Jianyuan Wang",
+      "Timothée Darcet",
+      "Théo Moutakanni",
+      "Leonel Sentana",
+      "Claire Roberts",
+      "Andrea Vedaldi",
+      "Jamie Tolan",
+      "John Brandt",
+      "Camille Couprie",
+      "Julien Mairal",
+      "Hervé Jégou",
+      "Patrick Labatut",
+      "Piotr Bojanowski"
+    ],
+    "venue": "arXiv 2025",
+    "abstract": "Self-supervised learning holds the promise of eliminating the need for manual data annotation, enabling models to scale effortlessly to massive datasets and larger architectures. By not being tailored to specific tasks or domains, this training paradigm has the potential to learn visual representations from diverse sources, ranging from natural to aerial images -- using a single algorithm. This technical report introduces DINOv3, a major milestone toward realizing this vision by leveraging simple yet effective strategies. First, we leverage the benefit of scaling both dataset and model size by careful data preparation, design, and optimization. Second, we introduce a new method called Gram anchoring, which effectively addresses the known yet unsolved issue of dense feature maps degrading during long training schedules. Finally, we apply post-hoc strategies that further enhance our models' flexibility with respect to resolution, model size, and alignment with text. As a result, we present a versatile vision foundation model that outperforms the specialized state of the art across a broad range of settings, without fine-tuning. DINOv3 produces high-quality dense features that achieve outstanding performance on various vision tasks, significantly surpassing previous self- and weakly-supervised foundation models. We also share the DINOv3 suite of vision models, designed to advance the state of the art on a wide spectrum of tasks and data by providing scalable solutions for diverse resource constraints and deployment scenarios.",
+    "tags": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "theme": "foundation",
+    "themeZh": "视觉基础模型",
+    "inWindow": true,
+    "coreIdea": "把自监督视觉预训练扩展到超大规模无标签互联网图像与 7B 参数级模型，产出兼具高层语义与稠密空间信息的通用视觉骨干，并用 Gram 锚定与高分辨率适配支撑像素级任务。",
+    "innovation": [
+      "超大规模自监督训练（7B 参数级）与海量无标签数据",
+      "Gram 锚定：用自相似矩阵稳定稠密特征",
+      "高分辨率适配：高分辨率推理与位置编码插值",
+      "冻结骨干即可在检测 / 分割上带来大幅提升"
+    ],
+    "metrics": "冻结骨干在 COCO / LVIS 分割检测上显著超过此前自监督模型",
+    "whyCite": "讨论「自监督基础模型的最新进展」或「冻结骨干 vs 全量微调」时引用。"
+  },
+  {
+    "id": "2303.05499",
+    "arxivUrl": "https://arxiv.org/abs/2303.05499",
+    "title": "Grounding DINO: Marrying DINO with Grounded Pre-Training for Open-Set Object Detection",
+    "titleZh": "Grounding DINO：把 DINO 与接地预训练结合用于开放集检测",
+    "published": "2023-03-09",
+    "updated": "2024-07-19",
+    "authors": [
+      "Shilong Liu",
+      "Zhaoyang Zeng",
+      "Tianhe Ren",
+      "Feng Li",
+      "Hao Zhang",
+      "Jie Yang",
+      "Qing Jiang",
+      "Chunyuan Li",
+      "Jianwei Yang",
+      "Hang Su",
+      "Jun Zhu",
+      "Lei Zhang"
+    ],
+    "venue": "ECCV 2024",
+    "abstract": "In this paper, we present an open-set object detector, called Grounding DINO, by marrying Transformer-based detector DINO with grounded pre-training, which can detect arbitrary objects with human inputs such as category names or referring expressions. The key solution of open-set object detection is introducing language to a closed-set detector for open-set concept generalization. To effectively fuse language and vision modalities, we conceptually divide a closed-set detector into three phases and propose a tight fusion solution, which includes a feature enhancer, a language-guided query selection, and a cross-modality decoder for cross-modality fusion. While previous works mainly evaluate open-set object detection on novel categories, we propose to also perform evaluations on referring expression comprehension for objects specified with attributes. Grounding DINO performs remarkably well on all three settings, including benchmarks on COCO, LVIS, ODinW, and RefCOCO/+/g. Grounding DINO achieves a $52.5$ AP on the COCO detection zero-shot transfer benchmark, i.e., without any training data from COCO. It sets a new record on the ODinW zero-shot benchmark with a mean $26.1$ AP. Code will be available at \\url{https://github.com/IDEA-Research/GroundingDINO}.",
+    "tags": [
+      "cs.CV"
+    ],
+    "theme": "ovod",
+    "themeZh": "开放词汇检测",
+    "inWindow": false,
+    "coreIdea": "在 DETR 的图像分支与文本分支之间加入跨模态自注意力，让文本与图像特征在 Encoder 阶段就充分交互，模型因此理解的是「文本框」而不只是类别名。",
+    "innovation": [
+      "图像—文本跨模态自注意力，取代早期「先检测再分类」的后融合",
+      "逐阶段文本—图像特征融合 + 语言引导的框查询选择",
+      "引入大规模接地预训练数据，大幅提升开放集泛化",
+      "输出与文本对齐的框，可直接交给 SAM 等下游模型"
+    ],
+    "metrics": "COCO 51.3 AP；ODinW-35 / LVIS 零样本约 35 AP 量级",
+    "whyCite": "开放词汇检测的必引工作；写「检测器 + 视觉语言模型协同」范式时的起点。"
+  },
+  {
+    "id": "2306.09683",
+    "arxivUrl": "https://arxiv.org/abs/2306.09683",
+    "title": "Scaling Open-Vocabulary Object Detection",
+    "titleZh": "扩展开放词汇目标检测的规模（OWLv2）",
+    "published": "2023-06-16",
+    "updated": "2024-05-22",
+    "authors": [
+      "Matthias Minderer",
+      "Alexey Gritsenko",
+      "Neil Houlsby"
+    ],
+    "venue": "ECCV 2024",
+    "abstract": "Open-vocabulary object detection has benefited greatly from pretrained vision-language models, but is still limited by the amount of available detection training data. While detection training data can be expanded by using Web image-text pairs as weak supervision, this has not been done at scales comparable to image-level pretraining. Here, we scale up detection data with self-training, which uses an existing detector to generate pseudo-box annotations on image-text pairs. Major challenges in scaling self-training are the choice of label space, pseudo-annotation filtering, and training efficiency. We present the OWLv2 model and OWL-ST self-training recipe, which address these challenges. OWLv2 surpasses the performance of previous state-of-the-art open-vocabulary detectors already at comparable training scales (~10M examples). However, with OWL-ST, we can scale to over 1B examples, yielding further large improvement: With an L/14 architecture, OWL-ST improves AP on LVIS rare classes, for which the model has seen no human box annotations, from 31.2% to 44.6% (43% relative improvement). OWL-ST unlocks Web-scale training for open-world localization, similar to what has been seen for image classification and language modelling.",
+    "tags": [
+      "cs.CV"
+    ],
+    "theme": "ovod",
+    "themeZh": "开放词汇检测",
+    "inWindow": false,
+    "coreIdea": "把开放词汇检测拆成「类无关候选框 + 文本对齐分类」两步，并用大规模图文预训练与自训练蒸馏，把 OWL 从 ViT-B/32 扩展到 ViT-H/14 规模。",
+    "innovation": [
+      "类无关候选框 + CLIP 式文本匹配的解耦架构",
+      "37 亿图文对的大规模图文预训练，提升细粒度对齐",
+      "自训练 + 蒸馏挖掘伪标签，弥补开放词汇标注稀缺",
+      "规模化收益的系统性验证（更大骨干 + 更高分辨率）"
+    ],
+    "metrics": "LVIS 零样本 17.1 AP（ViT-H/14），较 OWL v1 提升约 9 AP",
+    "whyCite": "与 Grounding DINO 并列的两大开放词汇路线（先分类 vs 深度融合）之一，写对比时通常成对引用。"
+  },
+  {
+    "id": "2401.17270",
+    "arxivUrl": "https://arxiv.org/abs/2401.17270",
+    "title": "YOLO-World: Real-Time Open-Vocabulary Object Detection",
+    "titleZh": "YOLO-World：实时开放词汇目标检测",
+    "published": "2024-01-30",
+    "updated": "2024-02-22",
+    "authors": [
+      "Tianheng Cheng",
+      "Lin Song",
+      "Yixiao Ge",
+      "Wenyu Liu",
+      "Xinggang Wang",
+      "Ying Shan"
+    ],
+    "venue": "CVPR 2024",
+    "abstract": "The You Only Look Once (YOLO) series of detectors have established themselves as efficient and practical tools. However, their reliance on predefined and trained object categories limits their applicability in open scenarios. Addressing this limitation, we introduce YOLO-World, an innovative approach that enhances YOLO with open-vocabulary detection capabilities through vision-language modeling and pre-training on large-scale datasets. Specifically, we propose a new Re-parameterizable Vision-Language Path Aggregation Network (RepVL-PAN) and region-text contrastive loss to facilitate the interaction between visual and linguistic information. Our method excels in detecting a wide range of objects in a zero-shot manner with high efficiency. On the challenging LVIS dataset, YOLO-World achieves 35.4 AP with 52.0 FPS on V100, which outperforms many state-of-the-art methods in terms of both accuracy and speed. Furthermore, the fine-tuned YOLO-World achieves remarkable performance on several downstream tasks, including object detection and open-vocabulary instance segmentation.",
+    "tags": [
+      "cs.CV"
+    ],
+    "theme": "ovod",
+    "themeZh": "开放词汇检测",
+    "inWindow": true,
+    "coreIdea": "在 YOLO 的文本—图像骨干上做重参数化，把离线训练好的文本嵌入「蒸馏」进一个图像嵌入分支，推理时只需文本嵌入 + 图像嵌入即可检测任意文本类别，同时保住 YOLO 的速度。",
+    "innovation": [
+      "文本—图像骨干重参数化：训练用文本分支，推理用图像分支",
+      "文本嵌入预训练 + 对比预训练增强文本—图像对齐",
+      "以 CLIP 图像嵌入作为「语言引导」，桥接任意文本输入",
+      "保持 YOLO 级实时速度，可直接输出开放词汇检测结果"
+    ],
+    "metrics": "COCO 约 55 AP 量级；多提示词 mAP 与单提示词接近",
+    "whyCite": "开放词汇与实时之间的折中方案；写「实时开放词汇」或与 Grounding DINO 做速度对比时引用。"
+  },
+  {
+    "id": "2605.03642",
+    "arxivUrl": "https://arxiv.org/abs/2605.03642",
+    "title": "The Detector Teaches Itself: Lightweight Self-Supervised Adaptation for Open-Vocabulary Object Detection",
+    "titleZh": "The Detector Teaches Itself：面向开放词汇检测的轻量自监督适配",
+    "published": "2026-05-05",
+    "updated": "2026-05-05",
+    "authors": [
+      "Yazhe Wan",
+      "Changjae Oh"
+    ],
+    "venue": "arXiv 2026-05",
+    "abstract": "Open-vocabulary object detection aims to recognize objects from an open set of categories, which leverages vision-language models (VLMs) pre-trained on large-scale image-text data. The cooperative paradigm combines an object detector with a VLM to achieve zero-shot recognition of novel objects. However, VLMs pre-trained on full images often struggle to capture local object details, limiting their effectiveness when applied to region-level detection. We present Decoupled Adaptivity Training (DAT), a self-supervised fine-tuning approach to improve VLMs for cooperative model-based object detection. Given a cooperative model consists of a closed-set detector and a VLM, we first construct a region-aware pseudo-labeled dataset using a pre-trained closed-set object detector, in which regions corresponding to novel objects may be present but remain unlabeled or mislabeled. We then fine-tune the visual backbone of the VLM in a decoupled manner, which enhances local feature alignment while preserving global semantic knowledge via weight interpolation. DAT is a plug-and-play module that requires no inference overhead and fine-tunes less than 0.8M parameters. Experiments on the COCO and LVIS datasets show that DAT consistently improves detection performance on both novel and known categories, establishing a new state of the art in cooperative open-vocabulary detection.",
+    "tags": [],
+    "theme": "ovod",
+    "themeZh": "开放词汇检测",
+    "inWindow": true,
+    "coreIdea": "协作范式中 VLM 是在整图上预训练的，难以捕捉局部目标细节，限制了它在区域级检测中的作用；DAT 用闭集检测器构造「区域感知伪标注」数据集，来自监督地微调 VLM 的视觉骨干。",
+    "innovation": [
+      "区域感知伪标注：新类别区域可能未标注或被误标，但仍参与训练",
+      "解耦式微调 + 权重插值：增强局部对齐的同时保留全局语义",
+      "即插即用、零推理开销，微调参数不到 0.8M"
+    ],
+    "metrics": "在 COCO 与 LVIS 上稳定提升协作式开放词汇检测效果",
+    "whyCite": "讨论「VLM 特征不适合区域级任务」或「检测器与 VLM 互相教学」时引用；思路轻巧，适合做课程里的复现实验。"
+  },
+  {
+    "id": "2605.10190",
+    "arxivUrl": "https://arxiv.org/abs/2605.10190",
+    "title": "DetRefiner: Model-Agnostic Detection Refinement with Feature Fusion Transformer",
+    "titleZh": "DetRefiner：基于特征融合 Transformer 的模型无关检测精修",
+    "published": "2026-05-11",
+    "updated": "2026-05-11",
+    "authors": [
+      "Soichiro Okazaki",
+      "Tatsuya Sasaki",
+      "Hiroki Ohashi"
+    ],
+    "venue": "arXiv 2026-05",
+    "abstract": "Open-vocabulary object detection (OVOD) aims to detect both seen and unseen categories, yet existing methods often struggle to generalize to novel objects due to limited integration of global and local contextual cues. We propose DetRefiner, a simple yet effective plug-and-play framework that learns to fuse global and local features to refine open-vocabulary detection. DetRefiner processes global image features and patch-level image features from foundational models (e.g., DINOv3) through a lightweight Transformer encoder. The encoder produces a class vector capturing image-level attributes and patch vectors representing local region attributes, from which attribute reliability is inferred to recalibrate the base model's confidence. Notably, DetRefiner is trained independently of the base OVOD model, requiring neither access to its internal features nor retraining. At inference, it operates solely on the base detector's predictions, producing auxiliary calibration scores that are merged with the base detector's scores to yield the final refined confidence. Despite this simplicity, DetRefiner consistently enhances multiple OVOD models across COCO, LVIS, ODinW13, and Pascal VOC, achieving gains of up to +10.1 AP on novel categories. These results highlight that learning to fuse global and local representations offers a powerful and general mechanism for advancing open-world object detection. Our codes and models are available at https://github.com/hitachi-rd-cv/detrefiner.",
+    "tags": [],
+    "theme": "ovod",
+    "themeZh": "开放词汇检测",
+    "inWindow": true,
+    "coreIdea": "开放词汇检测受限于全局与局部上下文线索融合不足，DetRefiner 提出即插即用的精修框架：把基础模型（DINOv3 等）的全局图像特征与 patch 级特征送进轻量 Transformer 编码器，产出一个类别向量与一组 patch 向量，据此推断属性可靠性并重标定基础检测器的置信度。",
+    "innovation": [
+      "全局 / 局部特征融合 Transformer，同时输出类别向量与 patch 向量",
+      "属性可靠性推断：据此重标定基础检测器的置信度分数",
+      "与基础 OVOD 模型解耦训练——既不需要访问其内部特征，也不需要重训",
+      "推理时只消费基础检测器的预测结果，不侵入主干结构"
+    ],
+    "metrics": "在 COCO / LVIS / ODinW13 / Pascal VOC 上对多个 OVOD 模型一致提升，新类别最多 +10.1 AP",
+    "whyCite": "写「后处理式精修」「置信度校准」或「检测器 + 基础模型协作」时引用；是 2026 年开放词汇方向易复现的改进。"
+  },
+  {
+    "id": "2606.00782",
+    "arxivUrl": "https://arxiv.org/abs/2606.00782",
+    "title": "FlowOVD: Learning Generative Latent Flows for Zero-shot Open-vocabulary Detection",
+    "titleZh": "FlowOVD：用生成式潜流做零样本开放词汇检测",
+    "published": "2026-05-30",
+    "updated": "2026-05-30",
+    "authors": [
+      "Yao Wei",
+      "Andrea Cavallaro",
+      "Changjae Oh"
+    ],
+    "venue": "arXiv 2026-05",
+    "abstract": "Open-vocabulary object detection (OVD) has achieved remarkable progress through large-scale vision-language pre-training. Existing methods, however, typically formulate OVD as a discriminative prediction problem, where decoder queries are either static or initialized from encoder features, thus limiting their diversity and flexibility. In this paper, we introduce a generative perspective by modeling decoder query generation as a continuous transport process in latent space. We propose FlowOVD, a text-conditioned query generation framework based on rectified flow that progressively transforms text-agnostic queries into text-guided queries. By introducing continuous latent query dynamics into a vision-language model (VLM) based detector, our method avoids heuristic discrete query construction and enables more expressive semantic alignment for open-vocabulary detection. Without requiring additional training data, FlowOVD achieves 49.5 AP on COCO and 31.5 AP on LVIS, outperforming GroundingDINO by +1.2 AP (+2.5 %) and +4.1 AP (+15.0 %), respectively. The larger gain on the challenging long-tailed LVIS benchmark further highlights the effectiveness of continuous query generation for open-vocabulary generalization.",
+    "tags": [],
+    "theme": "ovod",
+    "themeZh": "开放词汇检测",
+    "inWindow": true,
+    "coreIdea": "现有开放词汇检测把 decoder query 当成静态的或仅由编码器特征初始化，限制了查询的多样性与灵活性；FlowOVD 改用生成式视角，把 query 生成建模为潜空间中的连续传输过程。",
+    "innovation": [
+      "用 rectified flow 把「文本无关 query」连续地搬运成「文本引导 query」",
+      "文本条件的生成式查询生成，取代启发式离散 query 构造",
+      "连续潜空间动力学带来更有表达力的语义对齐",
+      "无需任何额外训练数据"
+    ],
+    "metrics": "COCO 49.5 AP、LVIS 31.5 AP；较 Grounding DINO 分别 +1.2 AP 与 +4.1 AP",
+    "whyCite": "写「生成式 / 扩散式检测」或「query 初始化机制」时引用；与 DiffusionDet 是同一支思路的现代版。"
+  },
+  {
+    "id": "2606.09360",
+    "arxivUrl": "https://arxiv.org/abs/2606.09360",
+    "title": "ExDet: Open-Domain Open-Vocabulary Detection with Cross-modal Extrapolation and Rectification",
+    "titleZh": "ExDet：带跨模态外推与校正的开放域开放词汇检测",
+    "published": "2026-06-08",
+    "updated": "2026-06-08",
+    "authors": [
+      "Yupeng Zhang",
+      "Yuzhong Feng",
+      "Ruize Han",
+      "Zhiwei Chen",
+      "Wei Feng",
+      "Liang Wan"
+    ],
+    "venue": "arXiv 2026-06",
+    "abstract": "Open-domain open-vocabulary detection (ODOVD) requires detectors to generalize to both novel categories and unseen domains, making it more challenging than open-vocabulary detection. Existing methods typically train open-vocabulary detectors together with domain generalization modules from scratch, leading to high training cost. we propose ExDet, a lightweight category-domain collaborative generalization framework for ODOVD that enhances the cross-category and cross-domain generalization of existing detectors. ExDet consists of Text-Guided Extrapolation (TGE), a lightweight Detector-Compatible Rectification (DCR) module, and ExRPN. Specifically, TGE exploits the DeltaSpace property of vision-language models (VLMs) to infer category- and domain-aware proxy visual prototypes from text. DCR is learned from the TGE-generated prototypes in a detector training-free and real-data-free manner, and is inserted after the classification head at inference to rectify representations toward a detector-compatible source-domain visual distribution, thereby enhancing classification for targets from novel categories and unseen domains. ExRPN recalibrates proposal scores by combining semantic similarity with RPN confidence, improving recall for novel and domain-shifted objects while providing better support for subsequent classification and DCR. ExDet achieves SOTA performance on OD-LVIS, OV-LVIS, Objects365, and MSOSB.",
+    "tags": [],
+    "theme": "ovod",
+    "themeZh": "开放词汇检测",
+    "inWindow": true,
+    "coreIdea": "开放域开放词汇检测（ODOVD）要求同时泛化到新类别与新域，而现有做法把开放词汇检测器与域泛化模块一起从头训练、成本高昂；ExDet 提出轻量的「类别—域协同泛化」框架，即插即用地增强已有检测器。",
+    "innovation": [
+      "TGE 文本引导外推：利用视觉语言模型的 DeltaSpace 性质，从文本推出类别 / 域感知的代理视觉原型",
+      "DCR 检测器兼容校正：以免训练、免真实数据的方式学习，把表示校正回检测器友好的源域分布",
+      "ExRPN：结合语义相似度与 RPN 置信度重标定候选框分数，提升新类别召回"
+    ],
+    "metrics": "在开放域 OVD 基准上同时提升新类别与新域的泛化能力（详见原文）",
+    "whyCite": "写「域泛化 + 开放词汇」或「免训练校正」时引用；是开放域这一子方向的代表工作。"
+  },
+  {
+    "id": "2608.30247",
+    "arxivUrl": "https://arxiv.org/abs/2608.30247",
+    "title": "OPUS: A Simple yet Effective Unified Framework for Open-Vocabulary Detection",
+    "titleZh": "OPUS：一个简洁而有效的统一开放词汇检测框架",
+    "published": "2026-08-31",
+    "updated": "2026-08-31",
+    "authors": [
+      "Xiaoyan Wei",
+      "Zhimin Yao",
+      "Ruilin Yang",
+      "Wei Zhang",
+      "Yong Dai",
+      "Yi Zhang",
+      "Wei Ge"
+    ],
+    "venue": "arXiv 2026-08",
+    "abstract": "Recent unified open-vocabulary detection (OVD) supports heterogeneous prompts, including text queries, visual exemplars, and their combinations, but often rely on increasingly complex designs such as heavy cross-modal fusion, staged training, and iterative annotation pipelines. We revisit whether such complexity is necessary in the era of stronger foundation models. Our finding is that unified OVD can be made substantially simpler with semantic-rich visual representations and scalable grounding supervision. We present OPUS (\\textbf{O}pen-vocabulary, \\textbf{P}rompt-\\textbf{U}nified, \\textbf{S}imple), a unified detector supporting text, interactive visual, generic visual, and mixed prompting within one framework. OPUS adopts a simple three-part design. Its model architecture combines a semantic-rich visual encoder, built on a DINOv3-ConvNeXt-B backbone with efficient hybrid encoding, with a prompt-aware decoder that avoids prompt-specific branches for unified prompt reasoning. OPUS is trained with a one-stage text-visual training strategy with Instance-level Contrastive Alignment (ICA), and is supported by a SAM3-based single-pass data engine for heterogeneous grounding supervision. Experiments on COCO, LVIS-minival, and ODinW35 show that OPUS achieves state-of-the-art Visual-I performance, reaching 68.1/69.2/54.7 AP, while maintaining balanced Text and Visual-G accuracy. OPUS also turns mixed prompting from interference into complementarity, improving over text or visual prompt alone. These results show that simplicity and strong unified prompting capability can be achieved together.",
+    "tags": [],
+    "theme": "ovod",
+    "themeZh": "开放词汇检测",
+    "inWindow": true,
+    "coreIdea": "反思统一开放词汇检测是否真的需要繁重的跨模态融合、分阶段训练与迭代式标注管线；结论是——在基础模型更强的今天，靠语义丰富的视觉表示 + 可扩展的接地监督就能把统一 OVD 做得很简单。",
+    "innovation": [
+      "三段式极简架构：语义视觉编码器 + 高效混合编码 + 提示感知解码器",
+      "统一支持文本 / 交互视觉 / 通用视觉 / 混合四类提示，且不设提示专用分支",
+      "一阶段文本-视觉训练策略 + 实例级对比对齐（ICA）",
+      "基于 SAM3 的单遍数据引擎，自动生成异质接地监督"
+    ],
+    "metrics": "在 COCO、LVIS-minival、ODinW35 等基准上验证（详见原文）",
+    "whyCite": "讨论「开放词汇检测要不要做得很复杂」时引用；是一篇方法论意义上很有分量的「做减法」论文。"
+  },
+  {
+    "id": "2610.27479",
+    "arxivUrl": "https://arxiv.org/abs/2610.27479",
+    "title": "FocusOVD: Geometric and Contextual Feature Refinement for Open-Vocabulary Small-Object Detection",
+    "titleZh": "FocusOVD：面向开放词汇小目标检测的几何与上下文特征精修",
+    "published": "2026-10-20",
+    "updated": "2026-10-20",
+    "authors": [
+      "Hanlin Kou",
+      "Beiqi Bai",
+      "Li Chen",
+      "Youjia Jing",
+      "Shupan Li",
+      "Mingyuan Jiu"
+    ],
+    "venue": "arXiv 2026-10",
+    "abstract": "Open-vocabulary object detection aims to detect both seen and unseen categories by leveraging the semantic knowledge of vision-language models. However, existing methods often struggle with small objects due to insufficient preservation of high-resolution details, ineffective information aggregation across feature levels, and limited region-level discriminability. To address these challenges, we propose FocusOVD, an open-vocabulary object detector that enhances small-object representations without modifying the frozen VLM backbone. FocusOVD introduces three complementary components: a Reweighted Cross-scale Feature Fusion module, which learns normalized level-wise weights to adaptively balance shallow appearance details and deep semantic cues during feature pyramid aggregation; a Residual Pinwheel-shaped Gated Convolution module, which strengthens local geometric responses in high-resolution features; and a Residual Convolutional Gated Linear Unit module, which suppresses background-dominated activations and enhances RoI discriminability before prediction. Extensive experiments on COCO-OVD and LVIS-OVD demonstrate the effectiveness of FocusOVD. On COCO-OVD, FocusOVD achieves a novel-category AP of 36.3%, outperforming CORA, UniDetector, and SAMP by 1.3%, 1.1%, and 1.5%, respectively; on LVIS-OVD, it achieves an overall AP of 33.7%, surpassing the strongest competing method by 0.6%. These results demonstrate the strong generalization ability of FocusOVD for open-vocabulary small-object detection.",
+    "tags": [],
+    "theme": "ovod",
+    "themeZh": "开放词汇检测",
+    "inWindow": true,
+    "coreIdea": "开放词汇检测在小目标上受限于高分辨率细节保留不足、跨层特征聚合无效、区域判别力有限三个问题；FocusOVD 在不改动冻结 VLM 骨干的前提下，用三个互补模块增强小目标表征。",
+    "innovation": [
+      "加权跨尺度特征融合：学习归一化的逐层权重，平衡浅层外观细节与深层语义",
+      "残差风车形门控卷积：强化高分辨率特征中的局部几何响应",
+      "残差卷积门控线性单元：抑制背景主导的激活，提升 RoI 判别力"
+    ],
+    "metrics": "COCO-OVD 上新类别 AP 达 36.3%，超过 CORA、UniDet 等对比方法",
+    "whyCite": "把「开放词汇」与「小目标」两条线接起来时引用；这是目前少见的同时覆盖两者的组合。"
+  },
+  {
+    "id": "2304.08069",
+    "arxivUrl": "https://arxiv.org/abs/2304.08069",
+    "title": "DETRs Beat YOLOs on Real-time Object Detection",
+    "titleZh": "DETRs 在实时目标检测上击败 YOLO（RT-DETR）",
+    "published": "2023-04-17",
+    "updated": "2024-04-03",
+    "authors": [
+      "Yian Zhao",
+      "Wenyu Lv",
+      "Shangliang Xu",
+      "Jinman Wei",
+      "Guanzhong Wang",
+      "Qingqing Dang",
+      "Yi Liu",
+      "Jie Chen"
+    ],
+    "venue": "CVPR 2024",
+    "abstract": "The YOLO series has become the most popular framework for real-time object detection due to its reasonable trade-off between speed and accuracy. However, we observe that the speed and accuracy of YOLOs are negatively affected by the NMS. Recently, end-to-end Transformer-based detectors (DETRs) have provided an alternative to eliminating NMS. Nevertheless, the high computational cost limits their practicality and hinders them from fully exploiting the advantage of excluding NMS. In this paper, we propose the Real-Time DEtection TRansformer (RT-DETR), the first real-time end-to-end object detector to our best knowledge that addresses the above dilemma. We build RT-DETR in two steps, drawing on the advanced DETR: first we focus on maintaining accuracy while improving speed, followed by maintaining speed while improving accuracy. Specifically, we design an efficient hybrid encoder to expeditiously process multi-scale features by decoupling intra-scale interaction and cross-scale fusion to improve speed. Then, we propose the uncertainty-minimal query selection to provide high-quality initial queries to the decoder, thereby improving accuracy. In addition, RT-DETR supports flexible speed tuning by adjusting the number of decoder layers to adapt to various scenarios without retraining. Our RT-DETR-R50 / R101 achieves 53.1% / 54.3% AP on COCO and 108 / 74 FPS on T4 GPU, outperforming previously advanced YOLOs in both speed and accuracy. We also develop scaled RT-DETRs that outperform the lighter YOLO detectors (S and M models). Furthermore, RT-DETR-R50 outperforms DINO-R50 by 2.2% AP in accuracy and about 21 times in FPS. After pre-training with Objects365, RT-DETR-R50 / R101 achieves 55.3% / 56.2% AP. The project page: https://zhao-yian.github.io/RTDETR.",
+    "tags": [
+      "cs.CV"
+    ],
+    "theme": "realtime",
+    "themeZh": "实时检测",
+    "inWindow": false,
+    "coreIdea": "认为 DETR 慢的根源在编码器冗余计算与查询初始化质量，于是用高效混合编码器压缩计算量，并用「不确定性最小」的查询选择取代传统查询初始化。",
+    "innovation": [
+      "AIFI：只在最高分辨率的 S3 上做一次同尺度注意力，其余层保持卷积",
+      "CCFM：以极简的自顶向下融合替代 FPN/PAN 的重复卷积",
+      "不确定性最小查询选择：按分类 / 定位置信度筛出最可靠的 K 个查询",
+      "推理全程 NMS-free，可直接导出为部署模型"
+    ],
+    "metrics": "COCO 上 T4 GPU 108 FPS 达到 53.1 AP；TensorRT FP16 达 217 FPS",
+    "whyCite": "讨论「端到端检测器如何实时化」或「混合编码器」时引用；是把 DETR 推进到工程可用区间的代表作。"
+  },
+  {
+    "id": "2402.13616",
+    "arxivUrl": "https://arxiv.org/abs/2402.13616",
+    "title": "YOLOv9: Learning What You Want to Learn Using Programmable Gradient Information",
+    "titleZh": "YOLOv9：用可编程梯度信息学习你想学的东西",
+    "published": "2024-02-21",
+    "updated": "2024-02-29",
+    "authors": [
+      "Chien-Yao Wang",
+      "I-Hau Yeh",
+      "Hong-Yuan Mark Liao"
+    ],
+    "venue": "ECCV 2024",
+    "abstract": "Today's deep learning methods focus on how to design the most appropriate objective functions so that the prediction results of the model can be closest to the ground truth. Meanwhile, an appropriate architecture that can facilitate acquisition of enough information for prediction has to be designed. Existing methods ignore a fact that when input data undergoes layer-by-layer feature extraction and spatial transformation, large amount of information will be lost. This paper will delve into the important issues of data loss when data is transmitted through deep networks, namely information bottleneck and reversible functions. We proposed the concept of programmable gradient information (PGI) to cope with the various changes required by deep networks to achieve multiple objectives. PGI can provide complete input information for the target task to calculate objective function, so that reliable gradient information can be obtained to update network weights. In addition, a new lightweight network architecture -- Generalized Efficient Layer Aggregation Network (GELAN), based on gradient path planning is designed. GELAN's architecture confirms that PGI has gained superior results on lightweight models. We verified the proposed GELAN and PGI on MS COCO dataset based object detection. The results show that GELAN only uses conventional convolution operators to achieve better parameter utilization than the state-of-the-art methods developed based on depth-wise convolution. PGI can be used for variety of models from lightweight to large. It can be used to obtain complete information, so that train-from-scratch models can achieve better results than state-of-the-art models pre-trained using large datasets, the comparison results are shown in Figure 1. The source codes are at: https://github.com/WongKinYiu/yolov9.",
+    "tags": [
+      "cs.CV"
+    ],
+    "theme": "realtime",
+    "themeZh": "实时检测",
+    "inWindow": true,
+    "coreIdea": "发现深层网络中梯度信息在反向传播中会因「深度监督不足」和「梯度融合」而丢失，于是设计可编程梯度信息（PGI）生成器，在骨干与 neck 之间插入辅助分支把梯度信息回传到浅层。",
+    "innovation": [
+      "PGI 可编程梯度信息生成器",
+      "骨干加辅助分支 A2 / B2，把输入层梯度信息引回浅层",
+      "GELAN 通用高效层聚合 neck，提升特征融合效率",
+      "无需大规模数据集预训练即可稳定训练"
+    ],
+    "metrics": "COCO AP 47.0 / 47.1（L 级），超过同规模 YOLOv8 且参数更少",
+    "whyCite": "讨论「训练信号与推理不一致」「梯度信息丢失」时引用；是 YOLO 近年最重要的机理型改进。"
+  },
+  {
+    "id": "2405.14458",
+    "arxivUrl": "https://arxiv.org/abs/2405.14458",
+    "title": "YOLOv10: Real-Time End-to-End Object Detection",
+    "titleZh": "YOLOv10：实时端到端目标检测",
+    "published": "2024-05-23",
+    "updated": "2024-10-30",
+    "authors": [
+      "Ao Wang",
+      "Hui Chen",
+      "Lihao Liu",
+      "Kai Chen",
+      "Zijia Lin",
+      "Jungong Han",
+      "Guiguang Ding"
+    ],
+    "venue": "NeurIPS 2024",
+    "abstract": "Over the past years, YOLOs have emerged as the predominant paradigm in the field of real-time object detection owing to their effective balance between computational cost and detection performance. Researchers have explored the architectural designs, optimization objectives, data augmentation strategies, and others for YOLOs, achieving notable progress. However, the reliance on the non-maximum suppression (NMS) for post-processing hampers the end-to-end deployment of YOLOs and adversely impacts the inference latency. Besides, the design of various components in YOLOs lacks the comprehensive and thorough inspection, resulting in noticeable computational redundancy and limiting the model's capability. It renders the suboptimal efficiency, along with considerable potential for performance improvements. In this work, we aim to further advance the performance-efficiency boundary of YOLOs from both the post-processing and model architecture. To this end, we first present the consistent dual assignments for NMS-free training of YOLOs, which brings competitive performance and low inference latency simultaneously. Moreover, we introduce the holistic efficiency-accuracy driven model design strategy for YOLOs. We comprehensively optimize various components of YOLOs from both efficiency and accuracy perspectives, which greatly reduces the computational overhead and enhances the capability. The outcome of our effort is a new generation of YOLO series for real-time end-to-end object detection, dubbed YOLOv10. Extensive experiments show that YOLOv10 achieves state-of-the-art performance and efficiency across various model scales. For example, our YOLOv10-S is 1.8$\\times$ faster than RT-DETR-R18 under the similar AP on COCO, meanwhile enjoying 2.8$\\times$ smaller number of parameters and FLOPs. Compared with YOLOv9-C, YOLOv10-B has 46\\% less latency and 25\\% fewer parameters for the same performance.",
+    "tags": [
+      "cs.CV"
+    ],
+    "theme": "realtime",
+    "themeZh": "实时检测",
+    "inWindow": true,
+    "coreIdea": "指出一阶段检测器推理时仍需 NMS，这是训练 / 推理不一致的根源，于是引入一致性双重标签分配——训练时同时跑 1:1（无 NMS）与 1:N（NMS）两条分支，推理时只用 1:1 分支。",
+    "innovation": [
+      "一致性双重标签分配：训练期 1:1 与 1:N 双分支并行监督",
+      "推理期只保留 1:1 分支，彻底去掉 NMS",
+      "引入面向小目标的全标签分配正则项",
+      "无需预训练权重或定制算子，部署成本低"
+    ],
+    "metrics": "COCO AP 46.3（L 级）；相对 YOLOv9 速度提升约 1.8×、模型体积降至约 1/2.8",
+    "whyCite": "讨论「NMS-free 的一阶段检测」时引用；与 RT-DETR 的 NMS-free 路线可以直接对照着写。"
+  },
+  {
+    "id": "2502.12524",
+    "arxivUrl": "https://arxiv.org/abs/2502.12524",
+    "title": "YOLOv12: Attention-Centric Real-Time Object Detectors",
+    "titleZh": "YOLOv12：以注意力为中心的实时目标检测器",
+    "published": "2025-02-18",
+    "updated": "2025-02-18",
+    "authors": [
+      "Yunjie Tian",
+      "Qixiang Ye",
+      "David Doermann"
+    ],
+    "venue": "arXiv 2025",
+    "abstract": "Enhancing the network architecture of the YOLO framework has been crucial for a long time, but has focused on CNN-based improvements despite the proven superiority of attention mechanisms in modeling capabilities. This is because attention-based models cannot match the speed of CNN-based models. This paper proposes an attention-centric YOLO framework, namely YOLOv12, that matches the speed of previous CNN-based ones while harnessing the performance benefits of attention mechanisms. YOLOv12 surpasses all popular real-time object detectors in accuracy with competitive speed. For example, YOLOv12-N achieves 40.6% mAP with an inference latency of 1.64 ms on a T4 GPU, outperforming advanced YOLOv10-N / YOLOv11-N by 2.1%/1.2% mAP with a comparable speed. This advantage extends to other model scales. YOLOv12 also surpasses end-to-end real-time detectors that improve DETR, such as RT-DETR / RT-DETRv2: YOLOv12-S beats RT-DETR-R18 / RT-DETRv2-R18 while running 42% faster, using only 36% of the computation and 45% of the parameters. More comparisons are shown in Figure 1.",
+    "tags": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "theme": "realtime",
+    "themeZh": "实时检测",
+    "inWindow": true,
+    "coreIdea": "认为实时检测器过去只卷积不用注意力，是出于「注意力太贵」的误解；于是把注意力高效化（区域注意力 + 块注意力 + FlashAttention），做成以注意力为中心的架构，速度不变而精度上台阶。",
+    "innovation": [
+      "区域注意力 A2：在区域之间共享上下文，注意力只在区域内计算",
+      "块注意力 B2：块内高维注意力，块间用卷积承接",
+      "轻量二维位置编码 PosE",
+      "FlashAttention 降低注意力开销"
+    ],
+    "metrics": "COCO AP 40.6（L 级），延迟与 YOLOv10 / v11 同级而精度更高",
+    "whyCite": "讨论「注意力实时化」「卷积与注意力的权衡」时引用；是 YOLO 系列最新的架构方向。"
+  },
+  {
+    "id": "2610.05191",
+    "arxivUrl": "https://arxiv.org/abs/2610.05191",
+    "title": "Order Matters: Competition-Guided Query Ordering for RNN-Based Object Detection",
+    "titleZh": "Order Matters：面向 RNN 式目标检测的竞争引导查询排序",
+    "published": "2026-10-04",
+    "updated": "2026-10-23",
+    "authors": [
+      "Shengjian Wu",
+      "Li Sun",
+      "Yu Shangguan",
+      "Qingli Li"
+    ],
+    "venue": "arXiv 2026-10",
+    "abstract": "DETR-style detectors use one-to-one bipartite matching during training to assign object queries to ground-truth objects, enabling end-to-end set prediction without non-maximum suppression (NMS). However, without an explicit de-duplication procedure, multiple queries can still produce highly similar hypotheses for the same object, making training unstable and predictions less decisive. Inspired by the sequential ordering of NMS, we propose DETRNN, a plug-and-play module that turns unordered object queries into a competition-aware sequence for recurrent refinement. DETRNN builds an explicit confidence-and-similarity based order from prior predictions, then refines queries with an RNN along this order to model competition inside the decoder. This ordered recurrent refinement reduces redundant predictions, stabilizes optimization, and improves final detection accuracy. Experiments on multiple DETR-style detectors show consistent gains with comparable efficiency. Code repository: https://github.com/nigelwoo2008-coder/DETRNN.",
+    "tags": [],
+    "theme": "realtime",
+    "themeZh": "实时检测",
+    "inWindow": true,
+    "coreIdea": "没有显式去重时，多个 query 仍会对同一目标给出高度相似的假设，导致训练不稳、预测不果断；借鉴 NMS 的顺序性，DETRNN 把无序的 object query 变成「竞争感知的序列」，再用 RNN 沿这个序列循环精修。",
+    "innovation": [
+      "基于置信度与相似度的显式排序，把无序 query 组织成有序序列",
+      "RNN 沿排序做竞争感知的循环精修，在 decoder 内部建模 query 间的竞争",
+      "抑制冗余预测、稳定优化过程，同时保持与 NMS-free 推理的兼容"
+    ],
+    "metrics": "在多个 DETR 系检测器上取得一致提升，且效率基本不变",
+    "whyCite": "讨论「NMS-free 仍会出重复框」或「查询冗余与排序」时引用；把 NMS 的先验巧妙搬进 decoder 内部。"
+  },
+  {
+    "id": "2610.09502",
+    "arxivUrl": "https://arxiv.org/abs/2610.09502",
+    "title": "RT-DETR-World: Transferring Rich LLM Semantics to Real-Time Open-Vocabulary Detection",
+    "titleZh": "RT-DETR-World：把大语言模型的丰富语义迁移到实时开放词汇检测",
+    "published": "2026-10-07",
+    "updated": "2026-10-07",
+    "authors": [
+      "Yupeng Zhang",
+      "Ziyi Zhao",
+      "Juntao Cheng",
+      "Sheng Wang",
+      "Ningnan Guo",
+      "Ruize Han",
+      "Liang Wan"
+    ],
+    "venue": "arXiv 2026-10",
+    "abstract": "Open-vocabulary detection (OVD) recognizes categories unseen during training through textual category queries, yet achieving strong generalization with real-time efficiency remains challenging. Beyond vocabulary scaling, zero-shot generalization may benefit from reusable visual--semantic cues learned from seen data, including attributes, actions, states, and contextual relations. Existing real-time OVD methods primarily emphasize vocabulary coverage and efficient region/query--text matching; under strict efficiency constraints, compact detectors may struggle to absorb rich instance semantics and scene context. We propose RT-DETR-World, a compact DETR-style detector that transfers the rich semantics conveyed by descriptions during training while retaining lightweight query--text matching at inference. We construct GroundingCapv2 with three levels of supervision: category names for standard OVD, object descriptions conveying instance-level semantics, and image descriptions conveying object relations and scene context. These descriptions serve only as training-time semantic supervision. To help the compact detector absorb these semantics, we propose Dual-Path Description Alignment (DDA), combining a deployment-consistent MiniLM pathway with a training-only LLM teacher. MiniLM provides query--category supervision and object-description alignment, while offline teacher features supervise matched queries and global visual representations at the object and image levels, respectively. All teacher features are precomputed, and the teacher-side modules are removed after training. We further propose Relation-Aware Negative Relaxation (RNR), which uses teacher-derived semantic similarities to relax related negatives while preserving exact positives. Experiments demonstrate competitive zero-shot accuracy and a favorable accuracy--efficiency trade-off. The code will be released.",
+    "tags": [],
+    "theme": "realtime",
+    "themeZh": "实时检测",
+    "inWindow": true,
+    "coreIdea": "指出紧凑型实时检测器难以吸收丰富的实例语义，于是构建 GroundingCapv2 三级监督（类别名 / 物体描述 / 图像描述），把属性、动作、状态与上下文关系在训练期灌进检测器，推理期仍保持轻量的 query—文本匹配。",
+    "innovation": [
+      "GroundingCapv2 数据集：类别名 / 实例级描述 / 图像级描述三级语义监督",
+      "双路描述对齐 DDA：部署一致的 MiniLM 路径与非语言模型路径共同对齐",
+      "描述只用于训练期，推理期保持紧凑的 query—文本匹配，不增加推理成本"
+    ],
+    "metrics": "在实时开放词汇基准上以紧凑模型取得领先精度（详见原文表格）",
+    "whyCite": "讨论「实时检测器如何吸收 LLM 语义」或「训练期监督注入」时引用；是 2026 年实时开放词汇方向的代表作。"
+  }
+]

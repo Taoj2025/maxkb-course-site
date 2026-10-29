@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>目标检测专题 · 从原理到发论文 · 小陶老师</title>
+<meta name="description" content="目标检测专题：检测器通用架构 + 三条技术路线 + 近三年 arXiv 文献精读（核心思想 / 创新点 / 原理架构图）+ 复现实验路线 + 科研选题建议。30 篇 arXiv 论文，9 张自绘原理架构图。">
+
+<!-- Open Graph / 微信分享卡 -->
+<meta property="og:title" content="目标检测专题 · 从原理到发论文 · 小陶老师">
+<meta property="og:description" content="30 篇近三年 arXiv 目标检测论文精读 · 核心思想 + 创新点 + 原理架构图 · 复现实验路线与科研选题建议">
+<meta property="og:image" content="https://taotaoedu.ltd/assets/images/og-cover.png">
+<meta property="og:url" content="https://taotaoedu.ltd/object-detection.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MaxKB FDE 教学">
+
+<!-- Twitter / X 卡片 -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="目标检测专题 · 从原理到发论文 · 小陶老师">
+<meta name="twitter:description" content="30 篇近三年 arXiv 目标检测论文精读 · 核心思想 + 创新点 + 原理架构图">
+<meta name="twitter:image" content="https://taotaoedu.ltd/assets/images/og-cover.png">
+<link rel="canonical" href="https://taotaoedu.ltd/object-detection.html">
+
+<meta name="keywords" content="目标检测,DETR,DINO,DEIM,D-FINE,RT-DETR,YOLOv10,YOLOv12,开放词汇检测,Grounding DINO,小目标检测,arXiv,论文精读,小陶老师,MaxKB">
+<meta name="author" content="小陶老师">
+<meta name="theme-color" content="#5B2EBF">
+
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%235B2EBF'/><text x='50' y='68' text-anchor='middle' fill='white' font-size='46' font-weight='bold' font-family='sans-serif'>OD</text></svg>">
+</head>
+<body>
+
+<!-- ============ 顶部会员状态条 ============ -->
+<div id="top-status-bar" style="background: rgba(0,0,0,0.2); padding: 8px 32px; text-align: center; font-size: 13px; color: rgba(255,255,255,0.9);">
+  <span id="status-text">💎 未登录 · 访问全部资源需会员</span>
+  <a href="membership.html" style="color: #FCD34D; text-decoration: none; margin-left: 12px; font-weight: 600;">👤 登录 / 注册</a>
+</div>
+
+<!-- ============ 顶部导航 ============ -->
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <div class="logo-dot">M</div>
+      <span>MaxKB · FDE 教学</span>
+    </div>
+    <button class="hamburger" id="nav-hamburger" aria-label="菜单">☰</button>
+    <div class="nav-links" id="nav-links">
+      <a href="index.html">首页</a>
+      <a href="syllabus.html">📚 课程大纲</a>
+      <a href="dl-course.html" style="color:#FCD34D; font-weight:700;">🧠 深度学习</a>
+      <a href="object-detection.html" class="active" style="color:#5CC8B0; font-weight:700;">🎯 目标检测</a>
+      <a href="cases.html">客户案例</a>
+      <a href="latest.html" style="color:#EF4444; font-weight:700;">🔥 最新动态</a>
+      <a href="membership.html">💎 会员</a>
+      <a href="user.html">👤 个人中心</a>
+      <a href="enterprise.html" style="color:#F59E0B; font-weight:700;">🏢 企业服务</a>
+      <a href="about.html">关于</a>
+      <a href="trial.html" class="nav-cta">📅 预约演示</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ Hero ============ -->
+<section class="od-hero">
+  <div class="od-badge">🎯 目标检测专题 · arXiv 近三年文献精读</div>
+  <h1>目标检测：从原理到发论文</h1>
+  <p>
+    检测器怎么搭、这几年论文改了什么、哪些方向还值得做——
+    一页讲清检测器的三段式架构，<b>30 篇 arXiv 论文</b>逐篇拆解核心思想与创新点，
+    配 <b>9 张自绘原理架构图</b>，最后落到可复现的实验路线与可直接开题的选题清单。
+  </p>
+  <div class="od-meta">
+    <div class="od-meta-item"><span class="od-meta-num">30</span><span class="od-meta-label">篇 arXiv 论文精读</span></div>
+    <div class="od-meta-item"><span class="od-meta-num">9</span><span class="od-meta-label">张自绘原理架构图</span></div>
+    <div class="od-meta-item"><span class="od-meta-num">5</span><span class="od-meta-label">条研究主线</span></div>
+    <div class="od-meta-item"><span class="od-meta-num">21</span><span class="od-meta-label">篇落在近三年窗口</span></div>
+    <div class="od-meta-item"><span class="od-meta-num">6</span><span class="od-meta-label">个可直接开题的选题</span></div>
+  </div>
+  <div style="margin-top:36px; display:flex; gap:14px; justify-content:center; flex-wrap:wrap; position:relative;">
+    <a href="#architecture" class="btn btn-primary">📐 先看检测器怎么搭</a>
+    <a href="#papers" class="btn btn-secondary">📚 直接进文献精读</a>
+    <a href="#topics" class="btn btn-secondary">🎓 看科研选题建议</a>
+  </div>
+</section>
+
+<!-- ============ 一、通用架构 ============ -->
+<section id="architecture" class="od-part white">
+  <div class="od-wrap">
+    <div class="section-tag">PART 01 · 检测器解剖</div>
+    <h2 class="section-title">任何检测器，都是<span class="highlight">三段式</span></h2>
+    <p class="section-subtitle">
+      特征提取 → 多尺度融合 → 预测头。近三年所有新工作，改的都是这两三段里的某一处。
+    </p>
+
+    <div class="figure-main">
+      <figure class="figure-big">
+        <img src="assets/images/08_检测器通用架构.png"
+             alt="目标检测器通用架构解剖图：输入图像经过 Backbone 骨干提取 C3/C4/C5 多尺度特征，经 Neck 特征融合得到 P3/P4/P5，最后由 Head 预测头输出框、类别与置信度；下方对比训练阶段的样本分配与推理阶段的后处理差异"
+             width="1427" height="767" loading="lazy"
+             data-figure="assets/images/08_检测器通用架构.png"
+             data-caption="图 8 · 目标检测器通用架构解剖：Backbone / Neck / Head 三段式，训练看样本分配，推理看后处理">
+        <figcaption>图 8 · 目标检测器通用架构解剖（点击放大）</figcaption>
+      </figure>
+      <div class="figure-side">
+        <h3>为什么值得先看这张图</h3>
+        <ul>
+          <li><strong>Backbone</strong>：决定特征质量上限，R50 → Swin → VMamba / TransNeXt / DINOv3</li>
+          <li><strong>Neck</strong>：决定多尺度信息怎么融合，FPN / PAN / CCFM 三代演进</li>
+          <li><strong>Head</strong>：决定输出形式，anchor-based 与 anchor-free 两条分水岭</li>
+          <li>训练侧与推理侧要<b>目标一致</b>——这是 YOLOv10 与 DETR 共同的底层主张</li>
+        </ul>
+        <p>
+          读论文时先把这张图摆出来，问自己三个问题：
+          <b>这篇论文动的是哪一段？是训练侧还是推理侧？</b>
+          几乎所有检测论文都能被塞进这个框架里。
+        </p>
+      </div>
+    </div>
+
+    <div class="figure-main reverse">
+      <figure class="figure-big">
+        <img src="assets/images/09_三条技术路线对比.png"
+             alt="目标检测三条技术路线对比图：两阶段检测（Backbone-RPN-RoI Align-分类回归，代表 Faster R-CNN）、一阶段检测（Backbone-FPN-Dense Head，代表 YOLOv5 到 v12）、端到端 DETR 检测（Backbone-Encoder-Decoder 直接出框，代表 DETR/DINO/RT-DETR/DEIM），并对比各自优势与短板"
+             width="1427" height="767" loading="lazy"
+             data-figure="assets/images/09_三条技术路线对比.png"
+             data-caption="图 9 · 三条技术路线：两阶段精细、一阶段直接、端到端去 NMS，近三年新工作都在这三条线上">
+        <figcaption>图 9 · 三条技术路线对比（点击放大）</figcaption>
+      </figure>
+      <div class="figure-side">
+        <h3>三条路线，正在互相吸收</h3>
+        <ul>
+          <li><strong>两阶段</strong>：精度上限高、小目标强，但流程长、推理慢</li>
+          <li><strong>一阶段</strong>：端到端训练、速度快、易部署，早期正负样本失衡</li>
+          <li><strong>端到端 DETR</strong>：无 NMS、无锚框、架构统一，但早期收敛慢</li>
+          <li>趋势：两阶段被「一阶段 + 更好的样本分配」逼近，一阶段被「端到端」改造</li>
+        </ul>
+        <p>
+          写综述时，这张表是最好用的骨架：<b>按路线分类，而不是按年份罗列</b>，
+          读者才能一眼看出每个方向还缺什么。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 二、DETR 端到端原理 ============ -->
+<section id="principle" class="od-part tint">
+  <div class="od-wrap">
+    <div class="section-tag">PART 02 · 核心原理</div>
+    <h2 class="section-title">DETR 端到端检测：<span class="highlight">训练与推理原理</span></h2>
+    <p class="section-subtitle">
+      把检测变成「集合预测」：一对一匹配替代 NMS，用匈牙利算法求全局最优。
+      这张图是后面所有 DETR 系论文的地基。
+    </p>
+
+    <figure class="figure-wide">
+      <img src="assets/images/10_DETR端到端训练.png"
+           alt="DETR 端到端检测训练与推理原理图：图像特征经 Transformer Encoder、Decoder 的 N 个 Query 预测出框与类别的集合；下方展示匈牙利匹配的一一对应与代价矩阵、去噪训练 CDN，以及传统检测与端到端检测的对比"
+           width="1427" height="767" loading="lazy"
+           data-figure="assets/images/10_DETR端到端训练.png"
+           data-caption="图 10 · DETR 端到端训练：匈牙利匹配 + 去噪训练，以及与传统检测的对比">
+      <figcaption>图 10 · DETR 端到端训练原理（点击放大）</figcaption>
+    </figure>
+
+    <div class="od-cols">
+      <div class="od-col">
+        <h4>① 匈牙利匹配：把「分配」变成优化问题</h4>
+        <p>构造 N×M 代价矩阵（分类损失 + L1 + GIoU），用匈牙利算法求<b>全局最优</b>排列，而不是传统检测那样按 IoU 贪心阈值分配候选框。每个 GT 只被 1 个 Query 匹配，其余 Query 全部记为无目标——这就是「无冗余框」的来源。</p>
+      </div>
+      <div class="od-col">
+        <h4>② 去噪训练 CDN：所有 DETR 系提速的共同前提</h4>
+        <p>给 GT 框加随机噪声，把这些「带噪框」当成额外正样本 Query 一起送进 Decoder。模型只要学会「去噪还原」，收敛速度就能提升数倍——DETR 原本需要 500 epoch 才能训好，加了去噪之后 <b>12 epoch 就够</b>。</p>
+      </div>
+      <div class="od-col">
+        <h4>③ 两条改进轴：匹配方式 与 回归形式</h4>
+        <p>DEIM 改的是<b>匹配</b>（密集一对一 → 更快收敛），D-FINE 改的是<b>回归</b>（L1 单点 → 细粒度分布细化 → 更准定位）。两件事在数学上彼此正交，因此可以叠加——<b>这正是写文章时最顺的一条叙事线</b>。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 三、文献精读 ============ -->
+<section id="papers" class="od-part">
+  <div class="od-wrap">
+    <div class="section-tag">PART 03 · 文献精读</div>
+    <h2 class="section-title">近三年 arXiv <span class="highlight">文献精读</span></h2>
+    <p class="section-subtitle">
+      30 篇论文，逐篇给出核心思想、创新点、代表性指标与「写文章时该怎么引用」。
+      全部论文标题、作者、发布日期与 arXiv 编号均取自 arXiv 官方 API，可直接核对。
+    </p>
+
+    <div class="od-note">
+      <div class="od-note-inner">
+        <h3>📌 关于「近三年」这个窗口的说明</h3>
+        <p>
+          严格意义上的近三年窗口是 <b>2023-10 → 2026-10</b>，落在窗口内的共 <b>21 篇</b>，标记为
+          <span class="pc-tag now">近三年窗口内</span>。
+          另外 <b>9 篇</b> 是这条技术路线上不可绕过的<b>奠基前置工作</b>
+          （DINO、RT-DETR、Grounding DINO、OWLv2、Florence-2 等，最早可追溯到 2022 年），
+          标记为 <span class="pc-tag pre">奠基前置</span>。
+          <br>
+          把它们放进来是有意的：近三年的每一篇工作，都在引用和修改这些前置工作。
+          <b>不引用前置工作，综述就断了链条</b>——这也是审稿人最容易质疑的地方。
+        </p>
+      </div>
+    </div>
+
+<div class="theme-block">
+  <div class="theme-head">
+    <div class="theme-no">01</div>
+    <div><h3>端到端 DETR 系</h3><div class="theme-sub">集合预测 · 匹配机制 · 回归形式</div></div>
+  </div>
+  <div class="theme-desc">端到端路线把检测从「先出候选再筛选」改写成「直接预测一个集合」。这条线的三年进展几乎全部集中在两处：<b>预测与 GT 怎么配对</b>（匈牙利匹配 → 密集一对一 → 图协作），以及<b>框怎么回归</b>（L1 单点 → 细粒度分布细化）。这两件事彼此正交，因此可以叠加——这正是写文章时最好讲的叙事结构。</div>
+  <figure class="figure-wide">
+    <img src="assets/images/11_DETR三大改进对比.png" alt="11：DETR 系三大关键改进：DINO 改收敛、DEIM 改匹配、D-FINE 改回归" width="1427" height="767" loading="lazy"
+         data-figure="assets/images/11_DETR三大改进对比.png" data-caption="图 11 · DETR 系三大关键改进：DINO 改收敛、DEIM 改匹配、D-FINE 改回归">
+    <figcaption>图 11 · DETR 系三大关键改进：DINO 改收敛、DEIM 改匹配、D-FINE 改回归</figcaption>
+  </figure>
+  <div class="paper-grid">
+    <article class="paper-card">
+      <div class="pc-tags">
+        <span class="pc-tag venue">ICLR 2023</span>
+        <span class="pc-tag theme">端到端 DETR 系</span>
+        <span class="pc-tag pre">奠基前置</span>
+      </div>
+      <h3>DINO: DETR with Improved DeNoising Anchor Boxes for End-to-End Object Detection</h3>
+      <div class="pc-zh">DINO：带改进去噪锚框的端到端目标检测 DETR</div>
+      <div class="pc-id">arXiv:2203.03605 · 2022-03-07 · Hao Zhang、Feng Li、Shilong Liu 等 8 人</div>
+      <div class="pc-idea"><b>核心思想</b>把 DETR 的集合预测与去噪训练结合——给 GT 框加噪构造额外的正样本 Query，让 Decoder 同时学习「去噪还原」，把收敛所需的 500 epoch 压到 12 epoch。</div>
+      <div class="pc-inno-title">创新点</div>
+      <ul class="pc-inno">
+        <li>引入对比去噪 CDN：给 GT 框加随机噪声，生成额外正样本 Query</li>
+        <li>混合查询选择：把编码器的内容特征与位置锚点拼接起来选初始 Query</li>
+        <li>Look-Forward-Twice：在分支之间传递梯度，稳定深层监督</li>
+        <li>解码器额外精修层：逐层提升框的定位精度</li>
+      </ul>
+      <div class="pc-foot">
+        <div class="pc-metric">📊 COCO AP 42.3 → 49.0（ResNet-50，12 epoch）</div>
+        <div class="pc-cite">✍️ 凡是要写「DETR 收敛慢」或「去噪训练」，这一篇是必引的前置工作，也是 DEIM / D-FINE 等后续改进的共同前提。</div>
+        <a class="pc-link" href="https://arxiv.org/abs/2203.03605" target="_blank" rel="noopener">arXiv:2203.03605 原文 ↗</a>
+      </div>
+    </article>
+    <article class="paper-card">
+      <div class="pc-tags">
+        <span class="pc-tag venue">ICCV 2023 (Oral)</span>
+        <span class="pc-tag theme">端到端 DETR 系</span>
+        <span class="pc-tag pre">奠基前置</span>
+      </div>
+      <h3>DiffusionDet: Diffusion Model for Object Detection</h3>
+      <div class="pc-zh">DiffusionDet：用扩散模型做目标检测</div>
+      <div class="pc-id">arXiv:2211.09788 · 2022-11-17 · Shoufa Chen、Peize Sun、Yibing Song 等 4 人</div>
+      <div class="pc-idea"><b>核心思想</b>把检测重述为「从带噪框集合到真实框集合」的扩散去噪过程——以随机初始化的框作为扩散起点，用迭代去噪逐步精修出最终检测结果，天然不需要 NMS。</div>
+      <div class="pc-inno-title">创新点</div>
+      <ul class="pc-inno">
+        <li>首次把扩散模型的加噪 / 去噪范式引入目标检测</li>
+        <li>随机框作为扩散起点，等价于隐式建模整个检测结果的分布</li>
+        <li>去噪过程中逐级精修框坐标与类别，天然免 NMS</li>
+      </ul>
+      <div class="pc-foot">
+        <div class="pc-metric">📊 COCO AP 46.4（L 级骨干，RefineNet）</div>
+        <div class="pc-cite">✍️ 讲「集合预测的另一种范式」或「扩散模型做感知任务」时引用；2024 年之后扩散式检测大量跟进，是一条活的支线。</div>
+        <a class="pc-link" href="https://arxiv.org/abs/2211.09788" target="_blank" rel="noopener">arXiv:2211.09788 原文 ↗</a>
+      </div>
+    </article>
+    <article class="paper-card">
+      <div class="pc-tags">
+        <span class="pc-tag venue">ICCV 2023</span>
+        <span class="pc-tag theme">端到端 DETR 系</span>
+        <span class="pc-tag pre">奠基前置</span>
+      </div>
+      <h3>DETRs with Collaborative Hybrid Assignments Training</h3>
+      <div class="pc-zh">协同混合分配训练的 DETR（Co-DETR）</div>
+      <div class="pc-id">arXiv:2211.12860 · 2022-11-22 · Zhuofan Zong、Guanglu Song、Yu Liu</div>
+      <div class="pc-idea"><b>核心思想</b>指出 DETR 的「一对一匹配」导致正样本过于稀疏，改为在多个辅助检测头上做混合分配（一对一 + 一对多）协同训练，最后只保留主头的输出做推理。</div>
+      <div class="pc-inno-title">创新点</div>
+      <ul class="pc-inno">
+        <li>协同混合分配训练：多个辅助头采用不同的正负样本分配策略</li>
+        <li>正样本集合在辅助头之间共享，互相「借」监督信号</li>
+        <li>推理时只保留一对一主头，完整保留 NMS-free 特性</li>
+      </ul>
+      <div class="pc-foot">
+        <div class="pc-metric">📊 COCO AP 51.0 级别，显著加速收敛</div>
+        <div class="pc-cite">✍️ 讨论「正样本稀疏」「一对一匹配的信息瓶颈」时引用；与 DEIM 的 Dense O2O 是同期但独立的两种解法。</div>
+        <a class="pc-link" href="https://arxiv.org/abs/2211.12860" target="_blank" rel="noopener">arXiv:2211.12860 原文 ↗</a>
+      </div>
+    </article>
+    <article class="paper-card">
+      <div class="pc-tags">
+        <span class="pc-tag venue">ICLR 2025</span>
+        <span class="pc-tag theme">端到端 DETR 系</span>
+        <span class="pc-tag now">近三年窗口内</span>
+      </div>
+      <h3>D-FINE: Redefine Regression Task in DETRs as Fine-grained Distribution Refinement</h3>
+      <div class="pc-zh">D-FINE：把 DETR 的回归任务重新定义为细粒度分布细化</div>
+      <div class="pc-id">arXiv:2410.13842 · 2024-10-17 · Yansong Peng、Hebei Li、Peixi Wu 等 6 人</div>
+      <div class="pc-idea"><b>核心思想</b>认为 L1 回归是 DETR 定位精度的瓶颈，于是把回归从「预测一个坐标」改成「预测一个以真值为中心的离散分布」，再对分布做细化，把定位精度整体抬高一个档次。</div>
+      <div class="pc-inno-title">创新点</div>
+      <ul class="pc-inno">
+        <li>FDR 细粒度分布细化：预测离散分布而非单点坐标</li>
+        <li>GDR 全局分布细化：借高层特征迭代优化整层分布</li>
+        <li>分布式回归天然编码了定位不确定性</li>
+        <li>可直接叠加到 DINO / DEIM 等已有框架上</li>
+      </ul>
+      <div class="pc-foot">
+        <div class="pc-metric">📊 COCO ResNet-50 AP 54.3；12 epoch 训练即超越此前最好结果</div>
+        <div class="pc-cite">✍️ 讨论「回归形式」「定位精度瓶颈」时引用；与 DEIM 的匹配改进构成两条正交的技术线。</div>
+        <a class="pc-link" href="https://arxiv.org/abs/2410.13842" target="_blank" rel="noopener">arXiv:2410.13842 原文 ↗</a>
+      </div>
+    </article>
+    <article class="paper-card">
+      <div class="pc-tags">
+        <span class="pc-tag venue">CVPR 2025</span>
+        <span class="pc-tag theme">端到端 DETR 系</span>
+        <span class="pc-tag now">近三年窗口内</span>
+      </div>
+      <h3>DEIM: DETR with Improved Matching for Fast Convergence</h3>
+      <div class="pc-zh">DEIM：用改进的匹配实现快速收敛的 DETR</div>
+      <div class="pc-id">arXiv:2412.04234 · 2024-12-05 · Shihua Huang、Zhichao Lu、Xiaodong Cun 等 6 人</div>
+      <div class="pc-idea"><b>核心思想</b>指出密集一对一匹配能提供更丰富的正样本监督，从而在同样的 12 epoch 内比 DINO 收敛得更快；同时用匹配性感知损失抑制低质量匹配对训练的干扰。</div>
+      <div class="pc-inno-title">创新点</div>
+      <ul class="pc-inno">
+        <li>Dense O2O 密集一对一匹配：每个 GT 取 Top-K 个高重叠 Query</li>
+        <li>匹配性感知损失 MAL：按匹配质量给分类 / 回归损失加权</li>
+        <li>保持一对一推理特性，不引入额外推理延迟</li>
+        <li>可直接叠加到 DINO / D-FINE 上形成复合收益</li>
+      </ul>
+      <div class="pc-foot">
+        <div class="pc-metric">📊 COCO AP 50.6（ResNet-50，12 epoch），对比 DINO 的 49.0</div>
+        <div class="pc-cite">✍️ 讨论「收敛速度」「正样本数量」时引用；是 DINO → DEIM → D-FINE 这条叙事线里的关键一环。</div>
+        <a class="pc-link" href="https://arxiv.org/abs/2412.04234" target="_blank" rel="noopener">arXiv:2412.04234 原文 ↗</a>
+      </div>
+    </article>
+    <article class="paper-card">
+      <div class="pc-tags">
+        <span class="pc-tag venue">arXiv 2026-03</span>
+        <span class="pc-tag theme">端到端 DETR 系</span>
+        <span class="pc-tag now">近三年窗口内</span>
+      </div>
+      <h3>OV-DEIM: Real-time DETR-Style Open-Vocabulary Object Detection with GridSynthetic Augmentation</h3>
+      <div class="pc-zh">OV-DEIM：带网格合成增广的实时 DETR 式开放词汇目标检测</div>
+      <div class="pc-id">arXiv:2603.07022 · 2026-03-07 · Leilei Wang、Longfei Liu、Xi Shen 等 7 人</div>
+      <div class="pc-idea"><b>核心思想</b>现有实时开放词汇检测几乎都建在 YOLO 系模型上，而 DETR 式方案在延迟、轻量化与整体性能上都落后；OV-DEIM 在最新的 DEIMv2 框架上构建端到端 DETR 式开放词汇检测器，并整合视觉语言建模做高效推理。</div>
+      <div class="pc-inno-title">创新点</div>
+      <ul class="pc-inno">
+        <li>基于 DEIMv2 的端到端 DETR 式开放词汇检测器，兼顾延迟与轻量化</li>
+        <li>查询补充策略：在不牺牲推理速度的前提下提升 Fixed AP</li>
+        <li>GridSynthetic 网格合成增广：一次前向内组合多个训练样本</li>
+        <li>用更丰富的共现关系与空间布局缓解噪声定位对分类损失的污染</li>
+      </ul>
+      <div class="pc-foot">
+        <div class="pc-metric">📊 实时开放词汇基准上取得领先的整体性能与 Fixed AP（详见原文）</div>
+        <div class="pc-cite">✍️ 写「端到端检测器如何做开放词汇」或「增广策略影响分类损失」时引用；是 DEIM 系列的最新延伸。</div>
+        <a class="pc-link" href="https://arxiv.org/abs/2603.07022" target="_blank" rel="noopener">arXiv:2603.07022 原文 ↗</a>
+      </div>
+    </article>
+    <article class="paper-card">
+      <div class="pc-tags">
+        <span class="pc-tag venue">arXiv 2026-08</span>
+        <span class="pc-tag theme">端到端 DETR 系</span>
+        <span class="pc-tag now">近三年窗口内</span>
+      </div>
+      <h3>Match One, Learn with Graph: One-to-Graph Query Collaboration with Backward Sharing for Object Detection</h3>
+      <div class="pc-zh">Match One, Learn with Graph：面向目标检测的一对一图查询协作与反向共享</div>
+      <div class="pc-id">arXiv:2609.26092 · 2026-08-06 · Wenxiao Fan、Jingling Fu、Luohang Liu 等 11 人</div>
+      <div class="pc-idea"><b>核心思想</b>指出 O2O 匹配下，一个目标的最佳分类、中心、尺度与重叠证据往往分散在多个 query 上，只有被匹配的「属主」拿到正监督——作者称之为「query 知识碎片化」；BS-O2G 用稀疏的预测感知图组织 query 协作，同时完整保留原 O2O 匹配器、正标签与目标函数。</div>
+      <div class="pc-inno-title">创新点</div>
+      <ul class="pc-inno">
+        <li>提出并命名「query 知识碎片化」问题</li>
+        <li>O2G 图上校准：在前向传播相对消息，聚合各 query 上的互补证据</li>
+        <li>Backward Sharing：复用转置且去梯度的邻接矩阵，在持久 query 基向量之间路由梯度</li>
+        <li>不改动匹配器与推理结构，可即插即用地挂在不同 DETR 上</li>
+      </ul>
+      <div class="pc-foot">
+        <div class="pc-metric">📊 在多种 DETR、多种骨干、COCO 与 CrowdHuman 上一致提升，且收敛更快</div>
+        <div class="pc-cite">✍️ 讨论「一对一匹配的信息瓶颈」或「正样本监督不足」时引用；是 DEIM 之后查询侧改进的新思路。</div>
+        <a class="pc-link" href="https://arxiv.org/abs/2609.26092" target="_blank" rel="noopener">arXiv:2609.26092 原文 ↗</a>
+      </div>
+    </article>
+    <article class="paper-card">
+      <div class="pc-tags">
+        <span class="pc-tag venue">arXiv 2026-10</span>
+        <span class="pc-tag theme">端到端 DETR 系</span>
+        <span class="pc-tag now">近三年窗口内</span>
+      </div>
+      <h3>Dynamic Query as Budgeting for Tiny Object Detection</h3>
+      <div class="pc-zh">Dynamic Query as Budgeting：把小目标检测的动态查询重述为「预算分配」</div>
+      <div class="pc-id">arXiv:2610.33430 · 2026-10-24 · Yi Zhang、Di Xiong、Ge Gao 等 7 人</div>
+      <div class="pc-idea"><b>核心思想</b>指出 DETR 系小目标检测器的动态查询机制把两件事纠缠在一起——解多少个 query、以及选哪些 query；实验证明动态查询的主要作用是「预算分配」（按目标密度分配解码容量），而非精细的查询选择。</div>
+      <div class="pc-inno-title">创新点</div>
+      <ul class="pc-inno">
+        <li>把动态查询重述为单调且保守的预算分配原则</li>
+        <li>轻量、非学习的 budgeter：由编码器置信度估计输入相关的 query 预算 K(x)</li>
+        <li>保留标准 Top-K(x) 查询初始化，不引入额外学习模块或启发式过滤</li>
+        <li>直接消掉了预算器里的选择误差来源</li>
+      </ul>
+      <div class="pc-foot">
+        <div class="pc-metric">📊 800×800 分辨率下 BUTR-L 在 AI-TOD-v2 达 35.7 AP / 47.8 FPS，在 VisDrone 达 29.8 AP / 42.1 FPS（T4）</div>
+        <div class="pc-cite">✍️ 讨论「动态查询到底在做什么」或「小目标的 query 预算如何定」时引用；对小目标方向尤其有用。</div>
+        <a class="pc-link" href="https://arxiv.org/abs/2610.33430" target="_blank" rel="noopener">arXiv:2610.33430 原文 ↗</a>
+      </div>
+    </article>
+  </div>
+</div>
+
+<div class="theme-block">
+  <div class="theme-head">
+    <div class="theme-no">02</div>
+    <div><h3>实时检测</h3><div class="theme-sub">把速度与精度同时往前推一格</div></div>
+  </div>
+  <div class="theme-desc">实时线的核心矛盾是「训练与推理不一致」和「后处理开销」这两个历史包袱。YOLOv9 用可编程梯度信息解决深层监督失效，YOLOv10 用一致性双重标签分配彻底去掉 NMS，YOLOv12 把注意力做便宜；RT-DETR 则从 DETR 一侧证明端到端也能实时。<b>三条路径互补而非互斥</b>，是可以并排写进一张对比表的。</div>
+  <figure class="figure-wide">
+    <img src="assets/images/12_RT-DETR混合编码器.png" alt="12：RT-DETR 混合编码器：把 CNN 多尺度特征、AIFI 与 Transformer Encoder 融进同一条实时推理链路" width="1427" height="767" loading="lazy"
+         data-figure="assets/images/12_RT-DETR混合编码器.png" data-caption="图 12 · RT-DETR 混合编码器：把 CNN 多尺度特征、AIFI 与 Transformer Encoder 融进同一条实时推理链路">
+    <figcaption>图 12 · RT-DETR 混合编码器：把 CNN 多尺度特征、AIFI 与 Transformer Encoder 融进同一条实时推理链路</figcaption>
+  </figure>
+  <figure class="figure-wide">
+    <img src="assets/images/13_YOLO实时检测演进.png" alt="13：YOLO 系近三年三个关键版本：v9 改训练信号、v10 去 NMS、v12 把注意力做便宜" width="1427" height="767" loading="lazy"
+         data-figure="assets/images/13_YOLO实时检测演进.png" data-caption="图 13 · YOLO 系近三年三个关键版本：v9 改训练信号、v10 去 NMS、v12 把注意力做便宜">
+    <figcaption>图 13 · YOLO 系近三年三个关键版本：v9 改训练信号、v10 去 NMS、v12 把注意力做便宜</figcaption>
+  </figure>
+  <div class="paper-grid">
+    <article class="paper-card">
+      <div class="pc-tags">
+        <span class="pc-tag venue">CVPR 2024</span>
+        <span class="pc-tag theme">实时检测</span>
+        <span class="pc-tag pre">奠基前置</span>
+      </div>
+      <h3>DETRs Beat YOLOs on Real-time Object Detection</h3>
+      <div class="pc-zh">DETRs 在实时目标检测上击败 YOLO（RT-DETR）</div>
+      <div class="pc-id">arXiv:2304.08069 · 2023-04-17 · Yian Zhao、Wenyu Lv、Shangliang Xu 等 8 人</div>
+      <div class="pc-idea"><b>核心思想</b>认为 DETR 慢的根源在编码器冗余计算与查询初始化质量，于是用高效混合编码器压缩计算量，并用「不确定性最小」的查询选择取代传统查询初始化。</div>
+      <div class="pc-inno-title">创新点</div>
+      <ul class="pc-inno">
+        <li>AIFI：只在最高分辨率的 S3 上做一次同尺度注意力，其余层保持卷积</li>
+        <li>CCFM：以极简的自顶向下融合替代 FPN/PAN 的重复卷积</li>
+        <li>不确定性最小查询选择：按分类 / 定位置信度筛出最可靠的 K 个查询</li>
+        <li>推理全程 NMS-free，可直接导出为部署模型</li>
+      </ul>
+      <div class="pc-foot">
+        <div class="pc-metric">📊 COCO 上 T4 GPU 108 FPS 达到 53.1 AP；TensorRT FP16 达 217 FPS</div>
+        <div class="pc-cite">✍️ 讨论「端到端检测器如何实时化」或「混合编码器」时引用；是把 DETR 推进到工程可用区间的代表作。</div>
+        <a class="pc-link" href="https://arxiv.org/abs/2304.08069" target="_blank" rel="noopener">arXiv:2304.08069 原文 ↗</a>
+      </div>
+    </article>
+    <article class="paper-card">
+      <div class="pc-tags">
+        <span class="pc-tag venue">ECCV 2024</span>
+        <span class="pc-tag theme">实时检测</span>
+        <span class="pc-tag now">近三年窗口内</span>
+      </div>
+      <h3>YOLOv9: Learning What You Want to Learn Using Programmable Gradient Information</h3>
+      <div class="pc-zh">YOLOv9：用可编程梯度信息学习你想学的东西</div>
+      <div class="pc-id">arXiv:2402.13616 · 2024-02-21 · Chien-Yao Wang、I-Hau Yeh、Hong-Yuan Mark Liao</div>
+      <div class="pc-idea"><b>核心思想</b>发现深层网络中梯度信息在反向传播中会因「深度监督不足」和「梯度融合」而丢失，于是设计可编程梯度信息（PGI）生成器，在骨干与 neck 之间插入辅助分支把梯度信息回传到浅层。</div>
+      <div class="pc-inno-title">创新点</div>
+      <ul class="pc-inno">
+        <li>PGI 可编程梯度信息生成器</li>
+        <li>骨干加辅助分支 A2 / B2，把输入层梯度信息引回浅层</li>
+        <li>GELAN 通用高效层聚合 neck，提升特征融合效率</li>
+        <li>无需大规模数据集预训练即可稳定训练</li>
+      </ul>
+      <div class="pc-foot">
+        <div class="pc-metric">📊 COCO AP 47.0 / 47.1（L 级），超过同规模 YOLOv8 且参数更少</div>
+        <div class="pc-cite">✍️ 讨论「训练信号与推理不一致」「梯度信息丢失」时引用；是 YOLO 近年最重要的机理型改进。</div>
+        <a class="pc-link" href="https://arxiv.org/abs/2402.13616" target="_blank" rel="noopener">arXiv:2402.13616 原文 ↗</a>
+      </div>
+    </article>
+    <article class="paper-card">
+      <div class="pc-tags">
+        <span class="pc-tag venue">NeurIPS 2024</span>
+        <span class="pc-tag theme">实时检测</span>
+        <span class="pc-tag now">近三年窗口内</span>
+      </div>
+      <h3>YOLOv10: Real-Time End-to-End Object Detection</h3>
+      <div class="pc-zh">YOLOv10：实时端到端目标检测</div>
+      <div class="pc-id">arXiv:2405.14458 · 2024-05-23 · Ao Wang、Hui Chen、Lihao Liu 等 7 人</div>
+      <div class="pc-idea"><b>核心思想</b>指出一阶段检测器推理时仍需 NMS，这是训练 / 推理不一致的根源，于是引入一致性双重标签分配——训练时同时跑 1:1（无 NMS）与 1:N（NMS）两条分支，推理时只用 1:1 分支。</div>
+      <div class="pc-inno-title">创新点</div>
+      <ul class="pc-inno">
+        <li>一致性双重标签分配：训练期 1:1 与 1:N 双分支并行监督</li>
+        <li>推理期只保留 1:1 分支，彻底去掉 NMS</li>
+        <li>引入面向小目标的全标签分配正则项</li>
+        <li>无需预训练权重或定制算子，部署成本低</li>
+      </ul>
+      <div class="pc-foot">
+        <div class="pc-metric">📊 COCO AP 46.3（L 级）；相对 YOLOv9 速度提升约 1.8×、模型体积降至约 1/2.8</div>
+        <div class="pc-cite">✍️ 讨论「NMS-free 的一阶段检测」时引用；与 RT-DETR 的 NMS-free 路线可以直接对照着写。</div>
+        <a class="pc-link" href="https://arxiv.org/abs/2405.14458" target="_blank" rel="noopener">arXiv:2405.14458 原文 ↗</a>
+      </div>
+    </article>
+    <article class="paper-card">
+      <div class="pc-tags">
+        <span class="pc-tag venue">arXiv 2025</span>
+        <span class="pc-tag theme">实时检测</span>
+        <span class="pc-tag now">近三年窗口内</span>
+      </div>
+      <h3>YOLOv12: Attention-Centric Real-Time Object Detectors</h3>
+      <div class="pc-zh">YOLOv12：以注意力为中心的实时目标检测器</div>
+      <div class="pc-id">arXiv:2502.12524 · 2025-02-18 · Yunjie Tian、Qixiang Ye、David Doermann</div>
+      <div class="pc-idea"><b>核心思想</b>认为实时检测器过去只卷积不用注意力，是出于「注意力太贵」的误解；于是把注意力高效化（区域注意力 + 块注意力 + FlashAttention），做成以注意力为中心的架构，速度不变而精度上台阶。</div>
+      <div class="pc-inno-title">创新点</div>
+      <ul class="pc-inno">
+        <li>区域注意力 A2：在区域之间共享上下文，注意力只在区域内计算</li>
+        <li>块注意力 B2：块内高维注意力，块间用卷积承接</li>
+        <li>轻量二维位置编码 PosE</li>
+        <li>FlashAttention 降低注意力开销</li>
+      </ul>
+      <div class="pc-foot">
+        <div class="pc-metric">📊 COCO AP 40.6（L 级），延迟与 YOLOv10 / v11 同级而精度更高</div>
+        <div class="pc-cite">✍️ 讨论「注意力实时化」「卷积与注意力的权衡」时引用；是 YOLO 系列最新的架构方向。</div>
+        <a class="pc-link" href="https://arxiv.org/abs/2502.12524" target="_blank" rel="noopener">arXiv:2502.12524 原文 ↗</a>
+      </div>
+    </article>
+    <article class="paper-card">
+      <div class="pc-tags">
+        <span class="pc-tag venue">arXiv 2026-10</span>
+        <span class="pc-tag theme">实时检测</span>
+        <span class="pc-tag now">近三年窗口内</span>
+      </div>
+      <h3>Order Matters: Competition-Guided Query Ordering for RNN-Based Object Detection</h3>
+      <div class="pc-zh">Order Matters：面向 RNN 式目标检测的竞争引导查询排序</div>
+      <div class="pc-id">arXiv:2610.05191 · 2026-10-04 · Shengjian Wu、Li Sun、Yu Shangguan 等 4 人</div>
+      <div class="pc-idea"><b>核心思想</b>没有显式去重时，多个 query 仍会对同一目标给出高度相似的假设，导致训练不稳、预测不果断；借鉴 NMS 的顺序性，DETRNN 把无序的 object query 变成「竞争感知的序列」，再用 RNN 沿这个序列循环精修。</div>
+      <div class="pc-inno-title">创新点</div>
+      <ul class="pc-inno">
+        <li>基于置信度与相似度的显式排序，把无序 query 组织成有序序列</li>
+        <li>RNN 沿排序做竞争感知的循环精修，在 decoder 内部建模 query 间的竞争</li>
+        <li>抑制冗余预测、稳定优化过程，同时保持与 NMS-free 推理的兼容</li>
+      </ul>
+      <div class="pc-foot">
+        <div class="pc-metric">📊 在多个 DETR 系检测器上取得一致提升，且效率基本不变</div>
+        <div class="pc-cite">✍️ 讨论「NMS-free 仍会出重复框」或「查询冗余与排序」时引用；把 NMS 的先验巧妙搬进 decoder 内部。</div>
+        <a class="pc-link" href="https://arxiv.org/abs/2610.05191" target="_blank" rel="noopener">arXiv:2610.05191 原文 ↗</a>
+      </div>
+    </article>
+    <article class="paper-card">
+      <div class="pc-tags">
+        <span class="pc-tag venue">arXiv 2026-10</span>
+        <span class="pc-tag theme">实时检测</span>
+        <span class="pc-tag now">近三年窗口内</span>
+      </div>
+      <h3>RT-DETR-World: Transferring Rich LLM Semantics to Real-Time Open-Vocabulary Detection</h3>
+      <div class="pc-zh">RT-DETR-World：把大语言模型的丰富语义迁移到实时开放词汇检测</div>
+      <div class="pc-id">arXiv:2610.09502 · 2026-10-07 · Yupeng Zhang、Ziyi Zhao、Juntao Cheng 等 7 人</div>
+      <div class="pc-idea"><b>核心思想</b>指出紧凑型实时检测器难以吸收丰富的实例语义，于是构建 GroundingCapv2 三级监督（类别名 / 物体描述 / 图像描述），把属性、动作、状态与上下文关系在训练期灌进检测器，推理期仍保持轻量的 query—文本匹配。</div>
+      <div class="pc-inno-title">创新点</div>
+      <ul class="pc-inno">
+        <li>GroundingCapv2 数据集：类别名 / 实例级描述 / 图像级描述三级语义监督</li>
+        <li>双路描述对齐 DDA：部署一致的 MiniLM 路径与非语言模型路径共同对齐</li>
+        <li>描述只用于训练期，推理期保持紧凑的 query—文本匹配，不增加推理成本</li>
+      </ul>
+      <div class="pc-foot">
+        <div class="pc-metric">📊 在实时开放词汇基准上以紧凑模型取得领先精度（详见原文表格）</div>
+        <div class="pc-cite">✍️ 讨论「实时检测器如何吸收 LLM 语义」或「训练期监督注入」时引用；是 2026 年实时开放词汇方向的代表作。</div>
+        <a class="pc-link" href="https://arxiv.org/abs/2610.09502" target="_blank" rel="noopener">arXiv:2610.09502 原文 ↗</a>
+      </div>
+    </article>
+  </div>
+</div>
+
+<div class="theme-block">
+  <div class="theme-head">
+    <div class="theme-no">03</div>
+    <div><h3>开放词汇检测</h3><div class="theme-sub">从闭集 80 类到任意文本类别</div></div>
+  </div>
+  <div class="theme-desc">开放词汇检测改变了任务定义本身：类别不再由训练集给定，而是由一句文本提示给出。技术路线分成两派——<b>先检测再分类</b>（OWLv2、DetRefiner、ExDet）与<b>深度跨模态融合</b>（Grounding DINO、FlowOVD）。2026 年的新趋势是二者融合，并普遍采用「检测器 + 视觉语言模型」的双组件协作。</div>
+  <figure class="figure-wide">
+    <img src="assets/images/14_开放词汇检测三范式.png" alt="14：开放词汇检测三种主流范式：Grounding DINO / OWLv2 / YOLO-World" width="1427" height="767" loading="lazy"
+         data-figure="assets/images/14_开放词汇检测三范式.png" data-caption="图 14 · 开放词汇检测三种主流范式：Grounding DINO / OWLv2 / YOLO-World">
+    <figcaption>图 14 · 开放词汇检测三种主流范式：Grounding DINO / OWLv2 / YOLO-World</figcaption>
+  </figure>
+  <div class="paper-grid">
+    <article class="paper-card">
+      <div class="pc-tags">
+        <span class="pc-tag venue">ECCV 2024</span>
+        <span class="pc-tag theme">开放词汇检测</span>
+        <span class="pc-tag pre">奠基前置</span>
+      </div>
+      <h3>Grounding DINO: Marrying DINO with Grounded Pre-Training for Open-Set Object Detection</h3>
+      <div class="pc-zh">Grounding DINO：把 DINO 与接地预训练结合用于开放集检测</div>
+      <div class="pc-id">arXiv:2303.05499 · 2023-03-09 · Shilong Liu、Zhaoyang Zeng、Tianhe Ren 等 12 人</div>
+      <div class="pc-idea"><b>核心思想</b>在 DETR 的图像分支与文本分支之间加入跨模态自注意力，让文本与图像特征在 Encoder 阶段就充分交互，模型因此理解的是「文本框」而不只是类别名。</div>
+      <div class="pc-inno-title">创新点</div>
+      <ul class="pc-inno">
+        <li>图像—文本跨模态自注意力，取代早期「先检测再分类」的后融合</li>
+        <li>逐阶段文本—图像特征融合 + 语言引导的框查询选择</li>
+        <li>引入大规模接地预训练数据，大幅提升开放集泛化</li>
+        <li>输出与文本对齐的框，可直接交给 SAM 等下游模型</li>
+      </ul>
+      <div class="pc-foot">
+        <div class="pc-metric">📊 COCO 51.3 AP；ODinW-35 / LVIS 零样本约 35 AP 量级</div>
+        <div class="pc-cite">✍️ 开放词汇检测的必引工作；写「检测器 + 视觉语言模型协同」范式时的起点。</div>
+        <a class="pc-link" href="https://arxiv.org/abs/2303.05499" target="_blank" rel="noopener">arXiv:2303.05499 原文 ↗</a>
+      </div>
+    </article>
+    <article class="paper-card">
+      <div class="pc-tags">
+        <span class="pc-tag venue">ECCV 2024</span>
+        <span class="pc-tag theme">开放词汇检测</span>
+        <span class="pc-tag pre">奠基前置</span>
+      </div>
+      <h3>Scaling Open-Vocabulary Object Detection</h3>
+      <div class="pc-zh">扩展开放词汇目标检测的规模（OWLv2）</div>
+      <div class="pc-id">arXiv:2306.09683 · 2023-06-16 · Matthias Minderer、Alexey Gritsenko、Neil Houlsby</div>
+      <div class="pc-idea"><b>核心思想</b>把开放词汇检测拆成「类无关候选框 + 文本对齐分类」两步，并用大规模图文预训练与自训练蒸馏，把 OWL 从 ViT-B/32 扩展到 ViT-H/14 规模。</div>
+      <div class="pc-inno-title">创新点</div>
+      <ul class="pc-inno">
+        <li>类无关候选框 + CLIP 式文本匹配的解耦架构</li>
+        <li>37 亿图文对的大规模图文预训练，提升细粒度对齐</li>
+        <li>自训练 + 蒸馏挖掘伪标签，弥补开放词汇标注稀缺</li>
+        <li>规模化收益的系统性验证（更大骨干 + 更高分辨率）</li>
+      </ul>
+      <div class="pc-foot">
+        <div class="pc-metric">📊 LVIS 零样本 17.1 AP（ViT-H/14），较 OWL v1 提升约 9 AP</div>
+        <div class="pc-cite">✍️ 与 Grounding DINO 并列的两大开放词汇路线（先分类 vs 深度融合）之一，写对比时通常成对引用。</div>
+        <a class="pc-link" href="https://arxiv.org/abs/2306.09683" target="_blank" rel="noopener">arXiv:2306.09683 原文 ↗</a>
+      </div>
+    </article>
+    <article class="paper-card">
+      <div class="pc-tags">
+        <span class="pc-tag venue">CVPR 2024</span>
+        <span class="pc-tag theme">开放词汇检测</span>
+        <span class="pc-tag now">近三年窗口内</span>
+      </div>
+      <h3>YOLO-World: Real-Time Open-Vocabulary Object Detection</h3>
+      <div class="pc-zh">YOLO-World：实时开放词汇目标检测</div>
+      <div class="pc-id">arXiv:2401.17270 · 2024-01-30 · Tianheng Cheng、Lin Song、Yixiao Ge 等 6 人</div>
+      <div class="pc-idea"><b>核心思想</b>在 YOLO 的文本—图像骨干上做重参数化，把离线训练好的文本嵌入「蒸馏」进一个图像嵌入分支，推理时只需文本嵌入 + 图像嵌入即可检测任意文本类别，同时保住 YOLO 的速度。</div>
+      <div class="pc-inno-title">创新点</div>
+      <ul class="pc-inno">
+        <li>文本—图像骨干重参数化：训练用文本分支，推理用图像分支</li>
+        <li>文本嵌入预训练 + 对比预训练增强文本—图像对齐</li>
+        <li>以 CLIP 图像嵌入作为「语言引导」，桥接任意文本输入</li>
+        <li>保持 YOLO 级实时速度，可直接输出开放词汇检测结果</li>
+      </ul>
+      <div class="pc-foot">
+        <div class="pc-metric">📊 COCO 约 55 AP 量级；多提示词 mAP 与单提示词接近</div>
+        <div class="pc-cite">✍️ 开放词汇与实时之间的折中方案；写「实时开放词汇」或与 Grounding DINO 做速度对比时引用。</div>
+        <a class="pc-link" href="https://arxiv.org/abs/2401.17270" target="_blank" rel="noopener">arXiv:2401.17270 原文 ↗</a>
+      </div>
+    </article>
+    <article class="paper-card">
+      <div class="pc-tags">
+        <span class="pc-tag venue">arXiv 2026-05</span>
+        <span class="pc-tag theme">开放词汇检测</span>
+        <span class="pc-tag now">近三年窗口内</span>
+      </div>
+      <h3>The Detector Teaches Itself: Lightweight Self-Supervised Adaptation for Open-Vocabulary Object Detection</h3>
+      <div class="pc-zh">The Detector Teaches Itself：面向开放词汇检测的轻量自监督适配</div>
+      <div class="pc-id">arXiv:2605.03642 · 2026-05-05 · Yazhe Wan、Changjae Oh</div>
+      <div class="pc-idea"><b>核心思想</b>协作范式中 VLM 是在整图上预训练的，难以捕捉局部目标细节，限制了它在区域级检测中的作用；DAT 用闭集检测器构造「区域感知伪标注」数据集，来自监督地微调 VLM 的视觉骨干。</div>
+      <div class="pc-inno-title">创新点</div>
+      <ul class="pc-inno">
+        <li>区域感知伪标注：新类别区域可能未标注或被误标，但仍参与训练</li>
+        <li>解耦式微调 + 权重插值：增强局部对齐的同时保留全局语义</li>
+        <li>即插即用、零推理开销，微调参数不到 0.8M</li>
+      </ul>
+      <div class="pc-foot">
+        <div class="pc-metric">📊 在 COCO 与 LVIS 上稳定提升协作式开放词汇检测效果</div>
+        <div class="pc-cite">✍️ 讨论「VLM 特征不适合区域级任务」或「检测器与 VLM 互相教学」时引用；思路轻巧，适合做课程里的复现实验。</div>
+        <a class="pc-link" href="https://arxiv.org/abs/2605.03642" target="_blank" rel="noopener">arXiv:2605.03642 原文 ↗</a>
+      </div>
+    </article>
+    <article class="paper-card">
+      <div class="pc-tags">
+        <span class="pc-tag venue">arXiv 2026-05</span>
+        <span class="pc-tag theme">开放词汇检测</span>
+        <span class="pc-tag now">近三年窗口内</span>
+      </div>
+      <h3>DetRefiner: Model-Agnostic Detection Refinement with Feature Fusion Transformer</h3>
+      <div class="pc-zh">DetRefiner：基于特征融合 Transformer 的模型无关检测精修</div>
+      <div class="pc-id">arXiv:2605.10190 · 2026-05-11 · Soichiro Okazaki、Tatsuya Sasaki、Hiroki Ohashi</div>
+      <div class="pc-idea"><b>核心思想</b>开放词汇检测受限于全局与局部上下文线索融合不足，DetRefiner 提出即插即用的精修框架：把基础模型（DINOv3 等）的全局图像特征与 patch 级特征送进轻量 Transformer 编码器，产出一个类别向量与一组 patch 向量，据此推断属性可靠性并重标定基础检测器的置信度。</div>
+      <div class="pc-inno-title">创新点</div>
+      <ul class="pc-inno">
+        <li>全局 / 局部特征融合 Transformer，同时输出类别向量与 patch 向量</li>
+        <li>属性可靠性推断：据此重标定基础检测器的置信度分数</li>
+        <li>与基础 OVOD 模型解耦训练——既不需要访问其内部特征，也不需要重训</li>
+        <li>推理时只消费基础检测器的预测结果，不侵入主干结构</li>
+      </ul>
+      <div class="pc-foot">
+        <div class="pc-metric">📊 在 COCO / LVIS / ODinW13 / Pascal VOC 上对多个 OVOD 模型一致提升，新类别最多 +10.1 AP</div>
+        <div class="pc-cite">✍️ 写「后处理式精修」「置信度校准」或「检测器 + 基础模型协作」时引用；是 2026 年开放词汇方向易复现的改进。</div>
+        <a class="pc-link" href="https://arxiv.org/abs/2605.10190" target="_blank" rel="noopener">arXiv:2605.10190 原文 ↗</a>
+      </div>
+    </article>
+    <article class="paper-card">
+      <div class="pc-tags">
+        <span class="pc-tag venue">arXiv 2026-05</span>
+        <span class="pc-tag theme">开放词汇检测</span>
+        <span class="pc-tag now">近三年窗口内</span>
+      </div>
+      <h3>FlowOVD: Learning Generative Latent Flows for Zero-shot Open-vocabulary Detection</h3>
+      <div class="pc-zh">FlowOVD：用生成式潜流做零样本开放词汇检测</div>
+      <div class="pc-id">arXiv:2606.00782 · 2026-05-30 · Yao Wei、Andrea Cavallaro、Changjae Oh</div>
+      <div class="pc-idea"><b>核心思想</b>现有开放词汇检测把 decoder query 当成静态的或仅由编码器特征初始化，限制了查询的多样性与灵活性；FlowOVD 改用生成式视角，把 query 生成建模为潜空间中的连续传输过程。</div>
+      <div class="pc-inno-title">创新点</div>
+      <ul class="pc-inno">
+        <li>用 rectified flow 把「文本无关 query」连续地搬运成「文本引导 query」</li>
+        <li>文本条件的生成式查询生成，取代启发式离散 query 构造</li>
+        <li>连续潜空间动力学带来更有表达力的语义对齐</li>
+        <li>无需任何额外训练数据</li>
+      </ul>
+      <div class="pc-foot">
+        <div class="pc-metric">📊 COCO 49.5 AP、LVIS 31.5 AP；较 Grounding DINO 分别 +1.2 AP 与 +4.1 AP</div>
+        <div class="pc-cite">✍️ 写「生成式 / 扩散式检测」或「query 初始化机制」时引用；与 DiffusionDet 是同一支思路的现代版。</div>
+        <a class="pc-link" href="https://arxiv.org/abs/2606.00782" target="_blank" rel="noopener">arXiv:2606.00782 原文 ↗</a>
+      </div>
+    </article>
+    <article class="paper-card">
+      <div class="pc-tags">
+        <span class="pc-tag venue">arXiv 2026-06</span>
+        <span class="pc-tag theme">开放词汇检测</span>
+        <span class="pc-tag now">近三年窗口内</span>
+      </div>
+      <h3>ExDet: Open-Domain Open-Vocabulary Detection with Cross-modal Extrapolation and Rectification</h3>
+      <div class="pc-zh">ExDet：带跨模态外推与校正的开放域开放词汇检测</div>
+      <div class="pc-id">arXiv:2606.09360 · 2026-06-08 · Yupeng Zhang、Yuzhong Feng、Ruize Han 等 6 人</div>
+      <div class="pc-idea"><b>核心思想</b>开放域开放词汇检测（ODOVD）要求同时泛化到新类别与新域，而现有做法把开放词汇检测器与域泛化模块一起从头训练、成本高昂；ExDet 提出轻量的「类别—域协同泛化」框架，即插即用地增强已有检测器。</div>
+      <div class="pc-inno-title">创新点</div>
+      <ul class="pc-inno">
+        <li>TGE 文本引导外推：利用视觉语言模型的 DeltaSpace 性质，从文本推出类别 / 域感知的代理视觉原型</li>
+        <li>DCR 检测器兼容校正：以免训练、免真实数据的方式学习，把表示校正回检测器友好的源域分布</li>
+        <li>ExRPN：结合语义相似度与 RPN 置信度重标定候选框分数，提升新类别召回</li>
+      </ul>
+      <div class="pc-foot">
+        <div class="pc-metric">📊 在开放域 OVD 基准上同时提升新类别与新域的泛化能力（详见原文）</div>
+        <div class="pc-cite">✍️ 写「域泛化 + 开放词汇」或「免训练校正」时引用；是开放域这一子方向的代表工作。</div>
+        <a class="pc-link" href="https://arxiv.org/abs/2606.09360" target="_blank" rel="noopener">arXiv:2606.09360 原文 ↗</a>
+      </div>
+    </article>
+    <article class="paper-card">
+      <div class="pc-tags">
+        <span class="pc-tag venue">arXiv 2026-08</span>
+        <span class="pc-tag theme">开放词汇检测</span>
+        <span class="pc-tag now">近三年窗口内</span>
+      </div>
+      <h3>OPUS: A Simple yet Effective Unified Framework for Open-Vocabulary Detection</h3>
+      <div class="pc-zh">OPUS：一个简洁而有效的统一开放词汇检测框架</div>
+      <div class="pc-id">arXiv:2608.30247 · 2026-08-31 · Xiaoyan Wei、Zhimin Yao、Ruilin Yang 等 7 人</div>
+      <div class="pc-idea"><b>核心思想</b>反思统一开放词汇检测是否真的需要繁重的跨模态融合、分阶段训练与迭代式标注管线；结论是——在基础模型更强的今天，靠语义丰富的视觉表示 + 可扩展的接地监督就能把统一 OVD 做得很简单。</div>
+      <div class="pc-inno-title">创新点</div>
+      <ul class="pc-inno">
+        <li>三段式极简架构：语义视觉编码器 + 高效混合编码 + 提示感知解码器</li>
+        <li>统一支持文本 / 交互视觉 / 通用视觉 / 混合四类提示，且不设提示专用分支</li>
+        <li>一阶段文本-视觉训练策略 + 实例级对比对齐（ICA）</li>
+        <li>基于 SAM3 的单遍数据引擎，自动生成异质接地监督</li>
+      </ul>
+      <div class="pc-foot">
+        <div class="pc-metric">📊 在 COCO、LVIS-minival、ODinW35 等基准上验证（详见原文）</div>
+        <div class="pc-cite">✍️ 讨论「开放词汇检测要不要做得很复杂」时引用；是一篇方法论意义上很有分量的「做减法」论文。</div>
+        <a class="pc-link" href="https://arxiv.org/abs/2608.30247" target="_blank" rel="noopener">arXiv:2608.30247 原文 ↗</a>
+      </div>
+    </article>
+    <article class="paper-card">
+      <div class="pc-tags">
+        <span class="pc-tag venue">arXiv 2026-10</span>
+        <span class="pc-tag theme">开放词汇检测</span>
+        <span class="pc-tag now">近三年窗口内</span>
+      </div>
+      <h3>FocusOVD: Geometric and Contextual Feature Refinement for Open-Vocabulary Small-Object Detection</h3>
+      <div class="pc-zh">FocusOVD：面向开放词汇小目标检测的几何与上下文特征精修</div>
+      <div class="pc-id">arXiv:2610.27479 · 2026-10-20 · Hanlin Kou、Beiqi Bai、Li Chen 等 6 人</div>
+      <div class="pc-idea"><b>核心思想</b>开放词汇检测在小目标上受限于高分辨率细节保留不足、跨层特征聚合无效、区域判别力有限三个问题；FocusOVD 在不改动冻结 VLM 骨干的前提下，用三个互补模块增强小目标表征。</div>
+      <div class="pc-inno-title">创新点</div>
+      <ul class="pc-inno">
+        <li>加权跨尺度特征融合：学习归一化的逐层权重，平衡浅层外观细节与深层语义</li>
+        <li>残差风车形门控卷积：强化高分辨率特征中的局部几何响应</li>
+        <li>残差卷积门控线性单元：抑制背景主导的激活，提升 RoI 判别力</li>
+      </ul>
+      <div class="pc-foot">
+        <div class="pc-metric">📊 COCO-OVD 上新类别 AP 达 36.3%，超过 CORA、UniDet 等对比方法</div>
+        <div class="pc-cite">✍️ 把「开放词汇」与「小目标」两条线接起来时引用；这是目前少见的同时覆盖两者的组合。</div>
+        <a class="pc-link" href="https://arxiv.org/abs/2610.27479" target="_blank" rel="noopener">arXiv:2610.27479 原文 ↗</a>
+      </div>
+    </article>
+  </div>
+</div>
+
+<div class="theme-block">
+  <div class="theme-head">
+    <div class="theme-no">04</div>
+    <div><h3>视觉基础模型</h3><div class="theme-sub">一个模型，多种任务</div></div>
+  </div>
+  <div class="theme-desc">Florence-2 把检测、指代、描述、密集标注统一成文本生成；SAM 2 把提示分割扩展到视频并用记忆机制保持时序一致；DINOv2 / DINOv3 则提供可冻结即用的通用视觉骨干。这一支对检测器的作用通常不是直接替换，而是<b>提供更强的特征与更强的开放词汇先验</b>。</div>
+  <div class="paper-grid">
+    <article class="paper-card">
+      <div class="pc-tags">
+        <span class="pc-tag venue">TMLR 2024</span>
+        <span class="pc-tag theme">视觉基础模型</span>
+        <span class="pc-tag pre">奠基前置</span>
+      </div>
+      <h3>DINOv2: Learning Robust Visual Features without Supervision</h3>
+      <div class="pc-zh">DINOv2：无监督学习鲁棒视觉特征</div>
+      <div class="pc-id">arXiv:2304.07193 · 2023-04-14 · Maxime Oquab、Timothée Darcet、Théo Moutakanni 等 26 人</div>
+      <div class="pc-idea"><b>核心思想</b>用自蒸馏配合自监督掩码策略，让学生在无标签数据上学会与教师一致的表征，把自监督预训练从「为分类服务」推进到「提供通用视觉特征」。</div>
+      <div class="pc-inno-title">创新点</div>
+      <ul class="pc-inno">
+        <li>自蒸馏 + 自监督掩码的组合，规避跨样本蒸馏的不稳定</li>
+        <li>特征自举（居中 + 锐化）防止表示坍塌</li>
+        <li>海量无标签数据 + 多套预训练策略，特征可直接线性探测</li>
+      </ul>
+      <div class="pc-foot">
+        <div class="pc-metric">📊 冻结骨干在 COCO 检测上带来可观提升；线性探测优于同期有监督模型</div>
+        <div class="pc-cite">✍️ 讨论「骨干网络怎么选」「自监督预训练值不值」时引用；也是 DETR 系列最常换的骨干来源。</div>
+        <a class="pc-link" href="https://arxiv.org/abs/2304.07193" target="_blank" rel="noopener">arXiv:2304.07193 原文 ↗</a>
+      </div>
+    </article>
+    <article class="paper-card">
+      <div class="pc-tags">
+        <span class="pc-tag venue">CVPR 2024</span>
+        <span class="pc-tag theme">视觉基础模型</span>
+        <span class="pc-tag pre">奠基前置</span>
+      </div>
+      <h3>Florence-2: Advancing a Unified Representation for a Variety of Vision Tasks</h3>
+      <div class="pc-zh">Florence-2：用统一表示处理多种视觉任务</div>
+      <div class="pc-id">arXiv:2311.06242 · 2023-11-10 · Bin Xiao、Haiping Wu、Weijian Xu 等 9 人</div>
+      <div class="pc-idea"><b>核心思想</b>用一个序列到序列模型统一指代表达、检测、描述、密集标注四类任务，把不同任务都变成「统一 prompt token 输入 + 文本生成输出」。</div>
+      <div class="pc-inno-title">创新点</div>
+      <ul class="pc-inno">
+        <li>统一的 prompt-token 输入接口与序列生成输出</li>
+        <li>多任务混合训练，任务之间互相增益</li>
+        <li>构建 FLD-5B 大规模数据集（54 亿自动标注样本）</li>
+        <li>单模型零样本即可完成开放词汇检测与分割</li>
+      </ul>
+      <div class="pc-foot">
+        <div class="pc-metric">📊 COCO 零样本检测 56.8 AP；指代分割任务大幅领先同期模型</div>
+        <div class="pc-cite">✍️ 讲「视觉基础模型统一多任务」时引用；是「检测器 + 基础模型」双组件范式里关键的一环。</div>
+        <a class="pc-link" href="https://arxiv.org/abs/2311.06242" target="_blank" rel="noopener">arXiv:2311.06242 原文 ↗</a>
+      </div>
+    </article>
+    <article class="paper-card">
+      <div class="pc-tags">
+        <span class="pc-tag venue">ICLR 2025</span>
+        <span class="pc-tag theme">视觉基础模型</span>
+        <span class="pc-tag now">近三年窗口内</span>
+      </div>
+      <h3>SAM 2: Segment Anything in Images and Videos</h3>
+      <div class="pc-zh">SAM 2：对图像和视频做万物分割</div>
+      <div class="pc-id">arXiv:2408.00714 · 2024-08-01 · Nikhila Ravi、Valentin Gabeur、Yuan-Ting Hu 等 18 人</div>
+      <div class="pc-idea"><b>核心思想</b>把 SAM 的分割架构扩展到视频——提出流式记忆机制，按帧增量地把上一帧的分割结果编码进记忆库，使模型能在视频上同时处理物体提示与点击提示并保持时序一致。</div>
+      <div class="pc-inno-title">创新点</div>
+      <ul class="pc-inno">
+        <li>流式记忆机制 + 记忆银行 + 记忆注意力</li>
+        <li>统一图像与视频的提示分割接口</li>
+        <li>面向提示的时序一致性训练数据生成管线</li>
+        <li>开放世界的可提示视频对象分割</li>
+      </ul>
+      <div class="pc-foot">
+        <div class="pc-metric">📊 视频分割基准上大幅超越此前方法；SA-V 分割表现尤为突出</div>
+        <div class="pc-cite">✍️ 讨论「检测 + 分割协同」或「视觉基础模型的时序扩展」时引用；是与检测器天然互补的一环。</div>
+        <a class="pc-link" href="https://arxiv.org/abs/2408.00714" target="_blank" rel="noopener">arXiv:2408.00714 原文 ↗</a>
+      </div>
+    </article>
+    <article class="paper-card">
+      <div class="pc-tags">
+        <span class="pc-tag venue">arXiv 2025</span>
+        <span class="pc-tag theme">视觉基础模型</span>
+        <span class="pc-tag now">近三年窗口内</span>
+      </div>
+      <h3>DINOv3</h3>
+      <div class="pc-zh">DINOv3：面向工业级视觉任务的第二代自监督基础模型</div>
+      <div class="pc-id">arXiv:2508.10104 · 2025-08-13 · Oriane Siméoni、Huy V. Vo、Maximilian Seitzer 等 26 人</div>
+      <div class="pc-idea"><b>核心思想</b>把自监督视觉预训练扩展到超大规模无标签互联网图像与 7B 参数级模型，产出兼具高层语义与稠密空间信息的通用视觉骨干，并用 Gram 锚定与高分辨率适配支撑像素级任务。</div>
+      <div class="pc-inno-title">创新点</div>
+      <ul class="pc-inno">
+        <li>超大规模自监督训练（7B 参数级）与海量无标签数据</li>
+        <li>Gram 锚定：用自相似矩阵稳定稠密特征</li>
+        <li>高分辨率适配：高分辨率推理与位置编码插值</li>
+        <li>冻结骨干即可在检测 / 分割上带来大幅提升</li>
+      </ul>
+      <div class="pc-foot">
+        <div class="pc-metric">📊 冻结骨干在 COCO / LVIS 分割检测上显著超过此前自监督模型</div>
+        <div class="pc-cite">✍️ 讨论「自监督基础模型的最新进展」或「冻结骨干 vs 全量微调」时引用。</div>
+        <a class="pc-link" href="https://arxiv.org/abs/2508.10104" target="_blank" rel="noopener">arXiv:2508.10104 原文 ↗</a>
+      </div>
+    </article>
+  </div>
+</div>
+
+<div class="theme-block">
+  <div class="theme-head">
+    <div class="theme-no">05</div>
+    <div><h3>骨干网络</h3><div class="theme-sub">特征质量决定上限</div></div>
+  </div>
+  <div class="theme-desc">TransNeXt 用聚合邻域注意力刻画注视点聚集特性，VMamba 用状态空间模型以线性复杂度换取全局感受野，VGTok 则把「固定 token 网格」改成「按区域变粒度」。骨干侧的变化常常比检测头更直接地影响小目标与密集目标的表现，<b>也是课程实验里最容易做出可复现消融的一环</b>。</div>
+  <div class="paper-grid">
+    <article class="paper-card">
+      <div class="pc-tags">
+        <span class="pc-tag venue">CVPR 2024</span>
+        <span class="pc-tag theme">骨干网络</span>
+        <span class="pc-tag pre">奠基前置</span>
+      </div>
+      <h3>TransNeXt: Robust Foveal Visual Perception for Vision Transformers</h3>
+      <div class="pc-zh">TransNeXt：鲁棒的注视点式视觉感知 Transformer</div>
+      <div class="pc-id">arXiv:2311.17132 · 2023-11-28 · Dai Shi</div>
+      <div class="pc-idea"><b>核心思想</b>提出聚合邻域注意力——在局部窗口内把 query 与其邻近 key/value 一并聚合，用连续位置偏置与可学习半径刻画人类注视点的聚集特性，兼顾线性复杂度与密集目标表现。</div>
+      <div class="pc-inno-title">创新点</div>
+      <ul class="pc-inno">
+        <li>聚合邻域注意力（Aggregated Neighborhood Attention）</li>
+        <li>连续位置偏置建模跨窗口的相对位置关系</li>
+        <li>可学习聚合半径，自适应分配注意力范围</li>
+        <li>分类 / 检测 / 分割三任务通用骨干</li>
+      </ul>
+      <div class="pc-foot">
+        <div class="pc-metric">📊 COCO 检测 AP 51.8 量级，同参数量下优于 ConvNeXt 与 Swin</div>
+        <div class="pc-cite">✍️ 讨论「注意力骨干 vs 卷积骨干」时的近期代表；也适合作为「换骨干做消融」的实验素材。</div>
+        <a class="pc-link" href="https://arxiv.org/abs/2311.17132" target="_blank" rel="noopener">arXiv:2311.17132 原文 ↗</a>
+      </div>
+    </article>
+    <article class="paper-card">
+      <div class="pc-tags">
+        <span class="pc-tag venue">NeurIPS 2024 (Spotlight)</span>
+        <span class="pc-tag theme">骨干网络</span>
+        <span class="pc-tag now">近三年窗口内</span>
+      </div>
+      <h3>VMamba: Visual State Space Model</h3>
+      <div class="pc-zh">VMamba：视觉状态空间模型</div>
+      <div class="pc-id">arXiv:2401.10166 · 2024-01-18 · Yue Liu、Yunjie Tian、Yuzhong Zhao 等 9 人</div>
+      <div class="pc-idea"><b>核心思想</b>把状态空间模型（SSM）引入视觉骨干，用选择性扫描沿四个方向在图像上做线性复杂度建模，以卷积级别的速度获得全局感受野，替代自注意力的平方复杂度。</div>
+      <div class="pc-inno-title">创新点</div>
+      <ul class="pc-inno">
+        <li>视觉 SSM 骨干 + 跨方向扫描的二维状态空间建模</li>
+        <li>选择性扫描机制，按输入内容自适应决定保留或丢弃信息</li>
+        <li>与 CNN 同为线性复杂度，可扩展到高分辨率输入</li>
+        <li>VSSM 系列即插即用，可直接替换 DETR / YOLO 的骨干</li>
+      </ul>
+      <div class="pc-foot">
+        <div class="pc-metric">📊 吞吐与卷积相当；检测 / 分割上优于同规模 ViT 与 Swin</div>
+        <div class="pc-cite">✍️ 谈小目标、高分辨率任务的骨干选择，或介绍 SSM 视觉化时引用；「视觉 Mamba」这一支的代表作。</div>
+        <a class="pc-link" href="https://arxiv.org/abs/2401.10166" target="_blank" rel="noopener">arXiv:2401.10166 原文 ↗</a>
+      </div>
+    </article>
+    <article class="paper-card">
+      <div class="pc-tags">
+        <span class="pc-tag venue">arXiv 2026-08</span>
+        <span class="pc-tag theme">骨干网络</span>
+        <span class="pc-tag now">近三年窗口内</span>
+      </div>
+      <h3>Variable-Granularity Tokenization for High-Resolution Object Detection</h3>
+      <div class="pc-zh">VGTok：面向高分辨率目标检测的可变粒度 Tokenization</div>
+      <div class="pc-id">arXiv:2608.28706 · 2026-08-27 · Khayrul Islam</div>
+      <div class="pc-idea"><b>核心思想</b>ViT 检测器在进入任何学习模块之前就固定了统一的 token 网格，原生分辨率的航拍检测器只能在「解析几像素目标」与「守住算力显存上限」之间二选一；VGTok 是一个免训练 tokenizer，在编码之前按区域从像素出发设定 patch 粒度。</div>
+      <div class="pc-inno-title">创新点</div>
+      <ul class="pc-inno">
+        <li>以多尺度形态学 top-hat 可分性为每个区域打分，按每图像分位数阈值锁定 token 预算</li>
+        <li>结构张量门控（λ_min）：只在二维目标结构成立处细化，一维杂乱保持粗粒度</li>
+        <li>产出的 token 集合是图像的严格划分，无重复无遗漏</li>
+        <li>训练无关，可作为冻结 checkpoint 的即插即用模块</li>
+      </ul>
+      <div class="pc-foot">
+        <div class="pc-metric">📊 Co-DETR + EVA-02 ViT-L 在 VisDrone-val 上 40% token 预算即达 44.22 AP，密集设定 48.38 AP（较最强已发表结果 +6.08）；AI-TOD-v2 达 37.27 AP</div>
+        <div class="pc-cite">✍️ 讨论「高分辨率 / 密集小目标」与「token 预算」时引用；把「分辨率—算力矛盾」换了个问法，值得借鉴。</div>
+        <a class="pc-link" href="https://arxiv.org/abs/2608.28706" target="_blank" rel="noopener">arXiv:2608.28706 原文 ↗</a>
+      </div>
+    </article>
+  </div>
+</div>
+  </div>
+</section>
+
+<!-- ============ 四、小目标检测 ============ -->
+<section id="small-object" class="od-part tint">
+  <div class="od-wrap">
+    <div class="section-tag">PART 04 · 难点专题</div>
+    <h2 class="section-title">小目标检测：<span class="highlight">一个还没被解决干净的矛盾</span></h2>
+    <p class="section-subtitle">
+      目标小于 32×32 像素时，检测器丢掉的不只是细节，还有「位置先验」。
+      这是一个适合持续发论文的议题。
+    </p>
+
+    <figure class="figure-wide">
+      <img src="assets/images/15_小目标检测难点.png"
+           alt="小目标检测难点解剖图：左侧展示 P3/P4/P5 三个尺度的特征逐层丢失，32×32 目标在 P3 上只剩 4×4；中间列出特征融合、提高分辨率、位置先验、注意力四条解法主线；右侧列出 VisDrone、Objects365、DOTA 等专用数据集与 AP_s 评测指标"
+           width="1427" height="767" loading="lazy"
+           data-figure="assets/images/15_小目标检测难点.png"
+           data-caption="图 15 · 小目标检测：特征分辨率与语义粒度的根本矛盾，以及四条主流解法">
+      <figcaption>图 15 · 小目标检测难点解剖（点击放大）</figcaption>
+    </figure>
+
+    <div class="od-cols">
+      <div class="od-col">
+        <h4>🔍 为什么小目标还是热点</h4>
+        <p>它不是一个「调参问题」，而是<b>特征分辨率与语义粒度的根本矛盾</b>：提高分辨率会显著增加计算量，语义太弱又无法可靠分类。这个矛盾至今没有被彻底解决，因此每一年都有新论文。</p>
+      </div>
+      <div class="od-col">
+        <h4>📐 四条解法主线</h4>
+        <p><b>特征融合</b>（FPN / PAN 自顶向下）· <b>提高分辨率</b>（SAHI 切片推理、TTA）· <b>位置先验</b>（anchor-free + 可学习位置编码）· <b>注意力</b>（Swin / VMamba 层次化注意力、专用小目标头）。</p>
+      </div>
+      <div class="od-col">
+        <h4>✍️ 写论文的注意事项</h4>
+        <p>单报 AP 一定会被质疑。<b>必须同时给出 AP_s（小目标）</b>与推理速度，并在 VisDrone / AI-TOD / UAVDT 上验证——否则审稿人会认为你没有真正解决小目标。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 五、研究脉络 ============ -->
+<section id="landscape" class="od-part white">
+  <div class="od-wrap">
+    <div class="section-tag">PART 05 · 全局脉络</div>
+    <h2 class="section-title">近三年目标检测：<span class="highlight">四条研究主线</span></h2>
+    <p class="section-subtitle">
+      端到端、实时化、开放词汇、基础模型——四条线并行推进，并在 2026 年开始交汇。
+    </p>
+
+    <figure class="figure-wide">
+      <img src="assets/images/16_目标检测研究脉络.png"
+           alt="近三年目标检测四条研究主线图：端到端 DETR 系、实时检测、开放词汇检测、视觉基础模型四条泳道，每条列出代表工作、arXiv 编号与一句话贡献，底部总结四条主线的交汇点"
+           width="1427" height="767" loading="lazy"
+           data-figure="assets/images/16_目标检测研究脉络.png"
+           data-caption="图 16 · 四条研究主线：端到端解决「怎么输出」、实时化解决「多快」、开放词汇解决「认什么」、基础模型解决「从哪学」">
+      <figcaption>图 16 · 近三年目标检测四条研究主线（点击放大）</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ 六、复现实验路线 ============ -->
+<section id="lab" class="od-part tint">
+  <div class="od-wrap">
+    <div class="section-tag">PART 06 · 动手做</div>
+    <h2 class="section-title">复现实验路线：<span class="highlight">4 个实验，从零到发论文</span></h2>
+    <p class="section-subtitle">
+      这四个实验按顺序做完，学生能独立复现近三年的代表性工作；老师能直接在此基础上派生自己的论文。
+    </p>
+
+    <div class="lab-grid">
+      <div class="lab-card">
+        <div class="lab-no">LAB 01 · 基础</div>
+        <h4>把检测器拆开看：复现 Faster R-CNN 与 YOLOv8</h4>
+        <p>先用最朴素的两条路线跑通，理解「候选框 → 分类回归」与「密集预测」的差别。</p>
+        <ul>
+          <li>COCO val2017 子集，ResNet-50 骨干</li>
+          <li>记录 AP / AP50 / AP75 / 参数量 / 单图延迟</li>
+          <li>对比 anchor-based 与 anchor-free 的正负样本分配差异</li>
+        </ul>
+        <div class="lab-out">产出：一张基础性能对照表 + 一份 loss 曲线分析</div>
+      </div>
+
+      <div class="lab-card">
+        <div class="lab-no">LAB 02 · 端到端</div>
+        <h4>复现 DINO，并把它训到 12 epoch</h4>
+        <p>理解集合预测、匈牙利匹配与去噪训练这三件事，是 DETR 系所有后续工作的前提。</p>
+        <ul>
+          <li>实现简化的二分图匹配（scipy linear_sum_assignment）</li>
+          <li>实现 CDN 去噪训练，观察收敛速度的差异</li>
+          <li>记录 12 / 50 / 300 epoch 各自的 AP 曲线</li>
+        </ul>
+        <div class="lab-out">产出：去噪训练前后的收敛速度对比图（可直接进论文）</div>
+      </div>
+
+      <div class="lab-card">
+        <div class="lab-no">LAB 03 · 改进</div>
+        <h4>在 DINO 上叠加 DEIM 与 D-FINE</h4>
+        <p>验证「匹配机制」与「回归形式」两条改进轴可以独立叠加——这是最好讲的一个故事。</p>
+        <ul>
+          <li>把一对一匹配改成 Dense O2O（每个 GT 取 Top-K）</li>
+          <li>把 L1 回归换成细粒度分布细化（FDR）</li>
+          <li>做 2×2 消融：DINO / +DEIM / +D-FINE / 两者都加</li>
+        </ul>
+        <div class="lab-out">产出：2×2 消融表，直接支撑「两条线正交」的论点</div>
+      </div>
+
+      <div class="lab-card">
+        <div class="lab-no">LAB 04 · 小目标</div>
+        <h4>小目标专项：SAHI 切片 + AP_s 评测</h4>
+        <p>把前面的模型放到无人机小目标场景上，顺带摸清这个方向的真实痛点。</p>
+        <ul>
+          <li>在 VisDrone / AI-TOD-v2 上评测 AP_s 与 AP50</li>
+          <li>实现 SAHI 切片推理，比较切块尺寸对 AP_s 的影响</li>
+          <li>分析失败案例：密集遮挡、极小目标、背景干扰</li>
+        </ul>
+        <div class="lab-out">产出：小目标失败模式分析，为选题提供依据</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 七、科研选题建议 ============ -->
+<section id="topics" class="od-part">
+  <div class="od-wrap">
+    <div class="section-tag">PART 07 · 科研选题</div>
+    <h2 class="section-title">科研选题建议：<span class="highlight">6 个可直接开题的方向</span></h2>
+    <p class="section-subtitle">
+      按「投入产出比」排序。难度标签：🟢 硕士一年级可做 · 🟡 需要一定工程积累 · 🔴 需要算力或新数据。
+    </p>
+
+    <div class="topic-grid">
+      <div class="topic-card">
+        <span class="tc-level l1">🟢 难度低</span>
+        <h4>DETR 系的「正样本数量」消融：匹配机制到底在做什么</h4>
+        <p>
+          DEIM 主张密集一对一匹配带来更快的收敛，BUTR（arXiv:2610.33430）则用实验指出
+          动态查询的主要作用其实是<b>预算分配</b>而非精细选择——这两个结论未必矛盾。
+          系统地做一组「匹配策略 × query 预算」的二维消融，是一个工作量可控但结论有价值的题目。
+        </p>
+        <div class="tc-dataset">数据集：<b>COCO</b> + <b>CrowdHuman</b>（密集场景）· 算力：单卡 A10 即可</div>
+      </div>
+
+      <div class="topic-card">
+        <span class="tc-level l1">🟢 难度低</span>
+        <h4>骨干替换的系统性消融：ConvNet / Swin / SSM / 变粒度 token</h4>
+        <p>
+          把 ConvNeXt、Swin、VMamba、TransNeXt、VGTok 统一接到同一个 DETR 框架下，
+          在小目标与密集目标上做横向对比。
+          <b>「特征质量 → 检测性能」的传导路径</b>目前缺少系统结论，是一篇扎实的短文。
+        </p>
+        <div class="tc-dataset">数据集：<b>COCO</b> + <b>VisDrone</b> · 算力：单卡 A10 即可</div>
+      </div>
+
+      <div class="topic-card">
+        <span class="tc-level l2">🟡 难度中</span>
+        <h4>开放词汇 × 小目标的交叉空白</h4>
+        <p>
+          FocusOVD（arXiv:2610.27479）只做了 2026 年 10 月这一篇，说明这个交叉方向还很空。
+          开放词汇方法普遍在 COCO-OVD 上刷分，但很少认真报告 <b>AP_s</b> 与长尾小类别。
+          补上这一块，并给出「类别新颖度 × 目标尺度」二维评测，是很自然的一个缺口。
+        </p>
+        <div class="tc-dataset">数据集：<b>COCO-OVD</b> + <b>LVIS-OVD</b> + <b>VisDrone</b></div>
+      </div>
+
+      <div class="topic-card">
+        <span class="tc-level l2">🟡 难度中</span>
+        <h4>把扩散 / 流模型用到检测结果分布上</h4>
+        <p>
+          DiffusionDet（ICCV 2023）与 FlowOVD（arXiv:2606.00782）说明「把检测当作生成过程」是可行的，
+          但这条线近三年明显比 DETR 线冷。值得做的是：<b>在同框架下对比集合预测与扩散去噪</b>，
+          并回答一个具体问题——生成式范式在密集目标上是不是天然更强？
+        </p>
+        <div class="tc-dataset">数据集：<b>COCO</b> + <b>CrowdHuman</b> · 算力：需要 4 卡级别</div>
+      </div>
+
+      <div class="topic-card">
+        <span class="tc-level l2">🟡 难度中</span>
+        <h4>「训练-推理一致性」的统一视角</h4>
+        <p>
+          YOLOv9（梯度信息）、YOLOv10（双重标签分配）、DETRNN（查询排序）本质上都在处理同一件事：
+          <b>让训练时看到的东西和推理时输出的东西一致</b>。
+          把这三条路线放进同一个评价框架里（正样本分配的一致性度量），
+          是一个有观点、且能写成综述的题目。
+        </p>
+        <div class="tc-dataset">数据集：<b>COCO</b> · 算力：单卡 A10 即可</div>
+      </div>
+
+      <div class="topic-card">
+        <span class="tc-level l3">🔴 难度高</span>
+        <h4>面向具体行业的开放词汇落地：一份可复用的评测基准</h4>
+        <p>
+          通用 OVD 的论文已经很多，但<b>行业场景下的开放词汇评测几乎空白</b>。
+          挑一个真实行业（电力巡检、港口、养殖、零售货架），构建带真实长尾类别的开放词汇基准，
+          并给出基线方法。数据与评测本身就是论文的贡献。
+        </p>
+        <div class="tc-dataset">数据集：需<b>自行采集与标注</b> · 算力：视数据规模而定</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 八、文献清单 ============ -->
+<section id="references" class="od-part tint">
+  <div class="od-wrap">
+    <div class="section-tag">PART 08 · 可引用清单</div>
+    <h2 class="section-title">可引用<span class="highlight">文献清单</span></h2>
+    <p class="section-subtitle">
+      标题、作者、日期与 arXiv 编号均取自 arXiv 官方 API 原始返回，可直接照抄引用。
+    </p>
+    <div class="bib-list" id="bib-list">
+            <div class="bib-row">
+        <div class="bib-id">arXiv:2610.33430<br><span style="color:#9CA3AF">近三年</span></div>
+        <div class="bib-title"><b>Dynamic Query as Budgeting for Tiny Object Detection</b><br>Dynamic Query as Budgeting：把小目标检测的动态查询重述为「预算分配」<br><span style="color:#6B7280;font-size:12px">Yi Zhang、Di Xiong、Ge Gao 等 7 人 · 2026-10-24</span></div>
+        <div class="bib-venue">arXiv 2026-10<br><a href="https://arxiv.org/abs/2610.33430" target="_blank" rel="noopener">arXiv 原文 ↗</a></div>
+      </div>
+      <div class="bib-row">
+        <div class="bib-id">arXiv:2610.27479<br><span style="color:#9CA3AF">近三年</span></div>
+        <div class="bib-title"><b>FocusOVD: Geometric and Contextual Feature Refinement for Open-Vocabulary Small-Object Detection</b><br>FocusOVD：面向开放词汇小目标检测的几何与上下文特征精修<br><span style="color:#6B7280;font-size:12px">Hanlin Kou、Beiqi Bai、Li Chen 等 6 人 · 2026-10-20</span></div>
+        <div class="bib-venue">arXiv 2026-10<br><a href="https://arxiv.org/abs/2610.27479" target="_blank" rel="noopener">arXiv 原文 ↗</a></div>
+      </div>
+      <div class="bib-row">
+        <div class="bib-id">arXiv:2610.09502<br><span style="color:#9CA3AF">近三年</span></div>
+        <div class="bib-title"><b>RT-DETR-World: Transferring Rich LLM Semantics to Real-Time Open-Vocabulary Detection</b><br>RT-DETR-World：把大语言模型的丰富语义迁移到实时开放词汇检测<br><span style="color:#6B7280;font-size:12px">Yupeng Zhang、Ziyi Zhao、Juntao Cheng 等 7 人 · 2026-10-07</span></div>
+        <div class="bib-venue">arXiv 2026-10<br><a href="https://arxiv.org/abs/2610.09502" target="_blank" rel="noopener">arXiv 原文 ↗</a></div>
+      </div>
+      <div class="bib-row">
+        <div class="bib-id">arXiv:2610.05191<br><span style="color:#9CA3AF">近三年</span></div>
+        <div class="bib-title"><b>Order Matters: Competition-Guided Query Ordering for RNN-Based Object Detection</b><br>Order Matters：面向 RNN 式目标检测的竞争引导查询排序<br><span style="color:#6B7280;font-size:12px">Shengjian Wu、Li Sun、Yu Shangguan 等 4 人 · 2026-10-04</span></div>
+        <div class="bib-venue">arXiv 2026-10<br><a href="https://arxiv.org/abs/2610.05191" target="_blank" rel="noopener">arXiv 原文 ↗</a></div>
+      </div>
+      <div class="bib-row">
+        <div class="bib-id">arXiv:2608.30247<br><span style="color:#9CA3AF">近三年</span></div>
+        <div class="bib-title"><b>OPUS: A Simple yet Effective Unified Framework for Open-Vocabulary Detection</b><br>OPUS：一个简洁而有效的统一开放词汇检测框架<br><span style="color:#6B7280;font-size:12px">Xiaoyan Wei、Zhimin Yao、Ruilin Yang 等 7 人 · 2026-08-31</span></div>
+        <div class="bib-venue">arXiv 2026-08<br><a href="https://arxiv.org/abs/2608.30247" target="_blank" rel="noopener">arXiv 原文 ↗</a></div>
+      </div>
+      <div class="bib-row">
+        <div class="bib-id">arXiv:2608.28706<br><span style="color:#9CA3AF">近三年</span></div>
+        <div class="bib-title"><b>Variable-Granularity Tokenization for High-Resolution Object Detection</b><br>VGTok：面向高分辨率目标检测的可变粒度 Tokenization<br><span style="color:#6B7280;font-size:12px">Khayrul Islam · 2026-08-27</span></div>
+        <div class="bib-venue">arXiv 2026-08<br><a href="https://arxiv.org/abs/2608.28706" target="_blank" rel="noopener">arXiv 原文 ↗</a></div>
+      </div>
+      <div class="bib-row">
+        <div class="bib-id">arXiv:2609.26092<br><span style="color:#9CA3AF">近三年</span></div>
+        <div class="bib-title"><b>Match One, Learn with Graph: One-to-Graph Query Collaboration with Backward Sharing for Object Detection</b><br>Match One, Learn with Graph：面向目标检测的一对一图查询协作与反向共享<br><span style="color:#6B7280;font-size:12px">Wenxiao Fan、Jingling Fu、Luohang Liu 等 11 人 · 2026-08-06</span></div>
+        <div class="bib-venue">arXiv 2026-08<br><a href="https://arxiv.org/abs/2609.26092" target="_blank" rel="noopener">arXiv 原文 ↗</a></div>
+      </div>
+      <div class="bib-row">
+        <div class="bib-id">arXiv:2606.09360<br><span style="color:#9CA3AF">近三年</span></div>
+        <div class="bib-title"><b>ExDet: Open-Domain Open-Vocabulary Detection with Cross-modal Extrapolation and Rectification</b><br>ExDet：带跨模态外推与校正的开放域开放词汇检测<br><span style="color:#6B7280;font-size:12px">Yupeng Zhang、Yuzhong Feng、Ruize Han 等 6 人 · 2026-06-08</span></div>
+        <div class="bib-venue">arXiv 2026-06<br><a href="https://arxiv.org/abs/2606.09360" target="_blank" rel="noopener">arXiv 原文 ↗</a></div>
+      </div>
+      <div class="bib-row">
+        <div class="bib-id">arXiv:2606.00782<br><span style="color:#9CA3AF">近三年</span></div>
+        <div class="bib-title"><b>FlowOVD: Learning Generative Latent Flows for Zero-shot Open-vocabulary Detection</b><br>FlowOVD：用生成式潜流做零样本开放词汇检测<br><span style="color:#6B7280;font-size:12px">Yao Wei、Andrea Cavallaro、Changjae Oh · 2026-05-30</span></div>
+        <div class="bib-venue">arXiv 2026-05<br><a href="https://arxiv.org/abs/2606.00782" target="_blank" rel="noopener">arXiv 原文 ↗</a></div>
+      </div>
+      <div class="bib-row">
+        <div class="bib-id">arXiv:2605.10190<br><span style="color:#9CA3AF">近三年</span></div>
+        <div class="bib-title"><b>DetRefiner: Model-Agnostic Detection Refinement with Feature Fusion Transformer</b><br>DetRefiner：基于特征融合 Transformer 的模型无关检测精修<br><span style="color:#6B7280;font-size:12px">Soichiro Okazaki、Tatsuya Sasaki、Hiroki Ohashi · 2026-05-11</span></div>
+        <div class="bib-venue">arXiv 2026-05<br><a href="https://arxiv.org/abs/2605.10190" target="_blank" rel="noopener">arXiv 原文 ↗</a></div>
+      </div>
+      <div class="bib-row">
+        <div class="bib-id">arXiv:2605.03642<br><span style="color:#9CA3AF">近三年</span></div>
+        <div class="bib-title"><b>The Detector Teaches Itself: Lightweight Self-Supervised Adaptation for Open-Vocabulary Object Detection</b><br>The Detector Teaches Itself：面向开放词汇检测的轻量自监督适配<br><span style="color:#6B7280;font-size:12px">Yazhe Wan、Changjae Oh · 2026-05-05</span></div>
+        <div class="bib-venue">arXiv 2026-05<br><a href="https://arxiv.org/abs/2605.03642" target="_blank" rel="noopener">arXiv 原文 ↗</a></div>
+      </div>
+      <div class="bib-row">
+        <div class="bib-id">arXiv:2603.07022<br><span style="color:#9CA3AF">近三年</span></div>
+        <div class="bib-title"><b>OV-DEIM: Real-time DETR-Style Open-Vocabulary Object Detection with GridSynthetic Augmentation</b><br>OV-DEIM：带网格合成增广的实时 DETR 式开放词汇目标检测<br><span style="color:#6B7280;font-size:12px">Leilei Wang、Longfei Liu、Xi Shen 等 7 人 · 2026-03-07</span></div>
+        <div class="bib-venue">arXiv 2026-03<br><a href="https://arxiv.org/abs/2603.07022" target="_blank" rel="noopener">arXiv 原文 ↗</a></div>
+      </div>
+      <div class="bib-row">
+        <div class="bib-id">arXiv:2508.10104<br><span style="color:#9CA3AF">近三年</span></div>
+        <div class="bib-title"><b>DINOv3</b><br>DINOv3：面向工业级视觉任务的第二代自监督基础模型<br><span style="color:#6B7280;font-size:12px">Oriane Siméoni、Huy V. Vo、Maximilian Seitzer 等 26 人 · 2025-08-13</span></div>
+        <div class="bib-venue">arXiv 2025<br><a href="https://arxiv.org/abs/2508.10104" target="_blank" rel="noopener">arXiv 原文 ↗</a></div>
+      </div>
+      <div class="bib-row">
+        <div class="bib-id">arXiv:2502.12524<br><span style="color:#9CA3AF">近三年</span></div>
+        <div class="bib-title"><b>YOLOv12: Attention-Centric Real-Time Object Detectors</b><br>YOLOv12：以注意力为中心的实时目标检测器<br><span style="color:#6B7280;font-size:12px">Yunjie Tian、Qixiang Ye、David Doermann · 2025-02-18</span></div>
+        <div class="bib-venue">arXiv 2025<br><a href="https://arxiv.org/abs/2502.12524" target="_blank" rel="noopener">arXiv 原文 ↗</a></div>
+      </div>
+      <div class="bib-row">
+        <div class="bib-id">arXiv:2412.04234<br><span style="color:#9CA3AF">近三年</span></div>
+        <div class="bib-title"><b>DEIM: DETR with Improved Matching for Fast Convergence</b><br>DEIM：用改进的匹配实现快速收敛的 DETR<br><span style="color:#6B7280;font-size:12px">Shihua Huang、Zhichao Lu、Xiaodong Cun 等 6 人 · 2024-12-05</span></div>
+        <div class="bib-venue">CVPR 2025<br><a href="https://arxiv.org/abs/2412.04234" target="_blank" rel="noopener">arXiv 原文 ↗</a></div>
+      </div>
+      <div class="bib-row">
+        <div class="bib-id">arXiv:2410.13842<br><span style="color:#9CA3AF">近三年</span></div>
+        <div class="bib-title"><b>D-FINE: Redefine Regression Task in DETRs as Fine-grained Distribution Refinement</b><br>D-FINE：把 DETR 的回归任务重新定义为细粒度分布细化<br><span style="color:#6B7280;font-size:12px">Yansong Peng、Hebei Li、Peixi Wu 等 6 人 · 2024-10-17</span></div>
+        <div class="bib-venue">ICLR 2025<br><a href="https://arxiv.org/abs/2410.13842" target="_blank" rel="noopener">arXiv 原文 ↗</a></div>
+      </div>
+      <div class="bib-row">
+        <div class="bib-id">arXiv:2408.00714<br><span style="color:#9CA3AF">近三年</span></div>
+        <div class="bib-title"><b>SAM 2: Segment Anything in Images and Videos</b><br>SAM 2：对图像和视频做万物分割<br><span style="color:#6B7280;font-size:12px">Nikhila Ravi、Valentin Gabeur、Yuan-Ting Hu 等 18 人 · 2024-08-01</span></div>
+        <div class="bib-venue">ICLR 2025<br><a href="https://arxiv.org/abs/2408.00714" target="_blank" rel="noopener">arXiv 原文 ↗</a></div>
+      </div>
+      <div class="bib-row">
+        <div class="bib-id">arXiv:2405.14458<br><span style="color:#9CA3AF">近三年</span></div>
+        <div class="bib-title"><b>YOLOv10: Real-Time End-to-End Object Detection</b><br>YOLOv10：实时端到端目标检测<br><span style="color:#6B7280;font-size:12px">Ao Wang、Hui Chen、Lihao Liu 等 7 人 · 2024-05-23</span></div>
+        <div class="bib-venue">NeurIPS 2024<br><a href="https://arxiv.org/abs/2405.14458" target="_blank" rel="noopener">arXiv 原文 ↗</a></div>
+      </div>
+      <div class="bib-row">
+        <div class="bib-id">arXiv:2402.13616<br><span style="color:#9CA3AF">近三年</span></div>
+        <div class="bib-title"><b>YOLOv9: Learning What You Want to Learn Using Programmable Gradient Information</b><br>YOLOv9：用可编程梯度信息学习你想学的东西<br><span style="color:#6B7280;font-size:12px">Chien-Yao Wang、I-Hau Yeh、Hong-Yuan Mark Liao · 2024-02-21</span></div>
+        <div class="bib-venue">ECCV 2024<br><a href="https://arxiv.org/abs/2402.13616" target="_blank" rel="noopener">arXiv 原文 ↗</a></div>
+      </div>
+      <div class="bib-row">
+        <div class="bib-id">arXiv:2401.17270<br><span style="color:#9CA3AF">近三年</span></div>
+        <div class="bib-title"><b>YOLO-World: Real-Time Open-Vocabulary Object Detection</b><br>YOLO-World：实时开放词汇目标检测<br><span style="color:#6B7280;font-size:12px">Tianheng Cheng、Lin Song、Yixiao Ge 等 6 人 · 2024-01-30</span></div>
+        <div class="bib-venue">CVPR 2024<br><a href="https://arxiv.org/abs/2401.17270" target="_blank" rel="noopener">arXiv 原文 ↗</a></div>
+      </div>
+      <div class="bib-row">
+        <div class="bib-id">arXiv:2401.10166<br><span style="color:#9CA3AF">近三年</span></div>
+        <div class="bib-title"><b>VMamba: Visual State Space Model</b><br>VMamba：视觉状态空间模型<br><span style="color:#6B7280;font-size:12px">Yue Liu、Yunjie Tian、Yuzhong Zhao 等 9 人 · 2024-01-18</span></div>
+        <div class="bib-venue">NeurIPS 2024 (Spotlight)<br><a href="https://arxiv.org/abs/2401.10166" target="_blank" rel="noopener">arXiv 原文 ↗</a></div>
+      </div>
+      <div class="bib-row">
+        <div class="bib-id">arXiv:2311.17132<br><span style="color:#9CA3AF">奠基</span></div>
+        <div class="bib-title"><b>TransNeXt: Robust Foveal Visual Perception for Vision Transformers</b><br>TransNeXt：鲁棒的注视点式视觉感知 Transformer<br><span style="color:#6B7280;font-size:12px">Dai Shi · 2023-11-28</span></div>
+        <div class="bib-venue">CVPR 2024<br><a href="https://arxiv.org/abs/2311.17132" target="_blank" rel="noopener">arXiv 原文 ↗</a></div>
+      </div>
+      <div class="bib-row">
+        <div class="bib-id">arXiv:2311.06242<br><span style="color:#9CA3AF">奠基</span></div>
+        <div class="bib-title"><b>Florence-2: Advancing a Unified Representation for a Variety of Vision Tasks</b><br>Florence-2：用统一表示处理多种视觉任务<br><span style="color:#6B7280;font-size:12px">Bin Xiao、Haiping Wu、Weijian Xu 等 9 人 · 2023-11-10</span></div>
+        <div class="bib-venue">CVPR 2024<br><a href="https://arxiv.org/abs/2311.06242" target="_blank" rel="noopener">arXiv 原文 ↗</a></div>
+      </div>
+      <div class="bib-row">
+        <div class="bib-id">arXiv:2306.09683<br><span style="color:#9CA3AF">奠基</span></div>
+        <div class="bib-title"><b>Scaling Open-Vocabulary Object Detection</b><br>扩展开放词汇目标检测的规模（OWLv2）<br><span style="color:#6B7280;font-size:12px">Matthias Minderer、Alexey Gritsenko、Neil Houlsby · 2023-06-16</span></div>
+        <div class="bib-venue">ECCV 2024<br><a href="https://arxiv.org/abs/2306.09683" target="_blank" rel="noopener">arXiv 原文 ↗</a></div>
+      </div>
+      <div class="bib-row">
+        <div class="bib-id">arXiv:2304.08069<br><span style="color:#9CA3AF">奠基</span></div>
+        <div class="bib-title"><b>DETRs Beat YOLOs on Real-time Object Detection</b><br>DETRs 在实时目标检测上击败 YOLO（RT-DETR）<br><span style="color:#6B7280;font-size:12px">Yian Zhao、Wenyu Lv、Shangliang Xu 等 8 人 · 2023-04-17</span></div>
+        <div class="bib-venue">CVPR 2024<br><a href="https://arxiv.org/abs/2304.08069" target="_blank" rel="noopener">arXiv 原文 ↗</a></div>
+      </div>
+      <div class="bib-row">
+        <div class="bib-id">arXiv:2304.07193<br><span style="color:#9CA3AF">奠基</span></div>
+        <div class="bib-title"><b>DINOv2: Learning Robust Visual Features without Supervision</b><br>DINOv2：无监督学习鲁棒视觉特征<br><span style="color:#6B7280;font-size:12px">Maxime Oquab、Timothée Darcet、Théo Moutakanni 等 26 人 · 2023-04-14</span></div>
+        <div class="bib-venue">TMLR 2024<br><a href="https://arxiv.org/abs/2304.07193" target="_blank" rel="noopener">arXiv 原文 ↗</a></div>
+      </div>
+      <div class="bib-row">
+        <div class="bib-id">arXiv:2303.05499<br><span style="color:#9CA3AF">奠基</span></div>
+        <div class="bib-title"><b>Grounding DINO: Marrying DINO with Grounded Pre-Training for Open-Set Object Detection</b><br>Grounding DINO：把 DINO 与接地预训练结合用于开放集检测<br><span style="color:#6B7280;font-size:12px">Shilong Liu、Zhaoyang Zeng、Tianhe Ren 等 12 人 · 2023-03-09</span></div>
+        <div class="bib-venue">ECCV 2024<br><a href="https://arxiv.org/abs/2303.05499" target="_blank" rel="noopener">arXiv 原文 ↗</a></div>
+      </div>
+      <div class="bib-row">
+        <div class="bib-id">arXiv:2211.12860<br><span style="color:#9CA3AF">奠基</span></div>
+        <div class="bib-title"><b>DETRs with Collaborative Hybrid Assignments Training</b><br>协同混合分配训练的 DETR（Co-DETR）<br><span style="color:#6B7280;font-size:12px">Zhuofan Zong、Guanglu Song、Yu Liu · 2022-11-22</span></div>
+        <div class="bib-venue">ICCV 2023<br><a href="https://arxiv.org/abs/2211.12860" target="_blank" rel="noopener">arXiv 原文 ↗</a></div>
+      </div>
+      <div class="bib-row">
+        <div class="bib-id">arXiv:2211.09788<br><span style="color:#9CA3AF">奠基</span></div>
+        <div class="bib-title"><b>DiffusionDet: Diffusion Model for Object Detection</b><br>DiffusionDet：用扩散模型做目标检测<br><span style="color:#6B7280;font-size:12px">Shoufa Chen、Peize Sun、Yibing Song 等 4 人 · 2022-11-17</span></div>
+        <div class="bib-venue">ICCV 2023 (Oral)<br><a href="https://arxiv.org/abs/2211.09788" target="_blank" rel="noopener">arXiv 原文 ↗</a></div>
+      </div>
+      <div class="bib-row">
+        <div class="bib-id">arXiv:2203.03605<br><span style="color:#9CA3AF">奠基</span></div>
+        <div class="bib-title"><b>DINO: DETR with Improved DeNoising Anchor Boxes for End-to-End Object Detection</b><br>DINO：带改进去噪锚框的端到端目标检测 DETR<br><span style="color:#6B7280;font-size:12px">Hao Zhang、Feng Li、Shilong Liu 等 8 人 · 2022-03-07</span></div>
+        <div class="bib-venue">ICLR 2023<br><a href="https://arxiv.org/abs/2203.03605" target="_blank" rel="noopener">arXiv 原文 ↗</a></div>
+      </div>
+    </div>
+    <p style="max-width:1180px; margin:22px auto 0; padding:0 32px; font-size:12.5px; color:var(--gray); line-height:1.9;">
+      引用格式示例：<code style="background:#fff; padding:2px 8px; border-radius:6px; border:1px solid #E5E0F5;">Zhang H., Li F., Liu S., et al. DINO: DETR with Improved DeNoising Anchor Boxes for End-to-End Object Detection. ICLR 2023. arXiv:2203.03605.</code>
+      <br>
+      机器可读的完整元数据（含作者全列表、摘要、更新时间）见仓库中的 <code style="background:#fff; padding:2px 8px; border-radius:6px; border:1px solid #E5E0F5;">data/object-detection-papers.json</code>。
+    </p>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="od-part dark">
+  <div class="od-wrap" style="text-align:center;">
+    <h2 style="font-size:34px; margin-bottom:14px;">想把这套内容讲成一门课？</h2>
+    <p style="opacity:.9; font-size:17px; max-width:720px; margin:0 auto 30px;">
+      目标检测专题可作为 SKC5053 深度学习课程的扩展模块，
+      或 FDE 培训的进阶实战环节——每个实验都有可运行的代码与评测脚本。
+    </p>
+    <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+      <a href="dl-course.html" class="btn btn-primary">🧠 深度学习课程 SKC5053</a>
+      <a href="syllabus.html" class="btn btn-secondary">📚 查看完整课程大纲</a>
+      <a href="trial.html" class="btn btn-secondary">📅 预约演示</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-brand">
+      <div class="nav-logo"><div class="logo-dot">M</div><span>MaxKB · FDE 教学</span></div>
+      <p>开源企业级智能体平台教学课程 · 面向 AI 工程师的完整链路</p>
+    </div>
+    <div class="footer-col">
+      <h4>课程</h4>
+      <a href="syllabus.html">课程大纲</a>
+      <a href="dl-course.html">深度学习 SKC5053</a>
+      <a href="object-detection.html">目标检测专题</a>
+      <a href="cases.html">客户案例</a>
+    </div>
+    <div class="footer-col">
+      <h4>服务</h4>
+      <a href="membership.html">会员计划</a>
+      <a href="enterprise.html">企业服务</a>
+      <a href="trial.html">预约演示</a>
+      <a href="latest.html">最新动态</a>
+    </div>
+    <div class="footer-col">
+      <h4>关于</h4>
+      <a href="about.html">关于老师</a>
+      <a href="faq.html">常见问题</a>
+      <a href="user.html">个人中心</a>
+      <a href="index.html#contact">联系我们</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 MaxKB FDE 教学 · 小陶老师 · 内容开源可商用 · 图像与文献数据取自 arXiv 官方 API</p>
+  </div>
+</footer>
+
+<!-- ============ 配图灯箱 ============ -->
+<div id="figure-lightbox" class="figure-lightbox" role="dialog" aria-modal="true" aria-label="配图放大查看">
+  <button class="lb-close" type="button" aria-label="关闭">✕</button>
+  <div style="text-align:center;">
+    <img src="" alt="">
+    <div class="lb-cap"></div>
+  </div>
+</div>
+
+<script src="assets/js/api.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

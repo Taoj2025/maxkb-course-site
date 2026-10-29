@@ -309,8 +309,9 @@
       <div class="logo-dot" style="background:linear-gradient(135deg,#5B2EBF,#EF4444);">🔥</div>
       <span>最新 FDE 前沿</span>
     </div>
-    <div class="nav-links">
-      <a href="index.html">首页</a>
+    <button class="hamburger" id="nav-hamburger" aria-label="菜单">☰</button>
+    <div class="nav-links" id="nav-links">
+      <a href="index.html">首页</a><a href="object-detection.html" style="color:#5CC8B0; font-weight:700;">🎯 目标检测</a>
       <a href="latest.html" class="active">🔥 最新动态</a>
       <a href="membership.html">💎 会员</a>
       <a href="faq.html">❓ 常见问题</a>
@@ -659,5 +660,24 @@
   });
 </script>
 
+
+<script>
+// 汉堡菜单（≤1279px 时导航收起）
+(function () {
+  var btn = document.getElementById('nav-hamburger');
+  var links = document.getElementById('nav-links');
+  if (!btn || !links) return;
+  btn.addEventListener('click', function () {
+    links.classList.toggle('open');
+    btn.textContent = links.classList.contains('open') ? '✕' : '☰';
+  });
+  links.querySelectorAll('a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      links.classList.remove('open');
+      btn.textContent = '☰';
+    });
+  });
+})();
+</script>
 </body>
 </html>

@@ -1,0 +1,418 @@
+[
+  {
+    "id": "2410.13842v1",
+    "title": "D-FINE: Redefine Regression Task in DETRs as Fine-grained Distribution Refinement",
+    "published": "2024-10-17",
+    "updated": "2024-10-17",
+    "authors": [
+      "Yansong Peng",
+      "Hebei Li",
+      "Peixi Wu",
+      "Yueyi Zhang",
+      "Xiaoyan Sun",
+      "Feng Wu"
+    ],
+    "comment": "",
+    "primary": "cs.CV",
+    "cats": [
+      "cs.CV"
+    ],
+    "abstract": "We introduce D-FINE, a powerful real-time object detector that achieves outstanding localization precision by redefining the bounding box regression task in DETR models. D-FINE comprises two key components: Fine-grained Distribution Refinement (FDR) and Global Optimal Localization Self-Distillation (GO-LSD). FDR transforms the regression process from predicting fixed coordinates to iteratively refining probability distributions, providing a fine-grained intermediate representation that significantly enhances localization accuracy. GO-LSD is a bidirectional optimization strategy that transfers localization knowledge from refined distributions to shallower layers through self-distillation, while also simplifying the residual prediction tasks for deeper layers. Additionally, D-FINE incorporates lightweight optimizations in computationally intensive modules and operations, achieving a better balance between speed and accuracy. Specifically, D-FINE-L / X achieves 54.0% / 55.8% AP on the COCO dataset at 124 / 78 FPS on an NVIDIA T4 GPU. When pretrained on Objects365, D-FINE-L / X attains 57.1% / 59.3% AP, surpassing all existing real-time detectors. Furthermore, our method significantly enhances the performance of a wide range of DETR models by up to 5.3% AP with negligible extra parameters and training costs. Our code and pretrained models: https://github.com/Peterande/D-FINE."
+  },
+  {
+    "id": "2203.03605v4",
+    "title": "DINO: DETR with Improved DeNoising Anchor Boxes for End-to-End Object Detection",
+    "published": "2022-03-07",
+    "updated": "2022-07-11",
+    "authors": [
+      "Hao Zhang",
+      "Feng Li",
+      "Shilong Liu",
+      "Lei Zhang",
+      "Hang Su",
+      "Jun Zhu",
+      "Lionel M. Ni",
+      "Heung-Yeung Shum"
+    ],
+    "comment": "",
+    "primary": "cs.CV",
+    "cats": [
+      "cs.CV"
+    ],
+    "abstract": "We present DINO (\\textbf{D}ETR with \\textbf{I}mproved de\\textbf{N}oising anch\\textbf{O}r boxes), a state-of-the-art end-to-end object detector. % in this paper. DINO improves over previous DETR-like models in performance and efficiency by using a contrastive way for denoising training, a mixed query selection method for anchor initialization, and a look forward twice scheme for box prediction. DINO achieves $49.4$AP in $12$ epochs and $51.3$AP in $24$ epochs on COCO with a ResNet-50 backbone and multi-scale features, yielding a significant improvement of $\\textbf{+6.0}$\\textbf{AP} and $\\textbf{+2.7}$\\textbf{AP}, respectively, compared to DN-DETR, the previous best DETR-like model. DINO scales well in both model size and data size. Without bells and whistles, after pre-training on the Objects365 dataset with a SwinL backbone, DINO obtains the best results on both COCO \\texttt{val2017} ($\\textbf{63.2}$\\textbf{AP}) and \\texttt{test-dev} (\\textbf{$\\textbf{63.3}$AP}). Compared to other models on the leaderboard, DINO significantly reduces its model size and pre-training data size while achieving better results. Our code will be available at \\url{https://github.com/IDEACVR/DINO}."
+  },
+  {
+    "id": "2211.09788v2",
+    "title": "DiffusionDet: Diffusion Model for Object Detection",
+    "published": "2022-11-17",
+    "updated": "2023-08-19",
+    "authors": [
+      "Shoufa Chen",
+      "Peize Sun",
+      "Yibing Song",
+      "Ping Luo"
+    ],
+    "comment": "ICCV2023 (Oral), Camera-ready",
+    "primary": "cs.CV",
+    "cats": [
+      "cs.CV"
+    ],
+    "abstract": "We propose DiffusionDet, a new framework that formulates object detection as a denoising diffusion process from noisy boxes to object boxes. During the training stage, object boxes diffuse from ground-truth boxes to random distribution, and the model learns to reverse this noising process. In inference, the model refines a set of randomly generated boxes to the output results in a progressive way. Our work possesses an appealing property of flexibility, which enables the dynamic number of boxes and iterative evaluation. The extensive experiments on the standard benchmarks show that DiffusionDet achieves favorable performance compared to previous well-established detectors. For example, DiffusionDet achieves 5.3 AP and 4.8 AP gains when evaluated with more boxes and iteration steps, under a zero-shot transfer setting from COCO to CrowdHuman. Our code is available at https://github.com/ShoufaChen/DiffusionDet."
+  },
+  {
+    "id": "2304.08069v3",
+    "title": "DETRs Beat YOLOs on Real-time Object Detection",
+    "published": "2023-04-17",
+    "updated": "2024-04-03",
+    "authors": [
+      "Yian Zhao",
+      "Wenyu Lv",
+      "Shangliang Xu",
+      "Jinman Wei",
+      "Guanzhong Wang",
+      "Qingqing Dang",
+      "Yi Liu",
+      "Jie Chen"
+    ],
+    "comment": "",
+    "primary": "cs.CV",
+    "cats": [
+      "cs.CV"
+    ],
+    "abstract": "The YOLO series has become the most popular framework for real-time object detection due to its reasonable trade-off between speed and accuracy. However, we observe that the speed and accuracy of YOLOs are negatively affected by the NMS. Recently, end-to-end Transformer-based detectors (DETRs) have provided an alternative to eliminating NMS. Nevertheless, the high computational cost limits their practicality and hinders them from fully exploiting the advantage of excluding NMS. In this paper, we propose the Real-Time DEtection TRansformer (RT-DETR), the first real-time end-to-end object detector to our best knowledge that addresses the above dilemma. We build RT-DETR in two steps, drawing on the advanced DETR: first we focus on maintaining accuracy while improving speed, followed by maintaining speed while improving accuracy. Specifically, we design an efficient hybrid encoder to expeditiously process multi-scale features by decoupling intra-scale interaction and cross-scale fusion to improve speed. Then, we propose the uncertainty-minimal query selection to provide high-quality initial queries to the decoder, thereby improving accuracy. In addition, RT-DETR supports flexible speed tuning by adjusting the number of decoder layers to adapt to various scenarios without retraining. Our RT-DETR-R50 / R101 achieves 53.1% / 54.3% AP on COCO and 108 / 74 FPS on T4 GPU, outperforming previously advanced YOLOs in both speed and accuracy. We also develop scaled RT-DETRs that outperform the lighter YOLO detectors (S and M models). Furthermore, RT-DETR-R50 outperforms DINO-R50 by 2.2% AP in accuracy and about 21 times in FPS. After pre-training with Objects365, RT-DETR-R50 / R101 achieves 55.3% / 56.2% AP. The project page: https://zhao-yian.github.io/RTDETR."
+  },
+  {
+    "id": "2401.10166v4",
+    "title": "VMamba: Visual State Space Model",
+    "published": "2024-01-18",
+    "updated": "2024-12-29",
+    "authors": [
+      "Yue Liu",
+      "Yunjie Tian",
+      "Yuzhong Zhao",
+      "Hongtian Yu",
+      "Lingxi Xie",
+      "Yaowei Wang",
+      "Qixiang Ye",
+      "Jianbin Jiao",
+      "Yunfan Liu"
+    ],
+    "comment": "33 pages, 14 figures, 15 tables. NeurIPS 2024 spotlight",
+    "primary": "cs.CV",
+    "cats": [
+      "cs.CV"
+    ],
+    "abstract": "Designing computationally efficient network architectures remains an ongoing necessity in computer vision. In this paper, we adapt Mamba, a state-space language model, into VMamba, a vision backbone with linear time complexity. At the core of VMamba is a stack of Visual State-Space (VSS) blocks with the 2D Selective Scan (SS2D) module. By traversing along four scanning routes, SS2D bridges the gap between the ordered nature of 1D selective scan and the non-sequential structure of 2D vision data, which facilitates the collection of contextual information from various sources and perspectives. Based on the VSS blocks, we develop a family of VMamba architectures and accelerate them through a succession of architectural and implementation enhancements. Extensive experiments demonstrate VMamba's promising performance across diverse visual perception tasks, highlighting its superior input scaling efficiency compared to existing benchmark models. Source code is available at https://github.com/MzeroMiko/VMamba."
+  },
+  {
+    "id": "2211.12860v6",
+    "title": "DETRs with Collaborative Hybrid Assignments Training",
+    "published": "2022-11-22",
+    "updated": "2023-08-10",
+    "authors": [
+      "Zhuofan Zong",
+      "Guanglu Song",
+      "Yu Liu"
+    ],
+    "comment": "ICCV 2023. Codes are available at https://github.com/Sense-X/Co-DETR",
+    "primary": "cs.CV",
+    "cats": [
+      "cs.CV"
+    ],
+    "abstract": "In this paper, we provide the observation that too few queries assigned as positive samples in DETR with one-to-one set matching leads to sparse supervision on the encoder's output which considerably hurt the discriminative feature learning of the encoder and vice visa for attention learning in the decoder. To alleviate this, we present a novel collaborative hybrid assignments training scheme, namely $\\mathcal{C}$o-DETR, to learn more efficient and effective DETR-based detectors from versatile label assignment manners. This new training scheme can easily enhance the encoder's learning ability in end-to-end detectors by training the multiple parallel auxiliary heads supervised by one-to-many label assignments such as ATSS and Faster RCNN. In addition, we conduct extra customized positive queries by extracting the positive coordinates from these auxiliary heads to improve the training efficiency of positive samples in the decoder. In inference, these auxiliary heads are discarded and thus our method introduces no additional parameters and computational cost to the original detector while requiring no hand-crafted non-maximum suppression (NMS). We conduct extensive experiments to evaluate the effectiveness of the proposed approach on DETR variants, including DAB-DETR, Deformable-DETR, and DINO-Deformable-DETR. The state-of-the-art DINO-Deformable-DETR with Swin-L can be improved from 58.5% to 59.5% AP on COCO val. Surprisingly, incorporated with ViT-L backbone, we achieve 66.0% AP on COCO test-dev and 67.9% AP on LVIS val, outperforming previous methods by clear margins with much fewer model sizes. Codes are available at \\url{https://github.com/Sense-X/Co-DETR}."
+  },
+  {
+    "id": "2311.06242v1",
+    "title": "Florence-2: Advancing a Unified Representation for a Variety of Vision Tasks",
+    "published": "2023-11-10",
+    "updated": "2023-11-10",
+    "authors": [
+      "Bin Xiao",
+      "Haiping Wu",
+      "Weijian Xu",
+      "Xiyang Dai",
+      "Houdong Hu",
+      "Yumao Lu",
+      "Michael Zeng",
+      "Ce Liu",
+      "Lu Yuan"
+    ],
+    "comment": "",
+    "primary": "cs.CV",
+    "cats": [
+      "cs.CV"
+    ],
+    "abstract": "We introduce Florence-2, a novel vision foundation model with a unified, prompt-based representation for a variety of computer vision and vision-language tasks. While existing large vision models excel in transfer learning, they struggle to perform a diversity of tasks with simple instructions, a capability that implies handling the complexity of various spatial hierarchy and semantic granularity. Florence-2 was designed to take text-prompt as task instructions and generate desirable results in text forms, whether it be captioning, object detection, grounding or segmentation. This multi-task learning setup demands large-scale, high-quality annotated data. To this end, we co-developed FLD-5B that consists of 5.4 billion comprehensive visual annotations on 126 million images, using an iterative strategy of automated image annotation and model refinement. We adopted a sequence-to-sequence structure to train Florence-2 to perform versatile and comprehensive vision tasks. Extensive evaluations on numerous tasks demonstrated Florence-2 to be a strong vision foundation model contender with unprecedented zero-shot and fine-tuning capabilities."
+  },
+  {
+    "id": "2306.09683v3",
+    "title": "Scaling Open-Vocabulary Object Detection",
+    "published": "2023-06-16",
+    "updated": "2024-05-22",
+    "authors": [
+      "Matthias Minderer",
+      "Alexey Gritsenko",
+      "Neil Houlsby"
+    ],
+    "comment": "",
+    "primary": "cs.CV",
+    "cats": [
+      "cs.CV"
+    ],
+    "abstract": "Open-vocabulary object detection has benefited greatly from pretrained vision-language models, but is still limited by the amount of available detection training data. While detection training data can be expanded by using Web image-text pairs as weak supervision, this has not been done at scales comparable to image-level pretraining. Here, we scale up detection data with self-training, which uses an existing detector to generate pseudo-box annotations on image-text pairs. Major challenges in scaling self-training are the choice of label space, pseudo-annotation filtering, and training efficiency. We present the OWLv2 model and OWL-ST self-training recipe, which address these challenges. OWLv2 surpasses the performance of previous state-of-the-art open-vocabulary detectors already at comparable training scales (~10M examples). However, with OWL-ST, we can scale to over 1B examples, yielding further large improvement: With an L/14 architecture, OWL-ST improves AP on LVIS rare classes, for which the model has seen no human box annotations, from 31.2% to 44.6% (43% relative improvement). OWL-ST unlocks Web-scale training for open-world localization, similar to what has been seen for image classification and language modelling."
+  },
+  {
+    "id": "2405.14458v2",
+    "title": "YOLOv10: Real-Time End-to-End Object Detection",
+    "published": "2024-05-23",
+    "updated": "2024-10-30",
+    "authors": [
+      "Ao Wang",
+      "Hui Chen",
+      "Lihao Liu",
+      "Kai Chen",
+      "Zijia Lin",
+      "Jungong Han",
+      "Guiguang Ding"
+    ],
+    "comment": "Code: https://github.com/THU-MIG/yolov10; NeurIPS 2024 Camera-ready Version",
+    "primary": "cs.CV",
+    "cats": [
+      "cs.CV"
+    ],
+    "abstract": "Over the past years, YOLOs have emerged as the predominant paradigm in the field of real-time object detection owing to their effective balance between computational cost and detection performance. Researchers have explored the architectural designs, optimization objectives, data augmentation strategies, and others for YOLOs, achieving notable progress. However, the reliance on the non-maximum suppression (NMS) for post-processing hampers the end-to-end deployment of YOLOs and adversely impacts the inference latency. Besides, the design of various components in YOLOs lacks the comprehensive and thorough inspection, resulting in noticeable computational redundancy and limiting the model's capability. It renders the suboptimal efficiency, along with considerable potential for performance improvements. In this work, we aim to further advance the performance-efficiency boundary of YOLOs from both the post-processing and model architecture. To this end, we first present the consistent dual assignments for NMS-free training of YOLOs, which brings competitive performance and low inference latency simultaneously. Moreover, we introduce the holistic efficiency-accuracy driven model design strategy for YOLOs. We comprehensively optimize various components of YOLOs from both efficiency and accuracy perspectives, which greatly reduces the computational overhead and enhances the capability. The outcome of our effort is a new generation of YOLO series for real-time end-to-end object detection, dubbed YOLOv10. Extensive experiments show that YOLOv10 achieves state-of-the-art performance and efficiency across various model scales. For example, our YOLOv10-S is 1.8$\\times$ faster than RT-DETR-R18 under the similar AP on COCO, meanwhile enjoying 2.8$\\times$ smaller number of parameters and FLOPs. Compared with YOLOv9-C, YOLOv10-B has 46\\% less latency and 25\\% fewer parameters for the same performance."
+  },
+  {
+    "id": "2402.13616v2",
+    "title": "YOLOv9: Learning What You Want to Learn Using Programmable Gradient Information",
+    "published": "2024-02-21",
+    "updated": "2024-02-29",
+    "authors": [
+      "Chien-Yao Wang",
+      "I-Hau Yeh",
+      "Hong-Yuan Mark Liao"
+    ],
+    "comment": "",
+    "primary": "cs.CV",
+    "cats": [
+      "cs.CV"
+    ],
+    "abstract": "Today's deep learning methods focus on how to design the most appropriate objective functions so that the prediction results of the model can be closest to the ground truth. Meanwhile, an appropriate architecture that can facilitate acquisition of enough information for prediction has to be designed. Existing methods ignore a fact that when input data undergoes layer-by-layer feature extraction and spatial transformation, large amount of information will be lost. This paper will delve into the important issues of data loss when data is transmitted through deep networks, namely information bottleneck and reversible functions. We proposed the concept of programmable gradient information (PGI) to cope with the various changes required by deep networks to achieve multiple objectives. PGI can provide complete input information for the target task to calculate objective function, so that reliable gradient information can be obtained to update network weights. In addition, a new lightweight network architecture -- Generalized Efficient Layer Aggregation Network (GELAN), based on gradient path planning is designed. GELAN's architecture confirms that PGI has gained superior results on lightweight models. We verified the proposed GELAN and PGI on MS COCO dataset based object detection. The results show that GELAN only uses conventional convolution operators to achieve better parameter utilization than the state-of-the-art methods developed based on depth-wise convolution. PGI can be used for variety of models from lightweight to large. It can be used to obtain complete information, so that train-from-scratch models can achieve better results than state-of-the-art models pre-trained using large datasets, the comparison results are shown in Figure 1. The source codes are at: https://github.com/WongKinYiu/yolov9."
+  },
+  {
+    "id": "2304.07193v2",
+    "title": "DINOv2: Learning Robust Visual Features without Supervision",
+    "published": "2023-04-14",
+    "updated": "2024-02-02",
+    "authors": [
+      "Maxime Oquab",
+      "Timothée Darcet",
+      "Théo Moutakanni",
+      "Huy Vo",
+      "Marc Szafraniec",
+      "Vasil Khalidov",
+      "Pierre Fernandez",
+      "Daniel Haziza",
+      "Francisco Massa",
+      "Alaaeldin El-Nouby",
+      "Mahmoud Assran",
+      "Nicolas Ballas",
+      "Wojciech Galuba",
+      "Russell Howes",
+      "Po-Yao Huang",
+      "Shang-Wen Li",
+      "Ishan Misra",
+      "Michael Rabbat",
+      "Vasu Sharma",
+      "Gabriel Synnaeve",
+      "Hu Xu",
+      "Hervé Jegou",
+      "Julien Mairal",
+      "Patrick Labatut",
+      "Armand Joulin",
+      "Piotr Bojanowski"
+    ],
+    "comment": "",
+    "primary": "cs.CV",
+    "cats": [
+      "cs.CV"
+    ],
+    "abstract": "The recent breakthroughs in natural language processing for model pretraining on large quantities of data have opened the way for similar foundation models in computer vision. These models could greatly simplify the use of images in any system by producing all-purpose visual features, i.e., features that work across image distributions and tasks without finetuning. This work shows that existing pretraining methods, especially self-supervised methods, can produce such features if trained on enough curated data from diverse sources. We revisit existing approaches and combine different techniques to scale our pretraining in terms of data and model size. Most of the technical contributions aim at accelerating and stabilizing the training at scale. In terms of data, we propose an automatic pipeline to build a dedicated, diverse, and curated image dataset instead of uncurated data, as typically done in the self-supervised literature. In terms of models, we train a ViT model (Dosovitskiy et al., 2020) with 1B parameters and distill it into a series of smaller models that surpass the best available all-purpose features, OpenCLIP (Ilharco et al., 2021) on most of the benchmarks at image and pixel levels."
+  },
+  {
+    "id": "2508.10104v1",
+    "title": "DINOv3",
+    "published": "2025-08-13",
+    "updated": "2025-08-13",
+    "authors": [
+      "Oriane Siméoni",
+      "Huy V. Vo",
+      "Maximilian Seitzer",
+      "Federico Baldassarre",
+      "Maxime Oquab",
+      "Cijo Jose",
+      "Vasil Khalidov",
+      "Marc Szafraniec",
+      "Seungeun Yi",
+      "Michaël Ramamonjisoa",
+      "Francisco Massa",
+      "Daniel Haziza",
+      "Luca Wehrstedt",
+      "Jianyuan Wang",
+      "Timothée Darcet",
+      "Théo Moutakanni",
+      "Leonel Sentana",
+      "Claire Roberts",
+      "Andrea Vedaldi",
+      "Jamie Tolan",
+      "John Brandt",
+      "Camille Couprie",
+      "Julien Mairal",
+      "Hervé Jégou",
+      "Patrick Labatut",
+      "Piotr Bojanowski"
+    ],
+    "comment": "",
+    "primary": "cs.CV",
+    "cats": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "abstract": "Self-supervised learning holds the promise of eliminating the need for manual data annotation, enabling models to scale effortlessly to massive datasets and larger architectures. By not being tailored to specific tasks or domains, this training paradigm has the potential to learn visual representations from diverse sources, ranging from natural to aerial images -- using a single algorithm. This technical report introduces DINOv3, a major milestone toward realizing this vision by leveraging simple yet effective strategies. First, we leverage the benefit of scaling both dataset and model size by careful data preparation, design, and optimization. Second, we introduce a new method called Gram anchoring, which effectively addresses the known yet unsolved issue of dense feature maps degrading during long training schedules. Finally, we apply post-hoc strategies that further enhance our models' flexibility with respect to resolution, model size, and alignment with text. As a result, we present a versatile vision foundation model that outperforms the specialized state of the art across a broad range of settings, without fine-tuning. DINOv3 produces high-quality dense features that achieve outstanding performance on various vision tasks, significantly surpassing previous self- and weakly-supervised foundation models. We also share the DINOv3 suite of vision models, designed to advance the state of the art on a wide spectrum of tasks and data by providing scalable solutions for diverse resource constraints and deployment scenarios."
+  },
+  {
+    "id": "2311.17132v3",
+    "title": "TransNeXt: Robust Foveal Visual Perception for Vision Transformers",
+    "published": "2023-11-28",
+    "updated": "2024-04-20",
+    "authors": [
+      "Dai Shi"
+    ],
+    "comment": "CVPR 2024 Camera-ready Version. Project Page: https://github.com/DaiShiResearch/TransNeXt",
+    "primary": "cs.CV",
+    "cats": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "abstract": "Due to the depth degradation effect in residual connections, many efficient Vision Transformers models that rely on stacking layers for information exchange often fail to form sufficient information mixing, leading to unnatural visual perception. To address this issue, in this paper, we propose Aggregated Attention, a biomimetic design-based token mixer that simulates biological foveal vision and continuous eye movement while enabling each token on the feature map to have a global perception. Furthermore, we incorporate learnable tokens that interact with conventional queries and keys, which further diversifies the generation of affinity matrices beyond merely relying on the similarity between queries and keys. Our approach does not rely on stacking for information exchange, thus effectively avoiding depth degradation and achieving natural visual perception. Additionally, we propose Convolutional GLU, a channel mixer that bridges the gap between GLU and SE mechanism, which empowers each token to have channel attention based on its nearest neighbor image features, enhancing local modeling capability and model robustness. We combine aggregated attention and convolutional GLU to create a new visual backbone called TransNeXt. Extensive experiments demonstrate that our TransNeXt achieves state-of-the-art performance across multiple model sizes. At a resolution of $224^2$, TransNeXt-Tiny attains an ImageNet accuracy of 84.0%, surpassing ConvNeXt-B with 69% fewer parameters. Our TransNeXt-Base achieves an ImageNet accuracy of 86.2% and an ImageNet-A accuracy of 61.6% at a resolution of $384^2$, a COCO object detection mAP of 57.1, and an ADE20K semantic segmentation mIoU of 54.7."
+  },
+  {
+    "id": "2401.17270v3",
+    "title": "YOLO-World: Real-Time Open-Vocabulary Object Detection",
+    "published": "2024-01-30",
+    "updated": "2024-02-22",
+    "authors": [
+      "Tianheng Cheng",
+      "Lin Song",
+      "Yixiao Ge",
+      "Wenyu Liu",
+      "Xinggang Wang",
+      "Ying Shan"
+    ],
+    "comment": "Work still in progress. Code & models are available at: https://github.com/AILab-CVC/YOLO-World",
+    "primary": "cs.CV",
+    "cats": [
+      "cs.CV"
+    ],
+    "abstract": "The You Only Look Once (YOLO) series of detectors have established themselves as efficient and practical tools. However, their reliance on predefined and trained object categories limits their applicability in open scenarios. Addressing this limitation, we introduce YOLO-World, an innovative approach that enhances YOLO with open-vocabulary detection capabilities through vision-language modeling and pre-training on large-scale datasets. Specifically, we propose a new Re-parameterizable Vision-Language Path Aggregation Network (RepVL-PAN) and region-text contrastive loss to facilitate the interaction between visual and linguistic information. Our method excels in detecting a wide range of objects in a zero-shot manner with high efficiency. On the challenging LVIS dataset, YOLO-World achieves 35.4 AP with 52.0 FPS on V100, which outperforms many state-of-the-art methods in terms of both accuracy and speed. Furthermore, the fine-tuned YOLO-World achieves remarkable performance on several downstream tasks, including object detection and open-vocabulary instance segmentation."
+  },
+  {
+    "id": "2303.05499v5",
+    "title": "Grounding DINO: Marrying DINO with Grounded Pre-Training for Open-Set Object Detection",
+    "published": "2023-03-09",
+    "updated": "2024-07-19",
+    "authors": [
+      "Shilong Liu",
+      "Zhaoyang Zeng",
+      "Tianhe Ren",
+      "Feng Li",
+      "Hao Zhang",
+      "Jie Yang",
+      "Qing Jiang",
+      "Chunyuan Li",
+      "Jianwei Yang",
+      "Hang Su",
+      "Jun Zhu",
+      "Lei Zhang"
+    ],
+    "comment": "Code will be available at https://github.com/IDEA-Research/GroundingDINO",
+    "primary": "cs.CV",
+    "cats": [
+      "cs.CV"
+    ],
+    "abstract": "In this paper, we present an open-set object detector, called Grounding DINO, by marrying Transformer-based detector DINO with grounded pre-training, which can detect arbitrary objects with human inputs such as category names or referring expressions. The key solution of open-set object detection is introducing language to a closed-set detector for open-set concept generalization. To effectively fuse language and vision modalities, we conceptually divide a closed-set detector into three phases and propose a tight fusion solution, which includes a feature enhancer, a language-guided query selection, and a cross-modality decoder for cross-modality fusion. While previous works mainly evaluate open-set object detection on novel categories, we propose to also perform evaluations on referring expression comprehension for objects specified with attributes. Grounding DINO performs remarkably well on all three settings, including benchmarks on COCO, LVIS, ODinW, and RefCOCO/+/g. Grounding DINO achieves a $52.5$ AP on the COCO detection zero-shot transfer benchmark, i.e., without any training data from COCO. It sets a new record on the ODinW zero-shot benchmark with a mean $26.1$ AP. Code will be available at \\url{https://github.com/IDEA-Research/GroundingDINO}."
+  },
+  {
+    "id": "2502.12524v1",
+    "title": "YOLOv12: Attention-Centric Real-Time Object Detectors",
+    "published": "2025-02-18",
+    "updated": "2025-02-18",
+    "authors": [
+      "Yunjie Tian",
+      "Qixiang Ye",
+      "David Doermann"
+    ],
+    "comment": "https://github.com/sunsmarterjie/yolov12",
+    "primary": "cs.CV",
+    "cats": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "abstract": "Enhancing the network architecture of the YOLO framework has been crucial for a long time, but has focused on CNN-based improvements despite the proven superiority of attention mechanisms in modeling capabilities. This is because attention-based models cannot match the speed of CNN-based models. This paper proposes an attention-centric YOLO framework, namely YOLOv12, that matches the speed of previous CNN-based ones while harnessing the performance benefits of attention mechanisms. YOLOv12 surpasses all popular real-time object detectors in accuracy with competitive speed. For example, YOLOv12-N achieves 40.6% mAP with an inference latency of 1.64 ms on a T4 GPU, outperforming advanced YOLOv10-N / YOLOv11-N by 2.1%/1.2% mAP with a comparable speed. This advantage extends to other model scales. YOLOv12 also surpasses end-to-end real-time detectors that improve DETR, such as RT-DETR / RT-DETRv2: YOLOv12-S beats RT-DETR-R18 / RT-DETRv2-R18 while running 42% faster, using only 36% of the computation and 45% of the parameters. More comparisons are shown in Figure 1."
+  },
+  {
+    "id": "2412.04234v3",
+    "title": "DEIM: DETR with Improved Matching for Fast Convergence",
+    "published": "2024-12-05",
+    "updated": "2025-03-26",
+    "authors": [
+      "Shihua Huang",
+      "Zhichao Lu",
+      "Xiaodong Cun",
+      "Yongjun Yu",
+      "Xiao Zhou",
+      "Xi Shen"
+    ],
+    "comment": "CVPR 2025",
+    "primary": "cs.CV",
+    "cats": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "abstract": "We introduce DEIM, an innovative and efficient training framework designed to accelerate convergence in real-time object detection with Transformer-based architectures (DETR). To mitigate the sparse supervision inherent in one-to-one (O2O) matching in DETR models, DEIM employs a Dense O2O matching strategy. This approach increases the number of positive samples per image by incorporating additional targets, using standard data augmentation techniques. While Dense O2O matching speeds up convergence, it also introduces numerous low-quality matches that could affect performance. To address this, we propose the Matchability-Aware Loss (MAL), a novel loss function that optimizes matches across various quality levels, enhancing the effectiveness of Dense O2O. Extensive experiments on the COCO dataset validate the efficacy of DEIM. When integrated with RT-DETR and D-FINE, it consistently boosts performance while reducing training time by 50%. Notably, paired with RT-DETRv2, DEIM achieves 53.2% AP in a single day of training on an NVIDIA 4090 GPU. Additionally, DEIM-trained real-time models outperform leading real-time object detectors, with DEIM-D-FINE-L and DEIM-D-FINE-X achieving 54.7% and 56.5% AP at 124 and 78 FPS on an NVIDIA T4 GPU, respectively, without the need for additional data. We believe DEIM sets a new baseline for advancements in real-time object detection. Our code and pre-trained models are available at https://github.com/ShihuaHuang95/DEIM."
+  },
+  {
+    "id": "2408.00714v2",
+    "title": "SAM 2: Segment Anything in Images and Videos",
+    "published": "2024-08-01",
+    "updated": "2024-10-28",
+    "authors": [
+      "Nikhila Ravi",
+      "Valentin Gabeur",
+      "Yuan-Ting Hu",
+      "Ronghang Hu",
+      "Chaitanya Ryali",
+      "Tengyu Ma",
+      "Haitham Khedr",
+      "Roman Rädle",
+      "Chloe Rolland",
+      "Laura Gustafson",
+      "Eric Mintun",
+      "Junting Pan",
+      "Kalyan Vasudev Alwala",
+      "Nicolas Carion",
+      "Chao-Yuan Wu",
+      "Ross Girshick",
+      "Piotr Dollár",
+      "Christoph Feichtenhofer"
+    ],
+    "comment": "Website: https://ai.meta.com/sam2",
+    "primary": "cs.CV",
+    "cats": [
+      "cs.CV",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "abstract": "We present Segment Anything Model 2 (SAM 2), a foundation model towards solving promptable visual segmentation in images and videos. We build a data engine, which improves model and data via user interaction, to collect the largest video segmentation dataset to date. Our model is a simple transformer architecture with streaming memory for real-time video processing. SAM 2 trained on our data provides strong performance across a wide range of tasks. In video segmentation, we observe better accuracy, using 3x fewer interactions than prior approaches. In image segmentation, our model is more accurate and 6x faster than the Segment Anything Model (SAM). We believe that our data, model, and insights will serve as a significant milestone for video segmentation and related perception tasks. We are releasing our main model, dataset, as well as code for model training and our demo."
+  }
+]

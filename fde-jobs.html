@@ -298,7 +298,8 @@
       <div class="logo-dot" style="background:linear-gradient(135deg,#5B2EBF,#3B82F6);">💼</div>
       <span>FDE 招聘需求 v2.0</span>
     </div>
-    <div class="nav-links">
+    <button class="hamburger" id="nav-hamburger" aria-label="菜单">☰</button>
+    <div class="nav-links" id="nav-links">
       <a href="index.html">首页</a>
       <a href="latest.html">🔥 最新动态</a>
       <a href="fde-jobs.html" class="active">💼 招聘需求</a>
@@ -720,5 +721,24 @@
   }
 </script>
 
+
+<script>
+// 汉堡菜单（≤1279px 时导航收起）
+(function () {
+  var btn = document.getElementById('nav-hamburger');
+  var links = document.getElementById('nav-links');
+  if (!btn || !links) return;
+  btn.addEventListener('click', function () {
+    links.classList.toggle('open');
+    btn.textContent = links.classList.contains('open') ? '✕' : '☰';
+  });
+  links.querySelectorAll('a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      links.classList.remove('open');
+      btn.textContent = '☰';
+    });
+  });
+})();
+</script>
 </body>
 </html>

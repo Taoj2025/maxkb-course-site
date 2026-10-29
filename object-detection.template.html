@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>目标检测专题 · 从原理到发论文 · 小陶老师</title>
+<meta name="description" content="目标检测专题：检测器通用架构 + 三条技术路线 + 近三年 arXiv 文献精读（核心思想 / 创新点 / 原理架构图）+ 复现实验路线 + 科研选题建议。30 篇 arXiv 论文，9 张自绘原理架构图。">
+
+<!-- Open Graph / 微信分享卡 -->
+<meta property="og:title" content="目标检测专题 · 从原理到发论文 · 小陶老师">
+<meta property="og:description" content="30 篇近三年 arXiv 目标检测论文精读 · 核心思想 + 创新点 + 原理架构图 · 复现实验路线与科研选题建议">
+<meta property="og:image" content="https://taotaoedu.ltd/assets/images/og-cover.png">
+<meta property="og:url" content="https://taotaoedu.ltd/object-detection.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MaxKB FDE 教学">
+
+<!-- Twitter / X 卡片 -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="目标检测专题 · 从原理到发论文 · 小陶老师">
+<meta name="twitter:description" content="30 篇近三年 arXiv 目标检测论文精读 · 核心思想 + 创新点 + 原理架构图">
+<meta name="twitter:image" content="https://taotaoedu.ltd/assets/images/og-cover.png">
+<link rel="canonical" href="https://taotaoedu.ltd/object-detection.html">
+
+<meta name="keywords" content="目标检测,DETR,DINO,DEIM,D-FINE,RT-DETR,YOLOv10,YOLOv12,开放词汇检测,Grounding DINO,小目标检测,arXiv,论文精读,小陶老师,MaxKB">
+<meta name="author" content="小陶老师">
+<meta name="theme-color" content="#5B2EBF">
+
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%235B2EBF'/><text x='50' y='68' text-anchor='middle' fill='white' font-size='46' font-weight='bold' font-family='sans-serif'>OD</text></svg>">
+</head>
+<body>
+
+<!-- ============ 顶部会员状态条 ============ -->
+<div id="top-status-bar" style="background: rgba(0,0,0,0.2); padding: 8px 32px; text-align: center; font-size: 13px; color: rgba(255,255,255,0.9);">
+  <span id="status-text">💎 未登录 · 访问全部资源需会员</span>
+  <a href="membership.html" style="color: #FCD34D; text-decoration: none; margin-left: 12px; font-weight: 600;">👤 登录 / 注册</a>
+</div>
+
+<!-- ============ 顶部导航 ============ -->
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <div class="logo-dot">M</div>
+      <span>MaxKB · FDE 教学</span>
+    </div>
+    <button class="hamburger" id="nav-hamburger" aria-label="菜单">☰</button>
+    <div class="nav-links" id="nav-links">
+      <a href="index.html">首页</a>
+      <a href="syllabus.html">📚 课程大纲</a>
+      <a href="dl-course.html" style="color:#FCD34D; font-weight:700;">🧠 深度学习</a>
+      <a href="object-detection.html" class="active" style="color:#5CC8B0; font-weight:700;">🎯 目标检测</a>
+      <a href="cases.html">客户案例</a>
+      <a href="latest.html" style="color:#EF4444; font-weight:700;">🔥 最新动态</a>
+      <a href="membership.html">💎 会员</a>
+      <a href="user.html">👤 个人中心</a>
+      <a href="enterprise.html" style="color:#F59E0B; font-weight:700;">🏢 企业服务</a>
+      <a href="about.html">关于</a>
+      <a href="trial.html" class="nav-cta">📅 预约演示</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ Hero ============ -->
+<section class="od-hero">
+  <div class="od-badge">🎯 目标检测专题 · arXiv 近三年文献精读</div>
+  <h1>目标检测：从原理到发论文</h1>
+  <p>
+    检测器怎么搭、这几年论文改了什么、哪些方向还值得做——
+    一页讲清检测器的三段式架构，<b>30 篇 arXiv 论文</b>逐篇拆解核心思想与创新点，
+    配 <b>9 张自绘原理架构图</b>，最后落到可复现的实验路线与可直接开题的选题清单。
+  </p>
+  <div class="od-meta">
+    <div class="od-meta-item"><span class="od-meta-num">30</span><span class="od-meta-label">篇 arXiv 论文精读</span></div>
+    <div class="od-meta-item"><span class="od-meta-num">9</span><span class="od-meta-label">张自绘原理架构图</span></div>
+    <div class="od-meta-item"><span class="od-meta-num">5</span><span class="od-meta-label">条研究主线</span></div>
+    <div class="od-meta-item"><span class="od-meta-num">21</span><span class="od-meta-label">篇落在近三年窗口</span></div>
+    <div class="od-meta-item"><span class="od-meta-num">6</span><span class="od-meta-label">个可直接开题的选题</span></div>
+  </div>
+  <div style="margin-top:36px; display:flex; gap:14px; justify-content:center; flex-wrap:wrap; position:relative;">
+    <a href="#architecture" class="btn btn-primary">📐 先看检测器怎么搭</a>
+    <a href="#papers" class="btn btn-secondary">📚 直接进文献精读</a>
+    <a href="#topics" class="btn btn-secondary">🎓 看科研选题建议</a>
+  </div>
+</section>
+
+<!-- ============ 一、通用架构 ============ -->
+<section id="architecture" class="od-part white">
+  <div class="od-wrap">
+    <div class="section-tag">PART 01 · 检测器解剖</div>
+    <h2 class="section-title">任何检测器，都是<span class="highlight">三段式</span></h2>
+    <p class="section-subtitle">
+      特征提取 → 多尺度融合 → 预测头。近三年所有新工作，改的都是这两三段里的某一处。
+    </p>
+
+    <div class="figure-main">
+      <figure class="figure-big">
+        <img src="assets/images/08_检测器通用架构.png"
+             alt="目标检测器通用架构解剖图：输入图像经过 Backbone 骨干提取 C3/C4/C5 多尺度特征，经 Neck 特征融合得到 P3/P4/P5，最后由 Head 预测头输出框、类别与置信度；下方对比训练阶段的样本分配与推理阶段的后处理差异"
+             width="1427" height="767" loading="lazy"
+             data-figure="assets/images/08_检测器通用架构.png"
+             data-caption="图 8 · 目标检测器通用架构解剖：Backbone / Neck / Head 三段式，训练看样本分配，推理看后处理">
+        <figcaption>图 8 · 目标检测器通用架构解剖（点击放大）</figcaption>
+      </figure>
+      <div class="figure-side">
+        <h3>为什么值得先看这张图</h3>
+        <ul>
+          <li><strong>Backbone</strong>：决定特征质量上限，R50 → Swin → VMamba / TransNeXt / DINOv3</li>
+          <li><strong>Neck</strong>：决定多尺度信息怎么融合，FPN / PAN / CCFM 三代演进</li>
+          <li><strong>Head</strong>：决定输出形式，anchor-based 与 anchor-free 两条分水岭</li>
+          <li>训练侧与推理侧要<b>目标一致</b>——这是 YOLOv10 与 DETR 共同的底层主张</li>
+        </ul>
+        <p>
+          读论文时先把这张图摆出来，问自己三个问题：
+          <b>这篇论文动的是哪一段？是训练侧还是推理侧？</b>
+          几乎所有检测论文都能被塞进这个框架里。
+        </p>
+      </div>
+    </div>
+
+    <div class="figure-main reverse">
+      <figure class="figure-big">
+        <img src="assets/images/09_三条技术路线对比.png"
+             alt="目标检测三条技术路线对比图：两阶段检测（Backbone-RPN-RoI Align-分类回归，代表 Faster R-CNN）、一阶段检测（Backbone-FPN-Dense Head，代表 YOLOv5 到 v12）、端到端 DETR 检测（Backbone-Encoder-Decoder 直接出框，代表 DETR/DINO/RT-DETR/DEIM），并对比各自优势与短板"
+             width="1427" height="767" loading="lazy"
+             data-figure="assets/images/09_三条技术路线对比.png"
+             data-caption="图 9 · 三条技术路线：两阶段精细、一阶段直接、端到端去 NMS，近三年新工作都在这三条线上">
+        <figcaption>图 9 · 三条技术路线对比（点击放大）</figcaption>
+      </figure>
+      <div class="figure-side">
+        <h3>三条路线，正在互相吸收</h3>
+        <ul>
+          <li><strong>两阶段</strong>：精度上限高、小目标强，但流程长、推理慢</li>
+          <li><strong>一阶段</strong>：端到端训练、速度快、易部署，早期正负样本失衡</li>
+          <li><strong>端到端 DETR</strong>：无 NMS、无锚框、架构统一，但早期收敛慢</li>
+          <li>趋势：两阶段被「一阶段 + 更好的样本分配」逼近，一阶段被「端到端」改造</li>
+        </ul>
+        <p>
+          写综述时，这张表是最好用的骨架：<b>按路线分类，而不是按年份罗列</b>，
+          读者才能一眼看出每个方向还缺什么。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 二、DETR 端到端原理 ============ -->
+<section id="principle" class="od-part tint">
+  <div class="od-wrap">
+    <div class="section-tag">PART 02 · 核心原理</div>
+    <h2 class="section-title">DETR 端到端检测：<span class="highlight">训练与推理原理</span></h2>
+    <p class="section-subtitle">
+      把检测变成「集合预测」：一对一匹配替代 NMS，用匈牙利算法求全局最优。
+      这张图是后面所有 DETR 系论文的地基。
+    </p>
+
+    <figure class="figure-wide">
+      <img src="assets/images/10_DETR端到端训练.png"
+           alt="DETR 端到端检测训练与推理原理图：图像特征经 Transformer Encoder、Decoder 的 N 个 Query 预测出框与类别的集合；下方展示匈牙利匹配的一一对应与代价矩阵、去噪训练 CDN，以及传统检测与端到端检测的对比"
+           width="1427" height="767" loading="lazy"
+           data-figure="assets/images/10_DETR端到端训练.png"
+           data-caption="图 10 · DETR 端到端训练：匈牙利匹配 + 去噪训练，以及与传统检测的对比">
+      <figcaption>图 10 · DETR 端到端训练原理（点击放大）</figcaption>
+    </figure>
+
+    <div class="od-cols">
+      <div class="od-col">
+        <h4>① 匈牙利匹配：把「分配」变成优化问题</h4>
+        <p>构造 N×M 代价矩阵（分类损失 + L1 + GIoU），用匈牙利算法求<b>全局最优</b>排列，而不是传统检测那样按 IoU 贪心阈值分配候选框。每个 GT 只被 1 个 Query 匹配，其余 Query 全部记为无目标——这就是「无冗余框」的来源。</p>
+      </div>
+      <div class="od-col">
+        <h4>② 去噪训练 CDN：所有 DETR 系提速的共同前提</h4>
+        <p>给 GT 框加随机噪声，把这些「带噪框」当成额外正样本 Query 一起送进 Decoder。模型只要学会「去噪还原」，收敛速度就能提升数倍——DETR 原本需要 500 epoch 才能训好，加了去噪之后 <b>12 epoch 就够</b>。</p>
+      </div>
+      <div class="od-col">
+        <h4>③ 两条改进轴：匹配方式 与 回归形式</h4>
+        <p>DEIM 改的是<b>匹配</b>（密集一对一 → 更快收敛），D-FINE 改的是<b>回归</b>（L1 单点 → 细粒度分布细化 → 更准定位）。两件事在数学上彼此正交，因此可以叠加——<b>这正是写文章时最顺的一条叙事线</b>。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 三、文献精读 ============ -->
+<section id="papers" class="od-part">
+  <div class="od-wrap">
+    <div class="section-tag">PART 03 · 文献精读</div>
+    <h2 class="section-title">近三年 arXiv <span class="highlight">文献精读</span></h2>
+    <p class="section-subtitle">
+      30 篇论文，逐篇给出核心思想、创新点、代表性指标与「写文章时该怎么引用」。
+      全部论文标题、作者、发布日期与 arXiv 编号均取自 arXiv 官方 API，可直接核对。
+    </p>
+
+    <div class="od-note">
+      <div class="od-note-inner">
+        <h3>📌 关于「近三年」这个窗口的说明</h3>
+        <p>
+          严格意义上的近三年窗口是 <b>2023-10 → 2026-10</b>，落在窗口内的共 <b>21 篇</b>，标记为
+          <span class="pc-tag now">近三年窗口内</span>。
+          另外 <b>9 篇</b> 是这条技术路线上不可绕过的<b>奠基前置工作</b>
+          （DINO、RT-DETR、Grounding DINO、OWLv2、Florence-2 等，最早可追溯到 2022 年），
+          标记为 <span class="pc-tag pre">奠基前置</span>。
+          <br>
+          把它们放进来是有意的：近三年的每一篇工作，都在引用和修改这些前置工作。
+          <b>不引用前置工作，综述就断了链条</b>——这也是审稿人最容易质疑的地方。
+        </p>
+      </div>
+    </div>
+
+<!--PAPER_CARDS-->
+  </div>
+</section>
+
+<!-- ============ 四、小目标检测 ============ -->
+<section id="small-object" class="od-part tint">
+  <div class="od-wrap">
+    <div class="section-tag">PART 04 · 难点专题</div>
+    <h2 class="section-title">小目标检测：<span class="highlight">一个还没被解决干净的矛盾</span></h2>
+    <p class="section-subtitle">
+      目标小于 32×32 像素时，检测器丢掉的不只是细节，还有「位置先验」。
+      这是一个适合持续发论文的议题。
+    </p>
+
+    <figure class="figure-wide">
+      <img src="assets/images/15_小目标检测难点.png"
+           alt="小目标检测难点解剖图：左侧展示 P3/P4/P5 三个尺度的特征逐层丢失，32×32 目标在 P3 上只剩 4×4；中间列出特征融合、提高分辨率、位置先验、注意力四条解法主线；右侧列出 VisDrone、Objects365、DOTA 等专用数据集与 AP_s 评测指标"
+           width="1427" height="767" loading="lazy"
+           data-figure="assets/images/15_小目标检测难点.png"
+           data-caption="图 15 · 小目标检测：特征分辨率与语义粒度的根本矛盾，以及四条主流解法">
+      <figcaption>图 15 · 小目标检测难点解剖（点击放大）</figcaption>
+    </figure>
+
+    <div class="od-cols">
+      <div class="od-col">
+        <h4>🔍 为什么小目标还是热点</h4>
+        <p>它不是一个「调参问题」，而是<b>特征分辨率与语义粒度的根本矛盾</b>：提高分辨率会显著增加计算量，语义太弱又无法可靠分类。这个矛盾至今没有被彻底解决，因此每一年都有新论文。</p>
+      </div>
+      <div class="od-col">
+        <h4>📐 四条解法主线</h4>
+        <p><b>特征融合</b>（FPN / PAN 自顶向下）· <b>提高分辨率</b>（SAHI 切片推理、TTA）· <b>位置先验</b>（anchor-free + 可学习位置编码）· <b>注意力</b>（Swin / VMamba 层次化注意力、专用小目标头）。</p>
+      </div>
+      <div class="od-col">
+        <h4>✍️ 写论文的注意事项</h4>
+        <p>单报 AP 一定会被质疑。<b>必须同时给出 AP_s（小目标）</b>与推理速度，并在 VisDrone / AI-TOD / UAVDT 上验证——否则审稿人会认为你没有真正解决小目标。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 五、研究脉络 ============ -->
+<section id="landscape" class="od-part white">
+  <div class="od-wrap">
+    <div class="section-tag">PART 05 · 全局脉络</div>
+    <h2 class="section-title">近三年目标检测：<span class="highlight">四条研究主线</span></h2>
+    <p class="section-subtitle">
+      端到端、实时化、开放词汇、基础模型——四条线并行推进，并在 2026 年开始交汇。
+    </p>
+
+    <figure class="figure-wide">
+      <img src="assets/images/16_目标检测研究脉络.png"
+           alt="近三年目标检测四条研究主线图：端到端 DETR 系、实时检测、开放词汇检测、视觉基础模型四条泳道，每条列出代表工作、arXiv 编号与一句话贡献，底部总结四条主线的交汇点"
+           width="1427" height="767" loading="lazy"
+           data-figure="assets/images/16_目标检测研究脉络.png"
+           data-caption="图 16 · 四条研究主线：端到端解决「怎么输出」、实时化解决「多快」、开放词汇解决「认什么」、基础模型解决「从哪学」">
+      <figcaption>图 16 · 近三年目标检测四条研究主线（点击放大）</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ 六、复现实验路线 ============ -->
+<section id="lab" class="od-part tint">
+  <div class="od-wrap">
+    <div class="section-tag">PART 06 · 动手做</div>
+    <h2 class="section-title">复现实验路线：<span class="highlight">4 个实验，从零到发论文</span></h2>
+    <p class="section-subtitle">
+      这四个实验按顺序做完，学生能独立复现近三年的代表性工作；老师能直接在此基础上派生自己的论文。
+    </p>
+
+    <div class="lab-grid">
+      <div class="lab-card">
+        <div class="lab-no">LAB 01 · 基础</div>
+        <h4>把检测器拆开看：复现 Faster R-CNN 与 YOLOv8</h4>
+        <p>先用最朴素的两条路线跑通，理解「候选框 → 分类回归」与「密集预测」的差别。</p>
+        <ul>
+          <li>COCO val2017 子集，ResNet-50 骨干</li>
+          <li>记录 AP / AP50 / AP75 / 参数量 / 单图延迟</li>
+          <li>对比 anchor-based 与 anchor-free 的正负样本分配差异</li>
+        </ul>
+        <div class="lab-out">产出：一张基础性能对照表 + 一份 loss 曲线分析</div>
+      </div>
+
+      <div class="lab-card">
+        <div class="lab-no">LAB 02 · 端到端</div>
+        <h4>复现 DINO，并把它训到 12 epoch</h4>
+        <p>理解集合预测、匈牙利匹配与去噪训练这三件事，是 DETR 系所有后续工作的前提。</p>
+        <ul>
+          <li>实现简化的二分图匹配（scipy linear_sum_assignment）</li>
+          <li>实现 CDN 去噪训练，观察收敛速度的差异</li>
+          <li>记录 12 / 50 / 300 epoch 各自的 AP 曲线</li>
+        </ul>
+        <div class="lab-out">产出：去噪训练前后的收敛速度对比图（可直接进论文）</div>
+      </div>
+
+      <div class="lab-card">
+        <div class="lab-no">LAB 03 · 改进</div>
+        <h4>在 DINO 上叠加 DEIM 与 D-FINE</h4>
+        <p>验证「匹配机制」与「回归形式」两条改进轴可以独立叠加——这是最好讲的一个故事。</p>
+        <ul>
+          <li>把一对一匹配改成 Dense O2O（每个 GT 取 Top-K）</li>
+          <li>把 L1 回归换成细粒度分布细化（FDR）</li>
+          <li>做 2×2 消融：DINO / +DEIM / +D-FINE / 两者都加</li>
+        </ul>
+        <div class="lab-out">产出：2×2 消融表，直接支撑「两条线正交」的论点</div>
+      </div>
+
+      <div class="lab-card">
+        <div class="lab-no">LAB 04 · 小目标</div>
+        <h4>小目标专项：SAHI 切片 + AP_s 评测</h4>
+        <p>把前面的模型放到无人机小目标场景上，顺带摸清这个方向的真实痛点。</p>
+        <ul>
+          <li>在 VisDrone / AI-TOD-v2 上评测 AP_s 与 AP50</li>
+          <li>实现 SAHI 切片推理，比较切块尺寸对 AP_s 的影响</li>
+          <li>分析失败案例：密集遮挡、极小目标、背景干扰</li>
+        </ul>
+        <div class="lab-out">产出：小目标失败模式分析，为选题提供依据</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 七、科研选题建议 ============ -->
+<section id="topics" class="od-part">
+  <div class="od-wrap">
+    <div class="section-tag">PART 07 · 科研选题</div>
+    <h2 class="section-title">科研选题建议：<span class="highlight">6 个可直接开题的方向</span></h2>
+    <p class="section-subtitle">
+      按「投入产出比」排序。难度标签：🟢 硕士一年级可做 · 🟡 需要一定工程积累 · 🔴 需要算力或新数据。
+    </p>
+
+    <div class="topic-grid">
+      <div class="topic-card">
+        <span class="tc-level l1">🟢 难度低</span>
+        <h4>DETR 系的「正样本数量」消融：匹配机制到底在做什么</h4>
+        <p>
+          DEIM 主张密集一对一匹配带来更快的收敛，BUTR（arXiv:2610.33430）则用实验指出
+          动态查询的主要作用其实是<b>预算分配</b>而非精细选择——这两个结论未必矛盾。
+          系统地做一组「匹配策略 × query 预算」的二维消融，是一个工作量可控但结论有价值的题目。
+        </p>
+        <div class="tc-dataset">数据集：<b>COCO</b> + <b>CrowdHuman</b>（密集场景）· 算力：单卡 A10 即可</div>
+      </div>
+
+      <div class="topic-card">
+        <span class="tc-level l1">🟢 难度低</span>
+        <h4>骨干替换的系统性消融：ConvNet / Swin / SSM / 变粒度 token</h4>
+        <p>
+          把 ConvNeXt、Swin、VMamba、TransNeXt、VGTok 统一接到同一个 DETR 框架下，
+          在小目标与密集目标上做横向对比。
+          <b>「特征质量 → 检测性能」的传导路径</b>目前缺少系统结论，是一篇扎实的短文。
+        </p>
+        <div class="tc-dataset">数据集：<b>COCO</b> + <b>VisDrone</b> · 算力：单卡 A10 即可</div>
+      </div>
+
+      <div class="topic-card">
+        <span class="tc-level l2">🟡 难度中</span>
+        <h4>开放词汇 × 小目标的交叉空白</h4>
+        <p>
+          FocusOVD（arXiv:2610.27479）只做了 2026 年 10 月这一篇，说明这个交叉方向还很空。
+          开放词汇方法普遍在 COCO-OVD 上刷分，但很少认真报告 <b>AP_s</b> 与长尾小类别。
+          补上这一块，并给出「类别新颖度 × 目标尺度」二维评测，是很自然的一个缺口。
+        </p>
+        <div class="tc-dataset">数据集：<b>COCO-OVD</b> + <b>LVIS-OVD</b> + <b>VisDrone</b></div>
+      </div>
+
+      <div class="topic-card">
+        <span class="tc-level l2">🟡 难度中</span>
+        <h4>把扩散 / 流模型用到检测结果分布上</h4>
+        <p>
+          DiffusionDet（ICCV 2023）与 FlowOVD（arXiv:2606.00782）说明「把检测当作生成过程」是可行的，
+          但这条线近三年明显比 DETR 线冷。值得做的是：<b>在同框架下对比集合预测与扩散去噪</b>，
+          并回答一个具体问题——生成式范式在密集目标上是不是天然更强？
+        </p>
+        <div class="tc-dataset">数据集：<b>COCO</b> + <b>CrowdHuman</b> · 算力：需要 4 卡级别</div>
+      </div>
+
+      <div class="topic-card">
+        <span class="tc-level l2">🟡 难度中</span>
+        <h4>「训练-推理一致性」的统一视角</h4>
+        <p>
+          YOLOv9（梯度信息）、YOLOv10（双重标签分配）、DETRNN（查询排序）本质上都在处理同一件事：
+          <b>让训练时看到的东西和推理时输出的东西一致</b>。
+          把这三条路线放进同一个评价框架里（正样本分配的一致性度量），
+          是一个有观点、且能写成综述的题目。
+        </p>
+        <div class="tc-dataset">数据集：<b>COCO</b> · 算力：单卡 A10 即可</div>
+      </div>
+
+      <div class="topic-card">
+        <span class="tc-level l3">🔴 难度高</span>
+        <h4>面向具体行业的开放词汇落地：一份可复用的评测基准</h4>
+        <p>
+          通用 OVD 的论文已经很多，但<b>行业场景下的开放词汇评测几乎空白</b>。
+          挑一个真实行业（电力巡检、港口、养殖、零售货架），构建带真实长尾类别的开放词汇基准，
+          并给出基线方法。数据与评测本身就是论文的贡献。
+        </p>
+        <div class="tc-dataset">数据集：需<b>自行采集与标注</b> · 算力：视数据规模而定</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 八、文献清单 ============ -->
+<section id="references" class="od-part tint">
+  <div class="od-wrap">
+    <div class="section-tag">PART 08 · 可引用清单</div>
+    <h2 class="section-title">可引用<span class="highlight">文献清单</span></h2>
+    <p class="section-subtitle">
+      标题、作者、日期与 arXiv 编号均取自 arXiv 官方 API 原始返回，可直接照抄引用。
+    </p>
+    <div class="bib-list" id="bib-list">
+      <!--BIB_ROWS-->
+    </div>
+    <p style="max-width:1180px; margin:22px auto 0; padding:0 32px; font-size:12.5px; color:var(--gray); line-height:1.9;">
+      引用格式示例：<code style="background:#fff; padding:2px 8px; border-radius:6px; border:1px solid #E5E0F5;">Zhang H., Li F., Liu S., et al. DINO: DETR with Improved DeNoising Anchor Boxes for End-to-End Object Detection. ICLR 2023. arXiv:2203.03605.</code>
+      <br>
+      机器可读的完整元数据（含作者全列表、摘要、更新时间）见仓库中的 <code style="background:#fff; padding:2px 8px; border-radius:6px; border:1px solid #E5E0F5;">data/object-detection-papers.json</code>。
+    </p>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="od-part dark">
+  <div class="od-wrap" style="text-align:center;">
+    <h2 style="font-size:34px; margin-bottom:14px;">想把这套内容讲成一门课？</h2>
+    <p style="opacity:.9; font-size:17px; max-width:720px; margin:0 auto 30px;">
+      目标检测专题可作为 SKC5053 深度学习课程的扩展模块，
+      或 FDE 培训的进阶实战环节——每个实验都有可运行的代码与评测脚本。
+    </p>
+    <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+      <a href="dl-course.html" class="btn btn-primary">🧠 深度学习课程 SKC5053</a>
+      <a href="syllabus.html" class="btn btn-secondary">📚 查看完整课程大纲</a>
+      <a href="trial.html" class="btn btn-secondary">📅 预约演示</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-brand">
+      <div class="nav-logo"><div class="logo-dot">M</div><span>MaxKB · FDE 教学</span></div>
+      <p>开源企业级智能体平台教学课程 · 面向 AI 工程师的完整链路</p>
+    </div>
+    <div class="footer-col">
+      <h4>课程</h4>
+      <a href="syllabus.html">课程大纲</a>
+      <a href="dl-course.html">深度学习 SKC5053</a>
+      <a href="object-detection.html">目标检测专题</a>
+      <a href="cases.html">客户案例</a>
+    </div>
+    <div class="footer-col">
+      <h4>服务</h4>
+      <a href="membership.html">会员计划</a>
+      <a href="enterprise.html">企业服务</a>
+      <a href="trial.html">预约演示</a>
+      <a href="latest.html">最新动态</a>
+    </div>
+    <div class="footer-col">
+      <h4>关于</h4>
+      <a href="about.html">关于老师</a>
+      <a href="faq.html">常见问题</a>
+      <a href="user.html">个人中心</a>
+      <a href="index.html#contact">联系我们</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 MaxKB FDE 教学 · 小陶老师 · 内容开源可商用 · 图像与文献数据取自 arXiv 官方 API</p>
+  </div>
+</footer>
+
+<!-- ============ 配图灯箱 ============ -->
+<div id="figure-lightbox" class="figure-lightbox" role="dialog" aria-modal="true" aria-label="配图放大查看">
+  <button class="lb-close" type="button" aria-label="关闭">✕</button>
+  <div style="text-align:center;">
+    <img src="" alt="">
+    <div class="lb-cap"></div>
+  </div>
+</div>
+
+<script src="assets/js/api.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
