@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-10-29T23:05:02.377433+08:00",
+  "updated_at": "2026-10-30T00:05:01.372740+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Wiz 分析智能体攻击的七大指纹与发展趋势",
+      "link": "https://aihot.news/items/mdcygre4ettjdbca7sq6vu7zx",
+      "summary": "Wiz 基于自身事件响应与公开披露案例，分析 AI 智能体参与真实入侵的现状与趋势，涉及 ARTEX、Hermes 等框架及韩国金融机构（约 67,000 人信息外泄）、泰国财政部、ConnectWise 供应链（尝试攻击超 2,250 个租户）等案例。 🔗 阅读原文 via AIHOT · https://aihot.news/items/mdcygre4ettjdbca7sq6vu7zx",
+      "pub_date": "2026-10-29",
+      "author": "noreply@aihot.news (Wiz：Research)",
+      "category": "论文"
+    },
     {
       "title": "Unsloth 发布 Mistral Le Chonk 1-bit GGUF 量化版，可本地运行 1T 参数模型",
       "link": "https://aihot.news/items/rph54wkrnzjpvov4cv0mxqatl",
@@ -60,11 +68,19 @@
       "category": "教程"
     },
     {
+      "title": "vLLM 发布 Mistral Large 4 Day 0 支持",
+      "link": "https://aihot.news/items/x6x8nkxn5mqc55umit3clj1tf",
+      "summary": "vLLM 团队宣布对 Mistral 新旗舰模型 Mistral Large 4 提供 Day 0 支持，该模型为 1T 参数、每 token 激活 49B 的原生多模态 MoE 模型，采用 MLA 稀疏注意力加 DSA top-k 索引器、跨层 KV 共享、NoPE、SSMax 和 LeRoPE 等新架构，并内置 DSpark 推测解码草稿器与 Pixtral 视觉编码器。 🔗 阅读原文 via AIHOT · https://aihot.news/items/x6x8nkxn5mqc55umit3clj1tf",
+      "pub_date": "2026-10-29",
+      "author": "noreply@aihot.news (vLLM 官方博客)",
+      "category": "AI 产品"
+    },
+    {
       "title": "Mistral Large 4（Le Chonk）登陆 Hugging Face：1T 参数 MoE 多模态开源权重模型",
       "link": "https://aihot.news/items/upsd8u37hkkquohy3w3sjvszi",
       "summary": "Hugging Face 发布 Mistral Large 4（Le Chonk）的上线博客，模型为多模态多语言 MoE 架构，总参数约 1T、激活 49B、上下文窗口 1M token。 🔗 阅读原文 via AIHOT · https://aihot.news/items/upsd8u37hkkquohy3w3sjvszi",
       "pub_date": "2026-10-29",
-      "author": "noreply@aihot.news (Hugging Face 社区博客)",
+      "author": "noreply@aihot.news (Hugging Face 官方团队博客)",
       "category": "AI 模型"
     },
     {
@@ -385,22 +401,6 @@
       "summary": "OpenAI 于 10 月 27 日宣布其 AI 模型在数学、计算机科学和物理学领域取得三项研究突破。数学上给出了所有维度下局部光滑猜想的证明，从而解决挂谷猜想与斯坦因限制猜想；计算机科学上给出推翻指数时间假设（ETH）的证明，暗示相关计算任务可能有更快算法；物理学上提出量子色动力学及标准模型一种统一完备化的严格存在性证明，涉及杨–米尔斯千禧年难题的一部分。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jxpzj0z4beg1r0cktwzc0tmwe",
       "pub_date": "2026-10-26",
       "author": "noreply@aihot.news (IT之家·人工智能)",
-      "category": "AI 模型"
-    },
-    {
-      "title": "Greg Brockman 称 GPT-6.1 Terra 的电脑操作速度已超过他本人",
-      "link": "https://aihot.news/items/cccggvocxi7vdefusohq9tmdn",
-      "summary": "Greg Brockman 表示 GPT-6.1 Terra 的电脑操作能力已跨过一个质变门槛，用起来比他不借助 AI 时更快。其引用的 OpenAI 介绍称 GPT-6.1 Terra 能理解屏幕内容、跨应用执行操作、自然书写，以更低价格提供快速且强大的 computer use，适合承担整个工作日的更多任务。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cccggvocxi7vdefusohq9tmdn",
-      "pub_date": "2026-10-26",
-      "author": "noreply@aihot.news (Greg Brockman)",
-      "category": "观点"
-    },
-    {
-      "title": "OpenAI 发布 GPT-6.1 Terra，主打电脑操作与写作能力",
-      "link": "https://aihot.news/items/xmpu9lo3lbzld3tqsyrcy5e2v",
-      "summary": "作者宣布 GPT-6.1 Terra 回归，称这是其首个在写作、个性和细致理解请求上显著更好的模型。该模型擅长电脑操作，可理解屏幕内容并跨应用执行操作，在 API 和订阅中提供的用量是 6.1 Sol 的 2 倍，价格更低。 🔗 阅读原文 via AIHOT · https://aihot.news/items/xmpu9lo3lbzld3tqsyrcy5e2v",
-      "pub_date": "2026-10-26",
-      "author": "noreply@aihot.news (Tibo)",
       "category": "AI 模型"
     }
   ]
