@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-10-30T03:05:01.620493+08:00",
+  "updated_at": "2026-10-30T04:05:01.530550+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Anthropic S-1 文件解读：财务表现强劲但增长放缓存隐忧",
+      "link": "https://aihot.news/items/wb6emxuh5ob2wh96egtwawgfu",
+      "summary": "作者通读 Anthropic 公开版 S-1 文件，认为公司财务状况好于预期：2026 年第二季度收入从一季度的 47 亿美元增至 116 亿美元，并录得首个运营利润，截至 6 月底现金储备仅次于 Google 和 Berkshire Hathaway。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wb6emxuh5ob2wh96egtwawgfu",
+      "pub_date": "2026-10-29",
+      "author": "noreply@aihot.news (Timothy B. Lee：Understanding AI)",
+      "category": "行业动态"
+    },
     {
       "title": "腾讯混元发布 Hy-Nomas 技术报告并开源 Hy-Nomas-Bench",
       "link": "https://aihot.news/items/nb40aoihhydhoo0acp0rcyaol",
@@ -394,14 +402,6 @@
       "pub_date": "2026-10-27",
       "author": "noreply@aihot.news (The Decoder：AI News)",
       "category": "行业动态"
-    },
-    {
-      "title": "Ai2 发布 Old Ideas, Novel Problems 研究与 benchmark，揭示 LLM 新颖性裁判不稳定",
-      "link": "https://aihot.news/items/p92a4pkxkheznj9nmt50o08l6",
-      "summary": "Ai2 发布研究 Old Ideas, Novel Problems、配套 benchmark、数据、代码和自动化流水线，测试 LLM 作为研究想法新颖性裁判的可靠性。 🔗 阅读原文 via AIHOT · https://aihot.news/items/p92a4pkxkheznj9nmt50o08l6",
-      "pub_date": "2026-10-27",
-      "author": "noreply@aihot.news (Ai2 / Allen Institute for AI)",
-      "category": "论文"
     }
   ]
 }
