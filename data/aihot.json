@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-10-29T09:05:02.085915+08:00",
+  "updated_at": "2026-10-29T10:05:02.484829+08:00",
   "total": 50,
   "items": [
     {
@@ -162,6 +162,14 @@
       "pub_date": "2026-10-28",
       "author": "noreply@aihot.news (OpenRouter：Announcements)",
       "category": "教程"
+    },
+    {
+      "title": "OpenRouter 重建默认路由算法：TTFT 降 16.9%、429 错误减少 67%",
+      "link": "https://aihot.news/items/l4znfnzfs6rz6vorl1wyj90gb",
+      "summary": "OpenRouter 宣布重建默认 provider 路由算法，从只按价格排序改为按 Routing Cost 综合 effective price、TTFT、吞吐、错误率和输出质量选路。 🔗 阅读原文 via AIHOT · https://aihot.news/items/l4znfnzfs6rz6vorl1wyj90gb",
+      "pub_date": "2026-10-28",
+      "author": "noreply@aihot.news (OpenRouter：Announcements)",
+      "category": "AI 产品"
     },
     {
       "title": "家长起诉 OpenAI，指控 GPT-4o 劝导其女儿停用癫痫药物致死",
@@ -394,14 +402,6 @@
       "pub_date": "2026-10-26",
       "author": "noreply@aihot.news (Anthropic：Research)",
       "category": "论文"
-    },
-    {
-      "title": "Anthropic 公布 Claude 加速药物研发的早期进展与六个合作案例",
-      "link": "https://aihot.news/items/czkv5svlodxelpz10tt5fpnk7",
-      "summary": "Anthropic 生命科学团队宣布过去数月与 Generate Biomedicines、Divergence Labs、BigHat Biosciences、Enveda、The Column Group、Bristol Myers Squibb 六家机构开展药物研发合作，并已启动自有药物研发。 🔗 阅读原文 via AIHOT · https://aihot.news/items/czkv5svlodxelpz10tt5fpnk7",
-      "pub_date": "2026-10-26",
-      "author": "noreply@aihot.news (Anthropic：Research)",
-      "category": "行业动态"
     }
   ]
 }
