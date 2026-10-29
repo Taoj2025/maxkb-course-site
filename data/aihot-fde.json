@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-10-30T04:05:01.531468+08:00",
-  "total": 22,
+  "updated_at": "2026-10-30T05:05:01.663952+08:00",
+  "total": 21,
   "items": [
+    {
+      "title": "Figma 讲解如何训练专用画布编辑模型",
+      "link": "https://aihot.news/items/z9kqlhsgiz11fvlk3aodm6seg",
+      "summary": "Figma 介绍其为 agent 自研 Figma 编辑模型的训练方法，先用超过 25 万条合成样本做 SFT，让早期 Llama 3.3 70B 在编辑任务上接近当时顶级模型，后转向 RL 并结合确定性校验器与视觉评委做评测。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z9kqlhsgiz11fvlk3aodm6seg",
+      "pub_date": "2026-10-29",
+      "author": "noreply@aihot.news (Figma AI / Agent / Make)",
+      "category": "教程"
+    },
     {
       "title": "Codex 宣布即日起 Pro 及 Business Premium 各档位用量上限翻倍",
       "link": "https://aihot.news/items/funx6p4g0gju509j6n0oyxmqu",
@@ -162,22 +170,6 @@
       "pub_date": "2026-10-27",
       "author": "noreply@aihot.news (LangChain：Blog)",
       "category": "教程"
-    },
-    {
-      "title": "Replit Cloud Agents 开放企业代码库贡献，非技术人员可直接提交经测试的 PR",
-      "link": "https://aihot.news/items/qoz4pwew5rsp1idirgbhtpj9d",
-      "summary": "Replit 推出 Cloud Agents，面向 Pro 与 Enterprise 客户开放，让设计、客服等非工程人员用自然语言向公司核心代码库提交经测试的 pull request。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qoz4pwew5rsp1idirgbhtpj9d",
-      "pub_date": "2026-10-27",
-      "author": "noreply@aihot.news (Replit：Blog)",
-      "category": "AI 产品"
-    },
-    {
-      "title": "Ben Horowitz 长文解析 Databricks 与智能体时代的公司形态",
-      "link": "https://aihot.news/items/hfqjmlynoaqxrkyeg8qtsk9ap",
-      "summary": "a16z 的 Ben Horowitz 发文解析 Databricks 如何成为智能体时代的公司基础设施，Databricks 已达到 70 亿美元收入运行率、同比增长 80%，估值 1900 亿美元。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hfqjmlynoaqxrkyeg8qtsk9ap",
-      "pub_date": "2026-10-27",
-      "author": "noreply@aihot.news (a16z：News)",
-      "category": "观点"
     }
   ]
 }
