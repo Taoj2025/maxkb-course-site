@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-10-29T14:05:01.998940+08:00",
-  "total": 21,
+  "updated_at": "2026-10-29T15:05:01.694637+08:00",
+  "total": 22,
   "items": [
+    {
+      "title": "Addy Osmani 谈你可能对 Claude 过度提示了",
+      "link": "https://aihot.news/items/m1cx9dfhpep0da323x3tk7vht",
+      "summary": "Addy Osmani 撰文称新版 Claude 模型所需提示词比多数人习惯的更少，针对 Opus 5.5 建议用单一明确目标加验证条件让 Claude 自主工作，从 /effort medium 起步按需调整。 🔗 阅读原文 via AIHOT · https://aihot.news/items/m1cx9dfhpep0da323x3tk7vht",
+      "pub_date": "2026-10-29",
+      "author": "noreply@aihot.news (Addy Osmani)",
+      "category": "教程"
+    },
     {
       "title": "Alphabet Q3 财报：年化收入达 5000 亿美元，Google Cloud 增长 103%",
       "link": "https://aihot.news/items/m5st8pvirbas7phreshbzkrc9",

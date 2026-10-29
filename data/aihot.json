@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-10-29T14:05:01.998068+08:00",
+  "updated_at": "2026-10-29T15:05:01.693741+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Addy Osmani 谈你可能对 Claude 过度提示了",
+      "link": "https://aihot.news/items/m1cx9dfhpep0da323x3tk7vht",
+      "summary": "Addy Osmani 撰文称新版 Claude 模型所需提示词比多数人习惯的更少，针对 Opus 5.5 建议用单一明确目标加验证条件让 Claude 自主工作，从 /effort medium 起步按需调整。 🔗 阅读原文 via AIHOT · https://aihot.news/items/m1cx9dfhpep0da323x3tk7vht",
+      "pub_date": "2026-10-29",
+      "author": "noreply@aihot.news (Addy Osmani)",
+      "category": "教程"
+    },
     {
       "title": "OpenRouter 教程：用 LLM 从 PDF 中抽取表格",
       "link": "https://aihot.news/items/l928e49lwysm0ymgmhyjrkc3z",
@@ -394,14 +402,6 @@
       "pub_date": "2026-10-26",
       "author": "noreply@aihot.news (Liquid AI 模型与工程博客)",
       "category": "AI 模型"
-    },
-    {
-      "title": "Apple 发布搭载 M6 芯片的 14 英寸 MacBook Pro，起售价 $1,999",
-      "link": "https://aihot.news/items/o0okltd585bcx5lh6bkq53n59",
-      "summary": "Apple 发布搭载全新 M6 芯片的 14 英寸 MacBook Pro，配备 12 核 CPU 和 12 核 GPU，相比 M5 图形性能最高快 30%、端侧 AI 工作负载最高快 25%，电池续航最长 24 小时。新机支持 Wi-Fi 7 和蓝牙 6，可本地运行 LLM，10 月 28 日开启预购、11 月 6 日发售，起售价 $1,999（教育优惠 $1,899）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/o0okltd585bcx5lh6bkq53n59",
-      "pub_date": "2026-10-26",
-      "author": "noreply@aihot.news (Apple：Newsroom)",
-      "category": "AI 产品"
     }
   ]
 }
