@@ -304,6 +304,8 @@
     initSmoothScroll();
     initFaqAccordion();
     initHamburger();
+    initNavDropdowns();
+    initScrollTools();
     initFigureLightbox();
     await initResourceGating();
     await renderArticles(8);
@@ -367,11 +369,87 @@
     btn.addEventListener('click', () => {
       links.classList.toggle('open');
       btn.textContent = links.classList.contains('open') ? '✕' : '☰';
+      btn.setAttribute('aria-expanded', links.classList.contains('open') ? 'true' : 'false');
+      // 收起菜单时把展开着的下拉也一并关掉
+      links.querySelectorAll('.nav-item.open').forEach(el => el.classList.remove('open'));
     });
     links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
       links.classList.remove('open');
       btn.textContent = '☰';
+      btn.setAttribute('aria-expanded', 'false');
     }));
+  }
+
+  // ============ 导航下拉组 ============
+  // 桌面端靠 hover 展开（CSS），但触屏没有 hover，
+  // 所以按钮走 click —— 两边行为统一成 .nav-item.open。
+  function initNavDropdowns() {
+    const links = document.getElementById('nav-links');
+    if (!links) return;
+
+    links.querySelectorAll('.nav-drop-btn').forEach(btn => {
+      btn.setAttribute('aria-expanded', 'false');
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const item = btn.closest('.nav-item');
+        const wasOpen = item.classList.contains('open');
+        // 同一时间只开一个
+        links.querySelectorAll('.nav-item.open').forEach(el => {
+          el.classList.remove('open');
+          const b = el.querySelector('.nav-drop-btn');
+          if (b) b.setAttribute('aria-expanded', 'false');
+        });
+        if (!wasOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    // 点空白处收起
+    document.addEventListener('click', (e) => {
+      if (e.target.closest('.nav-item')) return;
+      links.querySelectorAll('.nav-item.open').forEach(el => {
+        el.classList.remove('open');
+        const b = el.querySelector('.nav-drop-btn');
+        if (b) b.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Esc 收起
+    document.addEventListener('keydown', (e) => {
+      if (e.key !== 'Escape') return;
+      links.querySelectorAll('.nav-item.open').forEach(el => {
+        el.classList.remove('open');
+        const b = el.querySelector('.nav-drop-btn');
+        if (b) b.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+
+  // ============ 阅读进度条 + 返回顶部 ============
+  function initScrollTools() {
+    const bar = document.getElementById('scroll-progress');
+    const top = document.getElementById('to-top');
+
+    function onScroll() {
+      const doc = document.documentElement;
+      const max = (doc.scrollHeight - window.innerHeight) || 1;
+      const pct = Math.min(100, Math.max(0, (window.scrollY / max) * 100));
+      if (bar) bar.style.width = pct + '%';
+      if (top) top.classList.toggle('show', window.scrollY > 420);
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    onScroll();
+
+    if (top) {
+      top.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
   }
 
   // 暴露给外部

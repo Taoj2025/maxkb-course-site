@@ -24,6 +24,9 @@ backend/dist/
 # 站点冗余镜像（GitHub Actions 会重新打包前端）
 site/
 
+# 布局体检截图（scripts/audit-layout.py 生成，本地看就行）
+.audit/
+
 # Python 缓存
 __pycache__/
 *.pyc

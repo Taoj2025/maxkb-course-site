@@ -28,38 +28,75 @@
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%235B2EBF'/><text x='50' y='68' text-anchor='middle' fill='white' font-size='46' font-weight='bold' font-family='sans-serif'>OD</text></svg>">
 </head>
-<body>
+<body class="has-statusbar has-mcta">
 
-<!-- ============ 顶部会员状态条 ============ -->
-<div id="top-status-bar" style="background: rgba(0,0,0,0.2); padding: 8px 32px; text-align: center; font-size: 13px; color: rgba(255,255,255,0.9);">
+<!-- site:statusbar -->
+<div id="top-status-bar" class="site-statusbar">
   <span id="status-text">💎 未登录 · 访问全部资源需会员</span>
-  <a href="membership.html" style="color: #FCD34D; text-decoration: none; margin-left: 12px; font-weight: 600;">👤 登录 / 注册</a>
+  <a href="membership.html">👤 登录 / 注册</a>
 </div>
+<!-- /site:statusbar -->
 
-<!-- ============ 顶部导航 ============ -->
-<nav class="navbar">
+<!-- site:nav -->
+<nav class="navbar" id="site-nav">
   <div class="nav-container">
-    <div class="nav-logo">
-      <div class="logo-dot">M</div>
+    <a class="nav-logo" href="index.html">
+      <span class="logo-dot">M</span>
       <span>MaxKB · FDE 教学</span>
-    </div>
-    <button class="hamburger" id="nav-hamburger" aria-label="菜单">☰</button>
+    </a>
+    <button class="hamburger" id="nav-hamburger" aria-label="展开菜单" aria-expanded="false">☰</button>
     <div class="nav-links" id="nav-links">
       <a href="index.html">首页</a>
-      <a href="syllabus.html">📚 课程大纲</a>
-      <a href="dl-course.html" style="color:#FCD34D; font-weight:700;">🧠 深度学习</a>
-      <a href="object-detection.html" class="active" style="color:#5CC8B0; font-weight:700;">🎯 目标检测</a>
+      <div class="nav-item has-drop">
+        <button class="nav-drop-btn" aria-haspopup="true" aria-expanded="false">课程体系 <span class="caret">▾</span></button>
+        <div class="nav-drop">
+          <a href="index.html#course"><b>课程总览</b><span>9 章体系一览</span></a>
+          <a href="syllabus.html"><b>完整课程大纲</b><span>章节详情 + 示例 Prompt</span></a>
+          <a href="index.html#practice"><b>6 步实操</b><span>从部署到嵌入全程</span></a>
+          <a href="index.html#scenarios"><b>5 大企业场景</b><span>客服 / 备课 / 文献 / 知识库 / 政务</span></a>
+        </div>
+      </div>
+      <div class="nav-item has-drop">
+        <button class="nav-drop-btn" aria-haspopup="true" aria-expanded="false">专题模块 <span class="caret">▾</span></button>
+        <div class="nav-drop">
+          <a href="dl-course.html"><b>深度学习专题</b><span>9 章讲解 + 7 大实验</span></a>
+          <a href="object-detection.html" class="active"><b>目标检测专题</b><span>30 篇论文精读 + 9 张架构图</span></a>
+          <a href="fde-skills.html"><b>FDE 技能图谱</b><span>能力矩阵与自评</span></a>
+          <a href="fde-jobs.html"><b>招聘需求</b><span>岗位画像与技能要求</span></a>
+        </div>
+      </div>
+      <div class="nav-item has-drop">
+        <button class="nav-drop-btn" aria-haspopup="true" aria-expanded="false">资源中心 <span class="caret">▾</span></button>
+        <div class="nav-drop">
+          <a href="index.html#news"><b>教学文章</b><span>持续更新的实战文章</span></a>
+          <a href="latest.html"><b>最新动态</b><span>AI 热点与课程更新</span></a>
+          <a href="index.html#download"><b>资料下载</b><span>PPT / 讲义 / 源码</span></a>
+          <a href="faq.html"><b>常见问题</b><span>学员最关心的问题</span></a>
+        </div>
+      </div>
       <a href="cases.html">客户案例</a>
-      <a href="latest.html" style="color:#EF4444; font-weight:700;">🔥 最新动态</a>
-      <a href="membership.html">💎 会员</a>
-      <a href="user.html">👤 个人中心</a>
-      <a href="enterprise.html" style="color:#F59E0B; font-weight:700;">🏢 企业服务</a>
-      <a href="about.html">关于</a>
-      <a href="trial.html" class="nav-cta">📅 预约演示</a>
+      <a href="membership.html">会员价格</a>
+      <a href="enterprise.html">企业服务</a>
+      <a href="about.html">关于我们</a>
+      <a href="trial.html" class="nav-cta">预约演示 →</a>
     </div>
   </div>
+  <div class="scroll-progress" id="scroll-progress"></div>
 </nav>
+<!-- /site:nav -->
 
+<!-- site:crumb -->
+<nav class="crumb" aria-label="面包屑">
+  <a href="index.html">首页</a>
+  <span class="sep">/</span>
+  <span class="cur">目标检测专题</span>
+</nav>
+<!-- /site:crumb -->
+
+
+
+<!-- ============ 顶部会员状态条 ============ -->
+<!-- ============ 顶部导航 ============ -->
 <!-- ============ Hero ============ -->
 <section class="od-hero">
   <div class="od-badge">🎯 目标检测专题 · arXiv 近三年文献精读</div>
@@ -1340,49 +1377,90 @@
   </div>
 </section>
 
-<footer class="footer">
-  <div class="footer-content">
-    <div class="footer-brand">
-      <div class="nav-logo"><div class="logo-dot">M</div><span>MaxKB · FDE 教学</span></div>
-      <p>开源企业级智能体平台教学课程 · 面向 AI 工程师的完整链路</p>
-    </div>
-    <div class="footer-col">
-      <h4>课程</h4>
-      <a href="syllabus.html">课程大纲</a>
-      <a href="dl-course.html">深度学习 SKC5053</a>
-      <a href="object-detection.html">目标检测专题</a>
-      <a href="cases.html">客户案例</a>
-    </div>
-    <div class="footer-col">
-      <h4>服务</h4>
-      <a href="membership.html">会员计划</a>
-      <a href="enterprise.html">企业服务</a>
-      <a href="trial.html">预约演示</a>
-      <a href="latest.html">最新动态</a>
-    </div>
-    <div class="footer-col">
-      <h4>关于</h4>
-      <a href="about.html">关于老师</a>
-      <a href="faq.html">常见问题</a>
-      <a href="user.html">个人中心</a>
-      <a href="index.html#contact">联系我们</a>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>© 2026 MaxKB FDE 教学 · 小陶老师 · 内容开源可商用 · 图像与文献数据取自 arXiv 官方 API</p>
-  </div>
-</footer>
-
 <!-- ============ 配图灯箱 ============ -->
 <div id="figure-lightbox" class="figure-lightbox" role="dialog" aria-modal="true" aria-label="配图放大查看">
   <button class="lb-close" type="button" aria-label="关闭">✕</button>
   <div style="text-align:center;">
-    <img src="" alt="">
+    <img alt="">
     <div class="lb-cap"></div>
   </div>
 </div>
 
+<script src="assets/js/config.js"></script>
+<script src="assets/js/membership.js"></script>
 <script src="assets/js/api.js"></script>
-<script src="assets/js/script.js"></script>
+<script src="assets/js/script.js" defer></script>
+<!-- site:footer -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-brand">
+      <div class="nav-logo">
+        <span class="logo-dot">M</span>
+        <span>MaxKB · FDE 教学</span>
+      </div>
+      <p>基于 1Panel-dev/MaxKB 的开源企业级智能体平台教学课程。理论 30% + 实操 50% + 场景 20% 三段式教学，配套课件、源码与部署文档。</p>
+      <div class="footer-contact">
+        <div>📧 邮箱：<a href="mailto:2949465671@qq.com">2949465671@qq.com</a></div>
+        <div>💬 微信：2949465671</div>
+        <div>🌐 开源项目：<a href="https://github.com/1Panel-dev/MaxKB" target="_blank" rel="noopener">1Panel-dev/MaxKB</a></div>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>课程</h4>
+      <a href="index.html#course">课程总览</a>
+      <a href="syllabus.html">完整课程大纲</a>
+      <a href="index.html#practice">6 步实操</a>
+      <a href="index.html#scenarios">5 大企业场景</a>
+      <a href="membership.html">会员价格与权益</a>
+    </div>
+    <div class="footer-col">
+      <h4>专题与资源</h4>
+      <a href="dl-course.html">深度学习专题</a>
+      <a href="object-detection.html">目标检测专题</a>
+      <a href="latest.html">最新动态</a>
+      <a href="index.html#news">教学文章</a>
+      <a href="index.html#download">资料下载</a>
+    </div>
+    <div class="footer-col">
+      <h4>支持与合作</h4>
+      <a href="enterprise.html">企业服务</a>
+      <a href="cases.html">客户案例</a>
+      <a href="trial.html">预约演示</a>
+      <a href="faq.html">常见问题</a>
+      <a href="about.html">关于小陶老师</a>
+    </div>
+  </div>
+  <div class="footer-trust">
+    <span class="ft-item">🛡 <b>7 天无理由退款</b></span>
+    <span class="ft-item">💬 <b>工作日 24h 答疑</b></span>
+    <span class="ft-item">🧾 <b>支持企业发票</b></span>
+    <span class="ft-item">🔓 <b>GPL v3 可商用</b></span>
+    <span class="ft-item">🔒 <b>数据本地存储</b></span>
+  </div>
+  <div class="footer-legal">
+    <span>© 2026 小陶老师 · 由 AI 小 Q 辅助设计 · 课程资料基于 GPL v3 开源</span>
+    <span class="dot">·</span>
+    <a href="faq.html">购买须知</a>
+    <span class="dot">·</span>
+    <a href="about.html">关于小陶老师</a>
+  </div>
+</footer>
+<!-- /site:footer -->
+
+<!-- site:mcta -->
+<div class="mcta">
+  <div class="mcta-info">
+    <div class="mcta-price">¥99 / 年起</div>
+    <div class="mcta-note">标准会员 · 7 天无理由退款</div>
+  </div>
+  <a href="membership.html" class="btn btn-primary">开通会员</a>
+  <a href="trial.html" class="btn btn-secondary">预约演示</a>
+</div>
+<!-- /site:mcta -->
+
+<!-- site:totop -->
+<button class="to-top" id="to-top" type="button" aria-label="返回顶部">↑</button>
+<!-- /site:totop -->
+
 </body>
 </html>
