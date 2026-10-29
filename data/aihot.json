@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-10-29T08:05:01.566092+08:00",
+  "updated_at": "2026-10-29T09:05:02.085915+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "OpenRouter 教程：用 LLM 从 PDF 中抽取表格",
+      "link": "https://aihot.news/items/l928e49lwysm0ymgmhyjrkc3z",
+      "summary": "OpenRouter 发布教程，讲解如何把 PDF 以文件形式连同严格 JSON schema 发给能读文件的模型，让表格以带类型的行返回，括号亏损、千分位和脚注标记等清理都写进字段描述。 🔗 阅读原文 via AIHOT · https://aihot.news/items/l928e49lwysm0ymgmhyjrkc3z",
+      "pub_date": "2026-10-29",
+      "author": "noreply@aihot.news (OpenRouter：Announcements)",
+      "category": "教程"
+    },
     {
       "title": "Anthropic 报告：Claude 研究模型在 Chrome、Safari、Android、Windows、Linux 发现漏洞并串联 5 条攻击链",
       "link": "https://aihot.news/items/jpt1eeuj2p1mgrxbufuv3ntdn",
@@ -393,14 +401,6 @@
       "summary": "Anthropic 生命科学团队宣布过去数月与 Generate Biomedicines、Divergence Labs、BigHat Biosciences、Enveda、The Column Group、Bristol Myers Squibb 六家机构开展药物研发合作，并已启动自有药物研发。 🔗 阅读原文 via AIHOT · https://aihot.news/items/czkv5svlodxelpz10tt5fpnk7",
       "pub_date": "2026-10-26",
       "author": "noreply@aihot.news (Anthropic：Research)",
-      "category": "行业动态"
-    },
-    {
-      "title": "Anthropic 扩大与 GSA 合作，政府机构购买 Claude 享 40% 折扣",
-      "link": "https://aihot.news/items/axminfteoiwhm9xm2txq1u2ok",
-      "summary": "Anthropic 与美国总务管理局（GSA）扩大合作，政府伙伴购买 Claude Enterprise、Claude for Government 和 Claude API 可享 40% 折扣，预计为政府节省 10 亿美元，且不设最低消费承诺。 🔗 阅读原文 via AIHOT · https://aihot.news/items/axminfteoiwhm9xm2txq1u2ok",
-      "pub_date": "2026-10-26",
-      "author": "noreply@aihot.news (Anthropic：Newsroom)",
       "category": "行业动态"
     }
   ]
