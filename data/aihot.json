@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-10-30T21:05:02.451481+08:00",
+  "updated_at": "2026-10-30T22:05:02.319802+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "The Verge 解读 Anthropic S-1 文件中的奇迹叙事与风险披露",
+      "link": "https://aihot.news/items/vyd3tzicoe478uo8njsr8zt2v",
+      "summary": "The Verge 分析 Anthropic 提交的 335 页 S-1 招股书，其中创始人信以带来奇迹时代为愿景，同时用 94 页风险因素警告模型可能对人类构成灾难性甚至生存风险。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vyd3tzicoe478uo8njsr8zt2v",
+      "pub_date": "2026-10-30",
+      "author": "noreply@aihot.news (The Verge：AI)",
+      "category": "行业动态"
+    },
     {
       "title": "Sierra 宣布 ARR 突破 4 亿美元，Q3 单季新增超 1.5 亿美元",
       "link": "https://aihot.news/items/hfhskyex3cjrs3huvpmi1z7bg",
@@ -12,9 +20,9 @@
       "category": "行业动态"
     },
     {
-      "title": "Epoch AI 实验：GLM 5.3 利用补丁间隙自主攻破多个 Firefox 版本",
+      "title": "Epoch AI 实验显示 GLM 5.3 可利用补丁窗口期自主攻击 Firefox",
       "link": "https://aihot.news/items/nxkr9ex5tfbhfhw1gvj9wsjuz",
-      "summary": "Epoch AI 实验发现，Z.ai 8 月发布的开源权重模型 GLM 5.3 能从 Mozilla 已发布但未推送的安全修复中逆向出漏洞，以约 $1,000 算力自主攻破 9 月 17 日至 10 月 26 日发布的全部六个 Firefox 版本，最快一次仅用 12 小时，攻击通过串联补丁间隙漏洞与未公开漏洞绕过保护。 🔗 阅读原文 via AIHOT · https://aihot.news/items/nxkr9ex5tfbhfhw1gvj9wsjuz",
+      "summary": "Epoch AI 实验发现，Z.ai 八月发布的开源权重模型 GLM 5.3 能利用 Mozilla 已发布但未推送给用户的安全补丁（patch gap），自主构建网页攻击，仅访问页面即可读取访客电脑文件，攻破 9 月 17 日至 10 月 26 日发布的全部六个 Firefox 版本。 🔗 阅读原文 via AIHOT · https://aihot.news/items/nxkr9ex5tfbhfhw1gvj9wsjuz",
       "pub_date": "2026-10-30",
       "author": "noreply@aihot.news (Epoch AI：Gradient Updates)",
       "category": "论文"
@@ -394,14 +402,6 @@
       "pub_date": "2026-10-28",
       "author": "noreply@aihot.news (Addy Osmani)",
       "category": "教程"
-    },
-    {
-      "title": "Anthropic IPO 最大赢家或为 Amazon 而非 VC",
-      "link": "https://aihot.news/items/b61d349yqp5mt029fsa0ytbv9",
-      "summary": "TechCrunch 根据 Anthropic 的 S-1 分析，VC 持股均不足 5%，而 Amazon 可能是 IPO 最大财务受益方。Amazon 持有 62 亿美元本金可转债、其自估持仓价值 979 亿美元，另投 100 亿美元无投票权优先股，累计投资约 180 亿美元；Anthropic 还承诺未来 10 年在 AWS 至少消费 1100 亿美元。 🔗 阅读原文 via AIHOT · https://aihot.news/items/b61d349yqp5mt029fsa0ytbv9",
-      "pub_date": "2026-10-28",
-      "author": "noreply@aihot.news (TechCrunch：AI)",
-      "category": "行业动态"
     }
   ]
 }
