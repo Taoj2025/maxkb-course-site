@@ -374,5 +374,77 @@
     "source": "AI 重写 · 掘金",
     "file": "13320-ai-agent.md",
     "estimated_read_time": "3 分钟"
+  },
+  {
+    "id": 13321,
+    "title": "The bridge to agent-scale Git infrastructure",
+    "slug": "13321-the-bridge-to-agent-scale-git-infrastruc",
+    "summary": "# 从 GitHub 到 Azure：理解大规模 Git 基础设施迁移 亲爱的同学们和老师们， 今天我们来聊聊一个非常有趣且具有挑战性的技术话题——如何将 GitHub 上几乎所有的代码仓库迁移到微软的 Azure 云平台。作为大数据专业的学生和教师，这不仅是一个了解前沿技术的机会，也是我们学习分布",
+    "category": "最新动态",
+    "tags": [
+      "FDE",
+      "AI 资讯",
+      "前端部署"
+    ],
+    "color": "blue",
+    "date": "2026-10-30",
+    "author": "小Q",
+    "source": "AI 重写 · GitHub Blog",
+    "file": "13321-the-bridge-to-agent-scale-git-infrastruc.md",
+    "estimated_read_time": "2 分钟"
+  },
+  {
+    "id": 13322,
+    "title": "Introducing full transaction detection for Cloudflare WAF",
+    "slug": "13322-introducing-full-transaction-detection-f",
+    "summary": "# 深入浅出：Cloudflare WAF 的全交易检测功能 亲爱的同学们和老师们， 今天我们来聊一聊 Cloudflare 的 Web 应用防火墙（WAF）最近推出的一个重要功能——**全交易检测**。这个功能听起来可能有点复杂，但其实它就像是我们上网时的“安全卫士”，帮助我们更好地保护网站和应用",
+    "category": "最新动态",
+    "tags": [
+      "FDE",
+      "AI 资讯",
+      "前端部署"
+    ],
+    "color": "green",
+    "date": "2026-10-30",
+    "author": "小Q",
+    "source": "AI 重写 · Cloudflare",
+    "file": "13322-introducing-full-transaction-detection-f.md",
+    "estimated_read_time": "2 分钟"
+  },
+  {
+    "id": 13323,
+    "title": "Cloudflare deploys protections against php2shell vulnerability",
+    "slug": "13323-cloudflare-deploys-protections-against-p",
+    "summary": "# 前端部署开发工程师 (FDE) 教学：理解 Cloudflare 对 php2shell 漏洞的保护 ## 教学场景说明 亲爱的同学们和老师们，今天我们来聊聊一个非常实际的前端安全问题，以及如何利用 Cloudflare 的 Web 应用防火墙 (WAF) 来保护我们的网站。作为大数据专业的学生",
+    "category": "最新动态",
+    "tags": [
+      "FDE",
+      "AI 资讯",
+      "前端部署"
+    ],
+    "color": "orange",
+    "date": "2026-10-30",
+    "author": "小Q",
+    "source": "AI 重写 · Cloudflare",
+    "file": "13323-cloudflare-deploys-protections-against-p.md",
+    "estimated_read_time": "2 分钟"
+  },
+  {
+    "id": 13324,
+    "title": "How Commerce.com and Cloudflare are getting storefronts ready for AI agents",
+    "slug": "13324-how-commerce-com-and-cloudflare-are-gett",
+    "summary": "### 如何将电子商务网站与 AI 代理对接：面向高校的教学指南 亲爱的同学们和老师们， 今天，我们将探讨一个非常有趣且实用的主题：**如何将电子商务网站与 AI 代理对接**，这对于前端部署开发工程师（FDE）来说是一个重要的技能。这篇文章将基于 Cloudflare 的实际案例，用通俗易懂的语言",
+    "category": "最新动态",
+    "tags": [
+      "FDE",
+      "AI 资讯",
+      "前端部署"
+    ],
+    "color": "red",
+    "date": "2026-10-30",
+    "author": "小Q",
+    "source": "AI 重写 · Cloudflare",
+    "file": "13324-how-commerce-com-and-cloudflare-are-gett.md",
+    "estimated_read_time": "2 分钟"
   }
 ]
