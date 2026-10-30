@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-10-31T01:05:02.231430+08:00",
-  "total": 22,
+  "updated_at": "2026-10-31T02:05:01.821681+08:00",
+  "total": 23,
   "items": [
     {
       "title": "Cursor 披露 Claude Code VS Code 扩展被植入恶意软件事件，最多影响 5000 用户",
@@ -44,6 +44,14 @@
       "category": "AI 产品"
     },
     {
+      "title": "OpenAI 详解如何监控前沿模型的失对齐行为",
+      "link": "https://aihot.news/items/e234ewhx82g2zh3z2bgcjxx7d",
+      "summary": "OpenAI 在 Alignment 博客介绍其针对前沿模型（如 GPT-6 Astra）的多层失对齐监控系统，覆盖训练、评估、内部使用和部分外部部署。 🔗 阅读原文 via AIHOT · https://aihot.news/items/e234ewhx82g2zh3z2bgcjxx7d",
+      "pub_date": "2026-10-29",
+      "author": "noreply@aihot.news (OpenAI：Alignment 研究博客)",
+      "category": "论文"
+    },
+    {
       "title": "Wiz 分析智能体攻击的七大指纹与发展趋势",
       "link": "https://aihot.news/items/mdcygre4ettjdbca7sq6vu7zx",
       "summary": "Wiz 基于自身事件响应与公开披露案例，分析 AI 智能体参与真实入侵的现状与趋势，涉及 ARTEX、Hermes 等框架及韩国金融机构（约 67,000 人信息外泄）、泰国财政部、ConnectWise 供应链（尝试攻击超 2,250 个租户）等案例。 🔗 阅读原文 via AIHOT · https://aihot.news/items/mdcygre4ettjdbca7sq6vu7zx",
@@ -66,14 +74,6 @@
       "pub_date": "2026-10-29",
       "author": "noreply@aihot.news (Cursor Blog)",
       "category": "行业动态"
-    },
-    {
-      "title": "OpenAI 详解如何检测前沿模型失准行为",
-      "link": "https://aihot.news/items/ck2bk0ns12i2hkg4ae0eoeabv",
-      "summary": "OpenAI 发布长文，详解其针对前沿模型失准行为的多层监测系统，包括激活探针、基于模型的审查、调查智能体和自动化调查四层架构，并对 GPT‑6 Astra 及以上模型的全部 RL 运行、评估和内部 Codex 流量进行监测。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ck2bk0ns12i2hkg4ae0eoeabv",
-      "pub_date": "2026-10-29",
-      "author": "noreply@aihot.news (OpenAI：官网动态)",
-      "category": "论文"
     },
     {
       "title": "Addy Osmani 谈你可能对 Claude 过度提示了",
@@ -178,6 +178,14 @@
       "pub_date": "2026-10-28",
       "author": "noreply@aihot.news (The Decoder：AI News)",
       "category": "行业动态"
+    },
+    {
+      "title": "Addy Osmani 讲解如何上手 Claude Code Mods",
+      "link": "https://aihot.news/items/tw5fe5mj6a2zyp6ica2ec3qpb",
+      "summary": "Addy Osmani 发布 Claude Code Mods 上手指南，说明 mods 是运行在会话中的 JavaScript/TypeScript 文件，可通过 hooks 观察事件、改写行为或渲染自定义界面。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tw5fe5mj6a2zyp6ica2ec3qpb",
+      "pub_date": "2026-10-28",
+      "author": "noreply@aihot.news (Addy Osmani)",
+      "category": "教程"
     }
   ]
 }
