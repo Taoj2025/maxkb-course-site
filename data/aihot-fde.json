@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-10-30T15:05:02.409581+08:00",
-  "total": 23,
+  "updated_at": "2026-10-30T16:05:01.492125+08:00",
+  "total": 24,
   "items": [
+    {
+      "title": "Cursor 披露 Claude Code VS Code 扩展被植入恶意软件事件，最多影响 5000 用户",
+      "link": "https://aihot.news/items/iu7xvjx1c2c5wqrpn0rwfxcb5",
+      "summary": "Cursor 发现通过其 IDE 扩展市场分发的 Claude Code VS Code 扩展被修改并植入恶意软件，最多影响 5000 用户，恶意版本并非 Anthropic 开发。Cursor 已于当日下午下线扩展市场，与相关提供方合作清除恶意软件并确认无进一步风险后重新上线，建议受影响用户参考博客说明排查，并升级到 Claude Code for VS Code 2.1.314。 🔗 阅读原文 via AIHOT · https://aihot.news/items/iu7xvjx1c2c5wqrpn0rwfxcb5",
+      "pub_date": "2026-10-30",
+      "author": "noreply@aihot.news (Cursor)",
+      "category": "行业动态"
+    },
     {
       "title": "Kimi 官方教程：如何用 Kimi K3.1 Pro 创作 3D 作品",
       "link": "https://aihot.news/items/ykvaq4vx3ydt23josezzan62r",
@@ -50,6 +58,14 @@
       "pub_date": "2026-10-29",
       "author": "noreply@aihot.news (Unsloth)",
       "category": "AI 产品"
+    },
+    {
+      "title": "Cursor 扩展市场发现恶意版 Anthropic.claude-code 2.1.313，最多 4100 名用户受影响",
+      "link": "https://aihot.news/items/pg7avew3q9ekdp3ydzhiuh9y4",
+      "summary": "Cursor 官方披露，其 VS Code 扩展市场中的 Anthropic.claude-code 2.1.313 为恶意篡改版本，并非 Anthropic 开发，在 10 月 29 日 2:27am PT 至 1:35pm PT 期间上架，最多影响 4100 名用户。 🔗 阅读原文 via AIHOT · https://aihot.news/items/pg7avew3q9ekdp3ydzhiuh9y4",
+      "pub_date": "2026-10-29",
+      "author": "noreply@aihot.news (Cursor Blog)",
+      "category": "行业动态"
     },
     {
       "title": "OpenAI 详解如何检测前沿模型失准行为",
@@ -178,14 +194,6 @@
       "pub_date": "2026-10-28",
       "author": "noreply@aihot.news (OpenRouter：Announcements)",
       "category": "教程"
-    },
-    {
-      "title": "Axiom 智能体集群用 24 天完成有限单群分类定理的机器验证",
-      "link": "https://aihot.news/items/o5s4s2z9njz29hgd7im06gzrf",
-      "summary": "作者称 Verified AI 迎来标志性月份，Axiom 的 AI 智能体集群用 24 天完成数学史上最长证明的验证，将跨越 500 多篇论文的 15,000 页有限单群分类定理（CFSG）转化为 3800 万行以上机器验证代码，并发现已发表记录中的 34 处严重出入。引用内容补充称该形式化证明可能是最大的开源项目之一，图中显示 Axiom CFSG 达 43.0M 行，约每 37 天翻倍。 🔗 阅读原文 via AIHOT · https://aihot.news/items/o5s4s2z9njz29hgd7im06gzrf",
-      "pub_date": "2026-10-27",
-      "author": "noreply@aihot.news (Rohan Paul)",
-      "category": "行业动态"
     }
   ]
 }
