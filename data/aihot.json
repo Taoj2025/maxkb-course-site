@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-10-31T00:05:02.164036+08:00",
+  "updated_at": "2026-10-31T01:05:02.230487+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "美国司法部首次大规模打击“幽灵学生”，诈骗者用 AI 修完课程骗取学生贷款",
+      "link": "https://aihot.news/items/u9ifkzv8bo6rtf3xf87jylg6s",
+      "summary": "美国司法部起诉五人，启动首次针对“幽灵学生”的大规模联邦打击，诈骗者窃取美国公民身份冒充大学生骗取学生贷款，并已从关联肯尼亚人的网络没收超过 75 万美元加密货币。 🔗 阅读原文 via AIHOT · https://aihot.news/items/u9ifkzv8bo6rtf3xf87jylg6s",
+      "pub_date": "2026-10-30",
+      "author": "noreply@aihot.news (Ars Technica：AI)",
+      "category": "行业动态"
+    },
     {
       "title": "The Verge 解读 Anthropic S-1 文件中的奇迹叙事与风险披露",
       "link": "https://aihot.news/items/vyd3tzicoe478uo8njsr8zt2v",
@@ -394,14 +402,6 @@
       "pub_date": "2026-10-28",
       "author": "noreply@aihot.news (Hacker News：AI 热帖)",
       "category": "论文"
-    },
-    {
-      "title": "Addy Osmani 讲解如何上手 Claude Code Mods",
-      "link": "https://aihot.news/items/tw5fe5mj6a2zyp6ica2ec3qpb",
-      "summary": "Addy Osmani 发布 Claude Code Mods 上手指南，说明 mods 是运行在会话中的 JavaScript/TypeScript 文件，可通过 hooks 观察事件、改写行为或渲染自定义界面。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tw5fe5mj6a2zyp6ica2ec3qpb",
-      "pub_date": "2026-10-28",
-      "author": "noreply@aihot.news (Addy Osmani)",
-      "category": "教程"
     }
   ]
 }
