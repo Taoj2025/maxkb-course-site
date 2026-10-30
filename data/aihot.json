@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-10-30T13:05:02.130126+08:00",
+  "updated_at": "2026-10-30T14:05:02.328567+08:00",
   "total": 50,
   "items": [
     {
@@ -33,6 +33,14 @@
       "summary": "亚马逊财报电话会上，CEO Andy Jassy 重申 AWS 可在未来五到十年成为万亿美元年营收业务，预计 2026 年现金资本开支约 2200 亿美元，其中大部分投向 AWS，2027 年还将大幅增加。AWS 当季营收同比增长 39%，年化营收运行率达 1840 亿美元，Jassy 预测 2027 和 2028 年增速均可超 40%；财报后盘后交易中亚马逊股价下跌约 6%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fxmexzrmo7pw52vc5j6ej17kl",
       "pub_date": "2026-10-29",
       "author": "noreply@aihot.news (TechCrunch：AI)",
+      "category": "行业动态"
+    },
+    {
+      "title": "Google 市值蒸发 5000 亿美元，AI 概要冲击搜索广告引发华尔街担忧",
+      "link": "https://aihot.news/items/puushryi79v0flh2um3a70xnw",
+      "summary": "Alphabet 因 AI 搜索概要影响广告收入，单日市值从 3.97 万亿跌至 3.46 万亿美元，缩水超 5000 亿美元。该季度总营收增 25% 至 1276 亿美元，云业务营收增 103% 至近 310 亿美元，但利润下降 25%，自由现金流为负超 90 亿美元。 🔗 阅读原文 via AIHOT · https://aihot.news/items/puushryi79v0flh2um3a70xnw",
+      "pub_date": "2026-10-29",
+      "author": "noreply@aihot.news (Hacker News：AI 热帖)",
       "category": "行业动态"
     },
     {
@@ -394,14 +402,6 @@
       "pub_date": "2026-10-27",
       "author": "noreply@aihot.news (Rohan Paul)",
       "category": "行业动态"
-    },
-    {
-      "title": "Gemini 集成 Google SynthID 检测，可识别图片、视频和音频是否为 Google AI 生成",
-      "link": "https://aihot.news/items/t13kjmoalf8m0luymjchvrysk",
-      "summary": "Google Gemini 宣布集成 SynthID 检测功能，用户只需在 Gemini 中询问“Is this AI generated?”，即可检查图片、视频或音频文件是否由 Google AI 生成。官方称此举帮助用户更有信心地浏览网络内容。 🔗 阅读原文 via AIHOT · https://aihot.news/items/t13kjmoalf8m0luymjchvrysk",
-      "pub_date": "2026-10-27",
-      "author": "noreply@aihot.news (Gemini)",
-      "category": "AI 产品"
     }
   ]
 }
