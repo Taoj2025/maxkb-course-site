@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-10-31T05:05:02.058747+08:00",
+  "updated_at": "2026-10-31T06:05:01.987358+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "科技巨头 AI 资本开支超 7400 亿美元，投资者担忧升温引发市场下跌",
+      "link": "https://aihot.news/items/fxxkgtzpf2pb8xjnhu4jtis0b",
+      "summary": "Alphabet、Amazon、Meta、Microsoft 今年计划资本开支合计超 7400 亿美元，投资者情绪从奖励大额投入转向担忧负自由现金流、债务攀升与回报不确定。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fxxkgtzpf2pb8xjnhu4jtis0b",
+      "pub_date": "2026-10-30",
+      "author": "noreply@aihot.news (TechCrunch：AI)",
+      "category": "行业动态"
+    },
     {
       "title": "Project Suncatcher 在轨道卫星上运行 TPU，Gemma 模型首次在太空完成推理并回传回应",
       "link": "https://aihot.news/items/cms82puwtmpssdpbjmajoopr9",
@@ -194,14 +202,6 @@
       "pub_date": "2026-10-29",
       "author": "noreply@aihot.news (Unsloth)",
       "category": "AI 产品"
-    },
-    {
-      "title": "404 Media 起底 Proton 内部 AI 转型之争：CEO Andy Yen 强推 AI 引发恐惧文化",
-      "link": "https://aihot.news/items/x7qd347blfo2409za7srbypzw",
-      "summary": "404 Media 采访九名现任与离职 Proton 员工并查阅内部文件，报道 CEO Andy Yen 强推 AI 转型引发的内部冲突。10 月公司 90% 代码由 AI 编写，多使用 Anthropic 的 Claude；Yen 称今年是最后一年招聘工程师，并宣布将以可能决定去留的重新面试评估员工 AI 使用情况。 🔗 阅读原文 via AIHOT · https://aihot.news/items/x7qd347blfo2409za7srbypzw",
-      "pub_date": "2026-10-29",
-      "author": "noreply@aihot.news (404 Media)",
-      "category": "行业动态"
     },
     {
       "title": "SemiAnalysis 分析师解读 Anthropic S-1 招股书背后的 AI 经济账",
