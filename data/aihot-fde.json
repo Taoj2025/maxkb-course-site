@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-10-30T20:05:01.528974+08:00",
-  "total": 24,
+  "updated_at": "2026-10-30T21:05:02.452382+08:00",
+  "total": 23,
   "items": [
     {
       "title": "Cursor 披露 Claude Code VS Code 扩展被植入恶意软件事件，最多影响 5000 用户",
@@ -185,14 +185,6 @@
       "summary": "Addy Osmani 发布 Claude Code Mods 上手指南，说明 mods 是运行在会话中的 JavaScript/TypeScript 文件，可通过 hooks 观察事件、改写行为或渲染自定义界面。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tw5fe5mj6a2zyp6ica2ec3qpb",
       "pub_date": "2026-10-28",
       "author": "noreply@aihot.news (Addy Osmani)",
-      "category": "教程"
-    },
-    {
-      "title": "Claude Code 触发用量上限后如何用 OpenRouter 继续编码",
-      "link": "https://aihot.news/items/wgss1ksoafvu62x799sdfs0fo",
-      "summary": "OpenRouter 介绍 Claude Code 触发用量上限时改用 OpenRouter API key 继续编码的方法：设置三个环境变量或用 Ori Harness 的 ori claude 命令，即可按 token 付费使用同样的 Claude 模型，没有五小时和每周限制。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wgss1ksoafvu62x799sdfs0fo",
-      "pub_date": "2026-10-28",
-      "author": "noreply@aihot.news (OpenRouter：Announcements)",
       "category": "教程"
     }
   ]

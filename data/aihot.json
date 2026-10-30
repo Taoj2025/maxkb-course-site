@@ -1,8 +1,24 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-10-30T20:05:01.528034+08:00",
+  "updated_at": "2026-10-30T21:05:02.451481+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Sierra 宣布 ARR 突破 4 亿美元，Q3 单季新增超 1.5 亿美元",
+      "link": "https://aihot.news/items/hfhskyex3cjrs3huvpmi1z7bg",
+      "summary": "Sierra 宣布本周 ARR 突破 4 亿美元，Q3 单季新增超 1.5 亿美元，从 2 亿到 4 亿仅用五个月，快于此前六个月的翻倍节奏。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hfhskyex3cjrs3huvpmi1z7bg",
+      "pub_date": "2026-10-30",
+      "author": "noreply@aihot.news (Sierra：Blog)",
+      "category": "行业动态"
+    },
+    {
+      "title": "Epoch AI 实验：GLM 5.3 利用补丁间隙自主攻破多个 Firefox 版本",
+      "link": "https://aihot.news/items/nxkr9ex5tfbhfhw1gvj9wsjuz",
+      "summary": "Epoch AI 实验发现，Z.ai 8 月发布的开源权重模型 GLM 5.3 能从 Mozilla 已发布但未推送的安全修复中逆向出漏洞，以约 $1,000 算力自主攻破 9 月 17 日至 10 月 26 日发布的全部六个 Firefox 版本，最快一次仅用 12 小时，攻击通过串联补丁间隙漏洞与未公开漏洞绕过保护。 🔗 阅读原文 via AIHOT · https://aihot.news/items/nxkr9ex5tfbhfhw1gvj9wsjuz",
+      "pub_date": "2026-10-30",
+      "author": "noreply@aihot.news (Epoch AI：Gradient Updates)",
+      "category": "论文"
+    },
     {
       "title": "Cursor 披露 Claude Code VS Code 扩展被植入恶意软件事件，最多影响 5000 用户",
       "link": "https://aihot.news/items/iu7xvjx1c2c5wqrpn0rwfxcb5",
@@ -26,6 +42,14 @@
       "pub_date": "2026-10-30",
       "author": "noreply@aihot.news (Platformer)",
       "category": "行业动态"
+    },
+    {
+      "title": "Gemini API 的 Computer Use 工具正式开放（GA）",
+      "link": "https://aihot.news/items/qit1hgequ8pknedqqvuei5wfh",
+      "summary": "Google 于 10 月 30 日宣布 Gemini API 的 Computer Use 工具正式可用（GA），覆盖 Interactions 和 GenerateContent 两套 API。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qit1hgequ8pknedqqvuei5wfh",
+      "pub_date": "2026-10-30",
+      "author": "noreply@aihot.news (Gemini API：更新日志)",
+      "category": "AI 产品"
     },
     {
       "title": "OpenRouter 实测 Claude Opus vs Sonnet vs Haiku 5.5 该选哪个",
@@ -378,30 +402,6 @@
       "pub_date": "2026-10-28",
       "author": "noreply@aihot.news (TechCrunch：AI)",
       "category": "行业动态"
-    },
-    {
-      "title": "Google 发布世界模型 Genie 4，支持实时操控与原生音频",
-      "link": "https://aihot.news/items/ku284awvyj7i3dt4j7oflb78m",
-      "summary": "Google 发布下一代世界模型 Genie 4，相比 Genie 3 在照片级真实感、物体碰撞等物理模拟上有明显进步。用户可用 WASD 和双摇杆实时控制角色或镜头，运行中可用自然语言修改天气和加入物体，模型还能同步生成环境音与人物实时对话。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ku284awvyj7i3dt4j7oflb78m",
-      "pub_date": "2026-10-28",
-      "author": "noreply@aihot.news (公众号：数字生命卡兹克)",
-      "category": "AI 模型"
-    },
-    {
-      "title": "Claude Code 触发用量上限后如何用 OpenRouter 继续编码",
-      "link": "https://aihot.news/items/wgss1ksoafvu62x799sdfs0fo",
-      "summary": "OpenRouter 介绍 Claude Code 触发用量上限时改用 OpenRouter API key 继续编码的方法：设置三个环境变量或用 Ori Harness 的 ori claude 命令，即可按 token 付费使用同样的 Claude 模型，没有五小时和每周限制。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wgss1ksoafvu62x799sdfs0fo",
-      "pub_date": "2026-10-28",
-      "author": "noreply@aihot.news (OpenRouter：Announcements)",
-      "category": "教程"
-    },
-    {
-      "title": "OpenRouter 重建默认路由算法：TTFT 降 16.9%、429 错误减少 67%",
-      "link": "https://aihot.news/items/l4znfnzfs6rz6vorl1wyj90gb",
-      "summary": "OpenRouter 宣布重建默认 provider 路由算法，从只按价格排序改为按 Routing Cost 综合 effective price、TTFT、吞吐、错误率和输出质量选路。 🔗 阅读原文 via AIHOT · https://aihot.news/items/l4znfnzfs6rz6vorl1wyj90gb",
-      "pub_date": "2026-10-28",
-      "author": "noreply@aihot.news (OpenRouter：Announcements)",
-      "category": "AI 产品"
     }
   ]
 }
