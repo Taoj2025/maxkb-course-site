@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-10-31T06:05:01.987358+08:00",
+  "updated_at": "2026-10-31T07:05:01.713003+08:00",
   "total": 50,
   "items": [
     {
@@ -98,6 +98,14 @@
       "pub_date": "2026-10-30",
       "author": "noreply@aihot.news (Gemini API：更新日志)",
       "category": "AI 产品"
+    },
+    {
+      "title": "OpenAI 汇编各方法庭之友意见，主张 AI 训练应适用合理使用原则",
+      "link": "https://aihot.news/items/oas684tt9kpeds9cq7vgjvo1x",
+      "summary": "OpenAI 整理了在《纽约时报》诉讼中提交给法院的多份支持合理使用的法庭之友意见摘要，作者包括图书馆协会、法律学者、独立创作者和美国政府等。各意见书主张 AI 训练具有转换性、不构成版权法认可的市场损害，并警告限缩合理使用将阻碍科研进展与美国经济繁荣；完整文件可在法院公开卷宗查阅。 🔗 阅读原文 via AIHOT · https://aihot.news/items/oas684tt9kpeds9cq7vgjvo1x",
+      "pub_date": "2026-10-30",
+      "author": "noreply@aihot.news (OpenAI：官网动态)",
+      "category": "行业动态"
     },
     {
       "title": "OpenRouter 实测 Claude Opus vs Sonnet vs Haiku 5.5 该选哪个",
@@ -394,14 +402,6 @@
       "pub_date": "2026-10-28",
       "author": "noreply@aihot.news (The Decoder：AI News)",
       "category": "行业动态"
-    },
-    {
-      "title": "OpenAI 员工撰文探讨 AI 进入企业组织架构的三种方式",
-      "link": "https://aihot.news/items/neprl0bcwv1mo2pd4dk1lvpjr",
-      "summary": "OpenAI 员工 Hemanth Asirvatham 和 Elliott Mokski 发表下一篇经济系列文章，探讨 AI 进入企业组织架构的三种情形：在每位员工之下形成 AI 劳动力 basement、作为同事穿插在现有组织图中、以及夹在人类之间充当协调层。 🔗 阅读原文 via AIHOT · https://aihot.news/items/neprl0bcwv1mo2pd4dk1lvpjr",
-      "pub_date": "2026-10-28",
-      "author": "noreply@aihot.news (OpenAI：官网动态)",
-      "category": "观点"
     }
   ]
 }
