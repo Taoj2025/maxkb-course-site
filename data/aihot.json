@@ -1,14 +1,38 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-10-31T02:05:01.820408+08:00",
+  "updated_at": "2026-10-31T03:05:02.414025+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Project Suncatcher 在轨道卫星上运行 TPU，Gemma 模型首次在太空完成推理并回传回应",
+      "link": "https://aihot.news/items/cms82puwtmpssdpbjmajoopr9",
+      "summary": "Philipp Schmid 转引 Sundar Pichai 的消息：Google Project Suncatcher 在数周前发射原型卫星后，成功向轨道发送指令、启动 TPU、运行提示词，并在地面收到了首个完整回应（一首 haiku），作者称 Gemma 4 成为首个在太空运行的大语言模型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cms82puwtmpssdpbjmajoopr9",
+      "pub_date": "2026-10-30",
+      "author": "noreply@aihot.news (Philipp Schmid)",
+      "category": "行业动态"
+    },
+    {
+      "title": "Anthropic 将 Claude Max 套餐更名为 Max 与 Ultra，Ultra 认证账号取消 5 小时限制",
+      "link": "https://aihot.news/items/pd3dehdyyhzkyrjsw4b6bmcyj",
+      "summary": "Anthropic 将 Claude 订阅套餐更名：Max 5x 改为 Max，Max 20x 改为 Ultra，价格不变（Max 100 美元/月、Ultra 200 美元/月）。即日起多数老订阅者的认证 Ultra 账号取消 5 小时限制，新账号保留临时限制以防欺诈滥用，周限额不变。 🔗 阅读原文 via AIHOT · https://aihot.news/items/pd3dehdyyhzkyrjsw4b6bmcyj",
+      "pub_date": "2026-10-30",
+      "author": "noreply@aihot.news (Ado Kukic)",
+      "category": "AI 产品"
+    },
     {
       "title": "Reddit CEO 称 Google AI Mode 不为任何人带来流量，Reddit 每周流失超百万搜索访问",
       "link": "https://aihot.news/items/v4uwaucyf64u7bkzsyvri08w4",
       "summary": "Reddit CEO Steve Huffman 表示 10 月 Reddit 每周流失超过 100 万来自 Google 搜索的访问，股价在业绩强劲的情况下仍下跌超 25%。他称 AI Mode 不会带来流量，Reddit 正在美国以外测试登录墙以遏制抓取，并与 AI 提供商继续数据授权谈判。 🔗 阅读原文 via AIHOT · https://aihot.news/items/v4uwaucyf64u7bkzsyvri08w4",
       "pub_date": "2026-10-30",
       "author": "noreply@aihot.news (The Decoder：AI News)",
+      "category": "行业动态"
+    },
+    {
+      "title": "AI 支出担忧引发美股科技股连日下跌，Intel 盘中跌逾 30%",
+      "link": "https://aihot.news/items/l7y0gkoqx56dt6jxv6x0mcl0h",
+      "summary": "BBC 报道称，因担忧企业对 AI 的巨额投资回报，美股科技股连续第二日大跌。 🔗 阅读原文 via AIHOT · https://aihot.news/items/l7y0gkoqx56dt6jxv6x0mcl0h",
+      "pub_date": "2026-10-30",
+      "author": "noreply@aihot.news (Hacker News：AI 热帖)",
       "category": "行业动态"
     },
     {
@@ -204,9 +228,9 @@
       "category": "行业动态"
     },
     {
-      "title": "Cursor 扩展市场发现恶意版 Anthropic.claude-code 2.1.313，最多 4100 名用户受影响",
+      "title": "Cursor 通报 VS Code 扩展市场出现恶意 Anthropic.claude-code 2.1.313 版本",
       "link": "https://aihot.news/items/pg7avew3q9ekdp3ydzhiuh9y4",
-      "summary": "Cursor 官方披露，其 VS Code 扩展市场中的 Anthropic.claude-code 2.1.313 为恶意篡改版本，并非 Anthropic 开发，在 10 月 29 日 2:27am PT 至 1:35pm PT 期间上架，最多影响 4100 名用户。 🔗 阅读原文 via AIHOT · https://aihot.news/items/pg7avew3q9ekdp3ydzhiuh9y4",
+      "summary": "Cursor 通报其 VS Code 扩展市场出现恶意修改的 Anthropic.claude-code 2.1.313 版本，非 Anthropic 官方开发，最多影响 4100 名用户。 🔗 阅读原文 via AIHOT · https://aihot.news/items/pg7avew3q9ekdp3ydzhiuh9y4",
       "pub_date": "2026-10-29",
       "author": "noreply@aihot.news (Cursor Blog)",
       "category": "行业动态"
@@ -378,30 +402,6 @@
       "pub_date": "2026-10-28",
       "author": "noreply@aihot.news (OpenAI：官网动态)",
       "category": "观点"
-    },
-    {
-      "title": "Anthropic S-1 显示 90% 增量毛利，SemiAnalysis 播客详解其中数字",
-      "link": "https://aihot.news/items/gxwqce1swocfo9bp3dgqy3dnj",
-      "summary": "Saito 转述 SemiAnalysis 播客对 Anthropic S-1 的解读：招股书口径为增量毛利 90%、推理毛利 85%、连续两个季度盈利，Q1 净收入留存达 500%，收入同比涨 1368% 而算力费用只涨 300%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gxwqce1swocfo9bp3dgqy3dnj",
-      "pub_date": "2026-10-28",
-      "author": "noreply@aihot.news (Saito 硬地骇客)",
-      "category": "行业动态"
-    },
-    {
-      "title": "Trakkr 研究：追踪 1285 条 AI 引用统计的溯源路径",
-      "link": "https://aihot.news/items/dmi67weoeety92021tvuyf1hs",
-      "summary": "Trakkr Research 向 ChatGPT、Perplexity、Gemini、Claude 和 Google AI Overviews 提出 200 个要求数字的问题，并追踪其中 1285 条统计的引用链路，结果只有 40% 到达说法一致的研究，8% 到达但数字或语境已变，40% 无法核查，11% 无处可溯。 🔗 阅读原文 via AIHOT · https://aihot.news/items/dmi67weoeety92021tvuyf1hs",
-      "pub_date": "2026-10-28",
-      "author": "noreply@aihot.news (Hacker News：AI 热帖)",
-      "category": "论文"
-    },
-    {
-      "title": "Addy Osmani 讲解如何上手 Claude Code Mods",
-      "link": "https://aihot.news/items/tw5fe5mj6a2zyp6ica2ec3qpb",
-      "summary": "Addy Osmani 发布 Claude Code Mods 上手指南，说明 mods 是运行在会话中的 JavaScript/TypeScript 文件，可通过 hooks 观察事件、改写行为或渲染自定义界面。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tw5fe5mj6a2zyp6ica2ec3qpb",
-      "pub_date": "2026-10-28",
-      "author": "noreply@aihot.news (Addy Osmani)",
-      "category": "教程"
     }
   ]
 }
