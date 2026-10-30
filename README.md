@@ -85,6 +85,49 @@ python scripts/audit-layout.py        # 加 --shots 会输出截图到 .audit/
 
 ---
 
+## 📊 FDE 招聘数据实时刷新
+
+`fde-jobs.html` 的内容不是写死的，都是从 `data/fde-jobs.json` 实时抓取。
+
+```bash
+# 本地跑一次看看（只打印不写文件）
+python scripts/fde-daily/refresh_jobs.py --dry-run
+
+# 正式跑（写到 data/fde-jobs.json）
+python scripts/fde-daily/refresh_jobs.py
+
+# 走内容机器人（抓取 → 提交 → 推送）
+bash scripts/fde-daily/daily.sh jobs
+```
+
+**数据源**（都是公开、免登录的职位板接口）
+
+| 源 | 覆盖 | 说明 |
+|----|------|------|
+| 智联招聘 | 国内 | 公开搜索结果，按 7 个关键词各取一页 |
+| 腾讯招聘 | 国内 | 官方开放 API |
+| Greenhouse | 海外 12 家 | Anthropic / Cloudflare / Stripe / Airbnb … |
+| Ashby | 海外 12 家 | OpenAI / Notion / Linear / Ramp … |
+
+> ⚠️ **Boss 直聘 / 拉勾没接**：两家都有强反爬（Boss 的搜索接口要签名 cookie，
+> 拉勾是纯 JS 渲染），定时硬啃既拿不到数据也违反对方的使用条款。
+> 国内改用智联聚合站 + 腾讯官方 API，链接点得开。
+
+**上线机制**：`data/` 刻意不进 Vercel 静态快照（见 `scripts/build-vercel-site.sh`），
+走 `vercel.json` 的 rewrites 实时转发源站。**服务器上的 JSON 一改，线上立刻变**，
+不用重新构建、不用发版。服务器 cron 每 2 小时跑一次
+（`17 */2 * * * ... daily.sh jobs`，错开热点任务的 `5 * * * *`）。
+
+**安全闸**：单个源挂掉只少一个源；岗位总数少于 30 时整轮放弃、保留旧数据；
+国内源全挂时沿用上一版国内数据并标记 `stale_domestic`。宁可显示旧数据，
+也不让页面空掉。
+
+**页面怎么用这份数据**：`fde-jobs.html` 里所有数字（岗位数、公司数、薪资分布、
+远程比例、城市分布、技能聚类、数据源状态卡）都是从 JSON 渲染的，
+没有写死的常量。页面每 5 分钟自动拉一次最新数据，`updated_at` 显示「几分钟前更新」。
+
+---
+
 ## 🔌 API 接口（Vercel Serverless）
 
 | 端点 | 用途 |
@@ -168,6 +211,7 @@ open http://localhost:3000
 
 | 版本 | 日期 | 主要变更 |
 |------|------|---------|
+| **v3.3.0** | 2026-10-30 | FDE 招聘数据实时刷新：多源公开职位板 API + 页面全动态渲染 |
 | **v3.2.0** | 2026-10-30 | 全站商业化改版：统一外壳模板 + 分区节奏 + 转化组件 + 布局体检脚本 |
 | **v3.1.1** | 2026-09-19 | 清理「广州华商学院」字段（用户硬约束）|
 | v3.1.0 | 2026-09-19 | 深度学习课程接口（dl-course.html + 6 个 API）|

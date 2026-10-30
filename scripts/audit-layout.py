@@ -143,7 +143,12 @@ def main():
                                if "Failed to load resource" not in e
                                and "ERR_FAILED" not in e
                                and "blocked by CORS" not in e
-                               and "is not valid JSON" not in e]
+                               and "is not valid JSON" not in e
+                               # /data/* 线上是转发到源站的（vercel.json 的 rewrites），
+                               # 本地静态服务器里没有这个目录 → 404 是预期的。
+                               # fde-jobs.html 会把它报成 "加载 fde-jobs.json 失败"，
+                               # 那也是预期内的，别当成真错。
+                               and "fde-jobs.json" not in e]
                 if info["overflow"] > 2:
                     issues.append("横向溢出 %dpx" % info["overflow"])
                 if info["broken"]:

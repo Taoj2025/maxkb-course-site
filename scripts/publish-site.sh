@@ -34,7 +34,7 @@ cd "$SITE_DIR"
 git config --global --add safe.directory "$SITE_DIR" 2>/dev/null || true
 
 # ── 只提交内容数据，不碰代码 ──
-git add -- data/aihot.json data/aihot-fde.json articles.json articles/ 2>/dev/null || true
+git add -- data/aihot.json data/aihot-fde.json data/fde-jobs.json articles.json articles/ 2>/dev/null || true
 
 if git diff --cached --quiet; then
   log "无内容变更，跳过提交"

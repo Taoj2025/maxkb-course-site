@@ -4,6 +4,7 @@
 # 用法：
 #   bash scripts/fde-daily/daily.sh aihot     只刷新 AI 热点（轻量，适合每小时跑）
 #   bash scripts/fde-daily/daily.sh articles  只跑文章管线（抓取→重写→审核→发布）
+#   bash scripts/fde-daily/daily.sh jobs      只刷新 FDE 招聘数据（适合每 2 小时跑）
 #   bash scripts/fde-daily/daily.sh all       全部都跑（默认）
 #
 # 环境变量：
@@ -70,11 +71,25 @@ run_articles() {
   fi
 }
 
+run_jobs() {
+  echo ""
+  echo "【招聘数据】抓取实时岗位（智联 / 腾讯 / Greenhouse / Ashby）…"
+  # 抓取失败不覆盖旧数据（脚本内部已处理），这里只是兜底不让整轮挂掉
+  python3 "$SITE_DIR/scripts/fde-daily/refresh_jobs.py" || {
+    echo "⚠️  招聘数据抓取失败，保留旧数据"
+    return 0
+  }
+  echo "【招聘数据】推送到 GitHub…"
+  bash "$SITE_DIR/scripts/publish-site.sh" \
+    "auto: 刷新 FDE 招聘数据 · $(date '+%Y-%m-%d %H:%M')" || true
+}
+
 case "$MODE" in
   aihot)    run_aihot ;;
   articles) run_articles ;;
-  all)      run_aihot; run_articles ;;
-  *)        echo "未知模式：$MODE（可选 aihot / articles / all）"; exit 1 ;;
+  jobs)     run_jobs ;;
+  all)      run_aihot; run_articles; run_jobs ;;
+  *)        echo "未知模式：$MODE（可选 aihot / articles / jobs / all）"; exit 1 ;;
 esac
 
 echo ""

@@ -1,226 +1,1632 @@
 {
-  "version": "v2.0",
-  "updated_at": "2026-07-27T03:20:00+08:00",
-  "source": "Boss 直聘 + 拉勾招聘 + 海外 20 强企业 careers",
+  "version": "v3.0",
+  "updated_at": "2026-10-30T10:37:30.632038+08:00",
+  "source": "智联招聘 + 腾讯招聘 + Greenhouse + Ashby（公开职位板 API）",
+  "live": true,
+  "stale_domestic": false,
   "summary": {
-    "total_companies": 60,
-    "domestic_companies": 40,
-    "overseas_companies": 20,
-    "total_jobs_estimated": 480,
-    "avg_salary_domestic": "30-50K·15薪",
-    "avg_salary_overseas": "$140-200K + Equity",
-    "remote_ratio_overseas": "85%",
-    "update_frequency": "每日 8:00 自动更新",
-    "data_quality": "海外 20 强 careers 实时抓取 · 国内 Boss/拉勾整理版（含 8 家 AI 时代新势力）"
+    "total_companies": 43,
+    "domestic_companies": 26,
+    "overseas_companies": 17,
+    "ai_companies": 22,
+    "total_jobs_estimated": 69,
+    "domestic_jobs": 33,
+    "overseas_jobs": 36,
+    "avg_salary_domestic": "17K",
+    "avg_salary_overseas": "$261K"
   },
   "domestic": {
-    "boss": {
-      "label": "Boss 直聘 · 20 强（含 AI 新势力）",
-      "data_source": "整理版（公开榜单 + 行业典型岗位）",
+    "zhaopin": {
+      "label": "🇨🇳 国内 · 智联招聘",
+      "data_source": "智联招聘公开搜索结果（实时）",
       "jobs": [
-        { "company": "阿里云", "title": "高级前端工程师（FDE 方向）", "salary": "30-55K·15薪", "city": "杭州 / 北京", "tags": ["React", "TypeScript", "云函数", "Serverless", "Node.js"], "level": "Senior", "remote": false, "source": "Boss 直聘", "url": "https://www.zhipin.com/", "premium": true },
-        { "company": "字节跳动", "title": "前端部署工程师", "salary": "35-60K·15薪", "city": "北京 / 上海", "tags": ["Vite", "Webpack", "CI/CD", "微前端", "性能优化"], "level": "Senior", "remote": false, "source": "Boss 直聘", "url": "https://www.zhipin.com/", "premium": true },
-        { "company": "腾讯", "title": "FDE 工程师（前端云部署）", "salary": "30-50K·14薪", "city": "深圳 / 广州", "tags": ["Taro", "Node.js", "Edge", "Serverless", "TypeScript"], "level": "Senior", "remote": false, "source": "Boss 直聘", "url": "https://www.zhipin.com/", "premium": true },
-        { "company": "美团", "title": "高级前端 / 前端架构师", "salary": "30-55K·15薪", "city": "北京", "tags": ["React", "微前端", "Webpack", "Vite", "可观测"], "level": "Senior", "remote": false, "source": "Boss 直聘", "url": "https://www.zhipin.com/" },
-        { "company": "京东", "title": "前端工程师（FDE 方向）", "salary": "25-45K·14薪", "city": "北京", "tags": ["Vue", "TypeScript", "云部署", "SSR", "Node.js"], "level": "Mid", "remote": false, "source": "Boss 直聘", "url": "https://www.zhipin.com/" },
-        { "company": "百度", "title": "前端部署开发工程师", "salary": "25-50K·15薪", "city": "北京 / 上海", "tags": ["React", "Next.js", "Edge Functions", "TypeScript", "性能优化"], "level": "Senior", "remote": false, "source": "Boss 直聘", "url": "https://www.zhipin.com/" },
-        { "company": "网易", "title": "高级前端工程师（FDE）", "salary": "25-45K·15薪", "city": "杭州 / 广州", "tags": ["React", "Serverless", "Vite", "Node.js", "微前端"], "level": "Senior", "remote": false, "source": "Boss 直聘", "url": "https://www.zhipin.com/" },
-        { "company": "小米", "title": "前端架构 / FDE 工程师", "salary": "25-50K·14薪", "city": "北京", "tags": ["React", "TypeScript", "Vite", "SSR", "CI/CD"], "level": "Senior", "remote": false, "source": "Boss 直聘", "url": "https://www.zhipin.com/" },
-        { "company": "华为云", "title": "前端工程师（边缘计算）", "salary": "30-55K·15薪", "city": "深圳 / 杭州", "tags": ["Edge Functions", "Workers", "TypeScript", "Wasm", "Cloud"], "level": "Senior", "remote": false, "source": "Boss 直聘", "url": "https://www.zhipin.com/", "premium": true },
-        { "company": "快手", "title": "高级前端 / 部署工程师", "salary": "30-55K·15薪", "city": "北京 / 杭州", "tags": ["React", "Webpack", "Vite", "微前端", "Node.js"], "level": "Senior", "remote": false, "source": "Boss 直聘", "url": "https://www.zhipin.com/" },
-        { "company": "蚂蚁集团", "title": "高级前端 / 部署架构师", "salary": "35-65K·16薪", "city": "杭州 / 上海", "tags": ["React", "TypeScript", "云函数", "Serverless", "微前端"], "level": "Staff", "remote": false, "source": "Boss 直聘", "url": "https://www.zhipin.com/", "premium": true },
-        { "company": "小红书", "title": "高级前端 / 部署工程师", "salary": "30-55K·15薪", "city": "上海", "tags": ["React", "TypeScript", "SSR", "微前端", "Node.js"], "level": "Senior", "remote": false, "source": "Boss 直聘", "url": "https://www.zhipin.com/" },
-        { "company": "拼多多", "title": "高级前端工程师（FDE）", "salary": "30-60K·15薪", "city": "上海", "tags": ["React", "TypeScript", "Webpack", "Node.js", "可观测"], "level": "Senior", "remote": false, "source": "Boss 直聘", "url": "https://www.zhipin.com/" },
-        { "company": "哔哩哔哩", "title": "前端工程师（FDE 方向）", "salary": "25-45K·15薪", "city": "上海", "tags": ["Vue", "TypeScript", "Vite", "微前端", "SSR"], "level": "Mid", "remote": false, "source": "Boss 直聘", "url": "https://www.zhipin.com/" },
-        { "company": "知乎", "title": "前端工程师（部署方向）", "salary": "25-50K·14薪", "city": "北京", "tags": ["React", "SSR", "Next.js", "TypeScript", "Vite"], "level": "Mid", "remote": false, "source": "Boss 直聘", "url": "https://www.zhipin.com/" },
-        { "company": "DeepSeek（深度求索）", "title": "前端工程师（AI 产品 · FDE）", "salary": "35-65K·15薪", "city": "杭州", "tags": ["React", "TypeScript", "WebGPU", "AI/ML", "Serverless"], "level": "Senior", "remote": false, "source": "Boss 直聘", "url": "https://www.zhipin.com/", "premium": true, "ai_era": true },
-        { "company": "月之暗面（Kimi）", "title": "前端工程师（AI 对话产品）", "salary": "30-60K·15薪", "city": "北京", "tags": ["React", "TypeScript", "Streaming", "AI/ML", "WebGPU"], "level": "Senior", "remote": false, "source": "Boss 直聘", "url": "https://www.zhipin.com/", "premium": true, "ai_era": true },
-        { "company": "智谱 AI", "title": "前端工程师（GLM 产品 · FDE）", "salary": "30-55K·15薪", "city": "北京", "tags": ["React", "TypeScript", "Streaming", "AI/ML", "可视化"], "level": "Senior", "remote": false, "source": "Boss 直聘", "url": "https://www.zhipin.com/", "premium": true, "ai_era": true },
-        { "company": "商汤科技", "title": "前端工程师（AI 产品 · FDE）", "salary": "30-55K·15薪", "city": "上海 / 北京", "tags": ["React", "TypeScript", "Wasm", "WebGL", "微前端"], "level": "Senior", "remote": false, "source": "Boss 直聘", "url": "https://www.zhipin.com/" },
-        { "company": "旷视科技", "title": "前端工程师（部署方向）", "salary": "25-50K·14薪", "city": "北京", "tags": ["React", "TypeScript", "Vite", "Node.js", "SSR"], "level": "Mid", "remote": false, "source": "Boss 直聘", "url": "https://www.zhipin.com/" }
+        {
+          "company": "四川予恩思创科技有限公司",
+          "title": "FDE(前线部署工程师)",
+          "salary": "1-1.5万",
+          "city": "成都 武侯",
+          "tags": [
+            "Forward Deployed",
+            "前端 Frontend"
+          ],
+          "level": "Mid",
+          "remote": false,
+          "source": "智联招聘",
+          "url": "http://www.zhaopin.com/jobdetail/CC666135030J40886861007.htm",
+          "premium": false,
+          "ai_era": false
+        },
+        {
+          "company": "中科基人工智能(厦门)有限公司",
+          "title": "前沿部署工程师（FDE）实习生【开发方向】",
+          "salary": "130-150元/天",
+          "city": "北京 朝阳",
+          "tags": [
+            "Forward Deployed",
+            "Python",
+            "CSS / Tailwind",
+            "数据库",
+            "JavaScript"
+          ],
+          "level": "",
+          "remote": false,
+          "source": "智联招聘",
+          "url": "http://www.zhaopin.com/jobdetail/CCL1502827580J40882818611.htm",
+          "premium": false,
+          "ai_era": true
+        },
+        {
+          "company": "九诺财税服务(北京)有限公司",
+          "title": "FDE 前沿部署工程师",
+          "salary": "3-6万",
+          "city": "北京 朝阳",
+          "tags": [
+            "Forward Deployed"
+          ],
+          "level": "Mid",
+          "remote": false,
+          "source": "智联招聘",
+          "url": "http://www.zhaopin.com/jobdetail/CCL1265085540J40917329513.htm",
+          "premium": false,
+          "ai_era": true
+        },
+        {
+          "company": "邢台纳科诺尔精轧科技股份有限公司",
+          "title": "AI FDE 前沿部署工程师",
+          "salary": "1-1.5万",
+          "city": "邢台 襄都区",
+          "tags": [
+            "Forward Deployed"
+          ],
+          "level": "Senior",
+          "remote": false,
+          "source": "智联招聘",
+          "url": "http://www.zhaopin.com/jobdetail/CC289893710J40907538405.htm",
+          "premium": false,
+          "ai_era": true
+        },
+        {
+          "company": "荣联汇智",
+          "title": "软件交付总监（FDE））",
+          "salary": "3-5万",
+          "city": "天津 南开",
+          "tags": [
+            "Forward Deployed"
+          ],
+          "level": "Senior",
+          "remote": false,
+          "source": "智联招聘",
+          "url": "http://www.zhaopin.com/jobdetail/CC409456430J40851381316.htm",
+          "premium": false,
+          "ai_era": false
+        },
+        {
+          "company": "深圳智蛋科技有限公司",
+          "title": "Java全栈开发工程师（周期6个月，金融经验）",
+          "salary": "1.3-1.6万",
+          "city": "杭州 萧山",
+          "tags": [
+            "全栈 Full-Stack",
+            "前端 Frontend",
+            "Rust / Java",
+            "Docker 容器化",
+            "Agent 智能体"
+          ],
+          "level": "Senior",
+          "remote": false,
+          "source": "智联招聘",
+          "url": "http://www.zhaopin.com/jobdetail/CCL1211142100J40808751606.htm",
+          "premium": false,
+          "ai_era": true
+        },
+        {
+          "company": "北京冠樽体育科技有限公司",
+          "title": "全栈工程师",
+          "salary": "7000-14000元",
+          "city": "北京",
+          "tags": [
+            "全栈 Full-Stack",
+            "前端 Frontend",
+            "React",
+            "Vue / Nuxt",
+            "JavaScript"
+          ],
+          "level": "Mid",
+          "remote": false,
+          "source": "智联招聘",
+          "url": "http://www.zhaopin.com/jobdetail/CCL1351774620J40895421814.htm",
+          "premium": false,
+          "ai_era": false
+        },
+        {
+          "company": "华君智算(四川)科技有限公司",
+          "title": "全栈工程师",
+          "salary": "6000-12000元",
+          "city": "成都 成华",
+          "tags": [
+            "全栈 Full-Stack",
+            "前端 Frontend"
+          ],
+          "level": "Mid",
+          "remote": false,
+          "source": "智联招聘",
+          "url": "http://www.zhaopin.com/jobdetail/CCL1530223300J40978081415.htm",
+          "premium": false,
+          "ai_era": false
+        },
+        {
+          "company": "叠拓信息技术(北京)有限公司南京分公司",
+          "title": "全栈开发工程师",
+          "salary": "1.8-3万",
+          "city": "厦门 湖里",
+          "tags": [
+            "全栈 Full-Stack",
+            "前端 Frontend"
+          ],
+          "level": "Senior",
+          "remote": false,
+          "source": "智联招聘",
+          "url": "http://www.zhaopin.com/jobdetail/CCL1325270410J40807249806.htm",
+          "premium": false,
+          "ai_era": false
+        },
+        {
+          "company": "山东省社会组织云中心",
+          "title": "全栈开发工程师",
+          "salary": "7000-8000元",
+          "city": "济南 历下",
+          "tags": [
+            "全栈 Full-Stack",
+            "前端 Frontend"
+          ],
+          "level": "",
+          "remote": false,
+          "source": "智联招聘",
+          "url": "http://www.zhaopin.com/jobdetail/CC832819550J40930955703.htm",
+          "premium": false,
+          "ai_era": false
+        },
+        {
+          "company": "智联猎头",
+          "title": "全栈工程师(前沿部署与方案解决)",
+          "salary": "1.5-3万",
+          "city": "北京 海淀",
+          "tags": [
+            "全栈 Full-Stack",
+            "前端 Frontend"
+          ],
+          "level": "Mid",
+          "remote": false,
+          "source": "智联招聘",
+          "url": "http://www.zhaopin.com/jobdetail/CCL1318355140J40930942803.htm",
+          "premium": false,
+          "ai_era": false
+        },
+        {
+          "company": "网易",
+          "title": "全栈工程师",
+          "salary": "面议",
+          "city": "杭州",
+          "tags": [
+            "全栈 Full-Stack",
+            "前端 Frontend",
+            "Rust / Java",
+            "数据库",
+            "JavaScript"
+          ],
+          "level": "Mid",
+          "remote": false,
+          "source": "智联招聘",
+          "url": "http://www.zhaopin.com/jobdetail/CC147576900J40971782308.htm",
+          "premium": false,
+          "ai_era": false
+        },
+        {
+          "company": "西安恒品电子科技有限公司",
+          "title": "FDE工程师",
+          "salary": "1-1.2万·13薪",
+          "city": "西安 未央",
+          "tags": [
+            "全栈 Full-Stack",
+            "前端 Frontend",
+            "Vue / Nuxt",
+            "Python",
+            "Rust / Java",
+            "数据库"
+          ],
+          "level": "Senior",
+          "remote": false,
+          "source": "智联招聘",
+          "url": "http://www.zhaopin.com/jobdetail/CC337427880J40930966903.htm",
+          "premium": false,
+          "ai_era": false
+        },
+        {
+          "company": "阿科德斯(上海)技术工程有限公司",
+          "title": "Java 大数据全栈开发（airbus/短期6个月）",
+          "salary": "1.6-2.2万",
+          "city": "天津 东丽",
+          "tags": [
+            "全栈 Full-Stack",
+            "前端 Frontend",
+            "Rust / Java"
+          ],
+          "level": "Mid",
+          "remote": false,
+          "source": "智联招聘",
+          "url": "http://www.zhaopin.com/jobdetail/CCL1443356860J40946174612.htm",
+          "premium": false,
+          "ai_era": true
+        },
+        {
+          "company": "上海锦爵电子科技有限公司",
+          "title": "web前端工程师",
+          "salary": "1.5-1.8万",
+          "city": "上海 闵行",
+          "tags": [
+            "前端 Frontend",
+            "React",
+            "Vue / Nuxt",
+            "CSS / Tailwind",
+            "性能优化",
+            "JavaScript"
+          ],
+          "level": "Mid",
+          "remote": false,
+          "source": "智联招聘",
+          "url": "http://www.zhaopin.com/jobdetail/CC433500510J40946836112.htm",
+          "premium": false,
+          "ai_era": true
+        },
+        {
+          "company": "中国电子系统工程第四建设有限公司",
+          "title": "暖通前端工程师（设计、施工）",
+          "salary": "8000-13000元",
+          "city": "成都 武侯",
+          "tags": [
+            "前端 Frontend"
+          ],
+          "level": "Senior",
+          "remote": false,
+          "source": "智联招聘",
+          "url": "http://www.zhaopin.com/jobdetail/CC138761210J40901958009.htm",
+          "premium": false,
+          "ai_era": false
+        },
+        {
+          "company": "新科能(重庆)智慧科技有限公司",
+          "title": "前端工程师",
+          "salary": "1.6-1.8万",
+          "city": "重庆 渝北",
+          "tags": [
+            "前端 Frontend",
+            "React",
+            "Vue / Nuxt",
+            "CSS / Tailwind",
+            "JavaScript"
+          ],
+          "level": "Senior",
+          "remote": false,
+          "source": "智联招聘",
+          "url": "http://www.zhaopin.com/jobdetail/CCL1234204310J40945253412.htm",
+          "premium": false,
+          "ai_era": true
+        },
+        {
+          "company": "温州博渠劳务派遣有限公司",
+          "title": "web前端开发工程师",
+          "salary": "2.8-3.5万",
+          "city": "郑州 金水",
+          "tags": [
+            "前端 Frontend",
+            "React",
+            "Vue / Nuxt",
+            "CSS / Tailwind",
+            "JavaScript"
+          ],
+          "level": "Mid",
+          "remote": false,
+          "source": "智联招聘",
+          "url": "http://www.zhaopin.com/jobdetail/CCL1499798330J40808789606.htm",
+          "premium": false,
+          "ai_era": true
+        },
+        {
+          "company": "东软集团(大连)有限公司",
+          "title": "JAVA全栈开发工程师",
+          "salary": "1.8-2万",
+          "city": "上海 浦东",
+          "tags": [
+            "全栈 Full-Stack"
+          ],
+          "level": "Senior",
+          "remote": false,
+          "source": "智联招聘",
+          "url": "http://www.zhaopin.com/jobdetail/CC120399300J40978070515.htm",
+          "premium": false,
+          "ai_era": true
+        },
+        {
+          "company": "中软国际",
+          "title": "全栈开发工程师（AI智能体方向）",
+          "salary": "面议",
+          "city": "青岛 崂山",
+          "tags": [
+            "全栈 Full-Stack",
+            "Rust / Java",
+            "Agent 智能体",
+            "数据库"
+          ],
+          "level": "Senior",
+          "remote": false,
+          "source": "智联招聘",
+          "url": "http://www.zhaopin.com/jobdetail/CC508620120J40946952312.htm",
+          "premium": false,
+          "ai_era": true
+        },
+        {
+          "company": "安徽方兴实业股份有限公司",
+          "title": "AI全栈软件工程师",
+          "salary": "1.3-1.4万",
+          "city": "合肥 包河",
+          "tags": [
+            "全栈 Full-Stack"
+          ],
+          "level": "Mid",
+          "remote": false,
+          "source": "智联招聘",
+          "url": "http://www.zhaopin.com/jobdetail/CC441394430J41046119502.htm",
+          "premium": false,
+          "ai_era": true
+        },
+        {
+          "company": "辽宁创德机械设备有限公司",
+          "title": "Fde全栈工程师",
+          "salary": "1-2万",
+          "city": "沈阳 浑南",
+          "tags": [
+            "全栈 Full-Stack",
+            "CSS / Tailwind",
+            "JavaScript"
+          ],
+          "level": "",
+          "remote": false,
+          "source": "智联招聘",
+          "url": "http://www.zhaopin.com/jobdetail/CC610685920J40917567313.htm",
+          "premium": false,
+          "ai_era": true
+        },
+        {
+          "company": "上海洛书投资管理有限公司",
+          "title": "芯片前端验证工程师",
+          "salary": "3-5万",
+          "city": "上海 浦东",
+          "tags": [
+            "前端 Frontend"
+          ],
+          "level": "Mid",
+          "remote": false,
+          "source": "智联招聘",
+          "url": "http://www.zhaopin.com/jobdetail/CC246060330J40946954812.htm",
+          "premium": false,
+          "ai_era": false
+        },
+        {
+          "company": "上海神瀚人力资源有限公司",
+          "title": "h5前端开发工程师/双休",
+          "salary": "1.6-1.8万",
+          "city": "南京 建邺",
+          "tags": [
+            "前端 Frontend",
+            "React",
+            "Vue / Nuxt",
+            "CSS / Tailwind",
+            "JavaScript"
+          ],
+          "level": "Mid",
+          "remote": false,
+          "source": "智联招聘",
+          "url": "http://www.zhaopin.com/jobdetail/CCL1500595290J40930834603.htm",
+          "premium": false,
+          "ai_era": false
+        }
       ]
     },
-    "lagou": {
-      "label": "拉勾招聘 · 20 强（含 AI 新势力）",
-      "data_source": "整理版（公开榜单 + 行业典型岗位）",
+    "tencent": {
+      "label": "🔵 国内 · 腾讯招聘",
+      "data_source": "腾讯招聘官方开放 API（实时）",
       "jobs": [
-        { "company": "Shopee", "title": "前端部署工程师（FDE）", "salary": "30-55K·14薪", "city": "深圳 / 新加坡", "tags": ["React", "Next.js", "TypeScript", "Edge", "Serverless"], "level": "Senior", "remote": false, "source": "拉勾招聘", "url": "https://www.lagou.com/", "premium": true },
-        { "company": "TikTok", "title": "Frontend Platform Engineer", "salary": "40-70K·16薪", "city": "北京 / 上海", "tags": ["React", "TypeScript", "微前端", "Webpack", "可观测"], "level": "Senior", "remote": false, "source": "拉勾招聘", "url": "https://www.lagou.com/", "premium": true },
-        { "company": "PingCAP", "title": "前端工程师（部署 / DevX）", "salary": "30-50K·15薪", "city": "杭州 / 北京", "tags": ["React", "TypeScript", "Vite", "Node.js", "CI/CD"], "level": "Senior", "remote": true, "source": "拉勾招聘", "url": "https://www.lagou.com/" },
-        { "company": "七牛云", "title": "前端工程师（云部署）", "salary": "25-45K·14薪", "city": "上海 / 杭州", "tags": ["React", "Serverless", "TypeScript", "Edge Functions", "Node.js"], "level": "Mid", "remote": false, "source": "拉勾招聘", "url": "https://www.lagou.com/" },
-        { "company": "青云科技", "title": "前端工程师（FDE 方向）", "salary": "25-50K·14薪", "city": "北京", "tags": ["Vue", "TypeScript", "Serverless", "Vite", "Node.js"], "level": "Mid", "remote": false, "source": "拉勾招聘", "url": "https://www.lagou.com/" },
-        { "company": "摩尔线程", "title": "前端工程师（Web 平台）", "salary": "30-55K·15薪", "city": "北京 / 上海", "tags": ["React", "TypeScript", "Wasm", "WebGL", "Node.js"], "level": "Senior", "remote": false, "source": "拉勾招聘", "url": "https://www.lagou.com/", "premium": true },
-        { "company": "壁仞科技", "title": "前端工程师（性能优化）", "salary": "25-50K·15薪", "city": "上海", "tags": ["React", "TypeScript", "Webpack", "Vite", "性能优化"], "level": "Mid", "remote": false, "source": "拉勾招聘", "url": "https://www.lagou.com/" },
-        { "company": "Moonshot（月之暗面·海外）", "title": "Frontend Engineer (AI 产品 · Remote)", "salary": "$120-180K + Equity", "city": "Remote / Beijing", "tags": ["React", "TypeScript", "Streaming", "AI/ML", "WebGPU"], "level": "Senior", "remote": true, "source": "拉勾招聘", "url": "https://www.lagou.com/", "premium": true, "ai_era": true },
-        { "company": "零一万物（01.AI）", "title": "前端工程师（FDE · AI 产品）", "salary": "30-60K·15薪", "city": "北京 / 新加坡", "tags": ["React", "TypeScript", "Streaming", "AI/ML", "Edge"], "level": "Senior", "remote": true, "source": "拉勾招聘", "url": "https://www.lagou.com/", "premium": true, "ai_era": true },
-        { "company": "百川智能", "title": "前端工程师（AI 对话 · FDE）", "salary": "30-55K·15薪", "city": "北京", "tags": ["React", "TypeScript", "Streaming", "AI/ML", "可视化"], "level": "Senior", "remote": false, "source": "拉勾招聘", "url": "https://www.lagou.com/", "ai_era": true },
-        { "company": "地平线", "title": "高级前端工程师", "salary": "30-55K·15薪", "city": "北京 / 上海", "tags": ["React", "TypeScript", "Wasm", "Node.js", "性能优化"], "level": "Senior", "remote": false, "source": "拉勾招聘", "url": "https://www.lagou.com/" },
-        { "company": "Momenta", "title": "前端工程师（FDE）", "salary": "30-55K·15薪", "city": "北京 / 上海", "tags": ["React", "TypeScript", "Vite", "Node.js", "可视化"], "level": "Senior", "remote": false, "source": "拉勾招聘", "url": "https://www.lagou.com/" },
-        { "company": "小马智行", "title": "前端工程师（Web 平台）", "salary": "30-60K·15薪", "city": "广州 / 北京", "tags": ["React", "TypeScript", "WebGL", "Wasm", "Node.js"], "level": "Senior", "remote": false, "source": "拉勾招聘", "url": "https://www.lagou.com/" },
-        { "company": "理想汽车", "title": "高级前端工程师", "salary": "25-50K·15薪", "city": "北京 / 上海", "tags": ["React", "TypeScript", "SSR", "Vite", "微前端"], "level": "Mid", "remote": false, "source": "拉勾招聘", "url": "https://www.lagou.com/" },
-        { "company": "蔚来汽车", "title": "前端工程师（部署方向）", "salary": "25-50K·15薪", "city": "上海 / 北京", "tags": ["React", "TypeScript", "SSR", "Node.js", "性能优化"], "level": "Mid", "remote": false, "source": "拉勾招聘", "url": "https://www.lagou.com/" },
-        { "company": "小鹏汽车", "title": "高级前端工程师（FDE）", "salary": "30-55K·15薪", "city": "广州 / 上海", "tags": ["React", "TypeScript", "SSR", "Vite", "微前端"], "level": "Senior", "remote": false, "source": "拉勾招聘", "url": "https://www.lagou.com/" },
-        { "company": "OPPO", "title": "前端工程师（部署方向）", "salary": "25-50K·14薪", "city": "东莞 / 深圳", "tags": ["React", "TypeScript", "SSR", "Vite", "Node.js"], "level": "Mid", "remote": false, "source": "拉勾招聘", "url": "https://www.lagou.com/" },
-        { "company": "vivo", "title": "高级前端工程师（FDE）", "salary": "25-50K·14薪", "city": "东莞 / 深圳", "tags": ["Vue", "TypeScript", "Vite", "SSR", "微前端"], "level": "Mid", "remote": false, "source": "拉勾招聘", "url": "https://www.lagou.com/" },
-        { "company": "宁德时代", "title": "高级前端工程师", "salary": "25-45K·14薪", "city": "宁德 / 上海", "tags": ["React", "TypeScript", "Vite", "Node.js", "可视化"], "level": "Mid", "remote": false, "source": "拉勾招聘", "url": "https://www.lagou.com/" },
-        { "company": "米哈游", "title": "前端工程师（Web 部署）", "salary": "25-45K·15薪", "city": "上海", "tags": ["React", "TypeScript", "Vite", "Node.js", "性能优化"], "level": "Mid", "remote": false, "source": "拉勾招聘", "url": "https://www.lagou.com/" }
+        {
+          "company": "腾讯",
+          "title": "AI软件解决方案专家(FDE)（深圳/北京/上海）",
+          "salary": "面议（官方招聘站不公开）",
+          "city": "深圳",
+          "tags": [
+            "Forward Deployed"
+          ],
+          "level": "",
+          "remote": false,
+          "source": "腾讯招聘",
+          "url": "http://careers.tencent.com/jobdesc.html?postId=2072248701686034432",
+          "premium": true,
+          "ai_era": true
+        },
+        {
+          "company": "腾讯",
+          "title": "智慧零售-行业解决方案高级经理-AI数智化方向（FDE Consultant）-北京",
+          "salary": "面议（官方招聘站不公开）",
+          "city": "深圳",
+          "tags": [
+            "Forward Deployed"
+          ],
+          "level": "",
+          "remote": false,
+          "source": "腾讯招聘",
+          "url": "http://careers.tencent.com/jobdesc.html?postId=2062455031348772864",
+          "premium": true,
+          "ai_era": true
+        },
+        {
+          "company": "腾讯",
+          "title": "腾讯云-智慧零售-行业解决方案-（AI数智化方向-FDE Consultant）-深圳",
+          "salary": "面议（官方招聘站不公开）",
+          "city": "上海",
+          "tags": [
+            "Forward Deployed"
+          ],
+          "level": "",
+          "remote": false,
+          "source": "腾讯招聘",
+          "url": "http://careers.tencent.com/jobdesc.html?postId=2062455033651445760",
+          "premium": true,
+          "ai_era": true
+        },
+        {
+          "company": "腾讯",
+          "title": "腾讯云-智慧零售-行业解决方案架构师(云和人工智能方向-FDE Consultant) 深圳-食品饮料/餐饮/茶饮酒咖/日化家清等赛道",
+          "salary": "面议（官方招聘站不公开）",
+          "city": "上海",
+          "tags": [
+            "Forward Deployed"
+          ],
+          "level": "",
+          "remote": false,
+          "source": "腾讯招聘",
+          "url": "http://careers.tencent.com/jobdesc.html?postId=2079387590921990144",
+          "premium": true,
+          "ai_era": true
+        },
+        {
+          "company": "腾讯",
+          "title": "腾讯云-智慧零售-行业解决方案咨询经理（FDE Consultant）上海",
+          "salary": "面议（官方招聘站不公开）",
+          "city": "深圳",
+          "tags": [
+            "Forward Deployed"
+          ],
+          "level": "",
+          "remote": false,
+          "source": "腾讯招聘",
+          "url": "http://careers.tencent.com/jobdesc.html?postId=2049027531922898944",
+          "premium": true,
+          "ai_era": false
+        },
+        {
+          "company": "腾讯",
+          "title": "腾讯云-智慧零售-零售行业技术咨询架构师（FDE Consultant）",
+          "salary": "面议（官方招聘站不公开）",
+          "city": "深圳",
+          "tags": [
+            "Forward Deployed"
+          ],
+          "level": "",
+          "remote": false,
+          "source": "腾讯招聘",
+          "url": "http://careers.tencent.com/jobdesc.html?postId=2115663163755249664",
+          "premium": true,
+          "ai_era": false
+        },
+        {
+          "company": "腾讯",
+          "title": "腾讯云-AI前线部署工程师-(北京/上海)",
+          "salary": "面议（官方招聘站不公开）",
+          "city": "深圳",
+          "tags": [],
+          "level": "",
+          "remote": false,
+          "source": "腾讯招聘",
+          "url": "http://careers.tencent.com/jobdesc.html?postId=2066401747009712128",
+          "premium": true,
+          "ai_era": true
+        },
+        {
+          "company": "腾讯云智研发子公司",
+          "title": "AI前线部署工程师FDE",
+          "salary": "面议（官方招聘站不公开）",
+          "city": "武汉",
+          "tags": [],
+          "level": "",
+          "remote": false,
+          "source": "腾讯招聘",
+          "url": "http://careers.tencent.com/jobdesc.html?postId=2041772169679241216",
+          "premium": true,
+          "ai_era": true
+        },
+        {
+          "company": "腾讯",
+          "title": "AI产品海外解决方案架构师",
+          "salary": "面议（官方招聘站不公开）",
+          "city": "上海",
+          "tags": [],
+          "level": "",
+          "remote": false,
+          "source": "腾讯招聘",
+          "url": "http://careers.tencent.com/jobdesc.html?postId=2092163142850363392",
+          "premium": true,
+          "ai_era": true
+        }
       ]
     }
   },
   "overseas": {
-    "label": "海外 20 强企业（含 OpenAI/Anthropic）",
-    "data_source": "实时抓取 careers 公开页",
-    "fetched_at": "2026-07-27T03:20:00+08:00",
+    "label": "🌏 海外 · 顶级公司 careers",
+    "data_source": "Greenhouse / Ashby 公开职位板（实时）",
+    "fetched_at": "2026-10-30T10:37:30.632038+08:00",
     "jobs": [
-      { "company": "OpenAI", "title": "Frontend Engineer (ChatGPT · Codex)", "salary": "$200K-310K + Equity", "city": "SF / Remote", "tags": ["React", "TypeScript", "Streaming", "AI/ML", "Performance"], "level": "Senior", "remote": true, "source": "OpenAI Careers", "url": "https://openai.com/careers/", "premium": true, "ai_era": true },
-      { "company": "Anthropic", "title": "Frontend Engineer (Claude · Console)", "salary": "$190K-280K + Equity", "city": "SF / Remote", "tags": ["React", "TypeScript", "Streaming", "AI/ML", "Performance"], "level": "Senior", "remote": true, "source": "Anthropic Careers", "url": "https://www.anthropic.com/careers", "premium": true, "ai_era": true },
-      { "company": "Vercel", "title": "Solutions Engineer / FDE", "salary": "$150K-220K + Equity", "city": "Remote (US/EU)", "tags": ["Next.js", "Edge Functions", "TypeScript", "Vercel Platform", "Customer-facing"], "level": "Senior", "remote": true, "source": "Vercel Careers", "url": "https://vercel.com/careers", "premium": true },
-      { "company": "Cloudflare", "title": "Developer Experience Engineer", "salary": "$140K-200K + Equity", "city": "Remote / SF", "tags": ["Workers", "TypeScript", "Edge", "Wasm", "Open Source"], "level": "Senior", "remote": true, "source": "Cloudflare Careers", "url": "https://www.cloudflare.com/careers/", "premium": true },
-      { "company": "Netlify", "title": "Solutions Engineer", "salary": "$130K-180K + Equity", "city": "Remote (US/EU)", "tags": ["Jamstack", "Edge Functions", "TypeScript", "Serverless", "Customer Success"], "level": "Senior", "remote": true, "source": "Netlify Careers", "url": "https://www.netlify.com/careers/", "premium": true },
-      { "company": "GitHub", "title": "Senior Software Engineer (Frontend)", "salary": "$150K-220K + Equity", "city": "Remote (US)", "tags": ["React", "TypeScript", "GraphQL", "Open Source", "DX"], "level": "Senior", "remote": true, "source": "GitHub Careers", "url": "https://github.com/about/careers" },
-      { "company": "Stripe", "title": "Frontend Engineer", "salary": "$160K-230K + Equity", "city": "SF / Remote", "tags": ["TypeScript", "React", "Performance", "Design Systems", "DX"], "level": "Senior", "remote": true, "source": "Stripe Careers", "url": "https://stripe.com/jobs" },
-      { "company": "Linear", "title": "Frontend Engineer", "salary": "$140K-200K + Equity", "city": "Remote (US)", "tags": ["React", "TypeScript", "GraphQL", "Performance", "Local-first"], "level": "Senior", "remote": true, "source": "Linear Careers", "url": "https://linear.app/careers" },
-      { "company": "Shopify", "title": "Senior Frontend Developer", "salary": "$130K-180K + Equity", "city": "Remote (Global)", "tags": ["React", "TypeScript", "Remix", "Polaris", "Hydrogen"], "level": "Senior", "remote": true, "source": "Shopify Careers", "url": "https://www.shopify.com/careers" },
-      { "company": "AWS", "title": "Frontend Engineer (Edge Services)", "salary": "$140K-210K + Equity", "city": "Seattle / Remote", "tags": ["CloudFront", "Lambda@Edge", "TypeScript", "React", "AWS Platform"], "level": "Senior", "remote": true, "source": "Amazon Jobs", "url": "https://www.amazon.jobs/", "premium": true },
-      { "company": "Google", "title": "Software Engineer (Frontend Infra)", "salary": "$160K-250K + Equity", "city": "MTV / NYC / Remote", "tags": ["Angular/React", "TypeScript", "Bazel", "Lit", "Performance"], "level": "Senior", "remote": false, "source": "Google Careers", "url": "https://careers.google.com/", "premium": true },
-      { "company": "Meta", "title": "Software Engineer (React Infra)", "salary": "$160K-250K + Equity", "city": "Menlo Park / NYC", "tags": ["React", "Relay", "GraphQL", "TypeScript", "Meta Stack"], "level": "Senior", "remote": false, "source": "Meta Careers", "url": "https://www.metacareers.com/" },
-      { "company": "Microsoft", "title": "Senior Frontend Engineer (Azure)", "salary": "$140K-200K + Equity", "city": "Redmond / Remote", "tags": ["TypeScript", "React", "Azure", "Edge", "VS Code"], "level": "Senior", "remote": true, "source": "Microsoft Careers", "url": "https://careers.microsoft.com/" },
-      { "company": "Netflix", "title": "Senior UI Engineer", "salary": "$170K-300K + Equity", "city": "Los Gatos / Remote", "tags": ["React", "TypeScript", "Performance", "A/B Testing", "Streaming"], "level": "Senior", "remote": true, "source": "Netflix Careers", "url": "https://jobs.netflix.com/", "premium": true },
-      { "company": "Apple", "title": "Senior Frontend Engineer", "salary": "$150K-220K + Equity", "city": "Cupertino / Remote", "tags": ["Swift/Wasm", "TypeScript", "WebKit", "Performance", "Privacy"], "level": "Senior", "remote": false, "source": "Apple Careers", "url": "https://www.apple.com/careers/" },
-      { "company": "Airbnb", "title": "Senior Frontend Engineer", "salary": "$150K-220K + Equity", "city": "SF / Remote", "tags": ["React", "TypeScript", "Hyperloop", "Design Systems", "Performance"], "level": "Senior", "remote": true, "source": "Airbnb Careers", "url": "https://careers.airbnb.com/" },
-      { "company": "Supabase", "title": "Developer Advocate / FDE", "salary": "$120K-170K + Equity", "city": "Remote (Global)", "tags": ["Postgres", "TypeScript", "Edge Functions", "DX", "Open Source"], "level": "Senior", "remote": true, "source": "Supabase Careers", "url": "https://supabase.com/careers", "premium": true },
-      { "company": "PlanetScale", "title": "Developer Experience Engineer", "salary": "$130K-180K + Equity", "city": "Remote (US)", "tags": ["TypeScript", "Edge", "Database", "DX", "Open Source"], "level": "Senior", "remote": true, "source": "PlanetScale Careers", "url": "https://www.planetscale.com/careers" },
-      { "company": "Prisma", "title": "DX Engineer", "salary": "$120K-170K + Equity", "city": "Remote (Global)", "tags": ["TypeScript", "Node.js", "ORM", "Database", "Open Source"], "level": "Senior", "remote": true, "source": "Prisma Careers", "url": "https://www.prisma.io/careers" },
-      { "company": "Modal", "title": "Developer Experience Engineer", "salary": "$140K-200K + Equity", "city": "Remote (US)", "tags": ["Python", "TypeScript", "Serverless", "Edge", "DX"], "level": "Senior", "remote": true, "source": "Modal Careers", "url": "https://modal.com/careers" }
+      {
+        "company": "OpenAI",
+        "title": "Forward Deployed Software Engineer, Gov",
+        "salary": "$146K – $280K",
+        "city": "Washington, DC / San Francisco",
+        "tags": [
+          "Forward Deployed",
+          "全栈 Full-Stack",
+          "前端 Frontend",
+          "Python",
+          "性能优化"
+        ],
+        "level": "",
+        "remote": true,
+        "source": "OpenAI Careers",
+        "url": "https://jobs.ashbyhq.com/openai/db5a708d-1d7a-4aa3-8dd3-0d0423b6b69f",
+        "premium": true,
+        "ai_era": true
+      },
+      {
+        "company": "OpenAI",
+        "title": "Founding Software Engineer, Physical Engineering",
+        "salary": "$347K – $445K",
+        "city": "San Francisco",
+        "tags": [
+          "Forward Deployed",
+          "全栈 Full-Stack",
+          "前端 Frontend",
+          "性能优化"
+        ],
+        "level": "",
+        "remote": true,
+        "source": "OpenAI Careers",
+        "url": "https://jobs.ashbyhq.com/openai/2c646ef9-6f93-4124-9d51-964d2c5aa783",
+        "premium": true,
+        "ai_era": true
+      },
+      {
+        "company": "OpenAI",
+        "title": "Forward Deployed Software Engineer - NYC",
+        "salary": "$153K – $325K",
+        "city": "New York City",
+        "tags": [
+          "Forward Deployed",
+          "全栈 Full-Stack",
+          "数据库"
+        ],
+        "level": "",
+        "remote": true,
+        "source": "OpenAI Careers",
+        "url": "https://jobs.ashbyhq.com/openai/533c0fc9-b773-476d-9f96-a0528efbab0e",
+        "premium": true,
+        "ai_era": true
+      },
+      {
+        "company": "Cloudflare",
+        "title": "Senior Forward Deployed Infrastructure Engineer",
+        "salary": "面议（该公司不公开薪资）",
+        "city": "Hybrid",
+        "tags": [
+          "Forward Deployed"
+        ],
+        "level": "Senior",
+        "remote": false,
+        "source": "Cloudflare Careers",
+        "url": "https://boards.greenhouse.io/cloudflare/jobs/8256332?gh_jid=8256332",
+        "premium": true,
+        "ai_era": false
+      },
+      {
+        "company": "Ramp",
+        "title": "Software Engineer, Forward Deployed AI Solutions",
+        "salary": "$189K – $330K",
+        "city": "New York, NY (HQ)",
+        "tags": [
+          "Forward Deployed",
+          "性能优化",
+          "可观测性"
+        ],
+        "level": "",
+        "remote": true,
+        "source": "Ramp Careers",
+        "url": "https://jobs.ashbyhq.com/ramp/b614563f-3ce6-4dca-b5ba-0e5a6c8bda27",
+        "premium": false,
+        "ai_era": true
+      },
+      {
+        "company": "Ramp",
+        "title": "Software Engineer, Enterprise Product",
+        "salary": "$189K – $330K",
+        "city": "New York, NY (HQ)",
+        "tags": [
+          "Forward Deployed",
+          "Agent 智能体",
+          "RAG / 向量库",
+          "HTTP / TLS"
+        ],
+        "level": "",
+        "remote": true,
+        "source": "Ramp Careers",
+        "url": "https://jobs.ashbyhq.com/ramp/09360e92-fc95-4ba6-9611-dfefd60b13ce",
+        "premium": false,
+        "ai_era": false
+      },
+      {
+        "company": "Ramp",
+        "title": "Software Engineer, Forward Deployed",
+        "salary": "$168K – $285K",
+        "city": "New York, NY (HQ)",
+        "tags": [
+          "Forward Deployed",
+          "Agent 智能体",
+          "RAG / 向量库",
+          "HTTP / TLS"
+        ],
+        "level": "",
+        "remote": true,
+        "source": "Ramp Careers",
+        "url": "https://jobs.ashbyhq.com/ramp/29a5da77-37f0-402a-92bc-072778e77ed8",
+        "premium": false,
+        "ai_era": false
+      },
+      {
+        "company": "Replit",
+        "title": "Staff Software Engineer, Agent Platform",
+        "salary": "$250K – $365K",
+        "city": "Foster City, CA",
+        "tags": [
+          "DevEx 开发者体验",
+          "全栈 Full-Stack",
+          "前端 Frontend",
+          "Streaming / SSE",
+          "Linux / Nginx",
+          "Git"
+        ],
+        "level": "Staff",
+        "remote": true,
+        "source": "Replit Careers",
+        "url": "https://jobs.ashbyhq.com/replit/43bd4e63-22c3-4b80-abd2-67eaf2c89790",
+        "premium": false,
+        "ai_era": true
+      },
+      {
+        "company": "Supabase",
+        "title": "Software Engineer - Storage",
+        "salary": "面议",
+        "city": "Remote, Global",
+        "tags": [
+          "DevEx 开发者体验",
+          "前端 Frontend",
+          "Svelte / Solid",
+          "Node.js",
+          "Docker 容器化",
+          "Edge 边缘计算"
+        ],
+        "level": "",
+        "remote": true,
+        "source": "Supabase Careers",
+        "url": "https://jobs.ashbyhq.com/supabase/9f2ba0b2-6d3b-43ea-990f-5b4bf3930520",
+        "premium": false,
+        "ai_era": true
+      },
+      {
+        "company": "Anthropic",
+        "title": "Staff+ Software Engineer, Developer Experience",
+        "salary": "面议（该公司不公开薪资）",
+        "city": "San Francisco, CA",
+        "tags": [
+          "DevEx 开发者体验"
+        ],
+        "level": "Staff",
+        "remote": false,
+        "source": "Anthropic Careers",
+        "url": "https://job-boards.greenhouse.io/anthropic/jobs/5398218008",
+        "premium": true,
+        "ai_era": true
+      },
+      {
+        "company": "Replit",
+        "title": "Software Engineering Intern – Winter 2027",
+        "salary": "面议",
+        "city": "Foster City, CA",
+        "tags": [
+          "DevEx 开发者体验",
+          "全栈 Full-Stack",
+          "Edge 边缘计算"
+        ],
+        "level": "Intern",
+        "remote": true,
+        "source": "Replit Careers",
+        "url": "https://jobs.ashbyhq.com/replit/7c3c9d29-cec2-4367-8564-eadaed165aea",
+        "premium": false,
+        "ai_era": false
+      },
+      {
+        "company": "Sentry",
+        "title": "Senior Software Engineer, Telemetry Experience",
+        "salary": "$81K – $220K",
+        "city": "Vienna, Austria",
+        "tags": [
+          "全栈 Full-Stack",
+          "前端 Frontend",
+          "React",
+          "TypeScript",
+          "Python",
+          "Edge 边缘计算"
+        ],
+        "level": "Senior",
+        "remote": true,
+        "source": "Sentry Careers",
+        "url": "https://jobs.ashbyhq.com/sentry/bf150464-a7bc-4357-beb7-341535538370",
+        "premium": false,
+        "ai_era": false
+      },
+      {
+        "company": "Sentry",
+        "title": "Staff Software Engineer, Issues",
+        "salary": "$240K – $400K",
+        "city": "San Francisco, California",
+        "tags": [
+          "DevEx 开发者体验",
+          "全栈 Full-Stack",
+          "Edge 边缘计算",
+          "性能优化",
+          "可观测性"
+        ],
+        "level": "Staff",
+        "remote": true,
+        "source": "Sentry Careers",
+        "url": "https://jobs.ashbyhq.com/sentry/c3ed6481-f031-4fe9-a456-775b7b3d2eda",
+        "premium": false,
+        "ai_era": false
+      },
+      {
+        "company": "Sentry",
+        "title": "Staff Software Engineer, Issues",
+        "salary": "$253K – $316K",
+        "city": "Toronto, Ontario, Canada",
+        "tags": [
+          "DevEx 开发者体验",
+          "全栈 Full-Stack",
+          "Edge 边缘计算",
+          "性能优化",
+          "可观测性"
+        ],
+        "level": "Staff",
+        "remote": true,
+        "source": "Sentry Careers",
+        "url": "https://jobs.ashbyhq.com/sentry/68757804-a892-40ed-8ea7-f2d13500f29c",
+        "premium": false,
+        "ai_era": false
+      },
+      {
+        "company": "Supabase",
+        "title": "Software Engineer - Spark",
+        "salary": "面议",
+        "city": "Remote, Global",
+        "tags": [
+          "DevEx 开发者体验",
+          "全栈 Full-Stack",
+          "Svelte / Solid",
+          "Go",
+          "Rust / Java",
+          "Serverless"
+        ],
+        "level": "",
+        "remote": true,
+        "source": "Supabase Careers",
+        "url": "https://jobs.ashbyhq.com/supabase/b75ba81e-54cc-4393-a575-bc41776b0113",
+        "premium": false,
+        "ai_era": false
+      },
+      {
+        "company": "Anthropic",
+        "title": "Senior Software Engineer, Full-stack",
+        "salary": "面议（该公司不公开薪资）",
+        "city": "San Francisco, CA",
+        "tags": [
+          "全栈 Full-Stack"
+        ],
+        "level": "Senior",
+        "remote": false,
+        "source": "Anthropic Careers",
+        "url": "https://job-boards.greenhouse.io/anthropic/jobs/5174743008",
+        "premium": true,
+        "ai_era": true
+      },
+      {
+        "company": "Anthropic",
+        "title": "Staff+ Fullstack Software Engineer, Safeguards Engineering",
+        "salary": "面议（该公司不公开薪资）",
+        "city": "San Francisco, CA",
+        "tags": [
+          "全栈 Full-Stack"
+        ],
+        "level": "Staff",
+        "remote": false,
+        "source": "Anthropic Careers",
+        "url": "https://job-boards.greenhouse.io/anthropic/jobs/5369710008",
+        "premium": true,
+        "ai_era": true
+      },
+      {
+        "company": "Replit",
+        "title": "Software Engineer, Enterprise",
+        "salary": "$180K – $320K",
+        "city": "Foster City, CA",
+        "tags": [
+          "全栈 Full-Stack",
+          "前端 Frontend",
+          "React",
+          "TypeScript",
+          "Node.js",
+          "LLM 应用"
+        ],
+        "level": "",
+        "remote": true,
+        "source": "Replit Careers",
+        "url": "https://jobs.ashbyhq.com/replit/b7f12834-78d2-424d-bf83-0c942815fbf7",
+        "premium": false,
+        "ai_era": false
+      },
+      {
+        "company": "Figma",
+        "title": "Manager, Software Engineering - DevEx AI Tools",
+        "salary": "面议（该公司不公开薪资）",
+        "city": "San Francisco, CA • New York, NY • United States",
+        "tags": [
+          "DevEx 开发者体验"
+        ],
+        "level": "",
+        "remote": false,
+        "source": "Figma Careers",
+        "url": "https://boards.greenhouse.io/figma/jobs/6008752004?gh_jid=6008752004",
+        "premium": false,
+        "ai_era": true
+      },
+      {
+        "company": "Railway",
+        "title": "Senior Full-Stack Engineer - Product",
+        "salary": "面议",
+        "city": "Global",
+        "tags": [
+          "全栈 Full-Stack",
+          "前端 Frontend",
+          "TypeScript",
+          "Rust / Java",
+          "GraphQL",
+          "Git"
+        ],
+        "level": "Senior",
+        "remote": true,
+        "source": "Railway Careers",
+        "url": "https://jobs.ashbyhq.com/railway/6ddcfe47-6cce-469b-ba6d-4f0e83440c9d",
+        "premium": false,
+        "ai_era": false
+      },
+      {
+        "company": "Figma",
+        "title": "Software Engineer - Developer Experience",
+        "salary": "面议（该公司不公开薪资）",
+        "city": "San Francisco, CA • New York, NY • United States",
+        "tags": [
+          "DevEx 开发者体验"
+        ],
+        "level": "",
+        "remote": false,
+        "source": "Figma Careers",
+        "url": "https://boards.greenhouse.io/figma/jobs/5790627004?gh_jid=5790627004",
+        "premium": false,
+        "ai_era": false
+      },
+      {
+        "company": "Flexport",
+        "title": "Senior Software Engineer, DevEx",
+        "salary": "面议（该公司不公开薪资）",
+        "city": "Amsterdam, Netherlands",
+        "tags": [
+          "DevEx 开发者体验"
+        ],
+        "level": "Senior",
+        "remote": false,
+        "source": "Flexport Careers",
+        "url": "https://job-boards.greenhouse.io/flexport/jobs/7921068",
+        "premium": false,
+        "ai_era": false
+      },
+      {
+        "company": "Flexport",
+        "title": "Software Engineer II, DevEx",
+        "salary": "面议（该公司不公开薪资）",
+        "city": "Amsterdam, Netherlands",
+        "tags": [
+          "DevEx 开发者体验"
+        ],
+        "level": "",
+        "remote": false,
+        "source": "Flexport Careers",
+        "url": "https://job-boards.greenhouse.io/flexport/jobs/8256564",
+        "premium": false,
+        "ai_era": false
+      },
+      {
+        "company": "Flexport",
+        "title": "Staff Software Engineer, DevEx",
+        "salary": "面议（该公司不公开薪资）",
+        "city": "Amsterdam, Netherlands",
+        "tags": [
+          "DevEx 开发者体验"
+        ],
+        "level": "Staff",
+        "remote": false,
+        "source": "Flexport Careers",
+        "url": "https://job-boards.greenhouse.io/flexport/jobs/8256566",
+        "premium": false,
+        "ai_era": false
+      },
+      {
+        "company": "Notion",
+        "title": "Software Engineer, Developer Experience",
+        "salary": "面议",
+        "city": "Hyderabad, India",
+        "tags": [
+          "DevEx 开发者体验",
+          "TypeScript",
+          "Svelte / Solid",
+          "自动化测试",
+          "HTTP / TLS"
+        ],
+        "level": "",
+        "remote": true,
+        "source": "Notion Careers",
+        "url": "https://jobs.ashbyhq.com/notion/49bdf081-6e20-4323-8c73-6d6b19544ff5",
+        "premium": false,
+        "ai_era": false
+      },
+      {
+        "company": "Cloudflare",
+        "title": "Software Engineer, Network Performance & Reliability (Argo)",
+        "salary": "面议（该公司不公开薪资）",
+        "city": "Hybrid",
+        "tags": [
+          "性能优化"
+        ],
+        "level": "",
+        "remote": false,
+        "source": "Cloudflare Careers",
+        "url": "https://boards.greenhouse.io/cloudflare/jobs/7446310?gh_jid=7446310",
+        "premium": true,
+        "ai_era": false
+      },
+      {
+        "company": "Cloudflare",
+        "title": "Software Engineer, Mobile SDK",
+        "salary": "面议（该公司不公开薪资）",
+        "city": "Hybrid",
+        "tags": [
+          "跨端",
+          "开放平台 / API"
+        ],
+        "level": "",
+        "remote": false,
+        "source": "Cloudflare Careers",
+        "url": "https://boards.greenhouse.io/cloudflare/jobs/8248635?gh_jid=8248635",
+        "premium": true,
+        "ai_era": false
+      },
+      {
+        "company": "Notion",
+        "title": "Software Engineer, Collections Experience",
+        "salary": "面议",
+        "city": "San Francisco, California",
+        "tags": [
+          "前端 Frontend",
+          "TypeScript",
+          "Svelte / Solid",
+          "自动化测试",
+          "LLM 应用",
+          "Agent 智能体"
+        ],
+        "level": "",
+        "remote": true,
+        "source": "Notion Careers",
+        "url": "https://jobs.ashbyhq.com/notion/5d8c1ec6-e9ea-416b-9715-880bf5037abc",
+        "premium": false,
+        "ai_era": false
+      },
+      {
+        "company": "Airbnb",
+        "title": "Senior Software Engineer, UI Tooling (Full Stack iOS)",
+        "salary": "面议（该公司不公开薪资）",
+        "city": "United States",
+        "tags": [
+          "全栈 Full-Stack",
+          "UI / UX"
+        ],
+        "level": "Senior",
+        "remote": true,
+        "source": "Airbnb Careers",
+        "url": "https://careers.airbnb.com/positions/8325813?gh_jid=8325813",
+        "premium": false,
+        "ai_era": false
+      },
+      {
+        "company": "Airbnb",
+        "title": "Staff Software Engineer, UI Tooling (Full Stack)",
+        "salary": "面议（该公司不公开薪资）",
+        "city": "United States",
+        "tags": [
+          "全栈 Full-Stack",
+          "UI / UX"
+        ],
+        "level": "Staff",
+        "remote": true,
+        "source": "Airbnb Careers",
+        "url": "https://careers.airbnb.com/positions/8325753?gh_jid=8325753",
+        "premium": false,
+        "ai_era": false
+      },
+      {
+        "company": "Render",
+        "title": "Software Engineer, Agent Access & Governance",
+        "salary": "$170K – $290K",
+        "city": "Remote: United States",
+        "tags": [
+          "全栈 Full-Stack",
+          "Serverless",
+          "Edge 边缘计算",
+          "可观测性",
+          "LLM 应用",
+          "Agent 智能体"
+        ],
+        "level": "",
+        "remote": true,
+        "source": "Render Careers",
+        "url": "https://jobs.ashbyhq.com/render/8815f772-6895-4383-a9e5-6c7bdc2bf141",
+        "premium": false,
+        "ai_era": true
+      },
+      {
+        "company": "Stripe",
+        "title": "Product Manager - Developer Experience, Bridge",
+        "salary": "面议（该公司不公开薪资）",
+        "city": "San Francisco Or New York",
+        "tags": [
+          "DevEx 开发者体验"
+        ],
+        "level": "",
+        "remote": false,
+        "source": "Stripe Careers",
+        "url": "https://stripe.com/jobs/search?gh_jid=8204227",
+        "premium": false,
+        "ai_era": false
+      },
+      {
+        "company": "Stripe",
+        "title": "Product Manager, Terminal Developer Experiences",
+        "salary": "面议（该公司不公开薪资）",
+        "city": "San Francisco, Seattle",
+        "tags": [
+          "DevEx 开发者体验"
+        ],
+        "level": "",
+        "remote": false,
+        "source": "Stripe Careers",
+        "url": "https://stripe.com/jobs/search?gh_jid=7586413",
+        "premium": false,
+        "ai_era": false
+      },
+      {
+        "company": "Datadog",
+        "title": "Staff Software Engineer - Frontend",
+        "salary": "面议（该公司不公开薪资）",
+        "city": "New York, New York, USA",
+        "tags": [
+          "前端 Frontend"
+        ],
+        "level": "Staff",
+        "remote": false,
+        "source": "Datadog Careers",
+        "url": "https://careers.datadoghq.com/detail/8202699/?gh_jid=8202699",
+        "premium": false,
+        "ai_era": false
+      },
+      {
+        "company": "Instacart",
+        "title": "Sr Software Engineer II - Ads Manager (Front End)",
+        "salary": "面议（该公司不公开薪资）",
+        "city": "Canada - Remote (ON, AB, BC, or NS Only)",
+        "tags": [
+          "前端 Frontend"
+        ],
+        "level": "",
+        "remote": true,
+        "source": "Instacart Careers",
+        "url": "https://instacart.careers/job/?gh_jid=8237393",
+        "premium": false,
+        "ai_era": false
+      },
+      {
+        "company": "Linear",
+        "title": "Senior / Staff Product Engineer, Applied AI",
+        "salary": "面议",
+        "city": "North America",
+        "tags": [
+          "全栈 Full-Stack",
+          "React",
+          "TypeScript",
+          "GraphQL",
+          "性能优化",
+          "Agent 智能体"
+        ],
+        "level": "Staff",
+        "remote": true,
+        "source": "Linear Careers",
+        "url": "https://jobs.ashbyhq.com/linear/b4a7764e-c680-4bdf-9956-dc78f2ca94d5",
+        "premium": false,
+        "ai_era": true
+      }
     ]
   },
   "skills": [
     {
       "name": "🚀 核心前端框架",
-      "total": 60,
+      "total": 38,
       "skills": [
-        { "name": "React", "percent": 95 },
-        { "name": "TypeScript", "percent": 92 },
-        { "name": "Next.js", "percent": 72 },
-        { "name": "Vue", "percent": 40 },
-        { "name": "Svelte/SvelteKit", "percent": 28 },
-        { "name": "Solid.js", "percent": 15 }
+        {
+          "name": "全栈 Full-Stack",
+          "count": 30,
+          "percent": 79
+        },
+        {
+          "name": "JavaScript",
+          "count": 9,
+          "percent": 24
+        },
+        {
+          "name": "React",
+          "count": 8,
+          "percent": 21
+        },
+        {
+          "name": "TypeScript",
+          "count": 6,
+          "percent": 16
+        },
+        {
+          "name": "Vue / Nuxt",
+          "count": 6,
+          "percent": 16
+        },
+        {
+          "name": "Svelte / Solid",
+          "count": 4,
+          "percent": 11
+        }
       ]
     },
     {
       "name": "⚡ 部署 / 边缘运行时",
-      "total": 58,
+      "total": 9,
       "skills": [
-        { "name": "Vite", "percent": 80 },
-        { "name": "Webpack", "percent": 70 },
-        { "name": "Edge Functions", "percent": 68 },
-        { "name": "Serverless", "percent": 62 },
-        { "name": "Workers / Lambda@Edge", "percent": 48 },
-        { "name": "Cloudflare/Vercel Platform", "percent": 42 }
+        {
+          "name": "Edge 边缘计算",
+          "count": 7,
+          "percent": 78
+        },
+        {
+          "name": "Docker 容器化",
+          "count": 2,
+          "percent": 22
+        },
+        {
+          "name": "Serverless",
+          "count": 2,
+          "percent": 22
+        },
+        {
+          "name": "CDN / Workers",
+          "count": 1,
+          "percent": 11
+        },
+        {
+          "name": "Linux / Nginx",
+          "count": 1,
+          "percent": 11
+        }
       ]
     },
     {
       "name": "🛠️ 工程化能力",
-      "total": 55,
+      "total": 24,
       "skills": [
-        { "name": "CI/CD", "percent": 88 },
-        { "name": "Node.js", "percent": 82 },
-        { "name": "Monorepo", "percent": 52 },
-        { "name": "微前端", "percent": 48 },
-        { "name": "可观测 / 监控", "percent": 42 },
-        { "name": "性能优化", "percent": 40 }
+        {
+          "name": "性能优化",
+          "count": 11,
+          "percent": 46
+        },
+        {
+          "name": "数据库",
+          "count": 9,
+          "percent": 38
+        },
+        {
+          "name": "Rust / Java",
+          "count": 7,
+          "percent": 29
+        },
+        {
+          "name": "可观测性",
+          "count": 7,
+          "percent": 29
+        },
+        {
+          "name": "Go",
+          "count": 4,
+          "percent": 17
+        },
+        {
+          "name": "Python",
+          "count": 4,
+          "percent": 17
+        },
+        {
+          "name": "Git",
+          "count": 2,
+          "percent": 8
+        },
+        {
+          "name": "GraphQL",
+          "count": 2,
+          "percent": 8
+        }
       ]
     },
     {
       "name": "🤖 AI 时代新能力",
-      "total": 32,
+      "total": 10,
       "skills": [
-        { "name": "Streaming (SSE/WebSocket)", "percent": 60 },
-        { "name": "AI/ML 集成", "percent": 55 },
-        { "name": "Prompt Engineering", "percent": 40 },
-        { "name": "Vibe Coding / Agent Skills", "percent": 25 },
-        { "name": "WebGPU", "percent": 22 },
-        { "name": "Wasm", "percent": 28 }
+        {
+          "name": "Agent 智能体",
+          "count": 8,
+          "percent": 80
+        },
+        {
+          "name": "LLM 应用",
+          "count": 3,
+          "percent": 30
+        },
+        {
+          "name": "RAG / 向量库",
+          "count": 3,
+          "percent": 30
+        }
       ]
     },
     {
       "name": "🎨 UX / 设计系统",
-      "total": 42,
+      "total": 12,
       "skills": [
-        { "name": "Design Systems", "percent": 58 },
-        { "name": "CSS-in-JS / Tailwind", "percent": 78 },
-        { "name": "Storybook", "percent": 38 },
-        { "name": "A/B Testing", "percent": 32 },
-        { "name": "可访问性 (a11y)", "percent": 30 }
+        {
+          "name": "CSS / Tailwind",
+          "count": 6,
+          "percent": 50
+        },
+        {
+          "name": "UI / UX",
+          "count": 6,
+          "percent": 50
+        }
       ]
     },
     {
       "name": "📚 知识要求（必须懂）",
-      "total": 60,
+      "total": 38,
       "skills": [
-        { "name": "HTTP / HTTPS / TLS", "percent": 95 },
-        { "name": "DNS / CDN / 缓存策略", "percent": 85 },
-        { "name": "浏览器渲染原理", "percent": 82 },
-        { "name": "Web 安全 (CORS / XSS / CSRF)", "percent": 78 },
-        { "name": "RESTful API / GraphQL", "percent": 75 },
-        { "name": "Docker / 容器化基础", "percent": 60 },
-        { "name": "Linux 基础命令", "percent": 55 }
+        {
+          "name": "Forward Deployed",
+          "count": 18,
+          "percent": 47
+        },
+        {
+          "name": "DevEx 开发者体验",
+          "count": 15,
+          "percent": 39
+        },
+        {
+          "name": "HTTP / TLS",
+          "count": 7,
+          "percent": 18
+        },
+        {
+          "name": "浏览器渲染",
+          "count": 3,
+          "percent": 8
+        },
+        {
+          "name": "跨端",
+          "count": 3,
+          "percent": 8
+        },
+        {
+          "name": "开放平台 / API",
+          "count": 2,
+          "percent": 5
+        }
       ]
     }
   ],
   "salary_distribution": {
     "domestic": [
-      { "level": "Junior (应届/1-3 年)", "range": "15-25K", "percent": 15, "color": "#10B981" },
-      { "level": "Mid (3-5 年)", "range": "25-40K", "percent": 35, "color": "#3B82F6" },
-      { "level": "Senior (5-8 年)", "range": "40-60K", "percent": 35, "color": "#8B5CF6" },
-      { "level": "Staff (8 年+)", "range": "60-90K", "percent": 15, "color": "#EF4444" }
+      {
+        "level": "Junior（应届 / 1-3 年）",
+        "range": "10K 以下",
+        "percent": 15,
+        "color": "#10B981"
+      },
+      {
+        "level": "Mid（3-5 年）",
+        "range": "10-20K",
+        "percent": 39,
+        "color": "#3B82F6"
+      },
+      {
+        "level": "Senior（5-8 年）",
+        "range": "20-30K",
+        "percent": 6,
+        "color": "#8B5CF6"
+      },
+      {
+        "level": "Staff（8 年+）",
+        "range": "30-50K",
+        "percent": 12,
+        "color": "#F59E0B"
+      },
+      {
+        "level": "Principal / 专家",
+        "range": "50K 以上",
+        "percent": 0,
+        "color": "#EF4444"
+      },
+      {
+        "level": "未公开薪资",
+        "range": "—",
+        "percent": 27,
+        "color": "#9CA3AF"
+      }
     ],
     "overseas": [
-      { "level": "Mid", "range": "$100-150K", "percent": 15, "color": "#10B981" },
-      { "level": "Senior", "range": "$150-200K", "percent": 45, "color": "#3B82F6" },
-      { "level": "Staff", "range": "$200-300K", "percent": 30, "color": "#8B5CF6" },
-      { "level": "Principal", "range": "$300K+", "percent": 10, "color": "#EF4444" }
+      {
+        "level": "Mid",
+        "range": "$100K 以下",
+        "percent": 0,
+        "color": "#10B981"
+      },
+      {
+        "level": "Senior",
+        "range": "$100-150K",
+        "percent": 0,
+        "color": "#3B82F6"
+      },
+      {
+        "level": "Staff",
+        "range": "$150-200K",
+        "percent": 3,
+        "color": "#8B5CF6"
+      },
+      {
+        "level": "Principal",
+        "range": "$200-300K",
+        "percent": 22,
+        "color": "#F59E0B"
+      },
+      {
+        "level": "Distinguished / 专家",
+        "range": "$300K+",
+        "percent": 8,
+        "color": "#EF4444"
+      },
+      {
+        "level": "未公开薪资",
+        "range": "—",
+        "percent": 67,
+        "color": "#9CA3AF"
+      }
     ]
   },
   "remote_ratio": {
-    "domestic_remote_jobs": 3,
-    "domestic_total": 40,
-    "domestic_remote_percent": 7.5,
-    "overseas_remote_jobs": 17,
-    "overseas_total": 20,
-    "overseas_remote_percent": 85,
-    "comment": "海外 85% 支持远程工作 · 国内仅 7.5%（PingCAP/Moonshot/零一万物）"
+    "domestic_remote_jobs": 0,
+    "domestic_total": 33,
+    "domestic_remote_percent": 0.0,
+    "overseas_remote_jobs": 22,
+    "overseas_total": 36,
+    "overseas_remote_percent": 61.1,
+    "comment": "海外 61.1% 职位支持远程 · 国内 0.0%（按实时招聘数据统计）"
   },
   "city_distribution": {
     "domestic_top10": [
-      { "city": "北京", "jobs": 12, "percent": 30 },
-      { "city": "上海", "jobs": 10, "percent": 25 },
-      { "city": "杭州", "jobs": 7, "percent": 17.5 },
-      { "city": "深圳", "jobs": 6, "percent": 15 },
-      { "city": "广州", "jobs": 3, "percent": 7.5 },
-      { "city": "成都", "jobs": 1, "percent": 2.5 },
-      { "city": "东莞", "jobs": 1, "percent": 2.5 }
+      {
+        "city": "上海",
+        "jobs": 6,
+        "percent": 18.2
+      },
+      {
+        "city": "深圳",
+        "jobs": 5,
+        "percent": 15.2
+      },
+      {
+        "city": "北京",
+        "jobs": 4,
+        "percent": 12.1
+      },
+      {
+        "city": "成都",
+        "jobs": 3,
+        "percent": 9.1
+      },
+      {
+        "city": "天津",
+        "jobs": 2,
+        "percent": 6.1
+      },
+      {
+        "city": "杭州",
+        "jobs": 2,
+        "percent": 6.1
+      },
+      {
+        "city": "邢台",
+        "jobs": 1,
+        "percent": 3.0
+      },
+      {
+        "city": "厦门",
+        "jobs": 1,
+        "percent": 3.0
+      },
+      {
+        "city": "济南",
+        "jobs": 1,
+        "percent": 3.0
+      },
+      {
+        "city": "西安",
+        "jobs": 1,
+        "percent": 3.0
+      }
     ],
     "overseas_top5": [
-      { "city": "Remote (Global)", "jobs": 12, "percent": 60 },
-      { "city": "SF / Bay Area", "jobs": 4, "percent": 20 },
-      { "city": "NYC", "jobs": 2, "percent": 10 },
-      { "city": "Seattle / Redmond", "jobs": 2, "percent": 10 }
+      {
+        "city": "SF / Bay Area",
+        "jobs": 10,
+        "percent": 27.8
+      },
+      {
+        "city": "NYC",
+        "jobs": 5,
+        "percent": 13.9
+      },
+      {
+        "city": "Remote (Global)",
+        "jobs": 5,
+        "percent": 13.9
+      },
+      {
+        "city": "Hybrid",
+        "jobs": 3,
+        "percent": 8.3
+      },
+      {
+        "city": "Foster City, CA",
+        "jobs": 3,
+        "percent": 8.3
+      }
     ]
   },
   "data_sources_meta": {
-    "boss_zhipin": {
-      "url": "https://www.zhipin.com/",
-      "note": "反爬严格，沙箱环境无法直接抓取，已用整理版替代"
-    },
-    "lagou": {
-      "url": "https://www.lagou.com/",
-      "note": "WAF 拦截，沙箱环境无法直接抓取，已用整理版替代"
-    },
-    "overseas_20": {
-      "fetched": 20,
-      "note": "全部为实时抓取公开 careers 页，2026-07-27 03:20 更新",
-      "sources": ["OpenAI", "Anthropic", "Vercel", "Cloudflare", "Netlify", "GitHub", "Stripe", "Linear", "Shopify", "AWS", "Google", "Meta", "Microsoft", "Netflix", "Apple", "Airbnb", "Supabase", "PlanetScale", "Prisma", "Modal"]
-    }
+    "fetched_at": "2026-10-30T10:37:30.632038+08:00",
+    "sources": [
+      {
+        "name": "智联招聘",
+        "icon": "💼",
+        "detail": "公开搜索结果 · 免登录实时抓取",
+        "key": "zhaopin",
+        "ok": true,
+        "count": 67,
+        "boards": {
+          "智联·大模型应用工程师": 4,
+          "智联·Serverless": 8,
+          "智联·前端工程师": 9,
+          "智联·前端部署": 11,
+          "智联·全栈工程师": 17,
+          "智联·远程前端": 6,
+          "智联·FDE": 12
+        }
+      },
+      {
+        "name": "腾讯招聘",
+        "icon": "🔵",
+        "detail": "官方开放 API · 实时",
+        "key": "tencent",
+        "ok": true,
+        "count": 9,
+        "boards": {
+          "腾讯招聘": 9
+        }
+      },
+      {
+        "name": "Greenhouse 职位板",
+        "icon": "🌿",
+        "detail": "12 家海外公司的公开招聘 API",
+        "key": "greenhouse",
+        "ok": true,
+        "count": 433,
+        "boards": {
+          "Anthropic Careers": 118,
+          "Netlify Careers": 0,
+          "Figma Careers": 26,
+          "Twilio Careers": 11,
+          "Stripe Careers": 96,
+          "Squarespace Careers": 8,
+          "Datadog Careers": 10,
+          "Instacart Careers": 11,
+          "Cloudflare Careers": 67,
+          "Flexport Careers": 12,
+          "Reddit Careers": 45,
+          "Airbnb Careers": 29
+        }
+      },
+      {
+        "name": "Ashby 职位板",
+        "icon": "🧩",
+        "detail": "12 家公司的公开招聘 API · 含 OpenAI",
+        "key": "ashby",
+        "ok": true,
+        "count": 320,
+        "boards": {
+          "Replit Careers": 10,
+          "Sentry Careers": 19,
+          "Railway Careers": 4,
+          "Notion Careers": 16,
+          "Supabase Careers": 14,
+          "Render Careers": 13,
+          "PostHog Careers": 3,
+          "Linear Careers": 8,
+          "OpenAI Careers": 200,
+          "Modal Labs Careers": 2,
+          "Ashby Careers": 13,
+          "Ramp Careers": 18
+        }
+      }
+    ],
+    "total_sources": 4,
+    "ok_sources": 4
   }
 }

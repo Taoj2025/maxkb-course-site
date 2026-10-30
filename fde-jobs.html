@@ -359,18 +359,11 @@
 <!-- 导航 -->
 <!-- Hero -->
 <section class="jobs-hero">
-  <div class="version-tag">v2.0 · 2026-07-27</div>
+  <div class="version-tag" id="jobs-version">数据加载中…</div>
   <h1>💼 FDE 招聘需求聚合</h1>
-  <p>前端部署工程师 · 技能 + 知识要求 · 国内 + 海外 20 强企业</p>
-  <p style="font-size:14px; opacity:0.85;">v2.0 升级 · 新增 OpenAI / Anthropic / DeepSeek / 月之暗面 4 大 AI 时代新势力 · 8 家 AI 公司</p>
-  <div class="badges">
-    <div class="badge">🇨🇳 国内 Boss 直聘</div>
-    <div class="badge">🇨🇳 国内拉勾招聘</div>
-    <div class="badge">🌏 海外 20 强企业</div>
-    <div class="badge">🤖 8 家 AI 新势力</div>
-    <div class="badge">📊 6 大技能聚类</div>
-    <div class="badge">💰 薪资分布</div>
-  </div>
+  <p>前端部署工程师 · 技能 + 知识要求 · 国内 + 海外实时岗位</p>
+  <p style="font-size:14px; opacity:0.85;" id="jobs-hero-sub">正在从公开招聘 API 拉取实时岗位…</p>
+  <div class="badges" id="jobs-badges"></div>
 </section>
 
 <div class="container">
@@ -379,114 +372,69 @@
   <div class="stats-row">
     <div class="stat-card">
       <div class="label">📋 国内岗位</div>
-      <div class="value">40 个</div>
-      <div class="sub">Boss 20 + 拉勾 20</div>
+      <div class="value" id="stat-domestic">—</div>
+      <div class="sub" id="stat-domestic-sub">—</div>
     </div>
     <div class="stat-card cyan">
       <div class="label">🌏 海外岗位</div>
-      <div class="value">20 个</div>
-      <div class="sub">含 OpenAI / Anthropic</div>
+      <div class="value" id="stat-overseas">—</div>
+      <div class="sub" id="stat-overseas-sub">—</div>
     </div>
     <div class="stat-card orange">
       <div class="label">🤖 AI 时代新势力</div>
-      <div class="value">8 家</div>
-      <div class="sub">DeepSeek / Kimi / GLM / Anthropic</div>
+      <div class="value" id="stat-ai">—</div>
+      <div class="sub" id="stat-ai-sub">—</div>
     </div>
     <div class="stat-card red">
       <div class="label">💰 国内平均</div>
-      <div class="value">30-50K</div>
-      <div class="sub">15-16 薪</div>
+      <div class="value" id="stat-sal-domestic">—</div>
+      <div class="sub" id="stat-sal-domestic-sub">—</div>
     </div>
     <div class="stat-card green">
       <div class="label">💰 海外平均</div>
-      <div class="value">$140-200K</div>
-      <div class="sub">+ Equity · 85% 远程</div>
+      <div class="value" id="stat-sal-overseas">—</div>
+      <div class="sub" id="stat-sal-overseas-sub">—</div>
     </div>
   </div>
 
   <!-- 工作流 -->
   <div class="workflow">
-    <h3>⚙️ FDE 招聘数据流水线（v2 升级）</h3>
-    <p style="color:#6B7280; margin:8px 0 16px;">从招聘平台抓取 → AI 提取技能 → 聚类统计 → 多维度展示（薪资/远程/城市/经验）</p>
+    <h3>⚙️ FDE 招聘数据流水线（实时）</h3>
+    <p style="color:#6B7280; margin:8px 0 16px;">从公开招聘 API 抓取 → 正则提取技能 → 聚类统计 → 源站 JSON 实时转发（页面 5 分钟自动刷新）</p>
     <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:16px;">
       <div style="background:white; padding:16px; border-radius:8px; text-align:center;">
         <div style="font-size:24px;">📡</div>
         <div style="font-weight:600; margin-top:8px;">1. 多源抓取</div>
-        <div style="font-size:12px; color:#6B7280;">Boss / 拉勾 / 20 家海外 careers</div>
+        <div style="font-size:12px; color:#6B7280;">智联 / 腾讯 / Greenhouse / Ashby</div>
       </div>
       <div style="background:white; padding:16px; border-radius:8px; text-align:center;">
         <div style="font-size:24px;">🤖</div>
-        <div style="font-weight:600; margin-top:8px;">2. AI 提取</div>
-        <div style="font-size:12px; color:#6B7280;">技能 + 知识 + 远程/经验</div>
+        <div style="font-weight:600; margin-top:8px;">2. 技能提取</div>
+        <div style="font-size:12px; color:#6B7280;">职位名 + 描述 + 官方技能标签</div>
       </div>
       <div style="background:white; padding:16px; border-radius:8px; text-align:center;">
         <div style="font-size:24px;">📊</div>
         <div style="font-weight:600; margin-top:8px;">3. 多维度分析</div>
-        <div style="font-size:12px; color:#6B7280;">6 大技能 + 4 档薪资 + 远程比例</div>
+        <div style="font-size:12px; color:#6B7280;">6 大技能 + 5 档薪资 + 远程比例</div>
       </div>
       <div style="background:white; padding:16px; border-radius:8px; text-align:center;">
         <div style="font-size:24px;">🚀</div>
         <div style="font-weight:600; margin-top:8px;">4. 实时展示</div>
-        <div style="font-size:12px; color:#6B7280;">GitHub Pages 自动部署</div>
+        <div style="font-size:12px; color:#6B7280;">源站 JSON 转发 · 改文件即上线</div>
       </div>
     </div>
   </div>
 
   <!-- 数据源状态 -->
   <h2 class="section-title">📡 数据源状态</h2>
-  <div class="sources-row">
-    <div class="source-card">
-      <div class="source-icon">💼</div>
-      <div class="source-info">
-        <div class="source-name">Boss 直聘</div>
-        <div class="source-detail">含 3 家 AI 公司（DeepSeek / Kimi / 智谱）</div>
-        <div class="source-status">
-          <span class="status-dot pending"></span>
-          <span>整理版（反爬严格）</span>
-        </div>
-      </div>
-    </div>
-    <div class="source-card">
-      <div class="source-icon">🔵</div>
-      <div class="source-info">
-        <div class="source-name">拉勾招聘</div>
-        <div class="source-detail">含 3 家 AI 公司（Moonshot / 01.AI / 百川）</div>
-        <div class="source-status">
-          <span class="status-dot pending"></span>
-          <span>整理版（需登录）</span>
-        </div>
-      </div>
-    </div>
-    <div class="source-card">
-      <div class="source-icon">🌏</div>
-      <div class="source-info">
-        <div class="source-name">海外 20 强 careers</div>
-        <div class="source-detail">含 OpenAI / Anthropic（v2 新增）</div>
-        <div class="source-status">
-          <span class="status-dot"></span>
-          <span>实时抓取 ✅</span>
-        </div>
-      </div>
-    </div>
-    <div class="source-card">
-      <div class="source-icon">📊</div>
-      <div class="source-info">
-        <div class="source-name">预设知识库</div>
-        <div class="source-detail">v2 含 AI 时代新能力聚类</div>
-        <div class="source-status">
-          <span class="status-dot"></span>
-          <span>已启用</span>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div class="sources-row" id="sources-row"></div>
 
   <!-- 区域 Tab -->
-  <h2 class="section-title">🌐 招聘需求 · 国内 + 海外（60 岗位）</h2>
-  <div class="region-tabs">
-    <div class="region-tab active" data-region="domestic-boss">🇨🇳 国内 · Boss 直聘（20 强）</div>
-    <div class="region-tab" data-region="domestic-lagou">🇨🇳 国内 · 拉勾招聘（20 强）</div>
-    <div class="region-tab" data-region="overseas">🌏 海外 · 20 强（v2 含 OpenAI/Anthropic）</div>
+  <h2 class="section-title" id="jobs-section-title">🌐 招聘需求 · 国内 + 海外</h2>
+  <div class="region-tabs" id="region-tabs">
+    <div class="region-tab active" data-region="domestic-zhaopin">🇨🇳 国内 · 智联招聘</div>
+    <div class="region-tab" data-region="domestic-tencent">🔵 国内 · 腾讯招聘</div>
+    <div class="region-tab" data-region="overseas">🌏 海外 · 顶级公司</div>
   </div>
 
   <!-- 工具条 -->
@@ -495,17 +443,17 @@
     <div class="filter-chip active" data-filter="all">全部</div>
     <div class="filter-chip" data-filter="remote">🏠 远程</div>
     <div class="filter-chip" data-filter="ai-era">🤖 AI 时代</div>
-    <div class="filter-chip" data-filter="premium">💎 顶级薪资</div>
+    <div class="filter-chip" data-filter="premium">💎 顶级公司</div>
   </div>
 
-  <!-- 板块 1: 国内 Boss 直聘 -->
-  <div id="region-domestic-boss" class="region-content active">
-    <div class="jobs-grid" id="jobs-domestic-boss"></div>
+  <!-- 板块 1: 国内 · 智联招聘 -->
+  <div id="region-domestic-zhaopin" class="region-content active">
+    <div class="jobs-grid" id="jobs-domestic-zhaopin"></div>
   </div>
 
-  <!-- 板块 2: 国内拉勾 -->
-  <div id="region-domestic-lagou" class="region-content">
-    <div class="jobs-grid" id="jobs-domestic-lagou"></div>
+  <!-- 板块 2: 国内 · 腾讯招聘 -->
+  <div id="region-domestic-tencent" class="region-content">
+    <div class="jobs-grid" id="jobs-domestic-tencent"></div>
   </div>
 
   <!-- 板块 3: 海外 -->
@@ -557,87 +505,271 @@
 
 <!-- Footer -->
 <script>
-  // ============ 区域 Tab 切换 ============
-  document.querySelectorAll('.region-tab').forEach(tab => {
-    tab.addEventListener('click', () => {
-      document.querySelectorAll('.region-tab').forEach(t => t.classList.remove('active'));
-      document.querySelectorAll('.region-content').forEach(c => c.classList.remove('active'));
-      tab.classList.add('active');
-      document.getElementById('region-' + tab.dataset.region).classList.add('active');
-    });
-  });
-
   // ============ 全局状态 ============
   let allData = null;
   let currentFilter = 'all';
   let searchKeyword = '';
+  const REFRESH_MS = 5 * 60 * 1000;      // 5 分钟拉一次最新岗位
+  const AGE_MS = 30 * 1000;              // 30 秒刷新一次「几分钟前」
 
-  // ============ 加载数据 ============
-  fetch('data/fde-jobs.json')
-    .then(r => r.json())
-    .then(data => {
-      allData = data;
-      renderJobs('jobs-domestic-boss', data.domestic.boss.jobs);
-      renderJobs('jobs-domestic-lagou', data.domestic.lagou.jobs);
-      renderJobs('jobs-overseas', data.overseas.jobs);
-      renderSkillClusters(data.skills);
-      renderSalary(data.salary_distribution);
-      renderRemoteRatio(data.remote_ratio);
-      renderCityDistribution(data.city_distribution);
-    })
-    .catch(err => {
-      console.error('加载 fde-jobs.json 失败:', err);
-      document.getElementById('jobs-domestic-boss').innerHTML =
-        '<div style="grid-column:1/-1; text-align:center; padding:40px; color:#EF4444;">⚠ 加载失败</div>';
+  // 三个区域 Tab。新旧 JSON 的 key 不同（boss/lagou → zhaopin/tencent），
+  // 取值时两边都试一遍，老数据文件不至于让页面空掉。
+  const REGION_DEFS = [
+    { key: 'domestic-zhaopin', legacy: 'boss',    fallback: '🇨🇳 国内 · 智联招聘' },
+    { key: 'domestic-tencent', legacy: 'lagou',   fallback: '🔵 国内 · 腾讯招聘' },
+    { key: 'overseas',         legacy: null,      fallback: '🌏 海外 · 顶级公司 careers' },
+  ];
+
+  // ============ 转义 ============
+  // 岗位名 / 公司名来自第三方接口，直接拼进 innerHTML 就是 XSS 入口。
+  // 所有插值的地方都得过一遍 esc()，链接还得过 safeUrl()。
+  function esc(s) {
+    return String(s == null ? '' : s)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+  }
+  function safeUrl(u) {
+    const s = String(u || '').trim();
+    return /^https?:\/\//i.test(s) ? s : '#';
+  }
+  function setText(id, text) {
+    const el = document.getElementById(id);
+    if (el) el.textContent = text;
+  }
+
+  // ============ 时间 ============
+  function formatTime(iso) {
+    if (!iso) return '—';
+    const d = new Date(iso);
+    if (isNaN(d)) return '—';
+    return d.toLocaleString('zh-CN', {
+      year: 'numeric', month: '2-digit', day: '2-digit',
+      hour: '2-digit', minute: '2-digit', hour12: false
     });
+  }
+  function formatAge(iso) {
+    if (!iso) return '';
+    const d = new Date(iso);
+    if (isNaN(d)) return '';
+    const mins = Math.max(0, Math.floor((Date.now() - d.getTime()) / 60000));
+    if (mins < 1) return '刚刚更新';
+    if (mins < 60) return mins + ' 分钟前更新';
+    const hours = Math.floor(mins / 60);
+    if (hours < 24) return hours + ' 小时前更新';
+    return Math.floor(hours / 24) + ' 天前更新';
+  }
+
+  // ============ 区域取值 ============
+  function regionJobs(data, key) {
+    if (!data) return [];
+    if (key === 'overseas') return (data.overseas && data.overseas.jobs) || [];
+    const dom = data.domestic || {};
+    const def = REGION_DEFS.find(d => d.key === key);
+    for (const k of [key.replace('domestic-', ''), def && def.legacy]) {
+      if (k && dom[k] && Array.isArray(dom[k].jobs)) return dom[k].jobs;
+    }
+    return [];
+  }
+  function regionLabel(data, key) {
+    const def = REGION_DEFS.find(d => d.key === key);
+    const fallback = (def && def.fallback) || key;
+    if (!data) return fallback;
+    if (key === 'overseas') return (data.overseas && data.overseas.label) || fallback;
+    const dom = data.domestic || {};
+    for (const k of [key.replace('domestic-', ''), def && def.legacy]) {
+      if (k && dom[k] && dom[k].label) return dom[k].label;
+    }
+    return fallback;
+  }
+
+  // ============ 加载 ============
+  async function loadJobs(isRefresh) {
+    try {
+      // 加时间戳绕开缓存：源站的 /data/* 是实时转发的，但浏览器可能缓存
+      const res = await fetch('data/fde-jobs.json?_=' + Date.now(), { cache: 'no-store' });
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      const data = await res.json();
+      allData = data;
+      renderAll();
+    } catch (err) {
+      console.error('加载 fde-jobs.json 失败:', err);
+      if (!isRefresh) {
+        REGION_DEFS.forEach(d => {
+          const c = document.getElementById('jobs-' + d.key);
+          if (c) c.innerHTML = '<div style="grid-column:1/-1; text-align:center; padding:40px; color:#EF4444;">⚠ 加载失败：' + esc(err.message) + '</div>';
+        });
+      }
+    }
+  }
+
+  function renderAll() {
+    const d = allData;
+    if (!d) return;
+    renderHero(d);
+    renderStats(d);
+    renderBadges(d);
+    renderSources(d);
+    renderTabs(d);
+    REGION_DEFS.forEach(r => renderJobs('jobs-' + r.key, regionJobs(d, r.key)));
+    renderSkillClusters(d.skills);
+    renderSalary(d.salary_distribution);
+    renderRemoteRatio(d.remote_ratio);
+    renderCityDistribution(d.city_distribution);
+  }
+
+  // ============ Hero ============
+  function renderHero(d) {
+    const s = d.summary || {};
+    setText('jobs-version', (d.version || 'v3.0') + ' · 最后更新 ' + formatTime(d.updated_at));
+    setText('jobs-hero-sub',
+      '实时抓取自 ' + (d.data_sources_meta ? d.data_sources_meta.ok_sources : 0) + '/' +
+      (d.data_sources_meta ? d.data_sources_meta.total_sources : 0) + ' 个公开数据源 · ' +
+      formatAge(d.updated_at) + ' · 页面每 5 分钟自动刷新');
+  }
+
+  // ============ 徽章 ============
+  function renderBadges(d) {
+    const s = d.summary || {};
+    const badges = [
+      '🇨🇳 国内 ' + (s.domestic_jobs || 0) + ' 岗位',
+      '🌏 海外 ' + (s.overseas_jobs || 0) + ' 岗位',
+      '🏢 ' + (s.total_companies || 0) + ' 家公司',
+      '🤖 ' + (s.ai_companies || 0) + ' 家 AI 公司',
+      '📊 ' + ((d.skills || []).length) + ' 大技能聚类',
+      '💰 薪资分布',
+    ];
+    document.getElementById('jobs-badges').innerHTML =
+      badges.map(b => '<div class="badge">' + esc(b) + '</div>').join('');
+  }
+
+  // ============ 数据看板 ============
+  function renderStats(d) {
+    const s = d.summary || {};
+    const rr = d.remote_ratio || {};
+    const dom = d.domestic || {};
+    const nZhaopin = (dom.zhaopin && dom.zhaopin.jobs || dom.boss && dom.boss.jobs || []).length;
+    const nTencent = (dom.tencent && dom.tencent.jobs || dom.lagou && dom.lagou.jobs || []).length;
+
+    setText('stat-domestic', (s.domestic_jobs || 0) + ' 个');
+    setText('stat-domestic-sub', nZhaopin + ' 智联 + ' + nTencent + ' 腾讯');
+    setText('stat-overseas', (s.overseas_jobs || 0) + ' 个');
+    setText('stat-overseas-sub', (s.overseas_companies || 0) + ' 家顶级公司 careers');
+    setText('stat-ai', (s.ai_companies || 0) + ' 家');
+    setText('stat-ai-sub', 'OpenAI / Anthropic / Cloudflare …');
+    setText('stat-sal-domestic', s.avg_salary_domestic || '—');
+    setText('stat-sal-domestic-sub', '公开薪资岗位的月薪中位');
+    setText('stat-sal-overseas', s.avg_salary_overseas || '—');
+    setText('stat-sal-overseas-sub',
+      '+ Equity · ' + (rr.overseas_remote_percent || 0) + '% 支持远程');
+  }
+
+  // ============ 数据源状态 ============
+  function renderSources(d) {
+    const meta = d.data_sources_meta || {};
+    const list = meta.sources || [];
+    const row = document.getElementById('sources-row');
+    if (!row) return;
+    if (!list.length) {
+      row.innerHTML = '<div class="source-card"><div class="source-info">' +
+        '<div class="source-name">数据源状态未知</div>' +
+        '<div class="source-detail">本次返回的 JSON 没有数据源信息</div></div></div>';
+      return;
+    }
+    row.innerHTML = list.map(src => {
+      const detail = src.ok
+        ? src.detail + ' · 本轮 ' + src.count + ' 个岗位'
+        : src.detail + ' · 本轮未取到数据';
+      return '<div class="source-card">' +
+        '<div class="source-icon">' + esc(src.icon || '📡') + '</div>' +
+        '<div class="source-info">' +
+          '<div class="source-name">' + esc(src.name) + '</div>' +
+          '<div class="source-detail">' + esc(detail) + '</div>' +
+          '<div class="source-status">' +
+            '<span class="status-dot' + (src.ok ? '' : ' pending') + '"></span>' +
+            '<span>' + (src.ok ? '实时抓取 ✅' : '暂不可用') + '</span>' +
+          '</div>' +
+        '</div>' +
+      '</div>';
+    }).join('');
+  }
+
+  // ============ 区域 Tab ============
+  function renderTabs(d) {
+    const total = (d.summary && d.summary.total_jobs_estimated) || 0;
+    setText('jobs-section-title', '🌐 招聘需求 · 国内 + 海外（' + total + ' 岗位 · 实时）');
+    const tabs = document.getElementById('region-tabs');
+    if (!tabs) return;
+    const active = tabs.querySelector('.region-tab.active');
+    const activeKey = active ? active.dataset.region : REGION_DEFS[0].key;
+    tabs.innerHTML = REGION_DEFS.map(r => {
+      const n = regionJobs(d, r.key).length;
+      const label = regionLabel(d, r.key);
+      const on = r.key === activeKey ? ' active' : '';
+      return '<div class="region-tab' + on + '" data-region="' + esc(r.key) + '">' +
+        esc(label) + '（' + n + '）</div>';
+    }).join('');
+  }
+
+  // ============ 区域 Tab 切换（事件委托，重渲染后依然有效）============
+  document.getElementById('region-tabs').addEventListener('click', e => {
+    const tab = e.target.closest('.region-tab');
+    if (!tab) return;
+    document.querySelectorAll('.region-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.region-content').forEach(c => c.classList.remove('active'));
+    tab.classList.add('active');
+    const panel = document.getElementById('region-' + tab.dataset.region);
+    if (panel) panel.classList.add('active');
+  });
 
   // ============ 岗位渲染（含筛选 + 搜索）============
   function renderJobs(elementId, jobs) {
     const container = document.getElementById(elementId);
+    if (!container) return;
     if (!jobs || jobs.length === 0) {
-      container.innerHTML = '<div style="grid-column:1/-1; text-align:center; padding:40px; color:#9CA3AF;">📡 数据采集中...</div>';
+      container.innerHTML = '<div style="grid-column:1/-1; text-align:center; padding:40px; color:#9CA3AF;">📡 本轮该来源没有抓到岗位</div>';
       return;
     }
-    
+
     let filtered = jobs;
     if (currentFilter === 'remote') filtered = filtered.filter(j => j.remote);
     else if (currentFilter === 'ai-era') filtered = filtered.filter(j => j.ai_era);
     else if (currentFilter === 'premium') filtered = filtered.filter(j => j.premium);
-    
+
     if (searchKeyword) {
       const kw = searchKeyword.toLowerCase();
       filtered = filtered.filter(j =>
-        j.company.toLowerCase().includes(kw) ||
-        j.title.toLowerCase().includes(kw) ||
-        j.tags.some(t => t.toLowerCase().includes(kw))
+        (j.company || '').toLowerCase().includes(kw) ||
+        (j.title || '').toLowerCase().includes(kw) ||
+        (j.tags || []).some(t => (t || '').toLowerCase().includes(kw))
       );
     }
-    
+
     if (filtered.length === 0) {
       container.innerHTML = '<div style="grid-column:1/-1; text-align:center; padding:40px; color:#9CA3AF;">🔍 没有匹配的岗位</div>';
       return;
     }
-    
-    container.innerHTML = filtered.map(j => `
-      <div class="job-card ${j.ai_era ? 'ai-era' : ''} ${j.premium ? 'premium' : ''}">
-        ${j.ai_era ? '<span class="ai-badge">🤖 AI 时代</span>' : ''}
-        <div class="job-company" style="${j.ai_era ? 'margin-top:20px;' : ''}">🏢 ${j.company}</div>
-        <div class="job-title">${j.title}</div>
-        <div class="job-tags">
-          ${j.tags.map((t, i) => `<span class="job-tag ${i === 0 ? 'must' : 'skill'}">${t}</span>`).join('')}
-        </div>
-        <div class="job-salary">💰 ${j.salary}</div>
-        <div class="job-meta">
-          <span class="job-city">📍 ${j.city}</span>
-          ${j.level ? `<span class="job-level">${j.level}</span>` : ''}
-          ${j.remote ? `<span class="job-remote">🏠 Remote</span>` : ''}
-        </div>
-        <div class="job-footer">
-          <span class="job-source">${j.source}</span>
-          <a href="${j.url || '#'}" target="_blank" rel="noopener" style="color:#5B2EBF; font-size:12px; font-weight:600;">查看 →</a>
-        </div>
-      </div>
-    `).join('');
+
+    container.innerHTML = filtered.map(j => {
+      const tags = (j.tags || []).map((t, i) =>
+        '<span class="job-tag ' + (i === 0 ? 'must' : 'skill') + '">' + esc(t) + '</span>').join('');
+      const level = j.level ? '<span class="job-level">' + esc(j.level) + '</span>' : '';
+      const remote = j.remote ? '<span class="job-remote">🏠 Remote</span>' : '';
+      return '<div class="job-card ' + (j.ai_era ? 'ai-era' : '') + ' ' + (j.premium ? 'premium' : '') + '">' +
+        (j.ai_era ? '<span class="ai-badge">🤖 AI 时代</span>' : '') +
+        '<div class="job-company" style="' + (j.ai_era ? 'margin-top:20px;' : '') + '">🏢 ' + esc(j.company) + '</div>' +
+        '<div class="job-title">' + esc(j.title) + '</div>' +
+        '<div class="job-tags">' + tags + '</div>' +
+        '<div class="job-salary">💰 ' + esc(j.salary) + '</div>' +
+        '<div class="job-meta">' +
+          '<span class="job-city">📍 ' + esc(j.city) + '</span>' + level + remote +
+        '</div>' +
+        '<div class="job-footer">' +
+          '<span class="job-source">' + esc(j.source) + '</span>' +
+          '<a href="' + esc(safeUrl(j.url)) + '" target="_blank" rel="noopener" ' +
+            'style="color:#5B2EBF; font-size:12px; font-weight:600;">查看 →</a>' +
+        '</div>' +
+      '</div>';
+    }).join('');
   }
 
   // ============ 工具条事件 ============
@@ -655,107 +787,97 @@
   });
   function rerenderAllJobs() {
     if (!allData) return;
-    renderJobs('jobs-domestic-boss', allData.domestic.boss.jobs);
-    renderJobs('jobs-domestic-lagou', allData.domestic.lagou.jobs);
-    renderJobs('jobs-overseas', allData.overseas.jobs);
+    REGION_DEFS.forEach(r => renderJobs('jobs-' + r.key, regionJobs(allData, r.key)));
   }
 
   // ============ 技能聚类 ============
   function renderSkillClusters(clusters) {
     const container = document.getElementById('skill-clusters');
+    if (!container) return;
     if (!clusters || clusters.length === 0) {
       container.innerHTML = '<div style="text-align:center; padding:40px; color:#9CA3AF;">📊 聚类统计中...</div>';
       return;
     }
-    container.innerHTML = clusters.map(c => `
-      <div class="skill-cluster">
-        <div class="skill-cluster-header">
-          <div class="skill-cluster-name">${c.name}</div>
-          <div class="skill-cluster-count">${c.total} 岗位提及</div>
-        </div>
-        ${c.skills.map(s => `
-          <div class="skill-bar">
-            <div class="skill-name">${s.name}</div>
-            <div class="skill-progress-bar">
-              <div class="skill-progress" style="width:${s.percent}%"></div>
-            </div>
-            <div class="skill-percent">${s.percent}%</div>
-          </div>
-        `).join('')}
-      </div>
-    `).join('');
+    container.innerHTML = clusters.map(c => '<div class="skill-cluster">' +
+        '<div class="skill-cluster-header">' +
+          '<div class="skill-cluster-name">' + esc(c.name) + '</div>' +
+          '<div class="skill-cluster-count">' + (c.total || 0) + ' 岗位提及</div>' +
+        '</div>' +
+        (c.skills || []).map(s => '<div class="skill-bar">' +
+          '<div class="skill-name">' + esc(s.name) + '</div>' +
+          '<div class="skill-progress-bar">' +
+            '<div class="skill-progress" style="width:' + (s.percent || 0) + '%"></div>' +
+          '</div>' +
+          '<div class="skill-percent">' + (s.percent || 0) + '%</div>' +
+        '</div>').join('') +
+      '</div>').join('');
   }
 
   // ============ 薪资分布 ============
   function renderSalary(salary) {
     if (!salary) return;
-    
-    document.getElementById('salary-domestic').innerHTML = salary.domestic.map(s => `
-      <div class="salary-bar">
-        <div class="salary-label">${s.level}</div>
-        <div class="salary-range">${s.range}</div>
-        <div class="salary-progress-bar">
-          <div class="salary-progress" style="width:${s.percent}%; background:${s.color};">${s.percent}%</div>
-        </div>
-      </div>
-    `).join('');
-    
-    document.getElementById('salary-overseas').innerHTML = salary.overseas.map(s => `
-      <div class="salary-bar">
-        <div class="salary-label">${s.level}</div>
-        <div class="salary-range">${s.range}</div>
-        <div class="salary-progress-bar">
-          <div class="salary-progress" style="width:${s.percent}%; background:${s.color};">${s.percent}%</div>
-        </div>
-      </div>
-    `).join('');
+
+    document.getElementById('salary-domestic').innerHTML = (salary.domestic || []).map(s => '<div class="salary-bar">' +
+        '<div class="salary-label">' + esc(s.level) + '</div>' +
+        '<div class="salary-range">' + esc(s.range) + '</div>' +
+        '<div class="salary-progress-bar">' +
+          '<div class="salary-progress" style="width:' + (s.percent || 0) + '%; background:' + esc(s.color) + ';">' + (s.percent || 0) + '%</div>' +
+        '</div>' +
+      '</div>').join('');
+
+    document.getElementById('salary-overseas').innerHTML = (salary.overseas || []).map(s => '<div class="salary-bar">' +
+        '<div class="salary-label">' + esc(s.level) + '</div>' +
+        '<div class="salary-range">' + esc(s.range) + '</div>' +
+        '<div class="salary-progress-bar">' +
+          '<div class="salary-progress" style="width:' + (s.percent || 0) + '%; background:' + esc(s.color) + ';">' + (s.percent || 0) + '%</div>' +
+        '</div>' +
+      '</div>').join('');
   }
 
   // ============ 远程比例 ============
   function renderRemoteRatio(remote) {
     const container = document.getElementById('remote-ratio');
-    if (!remote) return;
-    container.innerHTML = `
-      <div style="margin-bottom:16px; padding:16px; background:#F9FAFB; border-radius:8px;">
-        <div style="font-size:14px; color:#6B7280; margin-bottom:4px;">🇨🇳 国内远程岗位</div>
-        <div style="font-size:28px; font-weight:700; color:#5B2EBF;">${remote.domestic_remote_jobs} / ${remote.domestic_total}</div>
-        <div style="font-size:13px; color:#9CA3AF; margin-top:4px;">${remote.domestic_remote_percent}% （PingCAP/Moonshot/零一万物等支持远程）</div>
-      </div>
-      <div style="padding:16px; background:linear-gradient(135deg, #D1FAE5, #A7F3D0); border-radius:8px;">
-        <div style="font-size:14px; color:#065F46; margin-bottom:4px;">🌏 海外远程岗位</div>
-        <div style="font-size:28px; font-weight:700; color:#065F46;">${remote.overseas_remote_jobs} / ${remote.overseas_total}</div>
-        <div style="font-size:13px; color:#047857; margin-top:4px;">${remote.overseas_remote_percent}% ✅</div>
-      </div>
-      <div style="margin-top:12px; padding:10px; background:#FEF3C7; border-radius:6px; font-size:12px; color:#92400E;">
-        💡 ${remote.comment}
-      </div>
-    `;
+    if (!remote || !container) return;
+    container.innerHTML = '<div style="margin-bottom:16px; padding:16px; background:#F9FAFB; border-radius:8px;">' +
+        '<div style="font-size:14px; color:#6B7280; margin-bottom:4px;">🇨🇳 国内远程岗位</div>' +
+        '<div style="font-size:28px; font-weight:700; color:#5B2EBF;">' + (remote.domestic_remote_jobs || 0) + ' / ' + (remote.domestic_total || 0) + '</div>' +
+        '<div style="font-size:13px; color:#9CA3AF; margin-top:4px;">' + (remote.domestic_remote_percent || 0) + '%（标题里明确写「远程」的岗位）</div>' +
+      '</div>' +
+      '<div style="padding:16px; background:linear-gradient(135deg, #D1FAE5, #A7F3D0); border-radius:8px;">' +
+        '<div style="font-size:14px; color:#065F46; margin-bottom:4px;">🌏 海外远程岗位</div>' +
+        '<div style="font-size:28px; font-weight:700; color:#065F46;">' + (remote.overseas_remote_jobs || 0) + ' / ' + (remote.overseas_total || 0) + '</div>' +
+        '<div style="font-size:13px; color:#047857; margin-top:4px;">' + (remote.overseas_remote_percent || 0) + '% ✅</div>' +
+      '</div>' +
+      '<div style="margin-top:12px; padding:10px; background:#FEF3C7; border-radius:6px; font-size:12px; color:#92400E;">' +
+        '💡 ' + esc(remote.comment || '') +
+      '</div>';
   }
 
   // ============ 城市分布 ============
   function renderCityDistribution(city) {
     if (!city) return;
-    
-    document.getElementById('city-domestic').innerHTML = city.domestic_top10.map(c => `
-      <div class="donut-row">
-        <div class="city-name">${c.city}</div>
-        <div class="city-progress-bar">
-          <div class="city-progress" style="width:${c.percent * 2}%"></div>
-        </div>
-        <div class="city-jobs">${c.jobs} 岗</div>
-      </div>
-    `).join('');
-    
-    document.getElementById('city-overseas').innerHTML = city.overseas_top5.map(c => `
-      <div class="donut-row">
-        <div class="city-name">${c.city}</div>
-        <div class="city-progress-bar">
-          <div class="city-progress" style="width:${c.percent * 1.5}%"></div>
-        </div>
-        <div class="city-jobs">${c.jobs} 岗</div>
-      </div>
-    `).join('');
+
+    document.getElementById('city-domestic').innerHTML = (city.domestic_top10 || []).map(c => '<div class="donut-row">' +
+        '<div class="city-name">' + esc(c.city) + '</div>' +
+        '<div class="city-progress-bar">' +
+          '<div class="city-progress" style="width:' + Math.min(100, (c.percent || 0) * 2) + '%"></div>' +
+        '</div>' +
+        '<div class="city-jobs">' + (c.jobs || 0) + ' 岗</div>' +
+      '</div>').join('');
+
+    document.getElementById('city-overseas').innerHTML = (city.overseas_top5 || []).map(c => '<div class="donut-row">' +
+        '<div class="city-name">' + esc(c.city) + '</div>' +
+        '<div class="city-progress-bar">' +
+          '<div class="city-progress" style="width:' + Math.min(100, (c.percent || 0) * 1.5) + '%"></div>' +
+        '</div>' +
+        '<div class="city-jobs">' + (c.jobs || 0) + ' 岗</div>' +
+      '</div>').join('');
   }
+
+  // ============ 启动 + 自动刷新 ============
+  loadJobs(false);
+  setInterval(() => loadJobs(true), REFRESH_MS);
+  setInterval(() => { if (allData) renderHero(allData); }, AGE_MS);
 </script>
 
 
