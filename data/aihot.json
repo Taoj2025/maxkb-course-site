@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-10-30T09:05:02.089626+08:00",
+  "updated_at": "2026-10-30T10:05:02.516376+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Google 与 Reddit 同日股价大跌，AI 搜索变现困境冲击开放网络",
+      "link": "https://aihot.news/items/kzenjo9w2bfhpsr0ub1gr95xj",
+      "summary": "Casey Newton 分析 Google 与 Reddit 同日遭遇的股市重挫：Alphabet 股价跌 12.6%，蒸发约 $5000 亿市值，为史上第二大单日市值缩水；高管承认 AI Mode 变现能力低于传统搜索，尽管 AI Mode 月用户约 10 亿、搜索收入仍增长 12% 至 $633.5 亿。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kzenjo9w2bfhpsr0ub1gr95xj",
+      "pub_date": "2026-10-30",
+      "author": "noreply@aihot.news (Platformer)",
+      "category": "行业动态"
+    },
     {
       "title": "OpenRouter 实测 Claude Opus vs Sonnet vs Haiku 5.5 该选哪个",
       "link": "https://aihot.news/items/gzcwy89nkjreenv5eu1qaysdi",
@@ -394,14 +402,6 @@
       "pub_date": "2026-10-27",
       "author": "noreply@aihot.news (Azeem Azhar：Exponential View)",
       "category": "观点"
-    },
-    {
-      "title": "Anthropic 拟以特殊治理结构抵御 IPO 后股东的安全施压",
-      "link": "https://aihot.news/items/x9a9nhbuq2ncarw5i41jhryjc",
-      "summary": "Anthropic 计划通过长期受益信托和 Founder LLC 等独特治理结构上市，在公开市场融资的同时防止股东迫使公司削弱安全投入。信托的五名投票受托人可通过 Class T 股票任命七名董事中的四席，七位创始人则以 Founder LLC 掌握 50.1% 投票权。法学专家认为法律层面可隔绝逐利压力，但市场竞争、融资需求和创始人离开都可能侵蚀这些保障。 🔗 阅读原文 via AIHOT · https://aihot.news/items/x9a9nhbuq2ncarw5i41jhryjc",
-      "pub_date": "2026-10-27",
-      "author": "noreply@aihot.news (The Verge：AI)",
-      "category": "行业动态"
     }
   ]
 }
