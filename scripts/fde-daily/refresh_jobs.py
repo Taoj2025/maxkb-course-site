@@ -1080,6 +1080,10 @@ def main():
         tmp.flush()
         os.fsync(tmp.fileno())
         tmp.close()
+        # tempfile 建出来是 0600（只有 root 能读），
+        # os.replace 之后权限原样带过去 —— nginx 就 403 了。
+        # 同目录的其它 data/*.json 都是 0644，跟着来。
+        os.chmod(tmp.name, 0o644)
         os.replace(tmp.name, OUT_FILE)
     except Exception:
         tmp.close()
