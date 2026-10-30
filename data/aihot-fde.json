@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-10-30T07:05:01.628568+08:00",
-  "total": 21,
+  "updated_at": "2026-10-30T08:05:01.966717+08:00",
+  "total": 22,
   "items": [
     {
       "title": "Figma 讲解如何训练专用画布编辑模型",
@@ -66,6 +66,14 @@
       "pub_date": "2026-10-29",
       "author": "noreply@aihot.news (Hugging Face 官方团队博客)",
       "category": "AI 模型"
+    },
+    {
+      "title": "Factory 发布 Droid 1.0，以程序化工具调用构建企业级 Agent harness",
+      "link": "https://aihot.news/items/gjz7lj8j6ojjyj80vkkhy786v",
+      "summary": "Factory 发布 Droid 1.0，一个模型无关的 agent harness，主打程序化工具调用（PTC），模型通过编写 JavaScript 程序在沙箱中一次执行数百个工具调用。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gjz7lj8j6ojjyj80vkkhy786v",
+      "pub_date": "2026-10-29",
+      "author": "noreply@aihot.news (Factory 研究 / 产品)",
+      "category": "AI 产品"
     },
     {
       "title": "Alphabet Q3 财报：年化收入达 5000 亿美元，Google Cloud 增长 103%",
