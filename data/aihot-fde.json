@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-10-30T12:05:02.321605+08:00",
-  "total": 22,
+  "updated_at": "2026-10-30T13:05:02.131466+08:00",
+  "total": 23,
   "items": [
+    {
+      "title": "Kimi 官方教程：如何用 Kimi K3.1 Pro 创作 3D 作品",
+      "link": "https://aihot.news/items/ykvaq4vx3ydt23josezzan62r",
+      "summary": "月之暗面（Kimi）发布官方教程，详解 Kimi K3.1 Pro 的 3D 创作工作流程，说明参数化建模与网格化建模两种方式及对应工具选择。文章分享了 4 个案例的具体操作，包括在 Unreal Engine 中构建东方天宫、制作可 3D 打印的台灯、纯代码调用 Blender 生成建筑、用 Tripo 和 Blender 搭建微缩城市，并给出图胜于言、先搭灰模再细化等 5 个使用技巧。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ykvaq4vx3ydt23josezzan62r",
+      "pub_date": "2026-10-30",
+      "author": "noreply@aihot.news (公众号：月之暗面)",
+      "category": "教程"
+    },
     {
       "title": "OpenRouter 实测 Claude Opus vs Sonnet vs Haiku 5.5 该选哪个",
       "link": "https://aihot.news/items/gzcwy89nkjreenv5eu1qaysdi",

@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-10-30T12:05:02.320677+08:00",
+  "updated_at": "2026-10-30T13:05:02.130126+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Kimi 官方教程：如何用 Kimi K3.1 Pro 创作 3D 作品",
+      "link": "https://aihot.news/items/ykvaq4vx3ydt23josezzan62r",
+      "summary": "月之暗面（Kimi）发布官方教程，详解 Kimi K3.1 Pro 的 3D 创作工作流程，说明参数化建模与网格化建模两种方式及对应工具选择。文章分享了 4 个案例的具体操作，包括在 Unreal Engine 中构建东方天宫、制作可 3D 打印的台灯、纯代码调用 Blender 生成建筑、用 Tripo 和 Blender 搭建微缩城市，并给出图胜于言、先搭灰模再细化等 5 个使用技巧。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ykvaq4vx3ydt23josezzan62r",
+      "pub_date": "2026-10-30",
+      "author": "noreply@aihot.news (公众号：月之暗面)",
+      "category": "教程"
+    },
     {
       "title": "Google 与 Reddit 同日股价大跌，AI 搜索变现困境冲击开放网络",
       "link": "https://aihot.news/items/kzenjo9w2bfhpsr0ub1gr95xj",
@@ -394,14 +402,6 @@
       "pub_date": "2026-10-27",
       "author": "noreply@aihot.news (Gemini)",
       "category": "AI 产品"
-    },
-    {
-      "title": "Azeem Azhar 图解 Anthropic S-1 财务数据",
-      "link": "https://aihot.news/items/xhwtx8zwvvmyou5emtd3dbzbn",
-      "summary": "Azeem Azhar 图解 Anthropic 的 S-1 文件，指出公司已从实验室变成有现金流和资金的业务，看起来能走向可靠盈利。增长仍高但放缓，超过 80% 的营收来自发布不到六个月的模型；Q3 因向基金会付款可能出现边际亏损，客户集中度问题不大。 🔗 阅读原文 via AIHOT · https://aihot.news/items/xhwtx8zwvvmyou5emtd3dbzbn",
-      "pub_date": "2026-10-27",
-      "author": "noreply@aihot.news (Azeem Azhar：Exponential View)",
-      "category": "观点"
     }
   ]
 }
