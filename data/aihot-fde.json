@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-01T00:05:02.423478+08:00",
-  "total": 21,
+  "updated_at": "2026-11-01T01:05:02.244195+08:00",
+  "total": 20,
   "items": [
     {
       "title": "Figma 发布 Weave 创作平台，用节点化工作流让创意流程可复用",
@@ -162,14 +162,6 @@
       "pub_date": "2026-10-28",
       "author": "noreply@aihot.news (Google DeepMind：Blog)",
       "category": "AI 模型"
-    },
-    {
-      "title": "Microsoft 通过 Foundry 开放 Copilot harness，支持多模型 Agent 开发",
-      "link": "https://aihot.news/items/tdp7qmrh74fdfarxbi4jaoc6v",
-      "summary": "Microsoft 宣布将 GitHub 团队打造的 Copilot harness 通过 Microsoft Foundry 向开发者和企业开放，该 harness 已驱动 Copilot Code、Copilot Studio、GitHub Copilot app 和 CLI 等产品。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tdp7qmrh74fdfarxbi4jaoc6v",
-      "pub_date": "2026-10-28",
-      "author": "noreply@aihot.news (Microsoft：Official Blog)",
-      "category": "AI 产品"
     }
   ]
 }

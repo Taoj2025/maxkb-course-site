@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-01T00:05:02.421870+08:00",
+  "updated_at": "2026-11-01T01:05:02.243262+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "彭博社统计：Alphabet、Meta、微软、亚马逊、甲骨文承诺投入超3万亿美元建AI基础设施",
+      "link": "https://aihot.news/items/htfc0ler37j2h4hoqll6jewz3",
+      "summary": "据彭博社10月31日报道，Alphabet、Meta、微软、亚马逊和甲骨文五大巨头承诺未来数年在数据中心等领域投入超过3万亿美元（约20.01万亿元人民币）。其中谷歌支出承诺超1万亿美元、接近一年前的八倍，Meta超8,000亿美元且近半用于最长分30年支付的租约；甲骨文是首家因投资AI数据中心而自由现金流转负的大型科技公司，预计到2028年恢复正自由现金流。 🔗 阅读原文 via AIHOT · https://aihot.news/items/htfc0ler37j2h4hoqll6jewz3",
+      "pub_date": "2026-10-31",
+      "author": "noreply@aihot.news (IT之家·人工智能)",
+      "category": "行业动态"
+    },
     {
       "title": "Anthropic IPO 招股文件披露近 9000 亿美元隐性债务",
       "link": "https://aihot.news/items/yqblvh40gus1ssc0rjvawh6fu",
@@ -394,14 +402,6 @@
       "pub_date": "2026-10-28",
       "author": "noreply@aihot.news (Google DeepMind：Blog)",
       "category": "AI 模型"
-    },
-    {
-      "title": "Microsoft 通过 Foundry 开放 Copilot harness，支持多模型 Agent 开发",
-      "link": "https://aihot.news/items/tdp7qmrh74fdfarxbi4jaoc6v",
-      "summary": "Microsoft 宣布将 GitHub 团队打造的 Copilot harness 通过 Microsoft Foundry 向开发者和企业开放，该 harness 已驱动 Copilot Code、Copilot Studio、GitHub Copilot app 和 CLI 等产品。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tdp7qmrh74fdfarxbi4jaoc6v",
-      "pub_date": "2026-10-28",
-      "author": "noreply@aihot.news (Microsoft：Official Blog)",
-      "category": "AI 产品"
     }
   ]
 }
