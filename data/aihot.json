@@ -1,15 +1,31 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-10-31T08:05:01.924119+08:00",
+  "updated_at": "2026-10-31T09:05:02.082899+08:00",
   "total": 50,
   "items": [
     {
-      "title": "阿里巴巴：Apple 智能国行用户可自主选择是否开通千问集成功能",
-      "link": "https://aihot.news/items/yrdu4gxaoljhhbkvw1xlvzc3p",
-      "summary": "阿里巴巴发布公告，说明千问集成 Apple 智能后用户可自主选择是否开通，功能将于 11 月 4 日随 iOS 开发者 Beta 版开放测试，12 月 iOS 27.3 正式发布时面向中国用户推出。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yrdu4gxaoljhhbkvw1xlvzc3p",
-      "pub_date": "2026-10-30",
-      "author": "noreply@aihot.news (IT之家·人工智能)",
+      "title": "Figma 发布 Weave 创作平台，用节点化工作流让创意流程可复用",
+      "link": "https://aihot.news/items/akdeq33m7cpr8m7zsfgvfiz5c",
+      "summary": "Figma 宣布 Figma Weave，一个面向持续产出需求的创意团队平台，并把 Weave 创作工作流与 Figma 画框连接起来。Weave 用连接的节点承载图像和视频的生成与编辑，支持分支探索、多模型对比、色彩校正、合成、裁剪、Painter 等编辑节点；工作流可打包成 Weave tool 让团队成员一键运行，社区工具发布已上线。 🔗 阅读原文 via AIHOT · https://aihot.news/items/akdeq33m7cpr8m7zsfgvfiz5c",
+      "pub_date": "2026-10-31",
+      "author": "noreply@aihot.news (Figma AI / Agent / Make)",
+      "category": "AI 产品"
+    },
+    {
+      "title": "阿里巴巴与Apple合作，千问集成至Apple智能，11月4日开放测试",
+      "link": "https://aihot.news/items/cbggw7imkzd4c01ifblroln6v",
+      "summary": "10月31日阿里巴巴宣布与Apple合作，将千问集成至Apple智能，中国用户可在Siri、写作工具及视觉智能中调用千问的文本与图像理解、内容生成能力。功能11月4日起随iOS开发者Beta开放测试，12月iOS 27.3正式发布时推出；用户可自主选择开通，请求与回复不用于模型训练。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cbggw7imkzd4c01ifblroln6v",
+      "pub_date": "2026-10-31",
+      "author": "noreply@aihot.news (公众号：千问APP)",
       "category": "行业动态"
+    },
+    {
+      "title": "Wiz 报告“黑色十月”：九个 AI 开发者平台接连披露安全事件",
+      "link": "https://aihot.news/items/la0qb77ds4znf2r7ub14a3bqz",
+      "summary": "Wiz 研究团队梳理 10 月内至少九个 AI 开发者平台披露的安全事件，包括 Fireworks AI、Lightning AI、Railway、Warp、OpenCode 等，多起报告指向凭据窃取、agent swarm 攻击和以“蒸馏”为目的的窃取。 🔗 阅读原文 via AIHOT · https://aihot.news/items/la0qb77ds4znf2r7ub14a3bqz",
+      "pub_date": "2026-10-30",
+      "author": "noreply@aihot.news (Wiz：Research)",
+      "category": "论文"
     },
     {
       "title": "科技巨头 AI 资本开支超 7400 亿美元，投资者担忧升温引发市场下跌",
@@ -386,22 +402,6 @@
       "pub_date": "2026-10-28",
       "author": "noreply@aihot.news (a16z：News)",
       "category": "观点"
-    },
-    {
-      "title": "OpenMOSS 发布开源图像生成模型 MOSS-Image，主打长文本渲染与可编辑布局",
-      "link": "https://aihot.news/items/wykbrcxndw1zv255b9y2usj7v",
-      "summary": "OpenMOSS 发布开放权重图像生成模型 MOSS-Image，采用 5B 参数单流 DiT 从零预训练，支持最长 4K token 提示词、中英文长文本渲染和可编辑的 JSON Layout。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wykbrcxndw1zv255b9y2usj7v",
-      "pub_date": "2026-10-28",
-      "author": "noreply@aihot.news (OpenMOSS / 复旦NLP / 上海创智 / MOSI)",
-      "category": "AI 模型"
-    },
-    {
-      "title": "面壁智能发布并开源 MiniCPM-OCR 系列：1.3B 解析模型与 2B 判别模型",
-      "link": "https://aihot.news/items/zd8g1y3609zl72lnwis70owqt",
-      "summary": "面壁智能发布并开源 MiniCPM-OCR 系列。MiniCPM-OCR 1.0（1.3B）在 Real5-OmniDocBench 取得 93.68 分、OCRBench v2 取得 54.7 分的 SOTA，经 DSpark 加速后吞吐达 1.217 页/秒，端到端效率提升 55%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zd8g1y3609zl72lnwis70owqt",
-      "pub_date": "2026-10-28",
-      "author": "noreply@aihot.news (公众号：面壁智能)",
-      "category": "AI 模型"
     }
   ]
 }

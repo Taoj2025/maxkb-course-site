@@ -1,8 +1,24 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-10-31T08:05:01.925011+08:00",
-  "total": 22,
+  "updated_at": "2026-10-31T09:05:02.083945+08:00",
+  "total": 23,
   "items": [
+    {
+      "title": "Figma 发布 Weave 创作平台，用节点化工作流让创意流程可复用",
+      "link": "https://aihot.news/items/akdeq33m7cpr8m7zsfgvfiz5c",
+      "summary": "Figma 宣布 Figma Weave，一个面向持续产出需求的创意团队平台，并把 Weave 创作工作流与 Figma 画框连接起来。Weave 用连接的节点承载图像和视频的生成与编辑，支持分支探索、多模型对比、色彩校正、合成、裁剪、Painter 等编辑节点；工作流可打包成 Weave tool 让团队成员一键运行，社区工具发布已上线。 🔗 阅读原文 via AIHOT · https://aihot.news/items/akdeq33m7cpr8m7zsfgvfiz5c",
+      "pub_date": "2026-10-31",
+      "author": "noreply@aihot.news (Figma AI / Agent / Make)",
+      "category": "AI 产品"
+    },
+    {
+      "title": "Wiz 报告“黑色十月”：九个 AI 开发者平台接连披露安全事件",
+      "link": "https://aihot.news/items/la0qb77ds4znf2r7ub14a3bqz",
+      "summary": "Wiz 研究团队梳理 10 月内至少九个 AI 开发者平台披露的安全事件，包括 Fireworks AI、Lightning AI、Railway、Warp、OpenCode 等，多起报告指向凭据窃取、agent swarm 攻击和以“蒸馏”为目的的窃取。 🔗 阅读原文 via AIHOT · https://aihot.news/items/la0qb77ds4znf2r7ub14a3bqz",
+      "pub_date": "2026-10-30",
+      "author": "noreply@aihot.news (Wiz：Research)",
+      "category": "论文"
+    },
     {
       "title": "Project Suncatcher 在轨道卫星上运行 TPU，Gemma 模型首次在太空完成推理并回传回应",
       "link": "https://aihot.news/items/cms82puwtmpssdpbjmajoopr9",
@@ -170,14 +186,6 @@
       "pub_date": "2026-10-28",
       "author": "noreply@aihot.news (a16z：News)",
       "category": "观点"
-    },
-    {
-      "title": "OpenMOSS 发布开源图像生成模型 MOSS-Image，主打长文本渲染与可编辑布局",
-      "link": "https://aihot.news/items/wykbrcxndw1zv255b9y2usj7v",
-      "summary": "OpenMOSS 发布开放权重图像生成模型 MOSS-Image，采用 5B 参数单流 DiT 从零预训练，支持最长 4K token 提示词、中英文长文本渲染和可编辑的 JSON Layout。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wykbrcxndw1zv255b9y2usj7v",
-      "pub_date": "2026-10-28",
-      "author": "noreply@aihot.news (OpenMOSS / 复旦NLP / 上海创智 / MOSI)",
-      "category": "AI 模型"
     }
   ]
 }
