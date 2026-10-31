@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-10-31T07:05:01.713003+08:00",
+  "updated_at": "2026-10-31T08:05:01.924119+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "阿里巴巴：Apple 智能国行用户可自主选择是否开通千问集成功能",
+      "link": "https://aihot.news/items/yrdu4gxaoljhhbkvw1xlvzc3p",
+      "summary": "阿里巴巴发布公告，说明千问集成 Apple 智能后用户可自主选择是否开通，功能将于 11 月 4 日随 iOS 开发者 Beta 版开放测试，12 月 iOS 27.3 正式发布时面向中国用户推出。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yrdu4gxaoljhhbkvw1xlvzc3p",
+      "pub_date": "2026-10-30",
+      "author": "noreply@aihot.news (IT之家·人工智能)",
+      "category": "行业动态"
+    },
     {
       "title": "科技巨头 AI 资本开支超 7400 亿美元，投资者担忧升温引发市场下跌",
       "link": "https://aihot.news/items/fxxkgtzpf2pb8xjnhu4jtis0b",
@@ -394,14 +402,6 @@
       "pub_date": "2026-10-28",
       "author": "noreply@aihot.news (公众号：面壁智能)",
       "category": "AI 模型"
-    },
-    {
-      "title": "Cathedral 用 AI 智能体侵入 Anthropic 内部系统，双方对事件范围说法不一",
-      "link": "https://aihot.news/items/klkmnzle2z7p5y6cl477ce7sg",
-      "summary": "网络安全初创公司 Cathedral 通过第三方业务软件渗入 Anthropic 内部系统，称其 AI 智能体在不到十二小时内接触到会议记录、薪资数据和 Slack 消息，并借漏洞赏金计划披露问题。 🔗 阅读原文 via AIHOT · https://aihot.news/items/klkmnzle2z7p5y6cl477ce7sg",
-      "pub_date": "2026-10-28",
-      "author": "noreply@aihot.news (The Decoder：AI News)",
-      "category": "行业动态"
     }
   ]
 }

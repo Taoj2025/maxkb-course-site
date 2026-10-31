@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-10-31T07:05:01.713865+08:00",
-  "total": 23,
+  "updated_at": "2026-10-31T08:05:01.925011+08:00",
+  "total": 22,
   "items": [
     {
       "title": "Project Suncatcher 在轨道卫星上运行 TPU，Gemma 模型首次在太空完成推理并回传回应",
@@ -178,14 +178,6 @@
       "pub_date": "2026-10-28",
       "author": "noreply@aihot.news (OpenMOSS / 复旦NLP / 上海创智 / MOSI)",
       "category": "AI 模型"
-    },
-    {
-      "title": "Cathedral 用 AI 智能体侵入 Anthropic 内部系统，双方对事件范围说法不一",
-      "link": "https://aihot.news/items/klkmnzle2z7p5y6cl477ce7sg",
-      "summary": "网络安全初创公司 Cathedral 通过第三方业务软件渗入 Anthropic 内部系统，称其 AI 智能体在不到十二小时内接触到会议记录、薪资数据和 Slack 消息，并借漏洞赏金计划披露问题。 🔗 阅读原文 via AIHOT · https://aihot.news/items/klkmnzle2z7p5y6cl477ce7sg",
-      "pub_date": "2026-10-28",
-      "author": "noreply@aihot.news (The Decoder：AI News)",
-      "category": "行业动态"
     }
   ]
 }
