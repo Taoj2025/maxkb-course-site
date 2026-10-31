@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-10-31T11:05:02.322909+08:00",
+  "updated_at": "2026-10-31T12:05:01.487710+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Anthropic IPO 招股文件披露近 9000 亿美元隐性债务",
+      "link": "https://aihot.news/items/yqblvh40gus1ssc0rjvawh6fu",
+      "summary": "Anthropic 近日提交 IPO 招股文件，彭博社报道其计划未来在服务器、建筑和电力等领域投入近 9,000 亿美元债务。该公司资产负债表显示 1,175 亿美元负债和 1,120 亿美元现金，而租赁合同及数据中心、电力和 GPU 采购协议等表外义务未直接体现；Anthropic 计划通过增加收入和筹集资金支付这些负债。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yqblvh40gus1ssc0rjvawh6fu",
+      "pub_date": "2026-10-31",
+      "author": "noreply@aihot.news (IT之家·人工智能)",
+      "category": "行业动态"
+    },
     {
       "title": "Nvidia 洽谈为 Nscale 西弗吉尼亚 Anthropic 数据中心提供债务担保",
       "link": "https://aihot.news/items/hx5dsruslfiiqhbsro2tvg1n8",
@@ -393,14 +401,6 @@
       "summary": "Microsoft 宣布将 GitHub 团队打造的 Copilot harness 通过 Microsoft Foundry 向开发者和企业开放，该 harness 已驱动 Copilot Code、Copilot Studio、GitHub Copilot app 和 CLI 等产品。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tdp7qmrh74fdfarxbi4jaoc6v",
       "pub_date": "2026-10-28",
       "author": "noreply@aihot.news (Microsoft：Official Blog)",
-      "category": "AI 产品"
-    },
-    {
-      "title": "GitHub Universe 2026 发布 GitHub Copilot app、Copilot Fusion 等智能体产品",
-      "link": "https://aihot.news/items/xonc43xgcx39303i40k8022rl",
-      "summary": "GitHub 在 GitHub Universe 2026 上提出把 GitHub 打造为完整软件交付系统的愿景，并发布多项产品：GitHub Copilot app 面向智能体交付。 🔗 阅读原文 via AIHOT · https://aihot.news/items/xonc43xgcx39303i40k8022rl",
-      "pub_date": "2026-10-28",
-      "author": "noreply@aihot.news (GitHub Blog)",
       "category": "AI 产品"
     }
   ]

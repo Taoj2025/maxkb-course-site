@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-10-31T11:05:02.324111+08:00",
-  "total": 22,
+  "updated_at": "2026-10-31T12:05:01.488725+08:00",
+  "total": 21,
   "items": [
     {
       "title": "Figma 发布 Weave 创作平台，用节点化工作流让创意流程可复用",
@@ -169,14 +169,6 @@
       "summary": "Microsoft 宣布将 GitHub 团队打造的 Copilot harness 通过 Microsoft Foundry 向开发者和企业开放，该 harness 已驱动 Copilot Code、Copilot Studio、GitHub Copilot app 和 CLI 等产品。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tdp7qmrh74fdfarxbi4jaoc6v",
       "pub_date": "2026-10-28",
       "author": "noreply@aihot.news (Microsoft：Official Blog)",
-      "category": "AI 产品"
-    },
-    {
-      "title": "GitHub Universe 2026 发布 GitHub Copilot app、Copilot Fusion 等智能体产品",
-      "link": "https://aihot.news/items/xonc43xgcx39303i40k8022rl",
-      "summary": "GitHub 在 GitHub Universe 2026 上提出把 GitHub 打造为完整软件交付系统的愿景，并发布多项产品：GitHub Copilot app 面向智能体交付。 🔗 阅读原文 via AIHOT · https://aihot.news/items/xonc43xgcx39303i40k8022rl",
-      "pub_date": "2026-10-28",
-      "author": "noreply@aihot.news (GitHub Blog)",
       "category": "AI 产品"
     }
   ]
