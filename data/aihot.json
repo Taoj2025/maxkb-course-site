@@ -4,7 +4,7 @@
   "total": 50,
   "items": [
     {
-      "title": "OpenAI 12月起将ChatGPT与Codex合并为统一Token额度",
+      "title": "[部署时延探针] OpenAI 12月起将ChatGPT与Codex合并为统一Token额度",
       "link": "https://aihot.news/items/f6dxzur6d4pwjdhvm1x6m5rfp",
       "summary": "作者引述OpenAI凌晨更新的帮助文档称，从12月开始Plus和Pro用户的ChatGPT聊天与Codex用量将合并为同一Token额度，仅Instant聊天不受影响。作者回顾此前按条数计费的历史、一个月内Codex Pro额度先降后恢复的运营反复，以及社区在GitHub上提issue抗议的反应，认为合并与IPO预期下的算力成本压力有关。 🔗 阅读原文 via AIHOT · https://aihot.news/items/f6dxzur6d4pwjdhvm1x6m5rfp",
       "pub_date": "2026-11-01",
