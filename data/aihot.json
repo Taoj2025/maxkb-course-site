@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-01T07:05:02.171838+08:00",
+  "updated_at": "2026-11-01T08:05:01.928866+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "美国白宫科技顾问萨克斯称 Anthropic 可能成为资本主义史上最伟大企业",
+      "link": "https://aihot.news/items/dpm21l66z2iizblehsdg09c8t",
+      "summary": "美国白宫科学与技术顾问会议主席戴维·萨克斯在 All-In 播客分析 Anthropic 的 S-1 文件，称其很可能成为资本主义历史上最伟大企业，也可能是回报最高的风险投资项目。 🔗 阅读原文 via AIHOT · https://aihot.news/items/dpm21l66z2iizblehsdg09c8t",
+      "pub_date": "2026-10-31",
+      "author": "noreply@aihot.news (IT之家·人工智能)",
+      "category": "观点"
+    },
     {
       "title": "彭博社统计：Alphabet、Meta、微软、亚马逊、甲骨文承诺投入超3万亿美元建AI基础设施",
       "link": "https://aihot.news/items/htfc0ler37j2h4hoqll6jewz3",
@@ -393,14 +401,6 @@
       "summary": "Sundar Pichai 宣布 Google 推出 Gemini 4 Carbon，称其在更新后的 Artificial Analysis Intelligence Index v5.0 以 59 分排名第一。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hoim4l9scskfj0obspicyucpw",
       "pub_date": "2026-10-28",
       "author": "noreply@aihot.news (Sundar Pichai)",
-      "category": "AI 模型"
-    },
-    {
-      "title": "Google DeepMind 发布 Gemini 4 Carbon 前沿模型",
-      "link": "https://aihot.news/items/fjeloaahylonpc0pv5tduusud",
-      "summary": "Google DeepMind 发布 Gemini 4 Carbon，定位为最强前沿模型，主打网络安全与长程智能体能力，在 SEC-bench Pro 88.2%、ExploitGym 54.8%、CWE-bench 71.0% 取得领先，并以 59 分登顶 Artificial Analysis Intelligence Index v5.0。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fjeloaahylonpc0pv5tduusud",
-      "pub_date": "2026-10-28",
-      "author": "noreply@aihot.news (Google DeepMind：Blog)",
       "category": "AI 模型"
     }
   ]
