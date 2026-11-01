@@ -446,5 +446,41 @@
     "source": "AI 重写 · Cloudflare",
     "file": "13324-how-commerce-com-and-cloudflare-are-gett.md",
     "estimated_read_time": "2 分钟"
+  },
+  {
+    "id": 13325,
+    "title": "A JSON schema Is not an AI governance layer",
+    "slug": "13325-a-json-schema-is-not-an-ai-governance-la",
+    "summary": "# 一堂关于 FDE 和 AI 治理的课：深入理解 JSON Schema ## 教学目标 同学们，你们是否曾疑惑：作为一名前端部署开发工程师（FDE），我们是否可以通过 JSON Schema 来实现 AI 治理？答案是否定的。在今天的课程中，我们将深入探讨为什么 JSON Schema 不能作为",
+    "category": "最新动态",
+    "tags": [
+      "FDE",
+      "AI 资讯",
+      "前端部署"
+    ],
+    "color": "purple",
+    "date": "2026-11-02",
+    "author": "小Q",
+    "source": "AI 重写 · Stack Overflow Blog",
+    "file": "13325-a-json-schema-is-not-an-ai-governance-la.md",
+    "estimated_read_time": "2 分钟"
+  },
+  {
+    "id": 13326,
+    "title": "Introducing the Microsoft Copilot harness in Foundry Agent Service",
+    "slug": "13326-introducing-the-microsoft-copilot-harnes",
+    "summary": "# 在高校教学中引入 Microsoft Copilot Harness：提升前端部署开发技能 亲爱的同学们和老师们， 今天，我很兴奋地向大家介绍在 **Foundry Agent Service** 中引入的 **Microsoft Copilot Harness**，目前它正处于公开预览阶段。作",
+    "category": "最新动态",
+    "tags": [
+      "FDE",
+      "AI 资讯",
+      "前端部署"
+    ],
+    "color": "blue",
+    "date": "2026-11-02",
+    "author": "小Q",
+    "source": "AI 重写 · Azure Blog",
+    "file": "13326-introducing-the-microsoft-copilot-harnes.md",
+    "estimated_read_time": "2 分钟"
   }
 ]
