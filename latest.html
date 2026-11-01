@@ -609,7 +609,7 @@
 
         // 元信息
         const updateTime = new Date(data.updated_at).toLocaleString('zh-CN', { hour12: false });
-        info.innerHTML = `从 aihot.virxact.com RSS 实时拉取 · <b>${items.length} 条</b>最新 AI 行业热点 · 最后更新 ${updateTime} · 每小时自动刷新`;
+        info.innerHTML = `从 aihot.virxact.com RSS 实时拉取 · <b>${items.length} 条</b>最新 AI 行业热点 · 最后更新 ${updateTime} · 每日 8:00 自动更新`;
 
         // 提取所有类别
         const categories = ['全部', ...new Set(items.map(i => i.category))];
