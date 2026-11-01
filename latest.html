@@ -372,7 +372,7 @@
 <section class="latest-hero">
   <div class="live-tag">
     <span class="live-dot"></span>
-    <span>LIVE · 实时抓取 · 每日 8:00 自动更新</span>
+    <span>LIVE · 实时抓取 · 每 30 分钟自动更新</span>
   </div>
   <h1>🔥 最新 FDE 前沿资讯</h1>
   <p class="subtitle">AI Agent · Vercel Edge · MCP 协议 · 边缘全栈 · 前端架构</p>
@@ -404,7 +404,7 @@
       <div class="value" id="stat-aihot">50</div>
     </div>
     <div class="stat-card blue">
-      <div class="label">⏰ 下次自动更新</div>
+      <div class="label">⏰ 下篇文章更新</div>
       <div class="value" style="font-size:18px;" id="stat-next">明天 8:00</div>
     </div>
   </div>
@@ -609,7 +609,7 @@
 
         // 元信息
         const updateTime = new Date(data.updated_at).toLocaleString('zh-CN', { hour12: false });
-        info.innerHTML = `从 aihot.virxact.com RSS 实时拉取 · <b>${items.length} 条</b>最新 AI 行业热点 · 最后更新 ${updateTime} · 每日 8:00 自动更新`;
+        info.innerHTML = `从 aihot.virxact.com RSS 实时拉取 · <b>${items.length} 条</b>最新 AI 行业热点 · 最后更新 ${updateTime} · 每 30 分钟自动刷新`;
 
         // 提取所有类别
         const categories = ['全部', ...new Set(items.map(i => i.category))];
@@ -694,6 +694,9 @@
     renderAihot();
     updateNextRun();
     setInterval(updateNextRun, 60000);
+    // 热点区每 30 分钟重拉一次 —— 服务端 aihot 管线也是每 30 分钟刷一次，
+    // 浏览器侧同步节奏，用户长时间开着页面也能看到新条目。
+    setInterval(renderAihot, 30 * 60 * 1000);
   });
 </script>
 
