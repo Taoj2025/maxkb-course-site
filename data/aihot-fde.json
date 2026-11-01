@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-01T08:05:01.929786+08:00",
+  "updated_at": "2026-11-01T09:05:02.218273+08:00",
   "total": 19,
   "items": [
+    {
+      "title": "OpenAI 12月起将ChatGPT与Codex合并为统一Token额度",
+      "link": "https://aihot.news/items/f6dxzur6d4pwjdhvm1x6m5rfp",
+      "summary": "作者引述OpenAI凌晨更新的帮助文档称，从12月开始Plus和Pro用户的ChatGPT聊天与Codex用量将合并为同一Token额度，仅Instant聊天不受影响。作者回顾此前按条数计费的历史、一个月内Codex Pro额度先降后恢复的运营反复，以及社区在GitHub上提issue抗议的反应，认为合并与IPO预期下的算力成本压力有关。 🔗 阅读原文 via AIHOT · https://aihot.news/items/f6dxzur6d4pwjdhvm1x6m5rfp",
+      "pub_date": "2026-11-01",
+      "author": "noreply@aihot.news (公众号：数字生命卡兹克)",
+      "category": "行业动态"
+    },
     {
       "title": "Figma 发布 Weave 创作平台，用节点化工作流让创意流程可复用",
       "link": "https://aihot.news/items/akdeq33m7cpr8m7zsfgvfiz5c",
@@ -145,14 +153,6 @@
       "summary": "Sundar Pichai 发布 Alphabet Q3 业绩：年化收入 run rate 达 5000 亿美元，总收入同比增长 25%。Google Cloud 收入增长 103%，1P 模型 API 每分钟处理近 32B tokens（环比增 40%）；Search 查询同比增速为五年来最高，并提到 Argon、Carbon 领跑前沿及最新世界模型 Genie 4。 🔗 阅读原文 via AIHOT · https://aihot.news/items/m5st8pvirbas7phreshbzkrc9",
       "pub_date": "2026-10-28",
       "author": "noreply@aihot.news (Sundar Pichai)",
-      "category": "行业动态"
-    },
-    {
-      "title": "犹他州 10 个州政府部门 34 名开发者试点使用 Claude Code",
-      "link": "https://aihot.news/items/fbxzb7x7fzbjn0dmf367ywxrm",
-      "summary": "Boris Cherny 介绍犹他州向 10 个州政府部门的 34 名开发者提供了 Claude Code。试点显示 80% 的开发者在 30 分钟内搭好可用环境，71% 的开发者在为期四周的试点结束前报告节省了 20 小时以上时间。该推文引用了 Anthropic 与 GSA 合作将 Claude 以 40% 折扣提供给联邦及各级政府的公告作为背景。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fbxzb7x7fzbjn0dmf367ywxrm",
-      "pub_date": "2026-10-28",
-      "author": "noreply@aihot.news (Boris Cherny)",
       "category": "行业动态"
     }
   ]
