@@ -33,6 +33,18 @@ ASCII_KEYWORDS = [
     'MaxKB', 'Vercel', 'Netlify', 'Cloudflare', 'Workers', 'Copilot',
     'Cursor', 'Astro', 'Hono', 'Next.js', 'React', 'Vue', 'TypeScript',
     'Node.js', 'Kubernetes', 'WebAssembly', 'WASM', 'Rust', 'GitHub',
+    # 2026-11-02 新增：补充开源中国 / Prisma / Supabase / Shopify 等
+    # 新增源后实测出的高频相关词，避免好内容因词表不全被误杀
+    'Postgres', 'PostgreSQL', 'OpenAI', 'Anthropic', 'LangChain',
+    'Llama', 'RAG', 'GraphQL', 'Tailwind', 'Deno', 'Bun', 'Svelte',
+    'Prisma', 'Supabase', 'Shopify', 'Vite', 'Webpack', 'Babel',
+    'Fastify', 'NestJS', 'Express', 'Django', 'Flask', 'FastAPI',
+    'Container', 'Kubernetes', 'Helm', 'Terraform', 'Ansible',
+    'Frontend', 'Backend', 'Fullstack', 'Full-Stack', 'API', 'SDK',
+    'Prompt', 'Multimodal', 'Embedding', 'Inference', 'Transformer',
+    'Claude', 'Gemini', 'DeepSeek', 'Qwen', 'Llama', 'Embedding',
+    'Edge', 'Runtime', 'Lambda', 'Function', 'Microservices',
+    'Observability', 'Testing', 'Benchmark', 'Progressive', 'Monorepo',
 ]
 
 # 预编译好的正则，避免每篇文章都重新编译

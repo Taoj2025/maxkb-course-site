@@ -14,10 +14,34 @@ SITE_DIR = Path(os.environ.get("SITE_DIR", Path(__file__).resolve().parent.paren
 WORK_DIR = Path(os.environ.get("WORK_DIR", "/root/.openclaw/workspace/projects/maxkb-course-site"))
 CANDIDATES_DIR = WORK_DIR / "fde-candidates"
 ARTICLES_DIR = SITE_DIR / "articles"
+ARTICLES_JSON = SITE_DIR / "articles.json"
 API_KEY = os.environ.get('MINIMAX_API_KEY', '')
 API_BASE = os.environ.get('MINIMAX_API_BASE', 'https://api.minimaxi.com')
 # 机器摘要模式下正文至少要有这么多字，太短的摘要发出去没意义
 MIN_SUMMARY_LEN = 80
+# 每轮最多送多少篇给 AI 重写
+MAX_REWRITE = 5
+
+
+def load_published_titles():
+    """读已发布文章标题集合（与审核环节的判重口径保持一致）。
+
+    2026-11-02 之前这里没有判重：每天无条件重写候选前 5 篇，
+    结果审核环节把它们全部以「跳过重复」丢弃 —— AI 每天白烧一轮额度，
+    而且改写出来的软文会留在待审文件里，是「AI 强行软化无关选题」的
+    直接诱因（科研诚信红线）。现在在调用 AI 之前就先排除。
+    """
+    titles = set()
+    if ARTICLES_JSON.exists():
+        try:
+            with open(ARTICLES_JSON, 'r', encoding='utf-8') as f:
+                for a in json.load(f):
+                    t = (a.get('title') or '').strip()
+                    if t:
+                        titles.add(t)
+        except Exception as e:
+            print(f"⚠️  读取已发布文章失败（判重降级）：{e}")
+    return titles
 
 def rewrite_with_ai(title, summary, source):
     """调用 LLM API 重写文章。
@@ -30,7 +54,7 @@ def rewrite_with_ai(title, summary, source):
         print(f"❌ 未配置 MINIMAX_API_KEY，跳过重写：{title[:30]}")
         return None
 
-    prompt = f"""你是小陶老师（广州华商学院大数据专业教师，专攻 MaxKB FDE 培训）。
+    prompt = f"""你是小陶老师（本校人工智能学院专任教师，专攻 MaxKB FDE 培训）。
 
 请把以下 FDE（前端部署开发工程师）相关文章改写为面向高校学生 / 教师的教学博客。
 
@@ -89,9 +113,24 @@ def main():
     with open(latest, 'r', encoding='utf-8') as f:
         candidates = json.load(f)
     
-    # 取前 5 篇
-    top5 = candidates[:5]
-    print(f"📋 准备重写 {len(top5)} 篇")
+    # 取前 5 篇，但先剔除「已经发布过」的 —— 避免 AI 白重写注定被丢弃的文章
+    published_titles = load_published_titles()
+    print(f"📚 已发布文章 {len(published_titles)} 篇，用于前置判重")
+
+    fresh = [c for c in candidates if (c.get('title') or '').strip() not in published_titles]
+    skipped = len(candidates) - len(fresh)
+    if skipped:
+        print(f"⏭ 跳过 {skipped} 篇已发布（不再浪费 AI 额度重写）")
+    for c in candidates:
+        if (c.get('title') or '').strip() in published_titles:
+            print(f"   ⏭ {c['title'][:50]}")
+
+    top5 = fresh[:MAX_REWRITE]
+    print(f"📋 准备重写 {len(top5)} 篇（新候选 {len(fresh)} 篇）")
+
+    if not top5:
+        print("\n✅ 没有新候选文章（全部已发布），不调用 AI、不生成待审文件")
+        return
     
     ARTICLES_DIR.mkdir(parents=True, exist_ok=True)
     

@@ -74,8 +74,17 @@ def ai_review(article):
         if bad in title or bad in content[:500]:
             return False, f"包含敏感词：{bad}"
 
-    if len(title) < 8 or len(title) > 100:
-        return False, f"标题长度异常：{len(title)} 字符"
+    # 2026-11-02：新增的英文技术源标题普遍较长（如 Prisma/Supabase 的对比评测，
+    # 原标题常 110~130 字符），沿用中文标题的 100 字符上限会误杀优质内容。
+    # 改成按语言区分：中文标题 8~100，英文标题放宽到 160。
+    _cjk = sum(1 for ch in title if '\u4e00' <= ch <= '\u9fff')
+    _is_cn_title = _cjk >= max(4, len(title) * 0.2)
+    if _is_cn_title:
+        if len(title) < 8 or len(title) > 100:
+            return False, f"标题长度异常：{len(title)} 字符"
+    else:
+        if len(title) < 12 or len(title) > 160:
+            return False, f"标题长度异常：{len(title)} 字符"
 
     # 机器摘要模式下正文就是 RSS 摘要，没有 AI 扩写，长度门槛放低一点
     min_len = 80 if machine else 200
