@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-02T08:03:01.483494+08:00",
-  "total": 20,
+  "updated_at": "2026-11-02T08:33:01.666535+08:00",
+  "total": 21,
   "items": [
+    {
+      "title": "数字生命卡兹克分享折腾一年的Agent自动化系统架构",
+      "link": "https://aihot.news/items/dzwfvd9xp6v4qaj6olxezpier",
+      "summary": "自媒体作者卡兹克分享自己搭建近一年的Agent自动化系统，核心是把任务起点从人身上移开，由事件触发Agent工作。系统分为自动化中台、Agent执行、CI中台和飞书决策四层：中台用rules.json统一管理事件触发和Agent调度，本地MacMini跑Agent任务，自建CI中台完成审查、检查、合并、发布、核实五步，只在删数据、花钱、改方向等关键决策时通过飞书卡片找作者拍板。 🔗 阅读原文 via AIHOT · https://aihot.news/items/dzwfvd9xp6v4qaj6olxezpier",
+      "pub_date": "2026-11-02",
+      "author": "noreply@aihot.news (公众号：数字生命卡兹克)",
+      "category": "教程"
+    },
     {
       "title": "Claude Code 技巧：任务变难时输入 ultrathink 提升当前回合推理努力",
       "link": "https://aihot.news/items/mhw3rtr5o13p5777y7el9tczk",
