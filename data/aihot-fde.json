@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-02T18:33:02.355850+08:00",
+  "updated_at": "2026-11-02T19:03:02.119320+08:00",
   "total": 21,
   "items": [
+    {
+      "title": "腾讯混元发布 Hyra 2.0：让通用 agent 研发可复用的科学工具与模型",
+      "link": "https://aihot.news/items/l37ydaic43icz85huclc2io6c",
+      "summary": "腾讯混元发布 Hyra 2.0，将自动化科研重点从直接解题转向由 agent 研发和升级科学模型、工作流与软件工具。系统采用 Overall、Mission、Worker 三层分工，接入企业微信、计算平台和代码仓库的实际研发环境，成果已公开在 GitHub 仓库。 🔗 阅读原文 via AIHOT · https://aihot.news/items/l37ydaic43icz85huclc2io6c",
+      "pub_date": "2026-11-02",
+      "author": "noreply@aihot.news (公众号：腾讯混元)",
+      "category": "AI 产品"
+    },
     {
       "title": "数字生命卡兹克分享折腾一年的Agent自动化系统架构",
       "link": "https://aihot.news/items/dzwfvd9xp6v4qaj6olxezpier",
@@ -162,14 +170,6 @@
       "pub_date": "2026-10-29",
       "author": "noreply@aihot.news (Factory 研究 / 产品)",
       "category": "AI 产品"
-    },
-    {
-      "title": "Alphabet Q3 财报：年化收入达 5000 亿美元，Google Cloud 增长 103%",
-      "link": "https://aihot.news/items/m5st8pvirbas7phreshbzkrc9",
-      "summary": "Sundar Pichai 发布 Alphabet Q3 业绩：年化收入 run rate 达 5000 亿美元，总收入同比增长 25%。Google Cloud 收入增长 103%，1P 模型 API 每分钟处理近 32B tokens（环比增 40%）；Search 查询同比增速为五年来最高，并提到 Argon、Carbon 领跑前沿及最新世界模型 Genie 4。 🔗 阅读原文 via AIHOT · https://aihot.news/items/m5st8pvirbas7phreshbzkrc9",
-      "pub_date": "2026-10-28",
-      "author": "noreply@aihot.news (Sundar Pichai)",
-      "category": "行业动态"
     }
   ]
 }
