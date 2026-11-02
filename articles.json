@@ -482,5 +482,77 @@
     "source": "AI 重写 · Azure Blog",
     "file": "13326-introducing-the-microsoft-copilot-harnes.md",
     "estimated_read_time": "2 分钟"
+  },
+  {
+    "id": 13327,
+    "title": "Amazon Aurora PostgreSQL now supports direct querying of Apache Iceberg and Parquet data in your data lake",
+    "slug": "13327-amazon-aurora-postgresql-now-supports-di",
+    "summary": "# 面向高校师生的 Amazon Aurora PostgreSQL 数据查询教学 ## 摘要 Amazon Aurora PostgreSQL 现在支持直接查询存储在数据湖中的 Apache Iceberg 和 Parquet 数据，而无需 ETL 管道。这意味着您可以直接在实时操作数据旁边查询数",
+    "category": "最新动态",
+    "tags": [
+      "FDE",
+      "AI 资讯",
+      "前端部署"
+    ],
+    "color": "purple",
+    "date": "2026-11-02",
+    "author": "小Q",
+    "source": "AI 重写 · AWS News",
+    "file": "13327-amazon-aurora-postgresql-now-supports-di.md",
+    "estimated_read_time": "3 分钟"
+  },
+  {
+    "id": 13328,
+    "title": "App hosting platforms with managed Postgres compared (2026): Node.js on Prisma Compute, Railway, Render, Fly.io, Vercel",
+    "slug": "13328-app-hosting-platforms-with-managed-postg",
+    "summary": "# App Hosting 平台对比：高校教学指南 ## 摘要 在现代应用开发中，选择合适的前端部署开发（FDE）平台至关重要。本文将对比几款流行的托管平台——**Prisma Compute**、**Railway**、**Render**、**Fly.io**、**Supabase**、**Ne",
+    "category": "最新动态",
+    "tags": [
+      "FDE",
+      "AI 资讯",
+      "前端部署"
+    ],
+    "color": "blue",
+    "date": "2026-11-02",
+    "author": "小Q",
+    "source": "AI 重写 · Prisma Blog",
+    "file": "13328-app-hosting-platforms-with-managed-postg.md",
+    "estimated_read_time": "2 分钟"
+  },
+  {
+    "id": 13329,
+    "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
+    "slug": "13329-openai-and-servicenow-expand-partnership",
+    "summary": "# 教学博客：OpenAI 与 ServiceNow 的合作对前端部署开发的影响 亲爱的同学们和老师们， 今天我们来聊聊最近 **OpenAI** 和 **ServiceNow** 扩大合作的消息。这两家公司正在共同努力，将 **OpenAI** 的先进模型和智能代理集成到 **ServiceNow",
+    "category": "最新动态",
+    "tags": [
+      "FDE",
+      "AI 资讯",
+      "前端部署"
+    ],
+    "color": "green",
+    "date": "2026-11-02",
+    "author": "小Q",
+    "source": "AI 重写 · OpenAI Blog",
+    "file": "13329-openai-and-servicenow-expand-partnership.md",
+    "estimated_read_time": "2 分钟"
+  },
+  {
+    "id": 13330,
+    "title": "Automate your Supabase backend with Make",
+    "slug": "13330-automate-your-supabase-backend-with-make",
+    "summary": "# 使用 Make 自动化 Supabase 后端：教学指南 亲爱的同学们和老师们， 今天，我们将探索如何利用 **Make** 这一强大的自动化工具，来简化 **Supabase** 后端的部署与开发。这对于我们 **MaxKB FDE（前端部署开发工程师）** 培训课程的学生和教师来说，是一个非",
+    "category": "最新动态",
+    "tags": [
+      "FDE",
+      "AI 资讯",
+      "前端部署"
+    ],
+    "color": "orange",
+    "date": "2026-11-02",
+    "author": "小Q",
+    "source": "AI 重写 · Supabase Blog",
+    "file": "13330-automate-your-supabase-backend-with-make.md",
+    "estimated_read_time": "2 分钟"
   }
 ]
