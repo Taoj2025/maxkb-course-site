@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-03T03:33:02.308400+08:00",
+  "updated_at": "2026-11-03T04:03:02.027651+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "OpenAI 训练并部署激活分类器作为前沿模型安全监控层",
+      "link": "https://aihot.news/items/wlmiqh13694tqabyvu6nzvlrs",
+      "summary": "OpenAI 自 GPT-5.6 起在其最强模型的内部和外部流量上部署激活分类器（probes），利用模型内部激活逐 token 实时评分，可在生成中途阻断违规回复和工具调用并交由推理模型复审。实验显示 probes 比更大的文本分类器对测试的越狱攻击更鲁棒，准确率随模型能力提升，且在后训练各检查点间迁移良好，但需为新基础模型重新训练，且只能检测可显式训练的已知违规类型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wlmiqh13694tqabyvu6nzvlrs",
+      "pub_date": "2026-11-02",
+      "author": "noreply@aihot.news (OpenAI：Alignment 研究博客)",
+      "category": "论文"
+    },
     {
       "title": "Anthropic 季度营收增长十二倍至近 170 亿美元，但净亏损达 233 亿美元",
       "link": "https://aihot.news/items/owfopy087lszd1cpfp3c82pxv",
@@ -42,6 +50,14 @@
       "pub_date": "2026-11-02",
       "author": "noreply@aihot.news (公众号：数字生命卡兹克)",
       "category": "教程"
+    },
+    {
+      "title": "Claude Platform 推出 message threads 公测，降低长会话智能体延迟",
+      "link": "https://aihot.news/items/sg5u3u91kw42j1grtyp3ny65n",
+      "summary": "Anthropic 在 Claude Platform 推出 message threads 公测，智能体每轮只需发送新增消息而无需重发全部对话历史，从而缩短首 token 时间。 🔗 阅读原文 via AIHOT · https://aihot.news/items/sg5u3u91kw42j1grtyp3ny65n",
+      "pub_date": "2026-11-02",
+      "author": "noreply@aihot.news (Claude：Blog)",
+      "category": "AI 产品"
     },
     {
       "title": "Claude Code 技巧：任务变难时输入 ultrathink 提升当前回合推理努力",
@@ -386,22 +402,6 @@
       "pub_date": "2026-10-29",
       "author": "noreply@aihot.news (Addy Osmani)",
       "category": "教程"
-    },
-    {
-      "title": "vLLM 发布 Mistral Large 4 Day 0 支持",
-      "link": "https://aihot.news/items/x6x8nkxn5mqc55umit3clj1tf",
-      "summary": "vLLM 团队宣布对 Mistral 新旗舰模型 Mistral Large 4 提供 Day 0 支持，该模型为 1T 参数、每 token 激活 49B 的原生多模态 MoE 模型，采用 MLA 稀疏注意力加 DSA top-k 索引器、跨层 KV 共享、NoPE、SSMax 和 LeRoPE 等新架构，并内置 DSpark 推测解码草稿器与 Pixtral 视觉编码器。 🔗 阅读原文 via AIHOT · https://aihot.news/items/x6x8nkxn5mqc55umit3clj1tf",
-      "pub_date": "2026-10-29",
-      "author": "noreply@aihot.news (vLLM 官方博客)",
-      "category": "AI 产品"
-    },
-    {
-      "title": "Mistral Large 4（Le Chonk）登陆 Hugging Face：1T 参数 MoE 多模态开源权重模型",
-      "link": "https://aihot.news/items/upsd8u37hkkquohy3w3sjvszi",
-      "summary": "Hugging Face 发布 Mistral Large 4（Le Chonk）的上线博客，模型为多模态多语言 MoE 架构，总参数约 1T、激活 49B、上下文窗口 1M token。 🔗 阅读原文 via AIHOT · https://aihot.news/items/upsd8u37hkkquohy3w3sjvszi",
-      "pub_date": "2026-10-29",
-      "author": "noreply@aihot.news (Hugging Face 官方团队博客)",
-      "category": "AI 模型"
     }
   ]
 }
