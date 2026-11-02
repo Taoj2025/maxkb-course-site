@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-03T00:33:01.885682+08:00",
-  "total": 21,
+  "updated_at": "2026-11-03T01:03:02.421572+08:00",
+  "total": 20,
   "items": [
     {
       "title": "腾讯混元发布 Hyra 2.0：让通用 agent 研发可复用的科学工具与模型",
@@ -162,14 +162,6 @@
       "pub_date": "2026-10-29",
       "author": "noreply@aihot.news (Hugging Face 官方团队博客)",
       "category": "AI 模型"
-    },
-    {
-      "title": "Factory 发布 Droid 1.0，以程序化工具调用构建企业级 Agent harness",
-      "link": "https://aihot.news/items/gjz7lj8j6ojjyj80vkkhy786v",
-      "summary": "Factory 发布 Droid 1.0，一个模型无关的 agent harness，主打程序化工具调用（PTC），模型通过编写 JavaScript 程序在沙箱中一次执行数百个工具调用。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gjz7lj8j6ojjyj80vkkhy786v",
-      "pub_date": "2026-10-29",
-      "author": "noreply@aihot.news (Factory 研究 / 产品)",
-      "category": "AI 产品"
     }
   ]
 }

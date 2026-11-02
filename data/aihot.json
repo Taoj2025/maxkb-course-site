@@ -1,8 +1,24 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-03T00:33:01.884763+08:00",
+  "updated_at": "2026-11-03T01:03:02.420519+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Anthropic 季度营收增长十二倍至近 170 亿美元，但净亏损达 233 亿美元",
+      "link": "https://aihot.news/items/owfopy087lszd1cpfp3c82pxv",
+      "summary": "据 Bloomberg 与 The Information，Anthropic 该季度营收近 170 亿美元，为一年前的十二倍，但运营成本达 175 亿美元，季度净亏损 233 亿美元，高于去年同期的 121 亿美元。 🔗 阅读原文 via AIHOT · https://aihot.news/items/owfopy087lszd1cpfp3c82pxv",
+      "pub_date": "2026-11-02",
+      "author": "noreply@aihot.news (The Decoder：AI News)",
+      "category": "行业动态"
+    },
+    {
+      "title": "Anthropic 更新 IPO 文件首次披露第三季度财报，从盈利 9.74 亿美元转为亏损 5.67 亿美元",
+      "link": "https://aihot.news/items/xvemmg9p83lxqktk7mc47zhcr",
+      "summary": "Anthropic 更新 S-1 IPO 文件并首次披露第三季度业绩，经营利润从二季度盈利 9.74 亿美元转为三季度亏损 5.67 亿美元，主因是 50 亿美元的高价短期算力和 20 亿美元员工捐赠配比的非现金支出。 🔗 阅读原文 via AIHOT · https://aihot.news/items/xvemmg9p83lxqktk7mc47zhcr",
+      "pub_date": "2026-11-02",
+      "author": "noreply@aihot.news (Rohan Paul)",
+      "category": "行业动态"
+    },
     {
       "title": "OpenAI 推出 Grid Protectors 计划，从 Georgia 校园开始支持电网削峰",
       "link": "https://aihot.news/items/sxbs5a90fgybhyucacmzvrc6w",
@@ -386,22 +402,6 @@
       "pub_date": "2026-10-29",
       "author": "noreply@aihot.news (Hugging Face 官方团队博客)",
       "category": "AI 模型"
-    },
-    {
-      "title": "OpenRouter 教程：用 LLM 从 PDF 中抽取表格",
-      "link": "https://aihot.news/items/l928e49lwysm0ymgmhyjrkc3z",
-      "summary": "OpenRouter 发布教程，讲解如何把 PDF 以文件形式连同严格 JSON schema 发给能读文件的模型，让表格以带类型的行返回，括号亏损、千分位和脚注标记等清理都写进字段描述。 🔗 阅读原文 via AIHOT · https://aihot.news/items/l928e49lwysm0ymgmhyjrkc3z",
-      "pub_date": "2026-10-29",
-      "author": "noreply@aihot.news (OpenRouter：Announcements)",
-      "category": "教程"
-    },
-    {
-      "title": "Factory 发布 Droid 1.0，以程序化工具调用构建企业级 Agent harness",
-      "link": "https://aihot.news/items/gjz7lj8j6ojjyj80vkkhy786v",
-      "summary": "Factory 发布 Droid 1.0，一个模型无关的 agent harness，主打程序化工具调用（PTC），模型通过编写 JavaScript 程序在沙箱中一次执行数百个工具调用。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gjz7lj8j6ojjyj80vkkhy786v",
-      "pub_date": "2026-10-29",
-      "author": "noreply@aihot.news (Factory 研究 / 产品)",
-      "category": "AI 产品"
     }
   ]
 }
