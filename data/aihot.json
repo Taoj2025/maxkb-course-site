@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-03T05:33:02.396404+08:00",
+  "updated_at": "2026-11-03T06:03:02.327034+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Anthropic 算力与基础设施合同承诺达 $895.4B，其中 $447.5B 须在 2031 年前支付",
+      "link": "https://aihot.news/items/xiu342i7osbgfxe2ezhrjndl0",
+      "summary": "Anthropic 在更新的 IPO 文件中首次披露第三季度业绩，算力与基础设施合同承诺总额约 $895.4B，其中 $447.5B 须在 2031 年前支付，仅 $213.8B 可取消或附带条件。 🔗 阅读原文 via AIHOT · https://aihot.news/items/xiu342i7osbgfxe2ezhrjndl0",
+      "pub_date": "2026-11-02",
+      "author": "noreply@aihot.news (Rohan Paul)",
+      "category": "行业动态"
+    },
     {
       "title": "OpenAI 训练并部署激活分类器作为前沿模型安全监控层",
       "link": "https://aihot.news/items/wlmiqh13694tqabyvu6nzvlrs",
@@ -17,14 +25,6 @@
       "summary": "据 Bloomberg 与 The Information，Anthropic 该季度营收近 170 亿美元，为一年前的十二倍，但运营成本达 175 亿美元，季度净亏损 233 亿美元，高于去年同期的 121 亿美元。 🔗 阅读原文 via AIHOT · https://aihot.news/items/owfopy087lszd1cpfp3c82pxv",
       "pub_date": "2026-11-02",
       "author": "noreply@aihot.news (The Decoder：AI News)",
-      "category": "行业动态"
-    },
-    {
-      "title": "Anthropic 更新 IPO 文件首次披露第三季度财报，从盈利 9.74 亿美元转为亏损 5.67 亿美元",
-      "link": "https://aihot.news/items/xvemmg9p83lxqktk7mc47zhcr",
-      "summary": "Anthropic 更新 S-1 IPO 文件并首次披露第三季度业绩，经营利润从二季度盈利 9.74 亿美元转为三季度亏损 5.67 亿美元，主因是 50 亿美元的高价短期算力和 20 亿美元员工捐赠配比的非现金支出。 🔗 阅读原文 via AIHOT · https://aihot.news/items/xvemmg9p83lxqktk7mc47zhcr",
-      "pub_date": "2026-11-02",
-      "author": "noreply@aihot.news (Rohan Paul)",
       "category": "行业动态"
     },
     {
