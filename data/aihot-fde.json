@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-03T12:03:01.687311+08:00",
-  "total": 19,
+  "updated_at": "2026-11-03T12:33:02.225023+08:00",
+  "total": 18,
   "items": [
     {
       "title": "OpenAI 训练并部署激活分类器作为前沿模型安全监控层",
@@ -81,14 +81,6 @@
       "summary": "Philipp Schmid 转引 Sundar Pichai 的消息：Google Project Suncatcher 在数周前发射原型卫星后，成功向轨道发送指令、启动 TPU、运行提示词，并在地面收到了首个完整回应（一首 haiku），作者称 Gemma 4 成为首个在太空运行的大语言模型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cms82puwtmpssdpbjmajoopr9",
       "pub_date": "2026-10-30",
       "author": "noreply@aihot.news (Philipp Schmid)",
-      "category": "行业动态"
-    },
-    {
-      "title": "Cursor 披露 Claude Code VS Code 扩展被植入恶意软件事件，最多影响 5000 用户",
-      "link": "https://aihot.news/items/iu7xvjx1c2c5wqrpn0rwfxcb5",
-      "summary": "Cursor 发现通过其 IDE 扩展市场分发的 Claude Code VS Code 扩展被修改并植入恶意软件，最多影响 5000 用户，恶意版本并非 Anthropic 开发。Cursor 已于当日下午下线扩展市场，与相关提供方合作清除恶意软件并确认无进一步风险后重新上线，建议受影响用户参考博客说明排查，并升级到 Claude Code for VS Code 2.1.314。 🔗 阅读原文 via AIHOT · https://aihot.news/items/iu7xvjx1c2c5wqrpn0rwfxcb5",
-      "pub_date": "2026-10-30",
-      "author": "noreply@aihot.news (Cursor)",
       "category": "行业动态"
     },
     {

@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-03T12:03:01.686422+08:00",
+  "updated_at": "2026-11-03T12:33:02.224141+08:00",
   "total": 50,
   "items": [
     {
@@ -74,6 +74,14 @@
       "pub_date": "2026-11-02",
       "author": "noreply@aihot.news (OpenAI：官网动态)",
       "category": "行业动态"
+    },
+    {
+      "title": "Google AI Studio 弃用 Gemini 2.5 Pro 与 2.5 Flash，API 请求将于 12 月 1 日起自动路由",
+      "link": "https://aihot.news/items/ewvepczpb5fewcbzo2tkqdldm",
+      "summary": "Gemini 2.5 Pro 与 Gemini 2.5 Flash 已弃用，无法再在 Google AI Studio 中选择。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ewvepczpb5fewcbzo2tkqdldm",
+      "pub_date": "2026-11-02",
+      "author": "noreply@aihot.news (Gemini API：更新日志)",
+      "category": "AI 产品"
     },
     {
       "title": "Claude Code 技巧：任务变难时输入 ultrathink 提升当前回合推理努力",
@@ -226,14 +234,6 @@
       "pub_date": "2026-10-30",
       "author": "noreply@aihot.news (Epoch AI：Gradient Updates)",
       "category": "论文"
-    },
-    {
-      "title": "Cursor 披露 Claude Code VS Code 扩展被植入恶意软件事件，最多影响 5000 用户",
-      "link": "https://aihot.news/items/iu7xvjx1c2c5wqrpn0rwfxcb5",
-      "summary": "Cursor 发现通过其 IDE 扩展市场分发的 Claude Code VS Code 扩展被修改并植入恶意软件，最多影响 5000 用户，恶意版本并非 Anthropic 开发。Cursor 已于当日下午下线扩展市场，与相关提供方合作清除恶意软件并确认无进一步风险后重新上线，建议受影响用户参考博客说明排查，并升级到 Claude Code for VS Code 2.1.314。 🔗 阅读原文 via AIHOT · https://aihot.news/items/iu7xvjx1c2c5wqrpn0rwfxcb5",
-      "pub_date": "2026-10-30",
-      "author": "noreply@aihot.news (Cursor)",
-      "category": "行业动态"
     },
     {
       "title": "Kimi 官方教程：如何用 Kimi K3.1 Pro 创作 3D 作品",
