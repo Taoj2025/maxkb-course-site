@@ -554,5 +554,77 @@
     "source": "AI 重写 · Supabase Blog",
     "file": "13330-automate-your-supabase-backend-with-make.md",
     "estimated_read_time": "2 分钟"
+  },
+  {
+    "id": 13331,
+    "title": "Prisma Is Building the Stack for the Next Million Products",
+    "slug": "13331-prisma-is-building-the-stack-for-the-nex",
+    "summary": "# Prisma：构建未来百万产品的技术栈 亲爱的同学们和老师们， 今天我们来聊聊 **Prisma**，一个正在改变前端部署开发（**FDE**）格局的工具。作为一名专攻 **MaxKB FDE** 培训的老师，我深知在实际教学中引入先进工具的重要性，而 Prisma 正是这样一个值得关注的工具。",
+    "category": "最新动态",
+    "tags": [
+      "FDE",
+      "AI 资讯",
+      "前端部署"
+    ],
+    "color": "purple",
+    "date": "2026-11-03",
+    "author": "小Q",
+    "source": "AI 重写 · Prisma Blog",
+    "file": "13331-prisma-is-building-the-stack-for-the-nex.md",
+    "estimated_read_time": "2 分钟"
+  },
+  {
+    "id": 13332,
+    "title": "React Labs: View Transitions, Activity, and more",
+    "slug": "13332-react-labs-view-transitions-activity-and",
+    "summary": "### React 的前沿探索：视图过渡、活动状态等新特性教学 在 React 的研究与发展过程中，React Labs 系列文章为我们带来了许多激动人心的新功能。今天，我想和大家分享两个已经可以尝试的实验性功能，以及其他一些领域的最新进展。这些内容不仅对前端开发工程师（FDE）有用，也非常适合在高",
+    "category": "最新动态",
+    "tags": [
+      "FDE",
+      "AI 资讯",
+      "前端部署"
+    ],
+    "color": "blue",
+    "date": "2026-11-03",
+    "author": "小Q",
+    "source": "AI 重写 · React Blog",
+    "file": "13332-react-labs-view-transitions-activity-and.md",
+    "estimated_read_time": "2 分钟"
+  },
+  {
+    "id": 13333,
+    "title": "Getting started with the Supabase .NET SDK",
+    "slug": "13333-getting-started-with-the-supabase-net-sd",
+    "summary": "# 教学博客：开始使用 Supabase .NET SDK —— 面向高校学生和教师的指南 ## 简介 亲爱的同学们和老师们，今天我们将一起探索如何设置和使用 Supabase 的 C# 客户端库（Supabase .NET SDK），无论是在 ASP.NET Core 项目、控制台应用程序、桌面应",
+    "category": "最新动态",
+    "tags": [
+      "FDE",
+      "AI 资讯",
+      "前端部署"
+    ],
+    "color": "green",
+    "date": "2026-11-03",
+    "author": "小Q",
+    "source": "AI 重写 · Supabase Blog",
+    "file": "13333-getting-started-with-the-supabase-net-sd.md",
+    "estimated_read_time": "3 分钟"
+  },
+  {
+    "id": 13334,
+    "title": "Introducing the unified Supabase .NET SDK",
+    "slug": "13334-introducing-the-unified-supabase-net-sdk",
+    "summary": "# 统一 Supabase .NET SDK 教学指南 亲爱的同学们和老师们， 今天我们来聊聊一个让前端部署开发（**FDE**）变得更加简便的工具——**Supabase .NET SDK**。最近，Supabase 团队宣布将他们的 .NET 库整合到一个统一的代码库中，并且采用统一的版本号。这",
+    "category": "最新动态",
+    "tags": [
+      "FDE",
+      "AI 资讯",
+      "前端部署"
+    ],
+    "color": "orange",
+    "date": "2026-11-03",
+    "author": "小Q",
+    "source": "AI 重写 · Supabase Blog",
+    "file": "13334-introducing-the-unified-supabase-net-sdk.md",
+    "estimated_read_time": "2 分钟"
   }
 ]
