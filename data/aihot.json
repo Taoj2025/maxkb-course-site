@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-03T09:03:01.565732+08:00",
+  "updated_at": "2026-11-03T09:33:02.388473+08:00",
   "total": 50,
   "items": [
     {
@@ -66,6 +66,14 @@
       "pub_date": "2026-11-02",
       "author": "noreply@aihot.news (Claude：Blog)",
       "category": "AI 产品"
+    },
+    {
+      "title": "OpenAI 任命前美国陆军部长 Dan Driscoll 为国家安全现代化高级顾问",
+      "link": "https://aihot.news/items/hf03pwablxanh9desil5cbu9d",
+      "summary": "OpenAI 宣布任命 Dan Driscoll 为新设的国家安全现代化高级顾问，就先进 AI 如何加强国家与网络安全提供建议，重点与美国盟友合作推动民主 AI 的负责任使用。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hf03pwablxanh9desil5cbu9d",
+      "pub_date": "2026-11-02",
+      "author": "noreply@aihot.news (OpenAI：官网动态)",
+      "category": "行业动态"
     },
     {
       "title": "Claude Code 技巧：任务变难时输入 ultrathink 提升当前回合推理努力",
@@ -393,14 +401,6 @@
       "summary": "Cursor 通报其 VS Code 扩展市场出现恶意修改的 Anthropic.claude-code 2.1.313 版本，非 Anthropic 官方开发，最多影响 4100 名用户。 🔗 阅读原文 via AIHOT · https://aihot.news/items/pg7avew3q9ekdp3ydzhiuh9y4",
       "pub_date": "2026-10-29",
       "author": "noreply@aihot.news (Cursor Blog)",
-      "category": "行业动态"
-    },
-    {
-      "title": "Google 三季度搜索增速不及预期，投资者担忧 AI 搜索变现拖累核心业务",
-      "link": "https://aihot.news/items/wry19y87ktlbmfwu581jjffj7",
-      "summary": "Google 三季度搜索收入增长约 12%，低于分析师预期的 15%，市值一度缩水最多 10%。高管 Philipp Schindler 承认 AI mode 查询的强劲增长因变现率较低产生了影响，同时公司称搜索查询年增速达五年来最高，并计划在美国及国际市场扩大聊天机器人广告项目。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wry19y87ktlbmfwu581jjffj7",
-      "pub_date": "2026-10-29",
-      "author": "noreply@aihot.news (The Decoder：AI News)",
       "category": "行业动态"
     }
   ]
