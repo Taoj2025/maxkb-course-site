@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-04T07:03:02.397760+08:00",
+  "updated_at": "2026-11-04T07:33:01.573856+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "AMD 发布 2026 年三季度财报，预计 2027 年营收增长超 80%",
+      "link": "https://aihot.news/items/ir9nzccipff0uowu3tghi4n3o",
+      "summary": "AMD 公布 2026 年三季度财报，预计 2027 年营收增长超 80%，高于分析师建模的 77%，CEO Lisa Su 称数据中心芯片将占明年销售额的 80%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ir9nzccipff0uowu3tghi4n3o",
+      "pub_date": "2026-11-03",
+      "author": "noreply@aihot.news (Rohan Paul)",
+      "category": "行业动态"
+    },
     {
       "title": "Ed Zitron 解析 OpenAI 1.25 万亿美元估值融资与 Anthropic S-1/A 中的万亿级算力承诺",
       "link": "https://aihot.news/items/zv5dl1agqwo6tkmhdamy17lt5",
@@ -393,14 +401,6 @@
       "summary": "Tibo 宣布即日起将 Pro 100/200/500 档位与 Business Premium 的所有用量上限翻倍。Pro 200 的上限不会下调，Work 与 Codex 用量保持不变；dots 的扩展用量上限继续提供，且仍与默认用量分开计算，后续还会通过更好的模型和效率改进提升实际可用量。 🔗 阅读原文 via AIHOT · https://aihot.news/items/funx6p4g0gju509j6n0oyxmqu",
       "pub_date": "2026-10-29",
       "author": "noreply@aihot.news (Tibo)",
-      "category": "AI 产品"
-    },
-    {
-      "title": "Gemini 新增文档、PDF、演示文稿和表格的直接生成、预览与编辑功能",
-      "link": "https://aihot.news/items/nfbnpnzdrebu4kbq6uqxhkc2h",
-      "summary": "Google Gemini 宣布可直接在应用内生成、预览和编辑文档、PDF、演示文稿、表格等多种文件。支持把手写笔记转成 PDF 学习指南、手动调整内容、高亮部分让 Gemini 修改文字或视觉元素，并可继续追问。 🔗 阅读原文 via AIHOT · https://aihot.news/items/nfbnpnzdrebu4kbq6uqxhkc2h",
-      "pub_date": "2026-10-29",
-      "author": "noreply@aihot.news (Gemini)",
       "category": "AI 产品"
     }
   ]
