@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-03T15:03:01.892957+08:00",
+  "updated_at": "2026-11-03T15:33:02.408435+08:00",
   "total": 18,
   "items": [
+    {
+      "title": "Addy Osmani 谈 Agent 时代如何保持批判性思维",
+      "link": "https://aihot.news/items/uinaiwkzg4u2exkfgv4oha9p7",
+      "summary": "Addy Osmani 发文探讨在大量使用 Agent 工作流后如何保持批判性思维。他提出认知卸载、拖延、认知投降三段光谱，认为模型越强、输出越流畅，人越容易在不知不觉中放弃独立判断；并给出具体做法，包括提问前先写假设、把验证标准前置为可执行测试、要求 Agent 列出它替你做的决策与假设、用测验收尾而不是读摘要，以及定期手写代码做校准练习。他强调可以卸载工作和审计，但不能卸载责任。 🔗 阅读原文 via AIHOT · https://aihot.news/items/uinaiwkzg4u2exkfgv4oha9p7",
+      "pub_date": "2026-11-03",
+      "author": "noreply@aihot.news (Addy Osmani)",
+      "category": "观点"
+    },
     {
       "title": "OpenAI 训练并部署激活分类器作为前沿模型安全监控层",
       "link": "https://aihot.news/items/wlmiqh13694tqabyvu6nzvlrs",
@@ -138,14 +146,6 @@
       "pub_date": "2026-10-29",
       "author": "noreply@aihot.news (Unsloth)",
       "category": "AI 产品"
-    },
-    {
-      "title": "Cursor 通报 VS Code 扩展市场出现恶意 Anthropic.claude-code 2.1.313 版本",
-      "link": "https://aihot.news/items/pg7avew3q9ekdp3ydzhiuh9y4",
-      "summary": "Cursor 通报其 VS Code 扩展市场出现恶意修改的 Anthropic.claude-code 2.1.313 版本，非 Anthropic 官方开发，最多影响 4100 名用户。 🔗 阅读原文 via AIHOT · https://aihot.news/items/pg7avew3q9ekdp3ydzhiuh9y4",
-      "pub_date": "2026-10-29",
-      "author": "noreply@aihot.news (Cursor Blog)",
-      "category": "行业动态"
     }
   ]
 }
