@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-03T19:03:01.944781+08:00",
-  "total": 19,
+  "updated_at": "2026-11-03T19:33:02.492641+08:00",
+  "total": 20,
   "items": [
     {
       "title": "Mistral Large 4 以开放权重发布并附技术报告",
@@ -18,6 +18,14 @@
       "pub_date": "2026-11-03",
       "author": "noreply@aihot.news (Addy Osmani)",
       "category": "观点"
+    },
+    {
+      "title": "Revolut 将约 2000 名工程师迁移到自托管 GLM 编码",
+      "link": "https://aihot.news/items/op93lgz2xx0ck3znfm724ebfu",
+      "summary": "据 Revolut AI 运营负责人 David Abitbol，公司把约 2000 名工程师迁到自托管 GLM 做编码，将 Claude Code 和 Codex 列为例外。 🔗 阅读原文 via AIHOT · https://aihot.news/items/op93lgz2xx0ck3znfm724ebfu",
+      "pub_date": "2026-11-02",
+      "author": "noreply@aihot.news (Hacker News：AI 热帖)",
+      "category": "行业动态"
     },
     {
       "title": "OpenAI 训练并部署激活分类器作为前沿模型安全监控层",
