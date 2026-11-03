@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-04T04:03:01.726148+08:00",
-  "total": 18,
+  "updated_at": "2026-11-04T04:33:02.070190+08:00",
+  "total": 19,
   "items": [
     {
       "title": "Mistral Large 4 以开放权重发布并附技术报告",
@@ -26,6 +26,14 @@
       "pub_date": "2026-11-03",
       "author": "noreply@aihot.news (Addy Osmani)",
       "category": "观点"
+    },
+    {
+      "title": "OpenHands 与 Snowflake 推出基于现有 agent harness 的模型后训练方案",
+      "link": "https://aihot.news/items/recqqiy27l866jfbhjk0cusqh",
+      "summary": "OpenHands 与 Snowflake AI Research 合作，让开发者无需在独立 RL 框架中重建 harness，即可用现有 OpenHands Agent SDK 配置和 Harbor 格式任务对开源权重模型做 RL 后训练，训练由 Snowflake Cortex Training 提供 GPU 支持。 🔗 阅读原文 via AIHOT · https://aihot.news/items/recqqiy27l866jfbhjk0cusqh",
+      "pub_date": "2026-11-03",
+      "author": "noreply@aihot.news (OpenHands 官方博客)",
+      "category": "教程"
     },
     {
       "title": "Revolut 将约 2000 名工程师迁移到自托管 GLM 编码",
