@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-04T03:33:01.706146+08:00",
+  "updated_at": "2026-11-04T04:03:01.725219+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "国行 Apple 智能与 Siri 随 iOS 27.3 开发者预览版上线，iPhone 15 Pro 及更新机型可用",
+      "link": "https://aihot.news/items/wcdu4dqxia9eebqw7401bhxr6",
+      "summary": "苹果发布 iOS 27.3 开发者预览版，IT之家实测国行 Apple 智能与 Siri 如期上线，用户更新后可在设置中找到该功能。国行版与阿里巴巴合作接入千问，用户登录千问账户或通过\"通过 Apple 登录\"即可在 Siri、写作工具和视觉智能中调用千问，无需跳转独立应用，千问集成将延伸至 iOS、iPadOS、macOS 和 visionOS。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wcdu4dqxia9eebqw7401bhxr6",
+      "pub_date": "2026-11-03",
+      "author": "noreply@aihot.news (IT之家·人工智能)",
+      "category": "AI 产品"
+    },
     {
       "title": "Ed Zitron 解析 OpenAI 1.25 万亿美元估值融资与 Anthropic S-1/A 中的万亿级算力承诺",
       "link": "https://aihot.news/items/zv5dl1agqwo6tkmhdamy17lt5",
@@ -394,14 +402,6 @@
       "pub_date": "2026-10-29",
       "author": "noreply@aihot.news (Manus：Blog)",
       "category": "教程"
-    },
-    {
-      "title": "OpenAI 详解如何监控前沿模型的失对齐行为",
-      "link": "https://aihot.news/items/e234ewhx82g2zh3z2bgcjxx7d",
-      "summary": "OpenAI 在 Alignment 博客介绍其针对前沿模型（如 GPT-6 Astra）的多层失对齐监控系统，覆盖训练、评估、内部使用和部分外部部署。 🔗 阅读原文 via AIHOT · https://aihot.news/items/e234ewhx82g2zh3z2bgcjxx7d",
-      "pub_date": "2026-10-29",
-      "author": "noreply@aihot.news (OpenAI：Alignment 研究博客)",
-      "category": "论文"
     }
   ]
 }

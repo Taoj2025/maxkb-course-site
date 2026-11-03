@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-04T03:33:01.707518+08:00",
-  "total": 19,
+  "updated_at": "2026-11-04T04:03:01.726148+08:00",
+  "total": 18,
   "items": [
     {
       "title": "Mistral Large 4 以开放权重发布并附技术报告",
@@ -146,14 +146,6 @@
       "pub_date": "2026-10-29",
       "author": "noreply@aihot.news (Tibo)",
       "category": "AI 产品"
-    },
-    {
-      "title": "OpenAI 详解如何监控前沿模型的失对齐行为",
-      "link": "https://aihot.news/items/e234ewhx82g2zh3z2bgcjxx7d",
-      "summary": "OpenAI 在 Alignment 博客介绍其针对前沿模型（如 GPT-6 Astra）的多层失对齐监控系统，覆盖训练、评估、内部使用和部分外部部署。 🔗 阅读原文 via AIHOT · https://aihot.news/items/e234ewhx82g2zh3z2bgcjxx7d",
-      "pub_date": "2026-10-29",
-      "author": "noreply@aihot.news (OpenAI：Alignment 研究博客)",
-      "category": "论文"
     }
   ]
 }
