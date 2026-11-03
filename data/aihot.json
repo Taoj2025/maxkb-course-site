@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-03T18:03:02.057422+08:00",
+  "updated_at": "2026-11-03T18:33:02.020042+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Mistral Large 4 以开放权重发布并附技术报告",
+      "link": "https://aihot.news/items/bfx52184e0ssnqgdq42o8dg36",
+      "summary": "Mistral 团队成员 Pierre Stock 宣布 ML4（Mistral Large 4）正式开放权重，称其在代码智能体与网络安全方向具备前沿能力，且比三周前的 Preview 版本更高效、更紧凑。技术报告讲述其研发过程：https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B/blob/main/assets/technical_report.pdf，Mistral AI 官方转发并称可在 alphaxiv 上阅读这一研发故事（https://www.alphaxiv.org/abs/2611.mistral-large-4）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/bfx52184e0ssnqgdq42o8dg36",
+      "pub_date": "2026-11-03",
+      "author": "noreply@aihot.news (Mistral AI)",
+      "category": "AI 模型"
+    },
     {
       "title": "Addy Osmani 谈 Agent 时代如何保持批判性思维",
       "link": "https://aihot.news/items/uinaiwkzg4u2exkfgv4oha9p7",
@@ -394,14 +402,6 @@
       "pub_date": "2026-10-29",
       "author": "noreply@aihot.news (The Verge：AI)",
       "category": "观点"
-    },
-    {
-      "title": "纽约时报称中国情报人员瞄准英伟达 CEO 黄仁勋",
-      "link": "https://aihot.news/items/lq97h52ctxw2nkri4qqxj5lbx",
-      "summary": "据《纽约时报》报道，美国情报机构认为英伟达 CEO 黄仁勋身边一名高管为中国提供情报，此人是新加坡数据中心运营商 Megaspeed 的 Alice Huang（黄乐）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/lq97h52ctxw2nkri4qqxj5lbx",
-      "pub_date": "2026-10-29",
-      "author": "noreply@aihot.news (The Decoder：AI News)",
-      "category": "行业动态"
     }
   ]
 }
