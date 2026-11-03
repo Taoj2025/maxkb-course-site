@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-04T01:03:02.355321+08:00",
+  "updated_at": "2026-11-04T01:33:01.838571+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Ed Zitron 解析 OpenAI 1.25 万亿美元估值融资与 Anthropic S-1/A 中的万亿级算力承诺",
+      "link": "https://aihot.news/items/zv5dl1agqwo6tkmhdamy17lt5",
+      "summary": "Ed Zitron 撰文认为 AI 行业资金正在枯竭。OpenAI 上周以 1.25 万亿美元估值融资 110 亿美元，低于此前计划的 300 亿美元、1.4 万亿美元估值；据 The Information，其 Q1 2026 成本收入与研发支出合计 121 亿美元，截至 3 月底持有逾 730 亿美元现金及有价证券。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zv5dl1agqwo6tkmhdamy17lt5",
+      "pub_date": "2026-11-03",
+      "author": "noreply@aihot.news (Ed Zitron 长文 / Where’s Your Ed At)",
+      "category": "观点"
+    },
     {
       "title": "Mistral Large 4 以开放权重发布并附技术报告",
       "link": "https://aihot.news/items/bfx52184e0ssnqgdq42o8dg36",
@@ -394,14 +402,6 @@
       "pub_date": "2026-10-29",
       "author": "noreply@aihot.news (Wiz：Research)",
       "category": "论文"
-    },
-    {
-      "title": "Unsloth 发布 Mistral Le Chonk 1-bit GGUF 量化版，可本地运行 1T 参数模型",
-      "link": "https://aihot.news/items/rph54wkrnzjpvov4cv0mxqatl",
-      "summary": "Unsloth 发布 Mistral Le Chonk（Mistral Large 4，1T 参数 MoE，52B 激活）的 Dynamic 1-bit GGUF，可在 Mac Studio 上本地运行，保留 91% top-1 准确率，体积约 233GB（较 1.1TB FP8 小 80%）。图为各量化档位给出硬件需求，1-bit 需 256-270GB 内存，最小 UD-IQ1_S 约占 233GB 磁盘，并支持文本与图像输入、1M 上下文和 160+ 语言。GGUF 与指南见 huggingface.co/unsloth/Mistral-Large-4-1T-A52B-GGUF 和 unsloth.ai/docs/models/mistral-large-4。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rph54wkrnzjpvov4cv0mxqatl",
-      "pub_date": "2026-10-29",
-      "author": "noreply@aihot.news (Unsloth)",
-      "category": "AI 产品"
     }
   ]
 }
