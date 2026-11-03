@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-03T08:33:01.670873+08:00",
+  "updated_at": "2026-11-03T09:03:01.565732+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "DeepSeek Harness 养鱼教程：在 QQ、微信、飞书养大肥鱼并放上 B 站抖音直播",
+      "link": "https://aihot.news/items/v41vn9hb5ywv10e68wycj1bjk",
+      "summary": "数字生命卡兹克发布一篇 DeepSeek Harness 养鱼教程，讲解如何在 QQ、微信、飞书接入大肥鱼，并让它去 B 站刷视频、在抖音发视频和直播。 🔗 阅读原文 via AIHOT · https://aihot.news/items/v41vn9hb5ywv10e68wycj1bjk",
+      "pub_date": "2026-11-03",
+      "author": "noreply@aihot.news (公众号：数字生命卡兹克)",
+      "category": "教程"
+    },
     {
       "title": "Anthropic 算力与基础设施合同承诺达 $895.4B，其中 $447.5B 须在 2031 年前支付",
       "link": "https://aihot.news/items/xiu342i7osbgfxe2ezhrjndl0",
@@ -394,14 +402,6 @@
       "pub_date": "2026-10-29",
       "author": "noreply@aihot.news (The Decoder：AI News)",
       "category": "行业动态"
-    },
-    {
-      "title": "Addy Osmani 谈你可能对 Claude 过度提示了",
-      "link": "https://aihot.news/items/m1cx9dfhpep0da323x3tk7vht",
-      "summary": "Addy Osmani 撰文称新版 Claude 模型所需提示词比多数人习惯的更少，针对 Opus 5.5 建议用单一明确目标加验证条件让 Claude 自主工作，从 /effort medium 起步按需调整。 🔗 阅读原文 via AIHOT · https://aihot.news/items/m1cx9dfhpep0da323x3tk7vht",
-      "pub_date": "2026-10-29",
-      "author": "noreply@aihot.news (Addy Osmani)",
-      "category": "教程"
     }
   ]
 }
