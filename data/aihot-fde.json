@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-04T12:33:02.066933+08:00",
-  "total": 20,
+  "updated_at": "2026-11-04T13:03:02.509333+08:00",
+  "total": 21,
   "items": [
+    {
+      "title": "腾讯混元 Hy4 正式发布，首次引入视觉与电脑操作能力",
+      "link": "https://aihot.news/items/z6j7q1gcuwsjjpx3qbtnvl2b3",
+      "summary": "腾讯混元发布 Hy4 正式版，相比 Hy4 preview 扩展预训练与后训练规模，首次引入视觉能力和电脑操作支持，GameDev 与 GameLogic 评测分别提升 19.1% 和 9.8%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z6j7q1gcuwsjjpx3qbtnvl2b3",
+      "pub_date": "2026-11-04",
+      "author": "noreply@aihot.news (公众号：腾讯混元)",
+      "category": "AI 模型"
+    },
     {
       "title": "卡兹克开源折腾一年的 Agent 自动化系统 Agent-Autoloop",
       "link": "https://aihot.news/items/y0cgwl79wbih8c50svgmit93j",
