@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-04T16:03:02.361840+08:00",
-  "total": 22,
+  "updated_at": "2026-11-04T16:33:02.354849+08:00",
+  "total": 23,
   "items": [
     {
       "title": "Redwood Research 分析 OpenAI 智能体屡次关闭对齐监控的处置是否得当",
@@ -154,6 +154,14 @@
       "pub_date": "2026-10-30",
       "author": "noreply@aihot.news (Philipp Schmid)",
       "category": "行业动态"
+    },
+    {
+      "title": "智元发布具身模型 GO-3 Preview，登顶 RoboDojo、RoboTwin、RoboColiseum 三大榜单并计划 2026 年底开源",
+      "link": "https://aihot.news/items/qumvtx19rmgmu8mrs6undizlg",
+      "summary": "智元于 10 月 29 日发布新一代具身基座模型 GO-3 Preview，登顶 RoboDojo、RoboTwin、RoboColiseum 三大评测榜单，并计划于 2026 年底全面开源。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qumvtx19rmgmu8mrs6undizlg",
+      "pub_date": "2026-10-30",
+      "author": "noreply@aihot.news (AGIBOT 智元)",
+      "category": "AI 模型"
     },
     {
       "title": "Kimi 官方教程：如何用 Kimi K3.1 Pro 创作 3D 作品",

@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-04T16:03:02.360447+08:00",
+  "updated_at": "2026-11-04T16:33:02.353945+08:00",
   "total": 50,
   "items": [
     {
@@ -138,6 +138,14 @@
       "pub_date": "2026-11-02",
       "author": "noreply@aihot.news (公众号：腾讯混元)",
       "category": "AI 产品"
+    },
+    {
+      "title": "智元联合清华、无问芯穹发布群体经验学习范式CEL，96台真机验证集群规模越大成功率越高",
+      "link": "https://aihot.news/items/nvv8so9wjbfco4yjo9b6727az",
+      "summary": "智元携手清华大学、无问芯穹于10月30日发布群体经验学习范式CEL（Collective Experience Learning），让机器人同伴互为经验来源，摆脱人类示教的规模化瓶颈。 🔗 阅读原文 via AIHOT · https://aihot.news/items/nvv8so9wjbfco4yjo9b6727az",
+      "pub_date": "2026-11-02",
+      "author": "noreply@aihot.news (AGIBOT 智元)",
+      "category": "论文"
     },
     {
       "title": "数字生命卡兹克分享折腾一年的Agent自动化系统架构",
@@ -324,6 +332,14 @@
       "category": "论文"
     },
     {
+      "title": "智元发布具身模型 GO-3 Preview，登顶 RoboDojo、RoboTwin、RoboColiseum 三大榜单并计划 2026 年底开源",
+      "link": "https://aihot.news/items/qumvtx19rmgmu8mrs6undizlg",
+      "summary": "智元于 10 月 29 日发布新一代具身基座模型 GO-3 Preview，登顶 RoboDojo、RoboTwin、RoboColiseum 三大评测榜单，并计划于 2026 年底全面开源。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qumvtx19rmgmu8mrs6undizlg",
+      "pub_date": "2026-10-30",
+      "author": "noreply@aihot.news (AGIBOT 智元)",
+      "category": "AI 模型"
+    },
+    {
       "title": "Kimi 官方教程：如何用 Kimi K3.1 Pro 创作 3D 作品",
       "link": "https://aihot.news/items/ykvaq4vx3ydt23josezzan62r",
       "summary": "月之暗面（Kimi）发布官方教程，详解 Kimi K3.1 Pro 的 3D 创作工作流程，说明参数化建模与网格化建模两种方式及对应工具选择。文章分享了 4 个案例的具体操作，包括在 Unreal Engine 中构建东方天宫、制作可 3D 打印的台灯、纯代码调用 Blender 生成建筑、用 Tripo 和 Blender 搭建微缩城市，并给出图胜于言、先搭灰模再细化等 5 个使用技巧。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ykvaq4vx3ydt23josezzan62r",
@@ -386,22 +402,6 @@
       "pub_date": "2026-10-29",
       "author": "noreply@aihot.news (Figma AI / Agent / Make)",
       "category": "教程"
-    },
-    {
-      "title": "Pika 基于MiniMax H3后训练并开源 Pika H3 Flex 视频生成模型",
-      "link": "https://aihot.news/items/eq47lph0rzobf8cr950saiu8r",
-      "summary": "Pika Labs 在 MiniMax H3 上做后训练，推出并开源 Pika H3 Flex，采样步数从 50 步压缩到 6 步，生成时间大幅降低且质量有所提升。 🔗 阅读原文 via AIHOT · https://aihot.news/items/eq47lph0rzobf8cr950saiu8r",
-      "pub_date": "2026-10-29",
-      "author": "noreply@aihot.news (卡兹克)",
-      "category": "AI 模型"
-    },
-    {
-      "title": "Anthropic S-1 文件解读：财务表现强劲但增长放缓存隐忧",
-      "link": "https://aihot.news/items/wb6emxuh5ob2wh96egtwawgfu",
-      "summary": "作者通读 Anthropic 公开版 S-1 文件，认为公司财务状况好于预期：2026 年第二季度收入从一季度的 47 亿美元增至 116 亿美元，并录得首个运营利润，截至 6 月底现金储备仅次于 Google 和 Berkshire Hathaway。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wb6emxuh5ob2wh96egtwawgfu",
-      "pub_date": "2026-10-29",
-      "author": "noreply@aihot.news (Timothy B. Lee：Understanding AI)",
-      "category": "行业动态"
     }
   ]
 }
