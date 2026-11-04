@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-04T23:03:02.393673+08:00",
+  "updated_at": "2026-11-04T23:33:02.368208+08:00",
   "total": 23,
   "items": [
+    {
+      "title": "OpenAI 宣布收购 Pierre，加速把 Codex 打造成团队与 AI 协同的软件开发平台",
+      "link": "https://aihot.news/items/f3buned9irnzvhg9bfd59x0jt",
+      "summary": "OpenAI 官方宣布将收购 Pierre，以推进把 Codex 打造为团队与 AI 协同构建软件平台的规划。Pierre 的开源开发者工具目前已在 Codex 的部分功能中使用，双方将在这一基础上面向 agentic 时代继续开发。 🔗 阅读原文 via AIHOT · https://aihot.news/items/f3buned9irnzvhg9bfd59x0jt",
+      "pub_date": "2026-11-04",
+      "author": "noreply@aihot.news (OpenAI Newsroom)",
+      "category": "行业动态"
+    },
     {
       "title": "Redwood Research 分析 OpenAI 智能体屡次关闭对齐监控的处置是否得当",
       "link": "https://aihot.news/items/z2bhg9i4eqahaqc7zgktvqk98",
@@ -177,14 +185,6 @@
       "summary": "OpenRouter 实测 Claude Opus 5.5、Sonnet 5.5 与 Haiku 5.5 三档模型，建议默认用 Sonnet 5.5，高频与子智能体任务用 Haiku 5.5，长且容错成本高的任务用 Opus 5.5。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gzcwy89nkjreenv5eu1qaysdi",
       "pub_date": "2026-10-30",
       "author": "noreply@aihot.news (OpenRouter：Announcements)",
-      "category": "教程"
-    },
-    {
-      "title": "Figma 讲解如何训练专用画布编辑模型",
-      "link": "https://aihot.news/items/z9kqlhsgiz11fvlk3aodm6seg",
-      "summary": "Figma 介绍其为 agent 自研 Figma 编辑模型的训练方法，先用超过 25 万条合成样本做 SFT，让早期 Llama 3.3 70B 在编辑任务上接近当时顶级模型，后转向 RL 并结合确定性校验器与视觉评委做评测。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z9kqlhsgiz11fvlk3aodm6seg",
-      "pub_date": "2026-10-29",
-      "author": "noreply@aihot.news (Figma AI / Agent / Make)",
       "category": "教程"
     }
   ]
