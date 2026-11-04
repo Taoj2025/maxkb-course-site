@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-05T02:03:02.300623+08:00",
-  "total": 25,
+  "updated_at": "2026-11-05T02:33:02.123400+08:00",
+  "total": 24,
   "items": [
     {
       "title": "可灵 Kling 4.0 Flash 全面开放，支持官网、API、MCP 和 Adobe 插件接入",
@@ -193,14 +193,6 @@
       "summary": "月之暗面（Kimi）发布官方教程，详解 Kimi K3.1 Pro 的 3D 创作工作流程，说明参数化建模与网格化建模两种方式及对应工具选择。文章分享了 4 个案例的具体操作，包括在 Unreal Engine 中构建东方天宫、制作可 3D 打印的台灯、纯代码调用 Blender 生成建筑、用 Tripo 和 Blender 搭建微缩城市，并给出图胜于言、先搭灰模再细化等 5 个使用技巧。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ykvaq4vx3ydt23josezzan62r",
       "pub_date": "2026-10-30",
       "author": "noreply@aihot.news (公众号：月之暗面)",
-      "category": "教程"
-    },
-    {
-      "title": "OpenRouter 实测 Claude Opus vs Sonnet vs Haiku 5.5 该选哪个",
-      "link": "https://aihot.news/items/gzcwy89nkjreenv5eu1qaysdi",
-      "summary": "OpenRouter 实测 Claude Opus 5.5、Sonnet 5.5 与 Haiku 5.5 三档模型，建议默认用 Sonnet 5.5，高频与子智能体任务用 Haiku 5.5，长且容错成本高的任务用 Opus 5.5。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gzcwy89nkjreenv5eu1qaysdi",
-      "pub_date": "2026-10-30",
-      "author": "noreply@aihot.news (OpenRouter：Announcements)",
       "category": "教程"
     }
   ]

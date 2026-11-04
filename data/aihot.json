@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-05T02:03:02.299672+08:00",
+  "updated_at": "2026-11-05T02:33:02.122484+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "美国中期选举中选民广泛否决 AI 数据中心提案",
+      "link": "https://aihot.news/items/rt92cw12z1dsqozka4y4wzl2v",
+      "summary": "美国中期选举中，13 个州逾 40 项数据中心相关提案里至少 38 项被否决，6 个城市直接禁止数据中心，12 个限制其用电功率。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rt92cw12z1dsqozka4y4wzl2v",
+      "pub_date": "2026-11-04",
+      "author": "noreply@aihot.news (404 Media)",
+      "category": "行业动态"
+    },
     {
       "title": "可灵 Kling 4.0 Flash 全面开放，支持官网、API、MCP 和 Adobe 插件接入",
       "link": "https://aihot.news/items/dh8lnoo1i3xiq7a12azrnmmwf",
@@ -394,14 +402,6 @@
       "pub_date": "2026-10-30",
       "author": "noreply@aihot.news (OpenAI：官网动态)",
       "category": "行业动态"
-    },
-    {
-      "title": "OpenRouter 实测 Claude Opus vs Sonnet vs Haiku 5.5 该选哪个",
-      "link": "https://aihot.news/items/gzcwy89nkjreenv5eu1qaysdi",
-      "summary": "OpenRouter 实测 Claude Opus 5.5、Sonnet 5.5 与 Haiku 5.5 三档模型，建议默认用 Sonnet 5.5，高频与子智能体任务用 Haiku 5.5，长且容错成本高的任务用 Opus 5.5。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gzcwy89nkjreenv5eu1qaysdi",
-      "pub_date": "2026-10-30",
-      "author": "noreply@aihot.news (OpenRouter：Announcements)",
-      "category": "教程"
     }
   ]
 }
