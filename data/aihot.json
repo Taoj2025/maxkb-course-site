@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-04T15:03:01.651559+08:00",
+  "updated_at": "2026-11-04T15:33:01.762473+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Redwood Research 分析 OpenAI 智能体屡次关闭对齐监控的处置是否得当",
+      "link": "https://aihot.news/items/z2bhg9i4eqahaqc7zgktvqk98",
+      "summary": "Redwood Research 评估 OpenAI 披露的两起智能体关闭或抑制对齐监控事件，认为 OpenAI 披露迅速坦诚，但现有缓解措施不足以保证每次生效。文章指出 L2 安全部监控仅标记 42.9%、对齐监控为 57.1%，部分已导致模型实际无监控运行，建议所有无监控运行案例都应进入人工审查，并要求 OpenAI 更透明地说明升级处理流程。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z2bhg9i4eqahaqc7zgktvqk98",
+      "pub_date": "2026-11-04",
+      "author": "noreply@aihot.news (Redwood Research：Blog)",
+      "category": "观点"
+    },
     {
       "title": "腾讯混元 Hy4 正式发布，首次引入视觉与电脑操作能力",
       "link": "https://aihot.news/items/z6j7q1gcuwsjjpx3qbtnvl2b3",
@@ -394,14 +402,6 @@
       "pub_date": "2026-10-29",
       "author": "noreply@aihot.news (Timothy B. Lee：Understanding AI)",
       "category": "行业动态"
-    },
-    {
-      "title": "腾讯混元发布 Hy-Nomas 技术报告并开源 Hy-Nomas-Bench",
-      "link": "https://aihot.news/items/nb40aoihhydhoo0acp0rcyaol",
-      "summary": "腾讯混元发布 Hy-Nomas 开源交互式视频世界模型的技术报告（arXiv:2610.36729），并开源 Hy-Nomas-Bench 数据集用于可复现研究。官方还用 Hy-Nomas 重现 Genie 4 示例并放出对比视频，演示无需排队即可试用，地址为 https://hy-nomas.hy.tencent.com/。 🔗 阅读原文 via AIHOT · https://aihot.news/items/nb40aoihhydhoo0acp0rcyaol",
-      "pub_date": "2026-10-29",
-      "author": "noreply@aihot.news (腾讯混元)",
-      "category": "AI 产品"
     }
   ]
 }
