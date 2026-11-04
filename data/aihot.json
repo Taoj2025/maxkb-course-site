@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-05T04:33:02.262304+08:00",
+  "updated_at": "2026-11-05T05:03:02.161421+08:00",
   "total": 50,
   "items": [
     {
@@ -82,6 +82,22 @@
       "pub_date": "2026-11-03",
       "author": "noreply@aihot.news (Ed Zitron 长文 / Where’s Your Ed At)",
       "category": "观点"
+    },
+    {
+      "title": "Anthropic 用 Claude 解析首个原核细胞 vault particle 的 3D 结构",
+      "link": "https://aihot.news/items/x9ea12d0zek7ntuejt9oxfdjn",
+      "summary": "Anthropic 生物学研究实验室报告借助 Claude 发现并解析了原核细胞中首个 vault particle 的 3D 结构，该结构来自感染细菌的噬菌体，由 96 拷贝的 L05 蛋白组成，质量约 9.5 megadaltons，长约 54 纳米。 🔗 阅读原文 via AIHOT · https://aihot.news/items/x9ea12d0zek7ntuejt9oxfdjn",
+      "pub_date": "2026-11-03",
+      "author": "noreply@aihot.news (Anthropic：Research)",
+      "category": "论文"
+    },
+    {
+      "title": "Cognition 发布编码模型 SWE-2 Flash，Terminal-Bench 4.0 从 0.9% 提升至 20.0%",
+      "link": "https://aihot.news/items/ten7xip5406iqarfs8tj8pa22",
+      "summary": "Cognition 发布编码模型 SWE-2 Flash，称其在主流评测上超越所有美国开源权重模型，包括部分大 3 倍的模型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ten7xip5406iqarfs8tj8pa22",
+      "pub_date": "2026-11-03",
+      "author": "noreply@aihot.news (Cognition 模型 / Devin 博客)",
+      "category": "AI 模型"
     },
     {
       "title": "Mistral Large 4 以开放权重发布并附技术报告",
@@ -386,22 +402,6 @@
       "pub_date": "2026-10-30",
       "author": "noreply@aihot.news (公众号：月之暗面)",
       "category": "教程"
-    },
-    {
-      "title": "Google 与 Reddit 同日股价大跌，AI 搜索变现困境冲击开放网络",
-      "link": "https://aihot.news/items/kzenjo9w2bfhpsr0ub1gr95xj",
-      "summary": "Casey Newton 分析 Google 与 Reddit 同日遭遇的股市重挫：Alphabet 股价跌 12.6%，蒸发约 $5000 亿市值，为史上第二大单日市值缩水；高管承认 AI Mode 变现能力低于传统搜索，尽管 AI Mode 月用户约 10 亿、搜索收入仍增长 12% 至 $633.5 亿。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kzenjo9w2bfhpsr0ub1gr95xj",
-      "pub_date": "2026-10-30",
-      "author": "noreply@aihot.news (Platformer)",
-      "category": "行业动态"
-    },
-    {
-      "title": "Gemini API 的 Computer Use 工具正式开放（GA）",
-      "link": "https://aihot.news/items/qit1hgequ8pknedqqvuei5wfh",
-      "summary": "Google 于 10 月 30 日宣布 Gemini API 的 Computer Use 工具正式可用（GA），覆盖 Interactions 和 GenerateContent 两套 API。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qit1hgequ8pknedqqvuei5wfh",
-      "pub_date": "2026-10-30",
-      "author": "noreply@aihot.news (Gemini API：更新日志)",
-      "category": "AI 产品"
     }
   ]
 }

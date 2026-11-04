@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-05T04:33:02.263258+08:00",
-  "total": 24,
+  "updated_at": "2026-11-05T05:03:02.162296+08:00",
+  "total": 25,
   "items": [
     {
       "title": "可灵 Kling 4.0 Flash 全面开放，支持官网、API、MCP 和 Adobe 插件接入",
@@ -50,6 +50,14 @@
       "pub_date": "2026-11-04",
       "author": "noreply@aihot.news (Factory 研究 / 产品)",
       "category": "行业动态"
+    },
+    {
+      "title": "Cognition 发布编码模型 SWE-2 Flash，Terminal-Bench 4.0 从 0.9% 提升至 20.0%",
+      "link": "https://aihot.news/items/ten7xip5406iqarfs8tj8pa22",
+      "summary": "Cognition 发布编码模型 SWE-2 Flash，称其在主流评测上超越所有美国开源权重模型，包括部分大 3 倍的模型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ten7xip5406iqarfs8tj8pa22",
+      "pub_date": "2026-11-03",
+      "author": "noreply@aihot.news (Cognition 模型 / Devin 博客)",
+      "category": "AI 模型"
     },
     {
       "title": "Mistral Large 4 以开放权重发布并附技术报告",
