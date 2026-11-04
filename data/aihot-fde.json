@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-05T00:33:01.646499+08:00",
-  "total": 24,
+  "updated_at": "2026-11-05T01:03:02.263397+08:00",
+  "total": 25,
   "items": [
     {
       "title": "可灵 Kling 4.0 Flash 全面开放，支持官网、API、MCP 和 Adobe 插件接入",
@@ -42,6 +42,14 @@
       "pub_date": "2026-11-04",
       "author": "noreply@aihot.news (公众号：数字生命卡兹克)",
       "category": "教程"
+    },
+    {
+      "title": "Factory 收购 HumanLayer，并将开源其平台",
+      "link": "https://aihot.news/items/cc4sa2q738kbc1y9hj6agvta7",
+      "summary": "Factory 宣布收购 HumanLayer，联合创始人 Dex Horthy 和 Kyle Mistele 加入，共同构建面向企业和开发者的自主进化软件。HumanLayer 团队自 2025 年初深度使用编码 Agent，曾提出 Agent swarms 和 Research/Plan/Implement 框架。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cc4sa2q738kbc1y9hj6agvta7",
+      "pub_date": "2026-11-04",
+      "author": "noreply@aihot.news (Factory 研究 / 产品)",
+      "category": "行业动态"
     },
     {
       "title": "Mistral Large 4 以开放权重发布并附技术报告",

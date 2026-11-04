@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-05T00:33:01.645385+08:00",
+  "updated_at": "2026-11-05T01:03:02.262512+08:00",
   "total": 50,
   "items": [
     {
@@ -42,6 +42,14 @@
       "pub_date": "2026-11-04",
       "author": "noreply@aihot.news (公众号：数字生命卡兹克)",
       "category": "教程"
+    },
+    {
+      "title": "Factory 收购 HumanLayer，并将开源其平台",
+      "link": "https://aihot.news/items/cc4sa2q738kbc1y9hj6agvta7",
+      "summary": "Factory 宣布收购 HumanLayer，联合创始人 Dex Horthy 和 Kyle Mistele 加入，共同构建面向企业和开发者的自主进化软件。HumanLayer 团队自 2025 年初深度使用编码 Agent，曾提出 Agent swarms 和 Research/Plan/Implement 框架。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cc4sa2q738kbc1y9hj6agvta7",
+      "pub_date": "2026-11-04",
+      "author": "noreply@aihot.news (Factory 研究 / 产品)",
+      "category": "行业动态"
     },
     {
       "title": "AMD 发布 2026 年三季度财报，预计 2027 年营收增长超 80%",
@@ -394,14 +402,6 @@
       "pub_date": "2026-10-30",
       "author": "noreply@aihot.news (OpenRouter：Announcements)",
       "category": "教程"
-    },
-    {
-      "title": "Jassy 称 AWS 五到十年内将成为万亿美元营收业务，2026 年 capex 约 2200 亿美元",
-      "link": "https://aihot.news/items/fxmexzrmo7pw52vc5j6ej17kl",
-      "summary": "Amazon CEO Andy Jassy 在周四的季度财报电话会议上表示，AWS 未来五到十年内可以成为年营收万亿美元的业务，2026 年现金 capex 预计约 2200 亿美元，大部分投向 AWS，2027 年还将大幅增加。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fxmexzrmo7pw52vc5j6ej17kl",
-      "pub_date": "2026-10-29",
-      "author": "noreply@aihot.news (TechCrunch：AI)",
-      "category": "行业动态"
     }
   ]
 }
