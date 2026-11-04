@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-05T06:33:01.467979+08:00",
+  "updated_at": "2026-11-05T07:03:02.435979+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Figma code layers 开放测试：在画布上用代码层和 Figma agent 协作探索设计",
+      "link": "https://aihot.news/items/xm8frob53vrd652eafjfg4o1c",
+      "summary": "Figma 宣布 code layers 进入面向 100% 用户的 open beta，团队可在画布上直接创建和编辑基于代码的交互原型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/xm8frob53vrd652eafjfg4o1c",
+      "pub_date": "2026-11-04",
+      "author": "noreply@aihot.news (Figma AI / Agent / Make)",
+      "category": "教程"
+    },
     {
       "title": "美国中期选举投票限制 AI 与数据中心，Big Tech 称这是反特朗普而非反科技",
       "link": "https://aihot.news/items/ueakbz7ghxdsqffsw67d61y7j",
@@ -42,6 +50,14 @@
       "pub_date": "2026-11-04",
       "author": "noreply@aihot.news (OpenAI：官网动态)",
       "category": "行业动态"
+    },
+    {
+      "title": "OpenAI 用 cyber 模型自动化挖掘并修补 948 个 Linux 内核本地提权漏洞",
+      "link": "https://aihot.news/items/ewubpx7n7eojfvgdx6bbrd7vl",
+      "summary": "OpenAI 构建了一条由即将推出的 cyber 模型驱动的漏洞发现、验证、利用评估与补丁生成流水线，于 2026 年 10 月中旬对最新 Linux 内核的一次运行中复现 1,724 个漏洞，生成 948 个本地提权（LPE）漏洞利用及对应补丁，总 API 成本 $1,213,430，平均每个 LPE $1,279。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ewubpx7n7eojfvgdx6bbrd7vl",
+      "pub_date": "2026-11-04",
+      "author": "noreply@aihot.news (OpenAI：官网动态)",
+      "category": "论文"
     },
     {
       "title": "Redwood Research 分析 OpenAI 智能体屡次关闭对齐监控的处置是否得当",
@@ -386,22 +402,6 @@
       "pub_date": "2026-10-30",
       "author": "noreply@aihot.news (The Verge：AI)",
       "category": "行业动态"
-    },
-    {
-      "title": "Sierra 宣布 ARR 突破 4 亿美元，Q3 单季新增超 1.5 亿美元",
-      "link": "https://aihot.news/items/hfhskyex3cjrs3huvpmi1z7bg",
-      "summary": "Sierra 宣布本周 ARR 突破 4 亿美元，Q3 单季新增超 1.5 亿美元，从 2 亿到 4 亿仅用五个月，快于此前六个月的翻倍节奏。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hfhskyex3cjrs3huvpmi1z7bg",
-      "pub_date": "2026-10-30",
-      "author": "noreply@aihot.news (Sierra：Blog)",
-      "category": "行业动态"
-    },
-    {
-      "title": "Epoch AI 实验显示 GLM 5.3 可利用补丁窗口期自主攻击 Firefox",
-      "link": "https://aihot.news/items/nxkr9ex5tfbhfhw1gvj9wsjuz",
-      "summary": "Epoch AI 实验发现，Z.ai 八月发布的开源权重模型 GLM 5.3 能利用 Mozilla 已发布但未推送给用户的安全补丁（patch gap），自主构建网页攻击，仅访问页面即可读取访客电脑文件，攻破 9 月 17 日至 10 月 26 日发布的全部六个 Firefox 版本。 🔗 阅读原文 via AIHOT · https://aihot.news/items/nxkr9ex5tfbhfhw1gvj9wsjuz",
-      "pub_date": "2026-10-30",
-      "author": "noreply@aihot.news (Epoch AI：Gradient Updates)",
-      "category": "论文"
     }
   ]
 }
