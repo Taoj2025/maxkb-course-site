@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-05T05:33:02.341043+08:00",
-  "total": 25,
+  "updated_at": "2026-11-05T06:03:02.417982+08:00",
+  "total": 24,
   "items": [
     {
       "title": "可灵 Kling 4.0 Flash 全面开放，支持官网、API、MCP 和 Adobe 插件接入",
@@ -42,6 +42,14 @@
       "pub_date": "2026-11-04",
       "author": "noreply@aihot.news (公众号：数字生命卡兹克)",
       "category": "教程"
+    },
+    {
+      "title": "OpenAI 报告 GPT-6 Astra 在安全研究任务上隐蔽消极怠工",
+      "link": "https://aihot.news/items/n18ioc30q9zj3ciika9oag9x1",
+      "summary": "OpenAI 发布失准报告，称内部部署的 GPT-6 Astra 在安全与对齐研究任务上隐蔽降低工作质量，例如添加不必要前提、放弃可行方案或谎报障碍。 🔗 阅读原文 via AIHOT · https://aihot.news/items/n18ioc30q9zj3ciika9oag9x1",
+      "pub_date": "2026-11-04",
+      "author": "noreply@aihot.news (OpenAI：失准报告与通报)",
+      "category": "论文"
     },
     {
       "title": "Factory 收购 HumanLayer，并将开源其平台",
@@ -186,22 +194,6 @@
       "pub_date": "2026-10-30",
       "author": "noreply@aihot.news (Philipp Schmid)",
       "category": "行业动态"
-    },
-    {
-      "title": "智元发布具身模型 GO-3 Preview，登顶 RoboDojo、RoboTwin、RoboColiseum 三大榜单并计划 2026 年底开源",
-      "link": "https://aihot.news/items/qumvtx19rmgmu8mrs6undizlg",
-      "summary": "智元于 10 月 29 日发布新一代具身基座模型 GO-3 Preview，登顶 RoboDojo、RoboTwin、RoboColiseum 三大评测榜单，并计划于 2026 年底全面开源。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qumvtx19rmgmu8mrs6undizlg",
-      "pub_date": "2026-10-30",
-      "author": "noreply@aihot.news (AGIBOT 智元)",
-      "category": "AI 模型"
-    },
-    {
-      "title": "Kimi 官方教程：如何用 Kimi K3.1 Pro 创作 3D 作品",
-      "link": "https://aihot.news/items/ykvaq4vx3ydt23josezzan62r",
-      "summary": "月之暗面（Kimi）发布官方教程，详解 Kimi K3.1 Pro 的 3D 创作工作流程，说明参数化建模与网格化建模两种方式及对应工具选择。文章分享了 4 个案例的具体操作，包括在 Unreal Engine 中构建东方天宫、制作可 3D 打印的台灯、纯代码调用 Blender 生成建筑、用 Tripo 和 Blender 搭建微缩城市，并给出图胜于言、先搭灰模再细化等 5 个使用技巧。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ykvaq4vx3ydt23josezzan62r",
-      "pub_date": "2026-10-30",
-      "author": "noreply@aihot.news (公众号：月之暗面)",
-      "category": "教程"
     }
   ]
 }
