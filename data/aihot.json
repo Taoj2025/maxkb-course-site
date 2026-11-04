@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-05T03:03:01.803119+08:00",
+  "updated_at": "2026-11-05T03:33:01.832545+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Moonshot AI 在 HuggingFace 开放 2.8T 参数 Kimi K3.1 Pro 权重",
+      "link": "https://aihot.news/items/se9yjzn1asv817vcahsxd5zpw",
+      "summary": "Moonshot AI（@Kimi_Moonshot）在 HuggingFace 开放 Kimi K3.1 Pro 权重（https://huggingface.co/moonshotai/Kimi-K3.1-Pro）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/se9yjzn1asv817vcahsxd5zpw",
+      "pub_date": "2026-11-04",
+      "author": "noreply@aihot.news (Rohan Paul)",
+      "category": "AI 模型"
+    },
     {
       "title": "美国中期选举中选民广泛否决 AI 数据中心提案",
       "link": "https://aihot.news/items/rt92cw12z1dsqozka4y4wzl2v",
@@ -394,14 +402,6 @@
       "pub_date": "2026-10-30",
       "author": "noreply@aihot.news (Gemini API：更新日志)",
       "category": "AI 产品"
-    },
-    {
-      "title": "OpenAI 汇编各方法庭之友意见，主张 AI 训练应适用合理使用原则",
-      "link": "https://aihot.news/items/oas684tt9kpeds9cq7vgjvo1x",
-      "summary": "OpenAI 整理了在《纽约时报》诉讼中提交给法院的多份支持合理使用的法庭之友意见摘要，作者包括图书馆协会、法律学者、独立创作者和美国政府等。各意见书主张 AI 训练具有转换性、不构成版权法认可的市场损害，并警告限缩合理使用将阻碍科研进展与美国经济繁荣；完整文件可在法院公开卷宗查阅。 🔗 阅读原文 via AIHOT · https://aihot.news/items/oas684tt9kpeds9cq7vgjvo1x",
-      "pub_date": "2026-10-30",
-      "author": "noreply@aihot.news (OpenAI：官网动态)",
-      "category": "行业动态"
     }
   ]
 }
