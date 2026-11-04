@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-04T08:03:02.172357+08:00",
+  "updated_at": "2026-11-04T08:33:01.895396+08:00",
   "total": 20,
   "items": [
+    {
+      "title": "卡兹克开源折腾一年的 Agent 自动化系统 Agent-Autoloop",
+      "link": "https://aihot.news/items/y0cgwl79wbih8c50svgmit93j",
+      "summary": "作者开源其打磨一年的 Agent 自动化系统 Agent-Autoloop，地址为 https://github.com/KKKKhazix/agent-autoloop。 🔗 阅读原文 via AIHOT · https://aihot.news/items/y0cgwl79wbih8c50svgmit93j",
+      "pub_date": "2026-11-04",
+      "author": "noreply@aihot.news (公众号：数字生命卡兹克)",
+      "category": "教程"
+    },
     {
       "title": "Mistral Large 4 以开放权重发布并附技术报告",
       "link": "https://aihot.news/items/bfx52184e0ssnqgdq42o8dg36",
@@ -154,14 +162,6 @@
       "pub_date": "2026-10-29",
       "author": "noreply@aihot.news (Figma AI / Agent / Make)",
       "category": "教程"
-    },
-    {
-      "title": "Codex 宣布即日起 Pro 及 Business Premium 各档位用量上限翻倍",
-      "link": "https://aihot.news/items/funx6p4g0gju509j6n0oyxmqu",
-      "summary": "Tibo 宣布即日起将 Pro 100/200/500 档位与 Business Premium 的所有用量上限翻倍。Pro 200 的上限不会下调，Work 与 Codex 用量保持不变；dots 的扩展用量上限继续提供，且仍与默认用量分开计算，后续还会通过更好的模型和效率改进提升实际可用量。 🔗 阅读原文 via AIHOT · https://aihot.news/items/funx6p4g0gju509j6n0oyxmqu",
-      "pub_date": "2026-10-29",
-      "author": "noreply@aihot.news (Tibo)",
-      "category": "AI 产品"
     }
   ]
 }

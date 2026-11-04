@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-04T08:03:02.171452+08:00",
+  "updated_at": "2026-11-04T08:33:01.894484+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "卡兹克开源折腾一年的 Agent 自动化系统 Agent-Autoloop",
+      "link": "https://aihot.news/items/y0cgwl79wbih8c50svgmit93j",
+      "summary": "作者开源其打磨一年的 Agent 自动化系统 Agent-Autoloop，地址为 https://github.com/KKKKhazix/agent-autoloop。 🔗 阅读原文 via AIHOT · https://aihot.news/items/y0cgwl79wbih8c50svgmit93j",
+      "pub_date": "2026-11-04",
+      "author": "noreply@aihot.news (公众号：数字生命卡兹克)",
+      "category": "教程"
+    },
     {
       "title": "AMD 发布 2026 年三季度财报，预计 2027 年营收增长超 80%",
       "link": "https://aihot.news/items/ir9nzccipff0uowu3tghi4n3o",
@@ -394,14 +402,6 @@
       "pub_date": "2026-10-29",
       "author": "noreply@aihot.news (OpenAI：官网动态)",
       "category": "行业动态"
-    },
-    {
-      "title": "Codex 宣布即日起 Pro 及 Business Premium 各档位用量上限翻倍",
-      "link": "https://aihot.news/items/funx6p4g0gju509j6n0oyxmqu",
-      "summary": "Tibo 宣布即日起将 Pro 100/200/500 档位与 Business Premium 的所有用量上限翻倍。Pro 200 的上限不会下调，Work 与 Codex 用量保持不变；dots 的扩展用量上限继续提供，且仍与默认用量分开计算，后续还会通过更好的模型和效率改进提升实际可用量。 🔗 阅读原文 via AIHOT · https://aihot.news/items/funx6p4g0gju509j6n0oyxmqu",
-      "pub_date": "2026-10-29",
-      "author": "noreply@aihot.news (Tibo)",
-      "category": "AI 产品"
     }
   ]
 }
