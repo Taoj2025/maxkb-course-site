@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-05T07:33:01.772241+08:00",
-  "total": 25,
+  "updated_at": "2026-11-05T08:00:02.003234+08:00",
+  "total": 26,
   "items": [
+    {
+      "title": "OpenAI 称其智能体发现至少 10 种新型 Linux 漏洞利用技术",
+      "link": "https://aihot.news/items/ulr0gn1mg4kpj7yz2h2zwp7u1",
+      "summary": "OpenAI 称其智能体发现并使用了至少 10 种新型 Linux 漏洞利用技术，据其及所咨询专家所知均为此前未知的。OpenAI 认为这表明前沿大语言模型能发现并修补新的漏洞利用方式，而不只是套用已知技术。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ulr0gn1mg4kpj7yz2h2zwp7u1",
+      "pub_date": "2026-11-04",
+      "author": "noreply@aihot.news (OpenAI)",
+      "category": "论文"
+    },
     {
       "title": "Figma code layers 开放测试：在画布上用代码层和 Figma agent 协作探索设计",
       "link": "https://aihot.news/items/xm8frob53vrd652eafjfg4o1c",
