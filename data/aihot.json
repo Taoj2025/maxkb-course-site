@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-06T06:03:02.192634+08:00",
+  "updated_at": "2026-11-06T06:33:01.554552+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "美股单日蒸发 3.2 万亿美元，Nasdaq 创 2025 年 4 月以来最大跌幅",
+      "link": "https://aihot.news/items/czctc3kqzf5wru8fhsbnhvxt7",
+      "summary": "11 月 5 日华尔街市值蒸发 3.2 万亿美元，Nasdaq 综合指数跌 5.52%，投资者恐慌民主党掌控国会将放缓高杠杆 AI 支出热潮。Nvidia 跌 9.3% 抹去 2026 年涨幅，费城半导体指数跌 12.3%，SanDisk 跌 22%，Micron、Western Digital 和 AMD 各跌 17%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/czctc3kqzf5wru8fhsbnhvxt7",
+      "pub_date": "2026-11-05",
+      "author": "noreply@aihot.news (Rohan Paul)",
+      "category": "行业动态"
+    },
     {
       "title": "李飞飞宣传 World Labs 发布 Frameboy，可实时体验 Atlas 世界模型",
       "link": "https://aihot.news/items/m725rhhdt7a38zdd3aappeofn",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-02",
       "author": "noreply@aihot.news (公众号：腾讯混元)",
       "category": "AI 产品"
-    },
-    {
-      "title": "智元联合清华、无问芯穹发布群体经验学习范式CEL，96台真机验证集群规模越大成功率越高",
-      "link": "https://aihot.news/items/nvv8so9wjbfco4yjo9b6727az",
-      "summary": "智元携手清华大学、无问芯穹于10月30日发布群体经验学习范式CEL（Collective Experience Learning），让机器人同伴互为经验来源，摆脱人类示教的规模化瓶颈。 🔗 阅读原文 via AIHOT · https://aihot.news/items/nvv8so9wjbfco4yjo9b6727az",
-      "pub_date": "2026-11-02",
-      "author": "noreply@aihot.news (AGIBOT 智元)",
-      "category": "论文"
     }
   ]
 }
