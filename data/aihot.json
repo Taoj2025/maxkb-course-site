@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-06T03:03:01.950817+08:00",
+  "updated_at": "2026-11-06T03:33:02.401575+08:00",
   "total": 50,
   "items": [
     {
@@ -57,6 +57,14 @@
       "summary": "腾讯混元转发并感谢 Artificial Analysis 对其最新模型 Hy4 的评测。Hy4 在 Artificial Analysis Intelligence Index v5 得 35 分，与中国实验室模型中仅次于 Kimi K3.1 Pro（46 分），与 Grok 4.7 (xhigh) 持平，比 Claude Haiku 5.5 (max) 低 1 分。评测要点：FrontierCode 2.0 得 31%，为中国实验室模型最高；AA-Omniscience v1.1 达 50% 但幻觉率高达 89%；定价 $0.834/$2.501 per 1M input/output tokens，支持 1M token 上下文窗口和文本加图像输入。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fj4zi12biz0b62ckhzg5awcxx",
       "pub_date": "2026-11-05",
       "author": "noreply@aihot.news (腾讯混元)",
+      "category": "AI 模型"
+    },
+    {
+      "title": "OpenAI 发布 GPT-6 Cyber 网络安全模型",
+      "link": "https://aihot.news/items/u904yv6dn7sw6lwjgxxedqd3b",
+      "summary": "OpenAI 发布网络安全模型 GPT-6 Cyber，针对漏洞发现、验证与修复训练，并通过 Daybreak Red/Blue 平台向审核通过的安全团队开放。 🔗 阅读原文 via AIHOT · https://aihot.news/items/u904yv6dn7sw6lwjgxxedqd3b",
+      "pub_date": "2026-11-05",
+      "author": "noreply@aihot.news (OpenAI：官网动态)",
       "category": "AI 模型"
     },
     {
@@ -146,6 +154,14 @@
       "pub_date": "2026-11-04",
       "author": "noreply@aihot.news (Preferred Networks：AI 研究与产品)",
       "category": "AI 模型"
+    },
+    {
+      "title": "METR 评审 Anthropic 2026年8月风险报告的自动化 R&D 风险章节",
+      "link": "https://aihot.news/items/k53ssxx8ie3n6fzyqmky4izv7",
+      "summary": "METR 发布对 Anthropic 2026年8月风险报告“自动化 R&D 风险”章节的独立评审，同意 7月15日 模型的直接灾难性风险为“低”，但认为其可能已触及 2x Acceleration 早期预警阈值。 🔗 阅读原文 via AIHOT · https://aihot.news/items/k53ssxx8ie3n6fzyqmky4izv7",
+      "pub_date": "2026-11-04",
+      "author": "noreply@aihot.news (METR：Blog)",
+      "category": "论文"
     },
     {
       "title": "Anthropic 研究 20.7 万 Claude 科研会话：科学家如何使用 Claude",
@@ -385,22 +401,6 @@
       "summary": "Anthropic 在 Claude Platform 推出 message threads 公测，智能体每轮只需发送新增消息而无需重发全部对话历史，从而缩短首 token 时间。 🔗 阅读原文 via AIHOT · https://aihot.news/items/sg5u3u91kw42j1grtyp3ny65n",
       "pub_date": "2026-11-02",
       "author": "noreply@aihot.news (Claude：Blog)",
-      "category": "AI 产品"
-    },
-    {
-      "title": "OpenAI 任命前美国陆军部长 Dan Driscoll 为国家安全现代化高级顾问",
-      "link": "https://aihot.news/items/hf03pwablxanh9desil5cbu9d",
-      "summary": "OpenAI 宣布任命 Dan Driscoll 为新设的国家安全现代化高级顾问，就先进 AI 如何加强国家与网络安全提供建议，重点与美国盟友合作推动民主 AI 的负责任使用。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hf03pwablxanh9desil5cbu9d",
-      "pub_date": "2026-11-02",
-      "author": "noreply@aihot.news (OpenAI：官网动态)",
-      "category": "行业动态"
-    },
-    {
-      "title": "Google AI Studio 弃用 Gemini 2.5 Pro 与 2.5 Flash，API 请求将于 12 月 1 日起自动路由",
-      "link": "https://aihot.news/items/ewvepczpb5fewcbzo2tkqdldm",
-      "summary": "Gemini 2.5 Pro 与 Gemini 2.5 Flash 已弃用，无法再在 Google AI Studio 中选择。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ewvepczpb5fewcbzo2tkqdldm",
-      "pub_date": "2026-11-02",
-      "author": "noreply@aihot.news (Gemini API：更新日志)",
       "category": "AI 产品"
     }
   ]
