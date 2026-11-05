@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-06T02:03:02.223980+08:00",
+  "updated_at": "2026-11-06T02:33:02.217203+08:00",
   "total": 50,
   "items": [
     {
@@ -12,11 +12,11 @@
       "category": "AI 产品"
     },
     {
-      "title": "Google DeepMind 发布 Gemini Omni 1.2 Flash，支持 15 秒视频生成并降价 30%",
-      "link": "https://aihot.news/items/tna7e11amxlispk71gj6hwsi6",
-      "summary": "Google DeepMind 发布 Gemini Omni 1.2 Flash，在 Gemini API 和 Gemini for business 全面开放，首次实现 Gemini Omni 全面可用。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tna7e11amxlispk71gj6hwsi6",
+      "title": "Google 发布 Gemini Omni 1.2 Flash：15 秒视频生成，降价 30% 至 $0.07/秒",
+      "link": "https://aihot.news/items/yjwroxww17lcg4ntcu9ruo105",
+      "summary": "Google 发布 Gemini Omni 1.2 Flash，在 Gemini API 和 Gemini for business 全面开放。新模型原生支持最长 15 秒视频生成（此前为 10 秒），支持多轮对话编辑和更强的参考图一致性，价格较 1.1 下降 30% 至 720p 视频 $0.07/秒。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yjwroxww17lcg4ntcu9ruo105",
       "pub_date": "2026-11-05",
-      "author": "noreply@aihot.news (Google DeepMind：Blog)",
+      "author": "noreply@aihot.news (Google Blog：AI)",
       "category": "AI 产品"
     },
     {
