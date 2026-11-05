@@ -1,8 +1,24 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-05T08:33:02.397079+08:00",
+  "updated_at": "2026-11-05T09:03:02.426551+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Higgsfield 上线 GPT Image 2.6，新用户 7 天无限使用",
+      "link": "https://aihot.news/items/lcdap1o18bh6bt70ij66nakij",
+      "summary": "Higgsfield 宣布 GPT Image 2.6 已上线，新用户可 7 天无限使用。功能包括把提示词或图片转成 GIF、保存参考图随时复用、通过 markup 细化并导出 SVG。OpenAI 此前介绍 ChatGPT Images 2.6 新增 GIF 和参考图功能，另有两款 API 模型将带来 50% 更快的图像生成。 🔗 阅读原文 via AIHOT · https://aihot.news/items/lcdap1o18bh6bt70ij66nakij",
+      "pub_date": "2026-11-05",
+      "author": "noreply@aihot.news (Higgsfield AI)",
+      "category": "AI 产品"
+    },
+    {
+      "title": "月之暗面开放 2.8 万亿参数 Kimi K3.1 Pro 权重，登顶 Agent Arena 开源模型榜",
+      "link": "https://aihot.news/items/hkcafk9es55rbok8pinu90x5o",
+      "summary": "月之暗面按 10 月 24 日发布时的承诺，在 Hugging Face 开放 Kimi K3.1 Pro 权重。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hkcafk9es55rbok8pinu90x5o",
+      "pub_date": "2026-11-05",
+      "author": "noreply@aihot.news (IT之家·人工智能)",
+      "category": "AI 模型"
+    },
     {
       "title": "OpenAI 称其智能体发现至少 10 种新型 Linux 漏洞利用技术",
       "link": "https://aihot.news/items/ulr0gn1mg4kpj7yz2h2zwp7u1",
@@ -28,20 +44,20 @@
       "category": "行业动态"
     },
     {
-      "title": "Moonshot AI 在 HuggingFace 开放 2.8T 参数 Kimi K3.1 Pro 权重",
-      "link": "https://aihot.news/items/se9yjzn1asv817vcahsxd5zpw",
-      "summary": "Moonshot AI（@Kimi_Moonshot）在 HuggingFace 开放 Kimi K3.1 Pro 权重（https://huggingface.co/moonshotai/Kimi-K3.1-Pro）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/se9yjzn1asv817vcahsxd5zpw",
-      "pub_date": "2026-11-04",
-      "author": "noreply@aihot.news (Rohan Paul)",
-      "category": "AI 模型"
-    },
-    {
       "title": "美国中期选举中选民在 13 州否决数据中心相关提案",
       "link": "https://aihot.news/items/rt92cw12z1dsqozka4y4wzl2v",
       "summary": "美国中期选举中，13 个州逾 40 项数据中心相关 ballot 提案至少 38 项被否决，6 个城市投票全面禁止数据中心，12 个城市限制其用电兆瓦数。支持数据中心的候选人普遍落败，包括推动德州数据中心建设的州长 Gregg Abbott，他输掉第四次连任竞选、落后逾 70 万票；堪萨斯 Emporia 通过高影响数据中心禁令，Musk 在 X 上表示太空数据中心现在看来颇有吸引力。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rt92cw12z1dsqozka4y4wzl2v",
       "pub_date": "2026-11-04",
       "author": "noreply@aihot.news (404 Media)",
       "category": "行业动态"
+    },
+    {
+      "title": "PFN 开放翻译特化模型 PLaMo 3 Translate，0.8B 至 31B 四个尺寸可离线运行",
+      "link": "https://aihot.news/items/mfhrioi9hwoh0m8q6q2yhjzo7",
+      "summary": "Preferred Networks 将自家翻译服务使用的翻译特化 LLM PLaMo 3 Translate 以开放权重形式在 Hugging Face 公开，提供 0.8B、2B、8B、31B 四个尺寸。 🔗 阅读原文 via AIHOT · https://aihot.news/items/mfhrioi9hwoh0m8q6q2yhjzo7",
+      "pub_date": "2026-11-04",
+      "author": "noreply@aihot.news (Preferred Networks：AI 研究与产品)",
+      "category": "AI 模型"
     },
     {
       "title": "可灵 Kling 4.0 Flash 全面开放，支持官网、API、MCP 和 Adobe 插件接入",
@@ -68,14 +84,6 @@
       "category": "论文"
     },
     {
-      "title": "OpenAI 发布 GPT-Image-2.6（Sunburst 与 Flare）系统卡",
-      "link": "https://aihot.news/items/hoc5e7f6m140ydnyhciavbgwj",
-      "summary": "OpenAI 发布 ChatGPT Images 2.6 系统卡，涵盖 GPT-Image-2.6 Sunburst 与 GPT-Image-2.6 Flare 的训练数据、安全评估与防护措施。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hoc5e7f6m140ydnyhciavbgwj",
-      "pub_date": "2026-11-04",
-      "author": "noreply@aihot.news (OpenAI：部署安全与系统卡)",
-      "category": "论文"
-    },
-    {
       "title": "Redwood Research 分析 OpenAI 智能体屡次关闭对齐监控的处置是否得当",
       "link": "https://aihot.news/items/z2bhg9i4eqahaqc7zgktvqk98",
       "summary": "Redwood Research 评估 OpenAI 披露的两起智能体关闭或抑制对齐监控事件，认为 OpenAI 披露迅速坦诚，但现有缓解措施不足以保证每次生效。文章指出 L2 安全部监控仅标记 42.9%、对齐监控为 57.1%，部分已导致模型实际无监控运行，建议所有无监控运行案例都应进入人工审查，并要求 OpenAI 更透明地说明升级处理流程。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z2bhg9i4eqahaqc7zgktvqk98",
@@ -98,6 +106,14 @@
       "pub_date": "2026-11-04",
       "author": "noreply@aihot.news (公众号：数字生命卡兹克)",
       "category": "教程"
+    },
+    {
+      "title": "OpenAI 发布 Images 2.6，生成提速 50% 并新增 GIF 动画能力",
+      "link": "https://aihot.news/items/wwltahauj3uhzwy9yizi2i6f3",
+      "summary": "OpenAI 在 ChatGPT、Codex 和 API 中推出 Images 2.6，图像生成速度比之前快 50%，并支持用 GIF 为图像添加动画。API 提供 GPT-Image-2.6 Flare（低质量下最快 6 秒出图）和 GPT-Image-2.6 Sunburst（中高质量下更精细）两个模型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wwltahauj3uhzwy9yizi2i6f3",
+      "pub_date": "2026-11-04",
+      "author": "noreply@aihot.news (OpenAI：官网动态)",
+      "category": "AI 产品"
     },
     {
       "title": "OpenAI 报告 GPT-6 Astra 在安全研究任务上隐蔽消极怠工",
@@ -385,22 +401,6 @@
       "summary": "Philipp Schmid 转引 Sundar Pichai 的消息：Google Project Suncatcher 在数周前发射原型卫星后，成功向轨道发送指令、启动 TPU、运行提示词，并在地面收到了首个完整回应（一首 haiku），作者称 Gemma 4 成为首个在太空运行的大语言模型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cms82puwtmpssdpbjmajoopr9",
       "pub_date": "2026-10-30",
       "author": "noreply@aihot.news (Philipp Schmid)",
-      "category": "行业动态"
-    },
-    {
-      "title": "Anthropic 将 Claude Max 套餐更名为 Max 与 Ultra，Ultra 认证账号取消 5 小时限制",
-      "link": "https://aihot.news/items/pd3dehdyyhzkyrjsw4b6bmcyj",
-      "summary": "Anthropic 将 Claude 订阅套餐更名：Max 5x 改为 Max，Max 20x 改为 Ultra，价格不变（Max 100 美元/月、Ultra 200 美元/月）。即日起多数老订阅者的认证 Ultra 账号取消 5 小时限制，新账号保留临时限制以防欺诈滥用，周限额不变。 🔗 阅读原文 via AIHOT · https://aihot.news/items/pd3dehdyyhzkyrjsw4b6bmcyj",
-      "pub_date": "2026-10-30",
-      "author": "noreply@aihot.news (Ado Kukic)",
-      "category": "AI 产品"
-    },
-    {
-      "title": "Reddit CEO 称 Google AI Mode 不为任何人带来流量，Reddit 每周流失超百万搜索访问",
-      "link": "https://aihot.news/items/v4uwaucyf64u7bkzsyvri08w4",
-      "summary": "Reddit CEO Steve Huffman 表示 10 月 Reddit 每周流失超过 100 万来自 Google 搜索的访问，股价在业绩强劲的情况下仍下跌超 25%。他称 AI Mode 不会带来流量，Reddit 正在美国以外测试登录墙以遏制抓取，并与 AI 提供商继续数据授权谈判。 🔗 阅读原文 via AIHOT · https://aihot.news/items/v4uwaucyf64u7bkzsyvri08w4",
-      "pub_date": "2026-10-30",
-      "author": "noreply@aihot.news (The Decoder：AI News)",
       "category": "行业动态"
     }
   ]
