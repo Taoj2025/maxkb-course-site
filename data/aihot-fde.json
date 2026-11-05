@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-06T02:33:02.218177+08:00",
-  "total": 34,
+  "updated_at": "2026-11-06T03:03:01.951811+08:00",
+  "total": 33,
   "items": [
     {
       "title": "Perplexity 推出 Teammates 智能体，面向 Max 订阅用户开放",
@@ -266,14 +266,6 @@
       "pub_date": "2026-11-02",
       "author": "noreply@aihot.news (Claude：Blog)",
       "category": "AI 产品"
-    },
-    {
-      "title": "Claude Code 技巧：任务变难时输入 ultrathink 提升当前回合推理努力",
-      "link": "https://aihot.news/items/mhw3rtr5o13p5777y7el9tczk",
-      "summary": "Addy Osmani 分享 Claude Code 技巧：当任务比预期更难时，在 Claude 工作期间输入 ultrathink，可提升该回合剩余部分的推理努力，该功能适用于最新版本的终端。他引用 @dmwlff 的帖子，其中提到 ultrathink 已回归 Claude Code CLI，此前因显得怪异且可能令人困惑曾被关闭。 🔗 阅读原文 via AIHOT · https://aihot.news/items/mhw3rtr5o13p5777y7el9tczk",
-      "pub_date": "2026-11-01",
-      "author": "noreply@aihot.news (Addy Osmani)",
-      "category": "教程"
     }
   ]
 }

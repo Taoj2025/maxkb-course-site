@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-06T02:33:02.217203+08:00",
+  "updated_at": "2026-11-06T03:03:01.950817+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "美国中期选举蓝潮冲击 AI 行业，44 项数据中心暂停提案中 43 项通过",
+      "link": "https://aihot.news/items/vkfrtci1ufbtbydsqersys6lx",
+      "summary": "美国中期选举民主党拿下参众两院，多场竞选以问责 AI 公司为主题，行业面临监管、数据中心建设放缓等前景。44 项地方数据中心暂停提案中 43 项通过，NBC 民调显示 76% 选民反对在社区建数据中心；专家称共和党禁止州级 AI 限制的尝试可能终结，OpenAI 和 Anthropic 未置评，据华尔街日报报道 CEO 们在私下讨论算力容量受限问题。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vkfrtci1ufbtbydsqersys6lx",
+      "pub_date": "2026-11-05",
+      "author": "noreply@aihot.news (The Verge：AI)",
+      "category": "行业动态"
+    },
     {
       "title": "Perplexity 推出 Teammates 智能体，面向 Max 订阅用户开放",
       "link": "https://aihot.news/items/wkgcal7l9pkj3g7w8ohlp3c45",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-02",
       "author": "noreply@aihot.news (Gemini API：更新日志)",
       "category": "AI 产品"
-    },
-    {
-      "title": "Claude Code 技巧：任务变难时输入 ultrathink 提升当前回合推理努力",
-      "link": "https://aihot.news/items/mhw3rtr5o13p5777y7el9tczk",
-      "summary": "Addy Osmani 分享 Claude Code 技巧：当任务比预期更难时，在 Claude 工作期间输入 ultrathink，可提升该回合剩余部分的推理努力，该功能适用于最新版本的终端。他引用 @dmwlff 的帖子，其中提到 ultrathink 已回归 Claude Code CLI，此前因显得怪异且可能令人困惑曾被关闭。 🔗 阅读原文 via AIHOT · https://aihot.news/items/mhw3rtr5o13p5777y7el9tczk",
-      "pub_date": "2026-11-01",
-      "author": "noreply@aihot.news (Addy Osmani)",
-      "category": "教程"
     }
   ]
 }
