@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-05T23:33:02.395940+08:00",
+  "updated_at": "2026-11-06T00:03:02.045537+08:00",
   "total": 30,
   "items": [
+    {
+      "title": "a16z：漏洞利用曾是瓶颈，AI 让攻击成本从数月降到数小时",
+      "link": "https://aihot.news/items/t5j6ucy3ao84zrwoz2yf2ovra",
+      "summary": "a16z 分析师撰文指出，2026 年 AI 智能体已把从漏洞到可用 exploit 的成本从专业人员的数周压缩到数小时，8 月底一次行动在 4 小时内攻破首个真实受害者，26 秒内攻陷 11 个组织，累计 48 国 395 个机构被攻破，其中一半是学校。 🔗 阅读原文 via AIHOT · https://aihot.news/items/t5j6ucy3ao84zrwoz2yf2ovra",
+      "pub_date": "2026-11-05",
+      "author": "noreply@aihot.news (a16z：News)",
+      "category": "观点"
+    },
     {
       "title": "腾讯混元感谢 Artificial Analysis 对 Hy4 的评测，模型获 Intelligence Index v5 35 分",
       "link": "https://aihot.news/items/fj4zi12biz0b62ckhzg5awcxx",
@@ -234,14 +242,6 @@
       "pub_date": "2026-10-31",
       "author": "noreply@aihot.news (OpenRouter：Announcements)",
       "category": "教程"
-    },
-    {
-      "title": "Wiz 报告“黑色十月”：九个 AI 开发者平台接连披露安全事件",
-      "link": "https://aihot.news/items/la0qb77ds4znf2r7ub14a3bqz",
-      "summary": "Wiz 研究团队梳理 10 月内至少九个 AI 开发者平台披露的安全事件，包括 Fireworks AI、Lightning AI、Railway、Warp、OpenCode 等，多起报告指向凭据窃取、agent swarm 攻击和以“蒸馏”为目的的窃取。 🔗 阅读原文 via AIHOT · https://aihot.news/items/la0qb77ds4znf2r7ub14a3bqz",
-      "pub_date": "2026-10-30",
-      "author": "noreply@aihot.news (Wiz：Research)",
-      "category": "论文"
     }
   ]
 }
