@@ -1,8 +1,24 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-06T00:33:02.059366+08:00",
-  "total": 31,
+  "updated_at": "2026-11-06T01:03:01.712540+08:00",
+  "total": 32,
   "items": [
+    {
+      "title": "Reflection 详解开源模型 Beam 的安全训练与评估方法",
+      "link": "https://aihot.news/items/mpv0jfejdzdm2336jgtyj9tde",
+      "summary": "Reflection 发布博文，讲解其开源权重模型 Beam 的安全训练与评估方法，并推出开源安全研究计划 Project Iris。Beam 在 Iris Safety Evaluations 对话任务中拒绝 89% 的有害请求，为所测开源权重模型中最高，同时遵守 82% 的安全相关无害请求；安全对齐教师模型从 100B 增至 501B 参数后，过度拒绝相对下降 48.7%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/mpv0jfejdzdm2336jgtyj9tde",
+      "pub_date": "2026-11-05",
+      "author": "noreply@aihot.news (Reflection Blog)",
+      "category": "论文"
+    },
+    {
+      "title": "Mustafa Suleyman 对特拉华允许 AI 智能体经营企业的提案表示担忧",
+      "link": "https://aihot.news/items/kl8ufrhv3zm38108gy2d7mins",
+      "summary": "Mustafa Suleyman 表示对特拉华州允许 AI 智能体经营企业的提案深感担忧，认为应非常谨慎。该提案拟设立名为 Delaware AIC 的独立法律实体，其日常事务由 AI 智能体而非人类管理，可依智能体指示以自身名义起诉应诉、持有和处置财产并承担债务。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kl8ufrhv3zm38108gy2d7mins",
+      "pub_date": "2026-11-05",
+      "author": "noreply@aihot.news (Mustafa Suleyman)",
+      "category": "观点"
+    },
     {
       "title": "a16z：漏洞利用曾是瓶颈，AI 让攻击成本从数月降到数小时",
       "link": "https://aihot.news/items/t5j6ucy3ao84zrwoz2yf2ovra",
@@ -242,14 +258,6 @@
       "pub_date": "2026-11-01",
       "author": "noreply@aihot.news (公众号：数字生命卡兹克)",
       "category": "行业动态"
-    },
-    {
-      "title": "Figma 发布 Weave 创作平台，用节点化工作流让创意流程可复用",
-      "link": "https://aihot.news/items/akdeq33m7cpr8m7zsfgvfiz5c",
-      "summary": "Figma 宣布 Figma Weave，一个面向持续产出需求的创意团队平台，并把 Weave 创作工作流与 Figma 画框连接起来。Weave 用连接的节点承载图像和视频的生成与编辑，支持分支探索、多模型对比、色彩校正、合成、裁剪、Painter 等编辑节点；工作流可打包成 Weave tool 让团队成员一键运行，社区工具发布已上线。 🔗 阅读原文 via AIHOT · https://aihot.news/items/akdeq33m7cpr8m7zsfgvfiz5c",
-      "pub_date": "2026-10-31",
-      "author": "noreply@aihot.news (Figma AI / Agent / Make)",
-      "category": "AI 产品"
     }
   ]
 }

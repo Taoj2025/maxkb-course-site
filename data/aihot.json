@@ -1,8 +1,24 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-06T00:33:02.058451+08:00",
+  "updated_at": "2026-11-06T01:03:01.711164+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Reflection 详解开源模型 Beam 的安全训练与评估方法",
+      "link": "https://aihot.news/items/mpv0jfejdzdm2336jgtyj9tde",
+      "summary": "Reflection 发布博文，讲解其开源权重模型 Beam 的安全训练与评估方法，并推出开源安全研究计划 Project Iris。Beam 在 Iris Safety Evaluations 对话任务中拒绝 89% 的有害请求，为所测开源权重模型中最高，同时遵守 82% 的安全相关无害请求；安全对齐教师模型从 100B 增至 501B 参数后，过度拒绝相对下降 48.7%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/mpv0jfejdzdm2336jgtyj9tde",
+      "pub_date": "2026-11-05",
+      "author": "noreply@aihot.news (Reflection Blog)",
+      "category": "论文"
+    },
+    {
+      "title": "Mustafa Suleyman 对特拉华允许 AI 智能体经营企业的提案表示担忧",
+      "link": "https://aihot.news/items/kl8ufrhv3zm38108gy2d7mins",
+      "summary": "Mustafa Suleyman 表示对特拉华州允许 AI 智能体经营企业的提案深感担忧，认为应非常谨慎。该提案拟设立名为 Delaware AIC 的独立法律实体，其日常事务由 AI 智能体而非人类管理，可依智能体指示以自身名义起诉应诉、持有和处置财产并承担债务。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kl8ufrhv3zm38108gy2d7mins",
+      "pub_date": "2026-11-05",
+      "author": "noreply@aihot.news (Mustafa Suleyman)",
+      "category": "观点"
+    },
     {
       "title": "a16z：漏洞利用曾是瓶颈，AI 让攻击成本从数月降到数小时",
       "link": "https://aihot.news/items/t5j6ucy3ao84zrwoz2yf2ovra",
@@ -34,6 +50,14 @@
       "pub_date": "2026-11-05",
       "author": "noreply@aihot.news (IT之家·人工智能)",
       "category": "AI 模型"
+    },
+    {
+      "title": "Google Research 在 Nature 发表 AI-PPG-ACC-HTN：用智能手表无袖带检测高血压迹象",
+      "link": "https://aihot.news/items/zbjrxt1ss4h009oc75x5swd6y",
+      "summary": "Google Research 联合 Beth Israel Deaconess Medical Center 和哈佛医学院在 Nature 发表 AI-PPG-ACC-HTN 多模态 AI 系统，用消费级智能手表的 PPG 和加速度传感数据被动检测高血压迹象，无需袖带校准。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zbjrxt1ss4h009oc75x5swd6y",
+      "pub_date": "2026-11-05",
+      "author": "noreply@aihot.news (Google Research：Blog)",
+      "category": "论文"
     },
     {
       "title": "OpenAI 称其智能体发现至少 10 种新型 Linux 漏洞利用技术",
@@ -378,30 +402,6 @@
       "pub_date": "2026-10-31",
       "author": "noreply@aihot.news (IT之家·人工智能)",
       "category": "行业动态"
-    },
-    {
-      "title": "Anthropic IPO 招股文件披露近 9000 亿美元隐性债务",
-      "link": "https://aihot.news/items/yqblvh40gus1ssc0rjvawh6fu",
-      "summary": "Anthropic 近日提交 IPO 招股文件，彭博社报道其计划未来在服务器、建筑和电力等领域投入近 9,000 亿美元债务。该公司资产负债表显示 1,175 亿美元负债和 1,120 亿美元现金，而租赁合同及数据中心、电力和 GPU 采购协议等表外义务未直接体现；Anthropic 计划通过增加收入和筹集资金支付这些负债。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yqblvh40gus1ssc0rjvawh6fu",
-      "pub_date": "2026-10-31",
-      "author": "noreply@aihot.news (IT之家·人工智能)",
-      "category": "行业动态"
-    },
-    {
-      "title": "Nvidia 洽谈为 Nscale 西弗吉尼亚 Anthropic 数据中心提供债务担保",
-      "link": "https://aihot.news/items/hx5dsruslfiiqhbsro2tvg1n8",
-      "summary": "据 The Information 报道、Bloomberg 佐证，Nvidia 正洽谈为 Nscale 在西弗吉尼亚为 Anthropic 建设的数据中心担保数十亿美元债务融资，Anthropic 已就首栋建筑签署 446 亿美元合同。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hx5dsruslfiiqhbsro2tvg1n8",
-      "pub_date": "2026-10-31",
-      "author": "noreply@aihot.news (TechCrunch：AI)",
-      "category": "行业动态"
-    },
-    {
-      "title": "Figma 发布 Weave 创作平台，用节点化工作流让创意流程可复用",
-      "link": "https://aihot.news/items/akdeq33m7cpr8m7zsfgvfiz5c",
-      "summary": "Figma 宣布 Figma Weave，一个面向持续产出需求的创意团队平台，并把 Weave 创作工作流与 Figma 画框连接起来。Weave 用连接的节点承载图像和视频的生成与编辑，支持分支探索、多模型对比、色彩校正、合成、裁剪、Painter 等编辑节点；工作流可打包成 Weave tool 让团队成员一键运行，社区工具发布已上线。 🔗 阅读原文 via AIHOT · https://aihot.news/items/akdeq33m7cpr8m7zsfgvfiz5c",
-      "pub_date": "2026-10-31",
-      "author": "noreply@aihot.news (Figma AI / Agent / Make)",
-      "category": "AI 产品"
     }
   ]
 }
