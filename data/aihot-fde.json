@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-05T15:33:02.226070+08:00",
-  "total": 30,
+  "updated_at": "2026-11-05T16:03:01.730537+08:00",
+  "total": 29,
   "items": [
     {
       "title": "Higgsfield 上线 GPT Image 2.6，新用户 7 天无限使用",
@@ -234,14 +234,6 @@
       "pub_date": "2026-10-30",
       "author": "noreply@aihot.news (Wiz：Research)",
       "category": "论文"
-    },
-    {
-      "title": "Project Suncatcher 在轨道卫星上运行 TPU，Gemma 模型首次在太空完成推理并回传回应",
-      "link": "https://aihot.news/items/cms82puwtmpssdpbjmajoopr9",
-      "summary": "Philipp Schmid 转引 Sundar Pichai 的消息：Google Project Suncatcher 在数周前发射原型卫星后，成功向轨道发送指令、启动 TPU、运行提示词，并在地面收到了首个完整回应（一首 haiku），作者称 Gemma 4 成为首个在太空运行的大语言模型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cms82puwtmpssdpbjmajoopr9",
-      "pub_date": "2026-10-30",
-      "author": "noreply@aihot.news (Philipp Schmid)",
-      "category": "行业动态"
     }
   ]
 }
