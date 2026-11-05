@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-05T18:33:01.633635+08:00",
-  "total": 29,
+  "updated_at": "2026-11-05T19:03:01.679791+08:00",
+  "total": 30,
   "items": [
+    {
+      "title": "腾讯混元感谢 Artificial Analysis 对 Hy4 的评测，模型获 Intelligence Index v5 35 分",
+      "link": "https://aihot.news/items/fj4zi12biz0b62ckhzg5awcxx",
+      "summary": "腾讯混元转发并感谢 Artificial Analysis 对其最新模型 Hy4 的评测。Hy4 在 Artificial Analysis Intelligence Index v5 得 35 分，与中国实验室模型中仅次于 Kimi K3.1 Pro（46 分），与 Grok 4.7 (xhigh) 持平，比 Claude Haiku 5.5 (max) 低 1 分。评测要点：FrontierCode 2.0 得 31%，为中国实验室模型最高；AA-Omniscience v1.1 达 50% 但幻觉率高达 89%；定价 $0.834/$2.501 per 1M input/output tokens，支持 1M token 上下文窗口和文本加图像输入。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fj4zi12biz0b62ckhzg5awcxx",
+      "pub_date": "2026-11-05",
+      "author": "noreply@aihot.news (腾讯混元)",
+      "category": "AI 模型"
+    },
     {
       "title": "Higgsfield 上线 GPT Image 2.6，新用户 7 天无限使用",
       "link": "https://aihot.news/items/lcdap1o18bh6bt70ij66nakij",
