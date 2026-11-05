@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-06T06:33:01.558715+08:00",
-  "total": 32,
+  "updated_at": "2026-11-06T07:03:01.716668+08:00",
+  "total": 31,
   "items": [
     {
       "title": "Perplexity 推出 Teammates 智能体，面向 Max 订阅用户开放",
@@ -250,14 +250,6 @@
       "pub_date": "2026-11-02",
       "author": "noreply@aihot.news (Cognition 模型 / Devin 博客)",
       "category": "教程"
-    },
-    {
-      "title": "腾讯混元发布 Hyra 2.0：让通用 agent 研发可复用的科学工具与模型",
-      "link": "https://aihot.news/items/l37ydaic43icz85huclc2io6c",
-      "summary": "腾讯混元发布 Hyra 2.0，将自动化科研重点从直接解题转向由 agent 研发和升级科学模型、工作流与软件工具。系统采用 Overall、Mission、Worker 三层分工，接入企业微信、计算平台和代码仓库的实际研发环境，成果已公开在 GitHub 仓库。 🔗 阅读原文 via AIHOT · https://aihot.news/items/l37ydaic43icz85huclc2io6c",
-      "pub_date": "2026-11-02",
-      "author": "noreply@aihot.news (公众号：腾讯混元)",
-      "category": "AI 产品"
     }
   ]
 }

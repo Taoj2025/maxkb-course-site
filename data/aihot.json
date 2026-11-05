@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-06T06:33:01.554552+08:00",
+  "updated_at": "2026-11-06T07:03:01.715715+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "OpenAI：ChatGPT 与 API 每周生成图像超 40 亿张，8 周前为 30 亿",
+      "link": "https://aihot.news/items/z16tksw5l40w2edrohnozslkl",
+      "summary": "OpenAI 相关负责人称，目前 ChatGPT 与 API 每周生成的图像超过 40 亿张，高于仅 8 周前的每周超 30 亿张。其转发的 @OpenAI 内容还提到 ChatGPT Images 2.6 新增 GIF 与参考图支持，API 将迎来两个图像生成速度提升 50% 的新模型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z16tksw5l40w2edrohnozslkl",
+      "pub_date": "2026-11-05",
+      "author": "noreply@aihot.news (Tibo)",
+      "category": "行业动态"
+    },
     {
       "title": "美股单日蒸发 3.2 万亿美元，Nasdaq 创 2025 年 4 月以来最大跌幅",
       "link": "https://aihot.news/items/czctc3kqzf5wru8fhsbnhvxt7",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-02",
       "author": "noreply@aihot.news (OpenAI：官网动态)",
       "category": "行业动态"
-    },
-    {
-      "title": "腾讯混元发布 Hyra 2.0：让通用 agent 研发可复用的科学工具与模型",
-      "link": "https://aihot.news/items/l37ydaic43icz85huclc2io6c",
-      "summary": "腾讯混元发布 Hyra 2.0，将自动化科研重点从直接解题转向由 agent 研发和升级科学模型、工作流与软件工具。系统采用 Overall、Mission、Worker 三层分工，接入企业微信、计算平台和代码仓库的实际研发环境，成果已公开在 GitHub 仓库。 🔗 阅读原文 via AIHOT · https://aihot.news/items/l37ydaic43icz85huclc2io6c",
-      "pub_date": "2026-11-02",
-      "author": "noreply@aihot.news (公众号：腾讯混元)",
-      "category": "AI 产品"
     }
   ]
 }
