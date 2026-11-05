@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-06T01:03:01.712540+08:00",
-  "total": 32,
+  "updated_at": "2026-11-06T01:33:02.439333+08:00",
+  "total": 33,
   "items": [
+    {
+      "title": "Perplexity 推出 Teammates 智能体，面向 Max 订阅用户开放",
+      "link": "https://aihot.news/items/wkgcal7l9pkj3g7w8ohlp3c45",
+      "summary": "Perplexity 推出 Teammates 功能，这些智能体可承接任务，利用 Computer tasks、skills、memory 和工具主动工作。Teammates 之间可相互协作，还能在 Slack 中给同事发消息，目前已向 Max 订阅用户开放网页版。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wkgcal7l9pkj3g7w8ohlp3c45",
+      "pub_date": "2026-11-05",
+      "author": "noreply@aihot.news (Perplexity)",
+      "category": "AI 产品"
+    },
     {
       "title": "Reflection 详解开源模型 Beam 的安全训练与评估方法",
       "link": "https://aihot.news/items/mpv0jfejdzdm2336jgtyj9tde",
