@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-06T04:33:01.915649+08:00",
-  "total": 33,
+  "updated_at": "2026-11-06T05:03:02.390075+08:00",
+  "total": 32,
   "items": [
     {
       "title": "Perplexity 推出 Teammates 智能体，面向 Max 订阅用户开放",
@@ -66,6 +66,14 @@
       "pub_date": "2026-11-05",
       "author": "noreply@aihot.news (IT之家·人工智能)",
       "category": "AI 模型"
+    },
+    {
+      "title": "Cursor 推出应用构建功能，描述需求即可构建、部署并分享在线应用",
+      "link": "https://aihot.news/items/m5s02uukcl0id6rn7t08f6ya3",
+      "summary": "Cursor 推出新功能，用户在 Cursor 中启动云端智能体并描述需求，即可完成应用搭建、Postgres 数据库配置、基于 Cursor SSO 的身份验证和托管部署，并生成可访问的在线链接。 🔗 阅读原文 via AIHOT · https://aihot.news/items/m5s02uukcl0id6rn7t08f6ya3",
+      "pub_date": "2026-11-05",
+      "author": "noreply@aihot.news (Cursor：Changelog)",
+      "category": "AI 产品"
     },
     {
       "title": "OpenClaw 发布 Multiplayer 多人共享 Agent 协作功能",
@@ -249,22 +257,6 @@
       "summary": "腾讯混元发布 Hyra 2.0，将自动化科研重点从直接解题转向由 agent 研发和升级科学模型、工作流与软件工具。系统采用 Overall、Mission、Worker 三层分工，接入企业微信、计算平台和代码仓库的实际研发环境，成果已公开在 GitHub 仓库。 🔗 阅读原文 via AIHOT · https://aihot.news/items/l37ydaic43icz85huclc2io6c",
       "pub_date": "2026-11-02",
       "author": "noreply@aihot.news (公众号：腾讯混元)",
-      "category": "AI 产品"
-    },
-    {
-      "title": "数字生命卡兹克分享折腾一年的Agent自动化系统架构",
-      "link": "https://aihot.news/items/dzwfvd9xp6v4qaj6olxezpier",
-      "summary": "自媒体作者卡兹克分享自己搭建近一年的Agent自动化系统，核心是把任务起点从人身上移开，由事件触发Agent工作。系统分为自动化中台、Agent执行、CI中台和飞书决策四层：中台用rules.json统一管理事件触发和Agent调度，本地MacMini跑Agent任务，自建CI中台完成审查、检查、合并、发布、核实五步，只在删数据、花钱、改方向等关键决策时通过飞书卡片找作者拍板。 🔗 阅读原文 via AIHOT · https://aihot.news/items/dzwfvd9xp6v4qaj6olxezpier",
-      "pub_date": "2026-11-02",
-      "author": "noreply@aihot.news (公众号：数字生命卡兹克)",
-      "category": "教程"
-    },
-    {
-      "title": "Claude Platform 推出 message threads 公测，降低长会话智能体延迟",
-      "link": "https://aihot.news/items/sg5u3u91kw42j1grtyp3ny65n",
-      "summary": "Anthropic 在 Claude Platform 推出 message threads 公测，智能体每轮只需发送新增消息而无需重发全部对话历史，从而缩短首 token 时间。 🔗 阅读原文 via AIHOT · https://aihot.news/items/sg5u3u91kw42j1grtyp3ny65n",
-      "pub_date": "2026-11-02",
-      "author": "noreply@aihot.news (Claude：Blog)",
       "category": "AI 产品"
     }
   ]
