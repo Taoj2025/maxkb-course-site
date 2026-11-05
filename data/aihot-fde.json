@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-06T00:03:02.045537+08:00",
-  "total": 30,
+  "updated_at": "2026-11-06T00:33:02.059366+08:00",
+  "total": 31,
   "items": [
     {
       "title": "a16z：漏洞利用曾是瓶颈，AI 让攻击成本从数月降到数小时",
@@ -52,12 +52,28 @@
       "category": "教程"
     },
     {
+      "title": "Mistral 扩展 Mistral Studio，配合 Mistral Large 4 (Le Chonk) 构建企业级智能体、工作流和应用",
+      "link": "https://aihot.news/items/ofo4xa4ux02yj9f9lbokmidpr",
+      "summary": "Mistral 宣布扩展 Mistral Studio，新增托管智能体、工作流、应用、企业上下文、可观测性和评估等能力，配合企业模型 Mistral Large 4（Le Chonk），支持云端、VPC 或本地部署并保留对模型与数据的控制。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ofo4xa4ux02yj9f9lbokmidpr",
+      "pub_date": "2026-11-04",
+      "author": "noreply@aihot.news (Mistral AI：News)",
+      "category": "AI 产品"
+    },
+    {
       "title": "PFN 开放翻译特化模型 PLaMo 3 Translate，0.8B 至 31B 四个尺寸可离线运行",
       "link": "https://aihot.news/items/mfhrioi9hwoh0m8q6q2yhjzo7",
       "summary": "Preferred Networks 将自家翻译服务使用的翻译特化 LLM PLaMo 3 Translate 以开放权重形式在 Hugging Face 公开，提供 0.8B、2B、8B、31B 四个尺寸。 🔗 阅读原文 via AIHOT · https://aihot.news/items/mfhrioi9hwoh0m8q6q2yhjzo7",
       "pub_date": "2026-11-04",
       "author": "noreply@aihot.news (Preferred Networks：AI 研究与产品)",
       "category": "AI 模型"
+    },
+    {
+      "title": "Anthropic 研究 20.7 万 Claude 科研会话：科学家如何使用 Claude",
+      "link": "https://aihot.news/items/giyl2h74lq7ygv5c7vpxu887m",
+      "summary": "Anthropic 用隐私保护方法分析 207,049 个 Claude 与 Claude Code 科研会话（2026 年 8 月 2 日至 9 月 30 日，消费版套餐），并辅以 528 名科学家调查，研究 Claude 在各科学领域的使用方式。 🔗 阅读原文 via AIHOT · https://aihot.news/items/giyl2h74lq7ygv5c7vpxu887m",
+      "pub_date": "2026-11-04",
+      "author": "noreply@aihot.news (Anthropic：Research)",
+      "category": "论文"
     },
     {
       "title": "可灵 Kling 4.0 Flash 全面开放，支持官网、API、MCP 和 Adobe 插件接入",
@@ -234,14 +250,6 @@
       "pub_date": "2026-10-31",
       "author": "noreply@aihot.news (Figma AI / Agent / Make)",
       "category": "AI 产品"
-    },
-    {
-      "title": "OpenRouter 教程：用 Agent SDK 搭建常驻 AI Agent 监控 Hacker News",
-      "link": "https://aihot.news/items/upl3hjjdokqe13w3ieo9opr0v",
-      "summary": "OpenRouter 发布教程，演示用 @openrouter/agent 0.11.0 在 TypeScript 中搭建定时运行的常驻 AI Agent，监控 Hacker News 并生成摘要。 🔗 阅读原文 via AIHOT · https://aihot.news/items/upl3hjjdokqe13w3ieo9opr0v",
-      "pub_date": "2026-10-31",
-      "author": "noreply@aihot.news (OpenRouter：Announcements)",
-      "category": "教程"
     }
   ]
 }
