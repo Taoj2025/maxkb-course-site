@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-06T19:03:01.840923+08:00",
-  "total": 31,
+  "updated_at": "2026-11-06T19:33:02.013617+08:00",
+  "total": 30,
   "items": [
     {
       "title": "Perplexity 推出 Teammates 智能体，面向 Max 订阅用户开放",
@@ -242,14 +242,6 @@
       "pub_date": "2026-11-03",
       "author": "noreply@aihot.news (OpenAI：Alignment 研究博客)",
       "category": "论文"
-    },
-    {
-      "title": "Addy Osmani 谈 Agent 时代如何保持批判性思维",
-      "link": "https://aihot.news/items/uinaiwkzg4u2exkfgv4oha9p7",
-      "summary": "Addy Osmani 发文探讨在大量使用 Agent 工作流后如何保持批判性思维。他提出认知卸载、拖延、认知投降三段光谱，认为模型越强、输出越流畅，人越容易在不知不觉中放弃独立判断；并给出具体做法，包括提问前先写假设、把验证标准前置为可执行测试、要求 Agent 列出它替你做的决策与假设、用测验收尾而不是读摘要，以及定期手写代码做校准练习。他强调可以卸载工作和审计，但不能卸载责任。 🔗 阅读原文 via AIHOT · https://aihot.news/items/uinaiwkzg4u2exkfgv4oha9p7",
-      "pub_date": "2026-11-03",
-      "author": "noreply@aihot.news (Addy Osmani)",
-      "category": "观点"
     }
   ]
 }
