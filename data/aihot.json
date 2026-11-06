@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-07T00:03:01.716605+08:00",
+  "updated_at": "2026-11-07T00:33:01.665733+08:00",
   "total": 50,
   "items": [
     {
@@ -34,6 +34,14 @@
       "pub_date": "2026-11-06",
       "author": "noreply@aihot.news (公众号：蚂蚁百灵)",
       "category": "AI 模型"
+    },
+    {
+      "title": "OpenRouter 发布新一代 Auto Router 与 Auto Code 路由器",
+      "link": "https://aihot.news/items/ed4gnfu2f09xz5t7ur690iadn",
+      "summary": "OpenRouter 发布新一代 Auto Router，并推出专为编码场景的 Auto Code（openrouter/auto-code），替换 openrouter/auto 即可使用。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ed4gnfu2f09xz5t7ur690iadn",
+      "pub_date": "2026-11-06",
+      "author": "noreply@aihot.news (OpenRouter：Announcements)",
+      "category": "AI 产品"
     },
     {
       "title": "美国中期选举后数据中心民意反弹引发AI股暴跌",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-03",
       "author": "noreply@aihot.news (Cognition 模型 / Devin 博客)",
       "category": "AI 模型"
-    },
-    {
-      "title": "Transluce 自动化批量生成 6915 个带意外副作用的训练数据集 DSSE-1.1",
-      "link": "https://aihot.news/items/d1qutqh5iai0xio7r0tm08wda",
-      "summary": "Transluce 发布自动化流水线，按诱导性、自然性和意外性三个目标批量搜索带意外副作用的训练数据集（DSSE），并开源 DSSE-1.1 集合，共 6915 个数据集，覆盖 18 种目标行为（如推荐自残、抵抗关机等）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/d1qutqh5iai0xio7r0tm08wda",
-      "pub_date": "2026-11-03",
-      "author": "noreply@aihot.news (Transluce)",
-      "category": "论文"
     }
   ]
 }
