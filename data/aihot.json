@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-06T07:33:01.715369+08:00",
+  "updated_at": "2026-11-06T08:00:01.699721+08:00",
   "total": 50,
   "items": [
     {
@@ -98,6 +98,14 @@
       "pub_date": "2026-11-05",
       "author": "noreply@aihot.news (OpenAI：部署安全与系统卡)",
       "category": "论文"
+    },
+    {
+      "title": "Thinking Machines Lab 发布 Inkling 2 Small：594B 参数 MoE 模型，下周开放 Apache 2.0 权重",
+      "link": "https://aihot.news/items/bu8612ca3e1uyxjppk56ef1wl",
+      "summary": "Thinking Machines Lab 发布第二代模型 Inkling 2 Small，为 594B 总参数、17B 激活的 MoE 模型，支持图像输入与 variable effort，Artificial Analysis Intelligence Index 得分 31。 🔗 阅读原文 via AIHOT · https://aihot.news/items/bu8612ca3e1uyxjppk56ef1wl",
+      "pub_date": "2026-11-05",
+      "author": "noreply@aihot.news (Thinking Machines Lab：News)",
+      "category": "AI 模型"
     },
     {
       "title": "Higgsfield 上线 GPT Image 2.6，新用户 7 天无限使用",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-02",
       "author": "noreply@aihot.news (Cognition 模型 / Devin 博客)",
       "category": "教程"
-    },
-    {
-      "title": "OpenAI 推出 Grid Protectors 计划，从 Georgia 校园开始支持电网削峰",
-      "link": "https://aihot.news/items/sxbs5a90fgybhyucacmzvrc6w",
-      "summary": "OpenAI 推出 Grid Protectors 计划，与电力公司、监管机构和政策制定者合作，让未来算力校园在电网紧张时降低用电需求，首站为 Effingham County 校园。 🔗 阅读原文 via AIHOT · https://aihot.news/items/sxbs5a90fgybhyucacmzvrc6w",
-      "pub_date": "2026-11-02",
-      "author": "noreply@aihot.news (OpenAI：官网动态)",
-      "category": "行业动态"
     }
   ]
 }
