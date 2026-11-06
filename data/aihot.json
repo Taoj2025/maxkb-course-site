@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-07T04:03:02.056690+08:00",
+  "updated_at": "2026-11-07T04:33:01.471288+08:00",
   "total": 50,
   "items": [
     {
@@ -34,6 +34,14 @@
       "pub_date": "2026-11-06",
       "author": "noreply@aihot.news (公众号：蚂蚁百灵)",
       "category": "AI 模型"
+    },
+    {
+      "title": "Meta 将基于 Muse Wonder 训练的专用模型上线 Muse 与 Meta AI",
+      "link": "https://aihot.news/items/fjuidf0zii7na78sxru5il7pr",
+      "summary": "Meta 宣布把基于 Muse Wonder 训练的专用模型推向 Muse 和 Meta AI 用户，Personal Superintelligence Index 得分从 38% 提升到 47%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fjuidf0zii7na78sxru5il7pr",
+      "pub_date": "2026-11-06",
+      "author": "noreply@aihot.news (Meta AI：Research Blog)",
+      "category": "AI 产品"
     },
     {
       "title": "Cursor 推出与智能体的实时语音聊天",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-03",
       "author": "noreply@aihot.news (Ed Zitron 长文 / Where’s Your Ed At)",
       "category": "观点"
-    },
-    {
-      "title": "Anthropic 用 Claude 解析首个原核细胞 vault particle 的 3D 结构",
-      "link": "https://aihot.news/items/x9ea12d0zek7ntuejt9oxfdjn",
-      "summary": "Anthropic 生物学研究实验室报告借助 Claude 发现并解析了原核细胞中首个 vault particle 的 3D 结构，该结构来自感染细菌的噬菌体，由 96 拷贝的 L05 蛋白组成，质量约 9.5 megadaltons，长约 54 纳米。 🔗 阅读原文 via AIHOT · https://aihot.news/items/x9ea12d0zek7ntuejt9oxfdjn",
-      "pub_date": "2026-11-03",
-      "author": "noreply@aihot.news (Anthropic：Research)",
-      "category": "论文"
     }
   ]
 }
