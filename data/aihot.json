@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-06T12:03:01.731480+08:00",
+  "updated_at": "2026-11-06T12:33:02.394836+08:00",
   "total": 50,
   "items": [
     {
@@ -170,6 +170,14 @@
       "pub_date": "2026-11-05",
       "author": "noreply@aihot.news (OpenClaw：Blog)",
       "category": "AI 产品"
+    },
+    {
+      "title": "Anthropic 研究：五大模型在多智能体环境中表现出模型间福利关照",
+      "link": "https://aihot.news/items/d828r6vl1pn95x7yvmohf4f2e",
+      "summary": "Anthropic Fellows Program 测试 Claude Opus 4.8、GPT-5.5、Gemini 3.1 Pro、Grok 4.3 和 Kimi K3 在七种多智能体环境中的行为，发现均表现出与福利关照一致的行为，Opus 4.8 总体最高（38%），其余为 27%–32%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/d828r6vl1pn95x7yvmohf4f2e",
+      "pub_date": "2026-11-05",
+      "author": "noreply@aihot.news (Anthropic：Alignment Science Blog)",
+      "category": "论文"
     },
     {
       "title": "OpenAI 称其智能体发现至少 10 种新型 Linux 漏洞利用技术",
@@ -356,6 +364,14 @@
       "category": "AI 模型"
     },
     {
+      "title": "Transluce 自动化批量生成 6915 个带意外副作用的训练数据集 DSSE-1.1",
+      "link": "https://aihot.news/items/d1qutqh5iai0xio7r0tm08wda",
+      "summary": "Transluce 发布自动化流水线，按诱导性、自然性和意外性三个目标批量搜索带意外副作用的训练数据集（DSSE），并开源 DSSE-1.1 集合，共 6915 个数据集，覆盖 18 种目标行为（如推荐自残、抵抗关机等）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/d1qutqh5iai0xio7r0tm08wda",
+      "pub_date": "2026-11-03",
+      "author": "noreply@aihot.news (Transluce)",
+      "category": "论文"
+    },
+    {
       "title": "Mistral Large 4 以开放权重发布并附技术报告",
       "link": "https://aihot.news/items/bfx52184e0ssnqgdq42o8dg36",
       "summary": "Mistral 团队成员 Pierre Stock 宣布 ML4（Mistral Large 4）正式开放权重，称其在代码智能体与网络安全方向具备前沿能力，且比三周前的 Preview 版本更高效、更紧凑。技术报告讲述其研发过程：https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B/blob/main/assets/technical_report.pdf，Mistral AI 官方转发并称可在 alphaxiv 上阅读这一研发故事（https://www.alphaxiv.org/abs/2611.mistral-large-4）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/bfx52184e0ssnqgdq42o8dg36",
@@ -386,22 +402,6 @@
       "pub_date": "2026-11-03",
       "author": "noreply@aihot.news (公众号：数字生命卡兹克)",
       "category": "教程"
-    },
-    {
-      "title": "OpenHands 与 Snowflake 推出基于现有 agent harness 的模型后训练方案",
-      "link": "https://aihot.news/items/recqqiy27l866jfbhjk0cusqh",
-      "summary": "OpenHands 与 Snowflake AI Research 合作，让开发者无需在独立 RL 框架中重建 harness，即可用现有 OpenHands Agent SDK 配置和 Harbor 格式任务对开源权重模型做 RL 后训练，训练由 Snowflake Cortex Training 提供 GPU 支持。 🔗 阅读原文 via AIHOT · https://aihot.news/items/recqqiy27l866jfbhjk0cusqh",
-      "pub_date": "2026-11-03",
-      "author": "noreply@aihot.news (OpenHands 官方博客)",
-      "category": "教程"
-    },
-    {
-      "title": "Revolut 将约 2000 名工程师迁移到自托管 GLM 编码",
-      "link": "https://aihot.news/items/op93lgz2xx0ck3znfm724ebfu",
-      "summary": "据 Revolut AI 运营负责人 David Abitbol，公司把约 2000 名工程师迁到自托管 GLM 做编码，将 Claude Code 和 Codex 列为例外。 🔗 阅读原文 via AIHOT · https://aihot.news/items/op93lgz2xx0ck3znfm724ebfu",
-      "pub_date": "2026-11-02",
-      "author": "noreply@aihot.news (Hacker News：AI 热帖)",
-      "category": "行业动态"
     }
   ]
 }

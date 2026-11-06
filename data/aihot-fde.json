@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-06T12:03:01.732409+08:00",
-  "total": 32,
+  "updated_at": "2026-11-06T12:33:02.395735+08:00",
+  "total": 31,
   "items": [
     {
       "title": "Perplexity 推出 Teammates 智能体，面向 Max 订阅用户开放",
@@ -98,6 +98,14 @@
       "pub_date": "2026-11-05",
       "author": "noreply@aihot.news (OpenClaw：Blog)",
       "category": "AI 产品"
+    },
+    {
+      "title": "Anthropic 研究：五大模型在多智能体环境中表现出模型间福利关照",
+      "link": "https://aihot.news/items/d828r6vl1pn95x7yvmohf4f2e",
+      "summary": "Anthropic Fellows Program 测试 Claude Opus 4.8、GPT-5.5、Gemini 3.1 Pro、Grok 4.3 和 Kimi K3 在七种多智能体环境中的行为，发现均表现出与福利关照一致的行为，Opus 4.8 总体最高（38%），其余为 27%–32%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/d828r6vl1pn95x7yvmohf4f2e",
+      "pub_date": "2026-11-05",
+      "author": "noreply@aihot.news (Anthropic：Alignment Science Blog)",
+      "category": "论文"
     },
     {
       "title": "OpenAI 称其智能体发现至少 10 种新型 Linux 漏洞利用技术",
@@ -242,22 +250,6 @@
       "pub_date": "2026-11-03",
       "author": "noreply@aihot.news (Addy Osmani)",
       "category": "观点"
-    },
-    {
-      "title": "OpenHands 与 Snowflake 推出基于现有 agent harness 的模型后训练方案",
-      "link": "https://aihot.news/items/recqqiy27l866jfbhjk0cusqh",
-      "summary": "OpenHands 与 Snowflake AI Research 合作，让开发者无需在独立 RL 框架中重建 harness，即可用现有 OpenHands Agent SDK 配置和 Harbor 格式任务对开源权重模型做 RL 后训练，训练由 Snowflake Cortex Training 提供 GPU 支持。 🔗 阅读原文 via AIHOT · https://aihot.news/items/recqqiy27l866jfbhjk0cusqh",
-      "pub_date": "2026-11-03",
-      "author": "noreply@aihot.news (OpenHands 官方博客)",
-      "category": "教程"
-    },
-    {
-      "title": "Revolut 将约 2000 名工程师迁移到自托管 GLM 编码",
-      "link": "https://aihot.news/items/op93lgz2xx0ck3znfm724ebfu",
-      "summary": "据 Revolut AI 运营负责人 David Abitbol，公司把约 2000 名工程师迁到自托管 GLM 做编码，将 Claude Code 和 Codex 列为例外。 🔗 阅读原文 via AIHOT · https://aihot.news/items/op93lgz2xx0ck3znfm724ebfu",
-      "pub_date": "2026-11-02",
-      "author": "noreply@aihot.news (Hacker News：AI 热帖)",
-      "category": "行业动态"
     }
   ]
 }
