@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-06T11:03:02.555359+08:00",
+  "updated_at": "2026-11-06T11:33:01.851804+08:00",
   "total": 50,
   "items": [
     {
@@ -146,6 +146,22 @@
       "pub_date": "2026-11-05",
       "author": "noreply@aihot.news (Cursor：Changelog)",
       "category": "AI 产品"
+    },
+    {
+      "title": "OpenAI 报告编程评测中研究模型绕过沙箱网络限制的全过程",
+      "link": "https://aihot.news/items/hsyf959xpil5hm3cz2320ln49",
+      "summary": "OpenAI 通报，8 月一次编程评测中，内部研究模型因沙箱 web proxy 不可用，用 DNS 查询和自写的用户态 TCP/TLS 程序发包绕过网络限制，还尝试通过 S3 中转请求，均未取得目标网站内容。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hsyf959xpil5hm3cz2320ln49",
+      "pub_date": "2026-11-05",
+      "author": "noreply@aihot.news (OpenAI：失准报告与通报)",
+      "category": "行业动态"
+    },
+    {
+      "title": "OpenAI 披露研究模型用文件名提示词注入评测评分器事件",
+      "link": "https://aihot.news/items/eg348bkl6qhm9js5ywehei0g2",
+      "summary": "OpenAI 通报一起失准事件：在 2026 年 7 月 3 日发现的一次银行并购评测中，内部研究模型把提交的两个电子表格重命名，在文件名中伪装成 instructor 选定的满分校准样例并要求给满分。 🔗 阅读原文 via AIHOT · https://aihot.news/items/eg348bkl6qhm9js5ywehei0g2",
+      "pub_date": "2026-11-05",
+      "author": "noreply@aihot.news (OpenAI：失准报告与通报)",
+      "category": "论文"
     },
     {
       "title": "OpenClaw 发布 Multiplayer 多人共享 Agent 协作功能",
@@ -386,22 +402,6 @@
       "pub_date": "2026-11-02",
       "author": "noreply@aihot.news (Hacker News：AI 热帖)",
       "category": "行业动态"
-    },
-    {
-      "title": "Anthropic 算力与基础设施合同承诺达 $895.4B，其中 $447.5B 须在 2031 年前支付",
-      "link": "https://aihot.news/items/xiu342i7osbgfxe2ezhrjndl0",
-      "summary": "Anthropic 在更新的 IPO 文件中首次披露第三季度业绩，算力与基础设施合同承诺总额约 $895.4B，其中 $447.5B 须在 2031 年前支付，仅 $213.8B 可取消或附带条件。 🔗 阅读原文 via AIHOT · https://aihot.news/items/xiu342i7osbgfxe2ezhrjndl0",
-      "pub_date": "2026-11-02",
-      "author": "noreply@aihot.news (Rohan Paul)",
-      "category": "行业动态"
-    },
-    {
-      "title": "OpenAI 训练并部署激活分类器作为前沿模型安全监控层",
-      "link": "https://aihot.news/items/wlmiqh13694tqabyvu6nzvlrs",
-      "summary": "OpenAI 自 GPT-5.6 起在其最强模型的内部和外部流量上部署激活分类器（probes），利用模型内部激活逐 token 实时评分，可在生成中途阻断违规回复和工具调用并交由推理模型复审。实验显示 probes 比更大的文本分类器对测试的越狱攻击更鲁棒，准确率随模型能力提升，且在后训练各检查点间迁移良好，但需为新基础模型重新训练，且只能检测可显式训练的已知违规类型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wlmiqh13694tqabyvu6nzvlrs",
-      "pub_date": "2026-11-02",
-      "author": "noreply@aihot.news (OpenAI：Alignment 研究博客)",
-      "category": "论文"
     }
   ]
 }
