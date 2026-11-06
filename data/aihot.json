@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-06T23:33:01.927632+08:00",
+  "updated_at": "2026-11-07T00:03:01.716605+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "约 60 万块 Nvidia H200 芯片滞留香港仓库，受阻方为北京而非华盛顿",
+      "link": "https://aihot.news/items/aiiclbw9wwswwx60wfqw6eb6o",
+      "summary": "据 Reuters 报道，约 60 万块 Nvidia H200 芯片闲置在香港仓库，阻碍并非来自华盛顿而是北京。尽管 Trump 去年已放行 H200 对华销售，中国正以每家科技巨头约 1 万块的速度小批量发放进口许可，推动国内服务器价格上涨 3 倍。 🔗 阅读原文 via AIHOT · https://aihot.news/items/aiiclbw9wwswwx60wfqw6eb6o",
+      "pub_date": "2026-11-06",
+      "author": "noreply@aihot.news (X.PIN)",
+      "category": "行业动态"
+    },
     {
       "title": "METR 审计称 Anthropic 可能早在 7 月已触发其自身 AI 加速预警阈值",
       "link": "https://aihot.news/items/vpopkx98s6mpp9coxhi7hhvh2",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-03",
       "author": "noreply@aihot.news (Transluce)",
       "category": "论文"
-    },
-    {
-      "title": "Mistral Large 4 以开放权重发布并附技术报告",
-      "link": "https://aihot.news/items/bfx52184e0ssnqgdq42o8dg36",
-      "summary": "Mistral 团队成员 Pierre Stock 宣布 ML4（Mistral Large 4）正式开放权重，称其在代码智能体与网络安全方向具备前沿能力，且比三周前的 Preview 版本更高效、更紧凑。技术报告讲述其研发过程：https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B/blob/main/assets/technical_report.pdf，Mistral AI 官方转发并称可在 alphaxiv 上阅读这一研发故事（https://www.alphaxiv.org/abs/2611.mistral-large-4）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/bfx52184e0ssnqgdq42o8dg36",
-      "pub_date": "2026-11-03",
-      "author": "noreply@aihot.news (Mistral AI)",
-      "category": "AI 模型"
     }
   ]
 }

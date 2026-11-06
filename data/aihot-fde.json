@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-06T23:33:01.928571+08:00",
-  "total": 29,
+  "updated_at": "2026-11-07T00:03:01.717552+08:00",
+  "total": 28,
   "items": [
     {
       "title": "Perplexity 推出 Teammates 智能体，面向 Max 订阅用户开放",
@@ -225,14 +225,6 @@
       "summary": "Cognition 发布编码模型 SWE-2 Flash，称其在主流评测上超越所有美国开源权重模型，包括部分大 3 倍的模型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ten7xip5406iqarfs8tj8pa22",
       "pub_date": "2026-11-03",
       "author": "noreply@aihot.news (Cognition 模型 / Devin 博客)",
-      "category": "AI 模型"
-    },
-    {
-      "title": "Mistral Large 4 以开放权重发布并附技术报告",
-      "link": "https://aihot.news/items/bfx52184e0ssnqgdq42o8dg36",
-      "summary": "Mistral 团队成员 Pierre Stock 宣布 ML4（Mistral Large 4）正式开放权重，称其在代码智能体与网络安全方向具备前沿能力，且比三周前的 Preview 版本更高效、更紧凑。技术报告讲述其研发过程：https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B/blob/main/assets/technical_report.pdf，Mistral AI 官方转发并称可在 alphaxiv 上阅读这一研发故事（https://www.alphaxiv.org/abs/2611.mistral-large-4）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/bfx52184e0ssnqgdq42o8dg36",
-      "pub_date": "2026-11-03",
-      "author": "noreply@aihot.news (Mistral AI)",
       "category": "AI 模型"
     }
   ]
