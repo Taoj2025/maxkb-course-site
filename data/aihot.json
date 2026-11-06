@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-06T08:03:02.199473+08:00",
+  "updated_at": "2026-11-06T08:33:01.796485+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "美国中期选举后数据中心民意反弹引发AI股暴跌",
+      "link": "https://aihot.news/items/ulp3wiu0wqc134cllhoas33kw",
+      "summary": "作者复盘美股AI板块大跌，纳斯达克盘中跌超5%，费城半导体指数一度跌近11%，英伟达跌近9%，纳指一天蒸发近1.8万亿美元市值。背景是中期选举民主党拿下两院，亚利桑那州众议员安萨里提出应暂停先进AI开发，此前桑德斯等人在9月提过《2026年禁止人工超级智能法案》，按训练算力10的25次方划线并规定违规个人最高判20年、公司可强制解散。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ulp3wiu0wqc134cllhoas33kw",
+      "pub_date": "2026-11-05",
+      "author": "noreply@aihot.news (公众号：数字生命卡兹克)",
+      "category": "行业动态"
+    },
     {
       "title": "OpenAI：ChatGPT 与 API 每周生成图像超 40 亿张，8 周前为 30 亿",
       "link": "https://aihot.news/items/z16tksw5l40w2edrohnozslkl",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-02",
       "author": "noreply@aihot.news (The Decoder：AI News)",
       "category": "行业动态"
-    },
-    {
-      "title": "Cognition 发布2026年11月实用安全指南：从 Binance 被盗到 Claude Code Cursor 扩展投毒的应对清单",
-      "link": "https://aihot.news/items/dmvn8r8406f7g9vutizbxqesj",
-      "summary": "Cognition 发布2026年11月实用安全指南，回顾近期重大安全事件并给出公司可执行的安全加固清单。 🔗 阅读原文 via AIHOT · https://aihot.news/items/dmvn8r8406f7g9vutizbxqesj",
-      "pub_date": "2026-11-02",
-      "author": "noreply@aihot.news (Cognition 模型 / Devin 博客)",
-      "category": "教程"
     }
   ]
 }

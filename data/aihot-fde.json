@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-06T08:03:02.200359+08:00",
-  "total": 31,
+  "updated_at": "2026-11-06T08:33:01.797674+08:00",
+  "total": 30,
   "items": [
     {
       "title": "Perplexity 推出 Teammates 智能体，面向 Max 订阅用户开放",
@@ -242,14 +242,6 @@
       "pub_date": "2026-11-02",
       "author": "noreply@aihot.news (OpenAI：Alignment 研究博客)",
       "category": "论文"
-    },
-    {
-      "title": "Cognition 发布2026年11月实用安全指南：从 Binance 被盗到 Claude Code Cursor 扩展投毒的应对清单",
-      "link": "https://aihot.news/items/dmvn8r8406f7g9vutizbxqesj",
-      "summary": "Cognition 发布2026年11月实用安全指南，回顾近期重大安全事件并给出公司可执行的安全加固清单。 🔗 阅读原文 via AIHOT · https://aihot.news/items/dmvn8r8406f7g9vutizbxqesj",
-      "pub_date": "2026-11-02",
-      "author": "noreply@aihot.news (Cognition 模型 / Devin 博客)",
-      "category": "教程"
     }
   ]
 }
