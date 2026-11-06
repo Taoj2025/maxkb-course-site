@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-06T09:03:02.336614+08:00",
+  "updated_at": "2026-11-06T09:33:02.400208+08:00",
   "total": 50,
   "items": [
     {
@@ -186,6 +186,14 @@
       "pub_date": "2026-11-04",
       "author": "noreply@aihot.news (404 Media)",
       "category": "行业动态"
+    },
+    {
+      "title": "百度发布 ERNIE-5.5-Flash-Base 开源 Base 模型，280B 总参数每 token 激活 14B",
+      "link": "https://aihot.news/items/r3360gkpmqpyyt2ii9cp1k9rz",
+      "summary": "百度文心团队发布 ERNIE-5.5-Flash-Base，在 Hugging Face 开放预训练终点 Base 权重，提供 FP8 与 BF16 两种 safetensors。 🔗 阅读原文 via AIHOT · https://aihot.news/items/r3360gkpmqpyyt2ii9cp1k9rz",
+      "pub_date": "2026-11-04",
+      "author": "noreply@aihot.news (百度文心 ERNIE 官方博客)",
+      "category": "AI 模型"
     },
     {
       "title": "Mistral 扩展 Mistral Studio，配合 Mistral Large 4 (Le Chonk) 构建企业级智能体、工作流和应用",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-02",
       "author": "noreply@aihot.news (OpenAI：Alignment 研究博客)",
       "category": "论文"
-    },
-    {
-      "title": "Anthropic 季度营收增长十二倍至近 170 亿美元，但净亏损达 233 亿美元",
-      "link": "https://aihot.news/items/owfopy087lszd1cpfp3c82pxv",
-      "summary": "据 Bloomberg 与 The Information，Anthropic 该季度营收近 170 亿美元，为一年前的十二倍，但运营成本达 175 亿美元，季度净亏损 233 亿美元，高于去年同期的 121 亿美元。 🔗 阅读原文 via AIHOT · https://aihot.news/items/owfopy087lszd1cpfp3c82pxv",
-      "pub_date": "2026-11-02",
-      "author": "noreply@aihot.news (The Decoder：AI News)",
-      "category": "行业动态"
     }
   ]
 }
