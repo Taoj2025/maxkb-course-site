@@ -716,5 +716,23 @@
     "source": "AI 重写 · Kubernetes Blog",
     "file": "13339-why-is-my-kubernetes-job-still-pending-t.md",
     "estimated_read_time": "3 分钟"
+  },
+  {
+    "id": 13340,
+    "title": "Anthropic found a way to prove which AI model answered you — but there’s a costly catch",
+    "slug": "13340-anthropic-found-a-way-to-prove-which-ai",
+    "summary": "Developers using AI APIs have little way of knowing whether the model answering their requests is actually the one they&#8217;re The post Anthropic fo",
+    "category": "最新动态",
+    "tags": [
+      "FDE",
+      "AI 资讯",
+      "前端部署"
+    ],
+    "color": "purple",
+    "date": "2026-11-06",
+    "author": "小Q（机器摘要）",
+    "source": "机器摘要 · The New Stack",
+    "file": "13340-anthropic-found-a-way-to-prove-which-ai.md",
+    "estimated_read_time": "1 分钟"
   }
 ]
