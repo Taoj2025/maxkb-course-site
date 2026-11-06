@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-07T01:03:02.087775+08:00",
+  "updated_at": "2026-11-07T01:33:02.344708+08:00",
   "total": 50,
   "items": [
     {
@@ -42,6 +42,14 @@
       "pub_date": "2026-11-06",
       "author": "noreply@aihot.news (OpenRouter：Announcements)",
       "category": "AI 产品"
+    },
+    {
+      "title": "OpenClaw 无需更新即可使用新模型：改为三个模型列表来源",
+      "link": "https://aihot.news/items/b0ddwv6p8wgd0xlhcvvw4z36b",
+      "summary": "OpenClaw 重构模型列表获取方式，约五周、80 个 PR，新模型不再等客户端发版。现在从三处取模型列表：每 4 小时重建的 catalog.openclaw.ai 目录（约 1000 个模型）、账号可用的模型列表，以及 PATH 上已安装的 Codex（需同主版本且握手通过，否则回退内置版本）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/b0ddwv6p8wgd0xlhcvvw4z36b",
+      "pub_date": "2026-11-06",
+      "author": "noreply@aihot.news (OpenClaw：Blog)",
+      "category": "教程"
     },
     {
       "title": "美国中期选举后数据中心民意反弹引发AI股暴跌",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-03",
       "author": "noreply@aihot.news (Cognition 模型 / Devin 博客)",
       "category": "AI 模型"
-    },
-    {
-      "title": "Transluce 自动化批量生成 6915 个带意外副作用的训练数据集 DSSE-1.1",
-      "link": "https://aihot.news/items/d1qutqh5iai0xio7r0tm08wda",
-      "summary": "Transluce 发布自动化流水线，按诱导性、自然性和意外性三个目标批量搜索带意外副作用的训练数据集（DSSE），并开源 DSSE-1.1 集合，共 6915 个数据集，覆盖 18 种目标行为（如推荐自残、抵抗关机等）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/d1qutqh5iai0xio7r0tm08wda",
-      "pub_date": "2026-11-03",
-      "author": "noreply@aihot.news (Transluce)",
-      "category": "论文"
     }
   ]
 }

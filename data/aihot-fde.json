@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-07T01:03:02.088701+08:00",
-  "total": 28,
+  "updated_at": "2026-11-07T01:33:02.345587+08:00",
+  "total": 29,
   "items": [
+    {
+      "title": "OpenClaw 无需更新即可使用新模型：改为三个模型列表来源",
+      "link": "https://aihot.news/items/b0ddwv6p8wgd0xlhcvvw4z36b",
+      "summary": "OpenClaw 重构模型列表获取方式，约五周、80 个 PR，新模型不再等客户端发版。现在从三处取模型列表：每 4 小时重建的 catalog.openclaw.ai 目录（约 1000 个模型）、账号可用的模型列表，以及 PATH 上已安装的 Codex（需同主版本且握手通过，否则回退内置版本）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/b0ddwv6p8wgd0xlhcvvw4z36b",
+      "pub_date": "2026-11-06",
+      "author": "noreply@aihot.news (OpenClaw：Blog)",
+      "category": "教程"
+    },
     {
       "title": "Perplexity 推出 Teammates 智能体，面向 Max 订阅用户开放",
       "link": "https://aihot.news/items/wkgcal7l9pkj3g7w8ohlp3c45",
