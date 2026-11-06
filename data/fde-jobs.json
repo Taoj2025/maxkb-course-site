@@ -1,6 +1,6 @@
 {
   "version": "v3.0",
-  "updated_at": "2026-11-06T23:48:25.436255+08:00",
+  "updated_at": "2026-11-07T00:21:18.533596+08:00",
   "source": "智联招聘 + 腾讯招聘 + Greenhouse + Ashby（公开职位板 API）",
   "live": true,
   "stale_domestic": false,
@@ -135,44 +135,23 @@
           "ai_era": false
         },
         {
-          "company": "博彦科技承德有限公司",
-          "title": "AI全栈开发工程师（偏Java方向/AI方向）",
-          "salary": "1.8-2万",
-          "city": "北京 海淀",
+          "company": "上海食万优选商贸有限公司",
+          "title": "java全栈工程师",
+          "salary": "1.5-2万",
+          "city": "上海 松江",
           "tags": [
             "全栈 Full-Stack",
             "前端 Frontend",
-            "React",
-            "Vue / Nuxt",
-            "Python",
-            "Rust / Java"
+            "Rust / Java",
+            "性能优化",
+            "数据库"
           ],
           "level": "Mid",
           "remote": false,
           "source": "智联招聘",
-          "url": "https://www.zhaopin.com/jobdetail/CC637366030J40810016106.htm",
+          "url": "https://www.zhaopin.com/jobdetail/CCL1521461950J40909146905.htm",
           "premium": false,
-          "ai_era": true
-        },
-        {
-          "company": "青岛美鸥工艺品有限公司",
-          "title": "AI全栈开发工程师",
-          "salary": "1-2万",
-          "city": "青岛 城阳",
-          "tags": [
-            "全栈 Full-Stack",
-            "前端 Frontend",
-            "React",
-            "Vue / Nuxt",
-            "Python",
-            "数据库"
-          ],
-          "level": "Senior",
-          "remote": false,
-          "source": "智联招聘",
-          "url": "https://www.zhaopin.com/jobdetail/CC689552420J40854874216.htm",
-          "premium": false,
-          "ai_era": true
+          "ai_era": false
         },
         {
           "company": "中国物流股份有限公司",
@@ -318,24 +297,6 @@
           "ai_era": false
         },
         {
-          "company": "深圳市法本信息技术股份有限公司",
-          "title": "五险一金+全栈开发",
-          "salary": "9000-13000元",
-          "city": "济南 历下",
-          "tags": [
-            "全栈 Full-Stack",
-            "前端 Frontend",
-            "Vue / Nuxt",
-            "JavaScript"
-          ],
-          "level": "Mid",
-          "remote": false,
-          "source": "智联招聘",
-          "url": "https://www.zhaopin.com/jobdetail/CC385622410J40810086706.htm",
-          "premium": false,
-          "ai_era": false
-        },
-        {
           "company": "诸城鲜顿网络科技有限公司",
           "title": "全栈项目经理",
           "salary": "1.1-1.7万",
@@ -429,7 +390,7 @@
           "company": "重庆清智企业管理有限公司",
           "title": "web前端开发工程师",
           "salary": "1-1.8万·13薪",
-          "city": "长沙 芙蓉",
+          "city": "武汉 江汉",
           "tags": [
             "前端 Frontend",
             "Vue / Nuxt",
@@ -440,7 +401,41 @@
           "level": "Mid",
           "remote": false,
           "source": "智联招聘",
-          "url": "https://www.zhaopin.com/jobdetail/CCL1496377440J40904106109.htm",
+          "url": "https://www.zhaopin.com/jobdetail/CCL1496377440J40904105809.htm",
+          "premium": false,
+          "ai_era": true
+        },
+        {
+          "company": "京北方",
+          "title": "全栈开发工程师（合肥）",
+          "salary": "1.2-1.4万",
+          "city": "合肥 包河",
+          "tags": [
+            "全栈 Full-Stack",
+            "Vue / Nuxt",
+            "Rust / Java",
+            "数据库",
+            "CSS / Tailwind"
+          ],
+          "level": "Mid",
+          "remote": false,
+          "source": "智联招聘",
+          "url": "https://www.zhaopin.com/jobdetail/CC315847110J40888563507.htm",
+          "premium": false,
+          "ai_era": true
+        },
+        {
+          "company": "北京兴华会计师事务所(特殊普通合伙)",
+          "title": "AI 全栈工程师-深圳",
+          "salary": "7000-14000元",
+          "city": "深圳 龙岗",
+          "tags": [
+            "全栈 Full-Stack"
+          ],
+          "level": "Mid",
+          "remote": false,
+          "source": "智联招聘",
+          "url": "https://www.zhaopin.com/jobdetail/CC461721420J40904000509.htm",
           "premium": false,
           "ai_era": true
         }
@@ -568,7 +563,7 @@
   "overseas": {
     "label": "🌏 海外 · 顶级公司 careers",
     "data_source": "Greenhouse / Ashby 公开职位板（实时）",
-    "fetched_at": "2026-11-06T23:48:25.436255+08:00",
+    "fetched_at": "2026-11-07T00:21:18.533596+08:00",
     "jobs": [
       {
         "company": "OpenAI",
@@ -1198,23 +1193,23 @@
         },
         {
           "name": "JavaScript",
-          "count": 10,
-          "percent": 27
-        },
-        {
-          "name": "Vue / Nuxt",
-          "count": 9,
-          "percent": 24
-        },
-        {
-          "name": "React",
-          "count": 8,
-          "percent": 22
+          "count": 7,
+          "percent": 19
         },
         {
           "name": "TypeScript",
           "count": 7,
           "percent": 19
+        },
+        {
+          "name": "Vue / Nuxt",
+          "count": 7,
+          "percent": 19
+        },
+        {
+          "name": "React",
+          "count": 6,
+          "percent": 16
         },
         {
           "name": "Svelte / Solid",
@@ -1270,18 +1265,18 @@
         },
         {
           "name": "Rust / Java",
-          "count": 11,
-          "percent": 41
+          "count": 12,
+          "percent": 44
         },
         {
           "name": "性能优化",
-          "count": 11,
-          "percent": 41
+          "count": 12,
+          "percent": 44
         },
         {
           "name": "Python",
-          "count": 9,
-          "percent": 33
+          "count": 7,
+          "percent": 26
         },
         {
           "name": "可观测性",
@@ -1328,17 +1323,17 @@
     },
     {
       "name": "🎨 UX / 设计系统",
-      "total": 8,
+      "total": 9,
       "skills": [
         {
           "name": "UI / UX",
           "count": 5,
-          "percent": 62
+          "percent": 56
         },
         {
           "name": "CSS / Tailwind",
-          "count": 3,
-          "percent": 38
+          "count": 4,
+          "percent": 44
         }
       ]
     },
@@ -1470,18 +1465,23 @@
     "domestic_top10": [
       {
         "city": "深圳",
+        "jobs": 6,
+        "percent": 18.8
+      },
+      {
+        "city": "上海",
         "jobs": 5,
         "percent": 15.6
       },
       {
-        "city": "上海",
-        "jobs": 4,
-        "percent": 12.5
+        "city": "北京",
+        "jobs": 3,
+        "percent": 9.4
       },
       {
-        "city": "北京",
-        "jobs": 4,
-        "percent": 12.5
+        "city": "武汉",
+        "jobs": 3,
+        "percent": 9.4
       },
       {
         "city": "南昌",
@@ -1489,12 +1489,7 @@
         "percent": 6.2
       },
       {
-        "city": "青岛",
-        "jobs": 2,
-        "percent": 6.2
-      },
-      {
-        "city": "武汉",
+        "city": "合肥",
         "jobs": 2,
         "percent": 6.2
       },
@@ -1548,7 +1543,7 @@
     ]
   },
   "data_sources_meta": {
-    "fetched_at": "2026-11-06T23:48:25.436255+08:00",
+    "fetched_at": "2026-11-07T00:21:18.533596+08:00",
     "sources": [
       {
         "name": "智联招聘",
@@ -1556,15 +1551,15 @@
         "detail": "公开搜索结果 · 免登录实时抓取",
         "key": "zhaopin",
         "ok": true,
-        "count": 76,
+        "count": 74,
         "boards": {
-          "智联·前端部署": 8,
-          "智联·前端工程师": 13,
           "智联·远程前端": 7,
           "智联·Serverless": 10,
-          "智联·全栈工程师": 19,
+          "智联·FDE": 14,
+          "智联·全栈工程师": 17,
+          "智联·前端工程师": 12,
           "智联·大模型应用工程师": 5,
-          "智联·FDE": 14
+          "智联·前端部署": 9
         }
       },
       {
@@ -1587,17 +1582,17 @@
         "count": 414,
         "boards": {
           "Netlify Careers": 0,
-          "Squarespace Careers": 6,
           "Figma Careers": 26,
+          "Squarespace Careers": 6,
           "Twilio Careers": 10,
+          "Cloudflare Careers": 65,
           "Instacart Careers": 12,
-          "Reddit Careers": 46,
+          "Stripe Careers": 95,
           "Anthropic Careers": 106,
           "Datadog Careers": 9,
-          "Stripe Careers": 95,
+          "Reddit Careers": 46,
           "Flexport Careers": 13,
-          "Airbnb Careers": 26,
-          "Cloudflare Careers": 65
+          "Airbnb Careers": 26
         }
       },
       {
@@ -1608,18 +1603,18 @@
         "ok": true,
         "count": 308,
         "boards": {
-          "Replit Careers": 9,
           "Linear Careers": 7,
-          "Sentry Careers": 18,
           "Supabase Careers": 15,
-          "Render Careers": 12,
           "Notion Careers": 14,
+          "Sentry Careers": 18,
+          "Replit Careers": 9,
+          "Railway Careers": 4,
           "Modal Labs Careers": 2,
           "PostHog Careers": 3,
+          "Render Careers": 12,
           "Ashby Careers": 13,
-          "Railway Careers": 4,
-          "OpenAI Careers": 196,
-          "Ramp Careers": 15
+          "Ramp Careers": 15,
+          "OpenAI Careers": 196
         }
       }
     ],
