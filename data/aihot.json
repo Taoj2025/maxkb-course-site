@@ -1,22 +1,22 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-06T20:03:02.285064+08:00",
+  "updated_at": "2026-11-06T20:33:01.478968+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Anthropic 1.5 万亿美元 IPO 因投资者质疑估值遇阻",
+      "link": "https://aihot.news/items/ia9wi0z09zfes5ewdf4agb6nf",
+      "summary": "据 Reuters，Anthropic 的 IPO 遇阻，投资者质疑 1.5 万亿美元估值过高，有投资者提出仅 1 万亿美元，公司 9 月曾瞄准最高 2 万亿美元估值。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ia9wi0z09zfes5ewdf4agb6nf",
+      "pub_date": "2026-11-06",
+      "author": "noreply@aihot.news (The Decoder：AI News)",
+      "category": "行业动态"
+    },
     {
       "title": "蚂蚁百灵发布 Ling-3.2-flash：原生多模态，560B 总参数单步激活 25B",
       "link": "https://aihot.news/items/apnpwouw9phkt81pijcxcl1a1",
       "summary": "蚂蚁百灵发布原生多模态模型 Ling-3.2-flash，总参数 560B、单步激活 25B，支持 1M 原生长上下文，重点强化视觉反馈自检与异常自适应恢复能力。 🔗 阅读原文 via AIHOT · https://aihot.news/items/apnpwouw9phkt81pijcxcl1a1",
       "pub_date": "2026-11-06",
       "author": "noreply@aihot.news (公众号：蚂蚁百灵)",
-      "category": "AI 模型"
-    },
-    {
-      "title": "Thinking Machines 发布 Inkling 2 Small：594B 总参/17B 激活 MoE，68 小时预训练，称超越 Muse Spark",
-      "link": "https://aihot.news/items/xbvw6hby8c4xtbbwkbr9el4s7",
-      "summary": "Latent Space 汇总 2026-11-04 至 11-05 的 AI 新闻，头条是 Thinking Machines 发布 Inkling 2 Small。 🔗 阅读原文 via AIHOT · https://aihot.news/items/xbvw6hby8c4xtbbwkbr9el4s7",
-      "pub_date": "2026-11-06",
-      "author": "noreply@aihot.news (Latent Space)",
       "category": "AI 模型"
     },
     {
