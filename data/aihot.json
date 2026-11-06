@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-07T00:33:01.665733+08:00",
+  "updated_at": "2026-11-07T01:03:02.087775+08:00",
   "total": 50,
   "items": [
     {
@@ -244,14 +244,6 @@
       "category": "行业动态"
     },
     {
-      "title": "美国中期选举中选民在 13 州否决数据中心相关提案",
-      "link": "https://aihot.news/items/rt92cw12z1dsqozka4y4wzl2v",
-      "summary": "美国中期选举中，13 个州逾 40 项数据中心相关 ballot 提案至少 38 项被否决，6 个城市投票全面禁止数据中心，12 个城市限制其用电兆瓦数。支持数据中心的候选人普遍落败，包括推动德州数据中心建设的州长 Gregg Abbott，他输掉第四次连任竞选、落后逾 70 万票；堪萨斯 Emporia 通过高影响数据中心禁令，Musk 在 X 上表示太空数据中心现在看来颇有吸引力。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rt92cw12z1dsqozka4y4wzl2v",
-      "pub_date": "2026-11-04",
-      "author": "noreply@aihot.news (404 Media)",
-      "category": "行业动态"
-    },
-    {
       "title": "百度发布 ERNIE-5.5-Flash-Base 开源 Base 模型，280B 总参数每 token 激活 14B",
       "link": "https://aihot.news/items/r3360gkpmqpyyt2ii9cp1k9rz",
       "summary": "百度文心团队发布 ERNIE-5.5-Flash-Base，在 Hugging Face 开放预训练终点 Base 权重，提供 FP8 与 BF16 两种 safetensors。 🔗 阅读原文 via AIHOT · https://aihot.news/items/r3360gkpmqpyyt2ii9cp1k9rz",
@@ -402,6 +394,14 @@
       "pub_date": "2026-11-03",
       "author": "noreply@aihot.news (Cognition 模型 / Devin 博客)",
       "category": "AI 模型"
+    },
+    {
+      "title": "Transluce 自动化批量生成 6915 个带意外副作用的训练数据集 DSSE-1.1",
+      "link": "https://aihot.news/items/d1qutqh5iai0xio7r0tm08wda",
+      "summary": "Transluce 发布自动化流水线，按诱导性、自然性和意外性三个目标批量搜索带意外副作用的训练数据集（DSSE），并开源 DSSE-1.1 集合，共 6915 个数据集，覆盖 18 种目标行为（如推荐自残、抵抗关机等）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/d1qutqh5iai0xio7r0tm08wda",
+      "pub_date": "2026-11-03",
+      "author": "noreply@aihot.news (Transluce)",
+      "category": "论文"
     }
   ]
 }
