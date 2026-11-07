@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-07T17:33:01.787443+08:00",
-  "total": 29,
+  "updated_at": "2026-11-07T18:03:02.200166+08:00",
+  "total": 28,
   "items": [
     {
       "title": "Amp 发布 spaces：由单个 Agent 自动生成和协调多线程的协作空间",
@@ -226,14 +226,6 @@
       "pub_date": "2026-11-04",
       "author": "noreply@aihot.news (公众号：数字生命卡兹克)",
       "category": "教程"
-    },
-    {
-      "title": "OpenAI 发布 Images 2.6，生成提速 50% 并新增 GIF 动画能力",
-      "link": "https://aihot.news/items/wwltahauj3uhzwy9yizi2i6f3",
-      "summary": "OpenAI 在 ChatGPT、Codex 和 API 中推出 Images 2.6，图像生成速度比之前快 50%，并支持用 GIF 为图像添加动画。API 提供 GPT-Image-2.6 Flare（低质量下最快 6 秒出图）和 GPT-Image-2.6 Sunburst（中高质量下更精细）两个模型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wwltahauj3uhzwy9yizi2i6f3",
-      "pub_date": "2026-11-04",
-      "author": "noreply@aihot.news (OpenAI：官网动态)",
-      "category": "AI 产品"
     }
   ]
 }
