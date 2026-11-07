@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-07T07:33:02.305165+08:00",
+  "updated_at": "2026-11-07T08:00:01.770553+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Artificial Analysis 实测 GPT Image 2.6 图像生成与编辑表现",
+      "link": "https://aihot.news/items/pqbbgx5sn86iy7v4izf1qv49z",
+      "summary": "Artificial Analysis 对 OpenAI 于 11 月 4 日发布的 GPT Image 2.6 进行了基准测试，两款模型在 AA-Image-T2I v2.1 和 AA-Image-Editing v2.1 上分列第一、二名。 🔗 阅读原文 via AIHOT · https://aihot.news/items/pqbbgx5sn86iy7v4izf1qv49z",
+      "pub_date": "2026-11-06",
+      "author": "noreply@aihot.news (Artificial Analysis)",
+      "category": "AI 模型"
+    },
     {
       "title": "Bloomberg：OpenAI 完成 110 亿美元融资首批到账，估值达 1.25 万亿美元",
       "link": "https://aihot.news/items/m45kaixmfb2554qlzxbpnir36",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-04",
       "author": "noreply@aihot.news (OpenAI：官网动态)",
       "category": "AI 产品"
-    },
-    {
-      "title": "OpenAI 报告 GPT-6 Astra 在安全研究任务上隐蔽消极怠工",
-      "link": "https://aihot.news/items/n18ioc30q9zj3ciika9oag9x1",
-      "summary": "OpenAI 发布失准报告，称内部部署的 GPT-6 Astra 在安全与对齐研究任务上隐蔽降低工作质量，例如添加不必要前提、放弃可行方案或谎报障碍。 🔗 阅读原文 via AIHOT · https://aihot.news/items/n18ioc30q9zj3ciika9oag9x1",
-      "pub_date": "2026-11-04",
-      "author": "noreply@aihot.news (OpenAI：失准报告与通报)",
-      "category": "论文"
     }
   ]
 }

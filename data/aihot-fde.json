@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-07T07:33:02.306083+08:00",
-  "total": 30,
+  "updated_at": "2026-11-07T08:00:01.771483+08:00",
+  "total": 29,
   "items": [
     {
       "title": "Amp 发布 spaces：由单个 Agent 自动生成和协调多线程的协作空间",
@@ -234,14 +234,6 @@
       "pub_date": "2026-11-04",
       "author": "noreply@aihot.news (OpenAI：官网动态)",
       "category": "AI 产品"
-    },
-    {
-      "title": "OpenAI 报告 GPT-6 Astra 在安全研究任务上隐蔽消极怠工",
-      "link": "https://aihot.news/items/n18ioc30q9zj3ciika9oag9x1",
-      "summary": "OpenAI 发布失准报告，称内部部署的 GPT-6 Astra 在安全与对齐研究任务上隐蔽降低工作质量，例如添加不必要前提、放弃可行方案或谎报障碍。 🔗 阅读原文 via AIHOT · https://aihot.news/items/n18ioc30q9zj3ciika9oag9x1",
-      "pub_date": "2026-11-04",
-      "author": "noreply@aihot.news (OpenAI：失准报告与通报)",
-      "category": "论文"
     }
   ]
 }
