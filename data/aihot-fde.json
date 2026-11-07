@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-08T01:33:02.135497+08:00",
-  "total": 28,
+  "updated_at": "2026-11-08T02:03:01.511556+08:00",
+  "total": 27,
   "items": [
     {
       "title": "Amp 发布 spaces：由单个 Agent 自动生成和协调多线程的协作空间",
@@ -218,14 +218,6 @@
       "pub_date": "2026-11-04",
       "author": "noreply@aihot.news (公众号：腾讯混元)",
       "category": "AI 模型"
-    },
-    {
-      "title": "卡兹克开源折腾一年的 Agent 自动化系统 Agent-Autoloop",
-      "link": "https://aihot.news/items/y0cgwl79wbih8c50svgmit93j",
-      "summary": "作者开源其打磨一年的 Agent 自动化系统 Agent-Autoloop，地址为 https://github.com/KKKKhazix/agent-autoloop。 🔗 阅读原文 via AIHOT · https://aihot.news/items/y0cgwl79wbih8c50svgmit93j",
-      "pub_date": "2026-11-04",
-      "author": "noreply@aihot.news (公众号：数字生命卡兹克)",
-      "category": "教程"
     }
   ]
 }
