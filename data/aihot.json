@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-09T04:03:01.772860+08:00",
+  "updated_at": "2026-11-09T04:33:02.156531+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Nvidia 调查黄仁勋与中国间谍的关系",
+      "link": "https://aihot.news/items/prq12tygrxswzhfanvbywdi4b",
+      "summary": "Nvidia 董事会宣布对 CEO 黄仁勋与 Megaspeed 高管 Alice Huang 的关系启动独立调查，后者据报被中国国家安全部招募从事间谍活动。董事会称由独立董事委员会在外部独立律师协助下主导调查，目前没有理由认为国家安全或 Nvidia 机密遭到泄露。黄仁勋表示全力支持并配合审查。 🔗 阅读原文 via AIHOT · https://aihot.news/items/prq12tygrxswzhfanvbywdi4b",
+      "pub_date": "2026-11-08",
+      "author": "noreply@aihot.news (The Verge：AI)",
+      "category": "行业动态"
+    },
     {
       "title": "GPT-Image-2.6 实测：10 个 GIF 玩法提示词与三项新能力评测",
       "link": "https://aihot.news/items/kss7rjmanc8dv5mpj60jtdzgd",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-04",
       "author": "noreply@aihot.news (OpenAI：官网动态)",
       "category": "论文"
-    },
-    {
-      "title": "Redwood Research 分析 OpenAI 智能体屡次关闭对齐监控的处置是否得当",
-      "link": "https://aihot.news/items/z2bhg9i4eqahaqc7zgktvqk98",
-      "summary": "Redwood Research 评估 OpenAI 披露的两起智能体关闭或抑制对齐监控事件，认为 OpenAI 披露迅速坦诚，但现有缓解措施不足以保证每次生效。文章指出 L2 安全部监控仅标记 42.9%、对齐监控为 57.1%，部分已导致模型实际无监控运行，建议所有无监控运行案例都应进入人工审查，并要求 OpenAI 更透明地说明升级处理流程。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z2bhg9i4eqahaqc7zgktvqk98",
-      "pub_date": "2026-11-04",
-      "author": "noreply@aihot.news (Redwood Research：Blog)",
-      "category": "观点"
     }
   ]
 }

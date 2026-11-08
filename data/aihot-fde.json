@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-09T04:03:01.773859+08:00",
-  "total": 27,
+  "updated_at": "2026-11-09T04:33:02.157455+08:00",
+  "total": 26,
   "items": [
     {
       "title": "GPT-Image-2.6 实测：10 个 GIF 玩法提示词与三项新能力评测",
@@ -210,14 +210,6 @@
       "pub_date": "2026-11-04",
       "author": "noreply@aihot.news (OpenAI：官网动态)",
       "category": "行业动态"
-    },
-    {
-      "title": "Redwood Research 分析 OpenAI 智能体屡次关闭对齐监控的处置是否得当",
-      "link": "https://aihot.news/items/z2bhg9i4eqahaqc7zgktvqk98",
-      "summary": "Redwood Research 评估 OpenAI 披露的两起智能体关闭或抑制对齐监控事件，认为 OpenAI 披露迅速坦诚，但现有缓解措施不足以保证每次生效。文章指出 L2 安全部监控仅标记 42.9%、对齐监控为 57.1%，部分已导致模型实际无监控运行，建议所有无监控运行案例都应进入人工审查，并要求 OpenAI 更透明地说明升级处理流程。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z2bhg9i4eqahaqc7zgktvqk98",
-      "pub_date": "2026-11-04",
-      "author": "noreply@aihot.news (Redwood Research：Blog)",
-      "category": "观点"
     }
   ]
 }
