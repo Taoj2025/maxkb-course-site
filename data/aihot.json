@@ -1,8 +1,24 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-10T07:03:01.789887+08:00",
+  "updated_at": "2026-11-10T07:33:01.741812+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "实测 Claude Fable 5.2：一次直出视频与 3D 网页，审美与细节表现突出",
+      "link": "https://aihot.news/items/po2cdt1whxfqyfew3e81l8mb0",
+      "summary": "Anthropic 凌晨正式发布 Claude Fable 5.2，作者第一时间实测视频动效、Three.js 3D 场景和苹果静安店 3D 网页等 10 个任务，全部一次直出，未发现生成视频中的事实错误。 🔗 阅读原文 via AIHOT · https://aihot.news/items/po2cdt1whxfqyfew3e81l8mb0",
+      "pub_date": "2026-11-09",
+      "author": "noreply@aihot.news (公众号：数字生命卡兹克)",
+      "category": "AI 模型"
+    },
+    {
+      "title": "做空机构 Culper Research 曾在丑闻爆发前六个月提示 Nvidia CEO 与疑似中国间谍的关系",
+      "link": "https://aihot.news/items/zqvokl37rwbvoxzfk3c2v7964",
+      "summary": "Nvidia 间谍丑闻爆发前六个月，做空机构 Culper Research 已在 5 月 13 日报告中质疑 CEO 黄仁勋与 Megaspeed 高管 Alice Huang 关系“异常密切”。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zqvokl37rwbvoxzfk3c2v7964",
+      "pub_date": "2026-11-09",
+      "author": "noreply@aihot.news (TechCrunch：AI)",
+      "category": "行业动态"
+    },
     {
       "title": "Claude Fable 5.2 上线 Higgsfield，开放 3 天免费试用",
       "link": "https://aihot.news/items/ugn21ui1m8kftffpe2c95qlkx",
@@ -386,22 +402,6 @@
       "pub_date": "2026-11-05",
       "author": "noreply@aihot.news (IT之家·人工智能)",
       "category": "AI 模型"
-    },
-    {
-      "title": "Google Research 在 Nature 发表 AI-PPG-ACC-HTN：用智能手表无袖带检测高血压迹象",
-      "link": "https://aihot.news/items/zbjrxt1ss4h009oc75x5swd6y",
-      "summary": "Google Research 联合 Beth Israel Deaconess Medical Center 和哈佛医学院在 Nature 发表 AI-PPG-ACC-HTN 多模态 AI 系统，用消费级智能手表的 PPG 和加速度传感数据被动检测高血压迹象，无需袖带校准。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zbjrxt1ss4h009oc75x5swd6y",
-      "pub_date": "2026-11-05",
-      "author": "noreply@aihot.news (Google Research：Blog)",
-      "category": "论文"
-    },
-    {
-      "title": "Cursor 推出应用构建功能，描述需求即可构建、部署并分享在线应用",
-      "link": "https://aihot.news/items/m5s02uukcl0id6rn7t08f6ya3",
-      "summary": "Cursor 推出新功能，用户在 Cursor 中启动云端智能体并描述需求，即可完成应用搭建、Postgres 数据库配置、基于 Cursor SSO 的身份验证和托管部署，并生成可访问的在线链接。 🔗 阅读原文 via AIHOT · https://aihot.news/items/m5s02uukcl0id6rn7t08f6ya3",
-      "pub_date": "2026-11-05",
-      "author": "noreply@aihot.news (Cursor：Changelog)",
-      "category": "AI 产品"
     }
   ]
 }

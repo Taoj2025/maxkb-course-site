@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-10T07:03:01.791423+08:00",
-  "total": 21,
+  "updated_at": "2026-11-10T07:33:01.742719+08:00",
+  "total": 20,
   "items": [
     {
       "title": "Claude Fable 5.2 上线 Higgsfield，开放 3 天免费试用",
@@ -162,14 +162,6 @@
       "pub_date": "2026-11-05",
       "author": "noreply@aihot.news (IT之家·人工智能)",
       "category": "AI 模型"
-    },
-    {
-      "title": "Cursor 推出应用构建功能，描述需求即可构建、部署并分享在线应用",
-      "link": "https://aihot.news/items/m5s02uukcl0id6rn7t08f6ya3",
-      "summary": "Cursor 推出新功能，用户在 Cursor 中启动云端智能体并描述需求，即可完成应用搭建、Postgres 数据库配置、基于 Cursor SSO 的身份验证和托管部署，并生成可访问的在线链接。 🔗 阅读原文 via AIHOT · https://aihot.news/items/m5s02uukcl0id6rn7t08f6ya3",
-      "pub_date": "2026-11-05",
-      "author": "noreply@aihot.news (Cursor：Changelog)",
-      "category": "AI 产品"
     }
   ]
 }
