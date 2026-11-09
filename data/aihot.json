@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-10T02:33:02.019755+08:00",
+  "updated_at": "2026-11-10T03:03:02.329541+08:00",
   "total": 50,
   "items": [
     {
@@ -18,6 +18,14 @@
       "pub_date": "2026-11-09",
       "author": "noreply@aihot.news (The Decoder：AI News)",
       "category": "行业动态"
+    },
+    {
+      "title": "Meta 发布最小最高效模型 Muse Ember，主打智能体高频任务",
+      "link": "https://aihot.news/items/cox936nwax49rkiimi1oicgzu",
+      "summary": "Meta 发布 Muse Ember（muse-ember-1.0），定位最小最高效的复杂推理执行模型，面向工具调用、编码子任务、路由、抽取和长文档解析等智能体日常重复任务。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cox936nwax49rkiimi1oicgzu",
+      "pub_date": "2026-11-09",
+      "author": "noreply@aihot.news (Meta AI：Research Blog)",
+      "category": "AI 模型"
     },
     {
       "title": "耶鲁教授 Sonnenfeld 估计黄仁勋职位去留概率约为 50-50",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-04",
       "author": "noreply@aihot.news (Mistral AI：News)",
       "category": "AI 产品"
-    },
-    {
-      "title": "PFN 开放翻译特化模型 PLaMo 3 Translate，0.8B 至 31B 四个尺寸可离线运行",
-      "link": "https://aihot.news/items/mfhrioi9hwoh0m8q6q2yhjzo7",
-      "summary": "Preferred Networks 将自家翻译服务使用的翻译特化 LLM PLaMo 3 Translate 以开放权重形式在 Hugging Face 公开，提供 0.8B、2B、8B、31B 四个尺寸。 🔗 阅读原文 via AIHOT · https://aihot.news/items/mfhrioi9hwoh0m8q6q2yhjzo7",
-      "pub_date": "2026-11-04",
-      "author": "noreply@aihot.news (Preferred Networks：AI 研究与产品)",
-      "category": "AI 模型"
     }
   ]
 }
