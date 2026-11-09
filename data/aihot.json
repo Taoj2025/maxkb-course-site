@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-09T16:33:01.628383+08:00",
+  "updated_at": "2026-11-09T17:03:01.643001+08:00",
   "total": 50,
   "items": [
     {
@@ -26,6 +26,14 @@
       "pub_date": "2026-11-08",
       "author": "noreply@aihot.news (Rohan Paul)",
       "category": "行业动态"
+    },
+    {
+      "title": "百度发布 ERNIE Evolve 自动研究系统，公开任务超最好纪录并落地 ERNIE-5.5-Flash 推理优化",
+      "link": "https://aihot.news/items/h6vimc0xpjwbjfampr34ym5ol",
+      "summary": "百度文心团队发布自动研究系统 ERNIE Evolve，用双层循环组织研究方向选择与实验迭代，由 Director、Selector、Executor、Evaluator 和 Reviewer 分工推进研究。 🔗 阅读原文 via AIHOT · https://aihot.news/items/h6vimc0xpjwbjfampr34ym5ol",
+      "pub_date": "2026-11-08",
+      "author": "noreply@aihot.news (百度文心 ERNIE 官方博客)",
+      "category": "AI 产品"
     },
     {
       "title": "GPT-Image-2.6 实测：10 个 GIF 玩法提示词与三项新能力评测",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-04",
       "author": "noreply@aihot.news (Goodfire Research)",
       "category": "论文"
-    },
-    {
-      "title": "可灵 Kling 4.0 Flash 全面开放，支持官网、API、MCP 和 Adobe 插件接入",
-      "link": "https://aihot.news/items/dh8lnoo1i3xiq7a12azrnmmwf",
-      "summary": "可灵AI 宣布 Kling 4.0 Flash 现已向所有用户全面开放，可通过 Kling AI 官网和 API 使用。同时支持通过 MCP、CLI 及 AI 插件接入，创作者还可在 Adobe Photoshop、Premiere Pro 和 After Effects 中通过可灵插件调用该模型，体验入口为 klingai.com。 🔗 阅读原文 via AIHOT · https://aihot.news/items/dh8lnoo1i3xiq7a12azrnmmwf",
-      "pub_date": "2026-11-04",
-      "author": "noreply@aihot.news (公众号：可灵AI)",
-      "category": "AI 产品"
     }
   ]
 }

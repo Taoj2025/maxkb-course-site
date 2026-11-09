@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-09T16:33:01.629375+08:00",
-  "total": 26,
+  "updated_at": "2026-11-09T17:03:01.643875+08:00",
+  "total": 25,
   "items": [
     {
       "title": "数字生命卡兹克上线免费 Token 福利聚合网站 Token羊毛",
@@ -202,14 +202,6 @@
       "pub_date": "2026-11-04",
       "author": "noreply@aihot.news (Anthropic：Research)",
       "category": "论文"
-    },
-    {
-      "title": "可灵 Kling 4.0 Flash 全面开放，支持官网、API、MCP 和 Adobe 插件接入",
-      "link": "https://aihot.news/items/dh8lnoo1i3xiq7a12azrnmmwf",
-      "summary": "可灵AI 宣布 Kling 4.0 Flash 现已向所有用户全面开放，可通过 Kling AI 官网和 API 使用。同时支持通过 MCP、CLI 及 AI 插件接入，创作者还可在 Adobe Photoshop、Premiere Pro 和 After Effects 中通过可灵插件调用该模型，体验入口为 klingai.com。 🔗 阅读原文 via AIHOT · https://aihot.news/items/dh8lnoo1i3xiq7a12azrnmmwf",
-      "pub_date": "2026-11-04",
-      "author": "noreply@aihot.news (公众号：可灵AI)",
-      "category": "AI 产品"
     }
   ]
 }
