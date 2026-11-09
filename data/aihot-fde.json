@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-10T03:03:02.330495+08:00",
-  "total": 24,
+  "updated_at": "2026-11-10T03:33:02.249860+08:00",
+  "total": 23,
   "items": [
     {
       "title": "Meta 发布最小最高效模型 Muse Ember，主打智能体高频任务",
@@ -18,6 +18,14 @@
       "pub_date": "2026-11-08",
       "author": "noreply@aihot.news (公众号：数字生命卡兹克)",
       "category": "AI 产品"
+    },
+    {
+      "title": "Anthropic 测试 Claude Fable 5.2 端到端设计三种电子设备并制作可用原型",
+      "link": "https://aihot.news/items/xmqflr9ja0pipwyibtqnf8qsj",
+      "summary": "Anthropic 与 Diode Computers 合作，让 Claude Fable 5.2 从简单提示词出发完成免提音箱、语音助手中枢和电子宠物三种设备的设计，包括 PCB 布局、CAD 建模、固件编写和 DFM 检查，三块电路板直接由工厂按设计文件制造，原型经数周使用仍正常工作。 🔗 阅读原文 via AIHOT · https://aihot.news/items/xmqflr9ja0pipwyibtqnf8qsj",
+      "pub_date": "2026-11-08",
+      "author": "noreply@aihot.news (Anthropic：Research)",
+      "category": "论文"
     },
     {
       "title": "GPT-Image-2.6 实测：10 个 GIF 玩法提示词与三项新能力评测",
@@ -178,22 +186,6 @@
       "pub_date": "2026-11-04",
       "author": "noreply@aihot.news (Figma AI / Agent / Make)",
       "category": "教程"
-    },
-    {
-      "title": "百度发布 ERNIE-5.5-Flash-Base 开源 Base 模型，280B 总参数每 token 激活 14B",
-      "link": "https://aihot.news/items/r3360gkpmqpyyt2ii9cp1k9rz",
-      "summary": "百度文心团队发布 ERNIE-5.5-Flash-Base，在 Hugging Face 开放预训练终点 Base 权重，提供 FP8 与 BF16 两种 safetensors。 🔗 阅读原文 via AIHOT · https://aihot.news/items/r3360gkpmqpyyt2ii9cp1k9rz",
-      "pub_date": "2026-11-04",
-      "author": "noreply@aihot.news (百度文心 ERNIE 官方博客)",
-      "category": "AI 模型"
-    },
-    {
-      "title": "Mistral 扩展 Mistral Studio，配合 Mistral Large 4 (Le Chonk) 构建企业级智能体、工作流和应用",
-      "link": "https://aihot.news/items/ofo4xa4ux02yj9f9lbokmidpr",
-      "summary": "Mistral 宣布扩展 Mistral Studio，新增托管智能体、工作流、应用、企业上下文、可观测性和评估等能力，配合企业模型 Mistral Large 4（Le Chonk），支持云端、VPC 或本地部署并保留对模型与数据的控制。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ofo4xa4ux02yj9f9lbokmidpr",
-      "pub_date": "2026-11-04",
-      "author": "noreply@aihot.news (Mistral AI：News)",
-      "category": "AI 产品"
     }
   ]
 }
