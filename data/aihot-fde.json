@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-09T19:33:02.620869+08:00",
-  "total": 25,
+  "updated_at": "2026-11-09T20:03:02.387444+08:00",
+  "total": 24,
   "items": [
     {
       "title": "数字生命卡兹克上线免费 Token 福利聚合网站 Token羊毛",
@@ -194,14 +194,6 @@
       "pub_date": "2026-11-04",
       "author": "noreply@aihot.news (Preferred Networks：AI 研究与产品)",
       "category": "AI 模型"
-    },
-    {
-      "title": "Anthropic 研究 20.7 万会话中科研人员如何使用 Claude",
-      "link": "https://aihot.news/items/giyl2h74lq7ygv5c7vpxu887m",
-      "summary": "Anthropic 用隐私保护方法分析 2026 年 8 月 2 日至 9 月 30 日的 207,049 个 Claude 与 Claude Code 科研会话，发现科学家主要用于数据分析（占 Claude 会话 33.7%、Claude Code 48.1%）和写作，而构思与数据收集的使用低于其重要性排名。 🔗 阅读原文 via AIHOT · https://aihot.news/items/giyl2h74lq7ygv5c7vpxu887m",
-      "pub_date": "2026-11-04",
-      "author": "noreply@aihot.news (Anthropic：Research)",
-      "category": "论文"
     }
   ]
 }
