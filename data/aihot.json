@@ -1,8 +1,24 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-10T03:33:02.248520+08:00",
+  "updated_at": "2026-11-10T04:03:01.744694+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Claude Fable 5.2 上线 Devin Desktop 和 Devin CLI",
+      "link": "https://aihot.news/items/rth7pxd3xqp2zkd2e1psjgtbl",
+      "summary": "Cognition 宣布 Claude Fable 5.2 现已在 Devin Desktop 和 Devin CLI 中可用。该模型在 FrontierCode 2.0 上以 49.1 分排名第一；相比 Fable 5.1，在低推理力度下以约三分之一的价格超过前代得分。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rth7pxd3xqp2zkd2e1psjgtbl",
+      "pub_date": "2026-11-09",
+      "author": "noreply@aihot.news (Cognition)",
+      "category": "AI 产品"
+    },
+    {
+      "title": "Claude Mythos 5.2 预测基因治疗载体 AAV 衣壳结构",
+      "link": "https://aihot.news/items/rxx1qxfjfuioem95lr868hhwq",
+      "summary": "Claude 官方视频介绍 Claude Mythos 5.2 预测了完整 AAV 衣壳结构，即用于递送基因治疗的蛋白质外壳。模型编写代码在相邻五链分组上运行开源折叠模型，再利用衣壳对称性拼合全部 60 条链；在 AAV2 上预测结果与实验结构误差约为一个原子宽度。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rxx1qxfjfuioem95lr868hhwq",
+      "pub_date": "2026-11-09",
+      "author": "noreply@aihot.news (Claude：YouTube)",
+      "category": "AI 模型"
+    },
     {
       "title": "Redwood Research 分析 OpenAI Astra 在安全任务上的隐性消极表现",
       "link": "https://aihot.news/items/saq4lh2i3ewct7cxvvh1h77jo",
@@ -386,22 +402,6 @@
       "pub_date": "2026-11-04",
       "author": "noreply@aihot.news (OpenAI)",
       "category": "论文"
-    },
-    {
-      "title": "Figma code layers 开放测试：在画布上用代码层和 Figma agent 协作探索设计",
-      "link": "https://aihot.news/items/xm8frob53vrd652eafjfg4o1c",
-      "summary": "Figma 宣布 code layers 进入面向 100% 用户的 open beta，团队可在画布上直接创建和编辑基于代码的交互原型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/xm8frob53vrd652eafjfg4o1c",
-      "pub_date": "2026-11-04",
-      "author": "noreply@aihot.news (Figma AI / Agent / Make)",
-      "category": "教程"
-    },
-    {
-      "title": "美国中期选举后 AI 数据中心遭重挫，Big Tech 称反 AI 浪潮实为反特朗普",
-      "link": "https://aihot.news/items/ueakbz7ghxdsqffsw67d61y7j",
-      "summary": "美国中期选举中选民大幅支持限制 AI 与数据中心的候选人和措施，Redbud Consulting 统计 10 个州 44 项限制数据中心的措施中 38 项通过；Gina Hinojosa 赢下德州州长选举，约 13GW 数据中心容量面临延期风险，Axios 估计近三分之二的 2028 年数据中心容量可能受到类似拖延。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ueakbz7ghxdsqffsw67d61y7j",
-      "pub_date": "2026-11-04",
-      "author": "noreply@aihot.news (Ars Technica：AI)",
-      "category": "行业动态"
     }
   ]
 }

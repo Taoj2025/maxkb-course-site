@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-10T03:33:02.249860+08:00",
-  "total": 23,
+  "updated_at": "2026-11-10T04:03:01.745631+08:00",
+  "total": 22,
   "items": [
     {
       "title": "Meta 发布最小最高效模型 Muse Ember，主打智能体高频任务",
@@ -178,14 +178,6 @@
       "pub_date": "2026-11-04",
       "author": "noreply@aihot.news (OpenAI)",
       "category": "论文"
-    },
-    {
-      "title": "Figma code layers 开放测试：在画布上用代码层和 Figma agent 协作探索设计",
-      "link": "https://aihot.news/items/xm8frob53vrd652eafjfg4o1c",
-      "summary": "Figma 宣布 code layers 进入面向 100% 用户的 open beta，团队可在画布上直接创建和编辑基于代码的交互原型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/xm8frob53vrd652eafjfg4o1c",
-      "pub_date": "2026-11-04",
-      "author": "noreply@aihot.news (Figma AI / Agent / Make)",
-      "category": "教程"
     }
   ]
 }
