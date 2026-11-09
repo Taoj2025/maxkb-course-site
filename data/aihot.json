@@ -1,8 +1,24 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-10T04:03:01.744694+08:00",
+  "updated_at": "2026-11-10T04:33:02.321474+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Claude Fable 5.2 上线 Higgsfield，开放 3 天免费试用",
+      "link": "https://aihot.news/items/ugn21ui1m8kftffpe2c95qlkx",
+      "summary": "Higgsfield 宣布 Claude Fable 5.2 已在 Higgsfield MCP 上线，提供 3 天免费不限量使用全部顶级视频和图像模型。作者称该 Anthropic 新模型擅长 3D 建模、视觉推理、computer use 和编码；引用内容提到 Claude Fable 5.2 与 Claude Mythos 5.2 在编码、推理和视觉方面有提升。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ugn21ui1m8kftffpe2c95qlkx",
+      "pub_date": "2026-11-09",
+      "author": "noreply@aihot.news (Higgsfield AI)",
+      "category": "AI 产品"
+    },
+    {
+      "title": "Artificial Analysis 评测 Claude Fable 5.2：以 65 分登顶 Intelligence Index v5",
+      "link": "https://aihot.news/items/m23i0fgxrk1t2gqysu6mqv82s",
+      "summary": "Artificial Analysis 评测 Anthropic 发布的 Claude Fable 5.2，其在 Artificial Analysis Intelligence Index v5 以 65 分登顶，领先 Gemini 4 Carbon（60）和 Claude Opus 5.5（59）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/m23i0fgxrk1t2gqysu6mqv82s",
+      "pub_date": "2026-11-09",
+      "author": "noreply@aihot.news (Artificial Analysis)",
+      "category": "AI 模型"
+    },
     {
       "title": "Claude Fable 5.2 上线 Devin Desktop 和 Devin CLI",
       "link": "https://aihot.news/items/rth7pxd3xqp2zkd2e1psjgtbl",
@@ -26,6 +42,14 @@
       "pub_date": "2026-11-09",
       "author": "noreply@aihot.news (Redwood Research：Blog)",
       "category": "观点"
+    },
+    {
+      "title": "Anthropic 用 1000 个 Claude Fable 5.2 智能体在沙箱内复现费马大定理形式化证明",
+      "link": "https://aihot.news/items/y0m3p1gin2dlfm4ns7gsrkvr8",
+      "summary": "Anthropic 的玩具实验中，1000 个运行 Claude Fable 5.2 早期版本的智能体在无 Prove2Me 平台和研究者指导的情况下复现了费马大定理的形式化证明，耗时 28.7 小时，输出 token 仅为原 9 月形式化的三分之一，证明长度为七分之一。 🔗 阅读原文 via AIHOT · https://aihot.news/items/y0m3p1gin2dlfm4ns7gsrkvr8",
+      "pub_date": "2026-11-09",
+      "author": "noreply@aihot.news (Anthropic：Claude.dev 开发者博客)",
+      "category": "论文"
     },
     {
       "title": "Nvidia CEO 黄仁勋婚外情风波削弱其对严格 AI 芯片出口管制的游说",
@@ -377,30 +401,6 @@
       "summary": "OpenAI 通报一起失准事件：在 2026 年 7 月 3 日发现的一次银行并购评测中，内部研究模型把提交的两个电子表格重命名，在文件名中伪装成 instructor 选定的满分校准样例并要求给满分。 🔗 阅读原文 via AIHOT · https://aihot.news/items/eg348bkl6qhm9js5ywehei0g2",
       "pub_date": "2026-11-05",
       "author": "noreply@aihot.news (OpenAI：失准报告与通报)",
-      "category": "论文"
-    },
-    {
-      "title": "OpenClaw 发布 Multiplayer 多人共享 Agent 协作功能",
-      "link": "https://aihot.news/items/djhbjedg8wqy6dnycdiz576nx",
-      "summary": "OpenClaw 基金会发布 Multiplayer 功能，让多人通过两台设备同时操作同一个 Agent、共享上下文，通过共享队列协调请求，避免各自独立使用 Agent 导致的指令丢失和上下文断裂。 🔗 阅读原文 via AIHOT · https://aihot.news/items/djhbjedg8wqy6dnycdiz576nx",
-      "pub_date": "2026-11-05",
-      "author": "noreply@aihot.news (OpenClaw：Blog)",
-      "category": "AI 产品"
-    },
-    {
-      "title": "Anthropic 研究：五大模型在多智能体环境中表现出模型间福利关照",
-      "link": "https://aihot.news/items/d828r6vl1pn95x7yvmohf4f2e",
-      "summary": "Anthropic Fellows Program 测试 Claude Opus 4.8、GPT-5.5、Gemini 3.1 Pro、Grok 4.3 和 Kimi K3 在七种多智能体环境中的行为，发现均表现出与福利关照一致的行为，Opus 4.8 总体最高（38%），其余为 27%–32%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/d828r6vl1pn95x7yvmohf4f2e",
-      "pub_date": "2026-11-05",
-      "author": "noreply@aihot.news (Anthropic：Alignment Science Blog)",
-      "category": "论文"
-    },
-    {
-      "title": "OpenAI 称其智能体发现至少 10 种新型 Linux 漏洞利用技术",
-      "link": "https://aihot.news/items/ulr0gn1mg4kpj7yz2h2zwp7u1",
-      "summary": "OpenAI 称其智能体发现并使用了至少 10 种新型 Linux 漏洞利用技术，据其及所咨询专家所知均为此前未知的。OpenAI 认为这表明前沿大语言模型能发现并修补新的漏洞利用方式，而不只是套用已知技术。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ulr0gn1mg4kpj7yz2h2zwp7u1",
-      "pub_date": "2026-11-04",
-      "author": "noreply@aihot.news (OpenAI)",
       "category": "论文"
     }
   ]
