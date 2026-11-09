@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-09T17:03:01.643001+08:00",
+  "updated_at": "2026-11-09T17:33:01.881116+08:00",
   "total": 50,
   "items": [
     {
@@ -26,6 +26,14 @@
       "pub_date": "2026-11-08",
       "author": "noreply@aihot.news (Rohan Paul)",
       "category": "行业动态"
+    },
+    {
+      "title": "字节发布 Seedream 5.5 图像创作模型：支持 100 轮编辑与原生 RGBA 透明输出",
+      "link": "https://aihot.news/items/xsvt2hlwuovul9sdvazcw7cxk",
+      "summary": "字节 Seed 发布新一代图像创作模型 Seedream 5.5，带来三项升级：非编辑区域像素级保持、支持围绕同一作品多达 100 轮连续编辑；新增原生 RGBA 透明素材生成，直接输出带 Alpha 通道的图像，省去抠图；改善光照材质与皮肤纹理表现，并显著提升文字渲染能力。 🔗 阅读原文 via AIHOT · https://aihot.news/items/xsvt2hlwuovul9sdvazcw7cxk",
+      "pub_date": "2026-11-08",
+      "author": "noreply@aihot.news (字节 Seed：Research Feed)",
+      "category": "AI 模型"
     },
     {
       "title": "百度发布 ERNIE Evolve 自动研究系统，公开任务超最好纪录并落地 ERNIE-5.5-Flash 推理优化",
@@ -393,14 +401,6 @@
       "summary": "Anthropic 用隐私保护方法分析 2026 年 8 月 2 日至 9 月 30 日的 207,049 个 Claude 与 Claude Code 科研会话，发现科学家主要用于数据分析（占 Claude 会话 33.7%、Claude Code 48.1%）和写作，而构思与数据收集的使用低于其重要性排名。 🔗 阅读原文 via AIHOT · https://aihot.news/items/giyl2h74lq7ygv5c7vpxu887m",
       "pub_date": "2026-11-04",
       "author": "noreply@aihot.news (Anthropic：Research)",
-      "category": "论文"
-    },
-    {
-      "title": "Goodfire 提出 mechanistic shaping 框架 用内部表征抑制模型走捷径",
-      "link": "https://aihot.news/items/d9a7dr6n3w0nh5p2facdqqguu",
-      "summary": "Goodfire Research 发布论文提出 mechanistic shaping 框架，通过 reliance shaping 和 expression shaping 在训练中惩罚模型对特定内部概念的依赖或表达，使模型以正确方式解题而非仅答对。 🔗 阅读原文 via AIHOT · https://aihot.news/items/d9a7dr6n3w0nh5p2facdqqguu",
-      "pub_date": "2026-11-04",
-      "author": "noreply@aihot.news (Goodfire Research)",
       "category": "论文"
     }
   ]
