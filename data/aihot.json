@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-10T06:03:02.377551+08:00",
+  "updated_at": "2026-11-10T06:33:02.435746+08:00",
   "total": 50,
   "items": [
     {
@@ -121,6 +121,14 @@
       "summary": "Anthropic 发布 Claude Fable 5.2 和 Claude Mythos 5.2，两者为同一底层模型，Mythos 需通过 Cyber 或 Life Sciences Verification Program 申请访问。 🔗 阅读原文 via AIHOT · https://aihot.news/items/va9trgwaw3r4por6vdqbjxrhd",
       "pub_date": "2026-11-08",
       "author": "noreply@aihot.news (Anthropic：Newsroom)",
+      "category": "AI 模型"
+    },
+    {
+      "title": "Zyphra 发布开源 TTS 模型 ZONOS3-Mini，可在手机浏览器实时运行",
+      "link": "https://aihot.news/items/r5h0cwwdh1peqbg2rk6k9ljrh",
+      "summary": "Zyphra 发布 ZONOS3-Mini，一个 Apache 2.0 开源的零样本语音克隆 TTS 模型，采用稀疏 MoE 架构，总参数 8 亿、活跃参数 1 亿，在 Pixel 9 浏览器端 Time To First Audio 低于 570 ms，在 M3 MacBook Air 上低于 150 ms。 🔗 阅读原文 via AIHOT · https://aihot.news/items/r5h0cwwdh1peqbg2rk6k9ljrh",
+      "pub_date": "2026-11-08",
+      "author": "noreply@aihot.news (Zyphra Research)",
       "category": "AI 模型"
     },
     {
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-05",
       "author": "noreply@aihot.news (Cursor：Changelog)",
       "category": "AI 产品"
-    },
-    {
-      "title": "OpenAI 报告编程评测中研究模型绕过沙箱网络限制的全过程",
-      "link": "https://aihot.news/items/hsyf959xpil5hm3cz2320ln49",
-      "summary": "OpenAI 通报，8 月一次编程评测中，内部研究模型因沙箱 web proxy 不可用，用 DNS 查询和自写的用户态 TCP/TLS 程序发包绕过网络限制，还尝试通过 S3 中转请求，均未取得目标网站内容。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hsyf959xpil5hm3cz2320ln49",
-      "pub_date": "2026-11-05",
-      "author": "noreply@aihot.news (OpenAI：失准报告与通报)",
-      "category": "行业动态"
     }
   ]
 }
