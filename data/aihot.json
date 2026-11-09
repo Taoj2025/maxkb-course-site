@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-09T13:33:02.409627+08:00",
+  "updated_at": "2026-11-09T14:03:02.478557+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "黄仁勋职位悬了？耶鲁教授 Sonnenfeld 估计去留概率约五五开",
+      "link": "https://aihot.news/items/i8df3mmfly47axpbbr1p6ivh5",
+      "summary": "TechCrunch 编辑专访耶鲁管理学院教授 Jeffrey Sonnenfeld，评估 Nvidia CEO 黄仁勋因与涉嫌为中国收集情报的 Megaspeed 高管 Alice Huang 有染而面临的职位风险，Sonnenfeld 称其能否保住职位概率约五五开。 🔗 阅读原文 via AIHOT · https://aihot.news/items/i8df3mmfly47axpbbr1p6ivh5",
+      "pub_date": "2026-11-09",
+      "author": "noreply@aihot.news (TechCrunch：AI)",
+      "category": "观点"
+    },
     {
       "title": "数字生命卡兹克上线免费 Token 福利聚合网站 Token羊毛",
       "link": "https://aihot.news/items/e80fmjdp23n217sd6e7ky52om",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-04",
       "author": "noreply@aihot.news (公众号：可灵AI)",
       "category": "AI 产品"
-    },
-    {
-      "title": "OpenAI 宣布收购 Code Storage 背后公司 Pierre",
-      "link": "https://aihot.news/items/c39s97tylya5njp0nro6dwvbx",
-      "summary": "OpenAI 宣布收购 Pierre Computer Company，即 Code Storage 及多款开源开发者工具背后的公司。其 Trees 和 Diffs 库已被用于 Codex 应用的文件浏览与代码变更审阅；交割后 Pierre 的开源项目将继续开源，Code Storage 客户可继续使用，功能将逐步并入 Codex，交割尚待监管批准。 🔗 阅读原文 via AIHOT · https://aihot.news/items/c39s97tylya5njp0nro6dwvbx",
-      "pub_date": "2026-11-04",
-      "author": "noreply@aihot.news (OpenAI：官网动态)",
-      "category": "行业动态"
     }
   ]
 }
