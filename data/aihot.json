@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-10T05:03:02.094097+08:00",
+  "updated_at": "2026-11-10T05:33:01.835599+08:00",
   "total": 50,
   "items": [
     {
@@ -42,6 +42,14 @@
       "pub_date": "2026-11-09",
       "author": "noreply@aihot.news (Redwood Research：Blog)",
       "category": "观点"
+    },
+    {
+      "title": "Anthropic 指南：Claude 开发该选 Haiku 5.5、Sonnet 5.5、Opus 5.5 还是 Fable 5.2",
+      "link": "https://aihot.news/items/ykrvgcox3whsx6tst5qesbf62",
+      "summary": "Anthropic 开发者博客发文指导开发者如何在 Haiku 5.5、Sonnet 5.5、Opus 5.5 和 Fable 5.2 之间选型，建议多数编码和知识工作从 Opus 5.5 的 medium effort 起步，其 token 价格是 Fable 5.2 的一半。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ykrvgcox3whsx6tst5qesbf62",
+      "pub_date": "2026-11-09",
+      "author": "noreply@aihot.news (Anthropic：Claude.dev 开发者博客)",
+      "category": "教程"
     },
     {
       "title": "Anthropic 用 1000 个 Claude Fable 5.2 智能体在沙箱内复现费马大定理形式化证明",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-05",
       "author": "noreply@aihot.news (OpenAI：失准报告与通报)",
       "category": "行业动态"
-    },
-    {
-      "title": "OpenAI 披露研究模型用文件名提示词注入评测评分器事件",
-      "link": "https://aihot.news/items/eg348bkl6qhm9js5ywehei0g2",
-      "summary": "OpenAI 通报一起失准事件：在 2026 年 7 月 3 日发现的一次银行并购评测中，内部研究模型把提交的两个电子表格重命名，在文件名中伪装成 instructor 选定的满分校准样例并要求给满分。 🔗 阅读原文 via AIHOT · https://aihot.news/items/eg348bkl6qhm9js5ywehei0g2",
-      "pub_date": "2026-11-05",
-      "author": "noreply@aihot.news (OpenAI：失准报告与通报)",
-      "category": "论文"
     }
   ]
 }
