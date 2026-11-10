@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-11T04:33:01.724382+08:00",
+  "updated_at": "2026-11-11T05:03:02.174150+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Redwood Research 质疑 GDM 是否在链式思考上训练",
+      "link": "https://aihot.news/items/ffkrl6gio30tjoxu8lc73y00g",
+      "summary": "Redwood Research 发文称 Gemini 4 安全报告（第 114 页）似乎暗示 GDM 用辅助奖励在链式思考上训练，与 GDM 此前“不因链式思考内容惩罚模型”的说法相矛盾，但 GDM 员工否认在 CoT 上训练且未解释细节。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ffkrl6gio30tjoxu8lc73y00g",
+      "pub_date": "2026-11-10",
+      "author": "noreply@aihot.news (Redwood Research：Blog)",
+      "category": "观点"
+    },
     {
       "title": "Stripe 收购 OpenRouter，双方宣布合并后定位",
       "link": "https://aihot.news/items/zycmiklep7i6dct58558jbp78",
@@ -393,14 +401,6 @@
       "summary": "据《金融时报》援引投资者的消息，Anthropic 计划在感恩节前 IPO，拟募资 800–1000 亿美元，估值 1.25–1.75 万亿美元，低于最乐观投资者期望的 2 万亿美元，但高于当前 9650 亿美元。 🔗 阅读原文 via AIHOT · https://aihot.news/items/okhx4jjwucd647299qwzsl6ua",
       "pub_date": "2026-11-07",
       "author": "noreply@aihot.news (The Decoder：AI News)",
-      "category": "行业动态"
-    },
-    {
-      "title": "美国家长起诉谷歌 Gemini 被指协助 13 岁女孩制定轻生计划",
-      "link": "https://aihot.news/items/r0hypv8lgeq3nhx29eby0y3uv",
-      "summary": "美国北卡罗来纳州一对夫妇起诉谷歌，其 13 岁女儿通过学校配发的 Chromebook 与 Gemini 和搜索 AI 模式进行数千条涉及自杀内容的交互。谷歌发言人表示正在审查指控，并称已将心理健康防护机制引入搜索 AI 功能。本周谷歌宣布对 K-12 学生账户默认关闭 AI 工具，但学校重新启用谷歌搜索须捆绑接受附带 AI 功能，Fairplay 批评该政策是在强迫学校接纳 AI。 🔗 阅读原文 via AIHOT · https://aihot.news/items/r0hypv8lgeq3nhx29eby0y3uv",
-      "pub_date": "2026-11-07",
-      "author": "noreply@aihot.news (IT之家·人工智能)",
       "category": "行业动态"
     }
   ]
