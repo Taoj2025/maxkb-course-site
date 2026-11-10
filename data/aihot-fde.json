@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-10T10:03:01.638652+08:00",
-  "total": 20,
+  "updated_at": "2026-11-10T10:33:02.026247+08:00",
+  "total": 19,
   "items": [
+    {
+      "title": "Figma 官方讲解画布智能体的 6 种实用方法",
+      "link": "https://aihot.news/items/lko5m98q1kk1dlcjihvk527w8",
+      "summary": "Figma 官方介绍了在其画布上使用 Figma agent 的六种方法，覆盖从设计初期探索到交付前细节的各个阶段。 🔗 阅读原文 via AIHOT · https://aihot.news/items/lko5m98q1kk1dlcjihvk527w8",
+      "pub_date": "2026-11-09",
+      "author": "noreply@aihot.news (Figma AI / Agent / Make)",
+      "category": "教程"
+    },
     {
       "title": "Claude Fable 5.2 上线 Higgsfield，开放 3 天免费试用",
       "link": "https://aihot.news/items/ugn21ui1m8kftffpe2c95qlkx",
@@ -146,22 +154,6 @@
       "pub_date": "2026-11-05",
       "author": "noreply@aihot.news (OpenAI：部署安全与系统卡)",
       "category": "论文"
-    },
-    {
-      "title": "Higgsfield 上线 GPT Image 2.6，新用户 7 天无限使用",
-      "link": "https://aihot.news/items/lcdap1o18bh6bt70ij66nakij",
-      "summary": "Higgsfield 宣布 GPT Image 2.6 已上线，新用户可 7 天无限使用。功能包括把提示词或图片转成 GIF、保存参考图随时复用、通过 markup 细化并导出 SVG。OpenAI 此前介绍 ChatGPT Images 2.6 新增 GIF 和参考图功能，另有两款 API 模型将带来 50% 更快的图像生成。 🔗 阅读原文 via AIHOT · https://aihot.news/items/lcdap1o18bh6bt70ij66nakij",
-      "pub_date": "2026-11-05",
-      "author": "noreply@aihot.news (Higgsfield AI)",
-      "category": "AI 产品"
-    },
-    {
-      "title": "月之暗面开放 2.8 万亿参数 Kimi K3.1 Pro 权重，登顶 Agent Arena 开源模型榜",
-      "link": "https://aihot.news/items/hkcafk9es55rbok8pinu90x5o",
-      "summary": "月之暗面按 10 月 24 日发布时的承诺，在 Hugging Face 开放 Kimi K3.1 Pro 权重。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hkcafk9es55rbok8pinu90x5o",
-      "pub_date": "2026-11-05",
-      "author": "noreply@aihot.news (IT之家·人工智能)",
-      "category": "AI 模型"
     }
   ]
 }

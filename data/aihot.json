@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-10T10:03:01.637740+08:00",
+  "updated_at": "2026-11-10T10:33:02.025356+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "据报道 Anthropic 推进 IPO，计划下周四或周五挂牌",
+      "link": "https://aihot.news/items/d4f8o2c9r7r8b7fsdqnpev3eu",
+      "summary": "据 The Wall Street Journal 报道，Anthropic 将在本周设定估值区间，计划下周四或周五开始交易。部分机构投资者正推动估值低于上周讨论的 1.5 万亿美元目标，该数字已低于几个月前传闻的 2 万亿美元。报道还提到其主要竞争对手 OpenAI 上周融资 110 亿美元后估值约为 1.25 万亿美元，低于其最初寻求的 200 亿美元融资规模。 🔗 阅读原文 via AIHOT · https://aihot.news/items/d4f8o2c9r7r8b7fsdqnpev3eu",
+      "pub_date": "2026-11-10",
+      "author": "noreply@aihot.news (TechCrunch：AI)",
+      "category": "行业动态"
+    },
     {
       "title": "The Verge 梳理黄仁勋与 Megaspeed 高管丑闻对 Nvidia 出口管制游说的影响",
       "link": "https://aihot.news/items/kci32x4hgxrdl0v5o4xrjlxri",
@@ -26,6 +34,14 @@
       "pub_date": "2026-11-09",
       "author": "noreply@aihot.news (TechCrunch：AI)",
       "category": "行业动态"
+    },
+    {
+      "title": "Figma 官方讲解画布智能体的 6 种实用方法",
+      "link": "https://aihot.news/items/lko5m98q1kk1dlcjihvk527w8",
+      "summary": "Figma 官方介绍了在其画布上使用 Figma agent 的六种方法，覆盖从设计初期探索到交付前细节的各个阶段。 🔗 阅读原文 via AIHOT · https://aihot.news/items/lko5m98q1kk1dlcjihvk527w8",
+      "pub_date": "2026-11-09",
+      "author": "noreply@aihot.news (Figma AI / Agent / Make)",
+      "category": "教程"
     },
     {
       "title": "Claude Fable 5.2 上线 Higgsfield，开放 3 天免费试用",
@@ -385,22 +401,6 @@
       "summary": "Thinking Machines Lab 发布第二代模型 Inkling 2 Small，为 594B 总参数、17B 激活的 MoE 模型，支持图像输入与 variable effort，Artificial Analysis Intelligence Index 得分 31。 🔗 阅读原文 via AIHOT · https://aihot.news/items/bu8612ca3e1uyxjppk56ef1wl",
       "pub_date": "2026-11-05",
       "author": "noreply@aihot.news (Thinking Machines Lab：News)",
-      "category": "AI 模型"
-    },
-    {
-      "title": "Higgsfield 上线 GPT Image 2.6，新用户 7 天无限使用",
-      "link": "https://aihot.news/items/lcdap1o18bh6bt70ij66nakij",
-      "summary": "Higgsfield 宣布 GPT Image 2.6 已上线，新用户可 7 天无限使用。功能包括把提示词或图片转成 GIF、保存参考图随时复用、通过 markup 细化并导出 SVG。OpenAI 此前介绍 ChatGPT Images 2.6 新增 GIF 和参考图功能，另有两款 API 模型将带来 50% 更快的图像生成。 🔗 阅读原文 via AIHOT · https://aihot.news/items/lcdap1o18bh6bt70ij66nakij",
-      "pub_date": "2026-11-05",
-      "author": "noreply@aihot.news (Higgsfield AI)",
-      "category": "AI 产品"
-    },
-    {
-      "title": "月之暗面开放 2.8 万亿参数 Kimi K3.1 Pro 权重，登顶 Agent Arena 开源模型榜",
-      "link": "https://aihot.news/items/hkcafk9es55rbok8pinu90x5o",
-      "summary": "月之暗面按 10 月 24 日发布时的承诺，在 Hugging Face 开放 Kimi K3.1 Pro 权重。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hkcafk9es55rbok8pinu90x5o",
-      "pub_date": "2026-11-05",
-      "author": "noreply@aihot.news (IT之家·人工智能)",
       "category": "AI 模型"
     }
   ]
