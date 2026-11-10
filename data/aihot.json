@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-11T05:03:02.174150+08:00",
+  "updated_at": "2026-11-11T05:33:01.756802+08:00",
   "total": 50,
   "items": [
     {
@@ -204,6 +204,14 @@
       "category": "教程"
     },
     {
+      "title": "Simon Willison 更新 llm-anthropic 0.31 支持 Anthropic 新模型 Fable 5.2 与 Mythos 5.2",
+      "link": "https://aihot.news/items/lfw4cc14h85i07c00tah6pc90",
+      "summary": "Simon Willison 发布 llm-anthropic 0.31，纳入 Anthropic 当日发布的 Fable 5.2 和 Mythos 5.2，并给出安装和调用命令。 🔗 阅读原文 via AIHOT · https://aihot.news/items/lfw4cc14h85i07c00tah6pc90",
+      "pub_date": "2026-11-09",
+      "author": "noreply@aihot.news (Simon Willison 博客)",
+      "category": "AI 产品"
+    },
+    {
       "title": "The Verge 梳理黄仁勋与 Megaspeed 高管丑闻对 Nvidia 出口管制游说的影响",
       "link": "https://aihot.news/items/kci32x4hgxrdl0v5o4xrjlxri",
       "summary": "The Verge 依据《纽约时报》等报道梳理 Nvidia CEO 黄仁勋与新加坡云服务商 Megaspeed 高管 Alice Huang 的婚外情风波。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kci32x4hgxrdl0v5o4xrjlxri",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-08",
       "author": "noreply@aihot.news (卡尔的 AI 沃茨)",
       "category": "教程"
-    },
-    {
-      "title": "Anthropic 拟感恩节前 IPO，接受低于预期的估值，募资 800–1000 亿美元",
-      "link": "https://aihot.news/items/okhx4jjwucd647299qwzsl6ua",
-      "summary": "据《金融时报》援引投资者的消息，Anthropic 计划在感恩节前 IPO，拟募资 800–1000 亿美元，估值 1.25–1.75 万亿美元，低于最乐观投资者期望的 2 万亿美元，但高于当前 9650 亿美元。 🔗 阅读原文 via AIHOT · https://aihot.news/items/okhx4jjwucd647299qwzsl6ua",
-      "pub_date": "2026-11-07",
-      "author": "noreply@aihot.news (The Decoder：AI News)",
-      "category": "行业动态"
     }
   ]
 }
