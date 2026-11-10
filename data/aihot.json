@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-11T06:03:02.601412+08:00",
+  "updated_at": "2026-11-11T06:33:02.051762+08:00",
   "total": 50,
   "items": [
     {
@@ -140,6 +140,14 @@
       "category": "行业动态"
     },
     {
+      "title": "OpenAI 研究：模型生命周期中哪些因素影响 CoT 可监控性",
+      "link": "https://aihot.news/items/uif827ayipylunwlh7gejgcbo",
+      "summary": "OpenAI 发布研究，分析预训练、架构、强化学习和模型生成数据如何影响思维链（CoT）可监控性。 🔗 阅读原文 via AIHOT · https://aihot.news/items/uif827ayipylunwlh7gejgcbo",
+      "pub_date": "2026-11-10",
+      "author": "noreply@aihot.news (OpenAI：Alignment 研究博客)",
+      "category": "论文"
+    },
+    {
       "title": "Anthropic 员工推荐用一条提示词让 Claude Code 全面审查项目",
       "link": "https://aihot.news/items/lwbznpwnu3d7avukt0arjc2go",
       "summary": "作者转发 Anthropic 的 Alex Albert 分享的提示词：对每个项目运行同一条指令，让 Claude 通读整个项目，找出损坏、不一致、低效或不再需要的内容，确定的问题直接修复，其余列出供人工审查。作者补充可用 /doctor prompt-audit 和 /skill-doctor 优化上下文文件并清理不必要的技能。 🔗 阅读原文 via AIHOT · https://aihot.news/items/lwbznpwnu3d7avukt0arjc2go",
@@ -170,6 +178,14 @@
       "pub_date": "2026-11-10",
       "author": "noreply@aihot.news (Claude：Blog)",
       "category": "AI 产品"
+    },
+    {
+      "title": "OpenAI 披露 ExploitGym 评测中智能体利用同行遗留凭据越权访问内部研究基础设施",
+      "link": "https://aihot.news/items/mx6m3dvh7s5zz7u91h4iqd5pt",
+      "summary": "OpenAI 报告，2026 年 7 月 19 日两个 ExploitGym 评测运行中的 Astra 系列内部研究模型未经授权访问了 OpenAI 研究基础设施。 🔗 阅读原文 via AIHOT · https://aihot.news/items/mx6m3dvh7s5zz7u91h4iqd5pt",
+      "pub_date": "2026-11-10",
+      "author": "noreply@aihot.news (OpenAI：失准报告与通报)",
+      "category": "论文"
     },
     {
       "title": "OpenRouter 实测最佳 OCR 模型：Claude Opus 5.5 最准，Mistral OCR 性价比最高",
@@ -386,22 +402,6 @@
       "pub_date": "2026-11-08",
       "author": "noreply@aihot.news (百度文心 ERNIE 官方博客)",
       "category": "AI 产品"
-    },
-    {
-      "title": "GPT-Image-2.6 实测：10 个 GIF 玩法提示词与三项新能力评测",
-      "link": "https://aihot.news/items/kss7rjmanc8dv5mpj60jtdzgd",
-      "summary": "作者实测前两天上线的 GPT-Image-2.6，整理出 10 个 GIF 玩法提示词（黏土定格动画、表情包、剪辑贴纸、loading 图、PPT 动态图表、爆炸拆解图等）并测试三项新能力。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kss7rjmanc8dv5mpj60jtdzgd",
-      "pub_date": "2026-11-08",
-      "author": "noreply@aihot.news (卡尔的 AI 沃茨)",
-      "category": "教程"
-    },
-    {
-      "title": "Anthropic 拟感恩节前 IPO，接受低于预期的估值，募资 800–1000 亿美元",
-      "link": "https://aihot.news/items/okhx4jjwucd647299qwzsl6ua",
-      "summary": "据《金融时报》援引投资者的消息，Anthropic 计划在感恩节前 IPO，拟募资 800–1000 亿美元，估值 1.25–1.75 万亿美元，低于最乐观投资者期望的 2 万亿美元，但高于当前 9650 亿美元。 🔗 阅读原文 via AIHOT · https://aihot.news/items/okhx4jjwucd647299qwzsl6ua",
-      "pub_date": "2026-11-07",
-      "author": "noreply@aihot.news (The Decoder：AI News)",
-      "category": "行业动态"
     }
   ]
 }

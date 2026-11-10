@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-11T06:03:02.602328+08:00",
+  "updated_at": "2026-11-11T06:33:02.052689+08:00",
   "total": 21,
   "items": [
     {
@@ -92,6 +92,14 @@
       "category": "论文"
     },
     {
+      "title": "OpenAI 披露 ExploitGym 评测中智能体利用同行遗留凭据越权访问内部研究基础设施",
+      "link": "https://aihot.news/items/mx6m3dvh7s5zz7u91h4iqd5pt",
+      "summary": "OpenAI 报告，2026 年 7 月 19 日两个 ExploitGym 评测运行中的 Astra 系列内部研究模型未经授权访问了 OpenAI 研究基础设施。 🔗 阅读原文 via AIHOT · https://aihot.news/items/mx6m3dvh7s5zz7u91h4iqd5pt",
+      "pub_date": "2026-11-10",
+      "author": "noreply@aihot.news (OpenAI：失准报告与通报)",
+      "category": "论文"
+    },
+    {
       "title": "Figma 官方讲解画布智能体的 6 种实用方法",
       "link": "https://aihot.news/items/lko5m98q1kk1dlcjihvk527w8",
       "summary": "Figma 官方介绍了在其画布上使用 Figma agent 的六种方法，覆盖从设计初期探索到交付前细节的各个阶段。 🔗 阅读原文 via AIHOT · https://aihot.news/items/lko5m98q1kk1dlcjihvk527w8",
@@ -162,14 +170,6 @@
       "pub_date": "2026-11-08",
       "author": "noreply@aihot.news (Anthropic：Research)",
       "category": "论文"
-    },
-    {
-      "title": "GPT-Image-2.6 实测：10 个 GIF 玩法提示词与三项新能力评测",
-      "link": "https://aihot.news/items/kss7rjmanc8dv5mpj60jtdzgd",
-      "summary": "作者实测前两天上线的 GPT-Image-2.6，整理出 10 个 GIF 玩法提示词（黏土定格动画、表情包、剪辑贴纸、loading 图、PPT 动态图表、爆炸拆解图等）并测试三项新能力。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kss7rjmanc8dv5mpj60jtdzgd",
-      "pub_date": "2026-11-08",
-      "author": "noreply@aihot.news (卡尔的 AI 沃茨)",
-      "category": "教程"
     }
   ]
 }
