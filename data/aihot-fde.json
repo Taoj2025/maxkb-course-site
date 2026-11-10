@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-10T23:03:02.307612+08:00",
+  "updated_at": "2026-11-10T23:33:01.619355+08:00",
   "total": 19,
   "items": [
+    {
+      "title": "Gary Marcus 质疑 Anthropic 1.4 万亿美元 IPO 估值",
+      "link": "https://aihot.news/items/yshr81morbvxs39fq2y2rw6rg",
+      "summary": "Gary Marcus 评论 Anthropic 拟以最高 1.4 万亿美元估值 IPO，称该公司除一个异常季度外从未盈利，未来负债接近 9000 亿美元。他引用 Q2 环比增长 147% 而 Q3 降至 47% 的数据，认为 tokenmaxxing 退潮与中国竞品崛起使万亿估值失去依据，并援引 S-1 中公司自认成本将上升、收入增速难以为继的表述。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yshr81morbvxs39fq2y2rw6rg",
+      "pub_date": "2026-11-10",
+      "author": "noreply@aihot.news (Gary Marcus：The Road to AI We Can Trust)",
+      "category": "观点"
+    },
     {
       "title": "MiniMax 发布 H3-Image 图像模型并开源权重",
       "link": "https://aihot.news/items/vyecfuqv7rgzuzbws86f78wvh",
@@ -146,14 +154,6 @@
       "pub_date": "2026-11-06",
       "author": "noreply@aihot.news (OpenClaw：Blog)",
       "category": "教程"
-    },
-    {
-      "title": "Perplexity 推出 Teammates 智能体，面向 Max 订阅用户开放",
-      "link": "https://aihot.news/items/wkgcal7l9pkj3g7w8ohlp3c45",
-      "summary": "Perplexity 推出 Teammates 功能，这些智能体可承接任务，利用 Computer tasks、skills、memory 和工具主动工作。Teammates 之间可相互协作，还能在 Slack 中给同事发消息，目前已向 Max 订阅用户开放网页版。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wkgcal7l9pkj3g7w8ohlp3c45",
-      "pub_date": "2026-11-05",
-      "author": "noreply@aihot.news (Perplexity)",
-      "category": "AI 产品"
     }
   ]
 }
