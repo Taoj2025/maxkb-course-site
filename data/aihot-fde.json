@@ -1,8 +1,24 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-10T22:03:01.963303+08:00",
+  "updated_at": "2026-11-10T22:33:02.145104+08:00",
   "total": 19,
   "items": [
+    {
+      "title": "Anthropic Fable 5.2 在 Remote Labor Index 上以 41.3% 领跑真实自由职业任务",
+      "link": "https://aihot.news/items/oesqqhekbr8e1bekkcitpguqh",
+      "summary": "The Decoder 报道，Anthropic 新模型 Fable 5.2 在 Scale Labs 和 Center for AI Safety 的 Remote Labor Index 基准上以 41.3% 排名第一，该测试衡量 AI 智能体能否把真实自由职业项目做到让付费客户接受的质量。 🔗 阅读原文 via AIHOT · https://aihot.news/items/oesqqhekbr8e1bekkcitpguqh",
+      "pub_date": "2026-11-10",
+      "author": "noreply@aihot.news (The Decoder：AI News)",
+      "category": "AI 模型"
+    },
+    {
+      "title": "Lovable 介绍平台安全机制：自动扫描、一键修复与深度扫描功能",
+      "link": "https://aihot.news/items/gbyp35reiyczetrirpyzycssq",
+      "summary": "Lovable 发布安全功能说明，介绍平台如何帮助无技术背景的开发者构建安全应用。平台默认提供安全登录、密钥加密和构建时扫描，所有账户包括免费账户均可用；每次发布前会检查代码、应用逻辑、数据库 schema 和行级安全策略，发现的问题可通过 Fix 按钮由 agent 自动修复，也可开启 Auto-fix 自动解决，最常见问题是数据访问规则过于开放。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gbyp35reiyczetrirpyzycssq",
+      "pub_date": "2026-11-10",
+      "author": "noreply@aihot.news (Lovable Blog)",
+      "category": "教程"
+    },
     {
       "title": "n8n Labs 发布本机个人智能体 Nod 研究预览版",
       "link": "https://aihot.news/items/yrk09s03tcgcxsxq8jh0npjk0",
@@ -137,22 +153,6 @@
       "summary": "Reflection 发布博文，讲解其开源权重模型 Beam 的安全训练与评估方法，并推出开源安全研究计划 Project Iris。Beam 在 Iris Safety Evaluations 对话任务中拒绝 89% 的有害请求，为所测开源权重模型中最高，同时遵守 82% 的安全相关无害请求；安全对齐教师模型从 100B 增至 501B 参数后，过度拒绝相对下降 48.7%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/mpv0jfejdzdm2336jgtyj9tde",
       "pub_date": "2026-11-05",
       "author": "noreply@aihot.news (Reflection Blog)",
-      "category": "论文"
-    },
-    {
-      "title": "Mustafa Suleyman 对特拉华允许 AI 智能体经营企业的提案表示担忧",
-      "link": "https://aihot.news/items/kl8ufrhv3zm38108gy2d7mins",
-      "summary": "Mustafa Suleyman 表示对特拉华州允许 AI 智能体经营企业的提案深感担忧，认为应非常谨慎。该提案拟设立名为 Delaware AIC 的独立法律实体，其日常事务由 AI 智能体而非人类管理，可依智能体指示以自身名义起诉应诉、持有和处置财产并承担债务。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kl8ufrhv3zm38108gy2d7mins",
-      "pub_date": "2026-11-05",
-      "author": "noreply@aihot.news (Mustafa Suleyman)",
-      "category": "观点"
-    },
-    {
-      "title": "Anthropic 详解 Claude 智能体记忆的组件：笔记、dreaming 与知识 wiki",
-      "link": "https://aihot.news/items/d28mrqwr7h7tl8b8jcse4b449",
-      "summary": "Anthropic 发文拆解 Claude 智能体记忆的组成与设计思路，将记忆分为笔记、记忆表示和注入上下文等层次，并介绍用 dreaming（空闲期反思日志）来纠错和构建 wiki。 🔗 阅读原文 via AIHOT · https://aihot.news/items/d28mrqwr7h7tl8b8jcse4b449",
-      "pub_date": "2026-11-05",
-      "author": "noreply@aihot.news (Anthropic：Research)",
       "category": "论文"
     }
   ]
