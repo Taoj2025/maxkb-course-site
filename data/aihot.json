@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-10T08:33:01.618945+08:00",
+  "updated_at": "2026-11-10T09:03:02.374394+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "The Verge 梳理黄仁勋与 Megaspeed 高管丑闻对 Nvidia 出口管制游说的影响",
+      "link": "https://aihot.news/items/kci32x4hgxrdl0v5o4xrjlxri",
+      "summary": "The Verge 依据《纽约时报》等报道梳理 Nvidia CEO 黄仁勋与新加坡云服务商 Megaspeed 高管 Alice Huang 的婚外情风波。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kci32x4hgxrdl0v5o4xrjlxri",
+      "pub_date": "2026-11-09",
+      "author": "noreply@aihot.news (The Verge：AI)",
+      "category": "行业动态"
+    },
     {
       "title": "实测 Claude Fable 5.2：一次直出视频与 3D 网页，审美与细节表现突出",
       "link": "https://aihot.news/items/po2cdt1whxfqyfew3e81l8mb0",
@@ -106,14 +114,6 @@
       "pub_date": "2026-11-08",
       "author": "noreply@aihot.news (公众号：数字生命卡兹克)",
       "category": "AI 产品"
-    },
-    {
-      "title": "NVIDIA 董事会宣布就 CEO 黄仁勋遭外国情报行动瞄准一事启动独立调查",
-      "link": "https://aihot.news/items/mg4znyraf1xbbwg1vd915wqoi",
-      "summary": "NVIDIA 董事会于 11 月 8 日发布声明，就近期有关创始人兼 CEO 黄仁勋成为外国情报行动目标的报道启动独立调查。调查由独立董事组成的委员会在外部独立律师协助下监督，黄仁勋全力配合。董事会表示没有理由认为国家安全或 NVIDIA 机密已受损，但调查将审视所有可用信息，并表示对黄仁勋及其领导团队有信心。 🔗 阅读原文 via AIHOT · https://aihot.news/items/mg4znyraf1xbbwg1vd915wqoi",
-      "pub_date": "2026-11-08",
-      "author": "noreply@aihot.news (Rohan Paul)",
-      "category": "行业动态"
     },
     {
       "title": "字节发布 Seedream 5.5 图像创作模型：支持 100 轮编辑与原生 RGBA 透明输出",
