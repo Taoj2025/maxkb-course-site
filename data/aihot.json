@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-11T01:33:02.179148+08:00",
+  "updated_at": "2026-11-11T02:03:01.499359+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "OpenAI 开放 ChatGPT Business 计划登录 Notion、v0 等第三方工具",
+      "link": "https://aihot.news/items/y4pcrys3ewo3xnx1j45mbpbfy",
+      "summary": "OpenAI 宣布 ChatGPT Business 计划现可在 Notion、v0、ampcode、kilocode、Warp、NousResearch 的 Hermes、openclaw、opencode 等第三方工具中使用，通过 Sign in with ChatGPT 连接即可开始。 🔗 阅读原文 via AIHOT · https://aihot.news/items/y4pcrys3ewo3xnx1j45mbpbfy",
+      "pub_date": "2026-11-10",
+      "author": "noreply@aihot.news (OpenAI Developers)",
+      "category": "AI 产品"
+    },
     {
       "title": "Gemini 4 Carbon 现已登陆 Cursor，高 effort 下居 CursorBench 榜首",
       "link": "https://aihot.news/items/tk36lg7rqiq1i67rq0ce28yo8",
@@ -10,6 +18,14 @@
       "pub_date": "2026-11-10",
       "author": "noreply@aihot.news (Cursor)",
       "category": "AI 产品"
+    },
+    {
+      "title": "MiniMax 发布开源图像生成模型 H3-Image，10 秒内生成 4K 图像",
+      "link": "https://aihot.news/items/eel6o8sxfldx5itfa8f8wigc0",
+      "summary": "MiniMax 发布基于 H3 的开源权重图像生成模型 H3-Image，支持文生图、参考图生成和图像编辑，可生成 4096 × 4096 的 4K 图像，速度最高达主流方案的 5 倍。 🔗 阅读原文 via AIHOT · https://aihot.news/items/eel6o8sxfldx5itfa8f8wigc0",
+      "pub_date": "2026-11-10",
+      "author": "noreply@aihot.news (MiniMax：Blog)",
+      "category": "AI 模型"
     },
     {
       "title": "Gemini 4 Carbon 上线 Gemini API、AI Studio 和 Antigravity",
@@ -58,14 +74,6 @@
       "pub_date": "2026-11-10",
       "author": "noreply@aihot.news (Rohan Paul)",
       "category": "行业动态"
-    },
-    {
-      "title": "MiniMax 发布 H3-Image 图像模型并开源权重",
-      "link": "https://aihot.news/items/vyecfuqv7rgzuzbws86f78wvh",
-      "summary": "MiniMax 发布图像模型 MiniMax H3-Image 并开源模型权重，可在 10-20 秒内生成 4K × 4K（16 million pixel）图像。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vyecfuqv7rgzuzbws86f78wvh",
-      "pub_date": "2026-11-10",
-      "author": "noreply@aihot.news (MiniMax)",
-      "category": "AI 模型"
     },
     {
       "title": "Anthropic Fable 5.2 在 Remote Labor Index 上以 41.3% 领跑真实自由职业任务",
@@ -236,6 +244,14 @@
       "category": "行业动态"
     },
     {
+      "title": "Google AI Edge Gallery 新增端侧语音识别与语音合成能力",
+      "link": "https://aihot.news/items/hq666kd02bayn64cw702xm11w",
+      "summary": "Google 在 Google AI Edge Gallery 中推出端侧 ASR 与 TTS 能力，可与 Gemini Nano、Gemma 4 等端侧 SLM 组成完全离线的语音交互管线。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hq666kd02bayn64cw702xm11w",
+      "pub_date": "2026-11-09",
+      "author": "noreply@aihot.news (Google Developers Blog)",
+      "category": "AI 产品"
+    },
+    {
       "title": "Anthropic 指南：Claude 开发该选 Haiku 5.5、Sonnet 5.5、Opus 5.5 还是 Fable 5.2",
       "link": "https://aihot.news/items/ykrvgcox3whsx6tst5qesbf62",
       "summary": "Anthropic 开发者博客发文指导开发者如何在 Haiku 5.5、Sonnet 5.5、Opus 5.5 和 Fable 5.2 之间选型，建议多数编码和知识工作从 Opus 5.5 的 medium effort 起步，其 token 价格是 Fable 5.2 的一半。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ykrvgcox3whsx6tst5qesbf62",
@@ -386,22 +402,6 @@
       "pub_date": "2026-11-06",
       "author": "noreply@aihot.news (The Decoder：AI News)",
       "category": "行业动态"
-    },
-    {
-      "title": "蚂蚁百灵发布 Ling-3.2-flash：原生多模态，560B 总参数单步激活 25B",
-      "link": "https://aihot.news/items/apnpwouw9phkt81pijcxcl1a1",
-      "summary": "蚂蚁百灵发布原生多模态模型 Ling-3.2-flash，总参数 560B、单步激活 25B，支持 1M 原生长上下文，重点强化视觉反馈自检与异常自适应恢复能力。 🔗 阅读原文 via AIHOT · https://aihot.news/items/apnpwouw9phkt81pijcxcl1a1",
-      "pub_date": "2026-11-06",
-      "author": "noreply@aihot.news (公众号：蚂蚁百灵)",
-      "category": "AI 模型"
-    },
-    {
-      "title": "Meta 将基于 Muse Wonder 训练的专用模型上线 Muse 与 Meta AI",
-      "link": "https://aihot.news/items/fjuidf0zii7na78sxru5il7pr",
-      "summary": "Meta 宣布把基于 Muse Wonder 训练的专用模型推向 Muse 和 Meta AI 用户，Personal Superintelligence Index 得分从 38% 提升到 47%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fjuidf0zii7na78sxru5il7pr",
-      "pub_date": "2026-11-06",
-      "author": "noreply@aihot.news (Meta AI：Research Blog)",
-      "category": "AI 产品"
     }
   ]
 }
