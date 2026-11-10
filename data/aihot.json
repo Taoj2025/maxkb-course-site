@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-11T02:03:01.499359+08:00",
+  "updated_at": "2026-11-11T02:33:01.848812+08:00",
   "total": 50,
   "items": [
     {
@@ -10,6 +10,14 @@
       "pub_date": "2026-11-10",
       "author": "noreply@aihot.news (OpenAI Developers)",
       "category": "AI 产品"
+    },
+    {
+      "title": "Ed Zitron 长文剖析黄仁勋丑闻与 NVIDIA 疑似借 Megaspeed 向中国走私 GPU",
+      "link": "https://aihot.news/items/gqzca7y2h3m9p0fxtj60m4i1t",
+      "summary": "Ed Zitron 长文梳理黄仁勋承认与 Megaspeed CEO Alice Huang 的婚外情事件，并整合 Bloomberg、纽约时报、金融时报与 Culper Research 的报道，指 Megaspeed 疑似作为转口实体将 NVIDIA GPU 非法流入中国。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gqzca7y2h3m9p0fxtj60m4i1t",
+      "pub_date": "2026-11-10",
+      "author": "noreply@aihot.news (Ed Zitron 长文 / Where’s Your Ed At)",
+      "category": "行业动态"
     },
     {
       "title": "Gemini 4 Carbon 现已登陆 Cursor，高 effort 下居 CursorBench 榜首",
@@ -252,6 +260,14 @@
       "category": "AI 产品"
     },
     {
+      "title": "NVIDIA 在 CoRL 发布 GR00T 2 世界动作模型及 Isaac Lab 3.0 等开放机器人技术",
+      "link": "https://aihot.news/items/mydhz66rjk13abamqnqal48l4",
+      "summary": "NVIDIA 在 CoRL 大会发布开放世界动作模型 GR00T 2，基于 Cosmos 训练并使用 100,000 小时人类自我中心数据，50 个任务中开箱即用完成 40 个，每任务 1 条演示平均成功率 71%，5 条达 95%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/mydhz66rjk13abamqnqal48l4",
+      "pub_date": "2026-11-09",
+      "author": "noreply@aihot.news (NVIDIA Blog)",
+      "category": "AI 产品"
+    },
+    {
       "title": "Anthropic 指南：Claude 开发该选 Haiku 5.5、Sonnet 5.5、Opus 5.5 还是 Fable 5.2",
       "link": "https://aihot.news/items/ykrvgcox3whsx6tst5qesbf62",
       "summary": "Anthropic 开发者博客发文指导开发者如何在 Haiku 5.5、Sonnet 5.5、Opus 5.5 和 Fable 5.2 之间选型，建议多数编码和知识工作从 Opus 5.5 的 medium effort 起步，其 token 价格是 Fable 5.2 的一半。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ykrvgcox3whsx6tst5qesbf62",
@@ -385,22 +401,6 @@
       "summary": "据 Reuters 报道，约 60 万块 Nvidia H200 芯片闲置在香港仓库，阻碍并非来自华盛顿而是北京。尽管 Trump 去年已放行 H200 对华销售，中国正以每家科技巨头约 1 万块的速度小批量发放进口许可，推动国内服务器价格上涨 3 倍。 🔗 阅读原文 via AIHOT · https://aihot.news/items/aiiclbw9wwswwx60wfqw6eb6o",
       "pub_date": "2026-11-06",
       "author": "noreply@aihot.news (X.PIN)",
-      "category": "行业动态"
-    },
-    {
-      "title": "METR 审计称 Anthropic 可能早在 7 月已触发其自身 AI 加速预警阈值",
-      "link": "https://aihot.news/items/vpopkx98s6mpp9coxhi7hhvh2",
-      "summary": "METR 发布对 Anthropic 内部数据的十一周审计结果，称自 2025 年 10 月以来模型测试分数提升速度约加快 1.9 倍，其中约 80% 归因于 AI 用于公司自身研究，可能已在 7 月 15 日达到其负责任扩展政策中的预警阈值。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vpopkx98s6mpp9coxhi7hhvh2",
-      "pub_date": "2026-11-06",
-      "author": "noreply@aihot.news (The Decoder：AI News)",
-      "category": "行业动态"
-    },
-    {
-      "title": "Anthropic 1.5 万亿美元 IPO 因投资者质疑估值遇阻",
-      "link": "https://aihot.news/items/ia9wi0z09zfes5ewdf4agb6nf",
-      "summary": "据 Reuters，Anthropic 的 IPO 遇阻，投资者质疑 1.5 万亿美元估值过高，有投资者提出仅 1 万亿美元，公司 9 月曾瞄准最高 2 万亿美元估值。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ia9wi0z09zfes5ewdf4agb6nf",
-      "pub_date": "2026-11-06",
-      "author": "noreply@aihot.news (The Decoder：AI News)",
       "category": "行业动态"
     }
   ]
