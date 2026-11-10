@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-10T20:03:01.793461+08:00",
+  "updated_at": "2026-11-10T20:33:01.896470+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Anthropic 拟通过 IPO 筹集最多 644 亿美元，另向谷歌、英伟达等私募融资 260 亿美元",
+      "link": "https://aihot.news/items/hq4udij8d72th4omv72z1skgj",
+      "summary": "据路透社公布的招股说明书草案，Anthropic 计划通过 IPO 筹集最多 644 亿美元，并向谷歌、英伟达和 AMD 等基石投资者私募融资 260 亿美元，计入博通、美光、微软和台积电等出资后募资规模最高可达 904 亿美元。IPO 初步定价区间为每股 70 至 78 美元，此前一日 Anthropic 曾撤回拟筹资 693 亿美元的备案文件并称定价细节不准确。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hq4udij8d72th4omv72z1skgj",
+      "pub_date": "2026-11-10",
+      "author": "noreply@aihot.news (IT之家·人工智能)",
+      "category": "行业动态"
+    },
     {
       "title": "Claude Code 被曝把密码写进项目文件，GitHub 上发现 2539 个真实凭据，官方正在修复",
       "link": "https://aihot.news/items/efkizvqpiynq97lm5cx6fmd43",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-05",
       "author": "noreply@aihot.news (a16z：News)",
       "category": "观点"
-    },
-    {
-      "title": "腾讯混元感谢 Artificial Analysis 对 Hy4 的评测，模型获 Intelligence Index v5 35 分",
-      "link": "https://aihot.news/items/fj4zi12biz0b62ckhzg5awcxx",
-      "summary": "腾讯混元转发并感谢 Artificial Analysis 对其最新模型 Hy4 的评测。Hy4 在 Artificial Analysis Intelligence Index v5 得 35 分，与中国实验室模型中仅次于 Kimi K3.1 Pro（46 分），与 Grok 4.7 (xhigh) 持平，比 Claude Haiku 5.5 (max) 低 1 分。评测要点：FrontierCode 2.0 得 31%，为中国实验室模型最高；AA-Omniscience v1.1 达 50% 但幻觉率高达 89%；定价 $0.834/$2.501 per 1M input/output tokens，支持 1M token 上下文窗口和文本加图像输入。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fj4zi12biz0b62ckhzg5awcxx",
-      "pub_date": "2026-11-05",
-      "author": "noreply@aihot.news (腾讯混元)",
-      "category": "AI 模型"
     }
   ]
 }
