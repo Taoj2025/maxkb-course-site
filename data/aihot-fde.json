@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-10T23:33:01.619355+08:00",
-  "total": 19,
+  "updated_at": "2026-11-11T00:03:02.050307+08:00",
+  "total": 21,
   "items": [
+    {
+      "title": "Google DeepMind 用 AlphaProof Code 对 Signal 协议机器码完成形式化安全验证",
+      "link": "https://aihot.news/items/t9g33uqn3lfwm8cr1kr2fvnp7",
+      "summary": "Google DeepMind 发布 AlphaProof Code 多智能体形式化验证框架，并首次对广泛部署协议 Signal 的生产机器码完成形式化安全验证。 🔗 阅读原文 via AIHOT · https://aihot.news/items/t9g33uqn3lfwm8cr1kr2fvnp7",
+      "pub_date": "2026-11-10",
+      "author": "noreply@aihot.news (Rohan Paul)",
+      "category": "论文"
+    },
     {
       "title": "Gary Marcus 质疑 Anthropic 1.4 万亿美元 IPO 估值",
       "link": "https://aihot.news/items/yshr81morbvxs39fq2y2rw6rg",
@@ -58,6 +66,14 @@
       "pub_date": "2026-11-10",
       "author": "noreply@aihot.news (Ado Kukic)",
       "category": "教程"
+    },
+    {
+      "title": "Gemini 4 Carbon (gemini-4-carbon) 正式发布 GA",
+      "link": "https://aihot.news/items/uge7vmdt81ghiucu1js6ithof",
+      "summary": "Google 发布 Gemini 4 Carbon（gemini-4-carbon）正式可用版本，定位为其最强推理模型，面向持续智能体编码、多模态知识工作、科学推理和网络安全防御。2026 年 11 月 30 日前提供入门价 $2.00 per 1M input tokens、$10.00 per 1M output tokens。 🔗 阅读原文 via AIHOT · https://aihot.news/items/uge7vmdt81ghiucu1js6ithof",
+      "pub_date": "2026-11-10",
+      "author": "noreply@aihot.news (Gemini API：更新日志)",
+      "category": "AI 模型"
     },
     {
       "title": "Figma 官方讲解画布智能体的 6 种实用方法",

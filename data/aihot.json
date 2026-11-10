@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-10T23:33:01.618382+08:00",
+  "updated_at": "2026-11-11T00:03:02.049402+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Google DeepMind 用 AlphaProof Code 对 Signal 协议机器码完成形式化安全验证",
+      "link": "https://aihot.news/items/t9g33uqn3lfwm8cr1kr2fvnp7",
+      "summary": "Google DeepMind 发布 AlphaProof Code 多智能体形式化验证框架，并首次对广泛部署协议 Signal 的生产机器码完成形式化安全验证。 🔗 阅读原文 via AIHOT · https://aihot.news/items/t9g33uqn3lfwm8cr1kr2fvnp7",
+      "pub_date": "2026-11-10",
+      "author": "noreply@aihot.news (Rohan Paul)",
+      "category": "论文"
+    },
     {
       "title": "Gary Marcus 质疑 Anthropic 1.4 万亿美元 IPO 估值",
       "link": "https://aihot.news/items/yshr81morbvxs39fq2y2rw6rg",
@@ -82,6 +90,14 @@
       "pub_date": "2026-11-10",
       "author": "noreply@aihot.news (TechCrunch：AI)",
       "category": "行业动态"
+    },
+    {
+      "title": "Gemini 4 Carbon (gemini-4-carbon) 正式发布 GA",
+      "link": "https://aihot.news/items/uge7vmdt81ghiucu1js6ithof",
+      "summary": "Google 发布 Gemini 4 Carbon（gemini-4-carbon）正式可用版本，定位为其最强推理模型，面向持续智能体编码、多模态知识工作、科学推理和网络安全防御。2026 年 11 月 30 日前提供入门价 $2.00 per 1M input tokens、$10.00 per 1M output tokens。 🔗 阅读原文 via AIHOT · https://aihot.news/items/uge7vmdt81ghiucu1js6ithof",
+      "pub_date": "2026-11-10",
+      "author": "noreply@aihot.news (Gemini API：更新日志)",
+      "category": "AI 模型"
     },
     {
       "title": "The Verge 梳理黄仁勋与 Megaspeed 高管丑闻对 Nvidia 出口管制游说的影响",
@@ -385,22 +401,6 @@
       "summary": "11 月 5 日华尔街市值蒸发 3.2 万亿美元，Nasdaq 综合指数跌 5.52%，投资者恐慌民主党掌控国会将放缓高杠杆 AI 支出热潮。Nvidia 跌 9.3% 抹去 2026 年涨幅，费城半导体指数跌 12.3%，SanDisk 跌 22%，Micron、Western Digital 和 AMD 各跌 17%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/czctc3kqzf5wru8fhsbnhvxt7",
       "pub_date": "2026-11-05",
       "author": "noreply@aihot.news (Rohan Paul)",
-      "category": "行业动态"
-    },
-    {
-      "title": "李飞飞宣传 World Labs 发布 Frameboy，可实时体验 Atlas 世界模型",
-      "link": "https://aihot.news/items/m725rhhdt7a38zdd3aappeofn",
-      "summary": "李飞飞转发 World Labs 官方账号，宣传其新发布的 Frameboy demo，可用于实时探索世界。Frameboy 是两个月前发布的自回归世界模型 Atlas 的高度优化版本，从云端 GPU 流式传输，最高可达 15 fps，支持像素级相机控制。 🔗 阅读原文 via AIHOT · https://aihot.news/items/m725rhhdt7a38zdd3aappeofn",
-      "pub_date": "2026-11-05",
-      "author": "noreply@aihot.news (Fei-Fei Li)",
-      "category": "AI 产品"
-    },
-    {
-      "title": "美国中期选举蓝潮冲击 AI 行业，44 项数据中心暂停提案中 43 项通过",
-      "link": "https://aihot.news/items/vkfrtci1ufbtbydsqersys6lx",
-      "summary": "美国中期选举民主党拿下参众两院，多场竞选以问责 AI 公司为主题，行业面临监管、数据中心建设放缓等前景。44 项地方数据中心暂停提案中 43 项通过，NBC 民调显示 76% 选民反对在社区建数据中心；专家称共和党禁止州级 AI 限制的尝试可能终结，OpenAI 和 Anthropic 未置评，据华尔街日报报道 CEO 们在私下讨论算力容量受限问题。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vkfrtci1ufbtbydsqersys6lx",
-      "pub_date": "2026-11-05",
-      "author": "noreply@aihot.news (The Verge：AI)",
       "category": "行业动态"
     }
   ]
