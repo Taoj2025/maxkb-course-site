@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-11T01:03:01.446818+08:00",
-  "total": 22,
+  "updated_at": "2026-11-11T01:33:02.180027+08:00",
+  "total": 20,
   "items": [
     {
       "title": "Gemini 4 Carbon 现已登陆 Cursor，高 effort 下居 CursorBench 榜首",
@@ -18,6 +18,14 @@
       "pub_date": "2026-11-10",
       "author": "noreply@aihot.news (Google DeepMind：Blog)",
       "category": "AI 模型"
+    },
+    {
+      "title": "Wiz 讲解如何评估 AI 智能体的网络安全能力",
+      "link": "https://aihot.news/items/momr4yrt6hhhfeuzjfqz6ryqy",
+      "summary": "Wiz Research 介绍其 Cyber Model Arena v3.9 的基准设计方法，该基准覆盖 26 个模型、59 个智能体和 327 道挑战，分代码漏洞、API 安全、Web 安全和云安全四类。 🔗 阅读原文 via AIHOT · https://aihot.news/items/momr4yrt6hhhfeuzjfqz6ryqy",
+      "pub_date": "2026-11-10",
+      "author": "noreply@aihot.news (Wiz：Research)",
+      "category": "论文"
     },
     {
       "title": "Google DeepMind 用 AlphaProof Code 对 Signal 协议机器码完成形式化安全验证",
@@ -153,30 +161,6 @@
       "summary": "作者实测前两天上线的 GPT-Image-2.6，整理出 10 个 GIF 玩法提示词（黏土定格动画、表情包、剪辑贴纸、loading 图、PPT 动态图表、爆炸拆解图等）并测试三项新能力。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kss7rjmanc8dv5mpj60jtdzgd",
       "pub_date": "2026-11-08",
       "author": "noreply@aihot.news (卡尔的 AI 沃茨)",
-      "category": "教程"
-    },
-    {
-      "title": "Amp 发布 spaces：由单个 Agent 自动生成和协调多线程的协作空间",
-      "link": "https://aihot.news/items/w59f8d3md3ct7dj9akyn599dz",
-      "summary": "Amp 今日推出 spaces，一种与 Agent 和团队协作的新方式。每个 space 是与单个 Agent 的对话，由它负责为用户生成和协调其他 Agent 线程，无需自己创建和组织线程。 🔗 阅读原文 via AIHOT · https://aihot.news/items/w59f8d3md3ct7dj9akyn599dz",
-      "pub_date": "2026-11-06",
-      "author": "noreply@aihot.news (Amp Chronicle)",
-      "category": "AI 产品"
-    },
-    {
-      "title": "Cursor 推出与智能体的实时语音聊天",
-      "link": "https://aihot.news/items/nzxzrjiqbmjkybz85mcylo2xo",
-      "summary": "Cursor 推出与智能体的实时语音聊天功能，可用语音提出更改、询问进展并听取智能体播报的简短进度。语音聊天支持智能体窗口、IDE、Web 端和 iOS，可搜索历史消息和通话、在多个 worker 间切换，iOS 上还支持“Hey Siri, call Cursor”发起通话。 🔗 阅读原文 via AIHOT · https://aihot.news/items/nzxzrjiqbmjkybz85mcylo2xo",
-      "pub_date": "2026-11-06",
-      "author": "noreply@aihot.news (Cursor：Changelog)",
-      "category": "AI 产品"
-    },
-    {
-      "title": "OpenClaw 无需更新即可使用新模型：改为三个模型列表来源",
-      "link": "https://aihot.news/items/b0ddwv6p8wgd0xlhcvvw4z36b",
-      "summary": "OpenClaw 重构模型列表获取方式，约五周、80 个 PR，新模型不再等客户端发版。现在从三处取模型列表：每 4 小时重建的 catalog.openclaw.ai 目录（约 1000 个模型）、账号可用的模型列表，以及 PATH 上已安装的 Codex（需同主版本且握手通过，否则回退内置版本）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/b0ddwv6p8wgd0xlhcvvw4z36b",
-      "pub_date": "2026-11-06",
-      "author": "noreply@aihot.news (OpenClaw：Blog)",
       "category": "教程"
     }
   ]
