@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-10T12:03:01.742644+08:00",
-  "total": 19,
+  "updated_at": "2026-11-10T12:33:02.093841+08:00",
+  "total": 20,
   "items": [
+    {
+      "title": "Anthropic 员工推荐用一条提示词让 Claude Code 全面审查项目",
+      "link": "https://aihot.news/items/lwbznpwnu3d7avukt0arjc2go",
+      "summary": "作者转发 Anthropic 的 Alex Albert 分享的提示词：对每个项目运行同一条指令，让 Claude 通读整个项目，找出损坏、不一致、低效或不再需要的内容，确定的问题直接修复，其余列出供人工审查。作者补充可用 /doctor prompt-audit 和 /skill-doctor 优化上下文文件并清理不必要的技能。 🔗 阅读原文 via AIHOT · https://aihot.news/items/lwbznpwnu3d7avukt0arjc2go",
+      "pub_date": "2026-11-10",
+      "author": "noreply@aihot.news (Ado Kukic)",
+      "category": "教程"
+    },
     {
       "title": "Figma 官方讲解画布智能体的 6 种实用方法",
       "link": "https://aihot.news/items/lko5m98q1kk1dlcjihvk527w8",

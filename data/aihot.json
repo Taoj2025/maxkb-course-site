@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-10T12:03:01.741641+08:00",
+  "updated_at": "2026-11-10T12:33:02.092911+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Anthropic 员工推荐用一条提示词让 Claude Code 全面审查项目",
+      "link": "https://aihot.news/items/lwbznpwnu3d7avukt0arjc2go",
+      "summary": "作者转发 Anthropic 的 Alex Albert 分享的提示词：对每个项目运行同一条指令，让 Claude 通读整个项目，找出损坏、不一致、低效或不再需要的内容，确定的问题直接修复，其余列出供人工审查。作者补充可用 /doctor prompt-audit 和 /skill-doctor 优化上下文文件并清理不必要的技能。 🔗 阅读原文 via AIHOT · https://aihot.news/items/lwbznpwnu3d7avukt0arjc2go",
+      "pub_date": "2026-11-10",
+      "author": "noreply@aihot.news (Ado Kukic)",
+      "category": "教程"
+    },
     {
       "title": "据报道 Anthropic 推进 IPO，计划下周四或周五挂牌",
       "link": "https://aihot.news/items/d4f8o2c9r7r8b7fsdqnpev3eu",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-05",
       "author": "noreply@aihot.news (OpenAI：部署安全与系统卡)",
       "category": "论文"
-    },
-    {
-      "title": "Thinking Machines Lab 发布 Inkling 2 Small：594B 参数 MoE 模型，下周开放 Apache 2.0 权重",
-      "link": "https://aihot.news/items/bu8612ca3e1uyxjppk56ef1wl",
-      "summary": "Thinking Machines Lab 发布第二代模型 Inkling 2 Small，为 594B 总参数、17B 激活的 MoE 模型，支持图像输入与 variable effort，Artificial Analysis Intelligence Index 得分 31。 🔗 阅读原文 via AIHOT · https://aihot.news/items/bu8612ca3e1uyxjppk56ef1wl",
-      "pub_date": "2026-11-05",
-      "author": "noreply@aihot.news (Thinking Machines Lab：News)",
-      "category": "AI 模型"
     }
   ]
 }
