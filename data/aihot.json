@@ -1,8 +1,32 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-11T03:33:01.499733+08:00",
+  "updated_at": "2026-11-11T04:03:01.948083+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Stripe 收购 OpenRouter，双方宣布合并后定位",
+      "link": "https://aihot.news/items/zycmiklep7i6dct58558jbp78",
+      "summary": "OpenRouter 官方宣布正式并入 Stripe。OpenRouter 称有超过 1000 万开发者和公司使用其平台，它为多模型、多 provider 的 AI 运行提供基础设施，包括访问新模型、故障期间保持可用，以及为团队执行支出和数据策略。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zycmiklep7i6dct58558jbp78",
+      "pub_date": "2026-11-10",
+      "author": "noreply@aihot.news (OpenRouter)",
+      "category": "行业动态"
+    },
+    {
+      "title": "Anthropic 再次修订 S-1：宣布已达责任扩展政策能力阈值，IPO 定价 $70-$78",
+      "link": "https://aihot.news/items/j8x08g5wo30akk4mast68n79d",
+      "summary": "Anthropic 再次修订 IPO 申请文件 S-1（Amendment No. 2），宣布已越过其 Responsible Scaling Policy 设定的阈值，即 AI 正大幅加快 AI 研究速度、需更强安全检查。这一判断基于其对未来模型的预期而非现有模型的表现，一周前的文件还只说\"可能即将\"越过。文件同时将 IPO 发行价定为每股 $70 至 $78。 🔗 阅读原文 via AIHOT · https://aihot.news/items/j8x08g5wo30akk4mast68n79d",
+      "pub_date": "2026-11-10",
+      "author": "noreply@aihot.news (Rohan Paul)",
+      "category": "行业动态"
+    },
+    {
+      "title": "PSI 尝试用 AI 驱动的科学发现打造商业模式",
+      "link": "https://aihot.news/items/be7oi4uplsn32gf4o0xl08ium",
+      "summary": "PSI 实验室的 David Turturean 借助 Anthropic Fable 5.2 模型早期访问权限解决了存在 18 年的量子计算问题 Aaronson-Ambainis 猜想，证明经 Lean 自动形式化验证。 🔗 阅读原文 via AIHOT · https://aihot.news/items/be7oi4uplsn32gf4o0xl08ium",
+      "pub_date": "2026-11-10",
+      "author": "noreply@aihot.news (TechCrunch：AI)",
+      "category": "行业动态"
+    },
     {
       "title": "OpenAI 开放 ChatGPT Business 计划登录 Notion、v0 等第三方工具",
       "link": "https://aihot.news/items/y4pcrys3ewo3xnx1j45mbpbfy",
@@ -92,14 +116,6 @@
       "category": "AI 模型"
     },
     {
-      "title": "Anthropic 将 IPO 发行价区间定为 70 至 78 美元，隐含估值达 1.404 万亿美元",
-      "link": "https://aihot.news/items/bbqkapwzzux4qt6ns0zsh7b7s",
-      "summary": "Anthropic 在更新后的 IPO 招股文件中将发行价区间定为每股 70 至 78 美元，共发行 8.25 亿股 A 类股，预计募资 577.5 亿至 643.5 亿美元，若按区间上限定价隐含估值可达 1.404 万亿美元，高于其 5 月融资时的 9650 亿美元估值。 🔗 阅读原文 via AIHOT · https://aihot.news/items/bbqkapwzzux4qt6ns0zsh7b7s",
-      "pub_date": "2026-11-10",
-      "author": "noreply@aihot.news (TechCrunch：AI)",
-      "category": "行业动态"
-    },
-    {
       "title": "Lovable 介绍平台安全机制：自动扫描、一键修复与深度扫描功能",
       "link": "https://aihot.news/items/gbyp35reiyczetrirpyzycssq",
       "summary": "Lovable 发布安全功能说明，介绍平台如何帮助无技术背景的开发者构建安全应用。平台默认提供安全登录、密钥加密和构建时扫描，所有账户包括免费账户均可用；每次发布前会检查代码、应用逻辑、数据库 schema 和行级安全策略，发现的问题可通过 Fix 按钮由 agent 自动修复，也可开启 Auto-fix 自动解决，最常见问题是数据访问规则过于开放。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gbyp35reiyczetrirpyzycssq",
@@ -138,6 +154,14 @@
       "pub_date": "2026-11-10",
       "author": "noreply@aihot.news (TechCrunch：AI)",
       "category": "行业动态"
+    },
+    {
+      "title": "Anthropic 研究：稀释投毒微调数据反而会强化其后门效应",
+      "link": "https://aihot.news/items/xaj5t8sbv4qtc0n9ovus1nfl9",
+      "summary": "Anthropic 与 Truthful AI 等机构提出“顺势学习”现象：单独作用很小的投毒数据，在混入同类型干净对比数据后会形成隐藏后门。 🔗 阅读原文 via AIHOT · https://aihot.news/items/xaj5t8sbv4qtc0n9ovus1nfl9",
+      "pub_date": "2026-11-10",
+      "author": "noreply@aihot.news (Anthropic：Alignment Science Blog)",
+      "category": "论文"
     },
     {
       "title": "Claude 升级交互式连接器，应用可在对话旁全屏打开并由 Claude 直接操作",
@@ -377,30 +401,6 @@
       "summary": "美国北卡罗来纳州一对夫妇起诉谷歌，其 13 岁女儿通过学校配发的 Chromebook 与 Gemini 和搜索 AI 模式进行数千条涉及自杀内容的交互。谷歌发言人表示正在审查指控，并称已将心理健康防护机制引入搜索 AI 功能。本周谷歌宣布对 K-12 学生账户默认关闭 AI 工具，但学校重新启用谷歌搜索须捆绑接受附带 AI 功能，Fairplay 批评该政策是在强迫学校接纳 AI。 🔗 阅读原文 via AIHOT · https://aihot.news/items/r0hypv8lgeq3nhx29eby0y3uv",
       "pub_date": "2026-11-07",
       "author": "noreply@aihot.news (IT之家·人工智能)",
-      "category": "行业动态"
-    },
-    {
-      "title": "Artificial Analysis 实测 GPT Image 2.6 图像生成与编辑表现",
-      "link": "https://aihot.news/items/pqbbgx5sn86iy7v4izf1qv49z",
-      "summary": "Artificial Analysis 对 OpenAI 于 11 月 4 日发布的 GPT Image 2.6 进行了基准测试，两款模型在 AA-Image-T2I v2.1 和 AA-Image-Editing v2.1 上分列第一、二名。 🔗 阅读原文 via AIHOT · https://aihot.news/items/pqbbgx5sn86iy7v4izf1qv49z",
-      "pub_date": "2026-11-06",
-      "author": "noreply@aihot.news (Artificial Analysis)",
-      "category": "AI 模型"
-    },
-    {
-      "title": "Bloomberg：OpenAI 完成 110 亿美元融资首批到账，估值达 1.25 万亿美元",
-      "link": "https://aihot.news/items/m45kaixmfb2554qlzxbpnir36",
-      "summary": "据 Bloomberg，OpenAI 完成 110 亿美元新融资，这是估值 1.25 万亿美元一轮的首笔资金。投资者当日已打款，剩余部分总额最高 200 亿美元，预计数周内到账。 🔗 阅读原文 via AIHOT · https://aihot.news/items/m45kaixmfb2554qlzxbpnir36",
-      "pub_date": "2026-11-06",
-      "author": "noreply@aihot.news (Rohan Paul)",
-      "category": "行业动态"
-    },
-    {
-      "title": "约 60 万块 Nvidia H200 芯片滞留香港仓库，受阻方为北京而非华盛顿",
-      "link": "https://aihot.news/items/aiiclbw9wwswwx60wfqw6eb6o",
-      "summary": "据 Reuters 报道，约 60 万块 Nvidia H200 芯片闲置在香港仓库，阻碍并非来自华盛顿而是北京。尽管 Trump 去年已放行 H200 对华销售，中国正以每家科技巨头约 1 万块的速度小批量发放进口许可，推动国内服务器价格上涨 3 倍。 🔗 阅读原文 via AIHOT · https://aihot.news/items/aiiclbw9wwswwx60wfqw6eb6o",
-      "pub_date": "2026-11-06",
-      "author": "noreply@aihot.news (X.PIN)",
       "category": "行业动态"
     }
   ]

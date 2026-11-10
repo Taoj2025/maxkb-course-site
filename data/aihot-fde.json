@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-11T03:33:01.500598+08:00",
-  "total": 20,
+  "updated_at": "2026-11-11T04:03:01.948951+08:00",
+  "total": 21,
   "items": [
     {
       "title": "Gemini 4 Carbon 现已登陆 Cursor，高 effort 下居 CursorBench 榜首",
@@ -82,6 +82,14 @@
       "pub_date": "2026-11-10",
       "author": "noreply@aihot.news (Ado Kukic)",
       "category": "教程"
+    },
+    {
+      "title": "Anthropic 研究：稀释投毒微调数据反而会强化其后门效应",
+      "link": "https://aihot.news/items/xaj5t8sbv4qtc0n9ovus1nfl9",
+      "summary": "Anthropic 与 Truthful AI 等机构提出“顺势学习”现象：单独作用很小的投毒数据，在混入同类型干净对比数据后会形成隐藏后门。 🔗 阅读原文 via AIHOT · https://aihot.news/items/xaj5t8sbv4qtc0n9ovus1nfl9",
+      "pub_date": "2026-11-10",
+      "author": "noreply@aihot.news (Anthropic：Alignment Science Blog)",
+      "category": "论文"
     },
     {
       "title": "Figma 官方讲解画布智能体的 6 种实用方法",
