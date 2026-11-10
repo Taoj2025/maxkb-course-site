@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-11T07:03:02.403380+08:00",
+  "updated_at": "2026-11-11T07:33:01.756830+08:00",
   "total": 50,
   "items": [
     {
@@ -129,6 +129,14 @@
       "summary": "n8n 发布 n8n Labs 首个实验项目 Nod 的研究预览版，一个独立于 n8n 的开源个人智能体，可在 Mac 或 Windows 本机的沙盒和浏览器中代用户完成取消订阅、比价、订酒店等任务，无需 n8n 账号或云服务。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yrk09s03tcgcxsxq8jh0npjk0",
       "pub_date": "2026-11-10",
       "author": "noreply@aihot.news (n8n Blog)",
+      "category": "AI 产品"
+    },
+    {
+      "title": "Cursor Projects 升级为多人协作模式",
+      "link": "https://aihot.news/items/vouc5yc5intvgg7311kekkhsi",
+      "summary": "Cursor 宣布 Projects 迈入多人协作阶段，此前 9 月推出的 Projects 通过单一协调者调度一组智能体，现在支持邀请团队成员加入同一 Project，与各自的智能体共同规划、构建和交付。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vouc5yc5intvgg7311kekkhsi",
+      "pub_date": "2026-11-10",
+      "author": "noreply@aihot.news (Cursor Blog)",
       "category": "AI 产品"
     },
     {
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-08",
       "author": "noreply@aihot.news (Zyphra Research)",
       "category": "AI 模型"
-    },
-    {
-      "title": "百度发布 ERNIE Evolve 自动研究系统，公开任务超最好纪录并落地 ERNIE-5.5-Flash 推理优化",
-      "link": "https://aihot.news/items/h6vimc0xpjwbjfampr34ym5ol",
-      "summary": "百度文心团队发布自动研究系统 ERNIE Evolve，用双层循环组织研究方向选择与实验迭代，由 Director、Selector、Executor、Evaluator 和 Reviewer 分工推进研究。 🔗 阅读原文 via AIHOT · https://aihot.news/items/h6vimc0xpjwbjfampr34ym5ol",
-      "pub_date": "2026-11-08",
-      "author": "noreply@aihot.news (百度文心 ERNIE 官方博客)",
-      "category": "AI 产品"
     }
   ]
 }
