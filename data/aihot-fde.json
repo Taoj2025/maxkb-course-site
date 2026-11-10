@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-11T00:33:01.570153+08:00",
-  "total": 21,
+  "updated_at": "2026-11-11T01:03:01.446818+08:00",
+  "total": 22,
   "items": [
+    {
+      "title": "Gemini 4 Carbon 现已登陆 Cursor，高 effort 下居 CursorBench 榜首",
+      "link": "https://aihot.news/items/tk36lg7rqiq1i67rq0ce28yo8",
+      "summary": "Cursor 宣布 Gemini 4 Carbon 已可在 Cursor 中使用。官方称在高 effort 设置下，该模型以 60.4% 的得分位居 CursorBench 4.0 榜首，配图还标注其成本为 $9.22。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tk36lg7rqiq1i67rq0ce28yo8",
+      "pub_date": "2026-11-10",
+      "author": "noreply@aihot.news (Cursor)",
+      "category": "AI 产品"
+    },
     {
       "title": "Google DeepMind 发布 Gemini 4 Carbon 前沿模型",
       "link": "https://aihot.news/items/w8cvkd1j2o1c3m8ikh8x2kpfx",
