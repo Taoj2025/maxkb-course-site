@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-10T21:03:02.485207+08:00",
+  "updated_at": "2026-11-10T21:33:02.372464+08:00",
   "total": 19,
   "items": [
+    {
+      "title": "n8n Labs 发布本机个人智能体 Nod 研究预览版",
+      "link": "https://aihot.news/items/yrk09s03tcgcxsxq8jh0npjk0",
+      "summary": "n8n 发布 n8n Labs 首个实验项目 Nod 的研究预览版，一个独立于 n8n 的开源个人智能体，可在 Mac 或 Windows 本机的沙盒和浏览器中代用户完成取消订阅、比价、订酒店等任务，无需 n8n 账号或云服务。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yrk09s03tcgcxsxq8jh0npjk0",
+      "pub_date": "2026-11-10",
+      "author": "noreply@aihot.news (n8n Blog)",
+      "category": "AI 产品"
+    },
     {
       "title": "Claude Code 被曝把密码写进项目文件，GitHub 上发现 2539 个真实凭据，官方正在修复",
       "link": "https://aihot.news/items/efkizvqpiynq97lm5cx6fmd43",
@@ -146,14 +154,6 @@
       "pub_date": "2026-11-05",
       "author": "noreply@aihot.news (Anthropic：Research)",
       "category": "论文"
-    },
-    {
-      "title": "a16z：漏洞利用曾是瓶颈，AI 让攻击成本从数月降到数小时",
-      "link": "https://aihot.news/items/t5j6ucy3ao84zrwoz2yf2ovra",
-      "summary": "a16z 分析师撰文指出，2026 年 AI 智能体已把从漏洞到可用 exploit 的成本从专业人员的数周压缩到数小时，8 月底一次行动在 4 小时内攻破首个真实受害者，26 秒内攻陷 11 个组织，累计 48 国 395 个机构被攻破，其中一半是学校。 🔗 阅读原文 via AIHOT · https://aihot.news/items/t5j6ucy3ao84zrwoz2yf2ovra",
-      "pub_date": "2026-11-05",
-      "author": "noreply@aihot.news (a16z：News)",
-      "category": "观点"
     }
   ]
 }
