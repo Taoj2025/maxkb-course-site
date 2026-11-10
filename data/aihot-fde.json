@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-11T00:03:02.050307+08:00",
+  "updated_at": "2026-11-11T00:33:01.570153+08:00",
   "total": 21,
   "items": [
+    {
+      "title": "Google DeepMind 发布 Gemini 4 Carbon 前沿模型",
+      "link": "https://aihot.news/items/w8cvkd1j2o1c3m8ikh8x2kpfx",
+      "summary": "Google DeepMind 正式向开发者、企业、科学家和普通用户开放 Gemini 4 Carbon，定位为其最强前沿模型，主打网络安全能力与复杂知识工作、软件工程、科学推理中的长程智能体工作流。 🔗 阅读原文 via AIHOT · https://aihot.news/items/w8cvkd1j2o1c3m8ikh8x2kpfx",
+      "pub_date": "2026-11-10",
+      "author": "noreply@aihot.news (Google DeepMind：Blog)",
+      "category": "AI 模型"
+    },
     {
       "title": "Google DeepMind 用 AlphaProof Code 对 Signal 协议机器码完成形式化安全验证",
       "link": "https://aihot.news/items/t9g33uqn3lfwm8cr1kr2fvnp7",
@@ -66,14 +74,6 @@
       "pub_date": "2026-11-10",
       "author": "noreply@aihot.news (Ado Kukic)",
       "category": "教程"
-    },
-    {
-      "title": "Gemini 4 Carbon (gemini-4-carbon) 正式发布 GA",
-      "link": "https://aihot.news/items/uge7vmdt81ghiucu1js6ithof",
-      "summary": "Google 发布 Gemini 4 Carbon（gemini-4-carbon）正式可用版本，定位为其最强推理模型，面向持续智能体编码、多模态知识工作、科学推理和网络安全防御。2026 年 11 月 30 日前提供入门价 $2.00 per 1M input tokens、$10.00 per 1M output tokens。 🔗 阅读原文 via AIHOT · https://aihot.news/items/uge7vmdt81ghiucu1js6ithof",
-      "pub_date": "2026-11-10",
-      "author": "noreply@aihot.news (Gemini API：更新日志)",
-      "category": "AI 模型"
     },
     {
       "title": "Figma 官方讲解画布智能体的 6 种实用方法",

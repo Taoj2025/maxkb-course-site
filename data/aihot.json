@@ -1,8 +1,24 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-11T00:03:02.049402+08:00",
+  "updated_at": "2026-11-11T00:33:01.569275+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Gemini 4 Carbon 已面向全球 Ultra 订阅用户上线 Gemini App",
+      "link": "https://aihot.news/items/f3ykjt1l720mhmdkdczcaiy20",
+      "summary": "Google Labs VP Josh Woodward 宣布 Gemini 4 Carbon 现已进入 Gemini App，面向全球 Ultra 订阅用户开放。截图显示 Gemini 输入框中已可选择 Carbon 模型选项。 🔗 阅读原文 via AIHOT · https://aihot.news/items/f3ykjt1l720mhmdkdczcaiy20",
+      "pub_date": "2026-11-10",
+      "author": "noreply@aihot.news (Josh Woodward)",
+      "category": "AI 产品"
+    },
+    {
+      "title": "Google DeepMind 发布 Gemini 4 Carbon 前沿模型",
+      "link": "https://aihot.news/items/w8cvkd1j2o1c3m8ikh8x2kpfx",
+      "summary": "Google DeepMind 正式向开发者、企业、科学家和普通用户开放 Gemini 4 Carbon，定位为其最强前沿模型，主打网络安全能力与复杂知识工作、软件工程、科学推理中的长程智能体工作流。 🔗 阅读原文 via AIHOT · https://aihot.news/items/w8cvkd1j2o1c3m8ikh8x2kpfx",
+      "pub_date": "2026-11-10",
+      "author": "noreply@aihot.news (Google DeepMind：Blog)",
+      "category": "AI 模型"
+    },
     {
       "title": "Google DeepMind 用 AlphaProof Code 对 Signal 协议机器码完成形式化安全验证",
       "link": "https://aihot.news/items/t9g33uqn3lfwm8cr1kr2fvnp7",
@@ -90,14 +106,6 @@
       "pub_date": "2026-11-10",
       "author": "noreply@aihot.news (TechCrunch：AI)",
       "category": "行业动态"
-    },
-    {
-      "title": "Gemini 4 Carbon (gemini-4-carbon) 正式发布 GA",
-      "link": "https://aihot.news/items/uge7vmdt81ghiucu1js6ithof",
-      "summary": "Google 发布 Gemini 4 Carbon（gemini-4-carbon）正式可用版本，定位为其最强推理模型，面向持续智能体编码、多模态知识工作、科学推理和网络安全防御。2026 年 11 月 30 日前提供入门价 $2.00 per 1M input tokens、$10.00 per 1M output tokens。 🔗 阅读原文 via AIHOT · https://aihot.news/items/uge7vmdt81ghiucu1js6ithof",
-      "pub_date": "2026-11-10",
-      "author": "noreply@aihot.news (Gemini API：更新日志)",
-      "category": "AI 模型"
     },
     {
       "title": "The Verge 梳理黄仁勋与 Megaspeed 高管丑闻对 Nvidia 出口管制游说的影响",
@@ -393,14 +401,6 @@
       "summary": "OpenAI 相关负责人称，目前 ChatGPT 与 API 每周生成的图像超过 40 亿张，高于仅 8 周前的每周超 30 亿张。其转发的 @OpenAI 内容还提到 ChatGPT Images 2.6 新增 GIF 与参考图支持，API 将迎来两个图像生成速度提升 50% 的新模型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z16tksw5l40w2edrohnozslkl",
       "pub_date": "2026-11-05",
       "author": "noreply@aihot.news (Tibo)",
-      "category": "行业动态"
-    },
-    {
-      "title": "美股单日蒸发 3.2 万亿美元，Nasdaq 创 2025 年 4 月以来最大跌幅",
-      "link": "https://aihot.news/items/czctc3kqzf5wru8fhsbnhvxt7",
-      "summary": "11 月 5 日华尔街市值蒸发 3.2 万亿美元，Nasdaq 综合指数跌 5.52%，投资者恐慌民主党掌控国会将放缓高杠杆 AI 支出热潮。Nvidia 跌 9.3% 抹去 2026 年涨幅，费城半导体指数跌 12.3%，SanDisk 跌 22%，Micron、Western Digital 和 AMD 各跌 17%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/czctc3kqzf5wru8fhsbnhvxt7",
-      "pub_date": "2026-11-05",
-      "author": "noreply@aihot.news (Rohan Paul)",
       "category": "行业动态"
     }
   ]
