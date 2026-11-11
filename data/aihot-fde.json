@@ -1,8 +1,24 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-11T07:33:01.757902+08:00",
-  "total": 22,
+  "updated_at": "2026-11-11T08:00:01.745301+08:00",
+  "total": 24,
   "items": [
+    {
+      "title": "Berkeley RDI 发布 CyberBinGym 基准，测试 AI 智能体能否仅凭二进制补丁写出真实漏洞利用",
+      "link": "https://aihot.news/items/xenhfme3azzcf8qpihr57fb93",
+      "summary": "UC Berkeley 等机构发布 CyberBinGym 基准，评估 AI 智能体在无源码、无漏洞描述、无触发输入的 1-day 场景下，仅凭 stripped 的漏洞与补丁二进制能否恢复并利用真实漏洞，含 100 个来自 53 个开源项目的任务。 🔗 阅读原文 via AIHOT · https://aihot.news/items/xenhfme3azzcf8qpihr57fb93",
+      "pub_date": "2026-11-11",
+      "author": "noreply@aihot.news (Berkeley RDI：Blog)",
+      "category": "论文"
+    },
+    {
+      "title": "Microsoft Research 揭示 Lazarus 权重空间后门技术，通过重编程休眠神经元攻击 AI Agent",
+      "link": "https://aihot.news/items/womexcn3n0ijhbehvhbsxxm4f",
+      "summary": "Microsoft Research 发布对 Lazarus 后门技术的研究，重编程 LLM 中少于 10 个休眠神经元即可在没有训练的情况下给基于该模型的 Agent 安装后门。 🔗 阅读原文 via AIHOT · https://aihot.news/items/womexcn3n0ijhbehvhbsxxm4f",
+      "pub_date": "2026-11-10",
+      "author": "noreply@aihot.news (Microsoft Research 博客)",
+      "category": "论文"
+    },
     {
       "title": "Gemini 4 Carbon 现已登陆 Cursor，高 effort 下居 CursorBench 榜首",
       "link": "https://aihot.news/items/tk36lg7rqiq1i67rq0ce28yo8",

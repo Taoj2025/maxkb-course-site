@@ -1,8 +1,24 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-11T07:33:01.756830+08:00",
+  "updated_at": "2026-11-11T08:00:01.744015+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Berkeley RDI 发布 CyberBinGym 基准，测试 AI 智能体能否仅凭二进制补丁写出真实漏洞利用",
+      "link": "https://aihot.news/items/xenhfme3azzcf8qpihr57fb93",
+      "summary": "UC Berkeley 等机构发布 CyberBinGym 基准，评估 AI 智能体在无源码、无漏洞描述、无触发输入的 1-day 场景下，仅凭 stripped 的漏洞与补丁二进制能否恢复并利用真实漏洞，含 100 个来自 53 个开源项目的任务。 🔗 阅读原文 via AIHOT · https://aihot.news/items/xenhfme3azzcf8qpihr57fb93",
+      "pub_date": "2026-11-11",
+      "author": "noreply@aihot.news (Berkeley RDI：Blog)",
+      "category": "论文"
+    },
+    {
+      "title": "Microsoft Research 揭示 Lazarus 权重空间后门技术，通过重编程休眠神经元攻击 AI Agent",
+      "link": "https://aihot.news/items/womexcn3n0ijhbehvhbsxxm4f",
+      "summary": "Microsoft Research 发布对 Lazarus 后门技术的研究，重编程 LLM 中少于 10 个休眠神经元即可在没有训练的情况下给基于该模型的 Agent 安装后门。 🔗 阅读原文 via AIHOT · https://aihot.news/items/womexcn3n0ijhbehvhbsxxm4f",
+      "pub_date": "2026-11-10",
+      "author": "noreply@aihot.news (Microsoft Research 博客)",
+      "category": "论文"
+    },
     {
       "title": "Stripe 收购 OpenRouter，双方宣布合并后定位",
       "link": "https://aihot.news/items/zycmiklep7i6dct58558jbp78",
@@ -386,22 +402,6 @@
       "pub_date": "2026-11-08",
       "author": "noreply@aihot.news (Anthropic：Research)",
       "category": "论文"
-    },
-    {
-      "title": "Anthropic 发布 Claude Fable 5.2 与 Claude Mythos 5.2",
-      "link": "https://aihot.news/items/va9trgwaw3r4por6vdqbjxrhd",
-      "summary": "Anthropic 发布 Claude Fable 5.2 和 Claude Mythos 5.2，两者为同一底层模型，Mythos 需通过 Cyber 或 Life Sciences Verification Program 申请访问。 🔗 阅读原文 via AIHOT · https://aihot.news/items/va9trgwaw3r4por6vdqbjxrhd",
-      "pub_date": "2026-11-08",
-      "author": "noreply@aihot.news (Anthropic：Newsroom)",
-      "category": "AI 模型"
-    },
-    {
-      "title": "Zyphra 发布开源 TTS 模型 ZONOS3-Mini，可在手机浏览器实时运行",
-      "link": "https://aihot.news/items/r5h0cwwdh1peqbg2rk6k9ljrh",
-      "summary": "Zyphra 发布 ZONOS3-Mini，一个 Apache 2.0 开源的零样本语音克隆 TTS 模型，采用稀疏 MoE 架构，总参数 8 亿、活跃参数 1 亿，在 Pixel 9 浏览器端 Time To First Audio 低于 570 ms，在 M3 MacBook Air 上低于 150 ms。 🔗 阅读原文 via AIHOT · https://aihot.news/items/r5h0cwwdh1peqbg2rk6k9ljrh",
-      "pub_date": "2026-11-08",
-      "author": "noreply@aihot.news (Zyphra Research)",
-      "category": "AI 模型"
     }
   ]
 }
