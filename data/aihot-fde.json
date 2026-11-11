@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-11T23:33:02.036252+08:00",
-  "total": 21,
+  "updated_at": "2026-11-12T00:03:01.934663+08:00",
+  "total": 22,
   "items": [
+    {
+      "title": "a16z 提出 B2A 经济：AI 智能体正成为互联网主要用户与流量来源",
+      "link": "https://aihot.news/items/bisaluc0ii0f4s1gzi2zxbr1k",
+      "summary": "a16z 发布分析文章，提出 B2A（Business to Agent）经济概念，认为 AI 智能体已构成互联网主要流量，并将替用户决定购买与订阅。 🔗 阅读原文 via AIHOT · https://aihot.news/items/bisaluc0ii0f4s1gzi2zxbr1k",
+      "pub_date": "2026-11-11",
+      "author": "noreply@aihot.news (a16z：News)",
+      "category": "观点"
+    },
     {
       "title": "Berkeley RDI 发布 CyberBinGym 基准，测试 AI 智能体能否仅凭二进制补丁写出真实漏洞利用",
       "link": "https://aihot.news/items/xenhfme3azzcf8qpihr57fb93",

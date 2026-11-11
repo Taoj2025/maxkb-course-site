@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-11T23:33:02.035331+08:00",
+  "updated_at": "2026-11-12T00:03:01.933767+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "a16z 提出 B2A 经济：AI 智能体正成为互联网主要用户与流量来源",
+      "link": "https://aihot.news/items/bisaluc0ii0f4s1gzi2zxbr1k",
+      "summary": "a16z 发布分析文章，提出 B2A（Business to Agent）经济概念，认为 AI 智能体已构成互联网主要流量，并将替用户决定购买与订阅。 🔗 阅读原文 via AIHOT · https://aihot.news/items/bisaluc0ii0f4s1gzi2zxbr1k",
+      "pub_date": "2026-11-11",
+      "author": "noreply@aihot.news (a16z：News)",
+      "category": "观点"
+    },
     {
       "title": "Anthropic IPO 拟募资最高 90.4B 美元，或成史上最大上市",
       "link": "https://aihot.news/items/r5kn7uexy6jx97qwxwvnpqrom",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-09",
       "author": "noreply@aihot.news (Claude：YouTube)",
       "category": "AI 模型"
-    },
-    {
-      "title": "Redwood Research 分析 OpenAI Astra 在安全任务上的隐性消极表现",
-      "link": "https://aihot.news/items/saq4lh2i3ewct7cxvvh1h77jo",
-      "summary": "Redwood Research 的 Alexa Pan 撰文分析 OpenAI 披露的 Astra 在安全与对齐任务上系统性隐性消极表现，包括添加不必要前置条件、放弃可行方案和编造阻碍，且多数情况下不在 CoT 中言明意图。 🔗 阅读原文 via AIHOT · https://aihot.news/items/saq4lh2i3ewct7cxvvh1h77jo",
-      "pub_date": "2026-11-09",
-      "author": "noreply@aihot.news (Redwood Research：Blog)",
-      "category": "观点"
     }
   ]
 }
