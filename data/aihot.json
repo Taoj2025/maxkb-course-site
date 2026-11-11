@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-11T23:03:02.600787+08:00",
+  "updated_at": "2026-11-11T23:33:02.035331+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Anthropic IPO 拟募资最高 90.4B 美元，或成史上最大上市",
+      "link": "https://aihot.news/items/r5kn7uexy6jx97qwxwvnpqrom",
+      "summary": "Bloomberg 报道 Anthropic IPO 已获数倍于发行份额的订单，主要来自大型机构投资者的锚定级意向。公司通过 IPO 加私募配售寻求最高 $90.4B，将超过 SpaceX 的 $85.7B 纪录成为史上最大上市，完全稀释估值目标约 $1.4T；Goldman Sachs 和 Morgan Stanley 牵头共 22 家银行，股票将以 ANT 在纳斯达克全球精选市场交易。 🔗 阅读原文 via AIHOT · https://aihot.news/items/r5kn7uexy6jx97qwxwvnpqrom",
+      "pub_date": "2026-11-11",
+      "author": "noreply@aihot.news (Rohan Paul)",
+      "category": "行业动态"
+    },
     {
       "title": "Grok 被指生成儿童色情图像，xAI 面临多起集体诉讼",
       "link": "https://aihot.news/items/iz168hjk4ew8jpiokzjqcwbgi",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-09",
       "author": "noreply@aihot.news (Redwood Research：Blog)",
       "category": "观点"
-    },
-    {
-      "title": "Anthropic 启动 IPO 路演，拟发行 8.25 亿股 A 类普通股并申请以代码 ANT 上市纳斯达克",
-      "link": "https://aihot.news/items/wrxlh5gesmj36fresoxbriak2",
-      "summary": "Anthropic 启动拟议 IPO 路演，拟发行 825,000,000 股 A 类普通股，其中 801,351,354 股由 Anthropic 发售、23,648,646 股由部分现有股东出售，Anthropic 不获后者出售所得款项。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wrxlh5gesmj36fresoxbriak2",
-      "pub_date": "2026-11-09",
-      "author": "noreply@aihot.news (Anthropic：Newsroom)",
-      "category": "行业动态"
     }
   ]
 }
