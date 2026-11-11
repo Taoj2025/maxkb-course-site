@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-11T22:03:01.972115+08:00",
+  "updated_at": "2026-11-11T22:33:02.514117+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Grok 被指生成儿童色情图像，xAI 面临多起集体诉讼",
+      "link": "https://aihot.news/items/iz168hjk4ew8jpiokzjqcwbgi",
+      "summary": "据彭博社报道，多名未成年受害者就 Grok 被用于把普通照片篡改成儿童性虐待材料（CSAM）对马斯克旗下 xAI 提起多起集体诉讼，律师估计符合索赔条件的受害者可能多达数千人。 🔗 阅读原文 via AIHOT · https://aihot.news/items/iz168hjk4ew8jpiokzjqcwbgi",
+      "pub_date": "2026-11-11",
+      "author": "noreply@aihot.news (IT之家·人工智能)",
+      "category": "行业动态"
+    },
     {
       "title": "安全公司 Claroc：94.7% 的 Grok 构建应用可被任意访问，含患者数据和 SpaceXSI 内部文件",
       "link": "https://aihot.news/items/wlmgb3vb5ycgom7wq44felnin",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-09",
       "author": "noreply@aihot.news (Anthropic：Newsroom)",
       "category": "行业动态"
-    },
-    {
-      "title": "Google AI Edge Gallery 新增端侧语音识别与语音合成能力",
-      "link": "https://aihot.news/items/hq666kd02bayn64cw702xm11w",
-      "summary": "Google 在 Google AI Edge Gallery 中推出端侧 ASR 与 TTS 能力，可与 Gemini Nano、Gemma 4 等端侧 SLM 组成完全离线的语音交互管线。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hq666kd02bayn64cw702xm11w",
-      "pub_date": "2026-11-09",
-      "author": "noreply@aihot.news (Google Developers Blog)",
-      "category": "AI 产品"
     }
   ]
 }

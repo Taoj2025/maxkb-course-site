@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-11T22:03:01.973136+08:00",
-  "total": 22,
+  "updated_at": "2026-11-11T22:33:02.515452+08:00",
+  "total": 21,
   "items": [
     {
       "title": "Berkeley RDI 发布 CyberBinGym 基准，测试 AI 智能体能否仅凭二进制补丁写出真实漏洞利用",
@@ -170,14 +170,6 @@
       "pub_date": "2026-11-09",
       "author": "noreply@aihot.news (Artificial Analysis)",
       "category": "AI 模型"
-    },
-    {
-      "title": "Google AI Edge Gallery 新增端侧语音识别与语音合成能力",
-      "link": "https://aihot.news/items/hq666kd02bayn64cw702xm11w",
-      "summary": "Google 在 Google AI Edge Gallery 中推出端侧 ASR 与 TTS 能力，可与 Gemini Nano、Gemma 4 等端侧 SLM 组成完全离线的语音交互管线。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hq666kd02bayn64cw702xm11w",
-      "pub_date": "2026-11-09",
-      "author": "noreply@aihot.news (Google Developers Blog)",
-      "category": "AI 产品"
     }
   ]
 }
