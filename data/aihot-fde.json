@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-11T13:33:02.468798+08:00",
-  "total": 24,
+  "updated_at": "2026-11-11T14:03:02.448742+08:00",
+  "total": 23,
   "items": [
     {
       "title": "Berkeley RDI 发布 CyberBinGym 基准，测试 AI 智能体能否仅凭二进制补丁写出真实漏洞利用",
@@ -186,14 +186,6 @@
       "pub_date": "2026-11-09",
       "author": "noreply@aihot.news (Anthropic：Claude.dev 开发者博客)",
       "category": "教程"
-    },
-    {
-      "title": "Anthropic 用 1000 个 Claude Fable 5.2 智能体在沙箱内复现费马大定理形式化证明",
-      "link": "https://aihot.news/items/y0m3p1gin2dlfm4ns7gsrkvr8",
-      "summary": "Anthropic 的玩具实验中，1000 个运行 Claude Fable 5.2 早期版本的智能体在无 Prove2Me 平台和研究者指导的情况下复现了费马大定理的形式化证明，耗时 28.7 小时，输出 token 仅为原 9 月形式化的三分之一，证明长度为七分之一。 🔗 阅读原文 via AIHOT · https://aihot.news/items/y0m3p1gin2dlfm4ns7gsrkvr8",
-      "pub_date": "2026-11-09",
-      "author": "noreply@aihot.news (Anthropic：Claude.dev 开发者博客)",
-      "category": "论文"
     }
   ]
 }

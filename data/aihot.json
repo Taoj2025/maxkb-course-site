@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-11T13:33:02.467496+08:00",
+  "updated_at": "2026-11-11T14:03:02.447632+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "WSJ：Anthropic 7 位创始人 IPO 各套现约 2.5 亿美元并保留控制权",
+      "link": "https://aihot.news/items/ajjv9abs8vd20j05emcig98ai",
+      "summary": "WSJ 报道，Anthropic 7 位创始人将在 IPO 中各出售约 2.5 亿美元股票，每人保留约 180 亿美元持仓。据公司文件，每人出售近 3.4M 股，发行价区间预计 70 至 78 美元，上市预计下周进行，估值接近 1.3 万亿美元，募资 800 亿美元以上，部分通过包括 Google 在内的私募配售。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ajjv9abs8vd20j05emcig98ai",
+      "pub_date": "2026-11-11",
+      "author": "noreply@aihot.news (Rohan Paul)",
+      "category": "行业动态"
+    },
     {
       "title": "Anthropic 修订版 S1 文件披露与 Microsoft 和 Google 超 100 亿美元级新算力协议",
       "link": "https://aihot.news/items/xshgfc1vcvgrdkvnomagmefwy",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-09",
       "author": "noreply@aihot.news (Anthropic：Claude.dev 开发者博客)",
       "category": "教程"
-    },
-    {
-      "title": "Anthropic 用 1000 个 Claude Fable 5.2 智能体在沙箱内复现费马大定理形式化证明",
-      "link": "https://aihot.news/items/y0m3p1gin2dlfm4ns7gsrkvr8",
-      "summary": "Anthropic 的玩具实验中，1000 个运行 Claude Fable 5.2 早期版本的智能体在无 Prove2Me 平台和研究者指导的情况下复现了费马大定理的形式化证明，耗时 28.7 小时，输出 token 仅为原 9 月形式化的三分之一，证明长度为七分之一。 🔗 阅读原文 via AIHOT · https://aihot.news/items/y0m3p1gin2dlfm4ns7gsrkvr8",
-      "pub_date": "2026-11-09",
-      "author": "noreply@aihot.news (Anthropic：Claude.dev 开发者博客)",
-      "category": "论文"
     }
   ]
 }
