@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-11T20:03:02.417562+08:00",
+  "updated_at": "2026-11-11T20:33:02.435262+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "OpenAI Q3 营收达 100 亿美元，效率仍落后于 Anthropic",
+      "link": "https://aihot.news/items/mzxxannvi5wge7wz0c0jfdyz5",
+      "summary": "据《华尔街日报》和 The Information 报道，OpenAI Q3 环比增长约 50% 至 100 亿美元，但调整后经营亏损从 101 亿升至 109 亿美元。 🔗 阅读原文 via AIHOT · https://aihot.news/items/mzxxannvi5wge7wz0c0jfdyz5",
+      "pub_date": "2026-11-11",
+      "author": "noreply@aihot.news (The Decoder：AI News)",
+      "category": "行业动态"
+    },
     {
       "title": "WSJ：Anthropic 7 位创始人 IPO 各套现约 2.5 亿美元并保留控制权",
       "link": "https://aihot.news/items/ajjv9abs8vd20j05emcig98ai",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-09",
       "author": "noreply@aihot.news (NVIDIA Blog)",
       "category": "AI 产品"
-    },
-    {
-      "title": "Anthropic 指南：Claude 开发该选 Haiku 5.5、Sonnet 5.5、Opus 5.5 还是 Fable 5.2",
-      "link": "https://aihot.news/items/ykrvgcox3whsx6tst5qesbf62",
-      "summary": "Anthropic 开发者博客发文指导开发者如何在 Haiku 5.5、Sonnet 5.5、Opus 5.5 和 Fable 5.2 之间选型，建议多数编码和知识工作从 Opus 5.5 的 medium effort 起步，其 token 价格是 Fable 5.2 的一半。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ykrvgcox3whsx6tst5qesbf62",
-      "pub_date": "2026-11-09",
-      "author": "noreply@aihot.news (Anthropic：Claude.dev 开发者博客)",
-      "category": "教程"
     }
   ]
 }
