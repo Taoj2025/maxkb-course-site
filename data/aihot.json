@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-11T13:03:01.903948+08:00",
+  "updated_at": "2026-11-11T13:33:02.467496+08:00",
   "total": 50,
   "items": [
     {
@@ -138,6 +138,14 @@
       "pub_date": "2026-11-10",
       "author": "noreply@aihot.news (Wiz：Research)",
       "category": "论文"
+    },
+    {
+      "title": "百度发布 ERNIE 5.5 Flash Preview，权重将于 11 月 25 日前开源",
+      "link": "https://aihot.news/items/qd3f4j2hd0t98tqf28iv7pu2j",
+      "summary": "百度发布 ERNIE 5.5 Flash Preview，是基于此前 Base 模型的首个后训练版本，总参数 280B、激活参数 14B，支持 1M 上下文。模型 API 已在千帆平台上线，权重将于 11 月 25 日前开源；官方展示了游戏开发、3D 建模、知识工作、视频创作等 Agent 场景成果，并称该版本为后训练中间版本，正式版仍将持续优化。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qd3f4j2hd0t98tqf28iv7pu2j",
+      "pub_date": "2026-11-10",
+      "author": "noreply@aihot.news (百度文心 ERNIE 官方博客)",
+      "category": "AI 模型"
     },
     {
       "title": "Google DeepMind 用 AlphaProof Code 对 Signal 协议机器码完成形式化安全验证",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-09",
       "author": "noreply@aihot.news (Anthropic：Claude.dev 开发者博客)",
       "category": "论文"
-    },
-    {
-      "title": "Nvidia CEO 黄仁勋婚外情风波削弱其对严格 AI 芯片出口管制的游说",
-      "link": "https://aihot.news/items/e17dl64mjiov57c0jtwn41bxd",
-      "summary": "据 Bloomberg 报道，Nvidia CEO 黄仁勋在全员备忘录中承认与被美国情报机构认定为疑似中国情报人员线人的 Alice Huang（Huang Le）存在婚外关系，董事会已启动独立董事主导的调查。 🔗 阅读原文 via AIHOT · https://aihot.news/items/e17dl64mjiov57c0jtwn41bxd",
-      "pub_date": "2026-11-09",
-      "author": "noreply@aihot.news (The Decoder：AI News)",
-      "category": "行业动态"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-11T13:03:01.904849+08:00",
-  "total": 23,
+  "updated_at": "2026-11-11T13:33:02.468798+08:00",
+  "total": 24,
   "items": [
     {
       "title": "Berkeley RDI 发布 CyberBinGym 基准，测试 AI 智能体能否仅凭二进制补丁写出真实漏洞利用",
@@ -58,6 +58,14 @@
       "pub_date": "2026-11-10",
       "author": "noreply@aihot.news (Wiz：Research)",
       "category": "论文"
+    },
+    {
+      "title": "百度发布 ERNIE 5.5 Flash Preview，权重将于 11 月 25 日前开源",
+      "link": "https://aihot.news/items/qd3f4j2hd0t98tqf28iv7pu2j",
+      "summary": "百度发布 ERNIE 5.5 Flash Preview，是基于此前 Base 模型的首个后训练版本，总参数 280B、激活参数 14B，支持 1M 上下文。模型 API 已在千帆平台上线，权重将于 11 月 25 日前开源；官方展示了游戏开发、3D 建模、知识工作、视频创作等 Agent 场景成果，并称该版本为后训练中间版本，正式版仍将持续优化。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qd3f4j2hd0t98tqf28iv7pu2j",
+      "pub_date": "2026-11-10",
+      "author": "noreply@aihot.news (百度文心 ERNIE 官方博客)",
+      "category": "AI 模型"
     },
     {
       "title": "Google DeepMind 用 AlphaProof Code 对 Signal 协议机器码完成形式化安全验证",
