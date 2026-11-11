@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-12T02:03:01.758265+08:00",
+  "updated_at": "2026-11-12T02:33:02.495936+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Claude Code 中如何选择 Fable 5.2 与 Opus 等模型",
+      "link": "https://aihot.news/items/ep5oqt7m4l7gn3tqieilznmuk",
+      "summary": "Claude 发布视频教程，讲解在 Claude Code 中何时使用 Fable 5.2、Opus 5.5，何时降级到 Sonnet 5.5 或 Haiku 5.5，以及如何把一个任务拆分给多个模型。视频覆盖复杂编码与开放式技术工作、低成本明确任务等场景，并提供在自有任务上测量各模型表现的指南链接；可用性与用量限制因套餐而异。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ep5oqt7m4l7gn3tqieilznmuk",
+      "pub_date": "2026-11-11",
+      "author": "noreply@aihot.news (Claude：YouTube)",
+      "category": "教程"
+    },
     {
       "title": "a16z 提出 B2A 经济：AI 智能体正成为互联网主要用户与流量来源",
       "link": "https://aihot.news/items/bisaluc0ii0f4s1gzi2zxbr1k",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-09",
       "author": "noreply@aihot.news (Artificial Analysis)",
       "category": "AI 模型"
-    },
-    {
-      "title": "Claude Fable 5.2 上线 Devin Desktop 和 Devin CLI",
-      "link": "https://aihot.news/items/rth7pxd3xqp2zkd2e1psjgtbl",
-      "summary": "Cognition 宣布 Claude Fable 5.2 现已在 Devin Desktop 和 Devin CLI 中可用。该模型在 FrontierCode 2.0 上以 49.1 分排名第一；相比 Fable 5.1，在低推理力度下以约三分之一的价格超过前代得分。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rth7pxd3xqp2zkd2e1psjgtbl",
-      "pub_date": "2026-11-09",
-      "author": "noreply@aihot.news (Cognition)",
-      "category": "AI 产品"
     }
   ]
 }

@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-12T02:03:01.759170+08:00",
-  "total": 23,
+  "updated_at": "2026-11-12T02:33:02.496939+08:00",
+  "total": 24,
   "items": [
+    {
+      "title": "Claude Code 中如何选择 Fable 5.2 与 Opus 等模型",
+      "link": "https://aihot.news/items/ep5oqt7m4l7gn3tqieilznmuk",
+      "summary": "Claude 发布视频教程，讲解在 Claude Code 中何时使用 Fable 5.2、Opus 5.5，何时降级到 Sonnet 5.5 或 Haiku 5.5，以及如何把一个任务拆分给多个模型。视频覆盖复杂编码与开放式技术工作、低成本明确任务等场景，并提供在自有任务上测量各模型表现的指南链接；可用性与用量限制因套餐而异。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ep5oqt7m4l7gn3tqieilznmuk",
+      "pub_date": "2026-11-11",
+      "author": "noreply@aihot.news (Claude：YouTube)",
+      "category": "教程"
+    },
     {
       "title": "a16z 提出 B2A 经济：AI 智能体正成为互联网主要用户与流量来源",
       "link": "https://aihot.news/items/bisaluc0ii0f4s1gzi2zxbr1k",
