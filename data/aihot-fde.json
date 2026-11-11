@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-11T12:03:02.413561+08:00",
-  "total": 24,
+  "updated_at": "2026-11-11T12:33:02.228070+08:00",
+  "total": 23,
   "items": [
     {
       "title": "Berkeley RDI 发布 CyberBinGym 基准，测试 AI 智能体能否仅凭二进制补丁写出真实漏洞利用",
@@ -186,14 +186,6 @@
       "pub_date": "2026-11-09",
       "author": "noreply@aihot.news (Anthropic：Claude.dev 开发者博客)",
       "category": "论文"
-    },
-    {
-      "title": "Meta 发布最小最高效模型 Muse Ember，主打智能体高频任务",
-      "link": "https://aihot.news/items/cox936nwax49rkiimi1oicgzu",
-      "summary": "Meta 发布 Muse Ember（muse-ember-1.0），定位最小最高效的复杂推理执行模型，面向工具调用、编码子任务、路由、抽取和长文档解析等智能体日常重复任务。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cox936nwax49rkiimi1oicgzu",
-      "pub_date": "2026-11-09",
-      "author": "noreply@aihot.news (Meta AI：Research Blog)",
-      "category": "AI 模型"
     }
   ]
 }

@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-11T12:03:02.412631+08:00",
+  "updated_at": "2026-11-11T12:33:02.227185+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Anthropic 修订版 S1 文件披露与 Microsoft 和 Google 超 100 亿美元级新算力协议",
+      "link": "https://aihot.news/items/xshgfc1vcvgrdkvnomagmefwy",
+      "summary": "Anthropic 在当日修订的 S1 文件中披露与 Microsoft 和 Google 达成超 100 亿美元的新协议。Microsoft 承诺到 2033 年 6 月支出至少 472 亿、最高 492 亿美元，Google 最低承诺从约 1145 亿升至约 1213 亿美元，两笔均不可撤销、无论是否使用容量都须付款。文件还提到上季度短期算力支出 50 亿美元且价格明显更高。 🔗 阅读原文 via AIHOT · https://aihot.news/items/xshgfc1vcvgrdkvnomagmefwy",
+      "pub_date": "2026-11-11",
+      "author": "noreply@aihot.news (Rohan Paul)",
+      "category": "行业动态"
+    },
     {
       "title": "Anthropic 投资需求火热，承销商拟将 IPO 目标估值上调回 $1.5T 或更高",
       "link": "https://aihot.news/items/m7ul4psbkb5zyp0t254fr986o",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-09",
       "author": "noreply@aihot.news (The Decoder：AI News)",
       "category": "行业动态"
-    },
-    {
-      "title": "Meta 发布最小最高效模型 Muse Ember，主打智能体高频任务",
-      "link": "https://aihot.news/items/cox936nwax49rkiimi1oicgzu",
-      "summary": "Meta 发布 Muse Ember（muse-ember-1.0），定位最小最高效的复杂推理执行模型，面向工具调用、编码子任务、路由、抽取和长文档解析等智能体日常重复任务。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cox936nwax49rkiimi1oicgzu",
-      "pub_date": "2026-11-09",
-      "author": "noreply@aihot.news (Meta AI：Research Blog)",
-      "category": "AI 模型"
     }
   ]
 }
