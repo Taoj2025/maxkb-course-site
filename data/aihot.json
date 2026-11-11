@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-12T07:03:01.501185+08:00",
+  "updated_at": "2026-11-12T07:33:02.257477+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Runway 开源 27B 世界动作模型 Praxis-1，权重采用 Apache 2.0 许可",
+      "link": "https://aihot.news/items/bx3sq4dxfqblyztkuiktiz0wv",
+      "summary": "Runway 宣布世界动作模型 Praxis-1 以 Apache 2.0 开放权重面向所有人开放。该模型为 27B 参数 MoE 扩散 Transformer，同时预测视频与动作，在 NVIDIA RoboLab-120 榜单以 46.2% 成功率居首，超过 FLUX 3 Action（42.9%）、Cosmos3 Nano（36.8%）和 π0.5（28.0%）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/bx3sq4dxfqblyztkuiktiz0wv",
+      "pub_date": "2026-11-11",
+      "author": "noreply@aihot.news (Runway：News)",
+      "category": "AI 模型"
+    },
     {
       "title": "Google 发布 Gemini Decisions API 与 Gemini Decision 1 模型，专注快速多模态封闭式决策",
       "link": "https://aihot.news/items/r8hsm3m3munjwk1n3u885zszw",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-09",
       "author": "noreply@aihot.news (Figma AI / Agent / Make)",
       "category": "教程"
-    },
-    {
-      "title": "Claude Fable 5.2 上线 Higgsfield，开放 3 天免费试用",
-      "link": "https://aihot.news/items/ugn21ui1m8kftffpe2c95qlkx",
-      "summary": "Higgsfield 宣布 Claude Fable 5.2 已在 Higgsfield MCP 上线，提供 3 天免费不限量使用全部顶级视频和图像模型。作者称该 Anthropic 新模型擅长 3D 建模、视觉推理、computer use 和编码；引用内容提到 Claude Fable 5.2 与 Claude Mythos 5.2 在编码、推理和视觉方面有提升。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ugn21ui1m8kftffpe2c95qlkx",
-      "pub_date": "2026-11-09",
-      "author": "noreply@aihot.news (Higgsfield AI)",
-      "category": "AI 产品"
     }
   ]
 }
