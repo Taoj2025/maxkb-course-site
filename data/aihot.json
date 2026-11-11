@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-11T21:03:01.821825+08:00",
+  "updated_at": "2026-11-11T21:33:01.484538+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "安全公司 Claroc：94.7% 的 Grok 构建应用可被任意访问，含患者数据和 SpaceXSI 内部文件",
+      "link": "https://aihot.news/items/wlmgb3vb5ycgom7wq44felnin",
+      "summary": "安全公司 Claroc 报告称，在检查的 37,571 个仍在线的 Grok 构建应用中，35,578 个（94.7%）无需登录即可访问，原因是发布对话框默认预选\"Anyone with the link\"，且每个应用的独立子域名会进入可检索的 passive DNS 数据库。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wlmgb3vb5ycgom7wq44felnin",
+      "pub_date": "2026-11-11",
+      "author": "noreply@aihot.news (The Decoder：AI News)",
+      "category": "行业动态"
+    },
     {
       "title": "OpenAI Q3 营收达 100 亿美元，效率仍落后于 Anthropic",
       "link": "https://aihot.news/items/mzxxannvi5wge7wz0c0jfdyz5",
@@ -393,14 +401,6 @@
       "summary": "Google 在 Google AI Edge Gallery 中推出端侧 ASR 与 TTS 能力，可与 Gemini Nano、Gemma 4 等端侧 SLM 组成完全离线的语音交互管线。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hq666kd02bayn64cw702xm11w",
       "pub_date": "2026-11-09",
       "author": "noreply@aihot.news (Google Developers Blog)",
-      "category": "AI 产品"
-    },
-    {
-      "title": "NVIDIA 在 CoRL 发布 GR00T 2 世界动作模型及 Isaac Lab 3.0 等开放机器人技术",
-      "link": "https://aihot.news/items/mydhz66rjk13abamqnqal48l4",
-      "summary": "NVIDIA 在 CoRL 大会发布开放世界动作模型 GR00T 2，基于 Cosmos 训练并使用 100,000 小时人类自我中心数据，50 个任务中开箱即用完成 40 个，每任务 1 条演示平均成功率 71%，5 条达 95%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/mydhz66rjk13abamqnqal48l4",
-      "pub_date": "2026-11-09",
-      "author": "noreply@aihot.news (NVIDIA Blog)",
       "category": "AI 产品"
     }
   ]
