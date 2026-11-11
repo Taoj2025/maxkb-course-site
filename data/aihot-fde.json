@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-11T08:03:01.454185+08:00",
+  "updated_at": "2026-11-11T08:33:02.356275+08:00",
   "total": 24,
   "items": [
     {
@@ -10,6 +10,22 @@
       "pub_date": "2026-11-11",
       "author": "noreply@aihot.news (Berkeley RDI：Blog)",
       "category": "论文"
+    },
+    {
+      "title": "OpenRouter 实测 MCP vs CLI vs Skills 的上下文 token 成本",
+      "link": "https://aihot.news/items/wkpj021rmg6sgthgj9zwevei4",
+      "summary": "OpenRouter 实测同一 GitHub 任务下 MCP、CLI 与 skill 的 token 成本：在 Claude Sonnet 5.5 上 CLI 用 1。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wkpj021rmg6sgthgj9zwevei4",
+      "pub_date": "2026-11-11",
+      "author": "noreply@aihot.news (OpenRouter：Announcements)",
+      "category": "教程"
+    },
+    {
+      "title": "OpenRouter 实测 fp8 与 fp4 量化对模型质量和价格的影响",
+      "link": "https://aihot.news/items/i3gp1xj4j11gi4qoreya18izb",
+      "summary": "OpenRouter 发布量化解析文章，讲解 LLM 量化原理，并报告 2026 年 10 月 20 日对 1455 个 provider 端点和 Qwen3.8 27B 六个端点的实测。 🔗 阅读原文 via AIHOT · https://aihot.news/items/i3gp1xj4j11gi4qoreya18izb",
+      "pub_date": "2026-11-11",
+      "author": "noreply@aihot.news (OpenRouter：Announcements)",
+      "category": "教程"
     },
     {
       "title": "Microsoft Research 揭示 Lazarus 权重空间后门技术，通过重编程休眠神经元攻击 AI Agent",
@@ -178,22 +194,6 @@
       "pub_date": "2026-11-09",
       "author": "noreply@aihot.news (Meta AI：Research Blog)",
       "category": "AI 模型"
-    },
-    {
-      "title": "数字生命卡兹克上线免费 Token 福利聚合网站 Token羊毛",
-      "link": "https://aihot.news/items/e80fmjdp23n217sd6e7ky52om",
-      "summary": "数字生命卡兹克上线免费聚合网站 Token羊毛（aihot.news/free-tokens），把各厂商公开的免费额度、签到积分、限时免费等活动汇总到一页，页面显示今日可领金额并按日、周、月分组，还设计了随领取次数升级亮度的卡片收集玩法。 🔗 阅读原文 via AIHOT · https://aihot.news/items/e80fmjdp23n217sd6e7ky52om",
-      "pub_date": "2026-11-08",
-      "author": "noreply@aihot.news (公众号：数字生命卡兹克)",
-      "category": "AI 产品"
-    },
-    {
-      "title": "Anthropic 测试 Claude Fable 5.2 端到端设计三种电子设备并制作可用原型",
-      "link": "https://aihot.news/items/xmqflr9ja0pipwyibtqnf8qsj",
-      "summary": "Anthropic 与 Diode Computers 合作，让 Claude Fable 5.2 从简单提示词出发完成免提音箱、语音助手中枢和电子宠物三种设备的设计，包括 PCB 布局、CAD 建模、固件编写和 DFM 检查，三块电路板直接由工厂按设计文件制造，原型经数周使用仍正常工作。 🔗 阅读原文 via AIHOT · https://aihot.news/items/xmqflr9ja0pipwyibtqnf8qsj",
-      "pub_date": "2026-11-08",
-      "author": "noreply@aihot.news (Anthropic：Research)",
-      "category": "论文"
     }
   ]
 }
