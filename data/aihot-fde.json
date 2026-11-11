@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-12T00:33:01.755117+08:00",
-  "total": 22,
+  "updated_at": "2026-11-12T01:03:01.865910+08:00",
+  "total": 23,
   "items": [
     {
       "title": "a16z 提出 B2A 经济：AI 智能体正成为互联网主要用户与流量来源",
@@ -10,6 +10,14 @@
       "pub_date": "2026-11-11",
       "author": "noreply@aihot.news (a16z：News)",
       "category": "观点"
+    },
+    {
+      "title": "Anthropic 发布 MAMUBench：单一智能体协调在四类环境中均胜过每个用户各自的智能体团队",
+      "link": "https://aihot.news/items/z9u4n1e7zfapxjozcn97quhdp",
+      "summary": "Anthropic Fellows Program 团队构建四个多用户多智能体模拟环境（共享 API token 预算、诊所日历、团体订餐或旅行预订、合并队列），测试 Anthropic、OpenAI 和 Alibaba 的前沿模型，并发布其中三个环境作为基准 MAMUBench。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z9u4n1e7zfapxjozcn97quhdp",
+      "pub_date": "2026-11-11",
+      "author": "noreply@aihot.news (Anthropic：Alignment Science Blog)",
+      "category": "论文"
     },
     {
       "title": "Berkeley RDI 发布 CyberBinGym 基准，测试 AI 智能体能否仅凭二进制补丁写出真实漏洞利用",

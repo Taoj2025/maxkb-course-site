@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-12T00:33:01.754035+08:00",
+  "updated_at": "2026-11-12T01:03:01.865047+08:00",
   "total": 50,
   "items": [
     {
@@ -66,6 +66,14 @@
       "pub_date": "2026-11-11",
       "author": "noreply@aihot.news (Rohan Paul)",
       "category": "行业动态"
+    },
+    {
+      "title": "Anthropic 发布 MAMUBench：单一智能体协调在四类环境中均胜过每个用户各自的智能体团队",
+      "link": "https://aihot.news/items/z9u4n1e7zfapxjozcn97quhdp",
+      "summary": "Anthropic Fellows Program 团队构建四个多用户多智能体模拟环境（共享 API token 预算、诊所日历、团体订餐或旅行预订、合并队列），测试 Anthropic、OpenAI 和 Alibaba 的前沿模型，并发布其中三个环境作为基准 MAMUBench。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z9u4n1e7zfapxjozcn97quhdp",
+      "pub_date": "2026-11-11",
+      "author": "noreply@aihot.news (Anthropic：Alignment Science Blog)",
+      "category": "论文"
     },
     {
       "title": "Berkeley RDI 发布 CyberBinGym 基准，测试 AI 智能体能否仅凭二进制补丁写出真实漏洞利用",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-09",
       "author": "noreply@aihot.news (Cognition)",
       "category": "AI 产品"
-    },
-    {
-      "title": "Claude Mythos 5.2 预测基因治疗载体 AAV 衣壳结构",
-      "link": "https://aihot.news/items/rxx1qxfjfuioem95lr868hhwq",
-      "summary": "Claude 官方视频介绍 Claude Mythos 5.2 预测了完整 AAV 衣壳结构，即用于递送基因治疗的蛋白质外壳。模型编写代码在相邻五链分组上运行开源折叠模型，再利用衣壳对称性拼合全部 60 条链；在 AAV2 上预测结果与实验结构误差约为一个原子宽度。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rxx1qxfjfuioem95lr868hhwq",
-      "pub_date": "2026-11-09",
-      "author": "noreply@aihot.news (Claude：YouTube)",
-      "category": "AI 模型"
     }
   ]
 }
