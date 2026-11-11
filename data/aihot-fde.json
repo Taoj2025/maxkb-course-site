@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-12T02:33:02.496939+08:00",
+  "updated_at": "2026-11-12T03:03:02.081640+08:00",
   "total": 24,
   "items": [
+    {
+      "title": "Google 发布 Gemini Decisions API 与 Gemini Decision 1 模型，专注快速多模态封闭式决策",
+      "link": "https://aihot.news/items/r8hsm3m3munjwk1n3u885zszw",
+      "summary": "Google 推出 Gemini Decisions API，由新模型 Gemini Decision 1 驱动，可在 150-250ms 端到端延迟内对文本、图像、音频、视频和 PDF（最多 256K tokens）一次性评估最多 1000 个是/否、多选和评分题。 🔗 阅读原文 via AIHOT · https://aihot.news/items/r8hsm3m3munjwk1n3u885zszw",
+      "pub_date": "2026-11-11",
+      "author": "noreply@aihot.news (Google Blog：AI)",
+      "category": "AI 产品"
+    },
     {
       "title": "Claude Code 中如何选择 Fable 5.2 与 Opus 等模型",
       "link": "https://aihot.news/items/ep5oqt7m4l7gn3tqieilznmuk",
@@ -12,9 +20,9 @@
       "category": "教程"
     },
     {
-      "title": "a16z 提出 B2A 经济：AI 智能体正成为互联网主要用户与流量来源",
+      "title": "a16z 提出 B2A 经济：AI 智能体正成为新的流量与分发渠道",
       "link": "https://aihot.news/items/bisaluc0ii0f4s1gzi2zxbr1k",
-      "summary": "a16z 发布分析文章，提出 B2A（Business to Agent）经济概念，认为 AI 智能体已构成互联网主要流量，并将替用户决定购买与订阅。 🔗 阅读原文 via AIHOT · https://aihot.news/items/bisaluc0ii0f4s1gzi2zxbr1k",
+      "summary": "a16z 发布文章提出 B2A 经济概念，认为 AI 智能体已占大多数网络流量，正从回答问题转向代替用户完成任务和消费。 🔗 阅读原文 via AIHOT · https://aihot.news/items/bisaluc0ii0f4s1gzi2zxbr1k",
       "pub_date": "2026-11-11",
       "author": "noreply@aihot.news (a16z：News)",
       "category": "观点"
@@ -186,14 +194,6 @@
       "pub_date": "2026-11-09",
       "author": "noreply@aihot.news (Higgsfield AI)",
       "category": "AI 产品"
-    },
-    {
-      "title": "Artificial Analysis 评测 Claude Fable 5.2：以 65 分登顶 Intelligence Index v5",
-      "link": "https://aihot.news/items/m23i0fgxrk1t2gqysu6mqv82s",
-      "summary": "Artificial Analysis 评测 Anthropic 发布的 Claude Fable 5.2，其在 Artificial Analysis Intelligence Index v5 以 65 分登顶，领先 Gemini 4 Carbon（60）和 Claude Opus 5.5（59）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/m23i0fgxrk1t2gqysu6mqv82s",
-      "pub_date": "2026-11-09",
-      "author": "noreply@aihot.news (Artificial Analysis)",
-      "category": "AI 模型"
     }
   ]
 }
