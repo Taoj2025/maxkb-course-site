@@ -1,8 +1,48 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-13T02:03:01.713413+08:00",
+  "updated_at": "2026-11-13T02:33:01.785524+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "World Labs 开放世界模型 Atlas，支持生成关键帧、视频片段和 3D Gaussian splats",
+      "link": "https://aihot.news/items/lazmov9ciw8y5uqpuda9qcizm",
+      "summary": "World Labs 宣布 Atlas 世界模型向所有人开放，李飞飞转发并表达期待用户用它构建的内容。官方为用户提供了应用和 API 端点，可用 Atlas 生成关键帧、视频片段或 3D Gaussian splats。 🔗 阅读原文 via AIHOT · https://aihot.news/items/lazmov9ciw8y5uqpuda9qcizm",
+      "pub_date": "2026-11-12",
+      "author": "noreply@aihot.news (Fei-Fei Li)",
+      "category": "AI 产品"
+    },
+    {
+      "title": "Artificial Analysis 评测 Gemini 4 Hydrogen：智能指数 54，接近 Sonnet 5.5 且成本约其 32%",
+      "link": "https://aihot.news/items/ajvxvhu8bh001pourbhhjl0ir",
+      "summary": "Artificial Analysis 评测 Google 新发布的 Gemini 4 Hydrogen：新增 xhigh 推理档在 Intelligence Index 得 54 分，比 Claude Sonnet 5.5 (max) 和 GPT-6.1 Sol (max) 低 1 分，每任务成本约为 Sonnet 的 32%，但约为 GPT-6.1 Sol 的 2.5 倍。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ajvxvhu8bh001pourbhhjl0ir",
+      "pub_date": "2026-11-12",
+      "author": "noreply@aihot.news (Artificial Analysis)",
+      "category": "AI 模型"
+    },
+    {
+      "title": "SemiAnalysis 分析黄仁勋辞任 Nvidia 后的公司前景与对华芯片管制走向",
+      "link": "https://aihot.news/items/n73ab4h9gqlu6ucv69ynzxln4",
+      "summary": "Dylan Patel 在 SemiAnalysis 长文中分析黄仁勋不再担任 Nvidia CEO 的影响，认为其辞职与 GPU 大规模走私及美国情报界的推动有关，RASA 法案已在众议院以 369 票对 22 票通过，参议院表决正在进行。 🔗 阅读原文 via AIHOT · https://aihot.news/items/n73ab4h9gqlu6ucv69ynzxln4",
+      "pub_date": "2026-11-12",
+      "author": "noreply@aihot.news (SemiAnalysis 长文 RSS)",
+      "category": "行业动态"
+    },
+    {
+      "title": "Google Gemini 开放推送，覆盖开发者、企业与普通用户渠道",
+      "link": "https://aihot.news/items/v26fsdyhbktgyuedmrx25p58y",
+      "summary": "Google DeepMind 宣布开始向各渠道推送：开发者可在 Google AI Studio、Android Studio 中用 Gemini API，付费 Google AI Pro 和 Ultra 订阅者可在 Google Antigravity 中使用；企业可通过 Gemini for business 和 Google Antigravity 部署；所有用户可在 Google Search 和 Gemini 应用模型下拉菜单中访问。详情见 https://goo.gle/4zDCs8N。 🔗 阅读原文 via AIHOT · https://aihot.news/items/v26fsdyhbktgyuedmrx25p58y",
+      "pub_date": "2026-11-12",
+      "author": "noreply@aihot.news (Google DeepMind)",
+      "category": "AI 产品"
+    },
+    {
+      "title": "Google DeepMind 发布 Gemini 4 Hydrogen",
+      "link": "https://aihot.news/items/uy1ayrrlqx1snqsv4lub7whsa",
+      "summary": "Google DeepMind 发布 Gemini 4 Hydrogen，定位快速执行日常编码与智能体工作流，面向 Gemini API、AI Studio、Gemini 应用、Google Search 等全层级开放。 🔗 阅读原文 via AIHOT · https://aihot.news/items/uy1ayrrlqx1snqsv4lub7whsa",
+      "pub_date": "2026-11-12",
+      "author": "noreply@aihot.news (Google DeepMind：Blog)",
+      "category": "AI 模型"
+    },
     {
       "title": "The Verge 分析黄仁勋辞职与 Nvidia 芯片走私疑云",
       "link": "https://aihot.news/items/licdk6vosezxouovor3gvtcpe",
@@ -66,6 +106,14 @@
       "pub_date": "2026-11-12",
       "author": "noreply@aihot.news (OpenRouter：Announcements)",
       "category": "教程"
+    },
+    {
+      "title": "Jensen Huang 辞任 Nvidia CEO 后对 AI 经济的五点影响分析",
+      "link": "https://aihot.news/items/ivpl9ziip8mpoa90avi3ke9pj",
+      "summary": "Tomasz Tunguz 分析 Jensen Huang 即日辞任 Nvidia 总裁、CEO 及董事后对 AI 行业的影响，CFO Colette Kress 出任临时 CEO。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ivpl9ziip8mpoa90avi3ke9pj",
+      "pub_date": "2026-11-12",
+      "author": "noreply@aihot.news (Tomasz Tunguz 博客)",
+      "category": "行业动态"
     },
     {
       "title": "Anthropic 发布 Claude Tag 创业公司使用指南",
@@ -354,54 +402,6 @@
       "pub_date": "2026-11-10",
       "author": "noreply@aihot.news (Lovable Blog)",
       "category": "教程"
-    },
-    {
-      "title": "n8n Labs 发布开源个人智能体 Nod 研究预览版，可在本地电脑运行",
-      "link": "https://aihot.news/items/yrk09s03tcgcxsxq8jh0npjk0",
-      "summary": "n8n Labs 发布研究预览版 Nod，一个独立于 n8n 的开源个人智能体应用，可在 Mac 和 Windows 本地运行，自带沙箱和浏览器，能在用户连接的应用（如 Gmail、Slack）及无集成的网站上完成任务。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yrk09s03tcgcxsxq8jh0npjk0",
-      "pub_date": "2026-11-10",
-      "author": "noreply@aihot.news (n8n Blog)",
-      "category": "AI 产品"
-    },
-    {
-      "title": "Cursor Projects 升级为多人协作模式",
-      "link": "https://aihot.news/items/vouc5yc5intvgg7311kekkhsi",
-      "summary": "Cursor 宣布 Projects 迈入多人协作阶段，此前 9 月推出的 Projects 通过单一协调者调度一组智能体，现在支持邀请团队成员加入同一 Project，与各自的智能体共同规划、构建和交付。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vouc5yc5intvgg7311kekkhsi",
-      "pub_date": "2026-11-10",
-      "author": "noreply@aihot.news (Cursor Blog)",
-      "category": "AI 产品"
-    },
-    {
-      "title": "Claude Code 被曝把密码写进项目文件，GitHub 上发现 2539 个真实凭据，官方正在修复",
-      "link": "https://aihot.news/items/efkizvqpiynq97lm5cx6fmd43",
-      "summary": "Ars Technica 报道，安全公司 Apiiro 发现超过 10 万份 Claude Code 本地设置文件被上传至公开仓库，共识别出 1,994 个代码库中的 2,539 个真实凭据，涉及 63 个组织，包括 Azure 数据库密码、Square 生产令牌和 SSH root 登录信息。 🔗 阅读原文 via AIHOT · https://aihot.news/items/efkizvqpiynq97lm5cx6fmd43",
-      "pub_date": "2026-11-10",
-      "author": "noreply@aihot.news (IT之家·人工智能)",
-      "category": "行业动态"
-    },
-    {
-      "title": "OpenAI 研究：模型生命周期中哪些因素影响 CoT 可监控性",
-      "link": "https://aihot.news/items/uif827ayipylunwlh7gejgcbo",
-      "summary": "OpenAI 发布研究，分析预训练、架构、强化学习和模型生成数据如何影响思维链（CoT）可监控性。 🔗 阅读原文 via AIHOT · https://aihot.news/items/uif827ayipylunwlh7gejgcbo",
-      "pub_date": "2026-11-10",
-      "author": "noreply@aihot.news (OpenAI：Alignment 研究博客)",
-      "category": "论文"
-    },
-    {
-      "title": "Anthropic 员工推荐用一条提示词让 Claude Code 全面审查项目",
-      "link": "https://aihot.news/items/lwbznpwnu3d7avukt0arjc2go",
-      "summary": "作者转发 Anthropic 的 Alex Albert 分享的提示词：对每个项目运行同一条指令，让 Claude 通读整个项目，找出损坏、不一致、低效或不再需要的内容，确定的问题直接修复，其余列出供人工审查。作者补充可用 /doctor prompt-audit 和 /skill-doctor 优化上下文文件并清理不必要的技能。 🔗 阅读原文 via AIHOT · https://aihot.news/items/lwbznpwnu3d7avukt0arjc2go",
-      "pub_date": "2026-11-10",
-      "author": "noreply@aihot.news (Ado Kukic)",
-      "category": "教程"
-    },
-    {
-      "title": "据报道 Anthropic 推进 IPO，计划下周四或周五挂牌",
-      "link": "https://aihot.news/items/d4f8o2c9r7r8b7fsdqnpev3eu",
-      "summary": "据 The Wall Street Journal 报道，Anthropic 将在本周设定估值区间，计划下周四或周五开始交易。部分机构投资者正推动估值低于上周讨论的 1.5 万亿美元目标，该数字已低于几个月前传闻的 2 万亿美元。报道还提到其主要竞争对手 OpenAI 上周融资 110 亿美元后估值约为 1.25 万亿美元，低于其最初寻求的 200 亿美元融资规模。 🔗 阅读原文 via AIHOT · https://aihot.news/items/d4f8o2c9r7r8b7fsdqnpev3eu",
-      "pub_date": "2026-11-10",
-      "author": "noreply@aihot.news (TechCrunch：AI)",
-      "category": "行业动态"
     }
   ]
 }

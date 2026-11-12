@@ -1,8 +1,32 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-13T02:03:01.714321+08:00",
-  "total": 24,
+  "updated_at": "2026-11-13T02:33:01.786372+08:00",
+  "total": 23,
   "items": [
+    {
+      "title": "Artificial Analysis 评测 Gemini 4 Hydrogen：智能指数 54，接近 Sonnet 5.5 且成本约其 32%",
+      "link": "https://aihot.news/items/ajvxvhu8bh001pourbhhjl0ir",
+      "summary": "Artificial Analysis 评测 Google 新发布的 Gemini 4 Hydrogen：新增 xhigh 推理档在 Intelligence Index 得 54 分，比 Claude Sonnet 5.5 (max) 和 GPT-6.1 Sol (max) 低 1 分，每任务成本约为 Sonnet 的 32%，但约为 GPT-6.1 Sol 的 2.5 倍。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ajvxvhu8bh001pourbhhjl0ir",
+      "pub_date": "2026-11-12",
+      "author": "noreply@aihot.news (Artificial Analysis)",
+      "category": "AI 模型"
+    },
+    {
+      "title": "Google Gemini 开放推送，覆盖开发者、企业与普通用户渠道",
+      "link": "https://aihot.news/items/v26fsdyhbktgyuedmrx25p58y",
+      "summary": "Google DeepMind 宣布开始向各渠道推送：开发者可在 Google AI Studio、Android Studio 中用 Gemini API，付费 Google AI Pro 和 Ultra 订阅者可在 Google Antigravity 中使用；企业可通过 Gemini for business 和 Google Antigravity 部署；所有用户可在 Google Search 和 Gemini 应用模型下拉菜单中访问。详情见 https://goo.gle/4zDCs8N。 🔗 阅读原文 via AIHOT · https://aihot.news/items/v26fsdyhbktgyuedmrx25p58y",
+      "pub_date": "2026-11-12",
+      "author": "noreply@aihot.news (Google DeepMind)",
+      "category": "AI 产品"
+    },
+    {
+      "title": "Google DeepMind 发布 Gemini 4 Hydrogen",
+      "link": "https://aihot.news/items/uy1ayrrlqx1snqsv4lub7whsa",
+      "summary": "Google DeepMind 发布 Gemini 4 Hydrogen，定位快速执行日常编码与智能体工作流，面向 Gemini API、AI Studio、Gemini 应用、Google Search 等全层级开放。 🔗 阅读原文 via AIHOT · https://aihot.news/items/uy1ayrrlqx1snqsv4lub7whsa",
+      "pub_date": "2026-11-12",
+      "author": "noreply@aihot.news (Google DeepMind：Blog)",
+      "category": "AI 模型"
+    },
     {
       "title": "Replit Agent 新增代购能力和 Google Ads 投放功能",
       "link": "https://aihot.news/items/k7sfjumcmtq0zswb5yj5kmju1",
@@ -161,38 +185,6 @@
       "summary": "Lovable 发布安全功能说明，介绍平台如何帮助无技术背景的开发者构建安全应用。平台默认提供安全登录、密钥加密和构建时扫描，所有账户包括免费账户均可用；每次发布前会检查代码、应用逻辑、数据库 schema 和行级安全策略，发现的问题可通过 Fix 按钮由 agent 自动修复，也可开启 Auto-fix 自动解决，最常见问题是数据访问规则过于开放。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gbyp35reiyczetrirpyzycssq",
       "pub_date": "2026-11-10",
       "author": "noreply@aihot.news (Lovable Blog)",
-      "category": "教程"
-    },
-    {
-      "title": "n8n Labs 发布开源个人智能体 Nod 研究预览版，可在本地电脑运行",
-      "link": "https://aihot.news/items/yrk09s03tcgcxsxq8jh0npjk0",
-      "summary": "n8n Labs 发布研究预览版 Nod，一个独立于 n8n 的开源个人智能体应用，可在 Mac 和 Windows 本地运行，自带沙箱和浏览器，能在用户连接的应用（如 Gmail、Slack）及无集成的网站上完成任务。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yrk09s03tcgcxsxq8jh0npjk0",
-      "pub_date": "2026-11-10",
-      "author": "noreply@aihot.news (n8n Blog)",
-      "category": "AI 产品"
-    },
-    {
-      "title": "Cursor Projects 升级为多人协作模式",
-      "link": "https://aihot.news/items/vouc5yc5intvgg7311kekkhsi",
-      "summary": "Cursor 宣布 Projects 迈入多人协作阶段，此前 9 月推出的 Projects 通过单一协调者调度一组智能体，现在支持邀请团队成员加入同一 Project，与各自的智能体共同规划、构建和交付。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vouc5yc5intvgg7311kekkhsi",
-      "pub_date": "2026-11-10",
-      "author": "noreply@aihot.news (Cursor Blog)",
-      "category": "AI 产品"
-    },
-    {
-      "title": "Claude Code 被曝把密码写进项目文件，GitHub 上发现 2539 个真实凭据，官方正在修复",
-      "link": "https://aihot.news/items/efkizvqpiynq97lm5cx6fmd43",
-      "summary": "Ars Technica 报道，安全公司 Apiiro 发现超过 10 万份 Claude Code 本地设置文件被上传至公开仓库，共识别出 1,994 个代码库中的 2,539 个真实凭据，涉及 63 个组织，包括 Azure 数据库密码、Square 生产令牌和 SSH root 登录信息。 🔗 阅读原文 via AIHOT · https://aihot.news/items/efkizvqpiynq97lm5cx6fmd43",
-      "pub_date": "2026-11-10",
-      "author": "noreply@aihot.news (IT之家·人工智能)",
-      "category": "行业动态"
-    },
-    {
-      "title": "Anthropic 员工推荐用一条提示词让 Claude Code 全面审查项目",
-      "link": "https://aihot.news/items/lwbznpwnu3d7avukt0arjc2go",
-      "summary": "作者转发 Anthropic 的 Alex Albert 分享的提示词：对每个项目运行同一条指令，让 Claude 通读整个项目，找出损坏、不一致、低效或不再需要的内容，确定的问题直接修复，其余列出供人工审查。作者补充可用 /doctor prompt-audit 和 /skill-doctor 优化上下文文件并清理不必要的技能。 🔗 阅读原文 via AIHOT · https://aihot.news/items/lwbznpwnu3d7avukt0arjc2go",
-      "pub_date": "2026-11-10",
-      "author": "noreply@aihot.news (Ado Kukic)",
       "category": "教程"
     }
   ]
