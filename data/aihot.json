@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-12T23:33:02.098909+08:00",
+  "updated_at": "2026-11-13T00:03:02.165247+08:00",
   "total": 50,
   "items": [
     {
@@ -33,6 +33,14 @@
       "summary": "OpenRouter 发布教程，讲解 AI Agent 因工具反复失败而陷入无限循环的成因，并给出四层防护：doom-loop 检测、loopKey 参数归一化、stopWhen 步数与成本上限、API key 信用额度。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vq9nwgwhtm31cgoliyb7ydyde",
       "pub_date": "2026-11-12",
       "author": "noreply@aihot.news (OpenRouter：Announcements)",
+      "category": "教程"
+    },
+    {
+      "title": "Anthropic 发布 Claude Tag 创业公司使用指南",
+      "link": "https://aihot.news/items/djhxmxr9hq0ekn8iwdqt5usih",
+      "summary": "Anthropic 发布 Claude Tag（beta）创业公司使用指南，基于对 Kikoff、NavigateAI、Orderful、Moritz 等 8 家高增长创业公司的访谈，总结了 on-call 分诊、Thread to PR、公司大脑、自助数据、例行报告五大场景及频道配置建议。 🔗 阅读原文 via AIHOT · https://aihot.news/items/djhxmxr9hq0ekn8iwdqt5usih",
+      "pub_date": "2026-11-12",
+      "author": "noreply@aihot.news (Claude：Blog)",
       "category": "教程"
     },
     {
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-10",
       "author": "noreply@aihot.news (OpenRouter：Announcements)",
       "category": "教程"
-    },
-    {
-      "title": "Anthropic 发布 Claude Whiteboards 和 Claude Sheets，Claude Dashboards 转正为 Claude Data",
-      "link": "https://aihot.news/items/c1fodrvts3po1pprz70weooju",
-      "summary": "Anthropic 推出 Claude Whiteboards 和 Claude Sheets 测试版，Claude Dashboards 正式可用并更名为 Claude Data，三款产品面向所有付费计划开放。 🔗 阅读原文 via AIHOT · https://aihot.news/items/c1fodrvts3po1pprz70weooju",
-      "pub_date": "2026-11-10",
-      "author": "noreply@aihot.news (Claude：Blog)",
-      "category": "AI 产品"
     }
   ]
 }
