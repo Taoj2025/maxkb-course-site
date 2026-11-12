@@ -1,15 +1,15 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-13T05:03:01.687757+08:00",
+  "updated_at": "2026-11-13T05:33:02.380491+08:00",
   "total": 50,
   "items": [
     {
-      "title": "Anthropic 推出 Claude Meetings，可在视频会议中实时协作并生成会议产物",
-      "link": "https://aihot.news/items/flobw48sm2tlkfp190q774nqq",
-      "summary": "Anthropic 推出 Claude Meetings，把 Claude 以可见参会者身份加入团队视频会议，在通话过程中实时创建文档、白板等产物，团队成员可边看边纠正，Claude 同时负责会议记录。 🔗 阅读原文 via AIHOT · https://aihot.news/items/flobw48sm2tlkfp190q774nqq",
+      "title": "Gemini 4 Hydrogen 今日起向全球所有用户推送",
+      "link": "https://aihot.news/items/zlbngirpqifhhi3bd5pbmixu4",
+      "summary": "Google Gemini 宣布 Gemini 4 Hydrogen 今日起向全球所有用户推送，覆盖桌面、移动和网页端。免费用户无需单独选择模型，当提示词适合该模型时可通过自动模型选择使用它，详情见 https://goo.gle/4AxH40q。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zlbngirpqifhhi3bd5pbmixu4",
       "pub_date": "2026-11-12",
-      "author": "noreply@aihot.news (Claude：YouTube)",
-      "category": "AI 产品"
+      "author": "noreply@aihot.news (Gemini)",
+      "category": "AI 模型"
     },
     {
       "title": "Gemini 4 Hydrogen 上线 Cursor，CursorBench 得分 54.3%",
@@ -130,6 +130,14 @@
       "pub_date": "2026-11-12",
       "author": "noreply@aihot.news (OpenRouter：Announcements)",
       "category": "教程"
+    },
+    {
+      "title": "Anthropic 推出 Claude Meetings，Claude 以参会者身份加入视频会议",
+      "link": "https://aihot.news/items/l36ne5q2gsdx6thyia7fi10kn",
+      "summary": "Anthropic 推出 Claude Meetings beta，Claude 可作为可见参会者加入视频通话，在会中回答提问、协作创建文档和白板，并生成笔记和行动项。 🔗 阅读原文 via AIHOT · https://aihot.news/items/l36ne5q2gsdx6thyia7fi10kn",
+      "pub_date": "2026-11-12",
+      "author": "noreply@aihot.news (Claude：Blog)",
+      "category": "AI 产品"
     },
     {
       "title": "Jensen Huang 辞任 Nvidia CEO 后对 AI 经济的五点影响分析",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-10",
       "author": "noreply@aihot.news (Rohan Paul)",
       "category": "论文"
-    },
-    {
-      "title": "Gary Marcus 质疑 Anthropic 1.4 万亿美元 IPO 估值",
-      "link": "https://aihot.news/items/yshr81morbvxs39fq2y2rw6rg",
-      "summary": "Gary Marcus 评论 Anthropic 拟以最高 1.4 万亿美元估值 IPO，称该公司除一个异常季度外从未盈利，未来负债接近 9000 亿美元。他引用 Q2 环比增长 147% 而 Q3 降至 47% 的数据，认为 tokenmaxxing 退潮与中国竞品崛起使万亿估值失去依据，并援引 S-1 中公司自认成本将上升、收入增速难以为继的表述。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yshr81morbvxs39fq2y2rw6rg",
-      "pub_date": "2026-11-10",
-      "author": "noreply@aihot.news (Gary Marcus：The Road to AI We Can Trust)",
-      "category": "观点"
     }
   ]
 }

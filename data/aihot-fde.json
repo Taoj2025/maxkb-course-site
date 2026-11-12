@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-13T05:03:01.688699+08:00",
+  "updated_at": "2026-11-13T05:33:02.383048+08:00",
   "total": 22,
   "items": [
+    {
+      "title": "Gemini 4 Hydrogen 今日起向全球所有用户推送",
+      "link": "https://aihot.news/items/zlbngirpqifhhi3bd5pbmixu4",
+      "summary": "Google Gemini 宣布 Gemini 4 Hydrogen 今日起向全球所有用户推送，覆盖桌面、移动和网页端。免费用户无需单独选择模型，当提示词适合该模型时可通过自动模型选择使用它，详情见 https://goo.gle/4AxH40q。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zlbngirpqifhhi3bd5pbmixu4",
+      "pub_date": "2026-11-12",
+      "author": "noreply@aihot.news (Gemini)",
+      "category": "AI 模型"
+    },
     {
       "title": "Gemini 4 Hydrogen 上线 Cursor，CursorBench 得分 54.3%",
       "link": "https://aihot.news/items/mt013742fhedisepp2i31h1r4",
@@ -170,14 +178,6 @@
       "pub_date": "2026-11-10",
       "author": "noreply@aihot.news (Rohan Paul)",
       "category": "论文"
-    },
-    {
-      "title": "Gary Marcus 质疑 Anthropic 1.4 万亿美元 IPO 估值",
-      "link": "https://aihot.news/items/yshr81morbvxs39fq2y2rw6rg",
-      "summary": "Gary Marcus 评论 Anthropic 拟以最高 1.4 万亿美元估值 IPO，称该公司除一个异常季度外从未盈利，未来负债接近 9000 亿美元。他引用 Q2 环比增长 147% 而 Q3 降至 47% 的数据，认为 tokenmaxxing 退潮与中国竞品崛起使万亿估值失去依据，并援引 S-1 中公司自认成本将上升、收入增速难以为继的表述。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yshr81morbvxs39fq2y2rw6rg",
-      "pub_date": "2026-11-10",
-      "author": "noreply@aihot.news (Gary Marcus：The Road to AI We Can Trust)",
-      "category": "观点"
     }
   ]
 }
