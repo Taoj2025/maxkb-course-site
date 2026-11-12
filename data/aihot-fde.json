@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-13T02:33:01.786372+08:00",
-  "total": 23,
+  "updated_at": "2026-11-13T03:03:01.730956+08:00",
+  "total": 22,
   "items": [
+    {
+      "title": "Gemini 4 Hydrogen 上线 Cursor，CursorBench 得分 54.3%",
+      "link": "https://aihot.news/items/mt013742fhedisepp2i31h1r4",
+      "summary": "作者以「爱好包括制作 og:images」调侃，配图为 CursorBench 4.0 的模型散点图；其引用 Cursor 官方内容称 Gemini 4 Hydrogen 现已在 Cursor 上线，默认 effort 下 CursorBench 得分 54.3%，高于 Gemini 3.8 Flash 的 39.6%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/mt013742fhedisepp2i31h1r4",
+      "pub_date": "2026-11-12",
+      "author": "noreply@aihot.news (Matt Palmer)",
+      "category": "AI 产品"
+    },
     {
       "title": "Artificial Analysis 评测 Gemini 4 Hydrogen：智能指数 54，接近 Sonnet 5.5 且成本约其 32%",
       "link": "https://aihot.news/items/ajvxvhu8bh001pourbhhjl0ir",
@@ -170,22 +178,6 @@
       "pub_date": "2026-11-10",
       "author": "noreply@aihot.news (Gary Marcus：The Road to AI We Can Trust)",
       "category": "观点"
-    },
-    {
-      "title": "Anthropic Fable 5.2 在 Remote Labor Index 上以 41.3% 领跑真实自由职业任务",
-      "link": "https://aihot.news/items/oesqqhekbr8e1bekkcitpguqh",
-      "summary": "The Decoder 报道，Anthropic 新模型 Fable 5.2 在 Scale Labs 和 Center for AI Safety 的 Remote Labor Index 基准上以 41.3% 排名第一，该测试衡量 AI 智能体能否把真实自由职业项目做到让付费客户接受的质量。 🔗 阅读原文 via AIHOT · https://aihot.news/items/oesqqhekbr8e1bekkcitpguqh",
-      "pub_date": "2026-11-10",
-      "author": "noreply@aihot.news (The Decoder：AI News)",
-      "category": "AI 模型"
-    },
-    {
-      "title": "Lovable 介绍平台安全机制：自动扫描、一键修复与深度扫描功能",
-      "link": "https://aihot.news/items/gbyp35reiyczetrirpyzycssq",
-      "summary": "Lovable 发布安全功能说明，介绍平台如何帮助无技术背景的开发者构建安全应用。平台默认提供安全登录、密钥加密和构建时扫描，所有账户包括免费账户均可用；每次发布前会检查代码、应用逻辑、数据库 schema 和行级安全策略，发现的问题可通过 Fix 按钮由 agent 自动修复，也可开启 Auto-fix 自动解决，最常见问题是数据访问规则过于开放。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gbyp35reiyczetrirpyzycssq",
-      "pub_date": "2026-11-10",
-      "author": "noreply@aihot.news (Lovable Blog)",
-      "category": "教程"
     }
   ]
 }
