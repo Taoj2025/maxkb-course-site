@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-12T07:33:02.258424+08:00",
-  "total": 24,
+  "updated_at": "2026-11-12T08:00:02.237908+08:00",
+  "total": 23,
   "items": [
     {
       "title": "Runway 开源 27B 世界动作模型 Praxis-1，权重采用 Apache 2.0 许可",
@@ -186,14 +186,6 @@
       "pub_date": "2026-11-10",
       "author": "noreply@aihot.news (OpenAI：失准报告与通报)",
       "category": "论文"
-    },
-    {
-      "title": "Figma 官方讲解画布智能体的 6 种实用方法",
-      "link": "https://aihot.news/items/lko5m98q1kk1dlcjihvk527w8",
-      "summary": "Figma 官方介绍了在其画布上使用 Figma agent 的六种方法，覆盖从设计初期探索到交付前细节的各个阶段。 🔗 阅读原文 via AIHOT · https://aihot.news/items/lko5m98q1kk1dlcjihvk527w8",
-      "pub_date": "2026-11-09",
-      "author": "noreply@aihot.news (Figma AI / Agent / Make)",
-      "category": "教程"
     }
   ]
 }
