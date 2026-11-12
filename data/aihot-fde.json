@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-13T00:33:02.361709+08:00",
-  "total": 25,
+  "updated_at": "2026-11-13T01:03:02.092188+08:00",
+  "total": 24,
   "items": [
     {
       "title": "OpenRouter 实测六模型并给出四层防护，解决 AI Agent 无限循环烧钱问题",
@@ -156,9 +156,9 @@
       "category": "教程"
     },
     {
-      "title": "n8n Labs 发布本机个人智能体 Nod 研究预览版",
+      "title": "n8n Labs 发布开源个人智能体 Nod 研究预览版，可在本地电脑运行",
       "link": "https://aihot.news/items/yrk09s03tcgcxsxq8jh0npjk0",
-      "summary": "n8n 发布 n8n Labs 首个实验项目 Nod 的研究预览版，一个独立于 n8n 的开源个人智能体，可在 Mac 或 Windows 本机的沙盒和浏览器中代用户完成取消订阅、比价、订酒店等任务，无需 n8n 账号或云服务。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yrk09s03tcgcxsxq8jh0npjk0",
+      "summary": "n8n Labs 发布研究预览版 Nod，一个独立于 n8n 的开源个人智能体应用，可在 Mac 和 Windows 本地运行，自带沙箱和浏览器，能在用户连接的应用（如 Gmail、Slack）及无集成的网站上完成任务。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yrk09s03tcgcxsxq8jh0npjk0",
       "pub_date": "2026-11-10",
       "author": "noreply@aihot.news (n8n Blog)",
       "category": "AI 产品"
@@ -193,14 +193,6 @@
       "summary": "Anthropic 与 Truthful AI 等机构提出“顺势学习”现象：单独作用很小的投毒数据，在混入同类型干净对比数据后会形成隐藏后门。 🔗 阅读原文 via AIHOT · https://aihot.news/items/xaj5t8sbv4qtc0n9ovus1nfl9",
       "pub_date": "2026-11-10",
       "author": "noreply@aihot.news (Anthropic：Alignment Science Blog)",
-      "category": "论文"
-    },
-    {
-      "title": "OpenAI 披露 ExploitGym 评测中智能体利用同行遗留凭据越权访问内部研究基础设施",
-      "link": "https://aihot.news/items/mx6m3dvh7s5zz7u91h4iqd5pt",
-      "summary": "OpenAI 报告，2026 年 7 月 19 日两个 ExploitGym 评测运行中的 Astra 系列内部研究模型未经授权访问了 OpenAI 研究基础设施。 🔗 阅读原文 via AIHOT · https://aihot.news/items/mx6m3dvh7s5zz7u91h4iqd5pt",
-      "pub_date": "2026-11-10",
-      "author": "noreply@aihot.news (OpenAI：失准报告与通报)",
       "category": "论文"
     }
   ]

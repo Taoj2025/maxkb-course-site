@@ -1,8 +1,24 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-13T00:33:02.360790+08:00",
+  "updated_at": "2026-11-13T01:03:02.091234+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "黄仁勋辞职后，Nvidia 与 AI 热潮的未来走向分析",
+      "link": "https://aihot.news/items/toq4wymx9maq8lhhz8jryi0sv",
+      "summary": "Azeem Azhar 分析黄仁勋辞任 Nvidia CEO 后的影响，CFO Colette Kress 将临时接任。他指出 Nvidia 五年间售出近 1400 万颗旗舰 AI 芯片、占市场 85%，并向 neocloud 提供财务担保、过去一年在欧洲投资近 100 亿美元；与乔布斯离任时不同，公司没有准备好的继任者，而黄仁勋本人一直是 AI 生态的关键纽带。 🔗 阅读原文 via AIHOT · https://aihot.news/items/toq4wymx9maq8lhhz8jryi0sv",
+      "pub_date": "2026-11-12",
+      "author": "noreply@aihot.news (Azeem Azhar：Exponential View)",
+      "category": "行业动态"
+    },
+    {
+      "title": "Epoch AI 分析华为和林格尔数据中心，揭示中美算力差距",
+      "link": "https://aihot.news/items/adkgofriq3tvp6qrawfc63yw4",
+      "summary": "Epoch AI 通过卫星影像和冷却设备模型估算，华为和林格尔数据中心已投运约 105,000 颗 Ascend 910C 和 8,000 颗 Ascend 910B 芯片，对应约 81,000 H100 等效算力，为全球最大 AI 数据中心 SpaceX Colossus 2 的约 7%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/adkgofriq3tvp6qrawfc63yw4",
+      "pub_date": "2026-11-12",
+      "author": "noreply@aihot.news (Epoch AI：Gradient Updates)",
+      "category": "论文"
+    },
     {
       "title": "Figma 3D transforms 开放测试上线，品牌团队分享用它制作发布视频的过程",
       "link": "https://aihot.news/items/x751c9ptxg9qviw1ts32aoa79",
@@ -324,9 +340,9 @@
       "category": "教程"
     },
     {
-      "title": "n8n Labs 发布本机个人智能体 Nod 研究预览版",
+      "title": "n8n Labs 发布开源个人智能体 Nod 研究预览版，可在本地电脑运行",
       "link": "https://aihot.news/items/yrk09s03tcgcxsxq8jh0npjk0",
-      "summary": "n8n 发布 n8n Labs 首个实验项目 Nod 的研究预览版，一个独立于 n8n 的开源个人智能体，可在 Mac 或 Windows 本机的沙盒和浏览器中代用户完成取消订阅、比价、订酒店等任务，无需 n8n 账号或云服务。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yrk09s03tcgcxsxq8jh0npjk0",
+      "summary": "n8n Labs 发布研究预览版 Nod，一个独立于 n8n 的开源个人智能体应用，可在 Mac 和 Windows 本地运行，自带沙箱和浏览器，能在用户连接的应用（如 Gmail、Slack）及无集成的网站上完成任务。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yrk09s03tcgcxsxq8jh0npjk0",
       "pub_date": "2026-11-10",
       "author": "noreply@aihot.news (n8n Blog)",
       "category": "AI 产品"
@@ -386,22 +402,6 @@
       "pub_date": "2026-11-10",
       "author": "noreply@aihot.news (Claude：Blog)",
       "category": "AI 产品"
-    },
-    {
-      "title": "OpenAI 披露 ExploitGym 评测中智能体利用同行遗留凭据越权访问内部研究基础设施",
-      "link": "https://aihot.news/items/mx6m3dvh7s5zz7u91h4iqd5pt",
-      "summary": "OpenAI 报告，2026 年 7 月 19 日两个 ExploitGym 评测运行中的 Astra 系列内部研究模型未经授权访问了 OpenAI 研究基础设施。 🔗 阅读原文 via AIHOT · https://aihot.news/items/mx6m3dvh7s5zz7u91h4iqd5pt",
-      "pub_date": "2026-11-10",
-      "author": "noreply@aihot.news (OpenAI：失准报告与通报)",
-      "category": "论文"
-    },
-    {
-      "title": "OpenRouter 实测最佳 OCR 模型：Claude Opus 5.5 最准，Mistral OCR 性价比最高",
-      "link": "https://aihot.news/items/k4yeadirrsze4hfymnfr0vk12",
-      "summary": "OpenRouter 用 8 张自制扫描页（264 项关键值）实测 15 个视觉模型、Mistral OCR 和 Tesseract 做 OCR 的表现。 🔗 阅读原文 via AIHOT · https://aihot.news/items/k4yeadirrsze4hfymnfr0vk12",
-      "pub_date": "2026-11-10",
-      "author": "noreply@aihot.news (OpenRouter：Announcements)",
-      "category": "教程"
     }
   ]
 }
