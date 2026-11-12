@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-12T08:33:02.269074+08:00",
-  "total": 23,
+  "updated_at": "2026-11-12T09:03:01.974916+08:00",
+  "total": 24,
   "items": [
+    {
+      "title": "OpenRouter 实测六模型并给出四层防护，解决 AI Agent 无限循环烧钱问题",
+      "link": "https://aihot.news/items/vq9nwgwhtm31cgoliyb7ydyde",
+      "summary": "OpenRouter 发布教程，讲解 AI Agent 因工具反复失败而陷入无限循环的成因，并给出四层防护：doom-loop 检测、loopKey 参数归一化、stopWhen 步数与成本上限、API key 信用额度。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vq9nwgwhtm31cgoliyb7ydyde",
+      "pub_date": "2026-11-12",
+      "author": "noreply@aihot.news (OpenRouter：Announcements)",
+      "category": "教程"
+    },
     {
       "title": "Runway 开源 27B 世界动作模型 Praxis-1，权重采用 Apache 2.0 许可",
       "link": "https://aihot.news/items/bx3sq4dxfqblyztkuiktiz0wv",
