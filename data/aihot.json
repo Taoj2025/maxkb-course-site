@@ -1,8 +1,24 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-12T22:03:01.932584+08:00",
+  "updated_at": "2026-11-12T22:33:01.549191+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Figma 3D transforms 开放测试上线，品牌团队分享用它制作发布视频的过程",
+      "link": "https://aihot.news/items/x751c9ptxg9qviw1ts32aoa79",
+      "summary": "Figma 宣布 3D transforms 进入 open beta，面向所有 Full seat 用户开放，可用 3D transform 和 perspective 效果在空间中倾斜、旋转和排布文本、图像、矢量与框架，效果非破坏性，原稿保持可编辑。 🔗 阅读原文 via AIHOT · https://aihot.news/items/x751c9ptxg9qviw1ts32aoa79",
+      "pub_date": "2026-11-12",
+      "author": "noreply@aihot.news (Figma AI / Agent / Make)",
+      "category": "AI 产品"
+    },
+    {
+      "title": "NVIDIA 宣布 CEO 变动：Jensen Huang 辞任，CFO Colette Kress 出任临时 CEO",
+      "link": "https://aihot.news/items/qsbjbz754aodhcijq56puh6va",
+      "summary": "NVIDIA 董事会宣布 Jensen Huang 即刻辞去总裁、CEO 及董事职务，CFO Colette Kress 被任命为临时 CEO，直至选定永久继任者，董事会已启动内外部人选遴选。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qsbjbz754aodhcijq56puh6va",
+      "pub_date": "2026-11-12",
+      "author": "noreply@aihot.news (NVIDIA：Newsroom)",
+      "category": "行业动态"
+    },
     {
       "title": "Anthropic 官宣首次公开募股（IPO）",
       "link": "https://aihot.news/items/k99zjo9hbtous9r6vmmz7pxyh",
@@ -385,22 +401,6 @@
       "summary": "Anthropic 推出 Claude Whiteboards 和 Claude Sheets 测试版，Claude Dashboards 正式可用并更名为 Claude Data，三款产品面向所有付费计划开放。 🔗 阅读原文 via AIHOT · https://aihot.news/items/c1fodrvts3po1pprz70weooju",
       "pub_date": "2026-11-10",
       "author": "noreply@aihot.news (Claude：Blog)",
-      "category": "AI 产品"
-    },
-    {
-      "title": "OpenRouter 教程：用 JSON Schema、工具调用或决策模型获取任意 LLM 的结构化输出",
-      "link": "https://aihot.news/items/b44e0p0xgg4j6d7wyei4fy5rl",
-      "summary": "OpenRouter 发布教程，讲解从任意 LLM 获取可靠结构化输出的三种方式：支持 structured outputs 的模型发送严格 JSON Schema，只支持工具的模型强制单次工具调用，只需标签时用 Jev 决策模型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/b44e0p0xgg4j6d7wyei4fy5rl",
-      "pub_date": "2026-11-10",
-      "author": "noreply@aihot.news (OpenRouter：Announcements)",
-      "category": "教程"
-    },
-    {
-      "title": "Simon Willison 更新 llm-anthropic 0.31 支持 Anthropic 新模型 Fable 5.2 与 Mythos 5.2",
-      "link": "https://aihot.news/items/lfw4cc14h85i07c00tah6pc90",
-      "summary": "Simon Willison 发布 llm-anthropic 0.31，纳入 Anthropic 当日发布的 Fable 5.2 和 Mythos 5.2，并给出安装和调用命令。 🔗 阅读原文 via AIHOT · https://aihot.news/items/lfw4cc14h85i07c00tah6pc90",
-      "pub_date": "2026-11-09",
-      "author": "noreply@aihot.news (Simon Willison 博客)",
       "category": "AI 产品"
     }
   ]
