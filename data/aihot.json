@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-13T07:03:02.391669+08:00",
+  "updated_at": "2026-11-13T07:33:01.937629+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "民主党对 Nvidia 对华芯片销售启动调查，致函质疑黄仁勋与特朗普的安排",
+      "link": "https://aihot.news/items/cfh0nazzl7eedgttz8n99fza4",
+      "summary": "民主党议员 Rep. Richard Neal 和 Sen. Ron Wyden 就特朗普政府处理 Nvidia 对华芯片销售一事开启调查，并致函商务部长 Howard Lutnick 要求保存相关记录。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cfh0nazzl7eedgttz8n99fza4",
+      "pub_date": "2026-11-12",
+      "author": "noreply@aihot.news (TechCrunch：AI)",
+      "category": "行业动态"
+    },
     {
       "title": "Rohan Paul 类比乔布斯被逐，评 NVIDIA 放走黄仁勋",
       "link": "https://aihot.news/items/k1kga19xtdab67lhplor8he8n",
@@ -52,9 +60,9 @@
       "category": "AI 模型"
     },
     {
-      "title": "SemiAnalysis 深度分析黄仁勋离开后的 Nvidia：一个为他量身打造的公司如何运转",
+      "title": "SemiAnalysis 分析黄仁勋辞任 Nvidia CEO 背后的出口管制博弈",
       "link": "https://aihot.news/items/n73ab4h9gqlu6ucv69ynzxln4",
-      "summary": "SemiAnalysis 发文分析黄仁勋不再担任 Nvidia CEO 后的公司走向，认为其离职与 GPU 走私及国会推动的 RASA 出口管制法案有关。 🔗 阅读原文 via AIHOT · https://aihot.news/items/n73ab4h9gqlu6ucv69ynzxln4",
+      "summary": "SemiAnalysis 发表长文分析黄仁勋不再担任 Nvidia CEO 一事，认为其去职与美国情报界推动、针对中国远程访问 GPU 的 RASA 法案推进有关。 🔗 阅读原文 via AIHOT · https://aihot.news/items/n73ab4h9gqlu6ucv69ynzxln4",
       "pub_date": "2026-11-12",
       "author": "noreply@aihot.news (SemiAnalysis 长文 RSS)",
       "category": "行业动态"
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-10",
       "author": "noreply@aihot.news (Philipp Schmid)",
       "category": "AI 产品"
-    },
-    {
-      "title": "Google DeepMind 发布 Gemini 4 Carbon 前沿模型",
-      "link": "https://aihot.news/items/w8cvkd1j2o1c3m8ikh8x2kpfx",
-      "summary": "Google DeepMind 正式向开发者、企业、科学家和普通用户开放 Gemini 4 Carbon，定位为其最强前沿模型，主打网络安全能力与复杂知识工作、软件工程、科学推理中的长程智能体工作流。 🔗 阅读原文 via AIHOT · https://aihot.news/items/w8cvkd1j2o1c3m8ikh8x2kpfx",
-      "pub_date": "2026-11-10",
-      "author": "noreply@aihot.news (Google DeepMind：Blog)",
-      "category": "AI 模型"
     }
   ]
 }

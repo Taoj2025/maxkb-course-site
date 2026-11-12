@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-13T07:03:02.392571+08:00",
-  "total": 19,
+  "updated_at": "2026-11-13T07:33:01.938579+08:00",
+  "total": 18,
   "items": [
     {
       "title": "Gemini 4 Hydrogen 今日起向全球所有用户推送",
@@ -146,14 +146,6 @@
       "pub_date": "2026-11-10",
       "author": "noreply@aihot.news (Cursor)",
       "category": "AI 产品"
-    },
-    {
-      "title": "Google DeepMind 发布 Gemini 4 Carbon 前沿模型",
-      "link": "https://aihot.news/items/w8cvkd1j2o1c3m8ikh8x2kpfx",
-      "summary": "Google DeepMind 正式向开发者、企业、科学家和普通用户开放 Gemini 4 Carbon，定位为其最强前沿模型，主打网络安全能力与复杂知识工作、软件工程、科学推理中的长程智能体工作流。 🔗 阅读原文 via AIHOT · https://aihot.news/items/w8cvkd1j2o1c3m8ikh8x2kpfx",
-      "pub_date": "2026-11-10",
-      "author": "noreply@aihot.news (Google DeepMind：Blog)",
-      "category": "AI 模型"
     }
   ]
 }
