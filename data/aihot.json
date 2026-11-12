@@ -1,8 +1,24 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-13T05:33:02.380491+08:00",
+  "updated_at": "2026-11-13T06:03:02.433752+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Rohan Paul 类比乔布斯被逐，评 NVIDIA 放走黄仁勋",
+      "link": "https://aihot.news/items/k1kga19xtdab67lhplor8he8n",
+      "summary": "Lex Fridman 发文称 NVIDIA 让黄仁勋离开对美国和人类都是巨大错误，堪比 Apple 当年解雇 Steve Jobs 但影响更大，并为其品格辩护、回应间谍传闻。Rohan Paul 转引并列举 Atari 1978（Nolan Bushnell）、Apple 1985（Steve Jobs）、Uber 2017（Travis Kalanick）、OpenAI 2023（Sam Altman），称每隔几年董事会就会重新认识到创始人本身就是战略。 🔗 阅读原文 via AIHOT · https://aihot.news/items/k1kga19xtdab67lhplor8he8n",
+      "pub_date": "2026-11-12",
+      "author": "noreply@aihot.news (Rohan Paul)",
+      "category": "行业动态"
+    },
+    {
+      "title": "Google 智能眼镜开放预购，12 月 10 日发货",
+      "link": "https://aihot.news/items/hjhcsj440ym8b7ynttcx4433j",
+      "summary": "Josh Woodward 宣布 Google 智能眼镜开启预购，用户可在 https://glasses.google 下单，12 月 10 日发货。首批用户可到部分 Warby Parker、Gentle Monster 和 Google 门店试戴体验。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hjhcsj440ym8b7ynttcx4433j",
+      "pub_date": "2026-11-12",
+      "author": "noreply@aihot.news (Josh Woodward)",
+      "category": "AI 产品"
+    },
     {
       "title": "Gemini 4 Hydrogen 今日起向全球所有用户推送",
       "link": "https://aihot.news/items/zlbngirpqifhhi3bd5pbmixu4",
@@ -385,22 +401,6 @@
       "summary": "Wiz Research 介绍其 Cyber Model Arena v3.9 的基准设计方法，该基准覆盖 26 个模型、59 个智能体和 327 道挑战，分代码漏洞、API 安全、Web 安全和云安全四类。 🔗 阅读原文 via AIHOT · https://aihot.news/items/momr4yrt6hhhfeuzjfqz6ryqy",
       "pub_date": "2026-11-10",
       "author": "noreply@aihot.news (Wiz：Research)",
-      "category": "论文"
-    },
-    {
-      "title": "百度发布 ERNIE 5.5 Flash Preview，权重将于 11 月 25 日前开源",
-      "link": "https://aihot.news/items/qd3f4j2hd0t98tqf28iv7pu2j",
-      "summary": "百度发布 ERNIE 5.5 Flash Preview，是基于此前 Base 模型的首个后训练版本，总参数 280B、激活参数 14B，支持 1M 上下文。模型 API 已在千帆平台上线，权重将于 11 月 25 日前开源；官方展示了游戏开发、3D 建模、知识工作、视频创作等 Agent 场景成果，并称该版本为后训练中间版本，正式版仍将持续优化。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qd3f4j2hd0t98tqf28iv7pu2j",
-      "pub_date": "2026-11-10",
-      "author": "noreply@aihot.news (百度文心 ERNIE 官方博客)",
-      "category": "AI 模型"
-    },
-    {
-      "title": "Google DeepMind 用 AlphaProof Code 对 Signal 协议机器码完成形式化安全验证",
-      "link": "https://aihot.news/items/t9g33uqn3lfwm8cr1kr2fvnp7",
-      "summary": "Google DeepMind 发布 AlphaProof Code 多智能体形式化验证框架，并首次对广泛部署协议 Signal 的生产机器码完成形式化安全验证。 🔗 阅读原文 via AIHOT · https://aihot.news/items/t9g33uqn3lfwm8cr1kr2fvnp7",
-      "pub_date": "2026-11-10",
-      "author": "noreply@aihot.news (Rohan Paul)",
       "category": "论文"
     }
   ]
