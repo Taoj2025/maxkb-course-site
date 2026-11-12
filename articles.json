@@ -734,5 +734,59 @@
     "source": "机器摘要 · The New Stack",
     "file": "13340-anthropic-found-a-way-to-prove-which-ai.md",
     "estimated_read_time": "1 分钟"
+  },
+  {
+    "id": 13341,
+    "title": "88% 受访开发者点头赞成：FreeBSD 组建工作组制定 AI 使用新规",
+    "slug": "13341-88-freebsd-ai",
+    "summary": "IT之家 11 月 12 日消息，FreeBSD 项目近日公布 2026 年第三季度工作进展报告，收录 51 项进展，涵盖 AI 辅助开发、安全合规、虚拟化管理及桌面体验等领域。其中，如何为 AI 参与开源开发划定边界，成为本季度的重要议题。一项面向 140 名开发者的调查显示，88% 的受访者支持",
+    "category": "最新动态",
+    "tags": [
+      "FDE",
+      "AI 资讯",
+      "前端部署"
+    ],
+    "color": "purple",
+    "date": "2026-11-12",
+    "author": "小Q（机器摘要）",
+    "source": "机器摘要 · IT之家",
+    "file": "13341-88-freebsd-ai.md",
+    "estimated_read_time": "1 分钟"
+  },
+  {
+    "id": 13342,
+    "title": "Luau patterns I keep re-explaining to my AI assistant (and how I stopped)",
+    "slug": "13342-luau-patterns-i-keep-re-explaining-to-my",
+    "summary": "If you use Claude or ChatGPT to write Luau in Roblox Studio, you have probably corrected the same mistakes more than once. Invented APIs are the obvio",
+    "category": "最新动态",
+    "tags": [
+      "FDE",
+      "AI 资讯",
+      "前端部署"
+    ],
+    "color": "blue",
+    "date": "2026-11-12",
+    "author": "小Q（机器摘要）",
+    "source": "机器摘要 · Dev.to",
+    "file": "13342-luau-patterns-i-keep-re-explaining-to-my.md",
+    "estimated_read_time": "1 分钟"
+  },
+  {
+    "id": 13343,
+    "title": "Postgres 慢查询，先取证再动手",
+    "slug": "13343-postgres",
+    "summary": "AI 帮你写的 SQL 跑得飞起，某天接口却突然变慢超时。这篇讲清：为什么\"直接加索引\"在 Postgres 上反而危险，以及用 pg_stat_statements ....",
+    "category": "最新动态",
+    "tags": [
+      "FDE",
+      "AI 资讯",
+      "前端部署"
+    ],
+    "color": "green",
+    "date": "2026-11-12",
+    "author": "小Q（机器摘要）",
+    "source": "机器摘要 · 掘金",
+    "file": "13343-postgres.md",
+    "estimated_read_time": "1 分钟"
   }
 ]
