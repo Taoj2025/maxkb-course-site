@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-13T01:03:02.091234+08:00",
+  "updated_at": "2026-11-13T01:33:01.852119+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Replit Agent 新增代购能力和 Google Ads 投放功能",
+      "link": "https://aihot.news/items/k7sfjumcmtq0zswb5yj5kmju1",
+      "summary": "Replit 给 Replit Agent 新增两项能力：通过 Stripe Link 和 Visa 为企业代购物资，以及在 Replit 内直接创建和投放 Google Ads 覆盖 Search、YouTube 等渠道。 🔗 阅读原文 via AIHOT · https://aihot.news/items/k7sfjumcmtq0zswb5yj5kmju1",
+      "pub_date": "2026-11-12",
+      "author": "noreply@aihot.news (Replit：Blog)",
+      "category": "AI 产品"
+    },
     {
       "title": "黄仁勋辞职后，Nvidia 与 AI 热潮的未来走向分析",
       "link": "https://aihot.news/items/toq4wymx9maq8lhhz8jryi0sv",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-10",
       "author": "noreply@aihot.news (Anthropic：Alignment Science Blog)",
       "category": "论文"
-    },
-    {
-      "title": "Claude 升级交互式连接器，应用可在对话旁全屏打开并由 Claude 直接操作",
-      "link": "https://aihot.news/items/s7ny0oaxr6q9e5677fmb2hqpf",
-      "summary": "Anthropic 宣布交互式连接器升级，在支持的连接器中可将工具在对话旁打开或全屏展开，Claude 能直接修改你正在使用的页面、行或文件，改动实时呈现并需像连接器操作一样批准。 🔗 阅读原文 via AIHOT · https://aihot.news/items/s7ny0oaxr6q9e5677fmb2hqpf",
-      "pub_date": "2026-11-10",
-      "author": "noreply@aihot.news (Claude：Blog)",
-      "category": "AI 产品"
     }
   ]
 }

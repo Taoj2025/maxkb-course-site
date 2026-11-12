@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-13T01:03:02.092188+08:00",
-  "total": 24,
+  "updated_at": "2026-11-13T01:33:01.853023+08:00",
+  "total": 25,
   "items": [
+    {
+      "title": "Replit Agent 新增代购能力和 Google Ads 投放功能",
+      "link": "https://aihot.news/items/k7sfjumcmtq0zswb5yj5kmju1",
+      "summary": "Replit 给 Replit Agent 新增两项能力：通过 Stripe Link 和 Visa 为企业代购物资，以及在 Replit 内直接创建和投放 Google Ads 覆盖 Search、YouTube 等渠道。 🔗 阅读原文 via AIHOT · https://aihot.news/items/k7sfjumcmtq0zswb5yj5kmju1",
+      "pub_date": "2026-11-12",
+      "author": "noreply@aihot.news (Replit：Blog)",
+      "category": "AI 产品"
+    },
     {
       "title": "OpenRouter 实测六模型并给出四层防护，解决 AI Agent 无限循环烧钱问题",
       "link": "https://aihot.news/items/vq9nwgwhtm31cgoliyb7ydyde",
