@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-13T04:33:02.260809+08:00",
+  "updated_at": "2026-11-13T05:03:01.687757+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Anthropic 推出 Claude Meetings，可在视频会议中实时协作并生成会议产物",
+      "link": "https://aihot.news/items/flobw48sm2tlkfp190q774nqq",
+      "summary": "Anthropic 推出 Claude Meetings，把 Claude 以可见参会者身份加入团队视频会议，在通话过程中实时创建文档、白板等产物，团队成员可边看边纠正，Claude 同时负责会议记录。 🔗 阅读原文 via AIHOT · https://aihot.news/items/flobw48sm2tlkfp190q774nqq",
+      "pub_date": "2026-11-12",
+      "author": "noreply@aihot.news (Claude：YouTube)",
+      "category": "AI 产品"
+    },
     {
       "title": "Gemini 4 Hydrogen 上线 Cursor，CursorBench 得分 54.3%",
       "link": "https://aihot.news/items/mt013742fhedisepp2i31h1r4",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-10",
       "author": "noreply@aihot.news (Gary Marcus：The Road to AI We Can Trust)",
       "category": "观点"
-    },
-    {
-      "title": "The Information 报道称与英伟达 CEO 黄仁勋相关人士向中国买家转手 75 亿美元硬件",
-      "link": "https://aihot.news/items/f1z5v9nswvnu4w2plxd4tg22t",
-      "summary": "据 The Information 报道，与英伟达 CEO 黄仁勋有染的 Alice Huang（无亲属关系）与丈夫和姐姐在中国和新加坡建立采购网络，涉资 75 亿美元。 🔗 阅读原文 via AIHOT · https://aihot.news/items/f1z5v9nswvnu4w2plxd4tg22t",
-      "pub_date": "2026-11-10",
-      "author": "noreply@aihot.news (Rohan Paul)",
-      "category": "行业动态"
     }
   ]
 }
