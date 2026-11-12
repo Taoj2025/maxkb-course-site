@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-13T06:03:02.433752+08:00",
+  "updated_at": "2026-11-13T06:33:01.863368+08:00",
   "total": 50,
   "items": [
     {
@@ -146,6 +146,14 @@
       "pub_date": "2026-11-12",
       "author": "noreply@aihot.news (OpenRouter：Announcements)",
       "category": "教程"
+    },
+    {
+      "title": "Anthropic 建议把 Claude Opus 5.5 作为知识工作的日常主力模型",
+      "link": "https://aihot.news/items/t5pucqx6ac58z0ed1b0875ci0",
+      "summary": "Anthropic 宣布 Claude Opus 5.5 成为 Pro、Max、Ultra 和 Team 套餐的默认模型，并推荐将其作为研究、分析和写作等知识工作的日常主力。 🔗 阅读原文 via AIHOT · https://aihot.news/items/t5pucqx6ac58z0ed1b0875ci0",
+      "pub_date": "2026-11-12",
+      "author": "noreply@aihot.news (Claude：Blog)",
+      "category": "AI 产品"
     },
     {
       "title": "Anthropic 推出 Claude Meetings，Claude 以参会者身份加入视频会议",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-10",
       "author": "noreply@aihot.news (Google DeepMind：Blog)",
       "category": "AI 模型"
-    },
-    {
-      "title": "Wiz 讲解如何评估 AI 智能体的网络安全能力",
-      "link": "https://aihot.news/items/momr4yrt6hhhfeuzjfqz6ryqy",
-      "summary": "Wiz Research 介绍其 Cyber Model Arena v3.9 的基准设计方法，该基准覆盖 26 个模型、59 个智能体和 327 道挑战，分代码漏洞、API 安全、Web 安全和云安全四类。 🔗 阅读原文 via AIHOT · https://aihot.news/items/momr4yrt6hhhfeuzjfqz6ryqy",
-      "pub_date": "2026-11-10",
-      "author": "noreply@aihot.news (Wiz：Research)",
-      "category": "论文"
     }
   ]
 }

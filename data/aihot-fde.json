@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-13T06:03:02.434645+08:00",
-  "total": 20,
+  "updated_at": "2026-11-13T06:33:01.864282+08:00",
+  "total": 19,
   "items": [
     {
       "title": "Gemini 4 Hydrogen 今日起向全球所有用户推送",
@@ -154,14 +154,6 @@
       "pub_date": "2026-11-10",
       "author": "noreply@aihot.news (Google DeepMind：Blog)",
       "category": "AI 模型"
-    },
-    {
-      "title": "Wiz 讲解如何评估 AI 智能体的网络安全能力",
-      "link": "https://aihot.news/items/momr4yrt6hhhfeuzjfqz6ryqy",
-      "summary": "Wiz Research 介绍其 Cyber Model Arena v3.9 的基准设计方法，该基准覆盖 26 个模型、59 个智能体和 327 道挑战，分代码漏洞、API 安全、Web 安全和云安全四类。 🔗 阅读原文 via AIHOT · https://aihot.news/items/momr4yrt6hhhfeuzjfqz6ryqy",
-      "pub_date": "2026-11-10",
-      "author": "noreply@aihot.news (Wiz：Research)",
-      "category": "论文"
     }
   ]
 }
