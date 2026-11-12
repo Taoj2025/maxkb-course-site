@@ -1,12 +1,20 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-12T15:33:02.356427+08:00",
+  "updated_at": "2026-11-12T16:03:01.512341+08:00",
   "total": 50,
   "items": [
     {
       "title": "OpenRouter 实测六模型并给出四层防护，解决 AI Agent 无限循环烧钱问题",
       "link": "https://aihot.news/items/vq9nwgwhtm31cgoliyb7ydyde",
       "summary": "OpenRouter 发布教程，讲解 AI Agent 因工具反复失败而陷入无限循环的成因，并给出四层防护：doom-loop 检测、loopKey 参数归一化、stopWhen 步数与成本上限、API key 信用额度。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vq9nwgwhtm31cgoliyb7ydyde",
+      "pub_date": "2026-11-12",
+      "author": "noreply@aihot.news (OpenRouter：Announcements)",
+      "category": "教程"
+    },
+    {
+      "title": "OpenRouter 详解自纠错网站本地化流水线：GPT-6.1 Sol 翻译 7 种语言全站约 $460",
+      "link": "https://aihot.news/items/cve017k4le2q7l8x1bfr2xdjx",
+      "summary": "OpenRouter 上线简体中文、日语等 7 种语言 Beta 本地化，并详解配套的自纠错翻译流水线：GPT-6.1 Sol 翻译 16,918 条字符串，经代码检查、同模型校验和每日 AI 审查重试，最坏情况每条约 20 次模型调用。全站重译 7 种语言约 $460，约为 Smartling 机器翻译牌价的 6%，错误报告会转化为术语规则、风格注释或评测用例。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cve017k4le2q7l8x1bfr2xdjx",
       "pub_date": "2026-11-12",
       "author": "noreply@aihot.news (OpenRouter：Announcements)",
       "category": "教程"
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-09",
       "author": "noreply@aihot.news (The Verge：AI)",
       "category": "行业动态"
-    },
-    {
-      "title": "实测 Claude Fable 5.2：一次直出视频与 3D 网页，审美与细节表现突出",
-      "link": "https://aihot.news/items/po2cdt1whxfqyfew3e81l8mb0",
-      "summary": "Anthropic 凌晨正式发布 Claude Fable 5.2，作者第一时间实测视频动效、Three.js 3D 场景和苹果静安店 3D 网页等 10 个任务，全部一次直出，未发现生成视频中的事实错误。 🔗 阅读原文 via AIHOT · https://aihot.news/items/po2cdt1whxfqyfew3e81l8mb0",
-      "pub_date": "2026-11-09",
-      "author": "noreply@aihot.news (公众号：数字生命卡兹克)",
-      "category": "AI 模型"
     }
   ]
 }
