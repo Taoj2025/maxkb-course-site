@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-12T19:33:02.642482+08:00",
+  "updated_at": "2026-11-12T20:03:02.496026+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Anthropic 官宣首次公开募股（IPO）",
+      "link": "https://aihot.news/items/k99zjo9hbtous9r6vmmz7pxyh",
+      "summary": "Anthropic 官方宣布启动首次公开募股（IPO），并公布入口 ipo.anthropic.com。Anthropic 已向 SEC 提交注册声明及招股说明书，证券在注册声明生效前不得出售，初步招股说明书可经高盛与摩根士丹利获取。 🔗 阅读原文 via AIHOT · https://aihot.news/items/k99zjo9hbtous9r6vmmz7pxyh",
+      "pub_date": "2026-11-12",
+      "author": "noreply@aihot.news (Anthropic)",
+      "category": "行业动态"
+    },
     {
       "title": "OpenRouter 实测六模型并给出四层防护，解决 AI Agent 无限循环烧钱问题",
       "link": "https://aihot.news/items/vq9nwgwhtm31cgoliyb7ydyde",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-09",
       "author": "noreply@aihot.news (Simon Willison 博客)",
       "category": "AI 产品"
-    },
-    {
-      "title": "The Verge 梳理黄仁勋与 Megaspeed 高管丑闻对 Nvidia 出口管制游说的影响",
-      "link": "https://aihot.news/items/kci32x4hgxrdl0v5o4xrjlxri",
-      "summary": "The Verge 依据《纽约时报》等报道梳理 Nvidia CEO 黄仁勋与新加坡云服务商 Megaspeed 高管 Alice Huang 的婚外情风波。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kci32x4hgxrdl0v5o4xrjlxri",
-      "pub_date": "2026-11-09",
-      "author": "noreply@aihot.news (The Verge：AI)",
-      "category": "行业动态"
     }
   ]
 }
