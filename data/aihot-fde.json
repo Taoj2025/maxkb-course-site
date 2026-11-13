@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-14T05:33:02.050368+08:00",
-  "total": 22,
+  "updated_at": "2026-11-14T06:03:01.795657+08:00",
+  "total": 21,
   "items": [
     {
       "title": "Claude Code Stop hook 技巧：用 exit code 2 让 Claude 在检查失败时自动重试",
@@ -12,9 +12,9 @@
       "category": "教程"
     },
     {
-      "title": "研究称中国最强 AI 模型由被禁运的 Nvidia Blackwell 芯片训练",
+      "title": "研究报告称中国最强 AI 模型使用了被禁出口的 Nvidia Blackwell 芯片训练",
       "link": "https://aihot.news/items/q92ir58jcjtp3g9fn11jlb6ei",
-      "summary": "TechCrunch 报道，前 OpenAI 研究员 Will DePue 分析 DeepSeek、月之暗面、MiniMax 和蚂蚁集团开源模型权重后，称 Kimi K3 与 DeepSeek V4 等模型留有 Blackwell 芯片训练痕迹，而这些芯片被禁止出口到中国。 🔗 阅读原文 via AIHOT · https://aihot.news/items/q92ir58jcjtp3g9fn11jlb6ei",
+      "summary": "Will DePue 领导的非营利研究组织 Unemployment Labs 分析 DeepSeek、月之暗面、MiniMax 和蚂蚁集团开源模型权重，发现 Kimi K3 与 DeepSeek V4 等最受关注模型带有 Blackwell 芯片训练痕迹。 🔗 阅读原文 via AIHOT · https://aihot.news/items/q92ir58jcjtp3g9fn11jlb6ei",
       "pub_date": "2026-11-13",
       "author": "noreply@aihot.news (TechCrunch：AI)",
       "category": "行业动态"
@@ -170,14 +170,6 @@
       "pub_date": "2026-11-11",
       "author": "noreply@aihot.news (Claude：YouTube)",
       "category": "教程"
-    },
-    {
-      "title": "a16z 提出 B2A 经济：AI 智能体正成为新的流量与分发渠道",
-      "link": "https://aihot.news/items/bisaluc0ii0f4s1gzi2zxbr1k",
-      "summary": "a16z 发布文章提出 B2A 经济概念，认为 AI 智能体已占大多数网络流量，正从回答问题转向代替用户完成任务和消费。 🔗 阅读原文 via AIHOT · https://aihot.news/items/bisaluc0ii0f4s1gzi2zxbr1k",
-      "pub_date": "2026-11-11",
-      "author": "noreply@aihot.news (a16z：News)",
-      "category": "观点"
     }
   ]
 }
