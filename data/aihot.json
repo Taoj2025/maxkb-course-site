@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-13T17:33:02.564282+08:00",
+  "updated_at": "2026-11-13T18:03:01.707824+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "AINews：黄仁勋辞任 NVIDIA CEO，Colette Kress 出任临时 CEO",
+      "link": "https://aihot.news/items/se0y4v3gihr6s0jmrc5vuv1zo",
+      "summary": "Latent Space 的 AI 新闻日报头条是 NVIDIA 宣布黄仁勋在任职 33 年后辞去 CEO、总裁和董事职务，CFO Colette Kress 出任临时 CEO，SEC 文件显示董事会于 11 月 11 日接受辞呈，此前董事会已就 NYT 报道的绯闻事件展开独立调查。 🔗 阅读原文 via AIHOT · https://aihot.news/items/se0y4v3gihr6s0jmrc5vuv1zo",
+      "pub_date": "2026-11-13",
+      "author": "noreply@aihot.news (Latent Space)",
+      "category": "行业动态"
+    },
     {
       "title": "腾讯混元发布实时语音模型 Hy Realtime，新增工具调用与唱歌能力",
       "link": "https://aihot.news/items/qp41q77z9ge5hsyrh9kra0c7k",
@@ -393,14 +401,6 @@
       "summary": "Anthropic 再次修订 IPO 申请文件 S-1（Amendment No. 2），宣布已越过其 Responsible Scaling Policy 设定的阈值，即 AI 正大幅加快 AI 研究速度、需更强安全检查。这一判断基于其对未来模型的预期而非现有模型的表现，一周前的文件还只说\"可能即将\"越过。文件同时将 IPO 发行价定为每股 $70 至 $78。 🔗 阅读原文 via AIHOT · https://aihot.news/items/j8x08g5wo30akk4mast68n79d",
       "pub_date": "2026-11-10",
       "author": "noreply@aihot.news (Rohan Paul)",
-      "category": "行业动态"
-    },
-    {
-      "title": "PSI 尝试用 AI 驱动的科学发现打造商业模式",
-      "link": "https://aihot.news/items/be7oi4uplsn32gf4o0xl08ium",
-      "summary": "PSI 实验室的 David Turturean 借助 Anthropic Fable 5.2 模型早期访问权限解决了存在 18 年的量子计算问题 Aaronson-Ambainis 猜想，证明经 Lean 自动形式化验证。 🔗 阅读原文 via AIHOT · https://aihot.news/items/be7oi4uplsn32gf4o0xl08ium",
-      "pub_date": "2026-11-10",
-      "author": "noreply@aihot.news (TechCrunch：AI)",
       "category": "行业动态"
     }
   ]
