@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-13T23:03:02.181284+08:00",
+  "updated_at": "2026-11-13T23:33:01.624042+08:00",
   "total": 19,
   "items": [
+    {
+      "title": "llama.cpp v1.0.0 发布，本地运行 AI 模型迎来首个稳定大版本",
+      "link": "https://aihot.news/items/um8pmpa91qn1ymvx3pux0sq1x",
+      "summary": "Hugging Face CEO Clément Delangue 与 @ggerganov 宣布 llama.cpp v1.0.0 发布，这是这个最常用的本地运行 AI 模型库的首个完全稳定大版本。作者称用户可在手机、笔记本和工作站上免费掌控自己的智能，不向任何人发送数据，并承诺支持所有硬件、平台和模型类型，让 AI 分布式而非集中于少数硅谷机构。 🔗 阅读原文 via AIHOT · https://aihot.news/items/um8pmpa91qn1ymvx3pux0sq1x",
+      "pub_date": "2026-11-13",
+      "author": "noreply@aihot.news (Clément Delangue)",
+      "category": "AI 产品"
+    },
     {
       "title": "腾讯混元发布实时语音模型 Hy Realtime，新增工具调用与唱歌能力",
       "link": "https://aihot.news/items/qp41q77z9ge5hsyrh9kra0c7k",
@@ -143,14 +151,6 @@
       "title": "OpenRouter 实测 MCP vs CLI vs Skills 的上下文 token 成本",
       "link": "https://aihot.news/items/wkpj021rmg6sgthgj9zwevei4",
       "summary": "OpenRouter 实测同一 GitHub 任务下 MCP、CLI 与 skill 的 token 成本：在 Claude Sonnet 5.5 上 CLI 用 1。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wkpj021rmg6sgthgj9zwevei4",
-      "pub_date": "2026-11-11",
-      "author": "noreply@aihot.news (OpenRouter：Announcements)",
-      "category": "教程"
-    },
-    {
-      "title": "OpenRouter 实测 fp8 与 fp4 量化对模型质量和价格的影响",
-      "link": "https://aihot.news/items/i3gp1xj4j11gi4qoreya18izb",
-      "summary": "OpenRouter 发布量化解析文章，讲解 LLM 量化原理，并报告 2026 年 10 月 20 日对 1455 个 provider 端点和 Qwen3.8 27B 六个端点的实测。 🔗 阅读原文 via AIHOT · https://aihot.news/items/i3gp1xj4j11gi4qoreya18izb",
       "pub_date": "2026-11-11",
       "author": "noreply@aihot.news (OpenRouter：Announcements)",
       "category": "教程"
