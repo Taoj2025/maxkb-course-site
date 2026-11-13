@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-13T22:03:02.443442+08:00",
-  "total": 20,
+  "updated_at": "2026-11-13T22:33:02.200216+08:00",
+  "total": 19,
   "items": [
     {
       "title": "腾讯混元发布实时语音模型 Hy Realtime，新增工具调用与唱歌能力",
@@ -154,14 +154,6 @@
       "pub_date": "2026-11-11",
       "author": "noreply@aihot.news (OpenRouter：Announcements)",
       "category": "教程"
-    },
-    {
-      "title": "Microsoft Research 揭示 Lazarus 权重空间后门技术，通过重编程休眠神经元攻击 AI Agent",
-      "link": "https://aihot.news/items/womexcn3n0ijhbehvhbsxxm4f",
-      "summary": "Microsoft Research 发布对 Lazarus 后门技术的研究，重编程 LLM 中少于 10 个休眠神经元即可在没有训练的情况下给基于该模型的 Agent 安装后门。 🔗 阅读原文 via AIHOT · https://aihot.news/items/womexcn3n0ijhbehvhbsxxm4f",
-      "pub_date": "2026-11-10",
-      "author": "noreply@aihot.news (Microsoft Research 博客)",
-      "category": "论文"
     }
   ]
 }
