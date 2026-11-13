@@ -1,8 +1,32 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-14T04:03:02.421754+08:00",
+  "updated_at": "2026-11-14T04:33:01.530437+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Claude Duet 向美国等待名单上的 Pro、Max 和 Ultra 订阅者发出全部邀请",
+      "link": "https://aihot.news/items/ajfypca37l5knyrnij49v5ofz",
+      "summary": "Anthropic 的 Claude Duet 更新：截至昨日在等待名单上的全部美国 Pro、Max 和 Ultra 订阅者均已收到邀请，等待名单入口为 https://claude.com/product/claude-duet。研究预览附带限额重置，Pro 为 3 次，Max 和 Ultra 为 1 次；官方计划很快向美国以外更多国家开放，并继续征集反馈。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ajfypca37l5knyrnij49v5ofz",
+      "pub_date": "2026-11-13",
+      "author": "noreply@aihot.news (Ado Kukic)",
+      "category": "AI 产品"
+    },
+    {
+      "title": "WSJ 报道称黄仁勋被罢免更多源于 Nvidia 高风险业务而非私生活",
+      "link": "https://aihot.news/items/s59xfwl0atld8vs7xq0pdx6hw",
+      "summary": "The Decoder 援引 WSJ 报道分析称，黄仁勋被罢免更多源于 Nvidia 高风险业务而非私生活传闻。Nvidia 在其主导下向 AI 云厂商和数据中心开发商提供数十亿美元财务担保以换取营收分成，最大一笔涉及对 OpenAI 俄亥俄数据中心的 2500 亿美元担保，消息公布后股价跌 5%，临时 CEO Colette Kress 将该承诺减半。 🔗 阅读原文 via AIHOT · https://aihot.news/items/s59xfwl0atld8vs7xq0pdx6hw",
+      "pub_date": "2026-11-13",
+      "author": "noreply@aihot.news (The Decoder：AI News)",
+      "category": "行业动态"
+    },
+    {
+      "title": "Nvidia 危机与 Anthropic IPO 前夜的 Cerebral Valley AI Summit 现场观察",
+      "link": "https://aihot.news/items/p1mfh9oe0xbq4evyru5pp1ikt",
+      "summary": "Newcomer 在旧金山 Cerebral Valley AI Summit 现场报道：Jensen Huang 因第二段婚外情披露辞职，Reuters 当天报道存在第三段，与会者多认为 Nvidia 短期无碍但生态承压，Databricks CEO 称其对整个生态是打击。 🔗 阅读原文 via AIHOT · https://aihot.news/items/p1mfh9oe0xbq4evyru5pp1ikt",
+      "pub_date": "2026-11-13",
+      "author": "noreply@aihot.news (Newcomer 新闻长文)",
+      "category": "行业动态"
+    },
     {
       "title": "Claude Code Stop hook 技巧：用 exit code 2 让 Claude 在检查失败时自动重试",
       "link": "https://aihot.news/items/p0jsxs2bnv6tmnmn1soi56759",
@@ -377,30 +401,6 @@
       "summary": "Bloomberg 报道 Anthropic IPO 已获数倍于发行份额的订单，主要来自大型机构投资者的锚定级意向。公司通过 IPO 加私募配售寻求最高 $90.4B，将超过 SpaceX 的 $85.7B 纪录成为史上最大上市，完全稀释估值目标约 $1.4T；Goldman Sachs 和 Morgan Stanley 牵头共 22 家银行，股票将以 ANT 在纳斯达克全球精选市场交易。 🔗 阅读原文 via AIHOT · https://aihot.news/items/r5kn7uexy6jx97qwxwvnpqrom",
       "pub_date": "2026-11-11",
       "author": "noreply@aihot.news (Rohan Paul)",
-      "category": "行业动态"
-    },
-    {
-      "title": "Grok 被指生成儿童色情图像，xAI 面临多起集体诉讼",
-      "link": "https://aihot.news/items/iz168hjk4ew8jpiokzjqcwbgi",
-      "summary": "据彭博社报道，多名未成年受害者就 Grok 被用于把普通照片篡改成儿童性虐待材料（CSAM）对马斯克旗下 xAI 提起多起集体诉讼，律师估计符合索赔条件的受害者可能多达数千人。 🔗 阅读原文 via AIHOT · https://aihot.news/items/iz168hjk4ew8jpiokzjqcwbgi",
-      "pub_date": "2026-11-11",
-      "author": "noreply@aihot.news (IT之家·人工智能)",
-      "category": "行业动态"
-    },
-    {
-      "title": "安全公司 Claroc：94.7% 的 Grok 构建应用可被任意访问，含患者数据和 SpaceXSI 内部文件",
-      "link": "https://aihot.news/items/wlmgb3vb5ycgom7wq44felnin",
-      "summary": "安全公司 Claroc 报告称，在检查的 37,571 个仍在线的 Grok 构建应用中，35,578 个（94.7%）无需登录即可访问，原因是发布对话框默认预选\"Anyone with the link\"，且每个应用的独立子域名会进入可检索的 passive DNS 数据库。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wlmgb3vb5ycgom7wq44felnin",
-      "pub_date": "2026-11-11",
-      "author": "noreply@aihot.news (The Decoder：AI News)",
-      "category": "行业动态"
-    },
-    {
-      "title": "OpenAI Q3 营收达 100 亿美元，效率仍落后于 Anthropic",
-      "link": "https://aihot.news/items/mzxxannvi5wge7wz0c0jfdyz5",
-      "summary": "据《华尔街日报》和 The Information 报道，OpenAI Q3 环比增长约 50% 至 100 亿美元，但调整后经营亏损从 101 亿升至 109 亿美元。 🔗 阅读原文 via AIHOT · https://aihot.news/items/mzxxannvi5wge7wz0c0jfdyz5",
-      "pub_date": "2026-11-11",
-      "author": "noreply@aihot.news (The Decoder：AI News)",
       "category": "行业动态"
     }
   ]
