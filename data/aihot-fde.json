@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-14T05:03:02.346228+08:00",
-  "total": 21,
+  "updated_at": "2026-11-14T05:33:02.050368+08:00",
+  "total": 22,
   "items": [
     {
       "title": "Claude Code Stop hook 技巧：用 exit code 2 让 Claude 在检查失败时自动重试",
@@ -58,6 +58,14 @@
       "pub_date": "2026-11-13",
       "author": "noreply@aihot.news (Claude：Blog)",
       "category": "教程"
+    },
+    {
+      "title": "Google 展示 Antigravity /teamwork 多智能体协作成果并开放给研究者使用",
+      "link": "https://aihot.news/items/h0obmlpmc44dqk1da164ca1z7",
+      "summary": "Google Research 介绍其团队与学术伙伴用 Antigravity 的 /teamwork 多智能体工作流配合 Gemini 4 Argon、Carbon、Hydrogen 模型，在信息论、形式化验证、分子结构和内核优化等领域取得多项成果。 🔗 阅读原文 via AIHOT · https://aihot.news/items/h0obmlpmc44dqk1da164ca1z7",
+      "pub_date": "2026-11-13",
+      "author": "noreply@aihot.news (Google Research：Blog)",
+      "category": "AI 产品"
     },
     {
       "title": "Gemini 4 Hydrogen 今日起向全球所有用户推送",

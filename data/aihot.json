@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-14T05:03:02.345320+08:00",
+  "updated_at": "2026-11-14T05:33:02.049431+08:00",
   "total": 50,
   "items": [
     {
@@ -114,6 +114,14 @@
       "pub_date": "2026-11-13",
       "author": "noreply@aihot.news (Claude：Blog)",
       "category": "教程"
+    },
+    {
+      "title": "Google 展示 Antigravity /teamwork 多智能体协作成果并开放给研究者使用",
+      "link": "https://aihot.news/items/h0obmlpmc44dqk1da164ca1z7",
+      "summary": "Google Research 介绍其团队与学术伙伴用 Antigravity 的 /teamwork 多智能体工作流配合 Gemini 4 Argon、Carbon、Hydrogen 模型，在信息论、形式化验证、分子结构和内核优化等领域取得多项成果。 🔗 阅读原文 via AIHOT · https://aihot.news/items/h0obmlpmc44dqk1da164ca1z7",
+      "pub_date": "2026-11-13",
+      "author": "noreply@aihot.news (Google Research：Blog)",
+      "category": "AI 产品"
     },
     {
       "title": "黄仁勋辞去英伟达总裁兼CEO，作者梳理14天风波始末",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-11",
       "author": "noreply@aihot.news (a16z：News)",
       "category": "观点"
-    },
-    {
-      "title": "Anthropic IPO 拟募资最高 90.4B 美元，或成史上最大上市",
-      "link": "https://aihot.news/items/r5kn7uexy6jx97qwxwvnpqrom",
-      "summary": "Bloomberg 报道 Anthropic IPO 已获数倍于发行份额的订单，主要来自大型机构投资者的锚定级意向。公司通过 IPO 加私募配售寻求最高 $90.4B，将超过 SpaceX 的 $85.7B 纪录成为史上最大上市，完全稀释估值目标约 $1.4T；Goldman Sachs 和 Morgan Stanley 牵头共 22 家银行，股票将以 ANT 在纳斯达克全球精选市场交易。 🔗 阅读原文 via AIHOT · https://aihot.news/items/r5kn7uexy6jx97qwxwvnpqrom",
-      "pub_date": "2026-11-11",
-      "author": "noreply@aihot.news (Rohan Paul)",
-      "category": "行业动态"
     }
   ]
 }
