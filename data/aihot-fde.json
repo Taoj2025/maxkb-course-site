@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-14T06:33:01.793289+08:00",
-  "total": 21,
+  "updated_at": "2026-11-14T07:03:01.706155+08:00",
+  "total": 20,
   "items": [
     {
       "title": "Claude Code Stop hook 技巧：用 exit code 2 让 Claude 在检查失败时自动重试",
@@ -162,14 +162,6 @@
       "pub_date": "2026-11-11",
       "author": "noreply@aihot.news (Google Blog：AI)",
       "category": "AI 产品"
-    },
-    {
-      "title": "Claude Code 中如何选择 Fable 5.2 与 Opus 等模型",
-      "link": "https://aihot.news/items/ep5oqt7m4l7gn3tqieilznmuk",
-      "summary": "Claude 发布视频教程，讲解在 Claude Code 中何时使用 Fable 5.2、Opus 5.5，何时降级到 Sonnet 5.5 或 Haiku 5.5，以及如何把一个任务拆分给多个模型。视频覆盖复杂编码与开放式技术工作、低成本明确任务等场景，并提供在自有任务上测量各模型表现的指南链接；可用性与用量限制因套餐而异。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ep5oqt7m4l7gn3tqieilznmuk",
-      "pub_date": "2026-11-11",
-      "author": "noreply@aihot.news (Claude：YouTube)",
-      "category": "教程"
     }
   ]
 }

@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-14T06:33:01.791479+08:00",
+  "updated_at": "2026-11-14T07:03:01.705234+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Jensen Huang 离任或给 AI 创业融资留下大缺口，投资人和创始人担忧",
+      "link": "https://aihot.news/items/kq4awkrys4uz37b7gsvj5r1dj",
+      "summary": "Nvidia CEO Jensen Huang 正式辞职，创投圈认为其继任者 Colette Kress 更保守，短期难延续他每年数十亿美元、今年已参与 105 轮的投资节奏。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kq4awkrys4uz37b7gsvj5r1dj",
+      "pub_date": "2026-11-13",
+      "author": "noreply@aihot.news (TechCrunch：AI)",
+      "category": "行业动态"
+    },
     {
       "title": "NVIDIA 副总裁 Bryan Catanzaro 澄清要求恢复 Jensen 职务的信件系伪造",
       "link": "https://aihot.news/items/kei20gkia8a0vhknc859jsfqr",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-11",
       "author": "noreply@aihot.news (Google Blog：AI)",
       "category": "AI 产品"
-    },
-    {
-      "title": "Claude Code 中如何选择 Fable 5.2 与 Opus 等模型",
-      "link": "https://aihot.news/items/ep5oqt7m4l7gn3tqieilznmuk",
-      "summary": "Claude 发布视频教程，讲解在 Claude Code 中何时使用 Fable 5.2、Opus 5.5，何时降级到 Sonnet 5.5 或 Haiku 5.5，以及如何把一个任务拆分给多个模型。视频覆盖复杂编码与开放式技术工作、低成本明确任务等场景，并提供在自有任务上测量各模型表现的指南链接；可用性与用量限制因套餐而异。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ep5oqt7m4l7gn3tqieilznmuk",
-      "pub_date": "2026-11-11",
-      "author": "noreply@aihot.news (Claude：YouTube)",
-      "category": "教程"
     }
   ]
 }
