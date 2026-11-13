@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-14T01:33:01.980815+08:00",
+  "updated_at": "2026-11-14T02:03:02.477200+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Sierra 发布 Personal Agent Protocol（Poppy）v1.0",
+      "link": "https://aihot.news/items/z4wsrxr1xmhg3lq3y0ouq5rmr",
+      "summary": "Sierra 宣布 Personal Agent Protocol（Poppy）v1.0 正式可用，该协议定义个人智能体如何通过企业智能体、网站和 API 与公司交互，主要基于 MCP、OpenAPI、UCP 等现有标准构建，认证通过 OAuth 由客户控制权限。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z4wsrxr1xmhg3lq3y0ouq5rmr",
+      "pub_date": "2026-11-13",
+      "author": "noreply@aihot.news (Sierra：Blog)",
+      "category": "AI 产品"
+    },
     {
       "title": "ChatGPT 推出 ChatGPT Wallet，dot 可在用户批准下代为完成购买",
       "link": "https://aihot.news/items/vot1htumxjgnb0i88rbq3zsuq",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-11",
       "author": "noreply@aihot.news (Rohan Paul)",
       "category": "行业动态"
-    },
-    {
-      "title": "Anthropic 发布 MAMUBench：单一智能体协调在四类环境中均胜过每个用户各自的智能体团队",
-      "link": "https://aihot.news/items/z9u4n1e7zfapxjozcn97quhdp",
-      "summary": "Anthropic Fellows Program 团队构建四个多用户多智能体模拟环境（共享 API token 预算、诊所日历、团体订餐或旅行预订、合并队列），测试 Anthropic、OpenAI 和 Alibaba 的前沿模型，并发布其中三个环境作为基准 MAMUBench。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z9u4n1e7zfapxjozcn97quhdp",
-      "pub_date": "2026-11-11",
-      "author": "noreply@aihot.news (Anthropic：Alignment Science Blog)",
-      "category": "论文"
     }
   ]
 }
