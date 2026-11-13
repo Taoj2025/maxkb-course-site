@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-14T00:03:01.755555+08:00",
-  "total": 19,
+  "updated_at": "2026-11-14T00:33:02.093530+08:00",
+  "total": 18,
   "items": [
     {
       "title": "llama.cpp v1.0.0 发布，本地运行 AI 模型迎来首个稳定大版本",
@@ -146,14 +146,6 @@
       "pub_date": "2026-11-11",
       "author": "noreply@aihot.news (Berkeley RDI：Blog)",
       "category": "论文"
-    },
-    {
-      "title": "OpenRouter 实测 MCP vs CLI vs Skills 的上下文 token 成本",
-      "link": "https://aihot.news/items/wkpj021rmg6sgthgj9zwevei4",
-      "summary": "OpenRouter 实测同一 GitHub 任务下 MCP、CLI 与 skill 的 token 成本：在 Claude Sonnet 5.5 上 CLI 用 1。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wkpj021rmg6sgthgj9zwevei4",
-      "pub_date": "2026-11-11",
-      "author": "noreply@aihot.news (OpenRouter：Announcements)",
-      "category": "教程"
     }
   ]
 }
