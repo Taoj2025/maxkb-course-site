@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-14T00:33:02.092563+08:00",
+  "updated_at": "2026-11-14T01:03:02.309397+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "ChatGPT 推出 ChatGPT Wallet，dot 可在用户批准下代为完成购买",
+      "link": "https://aihot.news/items/vot1htumxjgnb0i88rbq3zsuq",
+      "summary": "ChatGPT 官方账号宣布推出 ChatGPT Wallet，dot 可在用户批准下安全地代用户完成购买。智能体支付时不会接触用户的实际卡号信息，每笔购买都需要通过安全检查。该功能即日起在美国向 Pro 订阅用户的 dot 推出，详情见 https://openai.com/index/introducing-chatgpt-wallet/。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vot1htumxjgnb0i88rbq3zsuq",
+      "pub_date": "2026-11-13",
+      "author": "noreply@aihot.news (ChatGPT)",
+      "category": "AI 产品"
+    },
     {
       "title": "Anthropic 直播 Dario Amodei 与 JPMorgan CEO Jamie Dimon 炉边谈话并披露 SEC 注册声明",
       "link": "https://aihot.news/items/vsfne926njom5wnadceo8r04m",
@@ -393,14 +401,6 @@
       "summary": "Anthropic Fellows Program 团队构建四个多用户多智能体模拟环境（共享 API token 预算、诊所日历、团体订餐或旅行预订、合并队列），测试 Anthropic、OpenAI 和 Alibaba 的前沿模型，并发布其中三个环境作为基准 MAMUBench。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z9u4n1e7zfapxjozcn97quhdp",
       "pub_date": "2026-11-11",
       "author": "noreply@aihot.news (Anthropic：Alignment Science Blog)",
-      "category": "论文"
-    },
-    {
-      "title": "Berkeley RDI 发布 CyberBinGym 基准，测试 AI 智能体能否仅凭二进制补丁写出真实漏洞利用",
-      "link": "https://aihot.news/items/xenhfme3azzcf8qpihr57fb93",
-      "summary": "UC Berkeley 等机构发布 CyberBinGym 基准，评估 AI 智能体在无源码、无漏洞描述、无触发输入的 1-day 场景下，仅凭 stripped 的漏洞与补丁二进制能否恢复并利用真实漏洞，含 100 个来自 53 个开源项目的任务。 🔗 阅读原文 via AIHOT · https://aihot.news/items/xenhfme3azzcf8qpihr57fb93",
-      "pub_date": "2026-11-11",
-      "author": "noreply@aihot.news (Berkeley RDI：Blog)",
       "category": "论文"
     }
   ]
