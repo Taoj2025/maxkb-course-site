@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-13T08:00:02.425264+08:00",
+  "updated_at": "2026-11-13T08:03:01.737589+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "黄仁勋辞去英伟达总裁兼CEO，作者梳理14天风波始末",
+      "link": "https://aihot.news/items/t86m3q7vdlqmvm2zmx91vps5a",
+      "summary": "英伟达公告黄仁勋辞去总裁、CEO和董事职务，即刻生效，股价开盘下跌14个点。作者依据《纽约时报》、The Information 等报道梳理脉络：从2022年A100、H100对华禁售，到 Megaspeed 采购争议、黄乐被情报机构认定涉间谍活动，再到婚外情曝光后董事会于10月29日起14天内收网，黄仁勋在英伟达33年的时代就此结束。 🔗 阅读原文 via AIHOT · https://aihot.news/items/t86m3q7vdlqmvm2zmx91vps5a",
+      "pub_date": "2026-11-12",
+      "author": "noreply@aihot.news (公众号：数字生命卡兹克)",
+      "category": "行业动态"
+    },
     {
       "title": "民主党对 Nvidia 对华芯片销售启动调查，致函质疑黄仁勋与特朗普的安排",
       "link": "https://aihot.news/items/cfh0nazzl7eedgttz8n99fza4",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-10",
       "author": "noreply@aihot.news (MiniMax：Blog)",
       "category": "AI 模型"
-    },
-    {
-      "title": "Gemini 4 Carbon 上线 Gemini API、AI Studio 和 Antigravity",
-      "link": "https://aihot.news/items/o6jzg6bjiaufh8no2rf1tep7u",
-      "summary": "Philipp Schmid 介绍 Gemini 4 Carbon 现已可在 Gemini API、Google AI Studio 和 Antigravity（限 Google AI Ultra 订阅者）中使用。 🔗 阅读原文 via AIHOT · https://aihot.news/items/o6jzg6bjiaufh8no2rf1tep7u",
-      "pub_date": "2026-11-10",
-      "author": "noreply@aihot.news (Philipp Schmid)",
-      "category": "AI 产品"
     }
   ]
 }
