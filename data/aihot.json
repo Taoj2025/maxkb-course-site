@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-13T15:03:02.475766+08:00",
+  "updated_at": "2026-11-13T15:33:02.069027+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Nvidia 内部建议箱帖文获超 1600 条评论，多数员工请愿黄仁勋回归",
+      "link": "https://aihot.news/items/x7omcgiafs8nml9fnrog3sg9w",
+      "summary": "据 WIRED 报道，Nvidia 内部建议箱一则帖文获得超过 1600 条评论，多数员工支持恢复黄仁勋的前 CEO 职位。该帖文由一位资深工程师在黄仁勋辞职前撰写，要求董事会先公布调查结果并对员工进行投票调查。 🔗 阅读原文 via AIHOT · https://aihot.news/items/x7omcgiafs8nml9fnrog3sg9w",
+      "pub_date": "2026-11-13",
+      "author": "noreply@aihot.news (Rohan Paul)",
+      "category": "行业动态"
+    },
     {
       "title": "黄仁勋辞去英伟达总裁兼CEO，作者梳理14天风波始末",
       "link": "https://aihot.news/items/t86m3q7vdlqmvm2zmx91vps5a",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-10",
       "author": "noreply@aihot.news (OpenAI Developers)",
       "category": "AI 产品"
-    },
-    {
-      "title": "Ed Zitron 长文剖析黄仁勋丑闻与 NVIDIA 疑似借 Megaspeed 向中国走私 GPU",
-      "link": "https://aihot.news/items/gqzca7y2h3m9p0fxtj60m4i1t",
-      "summary": "Ed Zitron 长文梳理黄仁勋承认与 Megaspeed CEO Alice Huang 的婚外情事件，并整合 Bloomberg、纽约时报、金融时报与 Culper Research 的报道，指 Megaspeed 疑似作为转口实体将 NVIDIA GPU 非法流入中国。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gqzca7y2h3m9p0fxtj60m4i1t",
-      "pub_date": "2026-11-10",
-      "author": "noreply@aihot.news (Ed Zitron 长文 / Where’s Your Ed At)",
-      "category": "行业动态"
     }
   ]
 }
