@@ -788,5 +788,77 @@
     "source": "机器摘要 · 掘金",
     "file": "13343-postgres.md",
     "estimated_read_time": "1 分钟"
+  },
+  {
+    "id": 13344,
+    "title": "Casvisor 开源：Apache-2.0 的堡垒机，一个 Go 二进制支持 SSH、RDP、VNC、Telnet 与会话录像",
+    "slug": "13344-casvisor-apache-2-0-go-ssh-rdp-vnc-telne",
+    "summary": "Casvisor 是一个 Apache-2.0 协议的开源堡垒机（jump server），后端用 Go、前端用 React 编写，把 SSH、RDP、VNC、Telnet 四种远程协议的接入、权限和审计做在了同一个二进制里，被管理的服务器上不需要安装任何 agent。 主要功能 连接方面，SSH",
+    "category": "最新动态",
+    "tags": [
+      "FDE",
+      "AI 资讯",
+      "前端部署"
+    ],
+    "color": "purple",
+    "date": "2026-11-13",
+    "author": "小Q（机器摘要）",
+    "source": "机器摘要 · 开源中国",
+    "file": "13344-casvisor-apache-2-0-go-ssh-rdp-vnc-telne.md",
+    "estimated_read_time": "1 分钟"
+  },
+  {
+    "id": 13345,
+    "title": "Anthropic’s Claude Fable 5.2 built a shooter in 1 prompt — and it only took 8 hours and $550",
+    "slug": "13345-anthropic-s-claude-fable-5-2-built-a-sho",
+    "summary": "An Anthropic engineer gave Claude Fable 5.2 one prompt to build a first-person shooter and let it run for eight The post Anthropic’s Claude Fable 5.2",
+    "category": "最新动态",
+    "tags": [
+      "FDE",
+      "AI 资讯",
+      "前端部署"
+    ],
+    "color": "blue",
+    "date": "2026-11-13",
+    "author": "小Q（机器摘要）",
+    "source": "机器摘要 · The New Stack",
+    "file": "13345-anthropic-s-claude-fable-5-2-built-a-sho.md",
+    "estimated_read_time": "1 分钟"
+  },
+  {
+    "id": 13346,
+    "title": "Developers have been hacking around MCP’s file-upload problem for two years. A fix is taking shape.",
+    "slug": "13346-developers-have-been-hacking-around-mcp",
+    "summary": "The Model Context Protocol (MCP) has played an instrumental part in connecting AI assistants to external tools and data since The post Developers have",
+    "category": "最新动态",
+    "tags": [
+      "FDE",
+      "AI 资讯",
+      "前端部署"
+    ],
+    "color": "green",
+    "date": "2026-11-13",
+    "author": "小Q（机器摘要）",
+    "source": "机器摘要 · The New Stack",
+    "file": "13346-developers-have-been-hacking-around-mcp.md",
+    "estimated_read_time": "1 分钟"
+  },
+  {
+    "id": 13347,
+    "title": "Why Nitric stopped asking one AI agent to do everything",
+    "slug": "13347-why-nitric-stopped-asking-one-ai-agent-t",
+    "summary": "We&#8217;re a team of five engineers, and we used to wake the on-call engineer three or four times a week The post Why Nitric stopped asking one AI ag",
+    "category": "最新动态",
+    "tags": [
+      "FDE",
+      "AI 资讯",
+      "前端部署"
+    ],
+    "color": "orange",
+    "date": "2026-11-13",
+    "author": "小Q（机器摘要）",
+    "source": "机器摘要 · The New Stack",
+    "file": "13347-why-nitric-stopped-asking-one-ai-agent-t.md",
+    "estimated_read_time": "1 分钟"
   }
 ]
