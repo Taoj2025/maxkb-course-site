@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-14T03:03:02.309897+08:00",
+  "updated_at": "2026-11-14T03:33:01.993363+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Claude Code Stop hook 技巧：用 exit code 2 让 Claude 在检查失败时自动重试",
+      "link": "https://aihot.news/items/p0jsxs2bnv6tmnmn1soi56759",
+      "summary": "Lydia Hallie 分享一个 Claude Code 使用技巧：用 Stop hook 让 Claude 在检查失败后自动重试，关键是让 hook 以 exit code 2 退出。exit 2 会把 hook 的 stderr 返回给 Claude 触发重试，exit 1 则是非阻塞的，即使检查失败 Claude 也会直接结束。 🔗 阅读原文 via AIHOT · https://aihot.news/items/p0jsxs2bnv6tmnmn1soi56759",
+      "pub_date": "2026-11-13",
+      "author": "noreply@aihot.news (Lydia Hallie)",
+      "category": "教程"
+    },
     {
       "title": "Sierra 发布 Personal Agent Protocol（Poppy）v1.0",
       "link": "https://aihot.news/items/z4wsrxr1xmhg3lq3y0ouq5rmr",
@@ -66,6 +74,14 @@
       "pub_date": "2026-11-13",
       "author": "noreply@aihot.news (Rohan Paul)",
       "category": "行业动态"
+    },
+    {
+      "title": "Anthropic 详解常驻智能体的五个核心架构原语",
+      "link": "https://aihot.news/items/ypeap2t8w4fqqfuvt7mw3wg79",
+      "summary": "Anthropic 发布博客，拆解常驻智能体（always-on agents）背后的架构。这类智能体有状态且可主动行动，其兴起得益于模型判断力提升和智能成本下降，例如长程编码任务上 Opus 5.5 每解决一个任务的成本比 Opus 5 低 78%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ypeap2t8w4fqqfuvt7mw3wg79",
+      "pub_date": "2026-11-13",
+      "author": "noreply@aihot.news (Claude：Blog)",
+      "category": "教程"
     },
     {
       "title": "黄仁勋辞去英伟达总裁兼CEO，作者梳理14天风波始末",
@@ -383,22 +399,6 @@
       "title": "WSJ：Anthropic 7 位创始人 IPO 各套现约 2.5 亿美元并保留控制权",
       "link": "https://aihot.news/items/ajjv9abs8vd20j05emcig98ai",
       "summary": "WSJ 报道，Anthropic 7 位创始人将在 IPO 中各出售约 2.5 亿美元股票，每人保留约 180 亿美元持仓。据公司文件，每人出售近 3.4M 股，发行价区间预计 70 至 78 美元，上市预计下周进行，估值接近 1.3 万亿美元，募资 800 亿美元以上，部分通过包括 Google 在内的私募配售。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ajjv9abs8vd20j05emcig98ai",
-      "pub_date": "2026-11-11",
-      "author": "noreply@aihot.news (Rohan Paul)",
-      "category": "行业动态"
-    },
-    {
-      "title": "Anthropic 修订版 S1 文件披露与 Microsoft 和 Google 超 100 亿美元级新算力协议",
-      "link": "https://aihot.news/items/xshgfc1vcvgrdkvnomagmefwy",
-      "summary": "Anthropic 在当日修订的 S1 文件中披露与 Microsoft 和 Google 达成超 100 亿美元的新协议。Microsoft 承诺到 2033 年 6 月支出至少 472 亿、最高 492 亿美元，Google 最低承诺从约 1145 亿升至约 1213 亿美元，两笔均不可撤销、无论是否使用容量都须付款。文件还提到上季度短期算力支出 50 亿美元且价格明显更高。 🔗 阅读原文 via AIHOT · https://aihot.news/items/xshgfc1vcvgrdkvnomagmefwy",
-      "pub_date": "2026-11-11",
-      "author": "noreply@aihot.news (Rohan Paul)",
-      "category": "行业动态"
-    },
-    {
-      "title": "Anthropic 投资需求火热，承销商拟将 IPO 目标估值上调回 $1.5T 或更高",
-      "link": "https://aihot.news/items/m7ul4psbkb5zyp0t254fr986o",
-      "summary": "FT 报道，因投资者需求旺盛，Anthropic 承销商计划上调 IPO 定价，把目标估值拉回 $1.5T 或更高。周二文件设定 $70-$78 的发行区间，计入员工期权和受限股后对应 $1.26T-$1.41T 估值；若定价超出区间，募资将超过 $100B，其中 Google、Nvidia 和 Microsoft 将按 IPO 价格投资 $26B。 🔗 阅读原文 via AIHOT · https://aihot.news/items/m7ul4psbkb5zyp0t254fr986o",
       "pub_date": "2026-11-11",
       "author": "noreply@aihot.news (Rohan Paul)",
       "category": "行业动态"

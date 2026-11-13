@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-14T03:03:02.311316+08:00",
-  "total": 18,
+  "updated_at": "2026-11-14T03:33:01.994280+08:00",
+  "total": 20,
   "items": [
+    {
+      "title": "Claude Code Stop hook 技巧：用 exit code 2 让 Claude 在检查失败时自动重试",
+      "link": "https://aihot.news/items/p0jsxs2bnv6tmnmn1soi56759",
+      "summary": "Lydia Hallie 分享一个 Claude Code 使用技巧：用 Stop hook 让 Claude 在检查失败后自动重试，关键是让 hook 以 exit code 2 退出。exit 2 会把 hook 的 stderr 返回给 Claude 触发重试，exit 1 则是非阻塞的，即使检查失败 Claude 也会直接结束。 🔗 阅读原文 via AIHOT · https://aihot.news/items/p0jsxs2bnv6tmnmn1soi56759",
+      "pub_date": "2026-11-13",
+      "author": "noreply@aihot.news (Lydia Hallie)",
+      "category": "教程"
+    },
     {
       "title": "Sierra 发布 Personal Agent Protocol（Poppy）v1.0",
       "link": "https://aihot.news/items/z4wsrxr1xmhg3lq3y0ouq5rmr",
@@ -34,6 +42,14 @@
       "pub_date": "2026-11-13",
       "author": "noreply@aihot.news (公众号：腾讯混元)",
       "category": "AI 模型"
+    },
+    {
+      "title": "Anthropic 详解常驻智能体的五个核心架构原语",
+      "link": "https://aihot.news/items/ypeap2t8w4fqqfuvt7mw3wg79",
+      "summary": "Anthropic 发布博客，拆解常驻智能体（always-on agents）背后的架构。这类智能体有状态且可主动行动，其兴起得益于模型判断力提升和智能成本下降，例如长程编码任务上 Opus 5.5 每解决一个任务的成本比 Opus 5 低 78%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ypeap2t8w4fqqfuvt7mw3wg79",
+      "pub_date": "2026-11-13",
+      "author": "noreply@aihot.news (Claude：Blog)",
+      "category": "教程"
     },
     {
       "title": "Gemini 4 Hydrogen 今日起向全球所有用户推送",
