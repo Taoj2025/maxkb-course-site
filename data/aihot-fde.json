@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-13T12:03:02.028017+08:00",
-  "total": 19,
+  "updated_at": "2026-11-13T12:33:02.480481+08:00",
+  "total": 18,
   "items": [
     {
       "title": "Gemini 4 Hydrogen 今日起向全球所有用户推送",
@@ -146,14 +146,6 @@
       "pub_date": "2026-11-10",
       "author": "noreply@aihot.news (Microsoft Research 博客)",
       "category": "论文"
-    },
-    {
-      "title": "Gemini 4 Carbon 现已登陆 Cursor，高 effort 下居 CursorBench 榜首",
-      "link": "https://aihot.news/items/tk36lg7rqiq1i67rq0ce28yo8",
-      "summary": "Cursor 宣布 Gemini 4 Carbon 已可在 Cursor 中使用。官方称在高 effort 设置下，该模型以 60.4% 的得分位居 CursorBench 4.0 榜首，配图还标注其成本为 $9.22。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tk36lg7rqiq1i67rq0ce28yo8",
-      "pub_date": "2026-11-10",
-      "author": "noreply@aihot.news (Cursor)",
-      "category": "AI 产品"
     }
   ]
 }
