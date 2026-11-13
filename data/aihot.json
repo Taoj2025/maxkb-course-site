@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-13T21:33:01.859462+08:00",
+  "updated_at": "2026-11-13T22:03:02.442513+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Nvidia 领导层变动引发以色列科技界关注，投资人认为挑战者或有机会",
+      "link": "https://aihot.news/items/pdhda5tufq7ubi8w17bys7w66",
+      "summary": "Nvidia 前CEO黄仁勋辞职后，以色列科技界关注这家在其拥有6000名员工和最大海外研发中心的公司是否会继续深耕以色列。多位以色列投资人认为，Nvidia 决策放缓可能给 AI 芯片和推理软件领域的竞争者留出空间，但如果不确定性也拖慢 AI 支出，竞争者面对的可能是更小的市场机会。 🔗 阅读原文 via AIHOT · https://aihot.news/items/pdhda5tufq7ubi8w17bys7w66",
+      "pub_date": "2026-11-13",
+      "author": "noreply@aihot.news (TechCrunch：AI)",
+      "category": "行业动态"
+    },
     {
       "title": "AINews：黄仁勋辞任 NVIDIA CEO，Colette Kress 出任临时 CEO",
       "link": "https://aihot.news/items/se0y4v3gihr6s0jmrc5vuv1zo",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-10",
       "author": "noreply@aihot.news (Microsoft Research 博客)",
       "category": "论文"
-    },
-    {
-      "title": "Stripe 收购 OpenRouter，双方宣布合并后定位",
-      "link": "https://aihot.news/items/zycmiklep7i6dct58558jbp78",
-      "summary": "OpenRouter 官方宣布正式并入 Stripe。OpenRouter 称有超过 1000 万开发者和公司使用其平台，它为多模型、多 provider 的 AI 运行提供基础设施，包括访问新模型、故障期间保持可用，以及为团队执行支出和数据策略。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zycmiklep7i6dct58558jbp78",
-      "pub_date": "2026-11-10",
-      "author": "noreply@aihot.news (OpenRouter)",
-      "category": "行业动态"
     }
   ]
 }
