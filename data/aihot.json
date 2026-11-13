@@ -1,16 +1,8 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-13T22:33:02.199314+08:00",
+  "updated_at": "2026-11-13T23:03:02.180273+08:00",
   "total": 50,
   "items": [
-    {
-      "title": "DeepSeek 开放全家桶应用 API，V4.1-Flash 支持联网搜索、文件输入与语音独立接口",
-      "link": "https://aihot.news/items/w1edyi7hrsgj7uk5j4amwwwff",
-      "summary": "DeepSeek 官方宣布开放全家桶应用 API，在原有 API 中开启对应参数即可获得深度思考搜索、文件输入、阅读链接、模型安全等对话能力，V4.1-Flash 模型（deepseek-flash）已在 Messages、Responses 与 Chat Completions 接口下支持这些功能。 🔗 阅读原文 via AIHOT · https://aihot.news/items/w1edyi7hrsgj7uk5j4amwwwff",
-      "pub_date": "2026-11-13",
-      "author": "noreply@aihot.news (公众号：DeepSeek)",
-      "category": "AI 产品"
-    },
     {
       "title": "Nvidia 领导层变动引发以色列科技界关注，投资人认为挑战者或有机会",
       "link": "https://aihot.news/items/pdhda5tufq7ubi8w17bys7w66",
@@ -178,6 +170,14 @@
       "pub_date": "2026-11-12",
       "author": "noreply@aihot.news (OpenMOSS / 复旦NLP / 上海创智 / MOSI)",
       "category": "AI 模型"
+    },
+    {
+      "title": "DeepSeek 开放全家桶应用 API：联网搜索、文件输入、阅读链接等能力面向开发者",
+      "link": "https://aihot.news/items/nnbnoebf6mvo97usmwj5wziyl",
+      "summary": "DeepSeek 在 API 中开放此前 App 对话服务所用的能力，开发者开启对应参数即可使用，工具调用与上下文拼接由服务端完成。 🔗 阅读原文 via AIHOT · https://aihot.news/items/nnbnoebf6mvo97usmwj5wziyl",
+      "pub_date": "2026-11-12",
+      "author": "noreply@aihot.news (DeepSeek：API 更新日志)",
+      "category": "AI 产品"
     },
     {
       "title": "Apple HomeView 正式开售，售价 299 美元并搭载 Siri AI",
