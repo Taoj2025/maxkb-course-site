@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-13T20:03:02.443518+08:00",
-  "total": 19,
+  "updated_at": "2026-11-13T20:33:01.996786+08:00",
+  "total": 20,
   "items": [
     {
       "title": "腾讯混元发布实时语音模型 Hy Realtime，新增工具调用与唱歌能力",
@@ -66,6 +66,14 @@
       "pub_date": "2026-11-12",
       "author": "noreply@aihot.news (Replit：Blog)",
       "category": "AI 产品"
+    },
+    {
+      "title": "MOSS-Live 全双工实时交互评测解读：与 GPT-Live-1、豆包的对比",
+      "link": "https://aihot.news/items/rcjkjkhq7xxwbhh9wnv15fqy1",
+      "summary": "OpenMOSS 团队发布 MOSS-Live 全双工语音交互评测解读。依据 MOSS 官网 2026 年 11 月 13 日图表，MOSS-Live 六项全双工指标均居参评模型首位，无关语音误接话率 2.00%，低于 GPT-Live-1 的 68% 和豆包的 75%，停顿抢话率 1.44%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rcjkjkhq7xxwbhh9wnv15fqy1",
+      "pub_date": "2026-11-12",
+      "author": "noreply@aihot.news (OpenMOSS / 复旦NLP / 上海创智 / MOSI)",
+      "category": "AI 模型"
     },
     {
       "title": "OpenRouter 实测六模型并给出四层防护，解决 AI Agent 无限循环烧钱问题",
