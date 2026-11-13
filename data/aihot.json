@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-13T16:33:02.384608+08:00",
+  "updated_at": "2026-11-13T17:03:02.050442+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "腾讯混元发布实时语音模型 Hy Realtime，新增工具调用与唱歌能力",
+      "link": "https://aihot.news/items/qp41q77z9ge5hsyrh9kra0c7k",
+      "summary": "腾讯混元发布全新实时语音模型 Hy Realtime，在语音理解、指令遵循、拟人化表达等基础能力外新增 Agentic 工具调用与唱歌能力，已在元宝语音通话、腾讯客服上线，近期将上线腾讯云提供 API 服务。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qp41q77z9ge5hsyrh9kra0c7k",
+      "pub_date": "2026-11-13",
+      "author": "noreply@aihot.news (公众号：腾讯混元)",
+      "category": "AI 模型"
+    },
     {
       "title": "Nvidia 内部建议箱帖文获超 1600 条评论，多数员工请愿黄仁勋回归",
       "link": "https://aihot.news/items/x7omcgiafs8nml9fnrog3sg9w",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-10",
       "author": "noreply@aihot.news (TechCrunch：AI)",
       "category": "行业动态"
-    },
-    {
-      "title": "OpenAI 开放 ChatGPT Business 计划登录 Notion、v0 等第三方工具",
-      "link": "https://aihot.news/items/y4pcrys3ewo3xnx1j45mbpbfy",
-      "summary": "OpenAI 宣布 ChatGPT Business 计划现可在 Notion、v0、ampcode、kilocode、Warp、NousResearch 的 Hermes、openclaw、opencode 等第三方工具中使用，通过 Sign in with ChatGPT 连接即可开始。 🔗 阅读原文 via AIHOT · https://aihot.news/items/y4pcrys3ewo3xnx1j45mbpbfy",
-      "pub_date": "2026-11-10",
-      "author": "noreply@aihot.news (OpenAI Developers)",
-      "category": "AI 产品"
     }
   ]
 }
