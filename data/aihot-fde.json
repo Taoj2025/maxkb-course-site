@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-14T03:33:01.994280+08:00",
-  "total": 20,
+  "updated_at": "2026-11-14T04:03:02.422682+08:00",
+  "total": 21,
   "items": [
     {
       "title": "Claude Code Stop hook 技巧：用 exit code 2 让 Claude 在检查失败时自动重试",
@@ -10,6 +10,14 @@
       "pub_date": "2026-11-13",
       "author": "noreply@aihot.news (Lydia Hallie)",
       "category": "教程"
+    },
+    {
+      "title": "研究称中国最强 AI 模型由被禁运的 Nvidia Blackwell 芯片训练",
+      "link": "https://aihot.news/items/q92ir58jcjtp3g9fn11jlb6ei",
+      "summary": "TechCrunch 报道，前 OpenAI 研究员 Will DePue 分析 DeepSeek、月之暗面、MiniMax 和蚂蚁集团开源模型权重后，称 Kimi K3 与 DeepSeek V4 等模型留有 Blackwell 芯片训练痕迹，而这些芯片被禁止出口到中国。 🔗 阅读原文 via AIHOT · https://aihot.news/items/q92ir58jcjtp3g9fn11jlb6ei",
+      "pub_date": "2026-11-13",
+      "author": "noreply@aihot.news (TechCrunch：AI)",
+      "category": "行业动态"
     },
     {
       "title": "Sierra 发布 Personal Agent Protocol（Poppy）v1.0",

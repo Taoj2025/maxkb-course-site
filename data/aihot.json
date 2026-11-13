@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-14T03:33:01.993363+08:00",
+  "updated_at": "2026-11-14T04:03:02.421754+08:00",
   "total": 50,
   "items": [
     {
@@ -10,6 +10,14 @@
       "pub_date": "2026-11-13",
       "author": "noreply@aihot.news (Lydia Hallie)",
       "category": "教程"
+    },
+    {
+      "title": "研究称中国最强 AI 模型由被禁运的 Nvidia Blackwell 芯片训练",
+      "link": "https://aihot.news/items/q92ir58jcjtp3g9fn11jlb6ei",
+      "summary": "TechCrunch 报道，前 OpenAI 研究员 Will DePue 分析 DeepSeek、月之暗面、MiniMax 和蚂蚁集团开源模型权重后，称 Kimi K3 与 DeepSeek V4 等模型留有 Blackwell 芯片训练痕迹，而这些芯片被禁止出口到中国。 🔗 阅读原文 via AIHOT · https://aihot.news/items/q92ir58jcjtp3g9fn11jlb6ei",
+      "pub_date": "2026-11-13",
+      "author": "noreply@aihot.news (TechCrunch：AI)",
+      "category": "行业动态"
     },
     {
       "title": "Sierra 发布 Personal Agent Protocol（Poppy）v1.0",
@@ -393,14 +401,6 @@
       "summary": "据《华尔街日报》和 The Information 报道，OpenAI Q3 环比增长约 50% 至 100 亿美元，但调整后经营亏损从 101 亿升至 109 亿美元。 🔗 阅读原文 via AIHOT · https://aihot.news/items/mzxxannvi5wge7wz0c0jfdyz5",
       "pub_date": "2026-11-11",
       "author": "noreply@aihot.news (The Decoder：AI News)",
-      "category": "行业动态"
-    },
-    {
-      "title": "WSJ：Anthropic 7 位创始人 IPO 各套现约 2.5 亿美元并保留控制权",
-      "link": "https://aihot.news/items/ajjv9abs8vd20j05emcig98ai",
-      "summary": "WSJ 报道，Anthropic 7 位创始人将在 IPO 中各出售约 2.5 亿美元股票，每人保留约 180 亿美元持仓。据公司文件，每人出售近 3.4M 股，发行价区间预计 70 至 78 美元，上市预计下周进行，估值接近 1.3 万亿美元，募资 800 亿美元以上，部分通过包括 Google 在内的私募配售。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ajjv9abs8vd20j05emcig98ai",
-      "pub_date": "2026-11-11",
-      "author": "noreply@aihot.news (Rohan Paul)",
       "category": "行业动态"
     }
   ]
