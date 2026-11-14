@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-14T08:03:01.955541+08:00",
-  "total": 19,
+  "updated_at": "2026-11-14T08:33:02.057794+08:00",
+  "total": 18,
   "items": [
     {
       "title": "Claude Code Stop hook 技巧：用 exit code 2 让 Claude 在检查失败时自动重试",
@@ -146,14 +146,6 @@
       "pub_date": "2026-11-12",
       "author": "noreply@aihot.news (OpenRouter：Announcements)",
       "category": "教程"
-    },
-    {
-      "title": "Runway 开源 27B 世界动作模型 Praxis-1，权重采用 Apache 2.0 许可",
-      "link": "https://aihot.news/items/bx3sq4dxfqblyztkuiktiz0wv",
-      "summary": "Runway 宣布世界动作模型 Praxis-1 以 Apache 2.0 开放权重面向所有人开放。该模型为 27B 参数 MoE 扩散 Transformer，同时预测视频与动作，在 NVIDIA RoboLab-120 榜单以 46.2% 成功率居首，超过 FLUX 3 Action（42.9%）、Cosmos3 Nano（36.8%）和 π0.5（28.0%）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/bx3sq4dxfqblyztkuiktiz0wv",
-      "pub_date": "2026-11-11",
-      "author": "noreply@aihot.news (Runway：News)",
-      "category": "AI 模型"
     }
   ]
 }
