@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-15T03:03:01.981971+08:00",
+  "updated_at": "2026-11-15T03:33:01.526097+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Anthropic CEO Amodei 在 IPO 前承认明年存在巨大不确定性，算力是公司最深的商业两难",
+      "link": "https://aihot.news/items/vl3jnosrbdn6i5j2we400046i",
+      "summary": "Anthropic CEO Dario Amodei 在 JPMorgan 投资者活动上表示，明年的走向存在巨大不确定性，算力是公司面临的最深商业两难：算力需提前一到两年购买，买少了影响客户和收入，买多了可能财务过度扩张。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vl3jnosrbdn6i5j2we400046i",
+      "pub_date": "2026-11-14",
+      "author": "noreply@aihot.news (The Decoder：AI News)",
+      "category": "行业动态"
+    },
     {
       "title": "黄仁勋离开 Nvidia 后，亚洲各国政府如何回应",
       "link": "https://aihot.news/items/ni18shok3lh70l1e49nazmgdc",
@@ -300,9 +308,9 @@
       "category": "AI 产品"
     },
     {
-      "title": "黄仁勋辞职后，Nvidia 与 AI 热潮的未来走向分析",
+      "title": "黄仁勋辞任 Nvidia CEO，Azeem Azhar 分析其对 AI 热潮的影响",
       "link": "https://aihot.news/items/toq4wymx9maq8lhhz8jryi0sv",
-      "summary": "Azeem Azhar 分析黄仁勋辞任 Nvidia CEO 后的影响，CFO Colette Kress 将临时接任。他指出 Nvidia 五年间售出近 1400 万颗旗舰 AI 芯片、占市场 85%，并向 neocloud 提供财务担保、过去一年在欧洲投资近 100 亿美元；与乔布斯离任时不同，公司没有准备好的继任者，而黄仁勋本人一直是 AI 生态的关键纽带。 🔗 阅读原文 via AIHOT · https://aihot.news/items/toq4wymx9maq8lhhz8jryi0sv",
+      "summary": "作者 Azeem Azhar 分析黄仁勋辞任 Nvidia CEO 一事：公司在未设接班政策的情况下由 CFO Colette Kress 临时接手。文章指出 Nvidia 五年间售出近 1400 万颗旗舰 AI 芯片、占 85% 市场，过去一年在欧洲投资近 100 亿美元，而黄仁勋本人是公司与 AI 生态的关键纽带。 🔗 阅读原文 via AIHOT · https://aihot.news/items/toq4wymx9maq8lhhz8jryi0sv",
       "pub_date": "2026-11-12",
       "author": "noreply@aihot.news (Azeem Azhar：Exponential View)",
       "category": "行业动态"
@@ -391,14 +399,6 @@
       "title": "Anthropic 建议把 Claude Opus 5.5 作为知识工作的日常主力模型",
       "link": "https://aihot.news/items/t5pucqx6ac58z0ed1b0875ci0",
       "summary": "Anthropic 宣布 Claude Opus 5.5 成为 Pro、Max、Ultra 和 Team 套餐的默认模型，并推荐将其作为研究、分析和写作等知识工作的日常主力。 🔗 阅读原文 via AIHOT · https://aihot.news/items/t5pucqx6ac58z0ed1b0875ci0",
-      "pub_date": "2026-11-12",
-      "author": "noreply@aihot.news (Claude：Blog)",
-      "category": "AI 产品"
-    },
-    {
-      "title": "Anthropic 推出 Claude Meetings，Claude 以参会者身份加入视频会议",
-      "link": "https://aihot.news/items/l36ne5q2gsdx6thyia7fi10kn",
-      "summary": "Anthropic 推出 Claude Meetings beta，Claude 可作为可见参会者加入视频通话，在会中回答提问、协作创建文档和白板，并生成笔记和行动项。 🔗 阅读原文 via AIHOT · https://aihot.news/items/l36ne5q2gsdx6thyia7fi10kn",
       "pub_date": "2026-11-12",
       "author": "noreply@aihot.news (Claude：Blog)",
       "category": "AI 产品"
