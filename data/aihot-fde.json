@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-14T09:03:01.819792+08:00",
-  "total": 18,
+  "updated_at": "2026-11-14T09:33:01.963228+08:00",
+  "total": 19,
   "items": [
     {
       "title": "Claude Code Stop hook 技巧：用 exit code 2 让 Claude 在检查失败时自动重试",
@@ -42,6 +42,14 @@
       "pub_date": "2026-11-13",
       "author": "noreply@aihot.news (Clément Delangue)",
       "category": "AI 产品"
+    },
+    {
+      "title": "Cursor 披露安全事件调查结果，恶意 Claude Code 扩展波及最多 5000 用户",
+      "link": "https://aihot.news/items/e9o5h2c1o5f0xuh2bgqtc2w7k",
+      "summary": "Cursor 发布安全事件完整调查：攻击者利用 Fireworks 暴露的访问密钥读取用于模型训练的 coding agent trace，少于 0.01% 客户的 API 凭证暴露。 🔗 阅读原文 via AIHOT · https://aihot.news/items/e9o5h2c1o5f0xuh2bgqtc2w7k",
+      "pub_date": "2026-11-13",
+      "author": "noreply@aihot.news (Cursor Blog)",
+      "category": "行业动态"
     },
     {
       "title": "腾讯混元发布实时语音模型 Hy Realtime，新增工具调用与唱歌能力",

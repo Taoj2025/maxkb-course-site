@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-14T09:03:01.818891+08:00",
+  "updated_at": "2026-11-14T09:33:01.962151+08:00",
   "total": 50,
   "items": [
     {
@@ -113,6 +113,14 @@
       "summary": "Nvidia 前CEO黄仁勋辞职后，以色列科技界关注这家在其拥有6000名员工和最大海外研发中心的公司是否会继续深耕以色列。多位以色列投资人认为，Nvidia 决策放缓可能给 AI 芯片和推理软件领域的竞争者留出空间，但如果不确定性也拖慢 AI 支出，竞争者面对的可能是更小的市场机会。 🔗 阅读原文 via AIHOT · https://aihot.news/items/pdhda5tufq7ubi8w17bys7w66",
       "pub_date": "2026-11-13",
       "author": "noreply@aihot.news (TechCrunch：AI)",
+      "category": "行业动态"
+    },
+    {
+      "title": "Cursor 披露安全事件调查结果，恶意 Claude Code 扩展波及最多 5000 用户",
+      "link": "https://aihot.news/items/e9o5h2c1o5f0xuh2bgqtc2w7k",
+      "summary": "Cursor 发布安全事件完整调查：攻击者利用 Fireworks 暴露的访问密钥读取用于模型训练的 coding agent trace，少于 0.01% 客户的 API 凭证暴露。 🔗 阅读原文 via AIHOT · https://aihot.news/items/e9o5h2c1o5f0xuh2bgqtc2w7k",
+      "pub_date": "2026-11-13",
+      "author": "noreply@aihot.news (Cursor Blog)",
       "category": "行业动态"
     },
     {
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-12",
       "author": "noreply@aihot.news (OpenRouter：Announcements)",
       "category": "教程"
-    },
-    {
-      "title": "WSJ 报道 Nvidia 董事会接近决定是否罢免 CEO 黄仁勋",
-      "link": "https://aihot.news/items/aoxmmcsudy1gf9xmti7slu1wd",
-      "summary": "WSJ 报道，Nvidia 董事会此前公开支持黄仁勋，如今接近决定是否罢免这位创始人 CEO。起因是黄仁勋与一名被指为中国情报人员的女子交往，随后又曝出与一名 Nvidia 员工的第二段婚外情；周日开始独立调查时董事会表示没有理由认为 Nvidia 机密泄露。 🔗 阅读原文 via AIHOT · https://aihot.news/items/aoxmmcsudy1gf9xmti7slu1wd",
-      "pub_date": "2026-11-11",
-      "author": "noreply@aihot.news (Rohan Paul)",
-      "category": "行业动态"
     }
   ]
 }
