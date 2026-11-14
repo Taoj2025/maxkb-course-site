@@ -860,5 +860,41 @@
     "source": "机器摘要 · The New Stack",
     "file": "13347-why-nitric-stopped-asking-one-ai-agent-t.md",
     "estimated_read_time": "1 分钟"
+  },
+  {
+    "id": 13348,
+    "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+    "slug": "13348-gemini-decisions-api-fast-calibrated-mul",
+    "summary": "Meet the Gemini Decisions API, powered by our state-of-the-art model Gemini Decision for fast, calibrated multimodal decisions.",
+    "category": "最新动态",
+    "tags": [
+      "FDE",
+      "AI 资讯",
+      "前端部署"
+    ],
+    "color": "purple",
+    "date": "2026-11-14",
+    "author": "小Q（机器摘要）",
+    "source": "机器摘要 · Google AI Blog",
+    "file": "13348-gemini-decisions-api-fast-calibrated-mul.md",
+    "estimated_read_time": "1 分钟"
+  },
+  {
+    "id": 13349,
+    "title": "How LinkedIn, Netflix & DoorDash Run Agents, Evals & Inference in Production: QCon AI New York 2026",
+    "slug": "13349-how-linkedin-netflix-doordash-run-agents",
+    "summary": "QCon AI New York has published its full program for December 15–16, 2026. Engineers from LinkedIn, Netflix, DoorDash, Figma, Pinterest, Honeycomb, Har",
+    "category": "最新动态",
+    "tags": [
+      "FDE",
+      "AI 资讯",
+      "前端部署"
+    ],
+    "color": "blue",
+    "date": "2026-11-14",
+    "author": "小Q（机器摘要）",
+    "source": "机器摘要 · InfoQ English",
+    "file": "13349-how-linkedin-netflix-doordash-run-agents.md",
+    "estimated_read_time": "1 分钟"
   }
 ]
