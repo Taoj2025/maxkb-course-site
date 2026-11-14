@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-14T07:33:01.694022+08:00",
-  "total": 20,
+  "updated_at": "2026-11-14T08:00:01.987714+08:00",
+  "total": 19,
   "items": [
     {
       "title": "Claude Code Stop hook 技巧：用 exit code 2 让 Claude 在检查失败时自动重试",
@@ -154,14 +154,6 @@
       "pub_date": "2026-11-11",
       "author": "noreply@aihot.news (Runway：News)",
       "category": "AI 模型"
-    },
-    {
-      "title": "Google 发布 Gemini Decisions API 与 Gemini Decision 1 模型，专注快速多模态封闭式决策",
-      "link": "https://aihot.news/items/r8hsm3m3munjwk1n3u885zszw",
-      "summary": "Google 推出 Gemini Decisions API，由新模型 Gemini Decision 1 驱动，可在 150-250ms 端到端延迟内对文本、图像、音频、视频和 PDF（最多 256K tokens）一次性评估最多 1000 个是/否、多选和评分题。 🔗 阅读原文 via AIHOT · https://aihot.news/items/r8hsm3m3munjwk1n3u885zszw",
-      "pub_date": "2026-11-11",
-      "author": "noreply@aihot.news (Google Blog：AI)",
-      "category": "AI 产品"
     }
   ]
 }

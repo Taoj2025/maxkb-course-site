@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-14T07:33:01.693069+08:00",
+  "updated_at": "2026-11-14T08:00:01.986820+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Dario Amodei 回应市场动荡：Anthropic IPO 前称对时机并不在意",
+      "link": "https://aihot.news/items/dl9ehywczofu8vp5sj62s6j4n",
+      "summary": "Dario Amodei 在纽约 JPMorgan 活动上与 Jamie Dimon 对谈，对 Anthropic IPO 路演期间的市场动荡不以为意，称对上市时机和市场状况不太在意。 🔗 阅读原文 via AIHOT · https://aihot.news/items/dl9ehywczofu8vp5sj62s6j4n",
+      "pub_date": "2026-11-13",
+      "author": "noreply@aihot.news (Rohan Paul)",
+      "category": "行业动态"
+    },
     {
       "title": "Jensen Huang 离任或给 AI 创业融资留下大缺口，投资人和创始人担忧",
       "link": "https://aihot.news/items/kq4awkrys4uz37b7gsvj5r1dj",
@@ -204,9 +212,9 @@
       "category": "AI 模型"
     },
     {
-      "title": "SemiAnalysis 分析黄仁勋辞任 Nvidia CEO 背后的出口管制博弈",
+      "title": "SemiAnalysis 分析黄仁勋辞任 Nvidia 后的公司结构与出口管制走向",
       "link": "https://aihot.news/items/n73ab4h9gqlu6ucv69ynzxln4",
-      "summary": "SemiAnalysis 发表长文分析黄仁勋不再担任 Nvidia CEO 一事，认为其去职与美国情报界推动、针对中国远程访问 GPU 的 RASA 法案推进有关。 🔗 阅读原文 via AIHOT · https://aihot.news/items/n73ab4h9gqlu6ucv69ynzxln4",
+      "summary": "SemiAnalysis 长文分析黄仁勋辞任 Nvidia CEO 后的连锁影响，作者推测其去职与 GPU 走私及美国推动 RASA 出口管制立法有关。文中指出公司约 60 名直管高管的扁平结构依赖黄本人，继任者 Colette Kress 为临时 CEO，Ian Buck 与 Jonah Alben 被视为技术侧人选但无人能全面接替。 🔗 阅读原文 via AIHOT · https://aihot.news/items/n73ab4h9gqlu6ucv69ynzxln4",
       "pub_date": "2026-11-12",
       "author": "noreply@aihot.news (SemiAnalysis 长文 RSS)",
       "category": "行业动态"
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-11",
       "author": "noreply@aihot.news (Runway：News)",
       "category": "AI 模型"
-    },
-    {
-      "title": "Google 发布 Gemini Decisions API 与 Gemini Decision 1 模型，专注快速多模态封闭式决策",
-      "link": "https://aihot.news/items/r8hsm3m3munjwk1n3u885zszw",
-      "summary": "Google 推出 Gemini Decisions API，由新模型 Gemini Decision 1 驱动，可在 150-250ms 端到端延迟内对文本、图像、音频、视频和 PDF（最多 256K tokens）一次性评估最多 1000 个是/否、多选和评分题。 🔗 阅读原文 via AIHOT · https://aihot.news/items/r8hsm3m3munjwk1n3u885zszw",
-      "pub_date": "2026-11-11",
-      "author": "noreply@aihot.news (Google Blog：AI)",
-      "category": "AI 产品"
     }
   ]
 }
