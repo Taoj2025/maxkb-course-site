@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-15T17:03:02.123891+08:00",
+  "updated_at": "2026-11-15T17:33:01.834406+08:00",
   "total": 50,
   "items": [
     {
@@ -17,14 +17,6 @@
       "summary": "Anthropic CEO Dario Amodei 在 JPMorgan 投资者活动上表示，明年的走向存在巨大不确定性，算力是公司面临的最深商业两难：算力需提前一到两年购买，买少了影响客户和收入，买多了可能财务过度扩张。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vl3jnosrbdn6i5j2we400046i",
       "pub_date": "2026-11-14",
       "author": "noreply@aihot.news (The Decoder：AI News)",
-      "category": "行业动态"
-    },
-    {
-      "title": "黄仁勋离开 Nvidia 后，亚洲多地如何回应",
-      "link": "https://aihot.news/items/ni18shok3lh70l1e49nazmgdc",
-      "summary": "黄仁勋离开 Nvidia 后，亚洲多地相继回应：韩国科技主管部门称 Nvidia 重申将向韩国供应26万块先进 GPU 并继续联合 AI 项目，中国台湾地区经济主管部门负责人龚明鑫认为此事不太可能显著改变全球 AI 产业增长，日本经济产业省表示将密切关注 Nvidia。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ni18shok3lh70l1e49nazmgdc",
-      "pub_date": "2026-11-14",
-      "author": "noreply@aihot.news (TechCrunch：AI)",
       "category": "行业动态"
     },
     {
@@ -402,6 +394,14 @@
       "pub_date": "2026-11-12",
       "author": "noreply@aihot.news (OpenAI：失准报告与通报)",
       "category": "行业动态"
+    },
+    {
+      "title": "OpenRouter 实测六模型并给出四层防护，解决 AI Agent 无限循环烧钱问题",
+      "link": "https://aihot.news/items/vq9nwgwhtm31cgoliyb7ydyde",
+      "summary": "OpenRouter 发布教程，讲解 AI Agent 因工具反复失败而陷入无限循环的成因，并给出四层防护：doom-loop 检测、loopKey 参数归一化、stopWhen 步数与成本上限、API key 信用额度。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vq9nwgwhtm31cgoliyb7ydyde",
+      "pub_date": "2026-11-12",
+      "author": "noreply@aihot.news (OpenRouter：Announcements)",
+      "category": "教程"
     }
   ]
 }
