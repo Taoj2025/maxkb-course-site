@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-16T02:33:02.173975+08:00",
+  "updated_at": "2026-11-16T03:03:02.286207+08:00",
   "total": 50,
   "items": [
     {
@@ -268,6 +268,14 @@
       "category": "AI 模型"
     },
     {
+      "title": "SemiAnalysis 分析黄仁勋辞任 Nvidia 后的公司结构与出口管制走向",
+      "link": "https://aihot.news/items/n73ab4h9gqlu6ucv69ynzxln4",
+      "summary": "SemiAnalysis 长文分析黄仁勋辞任 Nvidia CEO 后的连锁影响，作者推测其去职与 GPU 走私及美国推动 RASA 出口管制立法有关。文中指出公司约 60 名直管高管的扁平结构依赖黄本人，继任者 Colette Kress 为临时 CEO，Ian Buck 与 Jonah Alben 被视为技术侧人选但无人能全面接替。 🔗 阅读原文 via AIHOT · https://aihot.news/items/n73ab4h9gqlu6ucv69ynzxln4",
+      "pub_date": "2026-11-12",
+      "author": "noreply@aihot.news (SemiAnalysis 长文 RSS)",
+      "category": "行业动态"
+    },
+    {
       "title": "Google Gemini 开放推送，覆盖开发者、企业与普通用户渠道",
       "link": "https://aihot.news/items/v26fsdyhbktgyuedmrx25p58y",
       "summary": "Google DeepMind 宣布开始向各渠道推送：开发者可在 Google AI Studio、Android Studio 中用 Gemini API，付费 Google AI Pro 和 Ultra 订阅者可在 Google Antigravity 中使用；企业可通过 Gemini for business 和 Google Antigravity 部署；所有用户可在 Google Search 和 Gemini 应用模型下拉菜单中访问。详情见 https://goo.gle/4zDCs8N。 🔗 阅读原文 via AIHOT · https://aihot.news/items/v26fsdyhbktgyuedmrx25p58y",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-12",
       "author": "noreply@aihot.news (OpenRouter：Announcements)",
       "category": "教程"
-    },
-    {
-      "title": "Anthropic 建议把 Claude Opus 5.5 作为知识工作的日常主力模型",
-      "link": "https://aihot.news/items/t5pucqx6ac58z0ed1b0875ci0",
-      "summary": "Anthropic 宣布 Claude Opus 5.5 成为 Pro、Max、Ultra 和 Team 套餐的默认模型，并推荐将其作为研究、分析和写作等知识工作的日常主力。 🔗 阅读原文 via AIHOT · https://aihot.news/items/t5pucqx6ac58z0ed1b0875ci0",
-      "pub_date": "2026-11-12",
-      "author": "noreply@aihot.news (Claude：Blog)",
-      "category": "AI 产品"
     }
   ]
 }
