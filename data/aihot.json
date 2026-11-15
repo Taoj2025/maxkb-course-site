@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-16T03:03:02.286207+08:00",
+  "updated_at": "2026-11-16T03:33:02.295310+08:00",
   "total": 50,
   "items": [
     {
@@ -206,7 +206,7 @@
     {
       "title": "黄仁勋辞去英伟达总裁兼CEO，作者梳理14天风波始末",
       "link": "https://aihot.news/items/t86m3q7vdlqmvm2zmx91vps5a",
-      "summary": "英伟达公告黄仁勋辞去总裁、CEO和董事职务，即刻生效，股价开盘下跌14个点。作者依据《纽约时报》、The Information 等报道梳理脉络：从2022年A100、H100对华禁售，到 Megaspeed 采购争议、黄乐被情报机构认定涉间谍活动，再到婚外情曝光后董事会于10月29日起14天内收网，黄仁勋在英伟达33年的时代就此结束。 🔗 阅读原文 via AIHOT · https://aihot.news/items/t86m3q7vdlqmvm2zmx91vps5a",
+      "summary": "英伟达公告黄仁勋辞去总裁、CEO和董事职务，即刻生效，股价开盘下跌14个点。作者依据《纽约时报》、The Information 等报道梳理脉络：从2022年A100、H100对华禁售，到 Megaspeed 采购争议、黄乐被指涉情报活动，再到婚外情曝光后董事会于10月29日起14天内收网，黄仁勋在英伟达33年的时代就此结束。 🔗 阅读原文 via AIHOT · https://aihot.news/items/t86m3q7vdlqmvm2zmx91vps5a",
       "pub_date": "2026-11-12",
       "author": "noreply@aihot.news (公众号：数字生命卡兹克)",
       "category": "行业动态"
@@ -222,7 +222,7 @@
     {
       "title": "Rohan Paul 类比乔布斯被逐，评 NVIDIA 放走黄仁勋",
       "link": "https://aihot.news/items/k1kga19xtdab67lhplor8he8n",
-      "summary": "Lex Fridman 发文称 NVIDIA 让黄仁勋离开对美国和人类都是巨大错误，堪比 Apple 当年解雇 Steve Jobs 但影响更大，并为其品格辩护、回应间谍传闻。Rohan Paul 转引并列举 Atari 1978（Nolan Bushnell）、Apple 1985（Steve Jobs）、Uber 2017（Travis Kalanick）、OpenAI 2023（Sam Altman），称每隔几年董事会就会重新认识到创始人本身就是战略。 🔗 阅读原文 via AIHOT · https://aihot.news/items/k1kga19xtdab67lhplor8he8n",
+      "summary": "Lex Fridman 发文称 NVIDIA 让黄仁勋离开对美国和人类都是巨大错误，堪比 Apple 当年解雇 Steve Jobs 但影响更大，并为其品格辩护。Rohan Paul 转引并列举 Atari 1978（Nolan Bushnell）、Apple 1985（Steve Jobs）、Uber 2017（Travis Kalanick）、OpenAI 2023（Sam Altman），称每隔几年董事会就会重新认识到创始人本身就是战略。 🔗 阅读原文 via AIHOT · https://aihot.news/items/k1kga19xtdab67lhplor8he8n",
       "pub_date": "2026-11-12",
       "author": "noreply@aihot.news (Rohan Paul)",
       "category": "行业动态"
@@ -356,6 +356,14 @@
       "category": "AI 产品"
     },
     {
+      "title": "Kate Clark 转发 WSJ 报道称 Nvidia 正准备罢免 CEO 黄仁勋并征集信源",
+      "link": "https://aihot.news/items/m76r4bnrvb21vkm8wn2khk0jr",
+      "summary": "记者 Kate Clark 分享 WSJ 报道链接，该报道称 Nvidia 正准备罢免 CEO 黄仁勋。她同时留下 Signal 联系方式 415-409-9095，征集关于此事对私募市场、交易撮合、融资及 AI 行业连锁影响的爆料与讨论。 🔗 阅读原文 via AIHOT · https://aihot.news/items/m76r4bnrvb21vkm8wn2khk0jr",
+      "pub_date": "2026-11-12",
+      "author": "noreply@aihot.news (Kate Clark)",
+      "category": "行业动态"
+    },
+    {
       "title": "Figma 3D transforms 开放测试上线，品牌团队分享用它制作发布视频的过程",
       "link": "https://aihot.news/items/x751c9ptxg9qviw1ts32aoa79",
       "summary": "Figma 宣布 3D transforms 进入 open beta，面向所有 Full seat 用户开放，可用 3D transform 和 perspective 效果在空间中倾斜、旋转和排布文本、图像、矢量与框架，效果非破坏性，原稿保持可编辑。 🔗 阅读原文 via AIHOT · https://aihot.news/items/x751c9ptxg9qviw1ts32aoa79",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-12",
       "author": "noreply@aihot.news (OpenAI：失准报告与通报)",
       "category": "行业动态"
-    },
-    {
-      "title": "OpenRouter 实测六模型并给出四层防护，解决 AI Agent 无限循环烧钱问题",
-      "link": "https://aihot.news/items/vq9nwgwhtm31cgoliyb7ydyde",
-      "summary": "OpenRouter 发布教程，讲解 AI Agent 因工具反复失败而陷入无限循环的成因，并给出四层防护：doom-loop 检测、loopKey 参数归一化、stopWhen 步数与成本上限、API key 信用额度。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vq9nwgwhtm31cgoliyb7ydyde",
-      "pub_date": "2026-11-12",
-      "author": "noreply@aihot.news (OpenRouter：Announcements)",
-      "category": "教程"
     }
   ]
 }
