@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-15T11:33:01.625417+08:00",
+  "updated_at": "2026-11-15T12:03:01.967214+08:00",
   "total": 50,
   "items": [
     {
@@ -186,6 +186,14 @@
       "pub_date": "2026-11-13",
       "author": "noreply@aihot.news (Rohan Paul)",
       "category": "行业动态"
+    },
+    {
+      "title": "美团 LongCat 开源 LongCat-Video-Avatar 1.6 音频驱动数字人视频生成模型",
+      "link": "https://aihot.news/items/habommgck5ql3tdf688ca370s",
+      "summary": "美团 LongCat 团队发布开源音频驱动人体视频生成模型 LongCat-Video-Avatar 1.6，改进口型自然度、唇音同步、面部与肢体动作协调及长视频视觉一致性，缓解自回归续写误差累积，可生成超过 10 分钟的视频，并加入端到端推理优化。 🔗 阅读原文 via AIHOT · https://aihot.news/items/habommgck5ql3tdf688ca370s",
+      "pub_date": "2026-11-13",
+      "author": "noreply@aihot.news (美团 LongCat：HuggingFace 新模型)",
+      "category": "AI 模型"
     },
     {
       "title": "Anthropic 详解常驻智能体的五个核心架构原语",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-12",
       "author": "noreply@aihot.news (OpenAI：失准报告与通报)",
       "category": "行业动态"
-    },
-    {
-      "title": "OpenRouter 实测六模型并给出四层防护，解决 AI Agent 无限循环烧钱问题",
-      "link": "https://aihot.news/items/vq9nwgwhtm31cgoliyb7ydyde",
-      "summary": "OpenRouter 发布教程，讲解 AI Agent 因工具反复失败而陷入无限循环的成因，并给出四层防护：doom-loop 检测、loopKey 参数归一化、stopWhen 步数与成本上限、API key 信用额度。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vq9nwgwhtm31cgoliyb7ydyde",
-      "pub_date": "2026-11-12",
-      "author": "noreply@aihot.news (OpenRouter：Announcements)",
-      "category": "教程"
     }
   ]
 }

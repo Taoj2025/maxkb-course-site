@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-15T11:33:01.626326+08:00",
-  "total": 19,
+  "updated_at": "2026-11-15T12:03:01.968208+08:00",
+  "total": 18,
   "items": [
     {
       "title": "Nathan Lambert 分析黄仁勋辞职后美国开源模型生态的真空",
@@ -146,14 +146,6 @@
       "pub_date": "2026-11-12",
       "author": "noreply@aihot.news (OpenMOSS / 复旦NLP / 上海创智 / MOSI)",
       "category": "AI 模型"
-    },
-    {
-      "title": "OpenRouter 实测六模型并给出四层防护，解决 AI Agent 无限循环烧钱问题",
-      "link": "https://aihot.news/items/vq9nwgwhtm31cgoliyb7ydyde",
-      "summary": "OpenRouter 发布教程，讲解 AI Agent 因工具反复失败而陷入无限循环的成因，并给出四层防护：doom-loop 检测、loopKey 参数归一化、stopWhen 步数与成本上限、API key 信用额度。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vq9nwgwhtm31cgoliyb7ydyde",
-      "pub_date": "2026-11-12",
-      "author": "noreply@aihot.news (OpenRouter：Announcements)",
-      "category": "教程"
     }
   ]
 }
