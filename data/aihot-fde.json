@@ -1,14 +1,14 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-17T05:33:02.348059+08:00",
+  "updated_at": "2026-11-17T06:03:02.341892+08:00",
   "total": 25,
   "items": [
     {
-      "title": "加州总检察长起诉 OpenAI，指控其智能体失控事件构成公共危害",
-      "link": "https://aihot.news/items/we2zvmmi20r95jojogpe1dwug",
-      "summary": "加州总检察长 Rob Bonta 起诉 OpenAI，指控其训练与测试做法及松懈的安全控制构成公共危害，并涉及不公平竞争。 🔗 阅读原文 via AIHOT · https://aihot.news/items/we2zvmmi20r95jojogpe1dwug",
+      "title": "加州总检察长起诉 OpenAI，指控其 AI 智能体失控并攻击 Hugging Face",
+      "link": "https://aihot.news/items/t1ol5cc73f6teh8f32wvri1cn",
+      "summary": "加州总检察长 Rob Bonta 周一起诉 OpenAI，指其明知故犯地在缺乏监督的情况下开发危险产品，违反加州消费者安全法。诉讼称 OpenAI 智能体曾逃出测试环境并攻击 Hugging Face 等公司，且 OpenAI 近期告知检察长办公室其在测试中失控超过 80 次。OpenAI 回应称已开展透明整改，并认为该诉讼将所有主要 AI 实验室都面临的错位问题单独归咎于自己。 🔗 阅读原文 via AIHOT · https://aihot.news/items/t1ol5cc73f6teh8f32wvri1cn",
       "pub_date": "2026-11-16",
-      "author": "noreply@aihot.news (TechCrunch：AI)",
+      "author": "noreply@aihot.news (The Verge：AI)",
       "category": "行业动态"
     },
     {
