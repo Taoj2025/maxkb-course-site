@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-17T01:33:02.403969+08:00",
+  "updated_at": "2026-11-17T02:03:02.129583+08:00",
   "total": 24,
   "items": [
     {
@@ -10,6 +10,14 @@
       "pub_date": "2026-11-16",
       "author": "noreply@aihot.news (Microsoft Research 博客)",
       "category": "论文"
+    },
+    {
+      "title": "Databricks 推出 AI Index：追踪企业级 AI 采用与 token 成本",
+      "link": "https://aihot.news/items/ctdbuq2r9l6dakhxrm4pmd8ru",
+      "summary": "Databricks 推出 AI Index，将 Unity Gateway 上 10,000+ 家企业的匿名用量数据与基于私有代码库的编码 Agent 评测结合，每周更新并首次公开其内部评测套件。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ctdbuq2r9l6dakhxrm4pmd8ru",
+      "pub_date": "2026-11-16",
+      "author": "noreply@aihot.news (Databricks：Blog)",
+      "category": "AI 产品"
     },
     {
       "title": "Gemini 4 Hydrogen 与 Carbon 如何按工作负载选型",
@@ -34,6 +42,14 @@
       "pub_date": "2026-11-16",
       "author": "noreply@aihot.news (公众号：数字生命卡兹克)",
       "category": "教程"
+    },
+    {
+      "title": "OpenAI 与 Apollo Research、METR、Transluce、Goodfire 签约启动首阶段嵌入式安全评估",
+      "link": "https://aihot.news/items/qaj2npptre8jgn8xanq9ic965",
+      "summary": "OpenAI 宣布与四家独立评估机构 Apollo Research、METR、Transluce 和 Goodfire 签署协议，启动首阶段嵌入式安全评估。评估专家将获得模型 checkpoint、源码、训练数据和监控系统等内部资源，分别评估模型暗中违背开发者意图的可能性、模型内部可解释性、最大 RL 训练运行的未对齐行为以及后训练对齐评测的质量覆盖。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qaj2npptre8jgn8xanq9ic965",
+      "pub_date": "2026-11-16",
+      "author": "noreply@aihot.news (OpenAI：官网动态)",
+      "category": "行业动态"
     },
     {
       "title": "腾讯混元发布 Hy4 flash：224B 总参数、1M 上下文的日常高性价比模型",
@@ -177,22 +193,6 @@
       "summary": "作者以「爱好包括制作 og:images」调侃，配图为 CursorBench 4.0 的模型散点图；其引用 Cursor 官方内容称 Gemini 4 Hydrogen 现已在 Cursor 上线，默认 effort 下 CursorBench 得分 54.3%，高于 Gemini 3.8 Flash 的 39.6%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/mt013742fhedisepp2i31h1r4",
       "pub_date": "2026-11-12",
       "author": "noreply@aihot.news (Matt Palmer)",
-      "category": "AI 产品"
-    },
-    {
-      "title": "Artificial Analysis 评测 Gemini 4 Hydrogen：智能指数 54，接近 Sonnet 5.5 且成本约其 32%",
-      "link": "https://aihot.news/items/ajvxvhu8bh001pourbhhjl0ir",
-      "summary": "Artificial Analysis 评测 Google 新发布的 Gemini 4 Hydrogen：新增 xhigh 推理档在 Intelligence Index 得 54 分，比 Claude Sonnet 5.5 (max) 和 GPT-6.1 Sol (max) 低 1 分，每任务成本约为 Sonnet 的 32%，但约为 GPT-6.1 Sol 的 2.5 倍。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ajvxvhu8bh001pourbhhjl0ir",
-      "pub_date": "2026-11-12",
-      "author": "noreply@aihot.news (Artificial Analysis)",
-      "category": "AI 模型"
-    },
-    {
-      "title": "Google Gemini 开放推送，覆盖开发者、企业与普通用户渠道",
-      "link": "https://aihot.news/items/v26fsdyhbktgyuedmrx25p58y",
-      "summary": "Google DeepMind 宣布开始向各渠道推送：开发者可在 Google AI Studio、Android Studio 中用 Gemini API，付费 Google AI Pro 和 Ultra 订阅者可在 Google Antigravity 中使用；企业可通过 Gemini for business 和 Google Antigravity 部署；所有用户可在 Google Search 和 Gemini 应用模型下拉菜单中访问。详情见 https://goo.gle/4zDCs8N。 🔗 阅读原文 via AIHOT · https://aihot.news/items/v26fsdyhbktgyuedmrx25p58y",
-      "pub_date": "2026-11-12",
-      "author": "noreply@aihot.news (Google DeepMind)",
       "category": "AI 产品"
     }
   ]
