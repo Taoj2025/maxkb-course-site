@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-16T22:03:02.364109+08:00",
+  "updated_at": "2026-11-16T22:33:02.103143+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Lovable 推出 Drafts 功能，可并行探索应用改动而不影响线上版本",
+      "link": "https://aihot.news/items/v8ml9usyo7vicoqktyv5cdi0z",
+      "summary": "Lovable 推出 Drafts 功能，可创建应用的完整副本，从设计到数据库，让用户和团队并行试验不同想法而不触碰线上应用。每个 Draft 拥有独立聊天和预览，并自带示例数据便于查看效果；可创建任意数量的 Draft，接受后仍可在发布前通过 History 回滚，测试数据在接受或删除 Draft 时清除，不会混入真实用户数据。 🔗 阅读原文 via AIHOT · https://aihot.news/items/v8ml9usyo7vicoqktyv5cdi0z",
+      "pub_date": "2026-11-16",
+      "author": "noreply@aihot.news (Lovable Blog)",
+      "category": "AI 产品"
+    },
     {
       "title": "英伟达CEO黄仁勋辞职后风波持续，公司股价一周下跌14%",
       "link": "https://aihot.news/items/rk143d9qa0j9gp3fdti162fy7",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-12",
       "author": "noreply@aihot.news (Epoch AI：Gradient Updates)",
       "category": "论文"
-    },
-    {
-      "title": "MOSS-Live 全双工实时交互评测解读：与 GPT-Live-1、豆包的对比",
-      "link": "https://aihot.news/items/rcjkjkhq7xxwbhh9wnv15fqy1",
-      "summary": "OpenMOSS 团队发布 MOSS-Live 全双工语音交互评测解读。依据 MOSS 官网 2026 年 11 月 13 日图表，MOSS-Live 六项全双工指标均居参评模型首位，无关语音误接话率 2.00%，低于 GPT-Live-1 的 68% 和豆包的 75%，停顿抢话率 1.44%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rcjkjkhq7xxwbhh9wnv15fqy1",
-      "pub_date": "2026-11-12",
-      "author": "noreply@aihot.news (OpenMOSS / 复旦NLP / 上海创智 / MOSI)",
-      "category": "AI 模型"
     }
   ]
 }
