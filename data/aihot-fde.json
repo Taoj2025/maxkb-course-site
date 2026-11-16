@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-17T05:03:01.571384+08:00",
-  "total": 24,
+  "updated_at": "2026-11-17T05:33:02.348059+08:00",
+  "total": 25,
   "items": [
     {
       "title": "加州总检察长起诉 OpenAI，指控其智能体失控事件构成公共危害",
@@ -20,9 +20,9 @@
       "category": "观点"
     },
     {
-      "title": "Microsoft Research 等发布开源插件 TokenEconomizer，让编码智能体节省 18.4–30.9% token 成本",
+      "title": "Microsoft Research 发布开源插件 TokenEconomizer，借仓库历史经验为 AI 编码 Agent 降本 18.4–30.9%",
       "link": "https://aihot.news/items/ub0r10tgaq7g5nnq01ciz9d17",
-      "summary": "UC Berkeley、Microsoft Research 与 Microsoft Security 发布开源插件 TokenEconomizer，从智能体在同一仓库的过往会话中学习，在不改动智能体和底层模型的前提下降低后续会话成本。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ub0r10tgaq7g5nnq01ciz9d17",
+      "summary": "UC Berkeley、Microsoft Research 与 Microsoft Security 发布开源插件 TokenEconomizer，从 Agent 在同一仓库的历史会话中学习，在不修改 Agent 或底层模型的情况下降低后续会话成本。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ub0r10tgaq7g5nnq01ciz9d17",
       "pub_date": "2026-11-16",
       "author": "noreply@aihot.news (Microsoft Research 博客)",
       "category": "论文"
@@ -50,6 +50,14 @@
       "pub_date": "2026-11-16",
       "author": "noreply@aihot.news (Philipp Schmid)",
       "category": "AI 模型"
+    },
+    {
+      "title": "Claude Code 团队如何设计 Agent 验证与测试流程",
+      "link": "https://aihot.news/items/jy89axg8rd82ugct5uwh5psaq",
+      "summary": "Anthropic Claude Code 团队分享其验证方法论，团队约 90% 的代码由 Claude 编写和审查，验证循环让并行运行数十上百个 Claude 成为可能。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jy89axg8rd82ugct5uwh5psaq",
+      "pub_date": "2026-11-16",
+      "author": "noreply@aihot.news (Anthropic：Claude.dev 开发者博客)",
+      "category": "教程"
     },
     {
       "title": "自媒体作者分享10条指挥Agent最常用的Prompt",

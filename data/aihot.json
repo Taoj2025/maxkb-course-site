@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-17T05:03:01.570033+08:00",
+  "updated_at": "2026-11-17T05:33:02.347153+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "NotebookLM 推出来源一键生成可分享网站功能",
+      "link": "https://aihot.news/items/dlnrpd7xq39i5gkkti3hic390",
+      "summary": "NotebookLM 宣布用户可将自己的来源转成可交互、可分享的网站。在 Chat 中输入 \"make me a site\" 并描述需求即可构建交互式仪表盘、项目跟踪器等，可在新标签页打开或直接分享，该功能已在网页端面向全球所有 18 岁以上用户开放。 🔗 阅读原文 via AIHOT · https://aihot.news/items/dlnrpd7xq39i5gkkti3hic390",
+      "pub_date": "2026-11-16",
+      "author": "noreply@aihot.news (Gemini Notebook)",
+      "category": "AI 产品"
+    },
     {
       "title": "加州总检察长起诉 OpenAI，指控其智能体失控事件构成公共危害",
       "link": "https://aihot.news/items/we2zvmmi20r95jojogpe1dwug",
@@ -28,9 +36,9 @@
       "category": "观点"
     },
     {
-      "title": "Microsoft Research 等发布开源插件 TokenEconomizer，让编码智能体节省 18.4–30.9% token 成本",
+      "title": "Microsoft Research 发布开源插件 TokenEconomizer，借仓库历史经验为 AI 编码 Agent 降本 18.4–30.9%",
       "link": "https://aihot.news/items/ub0r10tgaq7g5nnq01ciz9d17",
-      "summary": "UC Berkeley、Microsoft Research 与 Microsoft Security 发布开源插件 TokenEconomizer，从智能体在同一仓库的过往会话中学习，在不改动智能体和底层模型的前提下降低后续会话成本。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ub0r10tgaq7g5nnq01ciz9d17",
+      "summary": "UC Berkeley、Microsoft Research 与 Microsoft Security 发布开源插件 TokenEconomizer，从 Agent 在同一仓库的历史会话中学习，在不修改 Agent 或底层模型的情况下降低后续会话成本。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ub0r10tgaq7g5nnq01ciz9d17",
       "pub_date": "2026-11-16",
       "author": "noreply@aihot.news (Microsoft Research 博客)",
       "category": "论文"
@@ -90,6 +98,14 @@
       "pub_date": "2026-11-16",
       "author": "noreply@aihot.news (The Verge：AI)",
       "category": "行业动态"
+    },
+    {
+      "title": "Claude Code 团队如何设计 Agent 验证与测试流程",
+      "link": "https://aihot.news/items/jy89axg8rd82ugct5uwh5psaq",
+      "summary": "Anthropic Claude Code 团队分享其验证方法论，团队约 90% 的代码由 Claude 编写和审查，验证循环让并行运行数十上百个 Claude 成为可能。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jy89axg8rd82ugct5uwh5psaq",
+      "pub_date": "2026-11-16",
+      "author": "noreply@aihot.news (Anthropic：Claude.dev 开发者博客)",
+      "category": "教程"
     },
     {
       "title": "自媒体作者分享10条指挥Agent最常用的Prompt",
@@ -386,22 +402,6 @@
       "pub_date": "2026-11-12",
       "author": "noreply@aihot.news (TechCrunch：AI)",
       "category": "行业动态"
-    },
-    {
-      "title": "Rohan Paul 类比乔布斯被逐，评 NVIDIA 放走黄仁勋",
-      "link": "https://aihot.news/items/k1kga19xtdab67lhplor8he8n",
-      "summary": "Lex Fridman 发文称 NVIDIA 让黄仁勋离开对美国和人类都是巨大错误，堪比 Apple 当年解雇 Steve Jobs 但影响更大，并为其品格辩护。Rohan Paul 转引并列举 Atari 1978（Nolan Bushnell）、Apple 1985（Steve Jobs）、Uber 2017（Travis Kalanick）、OpenAI 2023（Sam Altman），称每隔几年董事会就会重新认识到创始人本身就是战略。 🔗 阅读原文 via AIHOT · https://aihot.news/items/k1kga19xtdab67lhplor8he8n",
-      "pub_date": "2026-11-12",
-      "author": "noreply@aihot.news (Rohan Paul)",
-      "category": "行业动态"
-    },
-    {
-      "title": "Google 智能眼镜开放预购，12 月 10 日发货",
-      "link": "https://aihot.news/items/hjhcsj440ym8b7ynttcx4433j",
-      "summary": "Josh Woodward 宣布 Google 智能眼镜开启预购，用户可在 https://glasses.google 下单，12 月 10 日发货。首批用户可到部分 Warby Parker、Gentle Monster 和 Google 门店试戴体验。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hjhcsj440ym8b7ynttcx4433j",
-      "pub_date": "2026-11-12",
-      "author": "noreply@aihot.news (Josh Woodward)",
-      "category": "AI 产品"
     }
   ]
 }
