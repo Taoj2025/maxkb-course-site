@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-16T13:33:01.612784+08:00",
+  "updated_at": "2026-11-16T14:03:01.862395+08:00",
   "total": 50,
   "items": [
     {
@@ -18,14 +18,6 @@
       "pub_date": "2026-11-16",
       "author": "noreply@aihot.news (通义千问 / Qwen)",
       "category": "AI 模型"
-    },
-    {
-      "title": "卡兹克解析 AI 手搓几百K纯HTML 3D世界：Three.js 与程序化生成如何实现极限压缩",
-      "link": "https://aihot.news/items/mkrkzap1dpb14npw28k8rdbu4",
-      "summary": "作者解析近期流行的 AI 生成纯HTML 3D游戏为何能压到极小：一个1.4M游戏demo中约700KB是打包的 Three.js，其余靠程序化生成，贴图、音效全部由代码现场合成，没有图片、模型或录音文件，浏览器通过 WebGL/WebGPU 调用显卡实时渲染。 🔗 阅读原文 via AIHOT · https://aihot.news/items/mkrkzap1dpb14npw28k8rdbu4",
-      "pub_date": "2026-11-16",
-      "author": "noreply@aihot.news (卡兹克)",
-      "category": "教程"
     },
     {
       "title": "Qwen4-Max 登顶 Agent Arena 中国模型榜首，Alibaba 排名升至总榜第14",
@@ -402,6 +394,14 @@
       "pub_date": "2026-11-12",
       "author": "noreply@aihot.news (Apple：Newsroom)",
       "category": "AI 产品"
+    },
+    {
+      "title": "Kate Clark 转发 WSJ 报道称 Nvidia 正准备罢免 CEO 黄仁勋并征集信源",
+      "link": "https://aihot.news/items/m76r4bnrvb21vkm8wn2khk0jr",
+      "summary": "记者 Kate Clark 分享 WSJ 报道链接，该报道称 Nvidia 正准备罢免 CEO 黄仁勋。她同时留下 Signal 联系方式 415-409-9095，征集关于此事对私募市场、交易撮合、融资及 AI 行业连锁影响的爆料与讨论。 🔗 阅读原文 via AIHOT · https://aihot.news/items/m76r4bnrvb21vkm8wn2khk0jr",
+      "pub_date": "2026-11-12",
+      "author": "noreply@aihot.news (Kate Clark)",
+      "category": "行业动态"
     }
   ]
 }
