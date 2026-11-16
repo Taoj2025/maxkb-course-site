@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-16T08:00:02.358695+08:00",
-  "total": 18,
+  "updated_at": "2026-11-16T08:03:01.909334+08:00",
+  "total": 19,
   "items": [
+    {
+      "title": "AI 手搓的 1.4M 纯 HTML 3D 游戏走红，卡兹克拆解 Three.js 程序化生成原理并给出提示词模板",
+      "link": "https://aihot.news/items/izdx1kuppob6c65ghvmyeal38",
+      "summary": "作者拆解了近期在群里疯传的 1.4M 纯 HTML 3D 游戏，指出其中约 700KB 是打包进文件的 Three.js，其余全部由代码程序化生成，没有图片、模型和录音。 🔗 阅读原文 via AIHOT · https://aihot.news/items/izdx1kuppob6c65ghvmyeal38",
+      "pub_date": "2026-11-15",
+      "author": "noreply@aihot.news (公众号：数字生命卡兹克)",
+      "category": "教程"
+    },
     {
       "title": "Nathan Lambert 分析黄仁勋辞职后美国开源模型生态的真空",
       "link": "https://aihot.news/items/np6dwfqwflqe7vfse9kkfxj1n",
