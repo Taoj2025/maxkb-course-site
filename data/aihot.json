@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-17T06:33:01.514418+08:00",
+  "updated_at": "2026-11-17T07:03:01.804765+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "英伟达财报前瞻：临时CEO科莱特·克雷斯将面临哪些关键问题",
+      "link": "https://aihot.news/items/zjmebgetyj7859jhfcbl4x08r",
+      "summary": "TechCrunch 梳理英伟达临时 CEO 兼 CFO 科莱特·克雷斯在发布第三季度财报时需要回应的关键问题，包括公司管理层变动后的治理结构、受限芯片流向的追踪机制、对中国市场的销售政策，以及现有 AI 交易对财务的影响。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zjmebgetyj7859jhfcbl4x08r",
+      "pub_date": "2026-11-16",
+      "author": "noreply@aihot.news (TechCrunch：AI)",
+      "category": "行业动态"
+    },
     {
       "title": "NotebookLM 推出来源一键生成可分享网站功能",
       "link": "https://aihot.news/items/dlnrpd7xq39i5gkkti3hic390",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-13",
       "author": "noreply@aihot.news (Claude：Blog)",
       "category": "教程"
-    },
-    {
-      "title": "Berkeley RDI 等发布 CyberArena：让 AI 智能体在实时网络攻防对抗中互测",
-      "link": "https://aihot.news/items/hd2dsmdxwk6jai8kgmucpqeib",
-      "summary": "Berkeley RDI 联合多所高校发布 CyberArena 基准，让两个 AI 智能体在 CTF 攻防赛制中同时攻击对手服务并修补自己的服务，每局结果由场地验证。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hd2dsmdxwk6jai8kgmucpqeib",
-      "pub_date": "2026-11-13",
-      "author": "noreply@aihot.news (Berkeley RDI：Blog)",
-      "category": "论文"
     }
   ]
 }

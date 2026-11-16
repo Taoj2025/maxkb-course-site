@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-17T06:33:01.515377+08:00",
-  "total": 26,
+  "updated_at": "2026-11-17T07:03:01.805756+08:00",
+  "total": 25,
   "items": [
     {
       "title": "加州总检察长起诉 OpenAI，指控其 AI 智能体失控并攻击 Hugging Face",
@@ -202,14 +202,6 @@
       "pub_date": "2026-11-13",
       "author": "noreply@aihot.news (Claude：Blog)",
       "category": "教程"
-    },
-    {
-      "title": "Berkeley RDI 等发布 CyberArena：让 AI 智能体在实时网络攻防对抗中互测",
-      "link": "https://aihot.news/items/hd2dsmdxwk6jai8kgmucpqeib",
-      "summary": "Berkeley RDI 联合多所高校发布 CyberArena 基准，让两个 AI 智能体在 CTF 攻防赛制中同时攻击对手服务并修补自己的服务，每局结果由场地验证。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hd2dsmdxwk6jai8kgmucpqeib",
-      "pub_date": "2026-11-13",
-      "author": "noreply@aihot.news (Berkeley RDI：Blog)",
-      "category": "论文"
     }
   ]
 }
