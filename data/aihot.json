@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-16T23:03:02.016092+08:00",
+  "updated_at": "2026-11-16T23:33:02.124354+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "美国收紧 AI 芯片出口管制，限制中国企业远程获取算力",
+      "link": "https://aihot.news/items/x6msqkehvwzry0904un629cqg",
+      "summary": "美国商务部发布临时规则，要求向全球数据中心出口 AI 芯片和服务器需申请许可，以阻止中国企业等通过远程访问境外算力绕过管制。 🔗 阅读原文 via AIHOT · https://aihot.news/items/x6msqkehvwzry0904un629cqg",
+      "pub_date": "2026-11-16",
+      "author": "noreply@aihot.news (TechCrunch：AI)",
+      "category": "行业动态"
+    },
     {
       "title": "Lovable 推出 Drafts 功能，可并行探索应用改动而不影响线上版本",
       "link": "https://aihot.news/items/v8ml9usyo7vicoqktyv5cdi0z",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-12",
       "author": "noreply@aihot.news (Replit：Blog)",
       "category": "AI 产品"
-    },
-    {
-      "title": "黄仁勋辞任 Nvidia CEO，Azeem Azhar 分析其对 AI 热潮的影响",
-      "link": "https://aihot.news/items/toq4wymx9maq8lhhz8jryi0sv",
-      "summary": "作者 Azeem Azhar 分析黄仁勋辞任 Nvidia CEO 一事：公司在未设接班政策的情况下由 CFO Colette Kress 临时接手。文章指出 Nvidia 五年间售出近 1400 万颗旗舰 AI 芯片、占 85% 市场，过去一年在欧洲投资近 100 亿美元，而黄仁勋本人是公司与 AI 生态的关键纽带。 🔗 阅读原文 via AIHOT · https://aihot.news/items/toq4wymx9maq8lhhz8jryi0sv",
-      "pub_date": "2026-11-12",
-      "author": "noreply@aihot.news (Azeem Azhar：Exponential View)",
-      "category": "行业动态"
     }
   ]
 }
