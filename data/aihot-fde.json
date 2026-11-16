@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-17T04:33:02.808495+08:00",
+  "updated_at": "2026-11-17T05:03:01.571384+08:00",
   "total": 24,
   "items": [
+    {
+      "title": "加州总检察长起诉 OpenAI，指控其智能体失控事件构成公共危害",
+      "link": "https://aihot.news/items/we2zvmmi20r95jojogpe1dwug",
+      "summary": "加州总检察长 Rob Bonta 起诉 OpenAI，指控其训练与测试做法及松懈的安全控制构成公共危害，并涉及不公平竞争。 🔗 阅读原文 via AIHOT · https://aihot.news/items/we2zvmmi20r95jojogpe1dwug",
+      "pub_date": "2026-11-16",
+      "author": "noreply@aihot.news (TechCrunch：AI)",
+      "category": "行业动态"
+    },
     {
       "title": "Redwood Research：Gemini 4 安全报告未能证明失控风险低",
       "link": "https://aihot.news/items/naql5xzzrykngxhvhd6vin5yn",
@@ -186,14 +194,6 @@
       "pub_date": "2026-11-13",
       "author": "noreply@aihot.news (Google Research：Blog)",
       "category": "AI 产品"
-    },
-    {
-      "title": "Gemini 4 Hydrogen 今日起向全球所有用户推送",
-      "link": "https://aihot.news/items/zlbngirpqifhhi3bd5pbmixu4",
-      "summary": "Google Gemini 宣布 Gemini 4 Hydrogen 今日起向全球所有用户推送，覆盖桌面、移动和网页端。免费用户无需单独选择模型，当提示词适合该模型时可通过自动模型选择使用它，详情见 https://goo.gle/4AxH40q。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zlbngirpqifhhi3bd5pbmixu4",
-      "pub_date": "2026-11-12",
-      "author": "noreply@aihot.news (Gemini)",
-      "category": "AI 模型"
     }
   ]
 }
