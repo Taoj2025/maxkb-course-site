@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-16T10:33:02.652108+08:00",
-  "total": 20,
+  "updated_at": "2026-11-16T11:03:02.005535+08:00",
+  "total": 21,
   "items": [
+    {
+      "title": "Qwen4-Max 登顶 Agent Arena 中国模型榜首，Alibaba 排名升至总榜第14",
+      "link": "https://aihot.news/items/kzt8bjcin243qefkuiq49c2i6",
+      "summary": "Arena 榜单显示 Qwen4-Max 以 +7.5% 净提升在 Agent Arena 总排名第14，成为第一中国模型，使 Alibaba 成为排名第一的中国实验室、总榜第5，仅次于 Anthropic、Google、OpenAI 和 Meta。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kzt8bjcin243qefkuiq49c2i6",
+      "pub_date": "2026-11-16",
+      "author": "noreply@aihot.news (Arena)",
+      "category": "AI 模型"
+    },
     {
       "title": "Qwen 发布 Qwen4-Max：2.4T 参数骨干、百万 token 上下文与长程智能体能力",
       "link": "https://aihot.news/items/nqcfrkilrh7nhnpd03t9q1zfh",

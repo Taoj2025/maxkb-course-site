@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-16T10:33:02.651130+08:00",
+  "updated_at": "2026-11-16T11:03:02.004480+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Qwen4-Max 登顶 Agent Arena 中国模型榜首，Alibaba 排名升至总榜第14",
+      "link": "https://aihot.news/items/kzt8bjcin243qefkuiq49c2i6",
+      "summary": "Arena 榜单显示 Qwen4-Max 以 +7.5% 净提升在 Agent Arena 总排名第14，成为第一中国模型，使 Alibaba 成为排名第一的中国实验室、总榜第5，仅次于 Anthropic、Google、OpenAI 和 Meta。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kzt8bjcin243qefkuiq49c2i6",
+      "pub_date": "2026-11-16",
+      "author": "noreply@aihot.news (Arena)",
+      "category": "AI 模型"
+    },
     {
       "title": "Qwen 发布 Qwen4-Max：2.4T 参数骨干、百万 token 上下文与长程智能体能力",
       "link": "https://aihot.news/items/nqcfrkilrh7nhnpd03t9q1zfh",
@@ -393,14 +401,6 @@
       "summary": "NVIDIA 董事会宣布 Jensen Huang 即刻辞去总裁、CEO 及董事职务，CFO Colette Kress 被任命为临时 CEO，直至选定永久继任者，董事会已启动内外部人选遴选。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qsbjbz754aodhcijq56puh6va",
       "pub_date": "2026-11-12",
       "author": "noreply@aihot.news (NVIDIA：Newsroom)",
-      "category": "行业动态"
-    },
-    {
-      "title": "Anthropic 官宣首次公开募股（IPO）",
-      "link": "https://aihot.news/items/k99zjo9hbtous9r6vmmz7pxyh",
-      "summary": "Anthropic 官方宣布启动首次公开募股（IPO），并公布入口 ipo.anthropic.com。Anthropic 已向 SEC 提交注册声明及招股说明书，证券在注册声明生效前不得出售，初步招股说明书可经高盛与摩根士丹利获取。 🔗 阅读原文 via AIHOT · https://aihot.news/items/k99zjo9hbtous9r6vmmz7pxyh",
-      "pub_date": "2026-11-12",
-      "author": "noreply@aihot.news (Anthropic)",
       "category": "行业动态"
     }
   ]
