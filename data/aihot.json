@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-16T22:33:02.103143+08:00",
+  "updated_at": "2026-11-16T23:03:02.016092+08:00",
   "total": 50,
   "items": [
     {
@@ -74,6 +74,14 @@
       "pub_date": "2026-11-15",
       "author": "noreply@aihot.news (公众号：数字生命卡兹克)",
       "category": "教程"
+    },
+    {
+      "title": "Anthropic 缩短协同漏洞披露政策时限",
+      "link": "https://aihot.news/items/hlcy3o9sbfz920grc9b6p86re",
+      "summary": "Anthropic 更新其协同漏洞披露（CVD）政策，将高危及严重漏洞的披露窗口从 90 天缩短至 30 天，其他问题缩短至 45 天，适用于 2027 年 1 月 1 日或之后报告给供应商的漏洞。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hlcy3o9sbfz920grc9b6p86re",
+      "pub_date": "2026-11-15",
+      "author": "noreply@aihot.news (Anthropic：Research)",
+      "category": "行业动态"
     },
     {
       "title": "马斯克等高管联署请愿，要求 Nvidia 恢复黄仁勋 CEO 职务",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-12",
       "author": "noreply@aihot.news (Azeem Azhar：Exponential View)",
       "category": "行业动态"
-    },
-    {
-      "title": "Epoch AI 分析华为和林格尔数据中心，揭示中美算力差距",
-      "link": "https://aihot.news/items/adkgofriq3tvp6qrawfc63yw4",
-      "summary": "Epoch AI 通过卫星影像和冷却设备模型估算，华为和林格尔数据中心已投运约 105,000 颗 Ascend 910C 和 8,000 颗 Ascend 910B 芯片，对应约 81,000 H100 等效算力，为全球最大 AI 数据中心 SpaceX Colossus 2 的约 7%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/adkgofriq3tvp6qrawfc63yw4",
-      "pub_date": "2026-11-12",
-      "author": "noreply@aihot.news (Epoch AI：Gradient Updates)",
-      "category": "论文"
     }
   ]
 }
