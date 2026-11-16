@@ -1,8 +1,24 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-17T00:03:02.197795+08:00",
+  "updated_at": "2026-11-17T00:33:02.121631+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Gemini 4 Hydrogen 与 Carbon 如何按工作负载选型",
+      "link": "https://aihot.news/items/zo7ubny2zjk4qoqjdoiec91b8",
+      "summary": "Google DeepMind 的 Philipp Schmid 讲解如何在工作负载中选择 Gemini 4 Hydrogen 与 Carbon：Carbon 适合硬架构设计、调试、科学证明和安全审计，intro 价 $2/$10 至 11 月 30 日；Hydrogen 适合日常编码、交互应用和工具调用智能体，价格 $1.50/$7.50 per 1M。两款都可用 Carbon 负责规划编排、Hydrogen 负责执行的搭配，共享 1M-token 统一上下文窗口、95% implicit caching 和相同 Interactions API schema。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zo7ubny2zjk4qoqjdoiec91b8",
+      "pub_date": "2026-11-16",
+      "author": "noreply@aihot.news (Philipp Schmid)",
+      "category": "教程"
+    },
+    {
+      "title": "Google 发布 Gemini 4 Carbon 与 Hydrogen，并推出 Decisions API 和自托管 agent 沙箱",
+      "link": "https://aihot.news/items/n3qi466u1gbxj2i8q7g5snhr0",
+      "summary": "Google 发布 Gemini 4 Carbon（gemini-4-carbon，1M 共享 token 池，11 月 30 日前 $2.00/$10.00 每 1M tokens。 🔗 阅读原文 via AIHOT · https://aihot.news/items/n3qi466u1gbxj2i8q7g5snhr0",
+      "pub_date": "2026-11-16",
+      "author": "noreply@aihot.news (Philipp Schmid)",
+      "category": "AI 模型"
+    },
     {
       "title": "美国收紧 AI 芯片出口管制，限制中国企业远程获取算力",
       "link": "https://aihot.news/items/x6msqkehvwzry0904un629cqg",
@@ -386,22 +402,6 @@
       "pub_date": "2026-11-12",
       "author": "noreply@aihot.news (Hacker News：AI 热帖)",
       "category": "AI 模型"
-    },
-    {
-      "title": "The Verge 分析黄仁勋辞职与 Nvidia 芯片走私疑云",
-      "link": "https://aihot.news/items/licdk6vosezxouovor3gvtcpe",
-      "summary": "The Verge 作者 Elizabeth Lopatto 分析 Nvidia 宣布黄仁勋辞职一事，认为第二桩婚外情只是导火索，真正原因或与芯片走私指控有关。 🔗 阅读原文 via AIHOT · https://aihot.news/items/licdk6vosezxouovor3gvtcpe",
-      "pub_date": "2026-11-12",
-      "author": "noreply@aihot.news (The Verge：AI)",
-      "category": "行业动态"
-    },
-    {
-      "title": "Replit Agent 新增代购能力和 Google Ads 投放功能",
-      "link": "https://aihot.news/items/k7sfjumcmtq0zswb5yj5kmju1",
-      "summary": "Replit 给 Replit Agent 新增两项能力：通过 Stripe Link 和 Visa 为企业代购物资，以及在 Replit 内直接创建和投放 Google Ads 覆盖 Search、YouTube 等渠道。 🔗 阅读原文 via AIHOT · https://aihot.news/items/k7sfjumcmtq0zswb5yj5kmju1",
-      "pub_date": "2026-11-12",
-      "author": "noreply@aihot.news (Replit：Blog)",
-      "category": "AI 产品"
     }
   ]
 }
