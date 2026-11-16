@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-16T21:03:02.349161+08:00",
+  "updated_at": "2026-11-16T21:33:01.703052+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "英伟达CEO黄仁勋辞职后风波持续，公司股价一周下跌14%",
+      "link": "https://aihot.news/items/rk143d9qa0j9gp3fdti162fy7",
+      "summary": "英伟达CEO黄仁勋于上周辞任，公司股价随之下跌14%，CFO Colette Kress出任临时CEO。辞职数小时后，路透社报道其第三段婚外情。事件还涉及公司芯片供应相关指控，国会议员已启动调查。报道称黄仁勋正联络盟友寻求回归，业内担心动荡加剧营收压力，可能促使公司在安全投入上有所松懈。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rk143d9qa0j9gp3fdti162fy7",
+      "pub_date": "2026-11-16",
+      "author": "noreply@aihot.news (The Verge：AI)",
+      "category": "行业动态"
+    },
     {
       "title": "自媒体作者分享10条指挥Agent最常用的Prompt",
       "link": "https://aihot.news/items/jqangh4mwcgcv6pwcv8ar7pga",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-12",
       "author": "noreply@aihot.news (OpenMOSS / 复旦NLP / 上海创智 / MOSI)",
       "category": "AI 模型"
-    },
-    {
-      "title": "DeepSeek 开放全家桶应用 API：联网搜索、文件输入、阅读链接等能力面向开发者",
-      "link": "https://aihot.news/items/nnbnoebf6mvo97usmwj5wziyl",
-      "summary": "DeepSeek 在 API 中开放此前 App 对话服务所用的能力，开发者开启对应参数即可使用，工具调用与上下文拼接由服务端完成。 🔗 阅读原文 via AIHOT · https://aihot.news/items/nnbnoebf6mvo97usmwj5wziyl",
-      "pub_date": "2026-11-12",
-      "author": "noreply@aihot.news (DeepSeek：API 更新日志)",
-      "category": "AI 产品"
     }
   ]
 }
