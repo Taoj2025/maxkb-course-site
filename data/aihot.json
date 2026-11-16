@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-16T13:03:02.273253+08:00",
+  "updated_at": "2026-11-16T13:33:01.612784+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "腾讯混元发布 Hy4 flash：224B 总参数、1M 上下文的日常高性价比模型",
+      "link": "https://aihot.news/items/u36vxmxeopbsx4if4lap30899",
+      "summary": "腾讯混元推出 Hy4 flash，总参数 224B（含 64B Engram 参数）、激活 12B，支持多模态和 1M 上下文，API 价格大幅低于 Hy4（输入 0.5 元、输出 2 元每百万 tokens）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/u36vxmxeopbsx4if4lap30899",
+      "pub_date": "2026-11-16",
+      "author": "noreply@aihot.news (腾讯混元：Research)",
+      "category": "AI 模型"
+    },
     {
       "title": "通义千问发布 Qwen4 Max，Intelligence Index 较 Qwen3.8 Max 高 9 分且成本更低",
       "link": "https://aihot.news/items/r9e7azie93xzxxdf6yyd1jmqe",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-12",
       "author": "noreply@aihot.news (Apple：Newsroom)",
       "category": "AI 产品"
-    },
-    {
-      "title": "Kate Clark 转发 WSJ 报道称 Nvidia 正准备罢免 CEO 黄仁勋并征集信源",
-      "link": "https://aihot.news/items/m76r4bnrvb21vkm8wn2khk0jr",
-      "summary": "记者 Kate Clark 分享 WSJ 报道链接，该报道称 Nvidia 正准备罢免 CEO 黄仁勋。她同时留下 Signal 联系方式 415-409-9095，征集关于此事对私募市场、交易撮合、融资及 AI 行业连锁影响的爆料与讨论。 🔗 阅读原文 via AIHOT · https://aihot.news/items/m76r4bnrvb21vkm8wn2khk0jr",
-      "pub_date": "2026-11-12",
-      "author": "noreply@aihot.news (Kate Clark)",
-      "category": "行业动态"
     }
   ]
 }

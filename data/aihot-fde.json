@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-16T13:03:02.274313+08:00",
-  "total": 22,
+  "updated_at": "2026-11-16T13:33:01.613861+08:00",
+  "total": 23,
   "items": [
+    {
+      "title": "腾讯混元发布 Hy4 flash：224B 总参数、1M 上下文的日常高性价比模型",
+      "link": "https://aihot.news/items/u36vxmxeopbsx4if4lap30899",
+      "summary": "腾讯混元推出 Hy4 flash，总参数 224B（含 64B Engram 参数）、激活 12B，支持多模态和 1M 上下文，API 价格大幅低于 Hy4（输入 0.5 元、输出 2 元每百万 tokens）。 🔗 阅读原文 via AIHOT · https://aihot.news/items/u36vxmxeopbsx4if4lap30899",
+      "pub_date": "2026-11-16",
+      "author": "noreply@aihot.news (腾讯混元：Research)",
+      "category": "AI 模型"
+    },
     {
       "title": "通义千问发布 Qwen4 Max，Intelligence Index 较 Qwen3.8 Max 高 9 分且成本更低",
       "link": "https://aihot.news/items/r9e7azie93xzxxdf6yyd1jmqe",
