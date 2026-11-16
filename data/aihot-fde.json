@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-17T04:03:01.569391+08:00",
+  "updated_at": "2026-11-17T04:33:02.808495+08:00",
   "total": 24,
   "items": [
     {
@@ -12,9 +12,9 @@
       "category": "观点"
     },
     {
-      "title": "Microsoft Research 开源 TokenEconomizer 插件，让编码智能体从经验中省 token",
+      "title": "Microsoft Research 等发布开源插件 TokenEconomizer，让编码智能体节省 18.4–30.9% token 成本",
       "link": "https://aihot.news/items/ub0r10tgaq7g5nnq01ciz9d17",
-      "summary": "UC Berkeley、Microsoft Research 与 Microsoft Security 开源 TokenEconomizer 插件，从智能体在同一仓库的历史会话中学习，在不修改智能体和底层模型的情况下降低成本。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ub0r10tgaq7g5nnq01ciz9d17",
+      "summary": "UC Berkeley、Microsoft Research 与 Microsoft Security 发布开源插件 TokenEconomizer，从智能体在同一仓库的过往会话中学习，在不改动智能体和底层模型的前提下降低后续会话成本。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ub0r10tgaq7g5nnq01ciz9d17",
       "pub_date": "2026-11-16",
       "author": "noreply@aihot.news (Microsoft Research 博客)",
       "category": "论文"
