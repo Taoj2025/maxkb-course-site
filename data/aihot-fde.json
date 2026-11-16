@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-16T18:03:01.680303+08:00",
-  "total": 23,
+  "updated_at": "2026-11-16T18:33:02.476455+08:00",
+  "total": 24,
   "items": [
+    {
+      "title": "自媒体作者分享10条指挥Agent最常用的Prompt",
+      "link": "https://aihot.news/items/jqangh4mwcgcv6pwcv8ar7pga",
+      "summary": "作者让Agent整理出自己近两个月指挥Agent干活最常用的10条Prompt并分享，包括从第一性原理找根因、先对齐喜好再出3版方案、推演改动二阶三阶影响、假设最优方案错误找反例、分析Git历史识别可移除的历史包袱、评估新工程师接手的认知成本、复盘Bug和返工并沉淀成规则或Skill等。作者希望对大家指挥Agent开发有用。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jqangh4mwcgcv6pwcv8ar7pga",
+      "pub_date": "2026-11-16",
+      "author": "noreply@aihot.news (公众号：数字生命卡兹克)",
+      "category": "教程"
+    },
     {
       "title": "腾讯混元发布 Hy4 flash：224B 总参数、1M 上下文的日常高性价比模型",
       "link": "https://aihot.news/items/u36vxmxeopbsx4if4lap30899",
