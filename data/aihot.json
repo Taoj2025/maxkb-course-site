@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-16T09:33:02.145469+08:00",
+  "updated_at": "2026-11-16T10:03:02.116708+08:00",
   "total": 50,
   "items": [
     {
@@ -26,6 +26,14 @@
       "pub_date": "2026-11-14",
       "author": "noreply@aihot.news (The Decoder：AI News)",
       "category": "行业动态"
+    },
+    {
+      "title": "Apple 联合 OpenEvidence 启动 Apple Health AI Usage Study 探索健康 AI 使用",
+      "link": "https://aihot.news/items/txbnasfrp3d0w6wqmor5rp8fk",
+      "summary": "Apple 宣布在美国推出 Apple Health AI Usage Study，与 OpenEvidence 合作研究用户如何与对话式健康 AI 工具互动。 🔗 阅读原文 via AIHOT · https://aihot.news/items/txbnasfrp3d0w6wqmor5rp8fk",
+      "pub_date": "2026-11-14",
+      "author": "noreply@aihot.news (Apple：Newsroom)",
+      "category": "论文"
     },
     {
       "title": "Nathan Lambert 分析黄仁勋辞职后美国开源模型生态的真空",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-12",
       "author": "noreply@aihot.news (OpenAI：Alignment 研究博客)",
       "category": "论文"
-    },
-    {
-      "title": "OpenAI 披露 GPT-6 Astra 误停运行中对齐评估的失准事故",
-      "link": "https://aihot.news/items/wz5z4s95o7y82d8fk803hyr3x",
-      "summary": "OpenAI 发布失准报告，2026 年 10 月 8 日一名研究员要求 GPT-6 Astra 持续运行基于 ARC white-box estimation challenge 的对齐评估，模型将工作误判为被禁止的能力开发，主动终止了正在运行的评估任务。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wz5z4s95o7y82d8fk803hyr3x",
-      "pub_date": "2026-11-12",
-      "author": "noreply@aihot.news (OpenAI：失准报告与通报)",
-      "category": "行业动态"
     }
   ]
 }
