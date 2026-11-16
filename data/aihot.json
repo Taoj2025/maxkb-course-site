@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-17T06:03:02.340966+08:00",
+  "updated_at": "2026-11-17T06:33:01.514418+08:00",
   "total": 50,
   "items": [
     {
@@ -178,6 +178,14 @@
       "pub_date": "2026-11-15",
       "author": "noreply@aihot.news (公众号：数字生命卡兹克)",
       "category": "教程"
+    },
+    {
+      "title": "METR 测量模型对对齐评测的识别能力：调查型智能体能区分对齐与能力评测",
+      "link": "https://aihot.news/items/m4emm1ej7qzex1k77a7mfaztd",
+      "summary": "METR 发布研究笔记，用调查型智能体在 19 个对齐评测和 36 个能力评测中探测环境，测量模型能否识别自己处于对齐评测。结果显示智能体区分两类评测的能力在过去一年持续提升，Opus 5.5 在其数据集上把所有对齐评测排在所有能力评测之上。模型识别依据包括环境看起来像模拟的蜜罐等线索，作者将对齐线索分为环境级和任务级两类，并提出可借此迭代改进对齐评测设计。 🔗 阅读原文 via AIHOT · https://aihot.news/items/m4emm1ej7qzex1k77a7mfaztd",
+      "pub_date": "2026-11-15",
+      "author": "noreply@aihot.news (METR：Notes)",
+      "category": "论文"
     },
     {
       "title": "Anthropic 缩短协同漏洞披露政策时限",
@@ -388,20 +396,12 @@
       "category": "教程"
     },
     {
-      "title": "Google 展示 Antigravity /teamwork 多智能体协作成果并开放给研究者使用",
-      "link": "https://aihot.news/items/h0obmlpmc44dqk1da164ca1z7",
-      "summary": "Google Research 介绍其团队与学术伙伴用 Antigravity 的 /teamwork 多智能体工作流配合 Gemini 4 Argon、Carbon、Hydrogen 模型，在信息论、形式化验证、分子结构和内核优化等领域取得多项成果。 🔗 阅读原文 via AIHOT · https://aihot.news/items/h0obmlpmc44dqk1da164ca1z7",
+      "title": "Berkeley RDI 等发布 CyberArena：让 AI 智能体在实时网络攻防对抗中互测",
+      "link": "https://aihot.news/items/hd2dsmdxwk6jai8kgmucpqeib",
+      "summary": "Berkeley RDI 联合多所高校发布 CyberArena 基准，让两个 AI 智能体在 CTF 攻防赛制中同时攻击对手服务并修补自己的服务，每局结果由场地验证。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hd2dsmdxwk6jai8kgmucpqeib",
       "pub_date": "2026-11-13",
-      "author": "noreply@aihot.news (Google Research：Blog)",
-      "category": "AI 产品"
-    },
-    {
-      "title": "美国民主党议员就英伟达对华芯片销售启动调查",
-      "link": "https://aihot.news/items/cfh0nazzl7eedgttz8n99fza4",
-      "summary": "美国国会民主党议员近日就特朗普政府处理英伟达对华芯片销售一事启动调查，并致函商务部长要求保存相关记录。调查关注芯片出口许可、关税安排及英伟达与政府之间的商业往来等监管问题。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cfh0nazzl7eedgttz8n99fza4",
-      "pub_date": "2026-11-12",
-      "author": "noreply@aihot.news (TechCrunch：AI)",
-      "category": "行业动态"
+      "author": "noreply@aihot.news (Berkeley RDI：Blog)",
+      "category": "论文"
     }
   ]
 }
