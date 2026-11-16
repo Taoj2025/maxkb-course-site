@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-17T02:03:02.128585+08:00",
+  "updated_at": "2026-11-17T02:33:02.152676+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "FBI 警告开源 AI 渗透测试工具 Artex 被用于三小时内攻破企业网络",
+      "link": "https://aihot.news/items/zficxtnfx6piiwlefryulanmh",
+      "summary": "FBI 在最新网络安全公告中警告，黑客正利用开源 AI 渗透测试工具 Artex 自主发起攻击，部分入侵从锁定目标到主动攻陷在不到三小时内完成。该工具已被用于针对美国 IT 公司 ConnectWise 客户及韩国金融行业的网络攻击，攻击者利用弱口令、暴露凭证等简单漏洞快速渗透并窃取数据。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zficxtnfx6piiwlefryulanmh",
+      "pub_date": "2026-11-16",
+      "author": "noreply@aihot.news (TechCrunch：AI)",
+      "category": "行业动态"
+    },
     {
       "title": "Microsoft Research 开源 TokenEconomizer 插件，让编码智能体从经验中省 token",
       "link": "https://aihot.news/items/ub0r10tgaq7g5nnq01ciz9d17",
@@ -393,14 +401,6 @@
       "summary": "作者以「爱好包括制作 og:images」调侃，配图为 CursorBench 4.0 的模型散点图；其引用 Cursor 官方内容称 Gemini 4 Hydrogen 现已在 Cursor 上线，默认 effort 下 CursorBench 得分 54.3%，高于 Gemini 3.8 Flash 的 39.6%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/mt013742fhedisepp2i31h1r4",
       "pub_date": "2026-11-12",
       "author": "noreply@aihot.news (Matt Palmer)",
-      "category": "AI 产品"
-    },
-    {
-      "title": "World Labs 开放世界模型 Atlas，支持生成关键帧、视频片段和 3D Gaussian splats",
-      "link": "https://aihot.news/items/lazmov9ciw8y5uqpuda9qcizm",
-      "summary": "World Labs 宣布 Atlas 世界模型向所有人开放，李飞飞转发并表达期待用户用它构建的内容。官方为用户提供了应用和 API 端点，可用 Atlas 生成关键帧、视频片段或 3D Gaussian splats。 🔗 阅读原文 via AIHOT · https://aihot.news/items/lazmov9ciw8y5uqpuda9qcizm",
-      "pub_date": "2026-11-12",
-      "author": "noreply@aihot.news (Fei-Fei Li)",
       "category": "AI 产品"
     }
   ]
