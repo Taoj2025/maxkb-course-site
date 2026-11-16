@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-16T10:03:02.117772+08:00",
-  "total": 19,
+  "updated_at": "2026-11-16T10:33:02.652108+08:00",
+  "total": 20,
   "items": [
+    {
+      "title": "Qwen 发布 Qwen4-Max：2.4T 参数骨干、百万 token 上下文与长程智能体能力",
+      "link": "https://aihot.news/items/nqcfrkilrh7nhnpd03t9q1zfh",
+      "summary": "Qwen 团队发布 Qwen4-Max，基于新 Qwen4 架构，拥有 2.4T 骨干参数、每 token 激活 71B、328B N-gram Embedding 参数，具备原生视觉能力和 100 万 token 上下文窗口。 🔗 阅读原文 via AIHOT · https://aihot.news/items/nqcfrkilrh7nhnpd03t9q1zfh",
+      "pub_date": "2026-11-16",
+      "author": "noreply@aihot.news (Qwen：Blog Retrieval)",
+      "category": "AI 模型"
+    },
     {
       "title": "AI 手搓的 1.4M 纯 HTML 3D 游戏走红，卡兹克拆解 Three.js 程序化生成原理并给出提示词模板",
       "link": "https://aihot.news/items/izdx1kuppob6c65ghvmyeal38",

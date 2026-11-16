@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-16T10:03:02.116708+08:00",
+  "updated_at": "2026-11-16T10:33:02.651130+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Qwen 发布 Qwen4-Max：2.4T 参数骨干、百万 token 上下文与长程智能体能力",
+      "link": "https://aihot.news/items/nqcfrkilrh7nhnpd03t9q1zfh",
+      "summary": "Qwen 团队发布 Qwen4-Max，基于新 Qwen4 架构，拥有 2.4T 骨干参数、每 token 激活 71B、328B N-gram Embedding 参数，具备原生视觉能力和 100 万 token 上下文窗口。 🔗 阅读原文 via AIHOT · https://aihot.news/items/nqcfrkilrh7nhnpd03t9q1zfh",
+      "pub_date": "2026-11-16",
+      "author": "noreply@aihot.news (Qwen：Blog Retrieval)",
+      "category": "AI 模型"
+    },
     {
       "title": "AI 手搓的 1.4M 纯 HTML 3D 游戏走红，卡兹克拆解 Three.js 程序化生成原理并给出提示词模板",
       "link": "https://aihot.news/items/izdx1kuppob6c65ghvmyeal38",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-12",
       "author": "noreply@aihot.news (Anthropic)",
       "category": "行业动态"
-    },
-    {
-      "title": "OpenAI 用自动化红队训练提升 GPT-6 Astra 和 Sol 在高风险领域的模糊鲁棒性",
-      "link": "https://aihot.news/items/yg97h3u5vthadivuv5po5f0aw",
-      "summary": "OpenAI 研究团队介绍如何用自动化红队提升模型在网络、生物等高风险双用途领域的模糊鲁棒性，通过扩大攻击者模型的测试时算力迭代搜索越狱，并要求攻击在多次重复测试中成功（worst@n），生成可靠的对抗训练数据用于 RL 训练。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yg97h3u5vthadivuv5po5f0aw",
-      "pub_date": "2026-11-12",
-      "author": "noreply@aihot.news (OpenAI：Alignment 研究博客)",
-      "category": "论文"
     }
   ]
 }
