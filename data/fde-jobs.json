@@ -1,6 +1,6 @@
 {
   "version": "v3.0",
-  "updated_at": "2026-11-18T02:47:33.169616+08:00",
+  "updated_at": "2026-11-18T03:17:07.871337+08:00",
   "source": "智联招聘 + 腾讯招聘 + Greenhouse + Ashby（公开职位板 API）",
   "live": true,
   "stale_domestic": false,
@@ -8,11 +8,11 @@
     "total_companies": 39,
     "domestic_companies": 22,
     "overseas_companies": 17,
-    "ai_companies": 17,
+    "ai_companies": 20,
     "total_jobs_estimated": 71,
     "domestic_jobs": 35,
     "overseas_jobs": 36,
-    "avg_salary_domestic": "14K",
+    "avg_salary_domestic": "16K",
     "avg_salary_overseas": "$289K"
   },
   "domestic": {
@@ -156,43 +156,6 @@
           "ai_era": true
         },
         {
-          "company": "保定汇冀人力资源服务有限公司",
-          "title": "全栈工程师/双休法休/五险/管午晚饭/早9晚6",
-          "salary": "5000-8000元",
-          "city": "保定 竞秀",
-          "tags": [
-            "全栈 Full-Stack",
-            "前端 Frontend",
-            "Vue / Nuxt"
-          ],
-          "level": "Mid",
-          "remote": false,
-          "source": "智联招聘",
-          "url": "https://www.zhaopin.com/jobdetail/CCL1479583990J40981439915.htm",
-          "premium": false,
-          "ai_era": false
-        },
-        {
-          "company": "前程嘉仕(黑龙江)人力资源有限公司",
-          "title": "全栈开发工程师",
-          "salary": "1.5-2.5万",
-          "city": "北京 丰台",
-          "tags": [
-            "全栈 Full-Stack",
-            "前端 Frontend",
-            "Vue / Nuxt",
-            "Rust / Java",
-            "数据库",
-            "JavaScript"
-          ],
-          "level": "Mid",
-          "remote": false,
-          "source": "智联招聘",
-          "url": "https://www.zhaopin.com/jobdetail/CCL1510364940J40950969112.htm",
-          "premium": false,
-          "ai_era": false
-        },
-        {
           "company": "北京华宇元典信息服务有限公司",
           "title": "全栈工程师(J10993)",
           "salary": "2-4万",
@@ -205,22 +168,6 @@
           "remote": false,
           "source": "智联招聘",
           "url": "https://www.zhaopin.com/jobdetail/CC409922380J41047205302.htm",
-          "premium": false,
-          "ai_era": false
-        },
-        {
-          "company": "北京诚义智联信息科技有限公司",
-          "title": "全栈工程师",
-          "salary": "7000-9000元",
-          "city": "北京 通州",
-          "tags": [
-            "全栈 Full-Stack",
-            "前端 Frontend"
-          ],
-          "level": "Junior",
-          "remote": false,
-          "source": "智联招聘",
-          "url": "https://www.zhaopin.com/jobdetail/CCL1501986310J41050784402.htm",
           "premium": false,
           "ai_era": false
         },
@@ -243,14 +190,13 @@
           "ai_era": false
         },
         {
-          "company": "碳信基石环境科技(上海)有限公司",
-          "title": "高级全栈工程师",
-          "salary": "1-2万",
-          "city": "上海 浦东",
+          "company": "爱瑞思软件（深圳）有限公司",
+          "title": "全栈工程师（香港办公）",
+          "salary": "3.5-4.5万",
+          "city": "深圳 南山",
           "tags": [
             "全栈 Full-Stack",
             "前端 Frontend",
-            "Vue / Nuxt",
             "Rust / Java",
             "Linux / Nginx",
             "数据库"
@@ -258,7 +204,7 @@
           "level": "Mid",
           "remote": false,
           "source": "智联招聘",
-          "url": "https://www.zhaopin.com/jobdetail/CCL1485156640J41046263904.htm",
+          "url": "https://www.zhaopin.com/jobdetail/CC131734260J40811602806.htm",
           "premium": false,
           "ai_era": false
         },
@@ -275,6 +221,24 @@
           "remote": false,
           "source": "智联招聘",
           "url": "https://www.zhaopin.com/jobdetail/CCL1487574710J40811457606.htm",
+          "premium": false,
+          "ai_era": false
+        },
+        {
+          "company": "能魔(北京)智能技术有限公司",
+          "title": "能源数字化全栈开发工程师",
+          "salary": "1.5-2万",
+          "city": "北京 海淀",
+          "tags": [
+            "全栈 Full-Stack",
+            "前端 Frontend",
+            "Python",
+            "Rust / Java"
+          ],
+          "level": "Mid",
+          "remote": false,
+          "source": "智联招聘",
+          "url": "https://www.zhaopin.com/jobdetail/CCL1526197000J40910778905.htm",
           "premium": false,
           "ai_era": false
         },
@@ -373,25 +337,6 @@
           "ai_era": false
         },
         {
-          "company": "广州南天电脑系统有限公司",
-          "title": "全栈开发实习生(010800)",
-          "salary": "120-150元/天",
-          "city": "广州 天河",
-          "tags": [
-            "全栈 Full-Stack",
-            "前端 Frontend",
-            "Vue / Nuxt",
-            "Rust / Java",
-            "数据库"
-          ],
-          "level": "",
-          "remote": false,
-          "source": "智联招聘",
-          "url": "https://www.zhaopin.com/jobdetail/CC136558620J40898509414.htm",
-          "premium": false,
-          "ai_era": false
-        },
-        {
           "company": "郑州联创优聘信息科技有限公司",
           "title": "全栈开发：JAVA+web前端",
           "salary": "1.2-1.5万",
@@ -440,6 +385,64 @@
           "remote": false,
           "source": "智联招聘",
           "url": "https://www.zhaopin.com/jobdetail/CC652719520J40981436015.htm",
+          "premium": false,
+          "ai_era": true
+        },
+        {
+          "company": "深圳建广数字科技有限公司青岛分公司",
+          "title": "PHP研发负责人（会前端 跨境电商）",
+          "salary": "1-1.6万",
+          "city": "深圳 南山",
+          "tags": [
+            "前端 Frontend",
+            "React",
+            "Vue / Nuxt",
+            "CSS / Tailwind",
+            "Rust / Java",
+            "JavaScript"
+          ],
+          "level": "Senior",
+          "remote": false,
+          "source": "智联招聘",
+          "url": "https://www.zhaopin.com/jobdetail/CCL1320891960J40885031111.htm",
+          "premium": false,
+          "ai_era": true
+        },
+        {
+          "company": "重庆清智企业管理有限公司",
+          "title": "web前端开发工程师",
+          "salary": "1-1.8万·13薪",
+          "city": "重庆 两江新区",
+          "tags": [
+            "前端 Frontend",
+            "React",
+            "Vue / Nuxt",
+            "Remix / Angular",
+            "CSS / Tailwind",
+            "跨端"
+          ],
+          "level": "Mid",
+          "remote": false,
+          "source": "智联招聘",
+          "url": "https://www.zhaopin.com/jobdetail/CCL1496377440J40906689909.htm",
+          "premium": false,
+          "ai_era": true
+        },
+        {
+          "company": "长沙恒用信息科技有限公司",
+          "title": "前端开发工程师",
+          "salary": "5000-7000元",
+          "city": "长沙 岳麓",
+          "tags": [
+            "前端 Frontend",
+            "Vue / Nuxt",
+            "CSS / Tailwind",
+            "JavaScript"
+          ],
+          "level": "Mid",
+          "remote": false,
+          "source": "智联招聘",
+          "url": "https://www.zhaopin.com/jobdetail/CC447538210J41051028302.htm",
           "premium": false,
           "ai_era": true
         }
@@ -606,7 +609,7 @@
   "overseas": {
     "label": "🌏 海外 · 顶级公司 careers",
     "data_source": "Greenhouse / Ashby 公开职位板（实时）",
-    "fetched_at": "2026-11-18T02:47:33.169616+08:00",
+    "fetched_at": "2026-11-18T03:17:07.871337+08:00",
     "jobs": [
       {
         "company": "OpenAI",
@@ -1240,8 +1243,13 @@
       "skills": [
         {
           "name": "全栈 Full-Stack",
-          "count": 30,
-          "percent": 86
+          "count": 27,
+          "percent": 77
+        },
+        {
+          "name": "React",
+          "count": 9,
+          "percent": 26
         },
         {
           "name": "TypeScript",
@@ -1249,24 +1257,24 @@
           "percent": 26
         },
         {
-          "name": "Vue / Nuxt",
-          "count": 8,
-          "percent": 23
-        },
-        {
-          "name": "React",
+          "name": "JavaScript",
           "count": 7,
           "percent": 20
         },
         {
-          "name": "JavaScript",
-          "count": 6,
-          "percent": 17
+          "name": "Vue / Nuxt",
+          "count": 7,
+          "percent": 20
         },
         {
           "name": "Svelte / Solid",
           "count": 3,
           "percent": 9
+        },
+        {
+          "name": "Remix / Angular",
+          "count": 1,
+          "percent": 3
         }
       ]
     },
@@ -1311,24 +1319,24 @@
           "percent": 40
         },
         {
-          "name": "数据库",
-          "count": 12,
-          "percent": 40
-        },
-        {
           "name": "Rust / Java",
           "count": 11,
           "percent": 37
         },
         {
-          "name": "可观测性",
+          "name": "数据库",
+          "count": 10,
+          "percent": 33
+        },
+        {
+          "name": "Python",
           "count": 9,
           "percent": 30
         },
         {
-          "name": "Python",
-          "count": 8,
-          "percent": 27
+          "name": "可观测性",
+          "count": 9,
+          "percent": 30
         },
         {
           "name": "Go",
@@ -1370,43 +1378,43 @@
     },
     {
       "name": "🎨 UX / 设计系统",
-      "total": 9,
+      "total": 12,
       "skills": [
         {
           "name": "UI / UX",
           "count": 7,
-          "percent": 78
+          "percent": 58
         },
         {
           "name": "CSS / Tailwind",
-          "count": 2,
-          "percent": 22
+          "count": 5,
+          "percent": 42
         }
       ]
     },
     {
       "name": "📚 知识要求（必须懂）",
-      "total": 35,
+      "total": 36,
       "skills": [
         {
           "name": "DevEx 开发者体验",
           "count": 16,
-          "percent": 46
+          "percent": 44
         },
         {
           "name": "Forward Deployed",
           "count": 16,
-          "percent": 46
+          "percent": 44
         },
         {
           "name": "HTTP / TLS",
           "count": 9,
-          "percent": 26
+          "percent": 25
         },
         {
           "name": "跨端",
-          "count": 3,
-          "percent": 9
+          "count": 4,
+          "percent": 11
         },
         {
           "name": "开放平台 / API",
@@ -1426,25 +1434,25 @@
       {
         "level": "Junior（应届 / 1-3 年）",
         "range": "10K 以下",
-        "percent": 20,
+        "percent": 14,
         "color": "#10B981"
       },
       {
         "level": "Mid（3-5 年）",
         "range": "10-20K",
-        "percent": 31,
+        "percent": 37,
         "color": "#3B82F6"
       },
       {
         "level": "Senior（5-8 年）",
         "range": "20-30K",
-        "percent": 14,
+        "percent": 11,
         "color": "#8B5CF6"
       },
       {
         "level": "Staff（8 年+）",
         "range": "30-50K",
-        "percent": 3,
+        "percent": 6,
         "color": "#F59E0B"
       },
       {
@@ -1512,18 +1520,13 @@
     "domestic_top10": [
       {
         "city": "北京",
-        "jobs": 11,
-        "percent": 31.4
+        "jobs": 10,
+        "percent": 28.6
       },
       {
         "city": "深圳",
-        "jobs": 6,
-        "percent": 17.1
-      },
-      {
-        "city": "上海",
-        "jobs": 3,
-        "percent": 8.6
+        "jobs": 8,
+        "percent": 22.9
       },
       {
         "city": "青岛",
@@ -1536,12 +1539,12 @@
         "percent": 5.7
       },
       {
-        "city": "广州",
+        "city": "杭州",
         "jobs": 2,
         "percent": 5.7
       },
       {
-        "city": "杭州",
+        "city": "长沙",
         "jobs": 2,
         "percent": 5.7
       },
@@ -1551,12 +1554,17 @@
         "percent": 5.7
       },
       {
-        "city": "石家庄",
-        "jobs": 1,
-        "percent": 2.9
+        "city": "重庆",
+        "jobs": 2,
+        "percent": 5.7
       },
       {
-        "city": "保定",
+        "city": "上海",
+        "jobs": 2,
+        "percent": 5.7
+      },
+      {
+        "city": "石家庄",
         "jobs": 1,
         "percent": 2.9
       }
@@ -1590,7 +1598,7 @@
     ]
   },
   "data_sources_meta": {
-    "fetched_at": "2026-11-18T02:47:33.169616+08:00",
+    "fetched_at": "2026-11-18T03:17:07.871337+08:00",
     "sources": [
       {
         "name": "智联招聘",
@@ -1598,15 +1606,15 @@
         "detail": "公开搜索结果 · 免登录实时抓取",
         "key": "zhaopin",
         "ok": true,
-        "count": 67,
+        "count": 65,
         "boards": {
-          "智联·大模型应用工程师": 9,
-          "智联·前端工程师": 11,
-          "智联·Serverless": 9,
-          "智联·FDE": 12,
-          "智联·全栈工程师": 14,
+          "智联·全栈工程师": 13,
           "智联·远程前端": 4,
-          "智联·前端部署": 8
+          "智联·前端部署": 7,
+          "智联·Serverless": 9,
+          "智联·前端工程师": 11,
+          "智联·FDE": 12,
+          "智联·大模型应用工程师": 9
         }
       },
       {
@@ -1628,18 +1636,18 @@
         "ok": true,
         "count": 404,
         "boards": {
+          "Anthropic Careers": 110,
           "Netlify Careers": 1,
           "Figma Careers": 25,
-          "Anthropic Careers": 110,
-          "Twilio Careers": 10,
           "Squarespace Careers": 5,
+          "Twilio Careers": 10,
+          "Datadog Careers": 8,
           "Stripe Careers": 91,
-          "Cloudflare Careers": 67,
           "Instacart Careers": 11,
+          "Cloudflare Careers": 67,
           "Flexport Careers": 11,
           "Reddit Careers": 40,
-          "Airbnb Careers": 25,
-          "Datadog Careers": 8
+          "Airbnb Careers": 25
         }
       },
       {
@@ -1648,20 +1656,20 @@
         "detail": "12 家公司的公开招聘 API · 含 OpenAI",
         "key": "ashby",
         "ok": true,
-        "count": 317,
+        "count": 315,
         "boards": {
           "Linear Careers": 7,
           "Sentry Careers": 20,
-          "Notion Careers": 15,
           "Replit Careers": 11,
           "Railway Careers": 4,
+          "Notion Careers": 15,
           "Supabase Careers": 16,
-          "Modal Labs Careers": 2,
           "Ramp Careers": 24,
           "PostHog Careers": 2,
           "Render Careers": 11,
-          "Ashby Careers": 18,
-          "OpenAI Careers": 187
+          "OpenAI Careers": 185,
+          "Modal Labs Careers": 2,
+          "Ashby Careers": 18
         }
       }
     ],
