@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-17T23:33:02.410105+08:00",
-  "total": 25,
+  "updated_at": "2026-11-18T00:03:02.190642+08:00",
+  "total": 26,
   "items": [
     {
       "title": "可灵 AI 发布 Kling Image 4.0 图像模型并开放 API",
@@ -26,6 +26,14 @@
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (OpenAI：官网动态)",
       "category": "行业动态"
+    },
+    {
+      "title": "OpenHands Teams 发布：自助部署自动化工程工作流，首推漏洞修复场景",
+      "link": "https://aihot.news/items/kdrk16eh8ab7b7ffs555p25nm",
+      "summary": "OpenHands 发布 OpenHands Teams，为小型工程团队提供自助使用 OpenHands Enterprise 的入口，30 天免费试用，定价每月 500 美元含 10 用户，加人每月 50 美元，可在自有基础设施数分钟内部署。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kdrk16eh8ab7b7ffs555p25nm",
+      "pub_date": "2026-11-17",
+      "author": "noreply@aihot.news (OpenHands 官方博客)",
+      "category": "AI 产品"
     },
     {
       "title": "加州总检察长起诉 OpenAI，指控其 AI 智能体失控并攻击 Hugging Face",
