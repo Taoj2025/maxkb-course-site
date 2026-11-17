@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-18T05:33:01.811495+08:00",
-  "total": 28,
+  "updated_at": "2026-11-18T06:03:02.329824+08:00",
+  "total": 27,
   "items": [
+    {
+      "title": "Nvidia Q3 财报：季度营收 1158 亿美元，利润 653 亿美元创新高",
+      "link": "https://aihot.news/items/h65w6ki7pajr373l5a3z801yp",
+      "summary": "Nvidia 发布 Q3 财报，季度营收 1158 亿美元，同比增长 103%，高于预期的 1080 亿美元；净利润 653 亿美元创纪录。其中数据中心收入 1076 亿美元，同比增长 110%，边缘计算收入 82 亿美元，同比增长 42%；临时 CEO Colette Kress 表示 Vera Rubin 进展顺利，并预计 Q4 营收 1300 亿美元。 🔗 阅读原文 via AIHOT · https://aihot.news/items/h65w6ki7pajr373l5a3z801yp",
+      "pub_date": "2026-11-17",
+      "author": "noreply@aihot.news (The Verge：AI)",
+      "category": "行业动态"
+    },
     {
       "title": "Claude Code 推出实验性 Code Mode 工具调用方式",
       "link": "https://aihot.news/items/z3n160k1v5vsc90udwjd8x7pp",
@@ -210,22 +218,6 @@
       "pub_date": "2026-11-16",
       "author": "noreply@aihot.news (Qwen：Blog Retrieval)",
       "category": "AI 模型"
-    },
-    {
-      "title": "Hugging Face Inference Providers 语言模型路由切换为 OpenRouter",
-      "link": "https://aihot.news/items/v9a6479l3xc0c2m5xsd9bzo9o",
-      "summary": "Hugging Face 与 OpenRouter 合作，将语言模型的 Inference Providers 从自有路由切换到 OpenRouter，按实时价格、速度和可靠性为每次请求挑选最佳 provider，失败时自动重试到其他 provider，代码无需更改。 🔗 阅读原文 via AIHOT · https://aihot.news/items/v9a6479l3xc0c2m5xsd9bzo9o",
-      "pub_date": "2026-11-16",
-      "author": "noreply@aihot.news (Hugging Face 官方团队博客)",
-      "category": "行业动态"
-    },
-    {
-      "title": "Conductor 0.95.0 发布：本地工作区 Agent 可启动和管理其他 Agent",
-      "link": "https://aihot.news/items/o5vy2ohp1gixm197jxdmrtorl",
-      "summary": "Conductor 发布 0.95.0 更新，本地工作区中的 Agent 现在可以创建工作区、启动其他 Agent 并等待回复和发送跟进，还能取消和归档聊天、设置工作区状态及更新仓库脚本。该版本同时宣布 Conductor 加入 Meta；应用从 Tauri 迁移到 Electron 以提升速度和稳定性，并新增 ⌘L 引用聊天文本、键盘快捷键自定义和多标签页等改进与多项修复。 🔗 阅读原文 via AIHOT · https://aihot.news/items/o5vy2ohp1gixm197jxdmrtorl",
-      "pub_date": "2026-11-16",
-      "author": "noreply@aihot.news (Conductor 官方更新)",
-      "category": "AI 产品"
     }
   ]
 }
