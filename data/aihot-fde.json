@@ -1,8 +1,24 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-18T03:03:02.455521+08:00",
-  "total": 26,
+  "updated_at": "2026-11-18T03:33:02.141768+08:00",
+  "total": 28,
   "items": [
+    {
+      "title": "Microsoft 在 Ignite 2026 发布 Copilot、Microsoft IQ、Agent 365 与 Cobalt 200 VMs 等全栈更新",
+      "link": "https://aihot.news/items/jj0ftew61l69qvcrmww6gcxjt",
+      "summary": "Microsoft CEO Satya Nadella 在 Ignite 2026 开幕主题演讲中发布 frontier 生态系列更新：Copilot 定位为工作操作系统。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jj0ftew61l69qvcrmww6gcxjt",
+      "pub_date": "2026-11-17",
+      "author": "noreply@aihot.news (Microsoft：Official Blog)",
+      "category": "AI 产品"
+    },
+    {
+      "title": "Microsoft MAI 发布七款新模型，主打低价高性能",
+      "link": "https://aihot.news/items/z9zhvfj8o8zp2yp433eizf3uk",
+      "summary": "Microsoft MAI 在 Ignite 2026 发布七款新模型，包括 MAI Cyber 2 Flash、MAI Code 2、MAI Code 2 Flash、MAI Image 2.7、MAI Realtime 1、Dragon Copilot Transcribe（基于 MAI Transcribe 2）和 Decision 1.1。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z9zhvfj8o8zp2yp433eizf3uk",
+      "pub_date": "2026-11-17",
+      "author": "noreply@aihot.news (Microsoft AI：官方博客)",
+      "category": "AI 模型"
+    },
     {
       "title": "OpenAI GPT-6.2 Astra 和 GPT-6.2 Sol 上线 OpenRouter",
       "link": "https://aihot.news/items/tww8adkmqsbjxg8u6m16vuzta",
@@ -25,6 +41,14 @@
       "summary": "Artificial Analysis 评测 OpenAI 新发布的 GPT-6.2 Astra 和 GPT-6.2 Sol：Astra 在 Artificial Analysis Intelligence Index 上涨 5 分至 62。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vop48ebueqjbpzs25hyrsi02m",
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (Artificial Analysis)",
+      "category": "AI 模型"
+    },
+    {
+      "title": "OpenAI 发布 GPT-6.2 Astra 与 GPT-6.2 Sol",
+      "link": "https://aihot.news/items/jr7fqw95e5ihuevr1rzib208l",
+      "summary": "OpenAI 发布面向复杂专业工作的 GPT-6.2 Astra 和面向日常工作的 GPT-6.2 Sol，两者在更少输出 token 下取得更好结果。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jr7fqw95e5ihuevr1rzib208l",
+      "pub_date": "2026-11-17",
+      "author": "noreply@aihot.news (OpenAI：官网动态)",
       "category": "AI 模型"
     },
     {
@@ -202,14 +226,6 @@
       "pub_date": "2026-11-15",
       "author": "noreply@aihot.news (METR：Notes)",
       "category": "论文"
-    },
-    {
-      "title": "Nathan Lambert 分析黄仁勋辞职后美国开源模型生态的真空",
-      "link": "https://aihot.news/items/np6dwfqwflqe7vfse9kkfxj1n",
-      "summary": "Nathan Lambert 撰文分析 Nvidia CEO 黄仁勋辞职对美国开源模型生态的冲击，认为 Nvidia 对开源模型的资金支持很可能随黄仁勋的离开而干涸，公司首要目标是稳住局面并向客户交付。 🔗 阅读原文 via AIHOT · https://aihot.news/items/np6dwfqwflqe7vfse9kkfxj1n",
-      "pub_date": "2026-11-14",
-      "author": "noreply@aihot.news (Nathan Lambert：Interconnects)",
-      "category": "观点"
     }
   ]
 }
