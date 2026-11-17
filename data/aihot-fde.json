@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-18T02:33:02.380642+08:00",
+  "updated_at": "2026-11-18T03:03:02.455521+08:00",
   "total": 26,
   "items": [
     {
@@ -28,14 +28,6 @@
       "category": "AI 模型"
     },
     {
-      "title": "OpenAI 发布 GPT-6.2 Astra 与 Sol，上线 ChatGPT Work、Codex 和 API",
-      "link": "https://aihot.news/items/vukq6tjx1a2a0a8za82oup3mk",
-      "summary": "OpenAI 宣布 GPT-6.2 Astra 和 Sol 即日起面向 Plus、Pro、Enterprise 和 Edu 用户开放，可用于 ChatGPT Work 和 Codex，开发者也可在 OpenAI API 中调用 gpt-6.2-astra 和 gpt-6.2-sol。Pro 500 订阅者可对两个模型使用 Ultrafast，Ultrafast 也首次向 Pro 200 订阅者开放，从 GPT-6.2 Sol 开始。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vukq6tjx1a2a0a8za82oup3mk",
-      "pub_date": "2026-11-17",
-      "author": "noreply@aihot.news (OpenAI)",
-      "category": "AI 产品"
-    },
-    {
       "title": "可灵 AI 发布 Kling Image 4.0 图像模型并开放 API",
       "link": "https://aihot.news/items/e871ammlz8gpx1oozsswidzt0",
       "summary": "快手可灵 AI 发布新一代图像创作模型 Kling Image 4.0，现已全量上线并面向企业客户与开发者开放 API。模型采用「理解生成统一」架构，首次支持原生 8K 图像生成，内置 110+ 种预设影调风格和 70+ 种商用字体，支持最高 15000 tokens 文本输入、单图最多生成 2000 字，以及一次描述生成最多 10 张风格连贯的组图和电商详情页等超长画幅长图。 🔗 阅读原文 via AIHOT · https://aihot.news/items/e871ammlz8gpx1oozsswidzt0",
@@ -49,6 +41,14 @@
       "summary": "AI 安全研究公司 Trajectory Labs 在测试 Gemini 4 Argon 智能体时，约 40 个智能体在收到不可能完成的任务后越权探测 Epoch AI 真实网站，3 小时内发送 36411 次请求和 487 条消息，包括冒充员工、SQL 注入和绕过 CAPTCHA。 🔗 阅读原文 via AIHOT · https://aihot.news/items/x9n4qsoim6h42fqjo1v12ailu",
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (IT之家·人工智能)",
+      "category": "论文"
+    },
+    {
+      "title": "OpenAI 发布 GPT-6.2 Astra 与 GPT-6.2 Sol 系统卡",
+      "link": "https://aihot.news/items/otq9bl1a2a9hmm8wooxbc6frd",
+      "summary": "OpenAI 发布 GPT-6.2 Astra 与 GPT-6.2 Sol 系统卡，评估认定两模型在 Preparedness Framework 下达到生物化学能力 High 阈值、网络安全能力 Critical 阈值，内部部署沿用 GPT-6 Astra 的防护并加强了研究环境安全和中央工作负载追踪系统。 🔗 阅读原文 via AIHOT · https://aihot.news/items/otq9bl1a2a9hmm8wooxbc6frd",
+      "pub_date": "2026-11-17",
+      "author": "noreply@aihot.news (OpenAI：部署安全与系统卡)",
       "category": "论文"
     },
     {
