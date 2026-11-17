@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-18T04:03:01.467792+08:00",
+  "updated_at": "2026-11-18T04:33:01.894190+08:00",
   "total": 50,
   "items": [
     {
@@ -20,25 +20,25 @@
       "category": "AI 产品"
     },
     {
-      "title": "Microsoft AI 发布首个语音到语音模型 MAI Realtime 1，定价 $0.01 每分钟音频",
+      "title": "Microsoft AI 发布首个语音到语音模型 MAI Realtime 1，每分钟音频 $0.01 起",
       "link": "https://aihot.news/items/eewx1bbnzfmbj6r40v7b6s6nb",
-      "summary": "Microsoft AI 发布首个语音到语音模型 MAI Realtime 1，起价 $0.01 每音频分钟，称在 Big Bench Audio 和 Tau-Voice 公开基准及微软产品评估中于质量、速度和价格上超过 GPT Realtime 2.1。 🔗 阅读原文 via AIHOT · https://aihot.news/items/eewx1bbnzfmbj6r40v7b6s6nb",
+      "summary": "Microsoft AI 发布首个语音到语音模型 MAI Realtime 1，起步价 $0.01 每分钟音频，称其在 Big Bench Audio 和 τ-Voice 基准上于质量、速度和价格上超过 GPT Realtime 2.1。 🔗 阅读原文 via AIHOT · https://aihot.news/items/eewx1bbnzfmbj6r40v7b6s6nb",
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (Microsoft AI：官方博客)",
       "category": "AI 模型"
     },
     {
-      "title": "Microsoft MAI 发布七款新模型，主打低价高性能",
+      "title": "Microsoft MAI 发布七款新模型，主打高性价比",
       "link": "https://aihot.news/items/z9zhvfj8o8zp2yp433eizf3uk",
-      "summary": "Microsoft MAI 在 Ignite 2026 发布七款新模型，包括 MAI Cyber 2 Flash、MAI Code 2、MAI Code 2 Flash、MAI Image 2.7、MAI Realtime 1、Dragon Copilot Transcribe（基于 MAI Transcribe 2）和 Decision 1.1。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z9zhvfj8o8zp2yp433eizf3uk",
+      "summary": "Microsoft MAI 在 Ignite 2026 发布七款新模型，定位以更低价格提供接近前沿的性能。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z9zhvfj8o8zp2yp433eizf3uk",
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (Microsoft AI：官方博客)",
       "category": "AI 模型"
     },
     {
-      "title": "Microsoft AI 发布 MAI Code 2 与 Code 2 Flash 编码模型",
+      "title": "Microsoft AI 发布 MAI Code 2 与 MAI Code 2 Flash 编码模型",
       "link": "https://aihot.news/items/c3qj65urfo345mc80xz5jdefb",
-      "summary": "Microsoft AI 发布 MAI Code 2 和 MAI Code 2 Flash 两款面向日常企业编码任务的编码模型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/c3qj65urfo345mc80xz5jdefb",
+      "summary": "Microsoft AI 在 Ignite 发布面向日常企业编码任务的 MAI Code 2 和 MAI Code 2 Flash 两款编码模型。MAI Code 2 在四个常用基准平均下以 40% 的成本达到 GPT 6.1 Sol 98% 的性能、以 5% 的成本达到 Claude Opus 5.5 96% 的性能；盲测前端评测中 67% 的评审者更偏好其结果。 🔗 阅读原文 via AIHOT · https://aihot.news/items/c3qj65urfo345mc80xz5jdefb",
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (Microsoft AI：官方博客)",
       "category": "AI 模型"

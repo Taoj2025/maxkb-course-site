@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-18T04:03:01.468696+08:00",
+  "updated_at": "2026-11-18T04:33:01.895114+08:00",
   "total": 29,
   "items": [
     {
@@ -12,9 +12,9 @@
       "category": "AI 产品"
     },
     {
-      "title": "Microsoft MAI 发布七款新模型，主打低价高性能",
-      "link": "https://aihot.news/items/z9zhvfj8o8zp2yp433eizf3uk",
-      "summary": "Microsoft MAI 在 Ignite 2026 发布七款新模型，包括 MAI Cyber 2 Flash、MAI Code 2、MAI Code 2 Flash、MAI Image 2.7、MAI Realtime 1、Dragon Copilot Transcribe（基于 MAI Transcribe 2）和 Decision 1.1。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z9zhvfj8o8zp2yp433eizf3uk",
+      "title": "Microsoft AI 发布 MAI Code 2 与 MAI Code 2 Flash 编码模型",
+      "link": "https://aihot.news/items/c3qj65urfo345mc80xz5jdefb",
+      "summary": "Microsoft AI 在 Ignite 发布面向日常企业编码任务的 MAI Code 2 和 MAI Code 2 Flash 两款编码模型。MAI Code 2 在四个常用基准平均下以 40% 的成本达到 GPT 6.1 Sol 98% 的性能、以 5% 的成本达到 Claude Opus 5.5 96% 的性能；盲测前端评测中 67% 的评审者更偏好其结果。 🔗 阅读原文 via AIHOT · https://aihot.news/items/c3qj65urfo345mc80xz5jdefb",
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (Microsoft AI：官方博客)",
       "category": "AI 模型"
