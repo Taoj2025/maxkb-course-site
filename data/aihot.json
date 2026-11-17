@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-18T00:33:02.349310+08:00",
+  "updated_at": "2026-11-18T01:03:01.697944+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Jensen Huang 发声明回应离职风波并表态愿在董事会决定下回归 NVIDIA CEO",
+      "link": "https://aihot.news/items/usw3l00k4sgas3w8v3496sqaw",
+      "summary": "Jim Fan 转发并附 💚💚💚 FTW。Jensen Huang 发文感谢外界支持，承认个人生活中犯了严重错误、给董事会造成问题，并承诺配合董事会独立调查。他表示自离开以来收到员工、投资者、合作伙伴和客户的大量回归呼声，若董事会认为回归符合股东、员工、公司和美国的最佳利益，他将荣幸地回归 CEO 职位。 🔗 阅读原文 via AIHOT · https://aihot.news/items/usw3l00k4sgas3w8v3496sqaw",
+      "pub_date": "2026-11-17",
+      "author": "noreply@aihot.news (Jim Fan)",
+      "category": "行业动态"
+    },
     {
       "title": "Ed Zitron 长文解析 NVIDIA 泡沫：循环融资、渠道压货与芯片出口管制争议如何支撑AI行业",
       "link": "https://aihot.news/items/qubbawlazjl89lsosb25kr553",
@@ -18,6 +26,14 @@
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (公众号：可灵AI)",
       "category": "AI 模型"
+    },
+    {
+      "title": "Suno 发布 Visuals：为歌曲生成视频与图像",
+      "link": "https://aihot.news/items/yznmu3humymvshagrka95k1n1",
+      "summary": "Suno 发布新工具 Visuals，可基于库中的歌曲生成最长 15 秒的视频和图像，包括跟随歌曲节拍的歌词视频、专辑封面和照片改写的视频片段，模型会跟随歌曲结构、识别歌词并配合对口型，支持延展、编辑和文本重新提示。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yznmu3humymvshagrka95k1n1",
+      "pub_date": "2026-11-17",
+      "author": "noreply@aihot.news (Suno：Blog)",
+      "category": "AI 产品"
     },
     {
       "title": "Demis Hassabis 宣布为 Isomorphic Labs 融资 50 亿美元加速用 AI 研发新药",
@@ -386,22 +402,6 @@
       "pub_date": "2026-11-13",
       "author": "noreply@aihot.news (Lydia Hallie)",
       "category": "教程"
-    },
-    {
-      "title": "研究报告称中国最强 AI 模型使用了被禁出口的 Nvidia Blackwell 芯片训练",
-      "link": "https://aihot.news/items/q92ir58jcjtp3g9fn11jlb6ei",
-      "summary": "Will DePue 领导的非营利研究组织 Unemployment Labs 分析 DeepSeek、月之暗面、MiniMax 和蚂蚁集团开源模型权重，发现 Kimi K3 与 DeepSeek V4 等最受关注模型带有 Blackwell 芯片训练痕迹。 🔗 阅读原文 via AIHOT · https://aihot.news/items/q92ir58jcjtp3g9fn11jlb6ei",
-      "pub_date": "2026-11-13",
-      "author": "noreply@aihot.news (TechCrunch：AI)",
-      "category": "行业动态"
-    },
-    {
-      "title": "Sierra 发布 Personal Agent Protocol（Poppy）v1.0",
-      "link": "https://aihot.news/items/z4wsrxr1xmhg3lq3y0ouq5rmr",
-      "summary": "Sierra 宣布 Personal Agent Protocol（Poppy）v1.0 正式可用，该协议定义个人智能体如何通过企业智能体、网站和 API 与公司交互，主要基于 MCP、OpenAPI、UCP 等现有标准构建，认证通过 OAuth 由客户控制权限。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z4wsrxr1xmhg3lq3y0ouq5rmr",
-      "pub_date": "2026-11-13",
-      "author": "noreply@aihot.news (Sierra：Blog)",
-      "category": "AI 产品"
     }
   ]
 }

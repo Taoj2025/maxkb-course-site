@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-18T00:33:02.350214+08:00",
-  "total": 25,
+  "updated_at": "2026-11-18T01:03:01.698854+08:00",
+  "total": 23,
   "items": [
     {
       "title": "可灵 AI 发布 Kling Image 4.0 图像模型并开放 API",
@@ -186,22 +186,6 @@
       "pub_date": "2026-11-13",
       "author": "noreply@aihot.news (Lydia Hallie)",
       "category": "教程"
-    },
-    {
-      "title": "研究报告称中国最强 AI 模型使用了被禁出口的 Nvidia Blackwell 芯片训练",
-      "link": "https://aihot.news/items/q92ir58jcjtp3g9fn11jlb6ei",
-      "summary": "Will DePue 领导的非营利研究组织 Unemployment Labs 分析 DeepSeek、月之暗面、MiniMax 和蚂蚁集团开源模型权重，发现 Kimi K3 与 DeepSeek V4 等最受关注模型带有 Blackwell 芯片训练痕迹。 🔗 阅读原文 via AIHOT · https://aihot.news/items/q92ir58jcjtp3g9fn11jlb6ei",
-      "pub_date": "2026-11-13",
-      "author": "noreply@aihot.news (TechCrunch：AI)",
-      "category": "行业动态"
-    },
-    {
-      "title": "Sierra 发布 Personal Agent Protocol（Poppy）v1.0",
-      "link": "https://aihot.news/items/z4wsrxr1xmhg3lq3y0ouq5rmr",
-      "summary": "Sierra 宣布 Personal Agent Protocol（Poppy）v1.0 正式可用，该协议定义个人智能体如何通过企业智能体、网站和 API 与公司交互，主要基于 MCP、OpenAPI、UCP 等现有标准构建，认证通过 OAuth 由客户控制权限。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z4wsrxr1xmhg3lq3y0ouq5rmr",
-      "pub_date": "2026-11-13",
-      "author": "noreply@aihot.news (Sierra：Blog)",
-      "category": "AI 产品"
     }
   ]
 }
