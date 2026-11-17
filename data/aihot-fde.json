@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-18T03:33:02.141768+08:00",
-  "total": 28,
+  "updated_at": "2026-11-18T04:03:01.468696+08:00",
+  "total": 29,
   "items": [
     {
       "title": "Microsoft 在 Ignite 2026 发布 Copilot、Microsoft IQ、Agent 365 与 Cobalt 200 VMs 等全栈更新",
@@ -34,14 +34,6 @@
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (Replit：Blog)",
       "category": "AI 产品"
-    },
-    {
-      "title": "Artificial Analysis 评测 GPT-6.2 Astra 与 GPT-6.2 Sol：智能指数第二，编码代理无提升",
-      "link": "https://aihot.news/items/vop48ebueqjbpzs25hyrsi02m",
-      "summary": "Artificial Analysis 评测 OpenAI 新发布的 GPT-6.2 Astra 和 GPT-6.2 Sol：Astra 在 Artificial Analysis Intelligence Index 上涨 5 分至 62。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vop48ebueqjbpzs25hyrsi02m",
-      "pub_date": "2026-11-17",
-      "author": "noreply@aihot.news (Artificial Analysis)",
-      "category": "AI 模型"
     },
     {
       "title": "OpenAI 发布 GPT-6.2 Astra 与 GPT-6.2 Sol",
@@ -130,6 +122,22 @@
       "pub_date": "2026-11-16",
       "author": "noreply@aihot.news (Philipp Schmid)",
       "category": "教程"
+    },
+    {
+      "title": "Fireworks 评测 Kimi K3.1 Pro：智能体场景下该替换还是组合使用",
+      "link": "https://aihot.news/items/pyg0hznbolslrs5jxwhpkxals",
+      "summary": "Fireworks AI 基于 Specialized Intelligence Index 的 21 个基准榜单，从任务表现、模型成本和执行时间三方面评测 Kimi K3.1 Pro 是否适合替换现有智能体模型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/pyg0hznbolslrs5jxwhpkxals",
+      "pub_date": "2026-11-16",
+      "author": "noreply@aihot.news (Fireworks AI)",
+      "category": "论文"
+    },
+    {
+      "title": "Artificial Analysis 评测 GPT-6.2 Astra 和 Sol：智能指数升至第二",
+      "link": "https://aihot.news/items/m4ti1m7rs04pdy8067c1k0uas",
+      "summary": "Artificial Analysis 评测 OpenAI 发布的 GPT-6.2 Astra 和 GPT-6.2 Sol，两者在 Artificial Analysis Intelligence Index 中位列第二，仅次于 Claude Fable 5.2。 🔗 阅读原文 via AIHOT · https://aihot.news/items/m4ti1m7rs04pdy8067c1k0uas",
+      "pub_date": "2026-11-16",
+      "author": "noreply@aihot.news (Artificial Analysis 完整文章)",
+      "category": "AI 模型"
     },
     {
       "title": "Google 发布 Gemini 4 Carbon 与 Hydrogen，并推出 Decisions API 和自托管 agent 沙箱",
