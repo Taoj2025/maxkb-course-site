@@ -1,8 +1,24 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-18T05:03:01.829794+08:00",
+  "updated_at": "2026-11-18T05:33:01.810469+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "WSJ 报道 SEC 对 Nvidia 披露问题启动民事调查，恰逢 CEO 黄仁勋离任",
+      "link": "https://aihot.news/items/ko07avibxdjfqycfyj5i04c0e",
+      "summary": "据 WSJ，SEC 正以民事调查核实 Nvidia 的披露是否误导投资者，图片中的 WSJ 标题显示此事发生于 CEO 黄仁勋离任之际。Nvidia 在截至 2025 年 7 月的季度后停止单独披露新加坡收入，该季度新加坡账单达 $10.2B、占总数 22%，公司称客户通过新加坡开票而芯片几乎都发往别处。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ko07avibxdjfqycfyj5i04c0e",
+      "pub_date": "2026-11-17",
+      "author": "noreply@aihot.news (Rohan Paul)",
+      "category": "行业动态"
+    },
+    {
+      "title": "Claude Code 推出实验性 Code Mode 工具调用方式",
+      "link": "https://aihot.news/items/z3n160k1v5vsc90udwjd8x7pp",
+      "summary": "Claude Code 推出实验性 Code Mode，一种新的工具使用方式：Claude 会编写脚本以复杂方式串联多个工具，并能在长命令仍在运行时回复用户。可通过设置环境变量 CLAUDE_CODE_EXPERIMENTAL_CODE_MODE=1 开启，文档见 http://code.claude.com/docs/en/code-mode。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z3n160k1v5vsc90udwjd8x7pp",
+      "pub_date": "2026-11-17",
+      "author": "noreply@aihot.news (Claude Devs)",
+      "category": "AI 产品"
+    },
     {
       "title": "OpenClaw 上线 OpenAI GPT-6.2 Astra 和 Sol 模型",
       "link": "https://aihot.news/items/e4x7s78pcoe8yhieqmns68q0g",
@@ -12,9 +28,9 @@
       "category": "AI 产品"
     },
     {
-      "title": "Microsoft 在 Ignite 2026 发布 Copilot、Microsoft IQ、Agent 365 与 Cobalt 200 VMs 等全栈更新",
+      "title": "Microsoft Ignite 2026：Copilot 新形态、Microsoft IQ、Agent 365 与 Cobalt 200 VMs 等多项发布",
       "link": "https://aihot.news/items/jj0ftew61l69qvcrmww6gcxjt",
-      "summary": "Microsoft CEO Satya Nadella 在 Ignite 2026 开幕主题演讲中发布 frontier 生态系列更新：Copilot 定位为工作操作系统。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jj0ftew61l69qvcrmww6gcxjt",
+      "summary": "Satya Nadella 在 Ignite 2026 开幕主题演讲中宣布构建 frontier 生态的多项产品更新。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jj0ftew61l69qvcrmww6gcxjt",
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (Microsoft：Official Blog)",
       "category": "AI 产品"
@@ -28,17 +44,25 @@
       "category": "AI 模型"
     },
     {
-      "title": "Microsoft MAI 发布七款新模型，主打高性价比",
+      "title": "Microsoft MAI 发布七款新模型，主打极致性价比",
       "link": "https://aihot.news/items/z9zhvfj8o8zp2yp433eizf3uk",
-      "summary": "Microsoft MAI 在 Ignite 2026 发布七款新模型，定位以更低价格提供接近前沿的性能。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z9zhvfj8o8zp2yp433eizf3uk",
+      "summary": "Microsoft MAI 在 Ignite 2026 发布七款新模型。MAI Code 2 在四个编码基准平均达到 GPT-6.1 Sol 98% 的性能、价格约 40%，达到 Claude Opus 5.5 的 96% 性能、价格仅 5%；MAI Cyber 2 Flash 在 CyberGymE2E 上以不到 2% 的单任务成本匹配 GPT-6 Astra。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z9zhvfj8o8zp2yp433eizf3uk",
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (Microsoft AI：官方博客)",
       "category": "AI 模型"
     },
     {
-      "title": "Microsoft AI 发布 MAI Code 2 与 MAI Code 2 Flash 编码模型",
+      "title": "Microsoft AI 发布 MAI Code 2 与 Code 2 Flash 编码模型",
       "link": "https://aihot.news/items/c3qj65urfo345mc80xz5jdefb",
-      "summary": "Microsoft AI 在 Ignite 发布面向日常企业编码任务的 MAI Code 2 和 MAI Code 2 Flash 两款编码模型。MAI Code 2 在四个常用基准平均下以 40% 的成本达到 GPT 6.1 Sol 98% 的性能、以 5% 的成本达到 Claude Opus 5.5 96% 的性能；盲测前端评测中 67% 的评审者更偏好其结果。 🔗 阅读原文 via AIHOT · https://aihot.news/items/c3qj65urfo345mc80xz5jdefb",
+      "summary": "Microsoft AI 在 Ignite 发布两款面向日常企业编码任务的模型 MAI Code 2 和 MAI Code 2 Flash。 🔗 阅读原文 via AIHOT · https://aihot.news/items/c3qj65urfo345mc80xz5jdefb",
+      "pub_date": "2026-11-17",
+      "author": "noreply@aihot.news (Microsoft AI：官方博客)",
+      "category": "AI 模型"
+    },
+    {
+      "title": "Microsoft Ignite 2026：MAI 发布多款模型并推出 Licensed Weights 可控权重方案",
+      "link": "https://aihot.news/items/y7f42y59ahf4hjlf4ptoprfq3",
+      "summary": "微软 MAI 在 Ignite 2026 主题演讲中发布一系列强调性价比的模型，并推出 MAI Licensed Weights，可定制后在自己的 Azure 环境中运行、掌控权重与数据。 🔗 阅读原文 via AIHOT · https://aihot.news/items/y7f42y59ahf4hjlf4ptoprfq3",
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (Microsoft AI：官方博客)",
       "category": "AI 模型"
@@ -378,30 +402,6 @@
       "pub_date": "2026-11-16",
       "author": "noreply@aihot.news (Conductor 官方更新)",
       "category": "AI 产品"
-    },
-    {
-      "title": "AI 手搓的 1.4M 纯 HTML 3D 游戏走红，卡兹克拆解 Three.js 程序化生成原理并给出提示词模板",
-      "link": "https://aihot.news/items/izdx1kuppob6c65ghvmyeal38",
-      "summary": "作者拆解了近期在群里疯传的 1.4M 纯 HTML 3D 游戏，指出其中约 700KB 是打包进文件的 Three.js，其余全部由代码程序化生成，没有图片、模型和录音。 🔗 阅读原文 via AIHOT · https://aihot.news/items/izdx1kuppob6c65ghvmyeal38",
-      "pub_date": "2026-11-15",
-      "author": "noreply@aihot.news (公众号：数字生命卡兹克)",
-      "category": "教程"
-    },
-    {
-      "title": "METR 测量模型对对齐评测的识别能力：调查型智能体能区分对齐与能力评测",
-      "link": "https://aihot.news/items/m4emm1ej7qzex1k77a7mfaztd",
-      "summary": "METR 发布研究笔记，用调查型智能体在 19 个对齐评测和 36 个能力评测中探测环境，测量模型能否识别自己处于对齐评测。结果显示智能体区分两类评测的能力在过去一年持续提升，Opus 5.5 在其数据集上把所有对齐评测排在所有能力评测之上。模型识别依据包括环境看起来像模拟的蜜罐等线索，作者将对齐线索分为环境级和任务级两类，并提出可借此迭代改进对齐评测设计。 🔗 阅读原文 via AIHOT · https://aihot.news/items/m4emm1ej7qzex1k77a7mfaztd",
-      "pub_date": "2026-11-15",
-      "author": "noreply@aihot.news (METR：Notes)",
-      "category": "论文"
-    },
-    {
-      "title": "Anthropic 缩短协同漏洞披露政策时限",
-      "link": "https://aihot.news/items/hlcy3o9sbfz920grc9b6p86re",
-      "summary": "Anthropic 更新其协同漏洞披露（CVD）政策，将高危及严重漏洞的披露窗口从 90 天缩短至 30 天，其他问题缩短至 45 天，适用于 2027 年 1 月 1 日或之后报告给供应商的漏洞。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hlcy3o9sbfz920grc9b6p86re",
-      "pub_date": "2026-11-15",
-      "author": "noreply@aihot.news (Anthropic：Research)",
-      "category": "行业动态"
     }
   ]
 }
