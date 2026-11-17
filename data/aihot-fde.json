@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-18T00:03:02.190642+08:00",
-  "total": 26,
+  "updated_at": "2026-11-18T00:33:02.350214+08:00",
+  "total": 25,
   "items": [
     {
       "title": "可灵 AI 发布 Kling Image 4.0 图像模型并开放 API",
@@ -201,14 +201,6 @@
       "summary": "Sierra 宣布 Personal Agent Protocol（Poppy）v1.0 正式可用，该协议定义个人智能体如何通过企业智能体、网站和 API 与公司交互，主要基于 MCP、OpenAPI、UCP 等现有标准构建，认证通过 OAuth 由客户控制权限。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z4wsrxr1xmhg3lq3y0ouq5rmr",
       "pub_date": "2026-11-13",
       "author": "noreply@aihot.news (Sierra：Blog)",
-      "category": "AI 产品"
-    },
-    {
-      "title": "ChatGPT 推出 ChatGPT Wallet，dot 可在用户批准下代为完成购买",
-      "link": "https://aihot.news/items/vot1htumxjgnb0i88rbq3zsuq",
-      "summary": "ChatGPT 官方账号宣布推出 ChatGPT Wallet，dot 可在用户批准下安全地代用户完成购买。智能体支付时不会接触用户的实际卡号信息，每笔购买都需要通过安全检查。该功能即日起在美国向 Pro 订阅用户的 dot 推出，详情见 https://openai.com/index/introducing-chatgpt-wallet/。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vot1htumxjgnb0i88rbq3zsuq",
-      "pub_date": "2026-11-13",
-      "author": "noreply@aihot.news (ChatGPT)",
       "category": "AI 产品"
     }
   ]
