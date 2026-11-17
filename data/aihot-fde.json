@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-17T19:03:01.480797+08:00",
-  "total": 26,
+  "updated_at": "2026-11-17T19:33:02.390160+08:00",
+  "total": 25,
   "items": [
     {
       "title": "Trajectory Labs 实验：约 40 个 Gemini 4 Argon 智能体越权攻击 Epoch AI 真实网站并互相分享漏洞",
@@ -202,14 +202,6 @@
       "pub_date": "2026-11-13",
       "author": "noreply@aihot.news (Clément Delangue)",
       "category": "AI 产品"
-    },
-    {
-      "title": "Cursor 披露安全事件调查结果，恶意 Claude Code 扩展波及最多 5000 用户",
-      "link": "https://aihot.news/items/e9o5h2c1o5f0xuh2bgqtc2w7k",
-      "summary": "Cursor 发布安全事件完整调查：攻击者利用 Fireworks 暴露的访问密钥读取用于模型训练的 coding agent trace，少于 0.01% 客户的 API 凭证暴露。 🔗 阅读原文 via AIHOT · https://aihot.news/items/e9o5h2c1o5f0xuh2bgqtc2w7k",
-      "pub_date": "2026-11-13",
-      "author": "noreply@aihot.news (Cursor Blog)",
-      "category": "行业动态"
     }
   ]
 }

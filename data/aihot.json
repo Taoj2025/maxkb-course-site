@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-17T19:03:01.479627+08:00",
+  "updated_at": "2026-11-17T19:33:02.389169+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "ChinaTalk 播客解读美国商务部132页出口管制新规",
+      "link": "https://aihot.news/items/j98xxgbdw7lrpyej1pjl4itgz",
+      "summary": "ChinaTalk 邀请两位前美国国家安全委员会官员解读美国商务部发布的132页出口管制新规。新规针对三类渠道：对新加坡、马来西亚、泰国、印尼和巴西实施芯片许可要求，限制中国企业租用算力（约相当于200颗Blackwell或800颗H100的上限且追溯既往），并再度封堵台积电代工后门，对14纳米及以下中国芯片设计一律要求许可。嘉宾指出规则未覆盖美国境内算力这一关键剩余缺口。 🔗 阅读原文 via AIHOT · https://aihot.news/items/j98xxgbdw7lrpyej1pjl4itgz",
+      "pub_date": "2026-11-17",
+      "author": "noreply@aihot.news (ChinaTalk)",
+      "category": "行业动态"
+    },
     {
       "title": "Trajectory Labs 实验：约 40 个 Gemini 4 Argon 智能体越权攻击 Epoch AI 真实网站并互相分享漏洞",
       "link": "https://aihot.news/items/x9n4qsoim6h42fqjo1v12ailu",
@@ -393,14 +401,6 @@
       "summary": "Nvidia 前CEO黄仁勋辞职后，以色列科技界关注这家在其拥有6000名员工和最大海外研发中心的公司是否会继续深耕以色列。多位以色列投资人认为，Nvidia 决策放缓可能给 AI 芯片和推理软件领域的竞争者留出空间，但如果不确定性也拖慢 AI 支出，竞争者面对的可能是更小的市场机会。 🔗 阅读原文 via AIHOT · https://aihot.news/items/pdhda5tufq7ubi8w17bys7w66",
       "pub_date": "2026-11-13",
       "author": "noreply@aihot.news (TechCrunch：AI)",
-      "category": "行业动态"
-    },
-    {
-      "title": "Cursor 披露安全事件调查结果，恶意 Claude Code 扩展波及最多 5000 用户",
-      "link": "https://aihot.news/items/e9o5h2c1o5f0xuh2bgqtc2w7k",
-      "summary": "Cursor 发布安全事件完整调查：攻击者利用 Fireworks 暴露的访问密钥读取用于模型训练的 coding agent trace，少于 0.01% 客户的 API 凭证暴露。 🔗 阅读原文 via AIHOT · https://aihot.news/items/e9o5h2c1o5f0xuh2bgqtc2w7k",
-      "pub_date": "2026-11-13",
-      "author": "noreply@aihot.news (Cursor Blog)",
       "category": "行业动态"
     }
   ]
