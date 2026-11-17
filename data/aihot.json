@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-18T06:03:02.328511+08:00",
+  "updated_at": "2026-11-18T06:33:02.072874+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Perplexity 上线 GPT-6.2 Astra 和 GPT-6.2 Sol，并公布 WANDR 基准成绩",
+      "link": "https://aihot.news/items/zy931jr86bk2nk5cv8ww6seah",
+      "summary": "Perplexity 宣布 GPT-6.2 Astra 和 GPT-6.2 Sol 已在 Perplexity Search 和 Computer 中可用。在其 WANDR 基准上，GPT-6.2 Astra 得分 0.783、单任务约 $12.54，较 GPT-6 Astra 提升 0.095；GPT-6.2 Sol 得分 0.746、约 $2.65，较 GPT-6.1 Sol 提升 0.065。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zy931jr86bk2nk5cv8ww6seah",
+      "pub_date": "2026-11-17",
+      "author": "noreply@aihot.news (Perplexity)",
+      "category": "AI 模型"
+    },
     {
       "title": "OpenClaw 的 Sign in with ChatGPT 结束测试，支持 ChatGPT Business 及 GPT-6.2 Astra 与 Sol",
       "link": "https://aihot.news/items/fatxhu2tz1d0g2g8412axx3k5",
@@ -68,9 +76,9 @@
       "category": "AI 模型"
     },
     {
-      "title": "Microsoft AI 发布 MAI Code 2 与 Code 2 Flash 编码模型",
+      "title": "Microsoft AI 发布 MAI Code 2 与 MAI Code 2 Flash 编码模型",
       "link": "https://aihot.news/items/c3qj65urfo345mc80xz5jdefb",
-      "summary": "Microsoft AI 在 Ignite 发布两款面向日常企业编码任务的模型 MAI Code 2 和 MAI Code 2 Flash。 🔗 阅读原文 via AIHOT · https://aihot.news/items/c3qj65urfo345mc80xz5jdefb",
+      "summary": "Microsoft AI 在 Ignite 发布面向日常企业编码任务的 MAI Code 2 和 MAI Code 2 Flash。据官方基准平均，MAI Code 2 以 40% 的成本达到 GPT 6.1 Sol 98% 的性能，以 5% 的成本达到 Claude Opus 5.5 96% 的性能；盲测前端评审中 64% 偏好其结果。 🔗 阅读原文 via AIHOT · https://aihot.news/items/c3qj65urfo345mc80xz5jdefb",
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (Microsoft AI：官方博客)",
       "category": "AI 模型"
@@ -393,14 +401,6 @@
       "summary": "Arena 榜单显示 Qwen4-Max 以 +7.5% 净提升在 Agent Arena 总排名第14，成为第一中国模型，使 Alibaba 成为排名第一的中国实验室、总榜第5，仅次于 Anthropic、Google、OpenAI 和 Meta。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kzt8bjcin243qefkuiq49c2i6",
       "pub_date": "2026-11-16",
       "author": "noreply@aihot.news (Arena)",
-      "category": "AI 模型"
-    },
-    {
-      "title": "Qwen 发布 Qwen4-Max：2.4T 参数骨干、百万 token 上下文与长程智能体能力",
-      "link": "https://aihot.news/items/nqcfrkilrh7nhnpd03t9q1zfh",
-      "summary": "Qwen 团队发布 Qwen4-Max，基于新 Qwen4 架构，拥有 2.4T 骨干参数、每 token 激活 71B、328B N-gram Embedding 参数，具备原生视觉能力和 100 万 token 上下文窗口。 🔗 阅读原文 via AIHOT · https://aihot.news/items/nqcfrkilrh7nhnpd03t9q1zfh",
-      "pub_date": "2026-11-16",
-      "author": "noreply@aihot.news (Qwen：Blog Retrieval)",
       "category": "AI 模型"
     }
   ]

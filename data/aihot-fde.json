@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-18T06:03:02.329824+08:00",
-  "total": 27,
+  "updated_at": "2026-11-18T06:33:02.073846+08:00",
+  "total": 26,
   "items": [
     {
       "title": "Nvidia Q3 财报：季度营收 1158 亿美元，利润 653 亿美元创新高",
@@ -209,14 +209,6 @@
       "summary": "Arena 榜单显示 Qwen4-Max 以 +7.5% 净提升在 Agent Arena 总排名第14，成为第一中国模型，使 Alibaba 成为排名第一的中国实验室、总榜第5，仅次于 Anthropic、Google、OpenAI 和 Meta。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kzt8bjcin243qefkuiq49c2i6",
       "pub_date": "2026-11-16",
       "author": "noreply@aihot.news (Arena)",
-      "category": "AI 模型"
-    },
-    {
-      "title": "Qwen 发布 Qwen4-Max：2.4T 参数骨干、百万 token 上下文与长程智能体能力",
-      "link": "https://aihot.news/items/nqcfrkilrh7nhnpd03t9q1zfh",
-      "summary": "Qwen 团队发布 Qwen4-Max，基于新 Qwen4 架构，拥有 2.4T 骨干参数、每 token 激活 71B、328B N-gram Embedding 参数，具备原生视觉能力和 100 万 token 上下文窗口。 🔗 阅读原文 via AIHOT · https://aihot.news/items/nqcfrkilrh7nhnpd03t9q1zfh",
-      "pub_date": "2026-11-16",
-      "author": "noreply@aihot.news (Qwen：Blog Retrieval)",
       "category": "AI 模型"
     }
   ]
