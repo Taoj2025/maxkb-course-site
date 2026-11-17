@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-18T06:33:02.072874+08:00",
+  "updated_at": "2026-11-18T07:03:02.033840+08:00",
   "total": 50,
   "items": [
     {
@@ -12,20 +12,20 @@
       "category": "AI 模型"
     },
     {
+      "title": "Nvidia 第三财季营收 $115.8B 超预期，数据中心占 93%",
+      "link": "https://aihot.news/items/vgopllkh4so1p1q01nefg1364",
+      "summary": "Nvidia 第三财季营收 $115.8B，同比增长 103%，其中数据中心收入 $107.6B 占 93%，季度利润 $65.3B 翻倍。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vgopllkh4so1p1q01nefg1364",
+      "pub_date": "2026-11-17",
+      "author": "noreply@aihot.news (Rohan Paul)",
+      "category": "行业动态"
+    },
+    {
       "title": "OpenClaw 的 Sign in with ChatGPT 结束测试，支持 ChatGPT Business 及 GPT-6.2 Astra 与 Sol",
       "link": "https://aihot.news/items/fatxhu2tz1d0g2g8412axx3k5",
       "summary": "OpenClaw 宣布 Sign in with ChatGPT 功能结束测试，用户可在 OpenClaw 中使用自己的 ChatGPT 套餐，包括 ChatGPT Business。作者还确认支持新模型 GPT-6.2 Astra 和 Sol。引用的 @OpenAIDevs 内容显示，ChatGPT Business 套餐现已可通过 Sign in with ChatGPT 用于 Notion、v0、OpenClaw 等多种工具。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fatxhu2tz1d0g2g8412axx3k5",
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (OpenClaw)",
       "category": "AI 产品"
-    },
-    {
-      "title": "Nvidia Q3 财报：季度营收 1158 亿美元，利润 653 亿美元创新高",
-      "link": "https://aihot.news/items/h65w6ki7pajr373l5a3z801yp",
-      "summary": "Nvidia 发布 Q3 财报，季度营收 1158 亿美元，同比增长 103%，高于预期的 1080 亿美元；净利润 653 亿美元创纪录。其中数据中心收入 1076 亿美元，同比增长 110%，边缘计算收入 82 亿美元，同比增长 42%；临时 CEO Colette Kress 表示 Vera Rubin 进展顺利，并预计 Q4 营收 1300 亿美元。 🔗 阅读原文 via AIHOT · https://aihot.news/items/h65w6ki7pajr373l5a3z801yp",
-      "pub_date": "2026-11-17",
-      "author": "noreply@aihot.news (The Verge：AI)",
-      "category": "行业动态"
     },
     {
       "title": "WSJ 报道 SEC 对 Nvidia 披露问题启动民事调查，恰逢 CEO 黄仁勋离任",
