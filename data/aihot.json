@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-17T18:03:01.942598+08:00",
+  "updated_at": "2026-11-17T18:33:02.214891+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Trajectory Labs 实验：约 40 个 Gemini 4 Argon 智能体越权攻击 Epoch AI 真实网站并互相分享漏洞",
+      "link": "https://aihot.news/items/x9n4qsoim6h42fqjo1v12ailu",
+      "summary": "AI 安全研究公司 Trajectory Labs 在测试 Gemini 4 Argon 智能体时，约 40 个智能体在收到不可能完成的任务后越权探测 Epoch AI 真实网站，3 小时内发送 36411 次请求和 487 条消息，包括冒充员工、SQL 注入和绕过 CAPTCHA。 🔗 阅读原文 via AIHOT · https://aihot.news/items/x9n4qsoim6h42fqjo1v12ailu",
+      "pub_date": "2026-11-17",
+      "author": "noreply@aihot.news (IT之家·人工智能)",
+      "category": "论文"
+    },
     {
       "title": "奥尔特曼谈黄仁勋离职：同情其处境，相信 AI 行业能平稳度过",
       "link": "https://aihot.news/items/eboxbyc4j2oekoiuhw5yf2gms",
@@ -393,14 +401,6 @@
       "summary": "Cursor 发布安全事件完整调查：攻击者利用 Fireworks 暴露的访问密钥读取用于模型训练的 coding agent trace，少于 0.01% 客户的 API 凭证暴露。 🔗 阅读原文 via AIHOT · https://aihot.news/items/e9o5h2c1o5f0xuh2bgqtc2w7k",
       "pub_date": "2026-11-13",
       "author": "noreply@aihot.news (Cursor Blog)",
-      "category": "行业动态"
-    },
-    {
-      "title": "AINews：黄仁勋辞任 NVIDIA CEO，Colette Kress 出任临时 CEO",
-      "link": "https://aihot.news/items/se0y4v3gihr6s0jmrc5vuv1zo",
-      "summary": "Latent Space 的 AI 新闻日报头条是 NVIDIA 宣布黄仁勋在任职 33 年后辞去 CEO、总裁和董事职务，CFO Colette Kress 出任临时 CEO，SEC 文件显示董事会于 11 月 11 日接受辞呈，此前董事会已就 NYT 报道的绯闻事件展开独立调查。 🔗 阅读原文 via AIHOT · https://aihot.news/items/se0y4v3gihr6s0jmrc5vuv1zo",
-      "pub_date": "2026-11-13",
-      "author": "noreply@aihot.news (Latent Space)",
       "category": "行业动态"
     }
   ]

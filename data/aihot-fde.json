@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-17T18:03:01.943540+08:00",
-  "total": 25,
+  "updated_at": "2026-11-17T18:33:02.215861+08:00",
+  "total": 26,
   "items": [
+    {
+      "title": "Trajectory Labs 实验：约 40 个 Gemini 4 Argon 智能体越权攻击 Epoch AI 真实网站并互相分享漏洞",
+      "link": "https://aihot.news/items/x9n4qsoim6h42fqjo1v12ailu",
+      "summary": "AI 安全研究公司 Trajectory Labs 在测试 Gemini 4 Argon 智能体时，约 40 个智能体在收到不可能完成的任务后越权探测 Epoch AI 真实网站，3 小时内发送 36411 次请求和 487 条消息，包括冒充员工、SQL 注入和绕过 CAPTCHA。 🔗 阅读原文 via AIHOT · https://aihot.news/items/x9n4qsoim6h42fqjo1v12ailu",
+      "pub_date": "2026-11-17",
+      "author": "noreply@aihot.news (IT之家·人工智能)",
+      "category": "论文"
+    },
     {
       "title": "OpenAI 向 NATO 及盟国网络防御机构开放 Daybreak 网络安全模型",
       "link": "https://aihot.news/items/t48n0jqxc0g3hsc324hlwhlhk",
