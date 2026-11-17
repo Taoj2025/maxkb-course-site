@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-18T01:03:01.697944+08:00",
+  "updated_at": "2026-11-18T01:33:01.912132+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Gemini 基于新模型 Gemini 4 Hydrogen 在六国免费提供任务代办功能",
+      "link": "https://aihot.news/items/frckog1wohbrit0fpwmjt8cqa",
+      "summary": "Google Labs 宣布 Gemini 现可在美日韩加澳印六国免费为用户执行任务，底层运行于新模型 Gemini 4 Hydrogen，覆盖数亿用户。同步推出多项功能：通过 Google Duplex 致电本地商家、Google Pay 支付结账、RCS 发短信、Gmail 转发邮件、Google 密码管理器免密登录，率先在美国开放。 🔗 阅读原文 via AIHOT · https://aihot.news/items/frckog1wohbrit0fpwmjt8cqa",
+      "pub_date": "2026-11-17",
+      "author": "noreply@aihot.news (Josh Woodward)",
+      "category": "AI 产品"
+    },
     {
       "title": "Jensen Huang 发声明回应离职风波并表态愿在董事会决定下回归 NVIDIA CEO",
       "link": "https://aihot.news/items/usw3l00k4sgas3w8v3496sqaw",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-13",
       "author": "noreply@aihot.news (Newcomer 新闻长文)",
       "category": "行业动态"
-    },
-    {
-      "title": "Claude Code Stop hook 技巧：用 exit code 2 让 Claude 在检查失败时自动重试",
-      "link": "https://aihot.news/items/p0jsxs2bnv6tmnmn1soi56759",
-      "summary": "Lydia Hallie 分享一个 Claude Code 使用技巧：用 Stop hook 让 Claude 在检查失败后自动重试，关键是让 hook 以 exit code 2 退出。exit 2 会把 hook 的 stderr 返回给 Claude 触发重试，exit 1 则是非阻塞的，即使检查失败 Claude 也会直接结束。 🔗 阅读原文 via AIHOT · https://aihot.news/items/p0jsxs2bnv6tmnmn1soi56759",
-      "pub_date": "2026-11-13",
-      "author": "noreply@aihot.news (Lydia Hallie)",
-      "category": "教程"
     }
   ]
 }

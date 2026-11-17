@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-18T01:03:01.698854+08:00",
-  "total": 23,
+  "updated_at": "2026-11-18T01:33:01.913059+08:00",
+  "total": 22,
   "items": [
     {
       "title": "可灵 AI 发布 Kling Image 4.0 图像模型并开放 API",
@@ -178,14 +178,6 @@
       "pub_date": "2026-11-14",
       "author": "noreply@aihot.news (Nathan Lambert：Interconnects)",
       "category": "观点"
-    },
-    {
-      "title": "Claude Code Stop hook 技巧：用 exit code 2 让 Claude 在检查失败时自动重试",
-      "link": "https://aihot.news/items/p0jsxs2bnv6tmnmn1soi56759",
-      "summary": "Lydia Hallie 分享一个 Claude Code 使用技巧：用 Stop hook 让 Claude 在检查失败后自动重试，关键是让 hook 以 exit code 2 退出。exit 2 会把 hook 的 stderr 返回给 Claude 触发重试，exit 1 则是非阻塞的，即使检查失败 Claude 也会直接结束。 🔗 阅读原文 via AIHOT · https://aihot.news/items/p0jsxs2bnv6tmnmn1soi56759",
-      "pub_date": "2026-11-13",
-      "author": "noreply@aihot.news (Lydia Hallie)",
-      "category": "教程"
     }
   ]
 }
