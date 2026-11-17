@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-17T23:03:02.182750+08:00",
+  "updated_at": "2026-11-17T23:33:02.410105+08:00",
   "total": 25,
   "items": [
+    {
+      "title": "可灵 AI 发布 Kling Image 4.0 图像模型并开放 API",
+      "link": "https://aihot.news/items/e871ammlz8gpx1oozsswidzt0",
+      "summary": "快手可灵 AI 发布新一代图像创作模型 Kling Image 4.0，现已全量上线并面向企业客户与开发者开放 API。模型采用「理解生成统一」架构，首次支持原生 8K 图像生成，内置 110+ 种预设影调风格和 70+ 种商用字体，支持最高 15000 tokens 文本输入、单图最多生成 2000 字，以及一次描述生成最多 10 张风格连贯的组图和电商详情页等超长画幅长图。 🔗 阅读原文 via AIHOT · https://aihot.news/items/e871ammlz8gpx1oozsswidzt0",
+      "pub_date": "2026-11-17",
+      "author": "noreply@aihot.news (公众号：可灵AI)",
+      "category": "AI 模型"
+    },
     {
       "title": "Trajectory Labs 实验：约 40 个 Gemini 4 Argon 智能体越权攻击 Epoch AI 真实网站并互相分享漏洞",
       "link": "https://aihot.news/items/x9n4qsoim6h42fqjo1v12ailu",
@@ -193,14 +201,6 @@
       "summary": "ChatGPT 官方账号宣布推出 ChatGPT Wallet，dot 可在用户批准下安全地代用户完成购买。智能体支付时不会接触用户的实际卡号信息，每笔购买都需要通过安全检查。该功能即日起在美国向 Pro 订阅用户的 dot 推出，详情见 https://openai.com/index/introducing-chatgpt-wallet/。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vot1htumxjgnb0i88rbq3zsuq",
       "pub_date": "2026-11-13",
       "author": "noreply@aihot.news (ChatGPT)",
-      "category": "AI 产品"
-    },
-    {
-      "title": "llama.cpp v1.0.0 发布，本地运行 AI 模型迎来首个稳定大版本",
-      "link": "https://aihot.news/items/um8pmpa91qn1ymvx3pux0sq1x",
-      "summary": "Hugging Face CEO Clément Delangue 与 @ggerganov 宣布 llama.cpp v1.0.0 发布，这是这个最常用的本地运行 AI 模型库的首个完全稳定大版本。作者称用户可在手机、笔记本和工作站上免费掌控自己的智能，不向任何人发送数据，并承诺支持所有硬件、平台和模型类型，让 AI 分布式而非集中于少数硅谷机构。 🔗 阅读原文 via AIHOT · https://aihot.news/items/um8pmpa91qn1ymvx3pux0sq1x",
-      "pub_date": "2026-11-13",
-      "author": "noreply@aihot.news (Clément Delangue)",
       "category": "AI 产品"
     }
   ]

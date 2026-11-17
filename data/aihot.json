@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-17T23:03:02.181767+08:00",
+  "updated_at": "2026-11-17T23:33:02.408740+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "可灵 AI 发布 Kling Image 4.0 图像模型并开放 API",
+      "link": "https://aihot.news/items/e871ammlz8gpx1oozsswidzt0",
+      "summary": "快手可灵 AI 发布新一代图像创作模型 Kling Image 4.0，现已全量上线并面向企业客户与开发者开放 API。模型采用「理解生成统一」架构，首次支持原生 8K 图像生成，内置 110+ 种预设影调风格和 70+ 种商用字体，支持最高 15000 tokens 文本输入、单图最多生成 2000 字，以及一次描述生成最多 10 张风格连贯的组图和电商详情页等超长画幅长图。 🔗 阅读原文 via AIHOT · https://aihot.news/items/e871ammlz8gpx1oozsswidzt0",
+      "pub_date": "2026-11-17",
+      "author": "noreply@aihot.news (公众号：可灵AI)",
+      "category": "AI 模型"
+    },
     {
       "title": "Demis Hassabis 宣布为 Isomorphic Labs 融资 50 亿美元加速用 AI 研发新药",
       "link": "https://aihot.news/items/ghf2artn1fbufdzuznga797jb",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-13",
       "author": "noreply@aihot.news (Anthropic)",
       "category": "行业动态"
-    },
-    {
-      "title": "llama.cpp v1.0.0 发布，本地运行 AI 模型迎来首个稳定大版本",
-      "link": "https://aihot.news/items/um8pmpa91qn1ymvx3pux0sq1x",
-      "summary": "Hugging Face CEO Clément Delangue 与 @ggerganov 宣布 llama.cpp v1.0.0 发布，这是这个最常用的本地运行 AI 模型库的首个完全稳定大版本。作者称用户可在手机、笔记本和工作站上免费掌控自己的智能，不向任何人发送数据，并承诺支持所有硬件、平台和模型类型，让 AI 分布式而非集中于少数硅谷机构。 🔗 阅读原文 via AIHOT · https://aihot.news/items/um8pmpa91qn1ymvx3pux0sq1x",
-      "pub_date": "2026-11-13",
-      "author": "noreply@aihot.news (Clément Delangue)",
-      "category": "AI 产品"
     }
   ]
 }
