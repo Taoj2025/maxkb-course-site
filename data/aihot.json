@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-17T09:33:02.290378+08:00",
+  "updated_at": "2026-11-17T10:03:02.311752+08:00",
   "total": 50,
   "items": [
     {
@@ -12,9 +12,9 @@
       "category": "观点"
     },
     {
-      "title": "科技界人士质疑英伟达CEO辞职背后存在针对其的阴谋",
+      "title": "科技界人士质疑黄仁勋辞职背后存在针对其的谋划",
       "link": "https://aihot.news/items/ahjzxmo93fzc4psaftffvb3rx",
-      "summary": "英伟达CEO黄仁勋在任职超过33年后辞职，引发科技界震动。多位科技界人士呼吁其复职，并传播辞职背后存在针对他的阴谋的说法。有风投人士引用媒体报道质疑《纽约时报》关于某前高管是中国间谍的说法尚未获美国政府证实；半导体行业分析机构则猜测此举或与强化AI出口管制的立法有关。超过18.5万人签署公开信呼吁黄仁勋复职。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ahjzxmo93fzc4psaftffvb3rx",
+      "summary": "The Verge 报道，黄仁勋在英伟达任职超过33年后辞职，硅谷多位知名人物呼吁其复职，并流传这是针对他的谋划的说法。Epic Games CEO Tim Sweeney、Replit CEO Amjad Masad 等对辞职时机表示质疑，超过18.5万人签署&apos;与黄仁勋站在一起&apos;的公开信，要求其复职并彻查辞职相关情况。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ahjzxmo93fzc4psaftffvb3rx",
       "pub_date": "2026-11-16",
       "author": "noreply@aihot.news (The Verge：AI)",
       "category": "行业动态"
@@ -194,6 +194,14 @@
       "pub_date": "2026-11-16",
       "author": "noreply@aihot.news (Hugging Face 官方团队博客)",
       "category": "行业动态"
+    },
+    {
+      "title": "Conductor 0.95.0 发布：本地工作区 Agent 可启动和管理其他 Agent",
+      "link": "https://aihot.news/items/o5vy2ohp1gixm197jxdmrtorl",
+      "summary": "Conductor 发布 0.95.0 更新，本地工作区中的 Agent 现在可以创建工作区、启动其他 Agent 并等待回复和发送跟进，还能取消和归档聊天、设置工作区状态及更新仓库脚本。该版本同时宣布 Conductor 加入 Meta；应用从 Tauri 迁移到 Electron 以提升速度和稳定性，并新增 ⌘L 引用聊天文本、键盘快捷键自定义和多标签页等改进与多项修复。 🔗 阅读原文 via AIHOT · https://aihot.news/items/o5vy2ohp1gixm197jxdmrtorl",
+      "pub_date": "2026-11-16",
+      "author": "noreply@aihot.news (Conductor 官方更新)",
+      "category": "AI 产品"
     },
     {
       "title": "AI 手搓的 1.4M 纯 HTML 3D 游戏走红，卡兹克拆解 Three.js 程序化生成原理并给出提示词模板",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-13",
       "author": "noreply@aihot.news (公众号：腾讯混元)",
       "category": "AI 模型"
-    },
-    {
-      "title": "Nvidia 内部建议箱帖文获超 1600 条评论，多数员工请愿黄仁勋回归",
-      "link": "https://aihot.news/items/x7omcgiafs8nml9fnrog3sg9w",
-      "summary": "据 WIRED 报道，Nvidia 内部建议箱一则帖文获得超过 1600 条评论，多数员工支持恢复黄仁勋的前 CEO 职位。该帖文由一位资深工程师在黄仁勋辞职前撰写，要求董事会先公布调查结果并对员工进行投票调查。 🔗 阅读原文 via AIHOT · https://aihot.news/items/x7omcgiafs8nml9fnrog3sg9w",
-      "pub_date": "2026-11-13",
-      "author": "noreply@aihot.news (Rohan Paul)",
-      "category": "行业动态"
     }
   ]
 }
