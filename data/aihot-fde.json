@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-18T04:33:01.895114+08:00",
-  "total": 29,
+  "updated_at": "2026-11-18T05:03:01.830687+08:00",
+  "total": 30,
   "items": [
     {
       "title": "Microsoft 在 Ignite 2026 发布 Copilot、Microsoft IQ、Agent 365 与 Cobalt 200 VMs 等全栈更新",
@@ -122,6 +122,14 @@
       "pub_date": "2026-11-16",
       "author": "noreply@aihot.news (Philipp Schmid)",
       "category": "教程"
+    },
+    {
+      "title": "Google AI Studio 集成 Gemini 4 Carbon 与 Hydrogen 支持构建全栈 Android 应用并发布到 Google Play",
+      "link": "https://aihot.news/items/ujx1ebv207quqahxh2ypzibqd",
+      "summary": "Google AI Studio 结合 Gemini 4 Carbon 和 Hydrogen，可从单个提示词生成生产级 Kotlin Android 应用，并在几分钟内发布到个人 Google Play 库。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ujx1ebv207quqahxh2ypzibqd",
+      "pub_date": "2026-11-16",
+      "author": "noreply@aihot.news (Google Developers Blog)",
+      "category": "AI 产品"
     },
     {
       "title": "Fireworks 评测 Kimi K3.1 Pro：智能体场景下该替换还是组合使用",
