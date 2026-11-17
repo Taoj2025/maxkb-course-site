@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-17T09:03:02.485757+08:00",
+  "updated_at": "2026-11-17T09:33:02.290378+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "奥尔特曼谈黄仁勋离职：同情其处境，相信 AI 行业能平稳度过",
+      "link": "https://aihot.news/items/eboxbyc4j2oekoiuhw5yf2gms",
+      "summary": "据彭博社报道，OpenAI CEO 奥尔特曼表示，即使黄仁勋不再掌舵英伟达，AI 行业依然会运转良好，并将黄仁勋比作会有缺点的英雄。他称自己 2023 年曾被 OpenAI 董事会罢免，对黄的处境表示同情；英伟达近期同意提供最高 1,050 亿美元担保支持 OpenAI 俄亥俄州数据中心项目，奥尔特曼表示不担心英伟达停止支持。 🔗 阅读原文 via AIHOT · https://aihot.news/items/eboxbyc4j2oekoiuhw5yf2gms",
+      "pub_date": "2026-11-17",
+      "author": "noreply@aihot.news (IT之家·人工智能)",
+      "category": "观点"
+    },
     {
       "title": "科技界人士质疑英伟达CEO辞职背后存在针对其的阴谋",
       "link": "https://aihot.news/items/ahjzxmo93fzc4psaftffvb3rx",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-13",
       "author": "noreply@aihot.news (Rohan Paul)",
       "category": "行业动态"
-    },
-    {
-      "title": "美团 LongCat 开源 LongCat-Video-Avatar 1.6 音频驱动数字人视频生成模型",
-      "link": "https://aihot.news/items/habommgck5ql3tdf688ca370s",
-      "summary": "美团 LongCat 团队发布开源音频驱动人体视频生成模型 LongCat-Video-Avatar 1.6，改进口型自然度、唇音同步、面部与肢体动作协调及长视频视觉一致性，缓解自回归续写误差累积，可生成超过 10 分钟的视频，并加入端到端推理优化。 🔗 阅读原文 via AIHOT · https://aihot.news/items/habommgck5ql3tdf688ca370s",
-      "pub_date": "2026-11-13",
-      "author": "noreply@aihot.news (美团 LongCat：HuggingFace 新模型)",
-      "category": "AI 模型"
     }
   ]
 }
