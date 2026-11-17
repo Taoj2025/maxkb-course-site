@@ -1,14 +1,30 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-18T01:33:01.912132+08:00",
+  "updated_at": "2026-11-18T02:03:01.987082+08:00",
   "total": 50,
   "items": [
     {
-      "title": "Gemini 基于新模型 Gemini 4 Hydrogen 在六国免费提供任务代办功能",
-      "link": "https://aihot.news/items/frckog1wohbrit0fpwmjt8cqa",
-      "summary": "Google Labs 宣布 Gemini 现可在美日韩加澳印六国免费为用户执行任务，底层运行于新模型 Gemini 4 Hydrogen，覆盖数亿用户。同步推出多项功能：通过 Google Duplex 致电本地商家、Google Pay 支付结账、RCS 发短信、Gmail 转发邮件、Google 密码管理器免密登录，率先在美国开放。 🔗 阅读原文 via AIHOT · https://aihot.news/items/frckog1wohbrit0fpwmjt8cqa",
+      "title": "Replit 发布 Missions，用智能体集群按目标完成复杂工作并开源 DataCat",
+      "link": "https://aihot.news/items/io0nmdphe40k919fuw1h28kg3",
+      "summary": "Replit 发布 Replit Missions，用户设定目标、预算和边界后，由智能体集群并行规划、构建、测试并迭代，独立 AI 裁判按约定标准验收。 🔗 阅读原文 via AIHOT · https://aihot.news/items/io0nmdphe40k919fuw1h28kg3",
       "pub_date": "2026-11-17",
-      "author": "noreply@aihot.news (Josh Woodward)",
+      "author": "noreply@aihot.news (Replit：Blog)",
+      "category": "AI 产品"
+    },
+    {
+      "title": "OpenAI 发布 GPT-6.2 Astra 和 GPT-6.2 Sol",
+      "link": "https://aihot.news/items/kngj7x73zq00wijgcnjv6ngrt",
+      "summary": "OpenAI 官宣 GPT-6.2 Astra 和 GPT-6.2 Sol 开放使用，主打游戏制作，同时擅长制作幻灯片、搭建网站和处理日常任务。模型自今日起向 ChatGPT Work 和 Codex 的 Plus、Pro、Enterprise 及 Edu 用户推送。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kngj7x73zq00wijgcnjv6ngrt",
+      "pub_date": "2026-11-17",
+      "author": "noreply@aihot.news (ChatGPT)",
+      "category": "AI 模型"
+    },
+    {
+      "title": "Gemini 向美国等六国用户免费开放任务功能，可打电话、付款并接入 60 多款应用",
+      "link": "https://aihot.news/items/k036fkz6s64y292ovwq2qrx39",
+      "summary": "Google 宣布 Gemini 任务功能免费向美、日、韩、加、澳、印数亿用户推出，基于新的 Gemini 4 Hydrogen 模型，可自动打电话预约、查询账单、购物下单和管理日程。 🔗 阅读原文 via AIHOT · https://aihot.news/items/k036fkz6s64y292ovwq2qrx39",
+      "pub_date": "2026-11-17",
+      "author": "noreply@aihot.news (Google Blog：AI)",
       "category": "AI 产品"
     },
     {
@@ -386,22 +402,6 @@
       "pub_date": "2026-11-13",
       "author": "noreply@aihot.news (Ado Kukic)",
       "category": "AI 产品"
-    },
-    {
-      "title": "WSJ 报道称黄仁勋被罢免更多源于 Nvidia 高风险业务而非私生活",
-      "link": "https://aihot.news/items/s59xfwl0atld8vs7xq0pdx6hw",
-      "summary": "The Decoder 援引 WSJ 报道分析称，黄仁勋被罢免更多源于 Nvidia 高风险业务而非私生活传闻。Nvidia 在其主导下向 AI 云厂商和数据中心开发商提供数十亿美元财务担保以换取营收分成，最大一笔涉及对 OpenAI 俄亥俄数据中心的 2500 亿美元担保，消息公布后股价跌 5%，临时 CEO Colette Kress 将该承诺减半。 🔗 阅读原文 via AIHOT · https://aihot.news/items/s59xfwl0atld8vs7xq0pdx6hw",
-      "pub_date": "2026-11-13",
-      "author": "noreply@aihot.news (The Decoder：AI News)",
-      "category": "行业动态"
-    },
-    {
-      "title": "Nvidia 危机与 Anthropic IPO 前夜的 Cerebral Valley AI Summit 现场观察",
-      "link": "https://aihot.news/items/p1mfh9oe0xbq4evyru5pp1ikt",
-      "summary": "Newcomer 在旧金山 Cerebral Valley AI Summit 现场报道：Jensen Huang 因第二段婚外情披露辞职，Reuters 当天报道存在第三段，与会者多认为 Nvidia 短期无碍但生态承压，Databricks CEO 称其对整个生态是打击。 🔗 阅读原文 via AIHOT · https://aihot.news/items/p1mfh9oe0xbq4evyru5pp1ikt",
-      "pub_date": "2026-11-13",
-      "author": "noreply@aihot.news (Newcomer 新闻长文)",
-      "category": "行业动态"
     }
   ]
 }

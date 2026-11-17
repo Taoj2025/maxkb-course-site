@@ -1,8 +1,24 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-18T01:33:01.913059+08:00",
-  "total": 22,
+  "updated_at": "2026-11-18T02:03:01.987964+08:00",
+  "total": 24,
   "items": [
+    {
+      "title": "Replit 发布 Missions，用智能体集群按目标完成复杂工作并开源 DataCat",
+      "link": "https://aihot.news/items/io0nmdphe40k919fuw1h28kg3",
+      "summary": "Replit 发布 Replit Missions，用户设定目标、预算和边界后，由智能体集群并行规划、构建、测试并迭代，独立 AI 裁判按约定标准验收。 🔗 阅读原文 via AIHOT · https://aihot.news/items/io0nmdphe40k919fuw1h28kg3",
+      "pub_date": "2026-11-17",
+      "author": "noreply@aihot.news (Replit：Blog)",
+      "category": "AI 产品"
+    },
+    {
+      "title": "OpenAI 发布 GPT-6.2 Astra 和 GPT-6.2 Sol",
+      "link": "https://aihot.news/items/kngj7x73zq00wijgcnjv6ngrt",
+      "summary": "OpenAI 官宣 GPT-6.2 Astra 和 GPT-6.2 Sol 开放使用，主打游戏制作，同时擅长制作幻灯片、搭建网站和处理日常任务。模型自今日起向 ChatGPT Work 和 Codex 的 Plus、Pro、Enterprise 及 Edu 用户推送。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kngj7x73zq00wijgcnjv6ngrt",
+      "pub_date": "2026-11-17",
+      "author": "noreply@aihot.news (ChatGPT)",
+      "category": "AI 模型"
+    },
     {
       "title": "可灵 AI 发布 Kling Image 4.0 图像模型并开放 API",
       "link": "https://aihot.news/items/e871ammlz8gpx1oozsswidzt0",
