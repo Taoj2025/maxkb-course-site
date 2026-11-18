@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-18T19:03:01.679501+08:00",
+  "updated_at": "2026-11-18T19:33:02.401920+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Anthropic IPO 估值最高或达 1.4 万亿美元，华尔街提前造势散户争抢",
+      "link": "https://aihot.news/items/yxu549lhmsyp0qe8rstrheqlw",
+      "summary": "据路透社报道，Anthropic 预计于当地时间 11 月 19 日登陆公开市场，IPO 估值最高可能达到 1.4 万亿美元。金融机构已推出 2 倍做多与做空 ETF 等挂钩产品，Vanda Research 预计上市将吸引约 2.5 亿美元散户净买入，为 SpaceX IPO 期间 1.18 亿美元纪录的两倍。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yxu549lhmsyp0qe8rstrheqlw",
+      "pub_date": "2026-11-18",
+      "author": "noreply@aihot.news (IT之家·人工智能)",
+      "category": "行业动态"
+    },
     {
       "title": "OpenAI Codex 团队成员解释 6.2 Sol/Astra 评测视频与现场反馈的差异",
       "link": "https://aihot.news/items/sah26a5ofgvrxd76bgj9t77wf",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-16",
       "author": "noreply@aihot.news (Google Developers Blog)",
       "category": "AI 产品"
-    },
-    {
-      "title": "Fireworks 评测 Kimi K3.1 Pro：智能体场景下该替换还是组合使用",
-      "link": "https://aihot.news/items/pyg0hznbolslrs5jxwhpkxals",
-      "summary": "Fireworks AI 基于 Specialized Intelligence Index 的 21 个基准榜单，从任务表现、模型成本和执行时间三方面评测 Kimi K3.1 Pro 是否适合替换现有智能体模型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/pyg0hznbolslrs5jxwhpkxals",
-      "pub_date": "2026-11-16",
-      "author": "noreply@aihot.news (Fireworks AI)",
-      "category": "论文"
     }
   ]
 }
