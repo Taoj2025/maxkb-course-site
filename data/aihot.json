@@ -1,8 +1,24 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-18T08:03:02.205368+08:00",
+  "updated_at": "2026-11-18T08:33:02.440347+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Anthropic 获准在纳斯达克上市，代码 ANT，发行价每股 70~78 美元",
+      "link": "https://aihot.news/items/cxpq4gwitsj6r05zjpphx9agc",
+      "summary": "根据 SEC 11 月 17 日公示的文件，Anthropic 的 A 类普通股获准在纳斯达克全球精选市场上市，代码 ANT，发行价区间维持每股 70 至 78 美元。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cxpq4gwitsj6r05zjpphx9agc",
+      "pub_date": "2026-11-18",
+      "author": "noreply@aihot.news (IT之家·人工智能)",
+      "category": "行业动态"
+    },
+    {
+      "title": "Nvidia 宣布停售 H200 芯片至中国，并设立董事会级国家安全委员会",
+      "link": "https://aihot.news/items/ulwhtxvx986i1rjdkk2mxgzdl",
+      "summary": "代理 CEO Colette Kress 周二表示，Nvidia 将不再在中国销售 H200 芯片，结束此前由 Jensen Huang 与特朗普斡旋、需经美国境内并缴纳 25% 关税的出口通道。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ulwhtxvx986i1rjdkk2mxgzdl",
+      "pub_date": "2026-11-17",
+      "author": "noreply@aihot.news (TechCrunch：AI)",
+      "category": "行业动态"
+    },
     {
       "title": "深度实测GPT-6.2 Astra：极致省钱但偏科严重，沟通可读性依旧拉胯",
       "link": "https://aihot.news/items/n125mhueen4ul4elntsa1kk1v",
@@ -92,17 +108,17 @@
       "category": "AI 产品"
     },
     {
-      "title": "Microsoft AI 发布首个语音到语音模型 MAI Realtime 1，每分钟音频 $0.01 起",
-      "link": "https://aihot.news/items/eewx1bbnzfmbj6r40v7b6s6nb",
-      "summary": "Microsoft AI 发布首个语音到语音模型 MAI Realtime 1，起步价 $0.01 每分钟音频，称其在 Big Bench Audio 和 τ-Voice 基准上于质量、速度和价格上超过 GPT Realtime 2.1。 🔗 阅读原文 via AIHOT · https://aihot.news/items/eewx1bbnzfmbj6r40v7b6s6nb",
+      "title": "Microsoft AI 发布 MAI Image 2.7 与 Flash，并推出 Canvas 交互工作区",
+      "link": "https://aihot.news/items/ieg99wyo1b6jy175yrk029b0j",
+      "summary": "Microsoft AI 发布 MAI Image 2.7 和 MAI Image 2.7 Flash，定位低成本的前沿图像生成与编辑，并在 MAI Labs 推出由 Flash 驱动的 Canvas 交互工作区。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ieg99wyo1b6jy175yrk029b0j",
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (Microsoft AI：官方博客)",
       "category": "AI 模型"
     },
     {
-      "title": "Microsoft MAI 发布七款新模型，主打极致性价比",
-      "link": "https://aihot.news/items/z9zhvfj8o8zp2yp433eizf3uk",
-      "summary": "Microsoft MAI 在 Ignite 2026 发布七款新模型。MAI Code 2 在四个编码基准平均达到 GPT-6.1 Sol 98% 的性能、价格约 40%，达到 Claude Opus 5.5 的 96% 性能、价格仅 5%；MAI Cyber 2 Flash 在 CyberGymE2E 上以不到 2% 的单任务成本匹配 GPT-6 Astra。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z9zhvfj8o8zp2yp433eizf3uk",
+      "title": "Microsoft AI 发布首个语音到语音模型 MAI Realtime 1，每分钟音频 $0.01 起",
+      "link": "https://aihot.news/items/eewx1bbnzfmbj6r40v7b6s6nb",
+      "summary": "Microsoft AI 发布首个语音到语音模型 MAI Realtime 1，起步价 $0.01 每分钟音频，称其在 Big Bench Audio 和 τ-Voice 基准上于质量、速度和价格上超过 GPT Realtime 2.1。 🔗 阅读原文 via AIHOT · https://aihot.news/items/eewx1bbnzfmbj6r40v7b6s6nb",
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (Microsoft AI：官方博客)",
       "category": "AI 模型"
@@ -386,22 +402,6 @@
       "pub_date": "2026-11-16",
       "author": "noreply@aihot.news (Anthropic：Claude.dev 开发者博客)",
       "category": "教程"
-    },
-    {
-      "title": "自媒体作者分享10条指挥Agent最常用的Prompt",
-      "link": "https://aihot.news/items/jqangh4mwcgcv6pwcv8ar7pga",
-      "summary": "作者让Agent整理出自己近两个月指挥Agent干活最常用的10条Prompt并分享，包括从第一性原理找根因、先对齐喜好再出3版方案、推演改动二阶三阶影响、假设最优方案错误找反例、分析Git历史识别可移除的历史包袱、评估新工程师接手的认知成本、复盘Bug和返工并沉淀成规则或Skill等。作者希望对大家指挥Agent开发有用。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jqangh4mwcgcv6pwcv8ar7pga",
-      "pub_date": "2026-11-16",
-      "author": "noreply@aihot.news (公众号：数字生命卡兹克)",
-      "category": "教程"
-    },
-    {
-      "title": "IMF 总裁警告全球经济过度依赖 AI，循环融资规模超 1 万亿美元",
-      "link": "https://aihot.news/items/leb3cw7nrt06nvf0ew7rkiqf7",
-      "summary": "IMF 总裁格奥尔基耶娃在东盟峰会期间表示，全球经济正依靠 AI 支撑，过度依赖可能危及金融稳定，IMF 估计 AI 企业间循环融资规模已超 1 万亿美元，其中约三分之二来自债务融资。她认为近期市场波动属于有序调整，不太可能演变成系统性风险，但最坏情景下美股可能在 2026 年下跌 20%，2028 年全球经济产出比基准预测低 1.1%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/leb3cw7nrt06nvf0ew7rkiqf7",
-      "pub_date": "2026-11-16",
-      "author": "noreply@aihot.news (IT之家·人工智能)",
-      "category": "观点"
     }
   ]
 }

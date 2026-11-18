@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-18T08:03:02.206417+08:00",
-  "total": 23,
+  "updated_at": "2026-11-18T08:33:02.441297+08:00",
+  "total": 22,
   "items": [
     {
       "title": "深度实测GPT-6.2 Astra：极致省钱但偏科严重，沟通可读性依旧拉胯",
@@ -177,14 +177,6 @@
       "summary": "Anthropic Claude Code 团队分享其验证方法论，团队约 90% 的代码由 Claude 编写和审查，验证循环让并行运行数十上百个 Claude 成为可能。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jy89axg8rd82ugct5uwh5psaq",
       "pub_date": "2026-11-16",
       "author": "noreply@aihot.news (Anthropic：Claude.dev 开发者博客)",
-      "category": "教程"
-    },
-    {
-      "title": "自媒体作者分享10条指挥Agent最常用的Prompt",
-      "link": "https://aihot.news/items/jqangh4mwcgcv6pwcv8ar7pga",
-      "summary": "作者让Agent整理出自己近两个月指挥Agent干活最常用的10条Prompt并分享，包括从第一性原理找根因、先对齐喜好再出3版方案、推演改动二阶三阶影响、假设最优方案错误找反例、分析Git历史识别可移除的历史包袱、评估新工程师接手的认知成本、复盘Bug和返工并沉淀成规则或Skill等。作者希望对大家指挥Agent开发有用。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jqangh4mwcgcv6pwcv8ar7pga",
-      "pub_date": "2026-11-16",
-      "author": "noreply@aihot.news (公众号：数字生命卡兹克)",
       "category": "教程"
     }
   ]
