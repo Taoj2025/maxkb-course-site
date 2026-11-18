@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-18T23:33:02.206146+08:00",
+  "updated_at": "2026-11-19T00:03:01.557704+08:00",
   "total": 50,
   "items": [
     {
@@ -332,6 +332,14 @@
       "category": "AI 产品"
     },
     {
+      "title": "Recraft 实测 ByteDance Seedream 5.5，与 Recraft V4.1 Pro 和 GPT Image 2.6 对比",
+      "link": "https://aihot.news/items/fyder4pbpqfv9annigq6qvfj7",
+      "summary": "ByteDance 的 Seedream 5.5 已上线 Recraft Studio 付费方案，Recraft 用此前 GPT Image 2.6 测试的同一组 12 个提示词，将其与 Recraft V4.1 Pro 和 GPT Image 2.6 Sunburst 逐一对比。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fyder4pbpqfv9annigq6qvfj7",
+      "pub_date": "2026-11-17",
+      "author": "noreply@aihot.news (Recraft 自有模型与设计产品)",
+      "category": "AI 产品"
+    },
+    {
       "title": "科技界人士质疑黄仁勋辞职背后存在针对其的谋划",
       "link": "https://aihot.news/items/ahjzxmo93fzc4psaftffvb3rx",
       "summary": "The Verge 报道，黄仁勋在英伟达任职超过33年后辞职，硅谷多位知名人物呼吁其复职，并流传这是针对他的谋划的说法。Epic Games CEO Tim Sweeney、Replit CEO Amjad Masad 等对辞职时机表示质疑，超过18.5万人签署&apos;与黄仁勋站在一起&apos;的公开信，要求其复职并彻查辞职相关情况。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ahjzxmo93fzc4psaftffvb3rx",
@@ -393,14 +401,6 @@
       "summary": "Databricks 推出 AI Index，将 Unity Gateway 上 10,000+ 家企业的匿名用量数据与基于私有代码库的编码 Agent 评测结合，每周更新并首次公开其内部评测套件。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ctdbuq2r9l6dakhxrm4pmd8ru",
       "pub_date": "2026-11-16",
       "author": "noreply@aihot.news (Databricks：Blog)",
-      "category": "AI 产品"
-    },
-    {
-      "title": "OpenAI 发布免费 CSAM 检测图像分类器并升级 ChatGPT 儿童安全干预",
-      "link": "https://aihot.news/items/cidgb5cgquwqxtiydrzykwc2p",
-      "summary": "OpenAI 发布可检测 CSAM（含 AI 生成内容）的图像分类器，通过 API 向审核机构免费开放，测试显示可将需复审图像减少 48%，fal 实测 72% 高置信标记确认为新型 CSAM。同时 ChatGPT 上线新警告，在用户尝试查找涉儿童性剥削内容时打断并暂停访问 24 小时，还发布了面向开发者的 CSAM 治理指南和执法调查支持工具。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cidgb5cgquwqxtiydrzykwc2p",
-      "pub_date": "2026-11-16",
-      "author": "noreply@aihot.news (OpenAI：官网动态)",
       "category": "AI 产品"
     }
   ]
