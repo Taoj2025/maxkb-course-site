@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-18T08:33:02.441297+08:00",
-  "total": 22,
+  "updated_at": "2026-11-18T09:03:01.578429+08:00",
+  "total": 21,
   "items": [
     {
       "title": "深度实测GPT-6.2 Astra：极致省钱但偏科严重，沟通可读性依旧拉胯",
@@ -170,14 +170,6 @@
       "pub_date": "2026-11-16",
       "author": "noreply@aihot.news (Philipp Schmid)",
       "category": "AI 模型"
-    },
-    {
-      "title": "Claude Code 团队如何设计 Agent 验证与测试流程",
-      "link": "https://aihot.news/items/jy89axg8rd82ugct5uwh5psaq",
-      "summary": "Anthropic Claude Code 团队分享其验证方法论，团队约 90% 的代码由 Claude 编写和审查，验证循环让并行运行数十上百个 Claude 成为可能。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jy89axg8rd82ugct5uwh5psaq",
-      "pub_date": "2026-11-16",
-      "author": "noreply@aihot.news (Anthropic：Claude.dev 开发者博客)",
-      "category": "教程"
     }
   ]
 }
