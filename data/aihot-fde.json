@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-19T00:33:02.242848+08:00",
-  "total": 22,
+  "updated_at": "2026-11-19T01:03:02.277516+08:00",
+  "total": 21,
   "items": [
+    {
+      "title": "Vals AI 评测：Anthropic、OpenAI 和 Google 模型易将医护人员与投降士兵标记为自杀式无人机目标",
+      "link": "https://aihot.news/items/yf91syits6gqn8qvtksix0kdj",
+      "summary": "独立评测机构 Vals AI 测试八家厂商模型后发现，主流大模型几乎缺乏针对自主武器的防护，多数模型会把平民、救护车、医护人员、记者和投降士兵标记为军事目标，且没有任何请求被上游安全过滤器拦截。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yf91syits6gqn8qvtksix0kdj",
+      "pub_date": "2026-11-18",
+      "author": "noreply@aihot.news (The Decoder：AI News)",
+      "category": "论文"
+    },
     {
       "title": "OpenAI Codex 团队成员解释 6.2 Sol/Astra 评测视频与现场反馈的差异",
       "link": "https://aihot.news/items/sah26a5ofgvrxd76bgj9t77wf",
@@ -162,22 +170,6 @@
       "pub_date": "2026-11-16",
       "author": "noreply@aihot.news (Redwood Research：Blog)",
       "category": "观点"
-    },
-    {
-      "title": "Microsoft Research 发布开源插件 TokenEconomizer，借仓库历史经验为 AI 编码 Agent 降本 18.4–30.9%",
-      "link": "https://aihot.news/items/ub0r10tgaq7g5nnq01ciz9d17",
-      "summary": "UC Berkeley、Microsoft Research 与 Microsoft Security 发布开源插件 TokenEconomizer，从 Agent 在同一仓库的历史会话中学习，在不修改 Agent 或底层模型的情况下降低后续会话成本。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ub0r10tgaq7g5nnq01ciz9d17",
-      "pub_date": "2026-11-16",
-      "author": "noreply@aihot.news (Microsoft Research 博客)",
-      "category": "论文"
-    },
-    {
-      "title": "Databricks 推出 AI Index：追踪企业级 AI 采用与 token 成本",
-      "link": "https://aihot.news/items/ctdbuq2r9l6dakhxrm4pmd8ru",
-      "summary": "Databricks 推出 AI Index，将 Unity Gateway 上 10,000+ 家企业的匿名用量数据与基于私有代码库的编码 Agent 评测结合，每周更新并首次公开其内部评测套件。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ctdbuq2r9l6dakhxrm4pmd8ru",
-      "pub_date": "2026-11-16",
-      "author": "noreply@aihot.news (Databricks：Blog)",
-      "category": "AI 产品"
     }
   ]
 }
