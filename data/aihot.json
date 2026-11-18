@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-19T05:03:01.582240+08:00",
+  "updated_at": "2026-11-19T05:33:01.765306+08:00",
   "total": 50,
   "items": [
     {
@@ -148,12 +148,12 @@
       "category": "行业动态"
     },
     {
-      "title": "Gemini API 支持直传 Office 文件并新增多模态内容切片",
+      "title": "Gemini 4 Neon（gemini-4-neon）正式发布，付费档 $3/$15 每百万 token",
       "link": "https://aihot.news/items/a48izcq1y2jqtjr66xjvwqkak",
-      "summary": "Gemini API 于 11 月 18 日更新，支持直接传入 Word、PowerPoint、Excel 等 Microsoft Office 和 OpenDocument 文件，并可在提示词和函数响应中切片文档、表格、视频和音频。可按页码区间、工作表标签、单元格范围、时间区间或内容层（如页面图片、提取文本、公式或视频转录）选取所需内容，只处理和支付需要的部分。 🔗 阅读原文 via AIHOT · https://aihot.news/items/a48izcq1y2jqtjr66xjvwqkak",
+      "summary": "Google 在 Gemini API 更新日志中宣布 Gemini 4 Neon（gemini-4-neon）正式可用（GA），面向复杂软件工程、知识工作和科学工作流提供快速端到端任务完成。 🔗 阅读原文 via AIHOT · https://aihot.news/items/a48izcq1y2jqtjr66xjvwqkak",
       "pub_date": "2026-11-18",
       "author": "noreply@aihot.news (Gemini API：更新日志)",
-      "category": "AI 产品"
+      "category": "AI 模型"
     },
     {
       "title": "Nvidia 宣布停售 H200 芯片至中国，并设立董事会级国家安全委员会",
