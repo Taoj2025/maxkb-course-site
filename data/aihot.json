@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-18T18:03:01.902001+08:00",
+  "updated_at": "2026-11-18T18:33:01.923662+08:00",
   "total": 50,
   "items": [
     {
@@ -50,6 +50,14 @@
       "pub_date": "2026-11-18",
       "author": "noreply@aihot.news (IT之家·人工智能)",
       "category": "行业动态"
+    },
+    {
+      "title": "Gemini API 支持直传 Office 文件并新增多模态内容切片",
+      "link": "https://aihot.news/items/a48izcq1y2jqtjr66xjvwqkak",
+      "summary": "Gemini API 于 11 月 18 日更新，支持直接传入 Word、PowerPoint、Excel 等 Microsoft Office 和 OpenDocument 文件，并可在提示词和函数响应中切片文档、表格、视频和音频。可按页码区间、工作表标签、单元格范围、时间区间或内容层（如页面图片、提取文本、公式或视频转录）选取所需内容，只处理和支付需要的部分。 🔗 阅读原文 via AIHOT · https://aihot.news/items/a48izcq1y2jqtjr66xjvwqkak",
+      "pub_date": "2026-11-18",
+      "author": "noreply@aihot.news (Gemini API：更新日志)",
+      "category": "AI 产品"
     },
     {
       "title": "Nvidia 宣布停售 H200 芯片至中国，并设立董事会级国家安全委员会",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-16",
       "author": "noreply@aihot.news (Fireworks AI)",
       "category": "论文"
-    },
-    {
-      "title": "Artificial Analysis 评测 GPT-6.2 Astra 和 Sol：智能指数升至第二",
-      "link": "https://aihot.news/items/m4ti1m7rs04pdy8067c1k0uas",
-      "summary": "Artificial Analysis 评测 OpenAI 发布的 GPT-6.2 Astra 和 GPT-6.2 Sol，两者在 Artificial Analysis Intelligence Index 中位列第二，仅次于 Claude Fable 5.2。 🔗 阅读原文 via AIHOT · https://aihot.news/items/m4ti1m7rs04pdy8067c1k0uas",
-      "pub_date": "2026-11-16",
-      "author": "noreply@aihot.news (Artificial Analysis 完整文章)",
-      "category": "AI 模型"
     }
   ]
 }
