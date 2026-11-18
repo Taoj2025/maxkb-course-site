@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-18T16:33:02.190242+08:00",
+  "updated_at": "2026-11-18T17:03:02.309570+08:00",
   "total": 50,
   "items": [
     {
@@ -76,9 +76,9 @@
       "category": "AI 产品"
     },
     {
-      "title": "Wiz 解读 OpenJDK 远程代码执行漏洞 CVE-2026-114938（Java4Shell）",
+      "title": "Wiz 解析 OpenJDK 高危漏洞 CVE-2026-114938（Java4Shell）：AVX-512 Base64 解码可致远程代码执行",
       "link": "https://aihot.news/items/r30kdvujcakiutm7umgxmije7",
-      "summary": "2026 年 11 月 17 日披露的 OpenJDK 关键 RCE 漏洞 CVE-2026-114938（Java4Shell）CVSSv4.0 评分 9.2，源于 AVX-512 Base64 解码的汇编代码在处理结尾填充字符时输出数组边界计算下溢，导致堆内存越界写入，已证实可对 Jenkins、Confluence、Apache Tomcat 等实现远程利用。 🔗 阅读原文 via AIHOT · https://aihot.news/items/r30kdvujcakiutm7umgxmije7",
+      "summary": "2026年11月17日披露的 OpenJDK 漏洞 CVE-2026-114938（Java4Shell）CVSSv4.0 评分 9.2，源于 AVX-512 Base64 解码汇编代码对末尾填充字符计算错误导致堆内存越界写，可被未认证攻击者远程利用。 🔗 阅读原文 via AIHOT · https://aihot.news/items/r30kdvujcakiutm7umgxmije7",
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (Wiz：Research)",
       "category": "行业动态"
