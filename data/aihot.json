@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-19T01:03:02.276182+08:00",
+  "updated_at": "2026-11-19T01:33:02.165116+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "腾讯混元宣布 11 月 20 日在 Reddit r/LocalLLaMA 举办 AMA",
+      "link": "https://aihot.news/items/j8qdprqh5i5n9n7ece0f411f1",
+      "summary": "腾讯混元宣布本周五 11 月 20 日 8–10 AM PT 在 Reddit r/LocalLLaMA 举办 AMA，研发团队与 @ShunyuYao12 将解读刚发布的 Hy4 与 Hy4 flash。作者称 Hy4 flash 已开放权重，含 Hy4 flash-FP8 和 Hy4 flash-Base，为 224B 参数（激活 12B）、1M 上下文、原生多模态，并预告 Hy4 后续发布。 🔗 阅读原文 via AIHOT · https://aihot.news/items/j8qdprqh5i5n9n7ece0f411f1",
+      "pub_date": "2026-11-18",
+      "author": "noreply@aihot.news (腾讯混元)",
+      "category": "行业动态"
+    },
     {
       "title": "Vals AI 评测：Anthropic、OpenAI 和 Google 模型易将医护人员与投降士兵标记为自杀式无人机目标",
       "link": "https://aihot.news/items/yf91syits6gqn8qvtksix0kdj",
@@ -81,6 +89,14 @@
       "summary": "根据 SEC 11 月 17 日公示的文件，Anthropic 的 A 类普通股获准在纳斯达克全球精选市场上市，代码 ANT，发行价区间维持每股 70 至 78 美元。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cxpq4gwitsj6r05zjpphx9agc",
       "pub_date": "2026-11-18",
       "author": "noreply@aihot.news (IT之家·人工智能)",
+      "category": "行业动态"
+    },
+    {
+      "title": "OpenAI 详解模型在 Jalapeño 芯片与 AMD 产线设计中的应用及 RISC-V 评测",
+      "link": "https://aihot.news/items/zyv7euqbikadbvaxfjxdh850k",
+      "summary": "OpenAI 介绍其模型在芯片设计中的进展：GPT-4o 早在 2025 年初协助设计自研推理芯片 Jalapeño，模型提出的改动使 warp engine 标准单元面积约减 13%、matrix unit 约减 10%，并已在硅片验证。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zyv7euqbikadbvaxfjxdh850k",
+      "pub_date": "2026-11-18",
+      "author": "noreply@aihot.news (OpenAI：官网动态)",
       "category": "行业动态"
     },
     {
@@ -190,7 +206,7 @@
     {
       "title": "Microsoft AI 发布首个语音到语音模型 MAI Realtime 1，定价 $0.01 每音频分钟",
       "link": "https://aihot.news/items/eewx1bbnzfmbj6r40v7b6s6nb",
-      "summary": "Microsoft AI 发布首个语音到语音模型 MAI Realtime 1，起价 $0.01 每音频分钟，称在公开基准和内部评测中质量、速度和价格均优于 GPT Realtime 2.1，处于 Big Bench Audio 语音推理和 τ-Voice 智能体任务完成基准的性能价格 Pareto 前沿。 🔗 阅读原文 via AIHOT · https://aihot.news/items/eewx1bbnzfmbj6r40v7b6s6nb",
+      "summary": "Microsoft AI 发布首个语音到语音模型 MAI Realtime 1，起价 $0.01 每音频分钟，号称在 Big Bench Audio 和 τ-Voice 基准上优于 GPT Realtime 2.1。 🔗 阅读原文 via AIHOT · https://aihot.news/items/eewx1bbnzfmbj6r40v7b6s6nb",
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (Microsoft AI：官方博客)",
       "category": "AI 模型"
@@ -204,9 +220,9 @@
       "category": "AI 模型"
     },
     {
-      "title": "Microsoft AI 发布编码模型 MAI Code 2 与 Code 2 Flash",
+      "title": "Microsoft AI 发布 MAI Code 2 与 Code 2 Flash 编码模型",
       "link": "https://aihot.news/items/c3qj65urfo345mc80xz5jdefb",
-      "summary": "Microsoft AI 在 Ignite 发布 MAI Code 2 和 MAI Code 2 Flash 两款面向日常企业编码的模型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/c3qj65urfo345mc80xz5jdefb",
+      "summary": "Microsoft AI 发布 MAI Code 2 和 MAI Code 2 Flash 两款面向企业日常编码的模型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/c3qj65urfo345mc80xz5jdefb",
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (Microsoft AI：官方博客)",
       "category": "AI 模型"
@@ -386,22 +402,6 @@
       "pub_date": "2026-11-16",
       "author": "noreply@aihot.news (The Verge：AI)",
       "category": "行业动态"
-    },
-    {
-      "title": "FBI 通报开源 AI 攻击工具 Artex 被用于入侵美国及韩国机构网络",
-      "link": "https://aihot.news/items/zficxtnfx6piiwlefryulanmh",
-      "summary": "FBI 发布网络安全通告，警告黑客利用开源 AI 渗透测试工具 Artex 发起自主化攻击，部分入侵从锁定目标到完成攻陷可在不到三小时内完成。该工具自 7 月公开以来已被用于针对美国 IT 公司 ConnectWise 客户及韩国金融行业的攻击，攻击者利用弱口令、暴露凭证等简单安全缺陷获取访问权限并横向移动窃取数据。FBI 表示，尽管开发者已将 Artex 转为闭源，但此前开源版本仍在流传并可被广泛获取用于网络攻击。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zficxtnfx6piiwlefryulanmh",
-      "pub_date": "2026-11-16",
-      "author": "noreply@aihot.news (TechCrunch：AI)",
-      "category": "行业动态"
-    },
-    {
-      "title": "Redwood Research：Gemini 4 安全报告未能证明失控风险低",
-      "link": "https://aihot.news/items/naql5xzzrykngxhvhd6vin5yn",
-      "summary": "Redwood Research 发文批评 Google DeepMind 的 Gemini 4 Argon 与 Carbon 安全报告，认为其基于控制措施的安全论证存在严重弱点，不足以证明部署风险已可靠缓解。 🔗 阅读原文 via AIHOT · https://aihot.news/items/naql5xzzrykngxhvhd6vin5yn",
-      "pub_date": "2026-11-16",
-      "author": "noreply@aihot.news (Redwood Research：Blog)",
-      "category": "观点"
     }
   ]
 }

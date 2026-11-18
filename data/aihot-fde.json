@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-19T01:03:02.277516+08:00",
+  "updated_at": "2026-11-19T01:33:02.166031+08:00",
   "total": 21,
   "items": [
+    {
+      "title": "腾讯混元宣布 11 月 20 日在 Reddit r/LocalLLaMA 举办 AMA",
+      "link": "https://aihot.news/items/j8qdprqh5i5n9n7ece0f411f1",
+      "summary": "腾讯混元宣布本周五 11 月 20 日 8–10 AM PT 在 Reddit r/LocalLLaMA 举办 AMA，研发团队与 @ShunyuYao12 将解读刚发布的 Hy4 与 Hy4 flash。作者称 Hy4 flash 已开放权重，含 Hy4 flash-FP8 和 Hy4 flash-Base，为 224B 参数（激活 12B）、1M 上下文、原生多模态，并预告 Hy4 后续发布。 🔗 阅读原文 via AIHOT · https://aihot.news/items/j8qdprqh5i5n9n7ece0f411f1",
+      "pub_date": "2026-11-18",
+      "author": "noreply@aihot.news (腾讯混元)",
+      "category": "行业动态"
+    },
     {
       "title": "Vals AI 评测：Anthropic、OpenAI 和 Google 模型易将医护人员与投降士兵标记为自杀式无人机目标",
       "link": "https://aihot.news/items/yf91syits6gqn8qvtksix0kdj",
@@ -26,6 +34,14 @@
       "pub_date": "2026-11-18",
       "author": "noreply@aihot.news (腾讯混元)",
       "category": "AI 模型"
+    },
+    {
+      "title": "OpenAI 详解模型在 Jalapeño 芯片与 AMD 产线设计中的应用及 RISC-V 评测",
+      "link": "https://aihot.news/items/zyv7euqbikadbvaxfjxdh850k",
+      "summary": "OpenAI 介绍其模型在芯片设计中的进展：GPT-4o 早在 2025 年初协助设计自研推理芯片 Jalapeño，模型提出的改动使 warp engine 标准单元面积约减 13%、matrix unit 约减 10%，并已在硅片验证。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zyv7euqbikadbvaxfjxdh850k",
+      "pub_date": "2026-11-18",
+      "author": "noreply@aihot.news (OpenAI：官网动态)",
+      "category": "行业动态"
     },
     {
       "title": "Gemini API 支持直传 Office 文件并新增多模态内容切片",
@@ -66,14 +82,6 @@
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (Microsoft：Official Blog)",
       "category": "AI 产品"
-    },
-    {
-      "title": "Microsoft AI 发布首个语音到语音模型 MAI Realtime 1，定价 $0.01 每音频分钟",
-      "link": "https://aihot.news/items/eewx1bbnzfmbj6r40v7b6s6nb",
-      "summary": "Microsoft AI 发布首个语音到语音模型 MAI Realtime 1，起价 $0.01 每音频分钟，称在公开基准和内部评测中质量、速度和价格均优于 GPT Realtime 2.1，处于 Big Bench Audio 语音推理和 τ-Voice 智能体任务完成基准的性能价格 Pareto 前沿。 🔗 阅读原文 via AIHOT · https://aihot.news/items/eewx1bbnzfmbj6r40v7b6s6nb",
-      "pub_date": "2026-11-17",
-      "author": "noreply@aihot.news (Microsoft AI：官方博客)",
-      "category": "AI 模型"
     },
     {
       "title": "OpenAI GPT-6.2 Astra 和 GPT-6.2 Sol 上线 OpenRouter",
@@ -162,14 +170,6 @@
       "pub_date": "2026-11-16",
       "author": "noreply@aihot.news (The Verge：AI)",
       "category": "行业动态"
-    },
-    {
-      "title": "Redwood Research：Gemini 4 安全报告未能证明失控风险低",
-      "link": "https://aihot.news/items/naql5xzzrykngxhvhd6vin5yn",
-      "summary": "Redwood Research 发文批评 Google DeepMind 的 Gemini 4 Argon 与 Carbon 安全报告，认为其基于控制措施的安全论证存在严重弱点，不足以证明部署风险已可靠缓解。 🔗 阅读原文 via AIHOT · https://aihot.news/items/naql5xzzrykngxhvhd6vin5yn",
-      "pub_date": "2026-11-16",
-      "author": "noreply@aihot.news (Redwood Research：Blog)",
-      "category": "观点"
     }
   ]
 }
