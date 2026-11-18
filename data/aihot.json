@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-19T04:03:02.058366+08:00",
+  "updated_at": "2026-11-19T04:33:01.893782+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Meta 员工内部聊天显示对 Muse 智能体隐私风险的担忧",
+      "link": "https://aihot.news/items/i24hiy236uc3ynswh26pw7s0h",
+      "summary": "Reuters 披露的内部聊天显示，Meta 员工在测试 Muse 智能体时发现它似乎访问了加密私信、可能混淆用户对话，甚至输出他人银行账户余额等内容；有员工称测试中被误注册每月 888 美元的宠物保险且无法挽回。 🔗 阅读原文 via AIHOT · https://aihot.news/items/i24hiy236uc3ynswh26pw7s0h",
+      "pub_date": "2026-11-18",
+      "author": "noreply@aihot.news (Ars Technica：AI)",
+      "category": "行业动态"
+    },
     {
       "title": "Greg Brockman 称 OpenAI 模型不到 5 个月为 AMD 芯片带来约一年额外进度",
       "link": "https://aihot.news/items/tsh3b6rieynf7vstk1ipl34ae",
@@ -74,6 +82,14 @@
       "pub_date": "2026-11-18",
       "author": "noreply@aihot.news (OpenAI：官网动态)",
       "category": "教程"
+    },
+    {
+      "title": "OpenAI 详解前沿 AI 风险管理：从训练到部署的四层防护",
+      "link": "https://aihot.news/items/na2nxuqq5bxz0us1vjup0l259",
+      "summary": "OpenAI 发布长文，介绍其在模型全生命周期中管理前沿 AI 风险的防御纵深体系，涵盖模型对齐、安全与沙箱、拦截防护、监控响应四层保护，并按研究、内部部署、外部部署三阶段说明各层的作用。 🔗 阅读原文 via AIHOT · https://aihot.news/items/na2nxuqq5bxz0us1vjup0l259",
+      "pub_date": "2026-11-18",
+      "author": "noreply@aihot.news (OpenAI：官网动态)",
+      "category": "观点"
     },
     {
       "title": "OpenAI Codex 团队成员解释 6.2 Sol/Astra 评测视频与现场反馈的差异",
@@ -386,22 +402,6 @@
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (OpenAI：官网动态)",
       "category": "行业动态"
-    },
-    {
-      "title": "OpenHands Teams 发布：自助部署自动化工程工作流，首推漏洞修复场景",
-      "link": "https://aihot.news/items/kdrk16eh8ab7b7ffs555p25nm",
-      "summary": "OpenHands 发布 OpenHands Teams，为小型工程团队提供自助使用 OpenHands Enterprise 的入口，30 天免费试用，定价每月 500 美元含 10 用户，加人每月 50 美元，可在自有基础设施数分钟内部署。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kdrk16eh8ab7b7ffs555p25nm",
-      "pub_date": "2026-11-17",
-      "author": "noreply@aihot.news (OpenHands 官方博客)",
-      "category": "AI 产品"
-    },
-    {
-      "title": "Recraft 实测 ByteDance Seedream 5.5，与 Recraft V4.1 Pro 和 GPT Image 2.6 对比",
-      "link": "https://aihot.news/items/fyder4pbpqfv9annigq6qvfj7",
-      "summary": "ByteDance 的 Seedream 5.5 已上线 Recraft Studio 付费方案，Recraft 用此前 GPT Image 2.6 测试的同一组 12 个提示词，将其与 Recraft V4.1 Pro 和 GPT Image 2.6 Sunburst 逐一对比。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fyder4pbpqfv9annigq6qvfj7",
-      "pub_date": "2026-11-17",
-      "author": "noreply@aihot.news (Recraft 自有模型与设计产品)",
-      "category": "AI 产品"
     }
   ]
 }
