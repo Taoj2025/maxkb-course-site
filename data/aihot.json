@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-18T19:33:02.401920+08:00",
+  "updated_at": "2026-11-18T20:03:01.915970+08:00",
   "total": 50,
   "items": [
     {
@@ -10,6 +10,14 @@
       "pub_date": "2026-11-18",
       "author": "noreply@aihot.news (IT之家·人工智能)",
       "category": "行业动态"
+    },
+    {
+      "title": "OpenAI 发布 GPT-6.2 Astra 和 Sol：更便宜但口碑分化，Anthropic 仍握最强模型",
+      "link": "https://aihot.news/items/oisr0dfay736le62g425urn8l",
+      "summary": "Latent Space 汇总 OpenAI 发布的 GPT-6.2 Astra 和 Sol：Artificial Analysis 测得 Sol 以约 15% 的单任务成本追平 9 月的 Astra，新 Astra 以 62 分位居 Intelligence Index 第二，仅次于 Fable 5.2 的 65 分，两者均为 1M 上下文、128K 输出。 🔗 阅读原文 via AIHOT · https://aihot.news/items/oisr0dfay736le62g425urn8l",
+      "pub_date": "2026-11-18",
+      "author": "noreply@aihot.news (Latent Space)",
+      "category": "AI 模型"
     },
     {
       "title": "OpenAI Codex 团队成员解释 6.2 Sol/Astra 评测视频与现场反馈的差异",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-16",
       "author": "noreply@aihot.news (Philipp Schmid)",
       "category": "教程"
-    },
-    {
-      "title": "Google AI Studio 集成 Gemini 4 Carbon 与 Hydrogen 支持构建全栈 Android 应用并发布到 Google Play",
-      "link": "https://aihot.news/items/ujx1ebv207quqahxh2ypzibqd",
-      "summary": "Google AI Studio 结合 Gemini 4 Carbon 和 Hydrogen，可从单个提示词生成生产级 Kotlin Android 应用，并在几分钟内发布到个人 Google Play 库。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ujx1ebv207quqahxh2ypzibqd",
-      "pub_date": "2026-11-16",
-      "author": "noreply@aihot.news (Google Developers Blog)",
-      "category": "AI 产品"
     }
   ]
 }

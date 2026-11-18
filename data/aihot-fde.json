@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-18T19:33:02.402841+08:00",
-  "total": 23,
+  "updated_at": "2026-11-18T20:03:01.916935+08:00",
+  "total": 22,
   "items": [
     {
       "title": "OpenAI Codex 团队成员解释 6.2 Sol/Astra 评测视频与现场反馈的差异",
@@ -178,14 +178,6 @@
       "pub_date": "2026-11-16",
       "author": "noreply@aihot.news (Philipp Schmid)",
       "category": "教程"
-    },
-    {
-      "title": "Google AI Studio 集成 Gemini 4 Carbon 与 Hydrogen 支持构建全栈 Android 应用并发布到 Google Play",
-      "link": "https://aihot.news/items/ujx1ebv207quqahxh2ypzibqd",
-      "summary": "Google AI Studio 结合 Gemini 4 Carbon 和 Hydrogen，可从单个提示词生成生产级 Kotlin Android 应用，并在几分钟内发布到个人 Google Play 库。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ujx1ebv207quqahxh2ypzibqd",
-      "pub_date": "2026-11-16",
-      "author": "noreply@aihot.news (Google Developers Blog)",
-      "category": "AI 产品"
     }
   ]
 }
