@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-18T23:03:01.706370+08:00",
-  "total": 22,
+  "updated_at": "2026-11-18T23:33:02.207524+08:00",
+  "total": 21,
   "items": [
     {
       "title": "OpenAI Codex 团队成员解释 6.2 Sol/Astra 评测视频与现场反馈的差异",
@@ -170,14 +170,6 @@
       "pub_date": "2026-11-16",
       "author": "noreply@aihot.news (Databricks：Blog)",
       "category": "AI 产品"
-    },
-    {
-      "title": "Gemini 4 Hydrogen 与 Carbon 如何按工作负载选型",
-      "link": "https://aihot.news/items/zo7ubny2zjk4qoqjdoiec91b8",
-      "summary": "Google DeepMind 的 Philipp Schmid 讲解如何在工作负载中选择 Gemini 4 Hydrogen 与 Carbon：Carbon 适合硬架构设计、调试、科学证明和安全审计，intro 价 $2/$10 至 11 月 30 日；Hydrogen 适合日常编码、交互应用和工具调用智能体，价格 $1.50/$7.50 per 1M。两款都可用 Carbon 负责规划编排、Hydrogen 负责执行的搭配，共享 1M-token 统一上下文窗口、95% implicit caching 和相同 Interactions API schema。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zo7ubny2zjk4qoqjdoiec91b8",
-      "pub_date": "2026-11-16",
-      "author": "noreply@aihot.news (Philipp Schmid)",
-      "category": "教程"
     }
   ]
 }

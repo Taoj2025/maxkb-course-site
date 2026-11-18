@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-18T23:03:01.705327+08:00",
+  "updated_at": "2026-11-18T23:33:02.206146+08:00",
   "total": 50,
   "items": [
     {
@@ -180,17 +180,25 @@
       "category": "AI 模型"
     },
     {
-      "title": "Microsoft MAI 发布七个新模型，主打价格性能比",
+      "title": "Microsoft MAI 发布七个新模型，主打高性价比",
       "link": "https://aihot.news/items/z9zhvfj8o8zp2yp433eizf3uk",
-      "summary": "Microsoft MAI 在 Ignite 2026 发布七个新模型，涵盖网络安全防御、编码、图像、实时语音、转录与决策路由。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z9zhvfj8o8zp2yp433eizf3uk",
+      "summary": "Microsoft MAI 在 Ignite 2026 发布七个新模型及 Maia 200 加速器。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z9zhvfj8o8zp2yp433eizf3uk",
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (Microsoft AI：官方博客)",
       "category": "AI 模型"
     },
     {
-      "title": "Microsoft AI 发布编码模型 MAI Code 2 与 MAI Code 2 Flash",
+      "title": "Microsoft AI 发布编码模型 MAI Code 2 与 Code 2 Flash",
       "link": "https://aihot.news/items/c3qj65urfo345mc80xz5jdefb",
-      "summary": "Microsoft AI 在 Ignite 发布 MAI Code 2 和 MAI Code 2 Flash 两款面向企业日常编码的模型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/c3qj65urfo345mc80xz5jdefb",
+      "summary": "Microsoft AI 在 Ignite 发布 MAI Code 2 和 MAI Code 2 Flash 两款面向日常企业编码的模型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/c3qj65urfo345mc80xz5jdefb",
+      "pub_date": "2026-11-17",
+      "author": "noreply@aihot.news (Microsoft AI：官方博客)",
+      "category": "AI 模型"
+    },
+    {
+      "title": "Microsoft Ignite 2026 MAI 主旨演讲：主打性价比与可控权重",
+      "link": "https://aihot.news/items/y7f42y59ahf4hjlf4ptoprfq3",
+      "summary": "Microsoft AI 在 Ignite 2026 主旨演讲中介绍 MAI 模型系列的性价比策略：MAI Code 2 在四项企业编码基准上平均达到 GPT 6.1 Sol 98% 的性能。 🔗 阅读原文 via AIHOT · https://aihot.news/items/y7f42y59ahf4hjlf4ptoprfq3",
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (Microsoft AI：官方博客)",
       "category": "AI 模型"
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-16",
       "author": "noreply@aihot.news (OpenAI：官网动态)",
       "category": "AI 产品"
-    },
-    {
-      "title": "Gemini 4 Hydrogen 与 Carbon 如何按工作负载选型",
-      "link": "https://aihot.news/items/zo7ubny2zjk4qoqjdoiec91b8",
-      "summary": "Google DeepMind 的 Philipp Schmid 讲解如何在工作负载中选择 Gemini 4 Hydrogen 与 Carbon：Carbon 适合硬架构设计、调试、科学证明和安全审计，intro 价 $2/$10 至 11 月 30 日；Hydrogen 适合日常编码、交互应用和工具调用智能体，价格 $1.50/$7.50 per 1M。两款都可用 Carbon 负责规划编排、Hydrogen 负责执行的搭配，共享 1M-token 统一上下文窗口、95% implicit caching 和相同 Interactions API schema。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zo7ubny2zjk4qoqjdoiec91b8",
-      "pub_date": "2026-11-16",
-      "author": "noreply@aihot.news (Philipp Schmid)",
-      "category": "教程"
     }
   ]
 }
