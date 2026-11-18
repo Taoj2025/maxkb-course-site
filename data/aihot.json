@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-18T14:03:01.622106+08:00",
+  "updated_at": "2026-11-18T14:33:02.485457+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "OpenAI Codex 团队成员解释 6.2 Sol/Astra 评测视频与现场反馈的差异",
+      "link": "https://aihot.news/items/sah26a5ofgvrxd76bgj9t77wf",
+      "summary": "Tibo 解释 6.2 Sol/Astra 上评测视频与现场人群反馈氛围不同的原因：部分人较早获得访问权限，而团队在过去 3-4 天做了大量改动，视频是上周制作的，之后大概率没有重新测试。他称这两个模型相比 GPT 前代有明显提升，但仍不完美，团队希望在后续迭代的品味和使用体验上改进，并表示欢迎反馈。 🔗 阅读原文 via AIHOT · https://aihot.news/items/sah26a5ofgvrxd76bgj9t77wf",
+      "pub_date": "2026-11-18",
+      "author": "noreply@aihot.news (Tibo)",
+      "category": "观点"
+    },
     {
       "title": "Nvidia 临时 CEO Colette Kress 表示董事会不会恢复黄仁勋的 CEO 职务",
       "link": "https://aihot.news/items/znj4uw6kr9vt4uij9fmao9p00",
@@ -393,14 +401,6 @@
       "summary": "Artificial Analysis 评测 OpenAI 发布的 GPT-6.2 Astra 和 GPT-6.2 Sol，两者在 Artificial Analysis Intelligence Index 中位列第二，仅次于 Claude Fable 5.2。 🔗 阅读原文 via AIHOT · https://aihot.news/items/m4ti1m7rs04pdy8067c1k0uas",
       "pub_date": "2026-11-16",
       "author": "noreply@aihot.news (Artificial Analysis 完整文章)",
-      "category": "AI 模型"
-    },
-    {
-      "title": "Google 发布 Gemini 4 Carbon 与 Hydrogen，并推出 Decisions API 和自托管 agent 沙箱",
-      "link": "https://aihot.news/items/n3qi466u1gbxj2i8q7g5snhr0",
-      "summary": "Google 发布 Gemini 4 Carbon（gemini-4-carbon，1M 共享 token 池，11 月 30 日前 $2.00/$10.00 每 1M tokens。 🔗 阅读原文 via AIHOT · https://aihot.news/items/n3qi466u1gbxj2i8q7g5snhr0",
-      "pub_date": "2026-11-16",
-      "author": "noreply@aihot.news (Philipp Schmid)",
       "category": "AI 模型"
     }
   ]
