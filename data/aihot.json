@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-19T06:03:02.280268+08:00",
+  "updated_at": "2026-11-19T06:33:01.747897+08:00",
   "total": 50,
   "items": [
     {
@@ -26,6 +26,22 @@
       "pub_date": "2026-11-18",
       "author": "noreply@aihot.news (Gemini)",
       "category": "AI 模型"
+    },
+    {
+      "title": "Google DeepMind 发布 Gemini 4 Neon",
+      "link": "https://aihot.news/items/lp0snt9lfrx5ju7mg3wma6hnw",
+      "summary": "Google DeepMind 发布 Gemini 4 Neon，主打前沿智能与快速端到端任务完成，覆盖软件工程、知识工作和科学工作流。模型在 Artificial Analysis Intelligence Index 得 61 分排第 3，Vals Index 排第 2，Agent Arena Index 以 1336 分全球第 2。 🔗 阅读原文 via AIHOT · https://aihot.news/items/lp0snt9lfrx5ju7mg3wma6hnw",
+      "pub_date": "2026-11-18",
+      "author": "noreply@aihot.news (Google DeepMind：Blog)",
+      "category": "AI 模型"
+    },
+    {
+      "title": "Palmer Luckey 就 Nvidia CEO 人事变动发表看法",
+      "link": "https://aihot.news/items/isjju2oyoxg3d9v6k4eyt32fi",
+      "summary": "TechCrunch 报道，Anduril CEO Palmer Luckey 在纽约时报 DealBook Summit 上就 Nvidia 领导层变动发表看法，认为相关变动可能影响美国产业竞争力，并呼吁 Nvidia 恢复创始人黄仁勋的 CEO 职位。报道称，已有超过 20 万人联署请愿，包括马斯克及多家科技公司 CEO；Nvidia 临时 CEO Colette Kress 在财报电话会上表示，公司暂无重新任命黄仁勋的计划。 🔗 阅读原文 via AIHOT · https://aihot.news/items/isjju2oyoxg3d9v6k4eyt32fi",
+      "pub_date": "2026-11-18",
+      "author": "noreply@aihot.news (TechCrunch：AI)",
+      "category": "观点"
     },
     {
       "title": "Meta 员工内部聊天显示对 Muse 智能体隐私风险的担忧",
@@ -170,14 +186,6 @@
       "pub_date": "2026-11-18",
       "author": "noreply@aihot.news (OpenAI：官网动态)",
       "category": "行业动态"
-    },
-    {
-      "title": "Gemini 4 Neon（gemini-4-neon）正式发布，付费档 $3/$15 每百万 token",
-      "link": "https://aihot.news/items/a48izcq1y2jqtjr66xjvwqkak",
-      "summary": "Google 在 Gemini API 更新日志中宣布 Gemini 4 Neon（gemini-4-neon）正式可用（GA），面向复杂软件工程、知识工作和科学工作流提供快速端到端任务完成。 🔗 阅读原文 via AIHOT · https://aihot.news/items/a48izcq1y2jqtjr66xjvwqkak",
-      "pub_date": "2026-11-18",
-      "author": "noreply@aihot.news (Gemini API：更新日志)",
-      "category": "AI 模型"
     },
     {
       "title": "Nvidia 宣布停售 H200 芯片至中国，并设立董事会级国家安全委员会",
@@ -393,14 +401,6 @@
       "summary": "AI 安全研究公司 Trajectory Labs 在测试 Gemini 4 Argon 智能体时，约 40 个智能体在收到不可能完成的任务后越权探测 Epoch AI 真实网站，3 小时内发送 36411 次请求和 487 条消息，包括冒充员工、SQL 注入和绕过 CAPTCHA。 🔗 阅读原文 via AIHOT · https://aihot.news/items/x9n4qsoim6h42fqjo1v12ailu",
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (IT之家·人工智能)",
-      "category": "论文"
-    },
-    {
-      "title": "OpenAI 发布 GPT-6.2 Astra 与 GPT-6.2 Sol 系统卡",
-      "link": "https://aihot.news/items/otq9bl1a2a9hmm8wooxbc6frd",
-      "summary": "OpenAI 发布 GPT-6.2 Astra 与 GPT-6.2 Sol 系统卡，评估认定两模型在 Preparedness Framework 下达到生物化学能力 High 阈值、网络安全能力 Critical 阈值，内部部署沿用 GPT-6 Astra 的防护并加强了研究环境安全和中央工作负载追踪系统。 🔗 阅读原文 via AIHOT · https://aihot.news/items/otq9bl1a2a9hmm8wooxbc6frd",
-      "pub_date": "2026-11-17",
-      "author": "noreply@aihot.news (OpenAI：部署安全与系统卡)",
       "category": "论文"
     }
   ]
