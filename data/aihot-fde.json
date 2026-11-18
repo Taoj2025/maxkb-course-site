@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-18T12:03:02.429332+08:00",
-  "total": 22,
+  "updated_at": "2026-11-18T12:33:02.199290+08:00",
+  "total": 23,
   "items": [
     {
       "title": "深度实测GPT-6.2 Astra：极致省钱但偏科严重，沟通可读性依旧拉胯",
@@ -34,6 +34,14 @@
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (Microsoft：Official Blog)",
       "category": "AI 产品"
+    },
+    {
+      "title": "Microsoft AI 发布首个语音到语音模型 MAI Realtime 1，定价 $0.01 每音频分钟",
+      "link": "https://aihot.news/items/eewx1bbnzfmbj6r40v7b6s6nb",
+      "summary": "Microsoft AI 发布首个语音到语音模型 MAI Realtime 1，起价 $0.01 每音频分钟，称在公开基准和内部评测中质量、速度和价格均优于 GPT Realtime 2.1，处于 Big Bench Audio 语音推理和 τ-Voice 智能体任务完成基准的性能价格 Pareto 前沿。 🔗 阅读原文 via AIHOT · https://aihot.news/items/eewx1bbnzfmbj6r40v7b6s6nb",
+      "pub_date": "2026-11-17",
+      "author": "noreply@aihot.news (Microsoft AI：官方博客)",
+      "category": "AI 模型"
     },
     {
       "title": "OpenAI GPT-6.2 Astra 和 GPT-6.2 Sol 上线 OpenRouter",

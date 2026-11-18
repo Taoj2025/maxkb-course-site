@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-18T12:03:02.428373+08:00",
+  "updated_at": "2026-11-18T12:33:02.198312+08:00",
   "total": 50,
   "items": [
     {
@@ -116,33 +116,25 @@
       "category": "AI 产品"
     },
     {
-      "title": "Microsoft AI 发布首个语音到语音模型 MAI Realtime 1，每分钟音频 $0.01 起",
+      "title": "Microsoft AI 发布首个语音到语音模型 MAI Realtime 1，定价 $0.01 每音频分钟",
       "link": "https://aihot.news/items/eewx1bbnzfmbj6r40v7b6s6nb",
-      "summary": "Microsoft AI 发布首个语音到语音模型 MAI Realtime 1，起步价 $0.01 每分钟音频，称其在 Big Bench Audio 和 τ-Voice 基准上于质量、速度和价格上超过 GPT Realtime 2.1。 🔗 阅读原文 via AIHOT · https://aihot.news/items/eewx1bbnzfmbj6r40v7b6s6nb",
+      "summary": "Microsoft AI 发布首个语音到语音模型 MAI Realtime 1，起价 $0.01 每音频分钟，称在公开基准和内部评测中质量、速度和价格均优于 GPT Realtime 2.1，处于 Big Bench Audio 语音推理和 τ-Voice 智能体任务完成基准的性能价格 Pareto 前沿。 🔗 阅读原文 via AIHOT · https://aihot.news/items/eewx1bbnzfmbj6r40v7b6s6nb",
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (Microsoft AI：官方博客)",
       "category": "AI 模型"
     },
     {
-      "title": "Microsoft MAI 在 Ignite 2026 发布七款高性价比新模型",
+      "title": "Microsoft MAI 发布七个新模型，主打价格性能比",
       "link": "https://aihot.news/items/z9zhvfj8o8zp2yp433eizf3uk",
-      "summary": "Microsoft MAI 在 Ignite 2026 发布七款新模型，主打可扩展的性价比。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z9zhvfj8o8zp2yp433eizf3uk",
+      "summary": "Microsoft MAI 在 Ignite 2026 发布七个新模型，涵盖网络安全防御、编码、图像、实时语音、转录与决策路由。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z9zhvfj8o8zp2yp433eizf3uk",
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (Microsoft AI：官方博客)",
       "category": "AI 模型"
     },
     {
-      "title": "Microsoft AI 发布 MAI Code 2 与 MAI Code 2 Flash 编码模型",
+      "title": "Microsoft AI 发布编码模型 MAI Code 2 与 MAI Code 2 Flash",
       "link": "https://aihot.news/items/c3qj65urfo345mc80xz5jdefb",
-      "summary": "Microsoft AI 发布 MAI Code 2 和 MAI Code 2 Flash 两款编码模型，面向日常企业编码任务，定价远低于竞品。MAI Code 2 在四项基准平均下达到 GPT 6.1 Sol 98% 的性能但成本仅 40%，达到 Claude Opus 5.5 96% 的性能而成本仅 5%；盲测前端评审中 64% 的情况下胜过 GPT-6 Sol。 🔗 阅读原文 via AIHOT · https://aihot.news/items/c3qj65urfo345mc80xz5jdefb",
-      "pub_date": "2026-11-17",
-      "author": "noreply@aihot.news (Microsoft AI：官方博客)",
-      "category": "AI 模型"
-    },
-    {
-      "title": "Microsoft Ignite 2026：MAI 发布多款模型并推出 Licensed Weights 可控权重方案",
-      "link": "https://aihot.news/items/y7f42y59ahf4hjlf4ptoprfq3",
-      "summary": "微软 MAI 在 Ignite 2026 主题演讲中发布一系列强调性价比的模型，并推出 MAI Licensed Weights，可定制后在自己的 Azure 环境中运行、掌控权重与数据。 🔗 阅读原文 via AIHOT · https://aihot.news/items/y7f42y59ahf4hjlf4ptoprfq3",
+      "summary": "Microsoft AI 在 Ignite 发布 MAI Code 2 和 MAI Code 2 Flash 两款面向企业日常编码的模型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/c3qj65urfo345mc80xz5jdefb",
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (Microsoft AI：官方博客)",
       "category": "AI 模型"
@@ -402,6 +394,14 @@
       "pub_date": "2026-11-16",
       "author": "noreply@aihot.news (Lovable Blog)",
       "category": "AI 产品"
+    },
+    {
+      "title": "英伟达CEO黄仁勋辞职后风波持续，公司股价一周下跌14%",
+      "link": "https://aihot.news/items/rk143d9qa0j9gp3fdti162fy7",
+      "summary": "英伟达CEO黄仁勋于上周辞任，公司股价随之下跌14%，CFO Colette Kress出任临时CEO。辞职数小时后，路透社报道其第三段婚外情。事件还涉及公司芯片供应相关指控，国会议员已启动调查。报道称黄仁勋正联络盟友寻求回归，业内担心动荡加剧营收压力，可能促使公司在安全投入上有所松懈。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rk143d9qa0j9gp3fdti162fy7",
+      "pub_date": "2026-11-16",
+      "author": "noreply@aihot.news (The Verge：AI)",
+      "category": "行业动态"
     }
   ]
 }
