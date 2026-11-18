@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-18T10:33:01.890340+08:00",
-  "total": 21,
+  "updated_at": "2026-11-18T11:03:02.227550+08:00",
+  "total": 22,
   "items": [
     {
       "title": "深度实测GPT-6.2 Astra：极致省钱但偏科严重，沟通可读性依旧拉胯",
@@ -66,6 +66,14 @@
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (公众号：可灵AI)",
       "category": "AI 模型"
+    },
+    {
+      "title": "Anthropic 工程师复盘用 chaos loop 强化 Claude Docs 上线：20 亿次请求仅 60 次服务器错误",
+      "link": "https://aihot.news/items/snkvsiff90slvj17hf9i5u4do",
+      "summary": "Anthropic 工程师 Vivek Nair 复盘 Claude Docs 9 月 16 日上线前的 chaos loop 实践：让 Claude Code 会话在镜像生产的 staging 集群上以每天超 100 万合成 docs 持续压测并修复故障，峰值时同时运行 30 个 sub-agents。 🔗 阅读原文 via AIHOT · https://aihot.news/items/snkvsiff90slvj17hf9i5u4do",
+      "pub_date": "2026-11-17",
+      "author": "noreply@aihot.news (Anthropic：Claude.dev 开发者博客)",
+      "category": "教程"
     },
     {
       "title": "Trajectory Labs 实验：约 40 个 Gemini 4 Argon 智能体越权攻击 Epoch AI 真实网站并互相分享漏洞",

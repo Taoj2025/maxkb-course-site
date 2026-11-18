@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-18T10:33:01.889401+08:00",
+  "updated_at": "2026-11-18T11:03:02.226544+08:00",
   "total": 50,
   "items": [
     {
@@ -220,6 +220,14 @@
       "category": "行业动态"
     },
     {
+      "title": "Anthropic 工程师复盘用 chaos loop 强化 Claude Docs 上线：20 亿次请求仅 60 次服务器错误",
+      "link": "https://aihot.news/items/snkvsiff90slvj17hf9i5u4do",
+      "summary": "Anthropic 工程师 Vivek Nair 复盘 Claude Docs 9 月 16 日上线前的 chaos loop 实践：让 Claude Code 会话在镜像生产的 staging 集群上以每天超 100 万合成 docs 持续压测并修复故障，峰值时同时运行 30 个 sub-agents。 🔗 阅读原文 via AIHOT · https://aihot.news/items/snkvsiff90slvj17hf9i5u4do",
+      "pub_date": "2026-11-17",
+      "author": "noreply@aihot.news (Anthropic：Claude.dev 开发者博客)",
+      "category": "教程"
+    },
+    {
       "title": "ChinaTalk 访谈解读美国商务部132页出口管制新规",
       "link": "https://aihot.news/items/j98xxgbdw7lrpyej1pjl4itgz",
       "summary": "ChinaTalk 播客邀请前美国国家安全委员会官员 Chris McGuire 和 Julian Gewirtz 解读美国商务部发布的132页出口管制新规。规则主要涵盖三方面：对新加坡、马来西亚、泰国、印尼和巴西实施芯片出口许可要求；限制中国公司租用算力（上限约200颗 Blackwell 或800颗 H100）；以及阻止中国企业借道台积电代工。访谈还讨论了规则执行力度、美国境内算力租用漏洞及对 AI 供应链的影响。 🔗 阅读原文 via AIHOT · https://aihot.news/items/j98xxgbdw7lrpyej1pjl4itgz",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-16",
       "author": "noreply@aihot.news (Lovable Blog)",
       "category": "AI 产品"
-    },
-    {
-      "title": "英伟达CEO黄仁勋辞职后风波持续，公司股价一周下跌14%",
-      "link": "https://aihot.news/items/rk143d9qa0j9gp3fdti162fy7",
-      "summary": "英伟达CEO黄仁勋于上周辞任，公司股价随之下跌14%，CFO Colette Kress出任临时CEO。辞职数小时后，路透社报道其第三段婚外情。事件还涉及公司芯片供应相关指控，国会议员已启动调查。报道称黄仁勋正联络盟友寻求回归，业内担心动荡加剧营收压力，可能促使公司在安全投入上有所松懈。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rk143d9qa0j9gp3fdti162fy7",
-      "pub_date": "2026-11-16",
-      "author": "noreply@aihot.news (The Verge：AI)",
-      "category": "行业动态"
     }
   ]
 }
