@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-18T11:03:02.226544+08:00",
+  "updated_at": "2026-11-18T11:33:02.078944+08:00",
   "total": 50,
   "items": [
     {
@@ -116,17 +116,17 @@
       "category": "AI 产品"
     },
     {
-      "title": "Microsoft AI 发布 MAI Image 2.7 与 Flash 图像模型并推出 Canvas 工作区",
-      "link": "https://aihot.news/items/ieg99wyo1b6jy175yrk029b0j",
-      "summary": "Microsoft AI 发布 MAI Image 2.7 和 MAI Image 2.7 Flash，主打低成本的前沿图像生成与编辑，并同步推出由 Flash 驱动的交互工作区 Canvas。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ieg99wyo1b6jy175yrk029b0j",
+      "title": "Microsoft AI 发布首个语音到语音模型 MAI Realtime 1，每分钟音频 $0.01 起",
+      "link": "https://aihot.news/items/eewx1bbnzfmbj6r40v7b6s6nb",
+      "summary": "Microsoft AI 发布首个语音到语音模型 MAI Realtime 1，起步价 $0.01 每分钟音频，称其在 Big Bench Audio 和 τ-Voice 基准上于质量、速度和价格上超过 GPT Realtime 2.1。 🔗 阅读原文 via AIHOT · https://aihot.news/items/eewx1bbnzfmbj6r40v7b6s6nb",
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (Microsoft AI：官方博客)",
       "category": "AI 模型"
     },
     {
-      "title": "Microsoft AI 发布首个语音到语音模型 MAI Realtime 1，每分钟音频 $0.01 起",
-      "link": "https://aihot.news/items/eewx1bbnzfmbj6r40v7b6s6nb",
-      "summary": "Microsoft AI 发布首个语音到语音模型 MAI Realtime 1，起步价 $0.01 每分钟音频，称其在 Big Bench Audio 和 τ-Voice 基准上于质量、速度和价格上超过 GPT Realtime 2.1。 🔗 阅读原文 via AIHOT · https://aihot.news/items/eewx1bbnzfmbj6r40v7b6s6nb",
+      "title": "Microsoft MAI 在 Ignite 2026 发布七款高性价比新模型",
+      "link": "https://aihot.news/items/z9zhvfj8o8zp2yp433eizf3uk",
+      "summary": "Microsoft MAI 在 Ignite 2026 发布七款新模型，主打可扩展的性价比。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z9zhvfj8o8zp2yp433eizf3uk",
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (Microsoft AI：官方博客)",
       "category": "AI 模型"
