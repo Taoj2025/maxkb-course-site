@@ -1,8 +1,32 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-19T05:33:01.765306+08:00",
+  "updated_at": "2026-11-19T06:03:02.280268+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Google DeepMind 的 Gemini 4 Neon 上线 OpenRouter",
+      "link": "https://aihot.news/items/k821p6smjnprmolffcr66q1mz",
+      "summary": "OpenRouter 宣布 Google DeepMind 的 Gemini 4 Neon 正式上线其平台，可通过 Google Cloud 使用。该模型面向复杂软件工程、知识工作和科学场景，定位介于 Carbon 与 Hydrogen 之间。Google 称其在 Artificial Analysis Coding Agent Index 排名第一，每任务成本比 Carbon 低 32%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/k821p6smjnprmolffcr66q1mz",
+      "pub_date": "2026-11-18",
+      "author": "noreply@aihot.news (OpenRouter)",
+      "category": "AI 产品"
+    },
+    {
+      "title": "Anthropic IPO 定价 83 美元，高于发行区间",
+      "link": "https://aihot.news/items/kb0qscktovse2ejle2ubpcr2z",
+      "summary": "Anthropic IPO 定价为每股 83 美元，高于此前发行区间。消息援引自 WSJ 报道。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kb0qscktovse2ejle2ubpcr2z",
+      "pub_date": "2026-11-18",
+      "author": "noreply@aihot.news (Kate Clark)",
+      "category": "行业动态"
+    },
+    {
+      "title": "Gemini 4 Neon 向 Google AI Pro 和 Ultra 订阅用户开放",
+      "link": "https://aihot.news/items/dpmse0g0euqubtr0704x8bqvw",
+      "summary": "Google 宣布即日起 Gemini 4 Neon 向 Google AI Pro 和 Ultra 订阅用户开放，覆盖移动端、桌面端和网页端。官方称该模型擅长需要前沿级推理和快速响应的工作。 🔗 阅读原文 via AIHOT · https://aihot.news/items/dpmse0g0euqubtr0704x8bqvw",
+      "pub_date": "2026-11-18",
+      "author": "noreply@aihot.news (Gemini)",
+      "category": "AI 模型"
+    },
     {
       "title": "Meta 员工内部聊天显示对 Muse 智能体隐私风险的担忧",
       "link": "https://aihot.news/items/i24hiy236uc3ynswh26pw7s0h",
@@ -260,9 +284,9 @@
       "category": "AI 模型"
     },
     {
-      "title": "Microsoft Ignite 2026 发布 MAI 家族七款新模型，主打高性价比",
+      "title": "Microsoft Ignite 2026 发布 MAI 系列 7 个新模型",
       "link": "https://aihot.news/items/z9zhvfj8o8zp2yp433eizf3uk",
-      "summary": "Microsoft 在 Ignite 2026 发布七款 MAI 新模型，主打可扩展的价格性能比。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z9zhvfj8o8zp2yp433eizf3uk",
+      "summary": "微软在 Ignite 2026 上发布 7 个 MAI 系列新模型，主打性价比。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z9zhvfj8o8zp2yp433eizf3uk",
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (Microsoft AI：官方博客)",
       "category": "AI 模型"
@@ -270,15 +294,7 @@
     {
       "title": "Microsoft AI 发布 MAI Code 2 与 Code 2 Flash 编码模型",
       "link": "https://aihot.news/items/c3qj65urfo345mc80xz5jdefb",
-      "summary": "Microsoft AI 发布 MAI Code 2 和 MAI Code 2 Flash 两款面向企业日常编码的模型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/c3qj65urfo345mc80xz5jdefb",
-      "pub_date": "2026-11-17",
-      "author": "noreply@aihot.news (Microsoft AI：官方博客)",
-      "category": "AI 模型"
-    },
-    {
-      "title": "Microsoft Ignite 2026：MAI 发布多款模型并推出 Licensed Weights",
-      "link": "https://aihot.news/items/y7f42y59ahf4hjlf4ptoprfq3",
-      "summary": "Microsoft MAI 在 Ignite 2026 主题演讲中发布多款模型：MAI Code 2 在四项日常编码基准上达到 GPT 6.1 Sol 98% 的性能、成本仅 40%；MAI Cyber 2 Flash 在 Cyber Gym 上超过 GPT 6 Astra、每任务成本不到 2%；MAI Image 2.7 称为全球第一的图像编辑模型，成本为竞品五分之一。 🔗 阅读原文 via AIHOT · https://aihot.news/items/y7f42y59ahf4hjlf4ptoprfq3",
+      "summary": "Microsoft AI 发布两款面向企业日常编码的模型 MAI Code 2 和 MAI Code 2 Flash，主打性价比。文中称在四个编码基准平均后，MAI Code 2 以 40% 的成本达到 GPT-6.1 Sol 98% 的性能，以 5% 的成本达到 Claude Opus 5.5 96% 的性能；盲测前端评测中开发者 64% 的情况下更偏好其结果。 🔗 阅读原文 via AIHOT · https://aihot.news/items/c3qj65urfo345mc80xz5jdefb",
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (Microsoft AI：官方博客)",
       "category": "AI 模型"
@@ -386,22 +402,6 @@
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (OpenAI：部署安全与系统卡)",
       "category": "论文"
-    },
-    {
-      "title": "奥尔特曼谈黄仁勋离职：同情其处境，相信 AI 行业能平稳度过",
-      "link": "https://aihot.news/items/eboxbyc4j2oekoiuhw5yf2gms",
-      "summary": "据彭博社报道，OpenAI CEO 奥尔特曼表示，即使黄仁勋不再掌舵英伟达，AI 行业依然会运转良好，并将黄仁勋比作会有缺点的英雄。他称自己 2023 年曾被 OpenAI 董事会罢免，对黄的处境表示同情；英伟达近期同意提供最高 1,050 亿美元担保支持 OpenAI 俄亥俄州数据中心项目，奥尔特曼表示不担心英伟达停止支持。 🔗 阅读原文 via AIHOT · https://aihot.news/items/eboxbyc4j2oekoiuhw5yf2gms",
-      "pub_date": "2026-11-17",
-      "author": "noreply@aihot.news (IT之家·人工智能)",
-      "category": "观点"
-    },
-    {
-      "title": "OpenAI 向 NATO 及盟国网络防御机构开放 Daybreak 网络安全模型",
-      "link": "https://aihot.news/items/t48n0jqxc0g3hsc324hlwhlhk",
-      "summary": "OpenAI 宣布通过 Daybreak 工具向 NATO 及盟国网络防御机构提供先进网络安全模型，用于审查软件、调查可疑活动和验证漏洞。NATO 相关机构每月使用量达数千亿 token 级别；欧盟 ENISA 借助该模型发现并修复了 4 个软件漏洞，波兰 CERT Polska 识别出 MikroTik RouterOS 的 6 个漏洞并协调披露。 🔗 阅读原文 via AIHOT · https://aihot.news/items/t48n0jqxc0g3hsc324hlwhlhk",
-      "pub_date": "2026-11-17",
-      "author": "noreply@aihot.news (OpenAI：官网动态)",
-      "category": "行业动态"
     }
   ]
 }

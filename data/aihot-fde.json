@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-19T05:33:01.766257+08:00",
-  "total": 21,
+  "updated_at": "2026-11-19T06:03:02.281192+08:00",
+  "total": 22,
   "items": [
+    {
+      "title": "Google DeepMind 的 Gemini 4 Neon 上线 OpenRouter",
+      "link": "https://aihot.news/items/k821p6smjnprmolffcr66q1mz",
+      "summary": "OpenRouter 宣布 Google DeepMind 的 Gemini 4 Neon 正式上线其平台，可通过 Google Cloud 使用。该模型面向复杂软件工程、知识工作和科学场景，定位介于 Carbon 与 Hydrogen 之间。Google 称其在 Artificial Analysis Coding Agent Index 排名第一，每任务成本比 Carbon 低 32%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/k821p6smjnprmolffcr66q1mz",
+      "pub_date": "2026-11-18",
+      "author": "noreply@aihot.news (OpenRouter)",
+      "category": "AI 产品"
+    },
     {
       "title": "Meta 员工内部聊天显示对 Muse 智能体隐私风险的担忧",
       "link": "https://aihot.news/items/i24hiy236uc3ynswh26pw7s0h",
@@ -108,6 +116,14 @@
       "category": "AI 产品"
     },
     {
+      "title": "Microsoft AI 发布 MAI Code 2 与 Code 2 Flash 编码模型",
+      "link": "https://aihot.news/items/c3qj65urfo345mc80xz5jdefb",
+      "summary": "Microsoft AI 发布两款面向企业日常编码的模型 MAI Code 2 和 MAI Code 2 Flash，主打性价比。文中称在四个编码基准平均后，MAI Code 2 以 40% 的成本达到 GPT-6.1 Sol 98% 的性能，以 5% 的成本达到 Claude Opus 5.5 96% 的性能；盲测前端评测中开发者 64% 的情况下更偏好其结果。 🔗 阅读原文 via AIHOT · https://aihot.news/items/c3qj65urfo345mc80xz5jdefb",
+      "pub_date": "2026-11-17",
+      "author": "noreply@aihot.news (Microsoft AI：官方博客)",
+      "category": "AI 模型"
+    },
+    {
       "title": "OpenAI GPT-6.2 Astra 和 GPT-6.2 Sol 上线 OpenRouter",
       "link": "https://aihot.news/items/tww8adkmqsbjxg8u6m16vuzta",
       "summary": "OpenRouter 宣布 OpenAI 的 GPT-6.2 Astra 和 GPT-6.2 Sol 上线。Astra 面向最难的项目，评测成绩创新高且每任务成本不到 GPT-6 Astra 的三分之一，价格为 $8/M 输入、$40/M 输出；Sol 面向日常智能体工作，价格为 $2/M 输入、$10/M 输出，两者均有 Pro 版本。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tww8adkmqsbjxg8u6m16vuzta",
@@ -162,14 +178,6 @@
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (OpenAI：部署安全与系统卡)",
       "category": "论文"
-    },
-    {
-      "title": "OpenAI 向 NATO 及盟国网络防御机构开放 Daybreak 网络安全模型",
-      "link": "https://aihot.news/items/t48n0jqxc0g3hsc324hlwhlhk",
-      "summary": "OpenAI 宣布通过 Daybreak 工具向 NATO 及盟国网络防御机构提供先进网络安全模型，用于审查软件、调查可疑活动和验证漏洞。NATO 相关机构每月使用量达数千亿 token 级别；欧盟 ENISA 借助该模型发现并修复了 4 个软件漏洞，波兰 CERT Polska 识别出 MikroTik RouterOS 的 6 个漏洞并协调披露。 🔗 阅读原文 via AIHOT · https://aihot.news/items/t48n0jqxc0g3hsc324hlwhlhk",
-      "pub_date": "2026-11-17",
-      "author": "noreply@aihot.news (OpenAI：官网动态)",
-      "category": "行业动态"
     }
   ]
 }
