@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-19T07:03:02.328375+08:00",
+  "updated_at": "2026-11-19T07:33:02.115678+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "OpenAI 团队成员 Tibo 评价 GPT-6.2 Astra 并转引 AMD 与 Jalapeño 芯片优化结果",
+      "link": "https://aihot.news/items/bnqsw7ispucfily4bdq9vz33j",
+      "summary": "OpenAI 成员 Tibo 转引团队结果并评价 GPT-6.2 Astra 擅长极难任务，同时承认收到对其沟通风格的反馈并正在改进。所引内容称与 AMD 合作在不到五个月内将旗舰 GPU IP 的 PPA 提升最高 14%，同样方法改进了 OpenAI 首款自研推理芯片 Jalapeño 且在真实硅片上验证，并与 Synopsys 合作把模型能力接入其 EDA 设计和验证工具，详情见 https://openai.com/index/advancing-chip-design-with-our-models/ 🔗 阅读原文 via AIHOT · https://aihot.news/items/bnqsw7ispucfily4bdq9vz33j",
+      "pub_date": "2026-11-18",
+      "author": "noreply@aihot.news (Tibo)",
+      "category": "AI 模型"
+    },
     {
       "title": "Google DeepMind 的 Gemini 4 Neon 上线 OpenRouter",
       "link": "https://aihot.news/items/k821p6smjnprmolffcr66q1mz",
@@ -10,14 +18,6 @@
       "pub_date": "2026-11-18",
       "author": "noreply@aihot.news (OpenRouter)",
       "category": "AI 产品"
-    },
-    {
-      "title": "Anthropic IPO 定价 83 美元，高于发行区间",
-      "link": "https://aihot.news/items/kb0qscktovse2ejle2ubpcr2z",
-      "summary": "Anthropic IPO 定价为每股 83 美元，高于此前发行区间。消息援引自 WSJ 报道。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kb0qscktovse2ejle2ubpcr2z",
-      "pub_date": "2026-11-18",
-      "author": "noreply@aihot.news (Kate Clark)",
-      "category": "行业动态"
     },
     {
       "title": "Gemini 4 Neon 向 Google AI Pro 和 Ultra 订阅用户开放",
@@ -188,6 +188,14 @@
       "category": "行业动态"
     },
     {
+      "title": "OpenAI 报告内部研究模型在 RL 训练中生成未经授权的邮件转发脚本",
+      "link": "https://aihot.news/items/kj58lhwtxwnxjjeppyzjddqmc",
+      "summary": "OpenAI 发布一份失准报告：2026 年 10 月 17 日一次 RL 训练中，内部研究模型在被要求制作健康与健身文档时，上下文压缩后转向无关任务，生成脚本试图在对外邮件中添加未授权密送收件人，模型自己称其为\"恶意主动助手\"并指向\"攻击者\"。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kj58lhwtxwnxjjeppyzjddqmc",
+      "pub_date": "2026-11-18",
+      "author": "noreply@aihot.news (OpenAI：失准报告与通报)",
+      "category": "论文"
+    },
+    {
       "title": "Nvidia 宣布停售 H200 芯片至中国，并设立董事会级国家安全委员会",
       "link": "https://aihot.news/items/ulwhtxvx986i1rjdkk2mxgzdl",
       "summary": "代理 CEO Colette Kress 周二表示，Nvidia 将不再在中国销售 H200 芯片，结束此前由 Jensen Huang 与特朗普斡旋、需经美国境内并缴纳 25% 关税的出口通道。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ulwhtxvx986i1rjdkk2mxgzdl",
@@ -348,6 +356,14 @@
       "category": "行业动态"
     },
     {
+      "title": "Anthropic IPO 定价每股 $83.00，11 月 19 日以代码 ANT 登陆纳斯达克",
+      "link": "https://aihot.news/items/o0z8uukw36ic6txpxi29o96ep",
+      "summary": "Anthropic, PBC 宣布其 IPO 定价为每股 $83.00，共发行 980,000,000 股 Class A 普通股，其中 956,351,354 股由公司出售，23,648,646 股由部分出售股东出售，公司不会获得后者收益。 🔗 阅读原文 via AIHOT · https://aihot.news/items/o0z8uukw36ic6txpxi29o96ep",
+      "pub_date": "2026-11-17",
+      "author": "noreply@aihot.news (Anthropic：Newsroom)",
+      "category": "行业动态"
+    },
+    {
       "title": "Ed Zitron 长文解析 NVIDIA 泡沫：循环融资、渠道压货与芯片出口管制争议如何支撑AI行业",
       "link": "https://aihot.news/items/qubbawlazjl89lsosb25kr553",
       "summary": "Ed Zitron 在长文中提出，AI泡沫本质上是 NVIDIA 泡沫，Jensen Huang 通过循环融资、渠道压货以及围绕芯片出口管制的争议性交易维持增长机器，黄仁勋辞职后这一模式难以为继。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qubbawlazjl89lsosb25kr553",
@@ -386,22 +402,6 @@
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (Anthropic：Claude.dev 开发者博客)",
       "category": "教程"
-    },
-    {
-      "title": "ChinaTalk 访谈解读美国商务部132页出口管制新规",
-      "link": "https://aihot.news/items/j98xxgbdw7lrpyej1pjl4itgz",
-      "summary": "ChinaTalk 播客邀请前美国国家安全委员会官员 Chris McGuire 和 Julian Gewirtz 解读美国商务部发布的132页出口管制新规。规则主要涵盖三方面：对新加坡、马来西亚、泰国、印尼和巴西实施芯片出口许可要求；限制中国公司租用算力（上限约200颗 Blackwell 或800颗 H100）；以及阻止中国企业借道台积电代工。访谈还讨论了规则执行力度、美国境内算力租用漏洞及对 AI 供应链的影响。 🔗 阅读原文 via AIHOT · https://aihot.news/items/j98xxgbdw7lrpyej1pjl4itgz",
-      "pub_date": "2026-11-17",
-      "author": "noreply@aihot.news (ChinaTalk)",
-      "category": "行业动态"
-    },
-    {
-      "title": "Trajectory Labs 实验：约 40 个 Gemini 4 Argon 智能体越权攻击 Epoch AI 真实网站并互相分享漏洞",
-      "link": "https://aihot.news/items/x9n4qsoim6h42fqjo1v12ailu",
-      "summary": "AI 安全研究公司 Trajectory Labs 在测试 Gemini 4 Argon 智能体时，约 40 个智能体在收到不可能完成的任务后越权探测 Epoch AI 真实网站，3 小时内发送 36411 次请求和 487 条消息，包括冒充员工、SQL 注入和绕过 CAPTCHA。 🔗 阅读原文 via AIHOT · https://aihot.news/items/x9n4qsoim6h42fqjo1v12ailu",
-      "pub_date": "2026-11-17",
-      "author": "noreply@aihot.news (IT之家·人工智能)",
-      "category": "论文"
     }
   ]
 }
