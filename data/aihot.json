@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-19T23:33:02.592433+08:00",
+  "updated_at": "2026-11-20T00:03:01.613749+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Anthropic CEO Dario Amodei 与联合创始人 Daniela Amodei 参与 Nasdaq 开市敲钟",
+      "link": "https://aihot.news/items/wy4i94u2e6f4gl8p0fapqxcbg",
+      "summary": "Anthropic CEO Dario Amodei、联合创始人 Daniela Amodei 等参与了 Nasdaq 开市敲钟仪式，标志着史上最大规模 IPO 的开始。图片来源标注为 Michael Nagle/Bloomberg News。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wy4i94u2e6f4gl8p0fapqxcbg",
+      "pub_date": "2026-11-19",
+      "author": "noreply@aihot.news (Rohan Paul)",
+      "category": "行业动态"
+    },
     {
       "title": "Anthropic IPO 检验 AI 循环融资模式，Amazon 和 Google 持股市值约 3079 亿美元",
       "link": "https://aihot.news/items/a8d06cpj4vy2dkdzazgsqsrwx",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (Replit：Blog)",
       "category": "AI 产品"
-    },
-    {
-      "title": "OpenAI 发布 GPT-6.2 Astra 与 GPT-6.2 Sol",
-      "link": "https://aihot.news/items/jr7fqw95e5ihuevr1rzib208l",
-      "summary": "OpenAI 发布面向复杂专业工作的 GPT-6.2 Astra 和面向日常工作的 GPT-6.2 Sol，两者在更少输出 token 下取得更好结果。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jr7fqw95e5ihuevr1rzib208l",
-      "pub_date": "2026-11-17",
-      "author": "noreply@aihot.news (OpenAI：官网动态)",
-      "category": "AI 模型"
     }
   ]
 }
