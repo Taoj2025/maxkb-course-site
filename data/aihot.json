@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-20T02:33:01.801660+08:00",
+  "updated_at": "2026-11-20T03:03:01.767288+08:00",
   "total": 50,
   "items": [
     {
@@ -18,6 +18,14 @@
       "pub_date": "2026-11-19",
       "author": "noreply@aihot.news (TechCrunch：AI)",
       "category": "行业动态"
+    },
+    {
+      "title": "Google 在 Gemini API 与 AI Studio 上线 Genie 4 实时世界模型",
+      "link": "https://aihot.news/items/n1nzpfmd3f6zc4abq3s8yxrde",
+      "summary": "Philipp Schmid 宣布 Genie 4 正在 Gemini API 和 AI Studio 上推出，可从文本或图像生成 720p 24fps 的世界，并用 WASD、提示词和 48 kHz 立体声实时操控。可通过 WebRTC（浏览器加临时 token）或 WebSocket 串流，文档见 https://aistudio.google.com/docs/genie。 🔗 阅读原文 via AIHOT · https://aihot.news/items/n1nzpfmd3f6zc4abq3s8yxrde",
+      "pub_date": "2026-11-19",
+      "author": "noreply@aihot.news (Philipp Schmid)",
+      "category": "AI 产品"
     },
     {
       "title": "indigo 转发 Dario Amodei 为 Anthropic IPO 在 Nasdaq 敲钟",
@@ -114,14 +122,6 @@
       "pub_date": "2026-11-19",
       "author": "noreply@aihot.news (TechCrunch：AI)",
       "category": "行业动态"
-    },
-    {
-      "title": "Google Gemini API 正式发布 Genie 4 实时交互式世界生成模型",
-      "link": "https://aihot.news/items/fnv1d9c59bf9pziw87gzz3tj2",
-      "summary": "Google 在 Interactions API（v1beta）上正式发布 Genie 4（models/genie-4），用于实时交互式世界生成。可通过文本、16:9 参考图或两者结合生成世界，以 24 fps 16:9 视频流搭配 48 kHz 立体声输出，支持 WASD/方向键和会话中文本事件实时操控，经由 WebRTC 和 WebSockets 传输。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fnv1d9c59bf9pziw87gzz3tj2",
-      "pub_date": "2026-11-19",
-      "author": "noreply@aihot.news (Gemini API：更新日志)",
-      "category": "AI 产品"
     },
     {
       "title": "黄仁勋相关传闻核查：美商务部与司法部就Megaspeed发联合声明，未认定违规芯片销售",

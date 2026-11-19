@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-20T02:33:01.802514+08:00",
-  "total": 19,
+  "updated_at": "2026-11-20T03:03:01.768221+08:00",
+  "total": 20,
   "items": [
     {
       "title": "路透报道：Meta AI 智能体 Muse 混淆对话并泄露用户隐私数据",
@@ -10,6 +10,14 @@
       "pub_date": "2026-11-19",
       "author": "noreply@aihot.news (TechCrunch：AI)",
       "category": "行业动态"
+    },
+    {
+      "title": "Google 在 Gemini API 与 AI Studio 上线 Genie 4 实时世界模型",
+      "link": "https://aihot.news/items/n1nzpfmd3f6zc4abq3s8yxrde",
+      "summary": "Philipp Schmid 宣布 Genie 4 正在 Gemini API 和 AI Studio 上推出，可从文本或图像生成 720p 24fps 的世界，并用 WASD、提示词和 48 kHz 立体声实时操控。可通过 WebRTC（浏览器加临时 token）或 WebSocket 串流，文档见 https://aistudio.google.com/docs/genie。 🔗 阅读原文 via AIHOT · https://aihot.news/items/n1nzpfmd3f6zc4abq3s8yxrde",
+      "pub_date": "2026-11-19",
+      "author": "noreply@aihot.news (Philipp Schmid)",
+      "category": "AI 产品"
     },
     {
       "title": "Anthropic CEO Dario Amodei 就公司 IPO 发表声明",
