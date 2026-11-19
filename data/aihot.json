@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-19T09:03:01.816721+08:00",
+  "updated_at": "2026-11-19T09:33:02.490391+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Nadella 解释向 6 万员工提供买断的原因：转型为 AI 优先的组织而非裁员",
+      "link": "https://aihot.news/items/g47lsydtqfsi16e0z920ghe2y",
+      "summary": "Microsoft CEO Satya Nadella 在 DealBook Summit 上解释，10 月向 6 万名员工提供买断是为了让员工在转型中拥有选择权，而非用 AI 取代员工，目标是让所有人都用 AI 工作、转向管理 AI 智能体。 🔗 阅读原文 via AIHOT · https://aihot.news/items/g47lsydtqfsi16e0z920ghe2y",
+      "pub_date": "2026-11-19",
+      "author": "noreply@aihot.news (TechCrunch：AI)",
+      "category": "行业动态"
+    },
     {
       "title": "黄仁勋相关传闻核查：美商务部与司法部就Megaspeed发联合声明，未认定违规芯片销售",
       "link": "https://aihot.news/items/abxhv94f3gcq1qb9mzdf7yma3",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (Ed Zitron 长文 / Where’s Your Ed At)",
       "category": "观点"
-    },
-    {
-      "title": "可灵 AI 发布 Kling Image 4.0 图像模型并开放 API",
-      "link": "https://aihot.news/items/e871ammlz8gpx1oozsswidzt0",
-      "summary": "快手可灵 AI 发布新一代图像创作模型 Kling Image 4.0，现已全量上线并面向企业客户与开发者开放 API。模型采用「理解生成统一」架构，首次支持原生 8K 图像生成，内置 110+ 种预设影调风格和 70+ 种商用字体，支持最高 15000 tokens 文本输入、单图最多生成 2000 字，以及一次描述生成最多 10 张风格连贯的组图和电商详情页等超长画幅长图。 🔗 阅读原文 via AIHOT · https://aihot.news/items/e871ammlz8gpx1oozsswidzt0",
-      "pub_date": "2026-11-17",
-      "author": "noreply@aihot.news (公众号：可灵AI)",
-      "category": "AI 模型"
     }
   ]
 }
