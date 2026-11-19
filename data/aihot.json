@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-20T06:33:01.961294+08:00",
+  "updated_at": "2026-11-20T07:03:02.097145+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Nvidia 股价近期波动复盘：财报强劲但股价较 10 月高点跌近 40%",
+      "link": "https://aihot.news/items/w1q2gyqsel49b4vbqeodf0qmc",
+      "summary": "The Verge 梳理 Nvidia 近期股价波动：第三季度营收同比翻倍至 1158 亿美元，数据中心业务增长 110%，Vera Rubin 平台贡献近 200 亿美元收入；但受芯片股整体抛售、前 CEO 黄仁勋辞职及公司治理调查等因素影响，股价一度报约 150 美元，较 10 月 6 日历史高点跌近 40%，周四收于 145.98 美元，创 52 周新低。 🔗 阅读原文 via AIHOT · https://aihot.news/items/w1q2gyqsel49b4vbqeodf0qmc",
+      "pub_date": "2026-11-19",
+      "author": "noreply@aihot.news (The Verge：AI)",
+      "category": "行业动态"
+    },
     {
       "title": "Mac 版 Gemini 应用上线计算机操作功能，可代用户执行跨应用任务",
       "link": "https://aihot.news/items/h5xjk79bhcu8vgnbrynj208uj",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (Google)",
       "category": "AI 产品"
-    },
-    {
-      "title": "Wiz 解析 OpenJDK 高危漏洞 CVE-2026-114938（Java4Shell）：AVX-512 Base64 解码可致远程代码执行",
-      "link": "https://aihot.news/items/r30kdvujcakiutm7umgxmije7",
-      "summary": "2026年11月17日披露的 OpenJDK 漏洞 CVE-2026-114938（Java4Shell）CVSSv4.0 评分 9.2，源于 AVX-512 Base64 解码汇编代码对末尾填充字符计算错误导致堆内存越界写，可被未认证攻击者远程利用。 🔗 阅读原文 via AIHOT · https://aihot.news/items/r30kdvujcakiutm7umgxmije7",
-      "pub_date": "2026-11-17",
-      "author": "noreply@aihot.news (Wiz：Research)",
-      "category": "行业动态"
     }
   ]
 }
