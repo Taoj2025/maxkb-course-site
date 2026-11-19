@@ -896,5 +896,23 @@
     "source": "机器摘要 · InfoQ English",
     "file": "13349-how-linkedin-netflix-doordash-run-agents.md",
     "estimated_read_time": "1 分钟"
+  },
+  {
+    "id": 13350,
+    "title": "谷歌推出 Gemini 4 Neon 模型，AA 编程 AI 智能体指数超 Claude Opus 5.5 排第一",
+    "slug": "13350-gemini-4-neon-aa-ai-claude-opus-5-5",
+    "summary": "IT之家 11 月 19 日消息，谷歌今天（11 月 18 日）宣布推出 AI 模型 Gemini 4 Neon，主攻复杂编程、科学研究和企业工作流程，更好平衡推理能力、任务处理速度与成本，目前已开始向开发者、企业及部分付费订阅用户开放。费用方面，Gemini 4 Neon 在 API 调用方面，每",
+    "category": "最新动态",
+    "tags": [
+      "FDE",
+      "AI 资讯",
+      "前端部署"
+    ],
+    "color": "purple",
+    "date": "2026-11-19",
+    "author": "小Q（机器摘要）",
+    "source": "机器摘要 · IT之家",
+    "file": "13350-gemini-4-neon-aa-ai-claude-opus-5-5.md",
+    "estimated_read_time": "1 分钟"
   }
 ]
