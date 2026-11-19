@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-20T02:03:01.559245+08:00",
-  "total": 18,
+  "updated_at": "2026-11-20T02:33:01.802514+08:00",
+  "total": 19,
   "items": [
+    {
+      "title": "路透报道：Meta AI 智能体 Muse 混淆对话并泄露用户隐私数据",
+      "link": "https://aihot.news/items/rgcb4qpuh47ru9kirf977qqt4",
+      "summary": "据 Reuters 查看 Meta 内部帖子的报道，Meta 员工反映公司 AI 智能体 Muse 会混淆不同账户的对话并暴露隐私数据，包括未发起的育儿请求、订单和银行账户余额，有员工收到显示 Capital One 余额 $2722.58 和 Charles Schwab 余额 $5899.57 的消息，还有人被提醒回复 Signal 上的信息。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rgcb4qpuh47ru9kirf977qqt4",
+      "pub_date": "2026-11-19",
+      "author": "noreply@aihot.news (TechCrunch：AI)",
+      "category": "行业动态"
+    },
     {
       "title": "Anthropic CEO Dario Amodei 就公司 IPO 发表声明",
       "link": "https://aihot.news/items/bj8r4lnrbcoi5cl1asnyn6qt5",

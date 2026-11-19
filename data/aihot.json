@@ -1,8 +1,24 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-20T02:03:01.558304+08:00",
+  "updated_at": "2026-11-20T02:33:01.801660+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Perplexity CEO Aravind Srinivas 祝贺 Anthropic IPO，称 Opus 5.5 仍是业界最佳模型",
+      "link": "https://aihot.news/items/w8zhbr5smu0072gyuzmmay1eo",
+      "summary": "Perplexity CEO Aravind Srinivas 发推祝贺 Anthropic 当日 IPO，称其展示了专注、高信念、品味驱动的团队能在短时间内达成的成果。他表示 Opus 5.5 以明显优势仍是业界最佳模型，并称 Perplexity 作为 Anthropic 客户为其高兴。 🔗 阅读原文 via AIHOT · https://aihot.news/items/w8zhbr5smu0072gyuzmmay1eo",
+      "pub_date": "2026-11-19",
+      "author": "noreply@aihot.news (Aravind Srinivas)",
+      "category": "行业动态"
+    },
+    {
+      "title": "路透报道：Meta AI 智能体 Muse 混淆对话并泄露用户隐私数据",
+      "link": "https://aihot.news/items/rgcb4qpuh47ru9kirf977qqt4",
+      "summary": "据 Reuters 查看 Meta 内部帖子的报道，Meta 员工反映公司 AI 智能体 Muse 会混淆不同账户的对话并暴露隐私数据，包括未发起的育儿请求、订单和银行账户余额，有员工收到显示 Capital One 余额 $2722.58 和 Charles Schwab 余额 $5899.57 的消息，还有人被提醒回复 Signal 上的信息。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rgcb4qpuh47ru9kirf977qqt4",
+      "pub_date": "2026-11-19",
+      "author": "noreply@aihot.news (TechCrunch：AI)",
+      "category": "行业动态"
+    },
     {
       "title": "indigo 转发 Dario Amodei 为 Anthropic IPO 在 Nasdaq 敲钟",
       "link": "https://aihot.news/items/gp3hccimt42ak2uh82nrpty65",
@@ -28,11 +44,11 @@
       "category": "行业动态"
     },
     {
-      "title": "Anthropic 股票上市首日开盘 111.50 美元，较 83 美元发行价涨约 34%",
-      "link": "https://aihot.news/items/hzlbq0fxcls8sxek76qoq63v8",
-      "summary": "Anthropic 股票上市首日以每股 111.50 美元开盘，较每股 83 美元的 IPO 发行价上涨约 34%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hzlbq0fxcls8sxek76qoq63v8",
+      "title": "Anthropic 登陆纳斯达克，开盘价 111 美元较发行价高出 33%",
+      "link": "https://aihot.news/items/gklqioeodqeuqgz3lttg83ztv",
+      "summary": "Anthropic 在纳斯达克完成 IPO，开盘几分钟内股价达 111.50 美元，较 83 美元发行价高出 33%，发行价已超过公司此前 70 至 78 美元的预期区间。本次发行募资超过 810 亿美元，叠加同期私募融资后公司现金储备预计达 2200 亿美元；按开盘价计算市值超过 2 万亿美元，CEO Dario Amodei 在开盘致辞中强调公司对安全的承诺。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gklqioeodqeuqgz3lttg83ztv",
       "pub_date": "2026-11-19",
-      "author": "noreply@aihot.news (Kate Clark)",
+      "author": "noreply@aihot.news (TechCrunch：AI)",
       "category": "行业动态"
     },
     {
@@ -383,22 +399,6 @@
       "title": "Nvidia 第三财季营收 $115.8B 超预期，数据中心占 93%",
       "link": "https://aihot.news/items/vgopllkh4so1p1q01nefg1364",
       "summary": "Nvidia 第三财季营收 $115.8B，同比增长 103%，其中数据中心收入 $107.6B 占 93%，季度利润 $65.3B 翻倍。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vgopllkh4so1p1q01nefg1364",
-      "pub_date": "2026-11-17",
-      "author": "noreply@aihot.news (Rohan Paul)",
-      "category": "行业动态"
-    },
-    {
-      "title": "OpenClaw 的 Sign in with ChatGPT 结束测试，支持 ChatGPT Business 及 GPT-6.2 Astra 与 Sol",
-      "link": "https://aihot.news/items/fatxhu2tz1d0g2g8412axx3k5",
-      "summary": "OpenClaw 宣布 Sign in with ChatGPT 功能结束测试，用户可在 OpenClaw 中使用自己的 ChatGPT 套餐，包括 ChatGPT Business。作者还确认支持新模型 GPT-6.2 Astra 和 Sol。引用的 @OpenAIDevs 内容显示，ChatGPT Business 套餐现已可通过 Sign in with ChatGPT 用于 Notion、v0、OpenClaw 等多种工具。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fatxhu2tz1d0g2g8412axx3k5",
-      "pub_date": "2026-11-17",
-      "author": "noreply@aihot.news (OpenClaw)",
-      "category": "AI 产品"
-    },
-    {
-      "title": "WSJ 报道 SEC 对 Nvidia 披露问题启动民事调查，恰逢 CEO 黄仁勋离任",
-      "link": "https://aihot.news/items/ko07avibxdjfqycfyj5i04c0e",
-      "summary": "据 WSJ，SEC 正以民事调查核实 Nvidia 的披露是否误导投资者，图片中的 WSJ 标题显示此事发生于 CEO 黄仁勋离任之际。Nvidia 在截至 2025 年 7 月的季度后停止单独披露新加坡收入，该季度新加坡账单达 $10.2B、占总数 22%，公司称客户通过新加坡开票而芯片几乎都发往别处。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ko07avibxdjfqycfyj5i04c0e",
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (Rohan Paul)",
       "category": "行业动态"
