@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-20T00:33:01.532419+08:00",
+  "updated_at": "2026-11-20T01:03:01.959666+08:00",
   "total": 18,
   "items": [
+    {
+      "title": "Perplexity Computer 的 Brain 智能体可自动编写和更新个人技能",
+      "link": "https://aihot.news/items/cty34utgc5ppbdnayf7cnjqlv",
+      "summary": "Perplexity CEO Aravind Srinivas 分享 Computer 中 Brain 智能体的自我改进技能研究：Brain 会读取历史会话轨迹（工具调用、推理、结果），识别重复模式，仅在证据足够时提议新技能或更新。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cty34utgc5ppbdnayf7cnjqlv",
+      "pub_date": "2026-11-19",
+      "author": "noreply@aihot.news (Aravind Srinivas)",
+      "category": "论文"
+    },
     {
       "title": "Ai2 在 Asta 平台发布 Theorizer 科研理论生成智能体并开源代码",
       "link": "https://aihot.news/items/nl1zxwjilx9vxvz7af13c1s9w",
@@ -138,14 +146,6 @@
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (Microsoft：Official Blog)",
       "category": "AI 产品"
-    },
-    {
-      "title": "Microsoft AI 发布 MAI Code 2 与 Code 2 Flash 编码模型",
-      "link": "https://aihot.news/items/c3qj65urfo345mc80xz5jdefb",
-      "summary": "Microsoft AI 发布两款面向企业日常编码的模型 MAI Code 2 和 MAI Code 2 Flash，主打性价比。文中称在四个编码基准平均后，MAI Code 2 以 40% 的成本达到 GPT-6.1 Sol 98% 的性能，以 5% 的成本达到 Claude Opus 5.5 96% 的性能；盲测前端评测中开发者 64% 的情况下更偏好其结果。 🔗 阅读原文 via AIHOT · https://aihot.news/items/c3qj65urfo345mc80xz5jdefb",
-      "pub_date": "2026-11-17",
-      "author": "noreply@aihot.news (Microsoft AI：官方博客)",
-      "category": "AI 模型"
     }
   ]
 }
