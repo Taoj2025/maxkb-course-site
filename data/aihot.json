@@ -1,15 +1,15 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-20T01:33:02.318634+08:00",
+  "updated_at": "2026-11-20T02:03:01.558304+08:00",
   "total": 50,
   "items": [
     {
-      "title": "Google 在 Gemini API 与 AI Studio 上线 Genie 4 实时世界模型",
-      "link": "https://aihot.news/items/n1nzpfmd3f6zc4abq3s8yxrde",
-      "summary": "Philipp Schmid 宣布 Genie 4 正在 Gemini API 和 AI Studio 上推出，可从文本或图像生成 720p 24fps 的世界，并用 WASD、提示词和 48 kHz 立体声实时操控。可通过 WebRTC（浏览器加临时 token）或 WebSocket 串流，文档见 https://aistudio.google.com/docs/genie。 🔗 阅读原文 via AIHOT · https://aihot.news/items/n1nzpfmd3f6zc4abq3s8yxrde",
+      "title": "indigo 转发 Dario Amodei 为 Anthropic IPO 在 Nasdaq 敲钟",
+      "link": "https://aihot.news/items/gp3hccimt42ak2uh82nrpty65",
+      "summary": "indigo 转发 @YahooFinance 的画面，Dario Amodei 在 Nasdaq 为 Anthropic IPO 敲响开市钟。作者恭喜这家最\"人类\"的科技公司上市，并调侃其敲钟鼓掌的样子怎么像是 AI 生成的。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gp3hccimt42ak2uh82nrpty65",
       "pub_date": "2026-11-19",
-      "author": "noreply@aihot.news (Philipp Schmid)",
-      "category": "AI 产品"
+      "author": "noreply@aihot.news (indigo)",
+      "category": "行业动态"
     },
     {
       "title": "芯片停运叠加海外云通道关闭，中国科技公司面临双重冲击",
@@ -44,14 +44,6 @@
       "category": "论文"
     },
     {
-      "title": "Anthropic CEO Dario Amodei 与联合创始人 Daniela Amodei 参与 Nasdaq 开市敲钟",
-      "link": "https://aihot.news/items/wy4i94u2e6f4gl8p0fapqxcbg",
-      "summary": "Anthropic CEO Dario Amodei、联合创始人 Daniela Amodei 等参与了 Nasdaq 开市敲钟仪式，标志着史上最大规模 IPO 的开始。图片来源标注为 Michael Nagle/Bloomberg News。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wy4i94u2e6f4gl8p0fapqxcbg",
-      "pub_date": "2026-11-19",
-      "author": "noreply@aihot.news (Rohan Paul)",
-      "category": "行业动态"
-    },
-    {
       "title": "Anthropic IPO 检验 AI 循环融资模式，Amazon 和 Google 持股市值约 3079 亿美元",
       "link": "https://aihot.news/items/a8d06cpj4vy2dkdzazgsqsrwx",
       "summary": "TechCrunch 分析 Anthropic IPO 如何检验 AI 行业的循环融资模式。Amazon 14.7% 股份价值超 1590 亿美元，Google 13.7% 股份约 1490 亿美元；Nvidia、AMD、Microsoft、Broadcom、Micron、TSMC 还以 83 美元/股参与 260 亿美元私募。 🔗 阅读原文 via AIHOT · https://aihot.news/items/a8d06cpj4vy2dkdzazgsqsrwx",
@@ -84,6 +76,14 @@
       "category": "AI 产品"
     },
     {
+      "title": "OpenAI 详解 Codex 驱动的 Performance Factory 如何自动保持 ChatGPT 高性能",
+      "link": "https://aihot.news/items/alwgjr29158n454prl9tjmmw1",
+      "summary": "OpenAI 官方详解其 Performance Factory 系统，用 Codex 智能体在云端自动排查并修复 ChatGPT 的性能回归。其中 Regression Workflow 在三个多月内跟踪超过 1700 次调查、定位超过 600 个根因，相当于每天约 17 次自动调查。 🔗 阅读原文 via AIHOT · https://aihot.news/items/alwgjr29158n454prl9tjmmw1",
+      "pub_date": "2026-11-19",
+      "author": "noreply@aihot.news (OpenAI：官网动态)",
+      "category": "教程"
+    },
+    {
       "title": "彭博社：黄仁勋离任英伟达 CEO 后日本 AI 股首当其冲",
       "link": "https://aihot.news/items/gpufpm2kxcsxrewhivsjviz3a",
       "summary": "彭博社 11 月 19 日报道称，英伟达管理层变动及黄仁勋离任引发全球 AI 概念股新一轮抛售，日本相关股票首当其冲，市场风向从“AI 溢价”转向“AI 折价”。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gpufpm2kxcsxrewhivsjviz3a",
@@ -98,6 +98,14 @@
       "pub_date": "2026-11-19",
       "author": "noreply@aihot.news (TechCrunch：AI)",
       "category": "行业动态"
+    },
+    {
+      "title": "Google Gemini API 正式发布 Genie 4 实时交互式世界生成模型",
+      "link": "https://aihot.news/items/fnv1d9c59bf9pziw87gzz3tj2",
+      "summary": "Google 在 Interactions API（v1beta）上正式发布 Genie 4（models/genie-4），用于实时交互式世界生成。可通过文本、16:9 参考图或两者结合生成世界，以 24 fps 16:9 视频流搭配 48 kHz 立体声输出，支持 WASD/方向键和会话中文本事件实时操控，经由 WebRTC 和 WebSockets 传输。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fnv1d9c59bf9pziw87gzz3tj2",
+      "pub_date": "2026-11-19",
+      "author": "noreply@aihot.news (Gemini API：更新日志)",
+      "category": "AI 产品"
     },
     {
       "title": "黄仁勋相关传闻核查：美商务部与司法部就Megaspeed发联合声明，未认定违规芯片销售",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (Rohan Paul)",
       "category": "行业动态"
-    },
-    {
-      "title": "Claude Code 推出实验性 Code Mode 工具调用方式",
-      "link": "https://aihot.news/items/z3n160k1v5vsc90udwjd8x7pp",
-      "summary": "Claude Code 推出实验性 Code Mode，一种新的工具使用方式：Claude 会编写脚本以复杂方式串联多个工具，并能在长命令仍在运行时回复用户。可通过设置环境变量 CLAUDE_CODE_EXPERIMENTAL_CODE_MODE=1 开启，文档见 http://code.claude.com/docs/en/code-mode。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z3n160k1v5vsc90udwjd8x7pp",
-      "pub_date": "2026-11-17",
-      "author": "noreply@aihot.news (Claude Devs)",
-      "category": "AI 产品"
     }
   ]
 }

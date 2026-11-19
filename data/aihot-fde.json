@@ -1,16 +1,8 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-20T01:33:02.319559+08:00",
-  "total": 19,
+  "updated_at": "2026-11-20T02:03:01.559245+08:00",
+  "total": 18,
   "items": [
-    {
-      "title": "Google 在 Gemini API 与 AI Studio 上线 Genie 4 实时世界模型",
-      "link": "https://aihot.news/items/n1nzpfmd3f6zc4abq3s8yxrde",
-      "summary": "Philipp Schmid 宣布 Genie 4 正在 Gemini API 和 AI Studio 上推出，可从文本或图像生成 720p 24fps 的世界，并用 WASD、提示词和 48 kHz 立体声实时操控。可通过 WebRTC（浏览器加临时 token）或 WebSocket 串流，文档见 https://aistudio.google.com/docs/genie。 🔗 阅读原文 via AIHOT · https://aihot.news/items/n1nzpfmd3f6zc4abq3s8yxrde",
-      "pub_date": "2026-11-19",
-      "author": "noreply@aihot.news (Philipp Schmid)",
-      "category": "AI 产品"
-    },
     {
       "title": "Anthropic CEO Dario Amodei 就公司 IPO 发表声明",
       "link": "https://aihot.news/items/bj8r4lnrbcoi5cl1asnyn6qt5",
@@ -34,6 +26,14 @@
       "pub_date": "2026-11-19",
       "author": "noreply@aihot.news (Ai2 / Allen Institute for AI)",
       "category": "AI 产品"
+    },
+    {
+      "title": "OpenAI 详解 Codex 驱动的 Performance Factory 如何自动保持 ChatGPT 高性能",
+      "link": "https://aihot.news/items/alwgjr29158n454prl9tjmmw1",
+      "summary": "OpenAI 官方详解其 Performance Factory 系统，用 Codex 智能体在云端自动排查并修复 ChatGPT 的性能回归。其中 Regression Workflow 在三个多月内跟踪超过 1700 次调查、定位超过 600 个根因，相当于每天约 17 次自动调查。 🔗 阅读原文 via AIHOT · https://aihot.news/items/alwgjr29158n454prl9tjmmw1",
+      "pub_date": "2026-11-19",
+      "author": "noreply@aihot.news (OpenAI：官网动态)",
+      "category": "教程"
     },
     {
       "title": "Nadella 解释向 6 万员工提供买断的原因：转型为 AI 优先的组织而非裁员",
@@ -146,14 +146,6 @@
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (Wiz：Research)",
       "category": "行业动态"
-    },
-    {
-      "title": "Claude Code 推出实验性 Code Mode 工具调用方式",
-      "link": "https://aihot.news/items/z3n160k1v5vsc90udwjd8x7pp",
-      "summary": "Claude Code 推出实验性 Code Mode，一种新的工具使用方式：Claude 会编写脚本以复杂方式串联多个工具，并能在长命令仍在运行时回复用户。可通过设置环境变量 CLAUDE_CODE_EXPERIMENTAL_CODE_MODE=1 开启，文档见 http://code.claude.com/docs/en/code-mode。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z3n160k1v5vsc90udwjd8x7pp",
-      "pub_date": "2026-11-17",
-      "author": "noreply@aihot.news (Claude Devs)",
-      "category": "AI 产品"
     }
   ]
 }
