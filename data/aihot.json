@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-19T08:03:01.883330+08:00",
+  "updated_at": "2026-11-19T08:33:01.974364+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "黄仁勋相关传闻核查：美商务部与司法部就Megaspeed发联合声明，未认定违规芯片销售",
+      "link": "https://aihot.news/items/abxhv94f3gcq1qb9mzdf7yma3",
+      "summary": "围绕英伟达前高管黄仁勋及AI芯片转运传闻，美国商务部与司法部就Megaspeed发布联合声明，未认定存在违规芯片销售，也未将该公司列入实体清单；英伟达此前已主动切断对Megaspeed的供应。相关声明未提及间谍行为，新加坡内政部亦表示未就间谍问题调查该公司负责人。 🔗 阅读原文 via AIHOT · https://aihot.news/items/abxhv94f3gcq1qb9mzdf7yma3",
+      "pub_date": "2026-11-18",
+      "author": "noreply@aihot.news (X.PIN)",
+      "category": "行业动态"
+    },
     {
       "title": "微软CEO纳德拉就英伟达CEO变动表态：仍对英伟达团队有信心",
       "link": "https://aihot.news/items/uaupvkzwpndnn2zg1b50zv9v7",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (公众号：可灵AI)",
       "category": "AI 模型"
-    },
-    {
-      "title": "Suno 发布 Visuals：为歌曲生成视频与图像",
-      "link": "https://aihot.news/items/yznmu3humymvshagrka95k1n1",
-      "summary": "Suno 发布新工具 Visuals，可基于库中的歌曲生成最长 15 秒的视频和图像，包括跟随歌曲节拍的歌词视频、专辑封面和照片改写的视频片段，模型会跟随歌曲结构、识别歌词并配合对口型，支持延展、编辑和文本重新提示。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yznmu3humymvshagrka95k1n1",
-      "pub_date": "2026-11-17",
-      "author": "noreply@aihot.news (Suno：Blog)",
-      "category": "AI 产品"
     }
   ]
 }
