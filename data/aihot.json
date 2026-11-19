@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-20T06:03:02.239068+08:00",
+  "updated_at": "2026-11-20T06:33:01.961294+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Mac 版 Gemini 应用上线计算机操作功能，可代用户执行跨应用任务",
+      "link": "https://aihot.news/items/h5xjk79bhcu8vgnbrynj208uj",
+      "summary": "Google Labs VP Josh Woodward 宣布 Mac 版 Gemini 应用新增 computer use 功能，可跨文件夹、应用和网页代用户执行任务，屏幕和光标控制权仍归用户。官方演示显示 Gemini 能在后台窗口中点击、滚动和输入，把草图变成 Blender 里的绑定的 3D 模型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/h5xjk79bhcu8vgnbrynj208uj",
+      "pub_date": "2026-11-19",
+      "author": "noreply@aihot.news (Josh Woodward)",
+      "category": "AI 产品"
+    },
     {
       "title": "Gemini 4 Neon 实测：Peter Gostev 对比 Opus、Fable 等模型的首发体验",
       "link": "https://aihot.news/items/z0unnn7ryj39a3tuns8b1l4a6",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (Wiz：Research)",
       "category": "行业动态"
-    },
-    {
-      "title": "Perplexity 上线 GPT-6.2 Astra 和 GPT-6.2 Sol，并公布 WANDR 基准成绩",
-      "link": "https://aihot.news/items/zy931jr86bk2nk5cv8ww6seah",
-      "summary": "Perplexity 宣布 GPT-6.2 Astra 和 GPT-6.2 Sol 已在 Perplexity Search 和 Computer 中可用。在其 WANDR 基准上，GPT-6.2 Astra 得分 0.783、单任务约 $12.54，较 GPT-6 Astra 提升 0.095；GPT-6.2 Sol 得分 0.746、约 $2.65，较 GPT-6.1 Sol 提升 0.065。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zy931jr86bk2nk5cv8ww6seah",
-      "pub_date": "2026-11-17",
-      "author": "noreply@aihot.news (Perplexity)",
-      "category": "AI 模型"
     }
   ]
 }
