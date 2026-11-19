@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-20T05:33:02.388678+08:00",
+  "updated_at": "2026-11-20T06:03:02.239068+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Gemini 4 Neon 实测：Peter Gostev 对比 Opus、Fable 等模型的首发体验",
+      "link": "https://aihot.news/items/z0unnn7ryj39a3tuns8b1l4a6",
+      "summary": "Arena 分享 Gemini 4 Neon 发布后的第一手实测视频，Peter Gostev 在 3D 场景、游戏、UI 和数据可视化等任务中将其与 Opus、Fable、Astra、Sol 对比，并评估其接近前沿的程度。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z0unnn7ryj39a3tuns8b1l4a6",
+      "pub_date": "2026-11-19",
+      "author": "noreply@aihot.news (Arena)",
+      "category": "AI 模型"
+    },
     {
       "title": "Karina Nguyen 发文祝贺投资人 Sol 庆祝 Anthropic IPO",
       "link": "https://aihot.news/items/lc38ozrwfur9ympu1l3meqcuq",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (Perplexity)",
       "category": "AI 模型"
-    },
-    {
-      "title": "Microsoft agent-framework 1.26.1/1.26.2 恶意版本被发布至 PyPI，窃取 Azure 与 CI 凭据",
-      "link": "https://aihot.news/items/ekt4wsp34savbuzq0vafnlhpw",
-      "summary": "Wiz 报告，PyPI 上的 agent-framework 出现恶意版本 1.26.1 和 1.26.2（上传于 2026-11-17，约 21:30 UTC 后已下架），植入 .pth 文件在 Python 启动时运行凭据窃取器，收集环境变量、凭据文件及 Azure 与 Azure DevOps 托管标识和 OIDC 令牌，并回传至 webhook.site。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ekt4wsp34savbuzq0vafnlhpw",
-      "pub_date": "2026-11-17",
-      "author": "noreply@aihot.news (Wiz：Research)",
-      "category": "行业动态"
     }
   ]
 }
