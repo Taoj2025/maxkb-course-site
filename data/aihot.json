@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-19T23:03:02.296052+08:00",
+  "updated_at": "2026-11-19T23:33:02.592433+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Anthropic IPO 检验 AI 循环融资模式，Amazon 和 Google 持股市值约 3079 亿美元",
+      "link": "https://aihot.news/items/a8d06cpj4vy2dkdzazgsqsrwx",
+      "summary": "TechCrunch 分析 Anthropic IPO 如何检验 AI 行业的循环融资模式。Amazon 14.7% 股份价值超 1590 亿美元，Google 13.7% 股份约 1490 亿美元；Nvidia、AMD、Microsoft、Broadcom、Micron、TSMC 还以 83 美元/股参与 260 亿美元私募。 🔗 阅读原文 via AIHOT · https://aihot.news/items/a8d06cpj4vy2dkdzazgsqsrwx",
+      "pub_date": "2026-11-19",
+      "author": "noreply@aihot.news (TechCrunch：AI)",
+      "category": "行业动态"
+    },
     {
       "title": "Anthropic 完成史上最大规模 IPO，其安全治理结构受到审视",
       "link": "https://aihot.news/items/zs46vfwtzhs7fzho1p17mfisf",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (OpenAI：官网动态)",
       "category": "AI 模型"
-    },
-    {
-      "title": "Gemini 向美国等六国用户免费开放任务功能，可打电话、付款并接入 60 多款应用",
-      "link": "https://aihot.news/items/k036fkz6s64y292ovwq2qrx39",
-      "summary": "Google 宣布 Gemini 任务功能免费向美、日、韩、加、澳、印数亿用户推出，基于新的 Gemini 4 Hydrogen 模型，可自动打电话预约、查询账单、购物下单和管理日程。 🔗 阅读原文 via AIHOT · https://aihot.news/items/k036fkz6s64y292ovwq2qrx39",
-      "pub_date": "2026-11-17",
-      "author": "noreply@aihot.news (Google Blog：AI)",
-      "category": "AI 产品"
     }
   ]
 }
