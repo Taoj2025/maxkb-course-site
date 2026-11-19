@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-19T13:03:02.191623+08:00",
+  "updated_at": "2026-11-19T13:33:02.559737+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "彭博社：黄仁勋离任英伟达 CEO 后日本 AI 股首当其冲",
+      "link": "https://aihot.news/items/gpufpm2kxcsxrewhivsjviz3a",
+      "summary": "彭博社 11 月 19 日报道称，英伟达管理层变动及黄仁勋离任引发全球 AI 概念股新一轮抛售，日本相关股票首当其冲，市场风向从“AI 溢价”转向“AI 折价”。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gpufpm2kxcsxrewhivsjviz3a",
+      "pub_date": "2026-11-19",
+      "author": "noreply@aihot.news (IT之家·人工智能)",
+      "category": "行业动态"
+    },
     {
       "title": "Nadella 解释向 6 万员工提供买断的原因：转型为 AI 优先的组织而非裁员",
       "link": "https://aihot.news/items/g47lsydtqfsi16e0z920ghe2y",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (Anthropic：Newsroom)",
       "category": "行业动态"
-    },
-    {
-      "title": "Ed Zitron 长文解析 NVIDIA 泡沫：循环融资、渠道压货与芯片出口管制争议如何支撑AI行业",
-      "link": "https://aihot.news/items/qubbawlazjl89lsosb25kr553",
-      "summary": "Ed Zitron 在长文中提出，AI泡沫本质上是 NVIDIA 泡沫，Jensen Huang 通过循环融资、渠道压货以及围绕芯片出口管制的争议性交易维持增长机器，黄仁勋辞职后这一模式难以为继。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qubbawlazjl89lsosb25kr553",
-      "pub_date": "2026-11-17",
-      "author": "noreply@aihot.news (Ed Zitron 长文 / Where’s Your Ed At)",
-      "category": "观点"
     }
   ]
 }
