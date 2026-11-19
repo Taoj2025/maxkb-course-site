@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-19T22:33:01.951763+08:00",
+  "updated_at": "2026-11-19T23:03:02.296052+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Anthropic 完成史上最大规模 IPO，其安全治理结构受到审视",
+      "link": "https://aihot.news/items/zs46vfwtzhs7fzho1p17mfisf",
+      "summary": "The Verge 报道 Anthropic 完成 IPO，募资 813 亿美元，超过 SpaceX 成为史上估值最高的上市，完全稀释市值约 1.5 万亿美元。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zs46vfwtzhs7fzho1p17mfisf",
+      "pub_date": "2026-11-19",
+      "author": "noreply@aihot.news (The Verge：AI)",
+      "category": "行业动态"
+    },
     {
       "title": "MIT 研究测算数据中心用电 2023 年在美国致约 650 例过早死亡",
       "link": "https://aihot.news/items/wefmgc42bqc1uhcqc2gv3haav",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (Google Blog：AI)",
       "category": "AI 产品"
-    },
-    {
-      "title": "Jensen Huang 发声明回应离职风波并表态愿在董事会决定下回归 NVIDIA CEO",
-      "link": "https://aihot.news/items/usw3l00k4sgas3w8v3496sqaw",
-      "summary": "Jim Fan 转发并附 💚💚💚 FTW。Jensen Huang 发文感谢外界支持，承认个人生活中犯了严重错误、给董事会造成问题，并承诺配合董事会独立调查。他表示自离开以来收到员工、投资者、合作伙伴和客户的大量回归呼声，若董事会认为回归符合股东、员工、公司和美国的最佳利益，他将荣幸地回归 CEO 职位。 🔗 阅读原文 via AIHOT · https://aihot.news/items/usw3l00k4sgas3w8v3496sqaw",
-      "pub_date": "2026-11-17",
-      "author": "noreply@aihot.news (Jim Fan)",
-      "category": "行业动态"
     }
   ]
 }
