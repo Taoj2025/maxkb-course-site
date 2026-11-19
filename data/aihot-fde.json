@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-19T07:33:02.116645+08:00",
+  "updated_at": "2026-11-19T08:00:02.447070+08:00",
   "total": 20,
   "items": [
     {
@@ -41,6 +41,14 @@
       "summary": "独立评测机构 Vals AI 测试八家厂商模型后发现，主流大模型几乎缺乏针对自主武器的防护，多数模型会把平民、救护车、医护人员、记者和投降士兵标记为军事目标，且没有任何请求被上游安全过滤器拦截。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yf91syits6gqn8qvtksix0kdj",
       "pub_date": "2026-11-18",
       "author": "noreply@aihot.news (The Decoder：AI News)",
+      "category": "论文"
+    },
+    {
+      "title": "OpenAI 发布研究加速报告：智能体完成近半数长时研究任务但进展参差",
+      "link": "https://aihot.news/items/v0rnw0gs7wqagl0k8xwblf421",
+      "summary": "OpenAI 发布第二份研究加速报告，基于内部测量介绍编码智能体如何改变 AI 研发周期。3 月到 10 月，估计需 2-4 小时的人工任务智能体自主成功率从 23% 升至 46%，4-8 小时任务从 13% 升至 35%；但任务间差异明显，监控训练成功率达 79%，而推理与服务栈编码仅 25%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/v0rnw0gs7wqagl0k8xwblf421",
+      "pub_date": "2026-11-18",
+      "author": "noreply@aihot.news (OpenAI：官网动态)",
       "category": "论文"
     },
     {
@@ -154,14 +162,6 @@
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (公众号：可灵AI)",
       "category": "AI 模型"
-    },
-    {
-      "title": "Anthropic 工程师复盘用 chaos loop 强化 Claude Docs 上线：20 亿次请求仅 60 次服务器错误",
-      "link": "https://aihot.news/items/snkvsiff90slvj17hf9i5u4do",
-      "summary": "Anthropic 工程师 Vivek Nair 复盘 Claude Docs 9 月 16 日上线前的 chaos loop 实践：让 Claude Code 会话在镜像生产的 staging 集群上以每天超 100 万合成 docs 持续压测并修复故障，峰值时同时运行 30 个 sub-agents。 🔗 阅读原文 via AIHOT · https://aihot.news/items/snkvsiff90slvj17hf9i5u4do",
-      "pub_date": "2026-11-17",
-      "author": "noreply@aihot.news (Anthropic：Claude.dev 开发者博客)",
-      "category": "教程"
     }
   ]
 }
