@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-20T00:03:01.613749+08:00",
+  "updated_at": "2026-11-20T00:33:01.531468+08:00",
   "total": 50,
   "items": [
     {
@@ -34,6 +34,14 @@
       "pub_date": "2026-11-19",
       "author": "noreply@aihot.news (MIT News)",
       "category": "论文"
+    },
+    {
+      "title": "Ai2 在 Asta 平台发布 Theorizer 科研理论生成智能体并开源代码",
+      "link": "https://aihot.news/items/nl1zxwjilx9vxvz7af13c1s9w",
+      "summary": "Ai2 于 11 月 19 日在科研智能体平台 Asta 中上线 Theorizer，该智能体检索文献并为无法解释的观测提出候选理论，所有论断均链接到支持文献，代码同步开源；通过网页界面使用时 Ai2 在限额内承担 token 费用，也可在本地运行开源库自行付费。 🔗 阅读原文 via AIHOT · https://aihot.news/items/nl1zxwjilx9vxvz7af13c1s9w",
+      "pub_date": "2026-11-19",
+      "author": "noreply@aihot.news (Ai2 / Allen Institute for AI)",
+      "category": "AI 产品"
     },
     {
       "title": "彭博社：黄仁勋离任英伟达 CEO 后日本 AI 股首当其冲",
@@ -146,6 +154,14 @@
       "pub_date": "2026-11-18",
       "author": "noreply@aihot.news (腾讯混元)",
       "category": "行业动态"
+    },
+    {
+      "title": "Stanford RegLab 发布 PhantomDocket 基准，追踪美国州法院诉讼文书中的 AI 辅助写作",
+      "link": "https://aihot.news/items/wi5cfyezztfdcojsokxto4q0d",
+      "summary": "Stanford HAI 与 RegLab 研究者发布论文 Detection Objection 和 PhantomDocket 基准，基于 Damien Charlotin 的 AI 幻觉案例数据库校准 AI 检测器，追踪四个州法院的 AI 辅助写作。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wi5cfyezztfdcojsokxto4q0d",
+      "pub_date": "2026-11-18",
+      "author": "noreply@aihot.news (Stanford HAI News)",
+      "category": "论文"
     },
     {
       "title": "Vals AI 评测：Anthropic、OpenAI 和 Google 模型易将医护人员与投降士兵标记为自杀式无人机目标",
@@ -386,22 +402,6 @@
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (Microsoft AI：官方博客)",
       "category": "AI 模型"
-    },
-    {
-      "title": "OpenAI GPT-6.2 Astra 和 GPT-6.2 Sol 上线 OpenRouter",
-      "link": "https://aihot.news/items/tww8adkmqsbjxg8u6m16vuzta",
-      "summary": "OpenRouter 宣布 OpenAI 的 GPT-6.2 Astra 和 GPT-6.2 Sol 上线。Astra 面向最难的项目，评测成绩创新高且每任务成本不到 GPT-6 Astra 的三分之一，价格为 $8/M 输入、$40/M 输出；Sol 面向日常智能体工作，价格为 $2/M 输入、$10/M 输出，两者均有 Pro 版本。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tww8adkmqsbjxg8u6m16vuzta",
-      "pub_date": "2026-11-17",
-      "author": "noreply@aihot.news (OpenRouter)",
-      "category": "AI 产品"
-    },
-    {
-      "title": "Replit 发布 Missions，用智能体集群按目标完成复杂工作并开源 DataCat",
-      "link": "https://aihot.news/items/io0nmdphe40k919fuw1h28kg3",
-      "summary": "Replit 发布 Replit Missions，用户设定目标、预算和边界后，由智能体集群并行规划、构建、测试并迭代，独立 AI 裁判按约定标准验收。 🔗 阅读原文 via AIHOT · https://aihot.news/items/io0nmdphe40k919fuw1h28kg3",
-      "pub_date": "2026-11-17",
-      "author": "noreply@aihot.news (Replit：Blog)",
-      "category": "AI 产品"
     }
   ]
 }
