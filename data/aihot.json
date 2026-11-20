@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-21T03:33:02.032819+08:00",
+  "updated_at": "2026-11-21T04:03:02.325973+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Anthropic 数学家借 Claude 提交黎曼猜想 Lean 证明，斯坦福博后同周发布纯人力证明",
+      "link": "https://aihot.news/items/hsbh8rxnbqfw9pzhqq5rw4ihe",
+      "summary": "Anthropic 数学家 Levent Alpöge 宣布找到黎曼假设的 Lean 可编译证明，描述了与 Claude 协作完成论证的过程，数学家正在 Zulip 上审阅该结果，多数人认为形式化证明有望成立。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hsbh8rxnbqfw9pzhqq5rw4ihe",
+      "pub_date": "2026-11-20",
+      "author": "noreply@aihot.news (TechCrunch：AI)",
+      "category": "论文"
+    },
     {
       "title": "ChatGPT 推出 Space：统一管理页面、幻灯片、图片与文件",
       "link": "https://aihot.news/items/ekf0so0xitc52thkrxx3mwax1",
@@ -170,6 +178,14 @@
       "pub_date": "2026-11-19",
       "author": "noreply@aihot.news (Runway：News)",
       "category": "教程"
+    },
+    {
+      "title": "METR 发布 2026 年 11 月能力测量更新：AI R&D 相关能力每约 3.6 个月翻倍且更难测量",
+      "link": "https://aihot.news/items/sn8qb9u8fqka3mpnmy0r1nz4b",
+      "summary": "METR 发布截至 Opus 5.5 和 GPT-6 Astra 的能力评测更新，发现在 TH1.1 与 TH2 任务上模型时间视野约每 3.6 个月翻倍，可验证子集翻倍时间约 1.65 个月。 🔗 阅读原文 via AIHOT · https://aihot.news/items/sn8qb9u8fqka3mpnmy0r1nz4b",
+      "pub_date": "2026-11-19",
+      "author": "noreply@aihot.news (METR：Research)",
+      "category": "论文"
     },
     {
       "title": "Anthropic IPO 检验 AI 循环融资模式，Amazon 和 Google 持股市值约 3079 亿美元",
@@ -386,22 +402,6 @@
       "pub_date": "2026-11-18",
       "author": "noreply@aihot.news (OpenAI：官网动态)",
       "category": "论文"
-    },
-    {
-      "title": "OpenAI 深入解析 Codex 沙箱的权限设计与三平台实现",
-      "link": "https://aihot.news/items/fn0p7buwy74nvduahsy10sp2f",
-      "summary": "OpenAI 发布长文，详解 Codex 沙箱如何在用户现有环境中以可控的文件系统和网络限制运行命令。 🔗 阅读原文 via AIHOT · https://aihot.news/items/fn0p7buwy74nvduahsy10sp2f",
-      "pub_date": "2026-11-18",
-      "author": "noreply@aihot.news (OpenAI：官网动态)",
-      "category": "教程"
-    },
-    {
-      "title": "OpenAI 详解前沿 AI 风险管理：从训练到部署的四层防护",
-      "link": "https://aihot.news/items/na2nxuqq5bxz0us1vjup0l259",
-      "summary": "OpenAI 发布长文，介绍其在模型全生命周期中管理前沿 AI 风险的防御纵深体系，涵盖模型对齐、安全与沙箱、拦截防护、监控响应四层保护，并按研究、内部部署、外部部署三阶段说明各层的作用。 🔗 阅读原文 via AIHOT · https://aihot.news/items/na2nxuqq5bxz0us1vjup0l259",
-      "pub_date": "2026-11-18",
-      "author": "noreply@aihot.news (OpenAI：官网动态)",
-      "category": "观点"
     }
   ]
 }
