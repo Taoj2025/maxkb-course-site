@@ -914,5 +914,41 @@
     "source": "机器摘要 · IT之家",
     "file": "13350-gemini-4-neon-aa-ai-claude-opus-5-5.md",
     "estimated_read_time": "1 分钟"
+  },
+  {
+    "id": 13351,
+    "title": "An updated Clairic and Clairic-flash are now open-weight, from the new Workers AI Superintelligence team",
+    "slug": "13351-an-updated-clairic-and-clairic-flash-are",
+    "summary": "Clairic graduates from preview, while Clairic-flash joins the repertoire on Workers AI. We’re doing an open-weight release for both extraction models.",
+    "category": "最新动态",
+    "tags": [
+      "FDE",
+      "AI 资讯",
+      "前端部署"
+    ],
+    "color": "purple",
+    "date": "2026-11-20",
+    "author": "小Q（机器摘要）",
+    "source": "机器摘要 · Cloudflare",
+    "file": "13351-an-updated-clairic-and-clairic-flash-are.md",
+    "estimated_read_time": "1 分钟"
+  },
+  {
+    "id": 13352,
+    "title": "OpenAI spent $1.2 million finding nearly 1,000 Linux security flaws. Sam Altman says this is just the beginning.",
+    "slug": "13352-openai-spent-1-2-million-finding-nearly",
+    "summary": "OpenAI spent approximately $1.2 million in API costs to generate working exploits for 948 Linux kernel vulnerabilities. At The New The post OpenAI spe",
+    "category": "最新动态",
+    "tags": [
+      "FDE",
+      "AI 资讯",
+      "前端部署"
+    ],
+    "color": "blue",
+    "date": "2026-11-20",
+    "author": "小Q（机器摘要）",
+    "source": "机器摘要 · The New Stack",
+    "file": "13352-openai-spent-1-2-million-finding-nearly.md",
+    "estimated_read_time": "1 分钟"
   }
 ]
