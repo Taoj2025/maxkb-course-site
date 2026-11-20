@@ -1,8 +1,24 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-20T23:33:02.349341+08:00",
+  "updated_at": "2026-11-21T00:33:01.559922+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "MIT 数学面板讨论 AI 冲击下的数学研究未来",
+      "link": "https://aihot.news/items/qfwgfsg8m1r4vcf4vglgi03by",
+      "summary": "MIT 举办“AI 与社会：数学的未来”座谈，来自 MIT、哈佛、西北大学和纽约大学的数学家讨论 AI 对数学研究的影响。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qfwgfsg8m1r4vcf4vglgi03by",
+      "pub_date": "2026-11-20",
+      "author": "noreply@aihot.news (MIT News)",
+      "category": "观点"
+    },
+    {
+      "title": "Anthropic 破纪录 IPO 未能止住 AI 抛售，全球股市下挫",
+      "link": "https://aihot.news/items/ufyn252g3i251j0mfwy8xth9r",
+      "summary": "Anthropic 上市第二天股价跌逾 9% 至 $88.17，接近 $83 发行价，其破纪录 IPO 未能止住 AI 相关公司抛售。周五 Nasdaq 跌 2%，SanDisk 跌 14%、Micron 跌 10%；亚洲股市创 2020 年以来最差一周，台湾加权指数跌 6.7%、日经跌 5%、Kospi 跌 5.5%，SoftBank 单日跌 14.5%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ufyn252g3i251j0mfwy8xth9r",
+      "pub_date": "2026-11-20",
+      "author": "noreply@aihot.news (Hacker News：AI 热帖)",
+      "category": "行业动态"
+    },
     {
       "title": "MiniMax 内部模型 MIM 实现多项密码分析实用攻击并开源验证轨迹",
       "link": "https://aihot.news/items/sakj36g0tvzaeoianryyn6o6g",
@@ -122,6 +138,14 @@
       "pub_date": "2026-11-19",
       "author": "noreply@aihot.news (Aravind Srinivas)",
       "category": "论文"
+    },
+    {
+      "title": "Runway 详解如何构建智能体驱动的软件工厂",
+      "link": "https://aihot.news/items/wnw22hxqlwsd58lzsm44psc6g",
+      "summary": "Runway 介绍了逐步把软件交付各环节交给智能体完成的实践。智能体 10 月驱动了 38% 的合并 PR（6 月仅 0.1%），首次批准等待中位数从超过 2 小时降至约 5 分钟；AI 单独批准的 PR 回滚率约千分之一，低于人工批准的约 1/200。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wnw22hxqlwsd58lzsm44psc6g",
+      "pub_date": "2026-11-19",
+      "author": "noreply@aihot.news (Runway：News)",
+      "category": "教程"
     },
     {
       "title": "Anthropic IPO 检验 AI 循环融资模式，Amazon 和 Google 持股市值约 3079 亿美元",
@@ -378,30 +402,6 @@
       "pub_date": "2026-11-18",
       "author": "noreply@aihot.news (腾讯混元)",
       "category": "AI 模型"
-    },
-    {
-      "title": "Anthropic 拟将 IPO 定价上调至 $80 以上，估值或达 $1.6T",
-      "link": "https://aihot.news/items/hpczcbqe8agr7jffko2cnsp31",
-      "summary": "据 WSJ，Anthropic 预计将 IPO 定价上调至 $70 至 $78 区间之上，可能超过 $80 一股，其顾问已讨论 $1.5T 或 $1.6T 的估值，高于此前约 $1.33T。按申报区间计算，IPO 规模约 $61B，另有 $26B 私募配售，其中 Google 和 Nvidia 各以 IPO 价格认购约 $10B。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hpczcbqe8agr7jffko2cnsp31",
-      "pub_date": "2026-11-18",
-      "author": "noreply@aihot.news (Rohan Paul)",
-      "category": "行业动态"
-    },
-    {
-      "title": "Anthropic 获准在纳斯达克上市，代码 ANT，发行价每股 70~78 美元",
-      "link": "https://aihot.news/items/cxpq4gwitsj6r05zjpphx9agc",
-      "summary": "根据 SEC 11 月 17 日公示的文件，Anthropic 的 A 类普通股获准在纳斯达克全球精选市场上市，代码 ANT，发行价区间维持每股 70 至 78 美元。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cxpq4gwitsj6r05zjpphx9agc",
-      "pub_date": "2026-11-18",
-      "author": "noreply@aihot.news (IT之家·人工智能)",
-      "category": "行业动态"
-    },
-    {
-      "title": "OpenAI 详解模型在 Jalapeño 芯片与 AMD 产线设计中的应用及 RISC-V 评测",
-      "link": "https://aihot.news/items/zyv7euqbikadbvaxfjxdh850k",
-      "summary": "OpenAI 介绍其模型在芯片设计中的进展：GPT-4o 早在 2025 年初协助设计自研推理芯片 Jalapeño，模型提出的改动使 warp engine 标准单元面积约减 13%、matrix unit 约减 10%，并已在硅片验证。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zyv7euqbikadbvaxfjxdh850k",
-      "pub_date": "2026-11-18",
-      "author": "noreply@aihot.news (OpenAI：官网动态)",
-      "category": "行业动态"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-20T23:33:02.350282+08:00",
+  "updated_at": "2026-11-21T00:33:01.560880+08:00",
   "total": 21,
   "items": [
     {
@@ -50,6 +50,14 @@
       "pub_date": "2026-11-19",
       "author": "noreply@aihot.news (Aravind Srinivas)",
       "category": "论文"
+    },
+    {
+      "title": "Runway 详解如何构建智能体驱动的软件工厂",
+      "link": "https://aihot.news/items/wnw22hxqlwsd58lzsm44psc6g",
+      "summary": "Runway 介绍了逐步把软件交付各环节交给智能体完成的实践。智能体 10 月驱动了 38% 的合并 PR（6 月仅 0.1%），首次批准等待中位数从超过 2 小时降至约 5 分钟；AI 单独批准的 PR 回滚率约千分之一，低于人工批准的约 1/200。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wnw22hxqlwsd58lzsm44psc6g",
+      "pub_date": "2026-11-19",
+      "author": "noreply@aihot.news (Runway：News)",
+      "category": "教程"
     },
     {
       "title": "Ai2 在 Asta 平台发布 Theorizer 科研理论生成智能体并开源代码",
@@ -162,14 +170,6 @@
       "pub_date": "2026-11-18",
       "author": "noreply@aihot.news (腾讯混元)",
       "category": "AI 模型"
-    },
-    {
-      "title": "OpenAI 详解模型在 Jalapeño 芯片与 AMD 产线设计中的应用及 RISC-V 评测",
-      "link": "https://aihot.news/items/zyv7euqbikadbvaxfjxdh850k",
-      "summary": "OpenAI 介绍其模型在芯片设计中的进展：GPT-4o 早在 2025 年初协助设计自研推理芯片 Jalapeño，模型提出的改动使 warp engine 标准单元面积约减 13%、matrix unit 约减 10%，并已在硅片验证。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zyv7euqbikadbvaxfjxdh850k",
-      "pub_date": "2026-11-18",
-      "author": "noreply@aihot.news (OpenAI：官网动态)",
-      "category": "行业动态"
     }
   ]
 }
