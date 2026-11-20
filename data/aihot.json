@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-20T10:03:01.909782+08:00",
+  "updated_at": "2026-11-20T10:33:01.860420+08:00",
   "total": 50,
   "items": [
     {
@@ -154,6 +154,14 @@
       "pub_date": "2026-11-19",
       "author": "noreply@aihot.news (TechCrunch：AI)",
       "category": "行业动态"
+    },
+    {
+      "title": "Conductor 0.97.0 发布并宣布加入 Meta，本地工作区智能体新增 artifacts",
+      "link": "https://aihot.news/items/stnka187ae3za2qnx70vqheg7",
+      "summary": "Conductor 发布 0.97.0 更新，同时宣布 Conductor 加入 Meta。本地工作区的 Agent 现在可以生成 artifacts，即能在聊天中内联显示的 HTML 页面，默认开启，可在 Settings → Artifacts 关闭，通过 @ 名称调用；还支持高亮文本添加评论 pill 回复聊天的任意部分。 🔗 阅读原文 via AIHOT · https://aihot.news/items/stnka187ae3za2qnx70vqheg7",
+      "pub_date": "2026-11-19",
+      "author": "noreply@aihot.news (Conductor 官方更新)",
+      "category": "AI 产品"
     },
     {
       "title": "黄仁勋相关传闻核查：美商务部与司法部就Megaspeed发联合声明，未认定违规芯片销售",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-17",
       "author": "noreply@aihot.news (公众号：数字生命卡兹克)",
       "category": "AI 模型"
-    },
-    {
-      "title": "Gemini 4 Hydrogen 全面上线 Google Search",
-      "link": "https://aihot.news/items/vxcsjujkrvgpqxl56xkjgdfqf",
-      "summary": "Google 宣布 Gemini 4 Hydrogen 已在全球范围的 Google Search 中上线，称为 Search 迄今最大的一次模型升级。升级包括更好地理解用户意图、更智能的 query fan-out 与链接、更可视化自适应的回复，以及更强的多语言能力。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vxcsjujkrvgpqxl56xkjgdfqf",
-      "pub_date": "2026-11-17",
-      "author": "noreply@aihot.news (Google)",
-      "category": "AI 产品"
     }
   ]
 }
