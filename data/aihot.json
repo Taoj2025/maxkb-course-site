@@ -1,12 +1,12 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-21T04:33:02.380905+08:00",
+  "updated_at": "2026-11-21T05:03:01.672250+08:00",
   "total": 50,
   "items": [
     {
-      "title": "Anthropic 数学家借 Claude 提交黎曼猜想 Lean 证明，斯坦福博后同周发布纯人力证明",
+      "title": "Anthropic 数学家 Levent Alpöge 宣称给出黎曼猜想的 Lean 可编译证明，同周还有纯人工证明出现",
       "link": "https://aihot.news/items/hsbh8rxnbqfw9pzhqq5rw4ihe",
-      "summary": "Anthropic 数学家 Levent Alpöge 宣布找到黎曼假设的 Lean 可编译证明，描述了与 Claude 协作完成论证的过程，数学家正在 Zulip 上审阅该结果，多数人认为形式化证明有望成立。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hsbh8rxnbqfw9pzhqq5rw4ihe",
+      "summary": "Anthropic 数学家 Levent Alpöge 宣称找到黎曼猜想的 Lean 可编译证明，并在文章中描述了与 Claude 一起完成论证的经历；黎曼猜想提出于 1859 年，是千禧年大奖难题之一，数学界在 Zulip 上讨论后多数人预期形式化结果成立。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hsbh8rxnbqfw9pzhqq5rw4ihe",
       "pub_date": "2026-11-20",
       "author": "noreply@aihot.news (TechCrunch：AI)",
       "category": "论文"
