@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-20T11:33:02.068143+08:00",
+  "updated_at": "2026-11-20T12:03:02.427805+08:00",
   "total": 21,
   "items": [
+    {
+      "title": "腾讯混元 Hy4 正式开源并发布 System Card",
+      "link": "https://aihot.news/items/zkhdsir848uqwlf6ibuol1eb6",
+      "summary": "腾讯混元宣布 Hy4 正式开源，可在 GitHub、Hugging Face、ModelScope 和 GitCode 下载部署，并同步发布 Hy4 模型安全评估卡片（System Card）。混元 LLM 模型已全部开源，包括 Hy3 preview、Hy3、Hy4 preview、Hy4、Hy4 flash 等，官方表示未来将持续迭代并开源。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zkhdsir848uqwlf6ibuol1eb6",
+      "pub_date": "2026-11-20",
+      "author": "noreply@aihot.news (公众号：腾讯混元)",
+      "category": "AI 模型"
+    },
     {
       "title": "Karina Nguyen 发文祝贺投资人 Sol 庆祝 Anthropic IPO",
       "link": "https://aihot.news/items/lc38ozrwfur9ympu1l3meqcuq",
@@ -162,14 +170,6 @@
       "pub_date": "2026-11-18",
       "author": "noreply@aihot.news (OpenAI：官网动态)",
       "category": "行业动态"
-    },
-    {
-      "title": "深度实测GPT-6.2 Astra：极致省钱但偏科严重，沟通可读性依旧拉胯",
-      "link": "https://aihot.news/items/n125mhueen4ul4elntsa1kk1v",
-      "summary": "OpenAI 发布 GPT-6.2 Astra 与 Sol，已同步上线 ChatGPT、Codex 和 API。 🔗 阅读原文 via AIHOT · https://aihot.news/items/n125mhueen4ul4elntsa1kk1v",
-      "pub_date": "2026-11-17",
-      "author": "noreply@aihot.news (公众号：数字生命卡兹克)",
-      "category": "AI 模型"
     }
   ]
 }
