@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-21T07:03:01.558366+08:00",
+  "updated_at": "2026-11-21T07:33:02.340599+08:00",
   "total": 50,
   "items": [
     {
@@ -10,14 +10,6 @@
       "pub_date": "2026-11-20",
       "author": "noreply@aihot.news (Figma AI / Agent / Make)",
       "category": "教程"
-    },
-    {
-      "title": "Anthropic 数学家 Levent Alpöge 宣称给出黎曼猜想的 Lean 可编译证明，同周还有纯人工证明出现",
-      "link": "https://aihot.news/items/hsbh8rxnbqfw9pzhqq5rw4ihe",
-      "summary": "Anthropic 数学家 Levent Alpöge 宣称找到黎曼猜想的 Lean 可编译证明，并在文章中描述了与 Claude 一起完成论证的经历；黎曼猜想提出于 1859 年，是千禧年大奖难题之一，数学界在 Zulip 上讨论后多数人预期形式化结果成立。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hsbh8rxnbqfw9pzhqq5rw4ihe",
-      "pub_date": "2026-11-20",
-      "author": "noreply@aihot.news (TechCrunch：AI)",
-      "category": "论文"
     },
     {
       "title": "ChatGPT 推出 Space：统一管理页面、幻灯片、图片与文件",
@@ -402,6 +394,14 @@
       "pub_date": "2026-11-18",
       "author": "noreply@aihot.news (Wiz：Research)",
       "category": "论文"
+    },
+    {
+      "title": "Anthropic IPO 估值最高或达 1.4 万亿美元，华尔街提前造势散户争抢",
+      "link": "https://aihot.news/items/yxu549lhmsyp0qe8rstrheqlw",
+      "summary": "据路透社报道，Anthropic 预计于当地时间 11 月 19 日登陆公开市场，IPO 估值最高可能达到 1.4 万亿美元。金融机构已推出 2 倍做多与做空 ETF 等挂钩产品，Vanda Research 预计上市将吸引约 2.5 亿美元散户净买入，为 SpaceX IPO 期间 1.18 亿美元纪录的两倍。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yxu549lhmsyp0qe8rstrheqlw",
+      "pub_date": "2026-11-18",
+      "author": "noreply@aihot.news (IT之家·人工智能)",
+      "category": "行业动态"
     }
   ]
 }
