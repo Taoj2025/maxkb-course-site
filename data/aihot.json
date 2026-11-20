@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-21T03:03:02.081537+08:00",
+  "updated_at": "2026-11-21T03:33:02.032819+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "ChatGPT 推出 Space：统一管理页面、幻灯片、图片与文件",
+      "link": "https://aihot.news/items/ekf0so0xitc52thkrxx3mwax1",
+      "summary": "ChatGPT 官方宣布侧边栏中的 Space 成为 pages、slides、images、files 和 uploads 的新家。用 ChatGPT 可写页面、做研究、生成图片并创建交互式图表，把想法变成带图片和图形的幻灯片并邀请他人协作；页面和幻灯片还可从已连接的工具自动更新。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ekf0so0xitc52thkrxx3mwax1",
+      "pub_date": "2026-11-20",
+      "author": "noreply@aihot.news (ChatGPT)",
+      "category": "AI 产品"
+    },
     {
       "title": "Anthropic 数学家 Levent Alpöge 宣布与 Claude 合作证明黎曼猜想，放出 1737 万行 Lean 代码",
       "link": "https://aihot.news/items/vu6fw8wmrs3xcln4u9gwzf1f4",
@@ -393,14 +401,6 @@
       "summary": "OpenAI 发布长文，介绍其在模型全生命周期中管理前沿 AI 风险的防御纵深体系，涵盖模型对齐、安全与沙箱、拦截防护、监控响应四层保护，并按研究、内部部署、外部部署三阶段说明各层的作用。 🔗 阅读原文 via AIHOT · https://aihot.news/items/na2nxuqq5bxz0us1vjup0l259",
       "pub_date": "2026-11-18",
       "author": "noreply@aihot.news (OpenAI：官网动态)",
-      "category": "观点"
-    },
-    {
-      "title": "OpenAI Codex 团队成员解释 6.2 Sol/Astra 评测视频与现场反馈的差异",
-      "link": "https://aihot.news/items/sah26a5ofgvrxd76bgj9t77wf",
-      "summary": "Tibo 解释 6.2 Sol/Astra 上评测视频与现场人群反馈氛围不同的原因：部分人较早获得访问权限，而团队在过去 3-4 天做了大量改动，视频是上周制作的，之后大概率没有重新测试。他称这两个模型相比 GPT 前代有明显提升，但仍不完美，团队希望在后续迭代的品味和使用体验上改进，并表示欢迎反馈。 🔗 阅读原文 via AIHOT · https://aihot.news/items/sah26a5ofgvrxd76bgj9t77wf",
-      "pub_date": "2026-11-18",
-      "author": "noreply@aihot.news (Tibo)",
       "category": "观点"
     }
   ]
