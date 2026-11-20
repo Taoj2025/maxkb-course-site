@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-21T04:03:02.327407+08:00",
+  "updated_at": "2026-11-21T04:33:02.381795+08:00",
   "total": 20,
   "items": [
     {
@@ -9,6 +9,14 @@
       "summary": "Kling AI 发布 Kling Image 4.0，主打原生 8K、更强真实感、一致图像组和高级文字渲染。引用 Artificial Analysis 的评测显示其在文生图排名第 7、图像编辑排名第 6，较 Kling Image 3.0 Omni 两个榜单均提升超 225 Elo。黑五限时定价 2K 低至 $0.022/图、原生 8K 低至 $0.033/图。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rhln87mprozseglkairsway74",
       "pub_date": "2026-11-20",
       "author": "noreply@aihot.news (可灵 Kling AI)",
+      "category": "AI 模型"
+    },
+    {
+      "title": "Thinking Machines Lab 发布可跑在笔记本上的开源权重模型 Inkling 2 Mini",
+      "link": "https://aihot.news/items/y7nk77dxae51qwi826gpmvbho",
+      "summary": "Thinking Machines Lab 发布开源权重模型 Inkling 2 Mini，采用循环 Transformer 架构，将中间 12 层每 token 运行三次，总参数 26.4B、激活 3.4B，内存占用约 20GB，可在 32GB 内存以上的 Mac 本地运行。 🔗 阅读原文 via AIHOT · https://aihot.news/items/y7nk77dxae51qwi826gpmvbho",
+      "pub_date": "2026-11-20",
+      "author": "noreply@aihot.news (Thinking Machines Lab：News)",
       "category": "AI 模型"
     },
     {
@@ -153,14 +161,6 @@
       "summary": "独立评测机构 Vals AI 测试八家厂商模型后发现，主流大模型几乎缺乏针对自主武器的防护，多数模型会把平民、救护车、医护人员、记者和投降士兵标记为军事目标，且没有任何请求被上游安全过滤器拦截。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yf91syits6gqn8qvtksix0kdj",
       "pub_date": "2026-11-18",
       "author": "noreply@aihot.news (The Decoder：AI News)",
-      "category": "论文"
-    },
-    {
-      "title": "OpenAI 发布研究加速报告：智能体完成近半数长时研究任务但进展参差",
-      "link": "https://aihot.news/items/v0rnw0gs7wqagl0k8xwblf421",
-      "summary": "OpenAI 发布第二份研究加速报告，基于内部测量介绍编码智能体如何改变 AI 研发周期。3 月到 10 月，估计需 2-4 小时的人工任务智能体自主成功率从 23% 升至 46%，4-8 小时任务从 13% 升至 35%；但任务间差异明显，监控训练成功率达 79%，而推理与服务栈编码仅 25%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/v0rnw0gs7wqagl0k8xwblf421",
-      "pub_date": "2026-11-18",
-      "author": "noreply@aihot.news (OpenAI：官网动态)",
       "category": "论文"
     }
   ]

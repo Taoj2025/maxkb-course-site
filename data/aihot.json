@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-21T04:03:02.325973+08:00",
+  "updated_at": "2026-11-21T04:33:02.380905+08:00",
   "total": 50,
   "items": [
     {
@@ -52,6 +52,14 @@
       "category": "行业动态"
     },
     {
+      "title": "Thinking Machines Lab 发布可跑在笔记本上的开源权重模型 Inkling 2 Mini",
+      "link": "https://aihot.news/items/y7nk77dxae51qwi826gpmvbho",
+      "summary": "Thinking Machines Lab 发布开源权重模型 Inkling 2 Mini，采用循环 Transformer 架构，将中间 12 层每 token 运行三次，总参数 26.4B、激活 3.4B，内存占用约 20GB，可在 32GB 内存以上的 Mac 本地运行。 🔗 阅读原文 via AIHOT · https://aihot.news/items/y7nk77dxae51qwi826gpmvbho",
+      "pub_date": "2026-11-20",
+      "author": "noreply@aihot.news (Thinking Machines Lab：News)",
+      "category": "AI 模型"
+    },
+    {
       "title": "MiniMax 内部模型 MIM 实现多项密码分析实用攻击并开源验证轨迹",
       "link": "https://aihot.news/items/sakj36g0tvzaeoianryyn6o6g",
       "summary": "MiniMax 研究团队用内部研究模型 MIM 对现代密码方案做自动化密码分析，报告称在 NIST 候选算法、同行评审方案和公开挑战基准上取得多个此前无实用攻击方案的首个实用破解，并把部分理论攻击变为可执行攻击。 🔗 阅读原文 via AIHOT · https://aihot.news/items/sakj36g0tvzaeoianryyn6o6g",
@@ -74,6 +82,14 @@
       "pub_date": "2026-11-20",
       "author": "noreply@aihot.news (腾讯混元)",
       "category": "AI 模型"
+    },
+    {
+      "title": "Browser Use 删除 13.7 万行自有代码后 BU Bench v2.1 得分反而上升",
+      "link": "https://aihot.news/items/n07rxpa0zkgr6ejm2jiwzxxn3",
+      "summary": "Browser Use 作者复盘 browser-use 1.0：把 24 个工具收敛为一个 python 工具加两种结束方式，该 PR 新增 29,601 行、删除 136,905 行，178 个 Python 文件减到 43 个。 🔗 阅读原文 via AIHOT · https://aihot.news/items/n07rxpa0zkgr6ejm2jiwzxxn3",
+      "pub_date": "2026-11-20",
+      "author": "noreply@aihot.news (Browser Use)",
+      "category": "教程"
     },
     {
       "title": "Nvidia 股价近期波动复盘：财报强劲但股价较 10 月高点跌近 40%",
@@ -386,22 +402,6 @@
       "pub_date": "2026-11-18",
       "author": "noreply@aihot.news (IT之家·人工智能)",
       "category": "行业动态"
-    },
-    {
-      "title": "OpenAI 发布 GPT-6.2 Astra 和 Sol：更便宜但口碑分化，Anthropic 仍握最强模型",
-      "link": "https://aihot.news/items/oisr0dfay736le62g425urn8l",
-      "summary": "Latent Space 汇总 OpenAI 发布的 GPT-6.2 Astra 和 Sol：Artificial Analysis 测得 Sol 以约 15% 的单任务成本追平 9 月的 Astra，新 Astra 以 62 分位居 Intelligence Index 第二，仅次于 Fable 5.2 的 65 分，两者均为 1M 上下文、128K 输出。 🔗 阅读原文 via AIHOT · https://aihot.news/items/oisr0dfay736le62g425urn8l",
-      "pub_date": "2026-11-18",
-      "author": "noreply@aihot.news (Latent Space)",
-      "category": "AI 模型"
-    },
-    {
-      "title": "OpenAI 发布研究加速报告：智能体完成近半数长时研究任务但进展参差",
-      "link": "https://aihot.news/items/v0rnw0gs7wqagl0k8xwblf421",
-      "summary": "OpenAI 发布第二份研究加速报告，基于内部测量介绍编码智能体如何改变 AI 研发周期。3 月到 10 月，估计需 2-4 小时的人工任务智能体自主成功率从 23% 升至 46%，4-8 小时任务从 13% 升至 35%；但任务间差异明显，监控训练成功率达 79%，而推理与服务栈编码仅 25%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/v0rnw0gs7wqagl0k8xwblf421",
-      "pub_date": "2026-11-18",
-      "author": "noreply@aihot.news (OpenAI：官网动态)",
-      "category": "论文"
     }
   ]
 }
