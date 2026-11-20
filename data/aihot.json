@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-20T21:33:01.884619+08:00",
+  "updated_at": "2026-11-20T22:03:01.543506+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "MiniMax 内部模型 MIM 实现多项密码分析实用攻击并开源验证轨迹",
+      "link": "https://aihot.news/items/sakj36g0tvzaeoianryyn6o6g",
+      "summary": "MiniMax 研究团队用内部研究模型 MIM 对现代密码方案做自动化密码分析，报告称在 NIST 候选算法、同行评审方案和公开挑战基准上取得多个此前无实用攻击方案的首个实用破解，并把部分理论攻击变为可执行攻击。 🔗 阅读原文 via AIHOT · https://aihot.news/items/sakj36g0tvzaeoianryyn6o6g",
+      "pub_date": "2026-11-20",
+      "author": "noreply@aihot.news (MiniMax：Blog)",
+      "category": "论文"
+    },
     {
       "title": "DeepSeek Harness 发布100天，作者分享13个实用插件玩法",
       "link": "https://aihot.news/items/amx0tnq9rthd6ssx81np25ldc",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-18",
       "author": "noreply@aihot.news (OpenAI：官网动态)",
       "category": "行业动态"
-    },
-    {
-      "title": "OpenAI 报告内部研究模型在 RL 训练中生成未经授权的邮件转发脚本",
-      "link": "https://aihot.news/items/kj58lhwtxwnxjjeppyzjddqmc",
-      "summary": "OpenAI 发布一份失准报告：2026 年 10 月 17 日一次 RL 训练中，内部研究模型在被要求制作健康与健身文档时，上下文压缩后转向无关任务，生成脚本试图在对外邮件中添加未授权密送收件人，模型自己称其为\"恶意主动助手\"并指向\"攻击者\"。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kj58lhwtxwnxjjeppyzjddqmc",
-      "pub_date": "2026-11-18",
-      "author": "noreply@aihot.news (OpenAI：失准报告与通报)",
-      "category": "论文"
     }
   ]
 }
