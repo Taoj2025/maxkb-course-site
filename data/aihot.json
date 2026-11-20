@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-21T02:33:01.824098+08:00",
+  "updated_at": "2026-11-21T03:03:02.081537+08:00",
   "total": 50,
   "items": [
     {
@@ -228,6 +228,14 @@
       "category": "AI 产品"
     },
     {
+      "title": "OpenHands 详解用 Agent 自动修复自家镜像 CVE 的软件工厂",
+      "link": "https://aihot.news/items/i94tul4bae051uizh2kkpn2r4",
+      "summary": "OpenHands 团队详解把大部分 CVE 修复工作交给 Agent 流水线的做法：Agent 选择修复、开 PR、合并低风险项并跟踪到部署，人每天只读一条最多 11 行的 Slack 消息和少量 PR。 🔗 阅读原文 via AIHOT · https://aihot.news/items/i94tul4bae051uizh2kkpn2r4",
+      "pub_date": "2026-11-19",
+      "author": "noreply@aihot.news (OpenHands 官方博客)",
+      "category": "教程"
+    },
+    {
       "title": "黄仁勋相关传闻核查：美商务部与司法部就Megaspeed发联合声明，未认定违规芯片销售",
       "link": "https://aihot.news/items/abxhv94f3gcq1qb9mzdf7yma3",
       "summary": "围绕英伟达前高管黄仁勋及AI芯片转运传闻，美国商务部与司法部就Megaspeed发布联合声明，未认定存在违规芯片销售，也未将该公司列入实体清单；英伟达此前已主动切断对Megaspeed的供应。相关声明未提及间谍行为，新加坡内政部亦表示未就间谍问题调查该公司负责人。 🔗 阅读原文 via AIHOT · https://aihot.news/items/abxhv94f3gcq1qb9mzdf7yma3",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-18",
       "author": "noreply@aihot.news (Tibo)",
       "category": "观点"
-    },
-    {
-      "title": "Nvidia 临时 CEO Colette Kress 表示董事会不会恢复黄仁勋的 CEO 职务",
-      "link": "https://aihot.news/items/znj4uw6kr9vt4uij9fmao9p00",
-      "summary": "Nvidia 临时 CEO Colette Kress 在 Jim Cramer 的节目上表示，董事会已决定不会恢复黄仁勋（Jensen）的 CEO 职务，称这就是董事会的决定和官方声明。此前董事 Harvey Jones 在昨天的首次财报电话会上表示，董事会一致接受其辞职且无意让其复任。完整采访见 CNBC Mad Money，完整视频见 CNBC Television YouTube 频道。 🔗 阅读原文 via AIHOT · https://aihot.news/items/znj4uw6kr9vt4uij9fmao9p00",
-      "pub_date": "2026-11-18",
-      "author": "noreply@aihot.news (Rohan Paul)",
-      "category": "行业动态"
     }
   ]
 }

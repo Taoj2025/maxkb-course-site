@@ -1,7 +1,7 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-21T02:33:01.824970+08:00",
-  "total": 21,
+  "updated_at": "2026-11-21T03:03:02.082450+08:00",
+  "total": 22,
   "items": [
     {
       "title": "Kling AI 发布 Kling Image 4.0：原生 8K 图像生成与高级文字渲染",
@@ -98,6 +98,14 @@
       "pub_date": "2026-11-19",
       "author": "noreply@aihot.news (Conductor 官方更新)",
       "category": "AI 产品"
+    },
+    {
+      "title": "OpenHands 详解用 Agent 自动修复自家镜像 CVE 的软件工厂",
+      "link": "https://aihot.news/items/i94tul4bae051uizh2kkpn2r4",
+      "summary": "OpenHands 团队详解把大部分 CVE 修复工作交给 Agent 流水线的做法：Agent 选择修复、开 PR、合并低风险项并跟踪到部署，人每天只读一条最多 11 行的 Slack 消息和少量 PR。 🔗 阅读原文 via AIHOT · https://aihot.news/items/i94tul4bae051uizh2kkpn2r4",
+      "pub_date": "2026-11-19",
+      "author": "noreply@aihot.news (OpenHands 官方博客)",
+      "category": "教程"
     },
     {
       "title": "Google DeepMind 的 Gemini 4 Neon 上线 OpenRouter",
