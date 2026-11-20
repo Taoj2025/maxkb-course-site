@@ -1,14 +1,14 @@
 {
   "source": "aihot.virxact.com (FDE 相关筛选)",
-  "updated_at": "2026-11-20T12:03:02.427805+08:00",
+  "updated_at": "2026-11-20T12:33:02.245300+08:00",
   "total": 21,
   "items": [
     {
-      "title": "腾讯混元 Hy4 正式开源并发布 System Card",
-      "link": "https://aihot.news/items/zkhdsir848uqwlf6ibuol1eb6",
-      "summary": "腾讯混元宣布 Hy4 正式开源，可在 GitHub、Hugging Face、ModelScope 和 GitCode 下载部署，并同步发布 Hy4 模型安全评估卡片（System Card）。混元 LLM 模型已全部开源，包括 Hy3 preview、Hy3、Hy4 preview、Hy4、Hy4 flash 等，官方表示未来将持续迭代并开源。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zkhdsir848uqwlf6ibuol1eb6",
+      "title": "腾讯混元开放 Hy4 权重",
+      "link": "https://aihot.news/items/jl6m0eymz9z0kleh54c3guowx",
+      "summary": "腾讯混元发布 Hy4 开放权重，定位原生多模态旗舰 MoE 模型，总参数 770B、激活 49B，支持 1M 上下文。同步发布含安全评估报告的 Hy4 System Card，并提供 GitHub、Hugging Face 权重与 GGUF 下载链接，团队将于本周五 8–10 AM PT 在 r/LocalLLaMA 举行 AMA。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jl6m0eymz9z0kleh54c3guowx",
       "pub_date": "2026-11-20",
-      "author": "noreply@aihot.news (公众号：腾讯混元)",
+      "author": "noreply@aihot.news (腾讯混元)",
       "category": "AI 模型"
     },
     {
