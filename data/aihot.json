@@ -1,8 +1,16 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-21T00:33:01.559922+08:00",
+  "updated_at": "2026-11-21T01:03:02.301439+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Kling AI 发布 Kling Image 4.0：原生 8K 图像生成与高级文字渲染",
+      "link": "https://aihot.news/items/rhln87mprozseglkairsway74",
+      "summary": "Kling AI 发布 Kling Image 4.0，主打原生 8K、更强真实感、一致图像组和高级文字渲染。引用 Artificial Analysis 的评测显示其在文生图排名第 7、图像编辑排名第 6，较 Kling Image 3.0 Omni 两个榜单均提升超 225 Elo。黑五限时定价 2K 低至 $0.022/图、原生 8K 低至 $0.033/图。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rhln87mprozseglkairsway74",
+      "pub_date": "2026-11-20",
+      "author": "noreply@aihot.news (可灵 Kling AI)",
+      "category": "AI 模型"
+    },
     {
       "title": "MIT 数学面板讨论 AI 冲击下的数学研究未来",
       "link": "https://aihot.news/items/qfwgfsg8m1r4vcf4vglgi03by",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-18",
       "author": "noreply@aihot.news (Rohan Paul)",
       "category": "行业动态"
-    },
-    {
-      "title": "腾讯混元 Hy4 flash 开放权重，含 FP8 与 Base 版本",
-      "link": "https://aihot.news/items/ei7hom06r7wgtedvkl2eqbofp",
-      "summary": "腾讯混元宣布 Hy4 flash 开放权重，包含 Hy4 flash-FP8 和 Hy4 flash-Base 两个版本。模型为 224B 参数（激活 12B），支持 1M 上下文，原生多模态，定位高效日常生产力场景。模型以 Tencent Hy License 发布，可在 Hugging Face（huggingface.co/tencent/Hy4-flash）和 GitHub（github.com/Tencent-Hunyuan/Hy4-flash）获取，官方预告 Hy4 即将推出。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ei7hom06r7wgtedvkl2eqbofp",
-      "pub_date": "2026-11-18",
-      "author": "noreply@aihot.news (腾讯混元)",
-      "category": "AI 模型"
     }
   ]
 }
