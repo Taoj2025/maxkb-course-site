@@ -950,5 +950,41 @@
     "source": "机器摘要 · The New Stack",
     "file": "13352-openai-spent-1-2-million-finding-nearly.md",
     "estimated_read_time": "1 分钟"
+  },
+  {
+    "id": 13353,
+    "title": "Managing frontier AI risk: From training to deployment",
+    "slug": "13353-managing-frontier-ai-risk-from-training",
+    "summary": "OpenAI explains how it manages frontier AI risk from training through deployment with model alignment, sandboxing, blocking safeguards, and monitoring",
+    "category": "最新动态",
+    "tags": [
+      "FDE",
+      "AI 资讯",
+      "前端部署"
+    ],
+    "color": "purple",
+    "date": "2026-11-21",
+    "author": "小Q（机器摘要）",
+    "source": "机器摘要 · OpenAI Blog",
+    "file": "13353-managing-frontier-ai-risk-from-training.md",
+    "estimated_read_time": "1 分钟"
+  },
+  {
+    "id": 13354,
+    "title": "Advancing chip design with OpenAI models",
+    "slug": "13354-advancing-chip-design-with-openai-models",
+    "summary": "OpenAI models optimized circuits used in Jalapeño silicon and improved RISC‑V core designs, showing progress in AI-assisted chip design with GPT‑6 Ast",
+    "category": "最新动态",
+    "tags": [
+      "FDE",
+      "AI 资讯",
+      "前端部署"
+    ],
+    "color": "blue",
+    "date": "2026-11-21",
+    "author": "小Q（机器摘要）",
+    "source": "机器摘要 · OpenAI Blog",
+    "file": "13354-advancing-chip-design-with-openai-models.md",
+    "estimated_read_time": "1 分钟"
   }
 ]
