@@ -1,8 +1,16 @@
 {
   "source": "aihot.news RSS",
-  "updated_at": "2026-11-21T19:33:01.876058+08:00",
+  "updated_at": "2026-11-21T20:03:02.275359+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Anthropic 数学家称与 Claude 完成黎曼猜想证明，斯坦福数小时后发布纯人类竞争草稿",
+      "link": "https://aihot.news/items/tje8i8y21ttk7jjmqet5bpxuq",
+      "summary": "Anthropic 数学家 Levent Alpöge 周五宣布与 Claude 合作得到黎曼猜想及广义黎曼猜想的证明，证明以 Lean 语言分 14 个数据包发布，打印将超 25 万页。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tje8i8y21ttk7jjmqet5bpxuq",
+      "pub_date": "2026-11-21",
+      "author": "noreply@aihot.news (The Decoder：AI News)",
+      "category": "论文"
+    },
     {
       "title": "Figma 演示用 Specs 与 Figma agent 把上下文变成可实现的开发计划",
       "link": "https://aihot.news/items/w612ivonntodntv1ydkt2lqwh",
@@ -393,14 +401,6 @@
       "summary": "独立评测机构 Vals AI 测试八家厂商模型后发现，主流大模型几乎缺乏针对自主武器的防护，多数模型会把平民、救护车、医护人员、记者和投降士兵标记为军事目标，且没有任何请求被上游安全过滤器拦截。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yf91syits6gqn8qvtksix0kdj",
       "pub_date": "2026-11-18",
       "author": "noreply@aihot.news (The Decoder：AI News)",
-      "category": "论文"
-    },
-    {
-      "title": "Wiz 披露 NGINX 两个 HTTP/2 无需认证远程代码执行漏洞 CVE-2026-123633 与 CVE-2026-123007",
-      "link": "https://aihot.news/items/x8i90coywg5pag1dmf436vgg5",
-      "summary": "Wiz Research 与 Ikotas Labs、Rapid7 等团队独立发现 NGINX 两个 Critical 远程代码执行漏洞，CVSS 4.0 评分 9.2，已与 F5 协调并于 2026-11-18 发布修复。 🔗 阅读原文 via AIHOT · https://aihot.news/items/x8i90coywg5pag1dmf436vgg5",
-      "pub_date": "2026-11-18",
-      "author": "noreply@aihot.news (Wiz：Research)",
       "category": "论文"
     }
   ]
