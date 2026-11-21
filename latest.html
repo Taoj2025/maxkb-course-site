@@ -418,7 +418,7 @@
         <span id="aihot-status-text">已加载</span>
       </span>
     </h2>
-    <p class="aihot-fetch-info" id="aihot-info">从 aihot.virxact.com RSS 实时拉取 · 50 条最新 AI 行业热点 · 支持搜索 + 类别筛选</p>
+    <p class="aihot-fetch-info" id="aihot-info">从 aihot.news RSS 实时拉取 · 50 条最新 AI 行业热点 · 支持搜索 + 类别筛选</p>
 
     <div class="aihot-toolbar">
       <input type="text" class="aihot-search" id="aihot-search" placeholder="🔍 搜索关键词（如：Vercel、MCP、Claude、Cursor...）">
@@ -483,7 +483,7 @@
       <div class="source-icon">🌐</div>
       <div class="source-info">
         <div class="source-name">AIHOT 热点</div>
-        <div class="source-detail">aihot.virxact.com RSS</div>
+        <div class="source-detail">aihot.news RSS</div>
         <div class="source-status">
           <span class="status-dot"></span>
           <span>已启用 · 50 条 · 实时</span>
@@ -609,7 +609,7 @@
 
         // 元信息
         const updateTime = new Date(data.updated_at).toLocaleString('zh-CN', { hour12: false });
-        info.innerHTML = `从 aihot.virxact.com RSS 实时拉取 · <b>${items.length} 条</b>最新 AI 行业热点 · 最后更新 ${updateTime} · 每 30 分钟自动刷新`;
+        info.innerHTML = `从 aihot.news RSS 实时拉取 · <b>${items.length} 条</b>最新 AI 行业热点 · 最后更新 ${updateTime} · 每 30 分钟自动刷新`;
 
         // 提取所有类别
         const categories = ['全部', ...new Set(items.map(i => i.category))];
