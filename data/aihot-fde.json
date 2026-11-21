@@ -1,7 +1,7 @@
 {
   "source": "aihot.news (FDE 相关筛选)",
-  "updated_at": "2026-11-22T02:33:02.374878+08:00",
-  "total": 21,
+  "updated_at": "2026-11-22T03:03:01.949360+08:00",
+  "total": 20,
   "items": [
     {
       "title": "Figma 演示用 Specs 与 Figma agent 把上下文变成可实现的开发计划",
@@ -162,14 +162,6 @@
       "pub_date": "2026-11-18",
       "author": "noreply@aihot.news (腾讯混元)",
       "category": "行业动态"
-    },
-    {
-      "title": "Vals AI 评测：Anthropic、OpenAI 和 Google 模型易将医护人员与投降士兵标记为自杀式无人机目标",
-      "link": "https://aihot.news/items/yf91syits6gqn8qvtksix0kdj",
-      "summary": "独立评测机构 Vals AI 测试八家厂商模型后发现，主流大模型几乎缺乏针对自主武器的防护，多数模型会把平民、救护车、医护人员、记者和投降士兵标记为军事目标，且没有任何请求被上游安全过滤器拦截。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yf91syits6gqn8qvtksix0kdj",
-      "pub_date": "2026-11-18",
-      "author": "noreply@aihot.news (The Decoder：AI News)",
-      "category": "论文"
     }
   ]
 }

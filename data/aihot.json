@@ -1,8 +1,16 @@
 {
   "source": "aihot.news RSS",
-  "updated_at": "2026-11-22T02:33:02.373948+08:00",
+  "updated_at": "2026-11-22T03:03:01.948461+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Columbia 与 MIT 论文展示 Claude 发现的算法突破 3SUM 与 APSP 长期速度上限",
+      "link": "https://aihot.news/items/d32df9vzpliz9m348fug74inq",
+      "summary": "Columbia 和 MIT 的论文展示 Claude 发现的算法在 3SUM 和全对最短路径（APSP）上取得多项式改进，3SUM 达到 O(n^1.9992)、APSP 达到 O(n^2.9995)，推翻了 3SUM 和 APSP 假设。 🔗 阅读原文 via AIHOT · https://aihot.news/items/d32df9vzpliz9m348fug74inq",
+      "pub_date": "2026-11-21",
+      "author": "noreply@aihot.news (Rohan Paul)",
+      "category": "论文"
+    },
     {
       "title": "Anthropic 数学家称与 Claude 完成黎曼猜想证明，斯坦福数小时后发布纯人类竞争草稿",
       "link": "https://aihot.news/items/tje8i8y21ttk7jjmqet5bpxuq",
@@ -393,14 +401,6 @@
       "summary": "Stanford HAI 与 RegLab 研究者发布论文 Detection Objection 和 PhantomDocket 基准，基于 Damien Charlotin 的 AI 幻觉案例数据库校准 AI 检测器，追踪四个州法院的 AI 辅助写作。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wi5cfyezztfdcojsokxto4q0d",
       "pub_date": "2026-11-18",
       "author": "noreply@aihot.news (Stanford HAI News)",
-      "category": "论文"
-    },
-    {
-      "title": "Vals AI 评测：Anthropic、OpenAI 和 Google 模型易将医护人员与投降士兵标记为自杀式无人机目标",
-      "link": "https://aihot.news/items/yf91syits6gqn8qvtksix0kdj",
-      "summary": "独立评测机构 Vals AI 测试八家厂商模型后发现，主流大模型几乎缺乏针对自主武器的防护，多数模型会把平民、救护车、医护人员、记者和投降士兵标记为军事目标，且没有任何请求被上游安全过滤器拦截。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yf91syits6gqn8qvtksix0kdj",
-      "pub_date": "2026-11-18",
-      "author": "noreply@aihot.news (The Decoder：AI News)",
       "category": "论文"
     }
   ]
