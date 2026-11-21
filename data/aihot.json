@@ -1,6 +1,6 @@
 {
   "source": "aihot.virxact.com RSS",
-  "updated_at": "2026-11-21T07:33:02.340599+08:00",
+  "updated_at": "2026-11-21T08:00:01.684346+08:00",
   "total": 50,
   "items": [
     {
@@ -89,6 +89,14 @@
       "summary": "Browser Use 发布 browser-use 1.0，用单一 python 持久 REPL 加原生 Chrome DevTools Protocol 访问替代 0.x 的 24 个浏览器动作。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wibzzhd168cafn7o3gl8336di",
       "pub_date": "2026-11-20",
       "author": "noreply@aihot.news (Browser Use)",
+      "category": "AI 产品"
+    },
+    {
+      "title": "Google 回顾 Duplex 十年演进：如何在 Gemini Tasks 中替用户打电话给商家",
+      "link": "https://aihot.news/items/t68rgyv46hdbp52212ozxleh3",
+      "summary": "Google Research 回顾 Duplex 十年架构演进，并介绍本周在 Gemini App Tasks 中上线的自动致电商家功能。 🔗 阅读原文 via AIHOT · https://aihot.news/items/t68rgyv46hdbp52212ozxleh3",
+      "pub_date": "2026-11-20",
+      "author": "noreply@aihot.news (Google Research：Blog)",
       "category": "AI 产品"
     },
     {
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-18",
       "author": "noreply@aihot.news (Wiz：Research)",
       "category": "论文"
-    },
-    {
-      "title": "Anthropic IPO 估值最高或达 1.4 万亿美元，华尔街提前造势散户争抢",
-      "link": "https://aihot.news/items/yxu549lhmsyp0qe8rstrheqlw",
-      "summary": "据路透社报道，Anthropic 预计于当地时间 11 月 19 日登陆公开市场，IPO 估值最高可能达到 1.4 万亿美元。金融机构已推出 2 倍做多与做空 ETF 等挂钩产品，Vanda Research 预计上市将吸引约 2.5 亿美元散户净买入，为 SpaceX IPO 期间 1.18 亿美元纪录的两倍。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yxu549lhmsyp0qe8rstrheqlw",
-      "pub_date": "2026-11-18",
-      "author": "noreply@aihot.news (IT之家·人工智能)",
-      "category": "行业动态"
     }
   ]
 }
