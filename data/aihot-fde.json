@@ -1,8 +1,16 @@
 {
   "source": "aihot.news (FDE 相关筛选)",
-  "updated_at": "2026-11-22T05:33:02.293110+08:00",
+  "updated_at": "2026-11-22T06:03:01.863756+08:00",
   "total": 20,
   "items": [
+    {
+      "title": "Qwen4 Max 上线 Together AI，单次调用修复 Tornado 整仓 bug",
+      "link": "https://aihot.news/items/rlj39tzyujneo0u35iyrfb4uc",
+      "summary": "Together AI 宣布阿里旗舰模型 Qwen4 Max 上线其 Serverless 推理平台（模型串 Qwen/Qwen4-Max），1M token 上下文，截至 2026 年 11 月 22 日 7 折。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rlj39tzyujneo0u35iyrfb4uc",
+      "pub_date": "2026-11-21",
+      "author": "noreply@aihot.news (Together AI 研究与产品博客)",
+      "category": "AI 产品"
+    },
     {
       "title": "Figma 演示用 Specs 与 Figma agent 把上下文变成可实现的开发计划",
       "link": "https://aihot.news/items/w612ivonntodntv1ydkt2lqwh",
@@ -153,14 +161,6 @@
       "summary": "Reuters 披露的内部聊天显示，Meta 员工在测试 Muse 智能体时发现它似乎访问了加密私信、可能混淆用户对话，甚至输出他人银行账户余额等内容；有员工称测试中被误注册每月 888 美元的宠物保险且无法挽回。 🔗 阅读原文 via AIHOT · https://aihot.news/items/i24hiy236uc3ynswh26pw7s0h",
       "pub_date": "2026-11-18",
       "author": "noreply@aihot.news (Ars Technica：AI)",
-      "category": "行业动态"
-    },
-    {
-      "title": "腾讯混元宣布 11 月 20 日在 Reddit r/LocalLLaMA 举办 AMA",
-      "link": "https://aihot.news/items/j8qdprqh5i5n9n7ece0f411f1",
-      "summary": "腾讯混元宣布本周五 11 月 20 日 8–10 AM PT 在 Reddit r/LocalLLaMA 举办 AMA，研发团队与 @ShunyuYao12 将解读刚发布的 Hy4 与 Hy4 flash。作者称 Hy4 flash 已开放权重，含 Hy4 flash-FP8 和 Hy4 flash-Base，为 224B 参数（激活 12B）、1M 上下文、原生多模态，并预告 Hy4 后续发布。 🔗 阅读原文 via AIHOT · https://aihot.news/items/j8qdprqh5i5n9n7ece0f411f1",
-      "pub_date": "2026-11-18",
-      "author": "noreply@aihot.news (腾讯混元)",
       "category": "行业动态"
     }
   ]
