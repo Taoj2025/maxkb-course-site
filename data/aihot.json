@@ -1,6 +1,6 @@
 {
   "source": "aihot.news RSS",
-  "updated_at": "2026-11-22T05:03:01.806164+08:00",
+  "updated_at": "2026-11-22T05:33:02.292164+08:00",
   "total": 50,
   "items": [
     {
@@ -26,6 +26,14 @@
       "pub_date": "2026-11-20",
       "author": "noreply@aihot.news (Figma AI / Agent / Make)",
       "category": "教程"
+    },
+    {
+      "title": "研究者向 AI 供应链埋入 200 万个金丝雀，揭露敏感数据泄露",
+      "link": "https://aihot.news/items/agm7klro03kcu9weuix1bt4su",
+      "summary": "研究者在经过 OpenRouter 等 AI 路由的请求中埋入 200 万个金丝雀链接，测试敏感信息是否会沿 AI 服务链泄露，结果显示这些数据像筛子一样大量外泄。 🔗 阅读原文 via AIHOT · https://aihot.news/items/agm7klro03kcu9weuix1bt4su",
+      "pub_date": "2026-11-20",
+      "author": "noreply@aihot.news (Ars Technica：AI)",
+      "category": "论文"
     },
     {
       "title": "ChatGPT 推出 Space：统一管理页面、幻灯片、图片与文件",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-18",
       "author": "noreply@aihot.news (腾讯混元)",
       "category": "行业动态"
-    },
-    {
-      "title": "Stanford RegLab 发布 PhantomDocket 基准，追踪美国州法院诉讼文书中的 AI 辅助写作",
-      "link": "https://aihot.news/items/wi5cfyezztfdcojsokxto4q0d",
-      "summary": "Stanford HAI 与 RegLab 研究者发布论文 Detection Objection 和 PhantomDocket 基准，基于 Damien Charlotin 的 AI 幻觉案例数据库校准 AI 检测器，追踪四个州法院的 AI 辅助写作。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wi5cfyezztfdcojsokxto4q0d",
-      "pub_date": "2026-11-18",
-      "author": "noreply@aihot.news (Stanford HAI News)",
-      "category": "论文"
     }
   ]
 }
