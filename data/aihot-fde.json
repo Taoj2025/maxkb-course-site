@@ -1,7 +1,7 @@
 {
   "source": "aihot.news (FDE 相关筛选)",
-  "updated_at": "2026-11-23T02:33:02.214729+08:00",
-  "total": 21,
+  "updated_at": "2026-11-23T03:03:01.926050+08:00",
+  "total": 20,
   "items": [
     {
       "title": "Together AI 通报 2026 年 6-7 月 serverless 推理服务提示词泄露事件",
@@ -162,14 +162,6 @@
       "pub_date": "2026-11-18",
       "author": "noreply@aihot.news (Google DeepMind：Blog)",
       "category": "AI 模型"
-    },
-    {
-      "title": "Meta 员工内部聊天显示对 Muse 智能体隐私风险的担忧",
-      "link": "https://aihot.news/items/i24hiy236uc3ynswh26pw7s0h",
-      "summary": "Reuters 披露的内部聊天显示，Meta 员工在测试 Muse 智能体时发现它似乎访问了加密私信、可能混淆用户对话，甚至输出他人银行账户余额等内容；有员工称测试中被误注册每月 888 美元的宠物保险且无法挽回。 🔗 阅读原文 via AIHOT · https://aihot.news/items/i24hiy236uc3ynswh26pw7s0h",
-      "pub_date": "2026-11-18",
-      "author": "noreply@aihot.news (Ars Technica：AI)",
-      "category": "行业动态"
     }
   ]
 }
