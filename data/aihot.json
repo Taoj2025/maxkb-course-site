@@ -1,8 +1,16 @@
 {
   "source": "aihot.news RSS",
-  "updated_at": "2026-11-22T20:03:02.233889+08:00",
+  "updated_at": "2026-11-22T20:33:01.971900+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Lean 与 Mathlib 社区确认 Levent Alpöge 黎曼猜想证明正确",
+      "link": "https://aihot.news/items/ikpixx0j7414se1f6lww2csek",
+      "summary": "Lean 与 Mathlib 社区发表声明，确认斯坦福数学家 Levent Alpöge 的黎曼猜想证明正确。Alpöge 于 2026 年 11 月 20 日以 1700 万行 Lean 代码发布该证明，数十人独立运行得到相同结果，且验证程序被设计为可证明不会接受有缺陷的证明。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ikpixx0j7414se1f6lww2csek",
+      "pub_date": "2026-11-22",
+      "author": "noreply@aihot.news (The Decoder：AI News)",
+      "category": "行业动态"
+    },
     {
       "title": "菲尔兹奖得主梅纳德谈 Claude 合作证明黎曼猜想：相信证明正确，但需被理解才可能获认可",
       "link": "https://aihot.news/items/p9h5xzsooms0foxeakoivy7qt",
@@ -393,14 +401,6 @@
       "summary": "Reuters 披露的内部聊天显示，Meta 员工在测试 Muse 智能体时发现它似乎访问了加密私信、可能混淆用户对话，甚至输出他人银行账户余额等内容；有员工称测试中被误注册每月 888 美元的宠物保险且无法挽回。 🔗 阅读原文 via AIHOT · https://aihot.news/items/i24hiy236uc3ynswh26pw7s0h",
       "pub_date": "2026-11-18",
       "author": "noreply@aihot.news (Ars Technica：AI)",
-      "category": "行业动态"
-    },
-    {
-      "title": "Greg Brockman 称 OpenAI 模型不到 5 个月为 AMD 芯片带来约一年额外进度",
-      "link": "https://aihot.news/items/tsh3b6rieynf7vstk1ipl34ae",
-      "summary": "Greg Brockman 转引 OpenAI 与 AMD 的合作结果，其模型在不到 5 个月内对 AMD 旗舰 GPU IP 实现最高 14% 的 PPA 提升，相当于约一年的额外进度，部分结果已进入近期完成 tapeout 的设计。同样的方法也改善了 OpenAI 首款自研推理芯片 Jalapeño，收益已在真实硅片上验证，OpenAI 还在与 Synopsys 合作将模型能力与 EDA 工具带给更多芯片设计师。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tsh3b6rieynf7vstk1ipl34ae",
-      "pub_date": "2026-11-18",
-      "author": "noreply@aihot.news (Greg Brockman)",
       "category": "行业动态"
     }
   ]
