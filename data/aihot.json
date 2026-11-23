@@ -1,8 +1,24 @@
 {
   "source": "aihot.news RSS",
-  "updated_at": "2026-11-23T22:03:01.644283+08:00",
+  "updated_at": "2026-11-23T22:33:01.493460+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "ARTEX 开源 AI 黑客框架遭滥用，FBI 发出警告但代码已广泛扩散",
+      "link": "https://aihot.news/items/zb8hu8pp2ogojk5081g7z4en7",
+      "summary": "404 Media 报道，开源框架 ARTEX 让 AI 智能体以机器速度自动完成从侦察到窃取数据的整个入侵流程，FBI 称攻击者用它针对全球政府、医疗、电信、金融、半导体等行业，数小时内即可完成一次完整攻击。原作者 Autumn-27 已于 10 月将其从 GitHub 下架并转为闭源，但多个克隆版本仍在传播，有维护者表示不会删除仓库，理由是代码已被到处复制。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zb8hu8pp2ogojk5081g7z4en7",
+      "pub_date": "2026-11-23",
+      "author": "noreply@aihot.news (404 Media)",
+      "category": "行业动态"
+    },
+    {
+      "title": "NVIDIA 董事会恢复黄仁勋总裁、CEO 兼董事职务",
+      "link": "https://aihot.news/items/gdveoivkyxm7gf8k5tsspii95",
+      "summary": "作者引用 NVIDIA 新闻室公告称，NVIDIA 董事会恢复黄仁勋（Jensen Huang）总裁、CEO 兼董事会董事职务，并附官方公告链接；作者正文只有一句玩梗配图 Return of the Jensen。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gdveoivkyxm7gf8k5tsspii95",
+      "pub_date": "2026-11-23",
+      "author": "noreply@aihot.news (indigo)",
+      "category": "行业动态"
+    },
     {
       "title": "智谱发布GLM-5.4：首个Loop Transformer架构旗舰模型开启泛Coding",
       "link": "https://aihot.news/items/d4hhqnlmrclsx7d6idtvq95wz",
@@ -386,22 +402,6 @@
       "pub_date": "2026-11-19",
       "author": "noreply@aihot.news (Conductor 官方更新)",
       "category": "AI 产品"
-    },
-    {
-      "title": "OpenHands 详解用 Agent 自动修复自家镜像 CVE 的软件工厂",
-      "link": "https://aihot.news/items/i94tul4bae051uizh2kkpn2r4",
-      "summary": "OpenHands 团队详解把大部分 CVE 修复工作交给 Agent 流水线的做法：Agent 选择修复、开 PR、合并低风险项并跟踪到部署，人每天只读一条最多 11 行的 Slack 消息和少量 PR。 🔗 阅读原文 via AIHOT · https://aihot.news/items/i94tul4bae051uizh2kkpn2r4",
-      "pub_date": "2026-11-19",
-      "author": "noreply@aihot.news (OpenHands 官方博客)",
-      "category": "教程"
-    },
-    {
-      "title": "黄仁勋相关传闻核查：美商务部与司法部就Megaspeed发联合声明，未认定违规芯片销售",
-      "link": "https://aihot.news/items/abxhv94f3gcq1qb9mzdf7yma3",
-      "summary": "围绕英伟达前高管黄仁勋及AI芯片转运传闻，美国商务部与司法部就Megaspeed发布联合声明，未认定存在违规芯片销售，也未将该公司列入实体清单；英伟达此前已主动切断对Megaspeed的供应。相关声明未提及间谍行为，新加坡内政部亦表示未就间谍问题调查该公司负责人。 🔗 阅读原文 via AIHOT · https://aihot.news/items/abxhv94f3gcq1qb9mzdf7yma3",
-      "pub_date": "2026-11-18",
-      "author": "noreply@aihot.news (X.PIN)",
-      "category": "行业动态"
     }
   ]
 }
