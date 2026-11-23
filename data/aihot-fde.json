@@ -1,6 +1,6 @@
 {
   "source": "aihot.news (FDE 相关筛选)",
-  "updated_at": "2026-11-24T04:33:02.170059+08:00",
+  "updated_at": "2026-11-24T05:03:02.232709+08:00",
   "total": 22,
   "items": [
     {
@@ -42,6 +42,14 @@
       "pub_date": "2026-11-23",
       "author": "noreply@aihot.news (404 Media)",
       "category": "行业动态"
+    },
+    {
+      "title": "Anthropic 推出 Claude Ship 测试版，自动完成 PR 审查、修复与审批",
+      "link": "https://aihot.news/items/t7jlbaldqf2zcliuva1sofoks",
+      "summary": "Anthropic 发布 Claude Ship 测试版，由 Code Review（已正式可用）、PR Steward 和 Claude Approvals 两个 beta 智能体组成，可审查 PR、推送修复并按团队写进仓库的策略文件决定能否合并。 🔗 阅读原文 via AIHOT · https://aihot.news/items/t7jlbaldqf2zcliuva1sofoks",
+      "pub_date": "2026-11-23",
+      "author": "noreply@aihot.news (Claude：Blog)",
+      "category": "AI 产品"
     },
     {
       "title": "AISI 红队论文：攻击策略选择会让 LLM 监视器评估结果失真",
@@ -169,14 +177,6 @@
       "summary": "Reflection 与 Andon Labs 合作开展真实环境评测，让 Beam 智能体自主运营纽约和旧金山办公室的售货业务，测试其无人干预下的自主性与失控风险。 🔗 阅读原文 via AIHOT · https://aihot.news/items/w0ka422uzqyautrrsmzlmk9iq",
       "pub_date": "2026-11-19",
       "author": "noreply@aihot.news (Reflection Blog)",
-      "category": "论文"
-    },
-    {
-      "title": "METR 发布 2026 年 11 月能力测量更新：AI R&D 相关能力每约 3.6 个月翻倍且更难测量",
-      "link": "https://aihot.news/items/sn8qb9u8fqka3mpnmy0r1nz4b",
-      "summary": "METR 发布截至 Opus 5.5 和 GPT-6 Astra 的能力评测更新，发现在 TH1.1 与 TH2 任务上模型时间视野约每 3.6 个月翻倍，可验证子集翻倍时间约 1.65 个月。 🔗 阅读原文 via AIHOT · https://aihot.news/items/sn8qb9u8fqka3mpnmy0r1nz4b",
-      "pub_date": "2026-11-19",
-      "author": "noreply@aihot.news (METR：Research)",
       "category": "论文"
     }
   ]
