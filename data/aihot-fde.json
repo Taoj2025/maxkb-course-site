@@ -1,7 +1,7 @@
 {
   "source": "aihot.news (FDE 相关筛选)",
-  "updated_at": "2026-11-23T09:33:01.580591+08:00",
-  "total": 21,
+  "updated_at": "2026-11-23T10:03:01.884635+08:00",
+  "total": 20,
   "items": [
     {
       "title": "MiniCPM 8B 成为老挝国家模型，端侧小模型加速落地多国",
@@ -162,14 +162,6 @@
       "pub_date": "2026-11-19",
       "author": "noreply@aihot.news (OpenHands 官方博客)",
       "category": "教程"
-    },
-    {
-      "title": "Google DeepMind 的 Gemini 4 Neon 上线 OpenRouter",
-      "link": "https://aihot.news/items/k821p6smjnprmolffcr66q1mz",
-      "summary": "OpenRouter 宣布 Google DeepMind 的 Gemini 4 Neon 正式上线其平台，可通过 Google Cloud 使用。该模型面向复杂软件工程、知识工作和科学场景，定位介于 Carbon 与 Hydrogen 之间。Google 称其在 Artificial Analysis Coding Agent Index 排名第一，每任务成本比 Carbon 低 32%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/k821p6smjnprmolffcr66q1mz",
-      "pub_date": "2026-11-18",
-      "author": "noreply@aihot.news (OpenRouter)",
-      "category": "AI 产品"
     }
   ]
 }

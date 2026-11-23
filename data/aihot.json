@@ -1,8 +1,16 @@
 {
   "source": "aihot.news RSS",
-  "updated_at": "2026-11-23T09:33:01.579507+08:00",
+  "updated_at": "2026-11-23T10:03:01.883669+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Anthropic IPO 前三家机构如何重注押注",
+      "link": "https://aihot.news/items/dus34samsjrld1qopq65v54uq",
+      "summary": "TechCrunch 报道 Notable Capital、GIC 和 Baillie Gifford 在 Anthropic IPO 前的重仓投资逻辑。 🔗 阅读原文 via AIHOT · https://aihot.news/items/dus34samsjrld1qopq65v54uq",
+      "pub_date": "2026-11-23",
+      "author": "noreply@aihot.news (TechCrunch：AI)",
+      "category": "行业动态"
+    },
     {
       "title": "卡兹克分享 Claude、GPT、Gemini 三模型协同调度方法",
       "link": "https://aihot.news/items/hz782dpcwhurj6584rtd13eaf",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-18",
       "author": "noreply@aihot.news (Tibo)",
       "category": "AI 模型"
-    },
-    {
-      "title": "Google DeepMind 的 Gemini 4 Neon 上线 OpenRouter",
-      "link": "https://aihot.news/items/k821p6smjnprmolffcr66q1mz",
-      "summary": "OpenRouter 宣布 Google DeepMind 的 Gemini 4 Neon 正式上线其平台，可通过 Google Cloud 使用。该模型面向复杂软件工程、知识工作和科学场景，定位介于 Carbon 与 Hydrogen 之间。Google 称其在 Artificial Analysis Coding Agent Index 排名第一，每任务成本比 Carbon 低 32%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/k821p6smjnprmolffcr66q1mz",
-      "pub_date": "2026-11-18",
-      "author": "noreply@aihot.news (OpenRouter)",
-      "category": "AI 产品"
     }
   ]
 }
