@@ -1,8 +1,16 @@
 {
   "source": "aihot.news RSS",
-  "updated_at": "2026-11-24T05:03:02.231621+08:00",
+  "updated_at": "2026-11-24T05:33:01.871288+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Claude 推出插件，统一连接器与技能的接入方式",
+      "link": "https://aihot.news/items/h1vnjuwxsli7ku7rpocjlr3s2",
+      "summary": "Claude 官方宣布将连接器和技能合并为插件，提供统一的方式为 Claude 接入工具或教授新技能。插件已在 Free、Pro、Max 和 Ultra 套餐上线，Team 和 Enterprise 即将支持，用户可在 https://claude.ai/plugins 浏览 10,000 多个插件。 🔗 阅读原文 via AIHOT · https://aihot.news/items/h1vnjuwxsli7ku7rpocjlr3s2",
+      "pub_date": "2026-11-23",
+      "author": "noreply@aihot.news (Claude)",
+      "category": "AI 产品"
+    },
     {
       "title": "Figma agent 正式开放至 FigJam 和 Figma Slides",
       "link": "https://aihot.news/items/zur9ndkrkvtk4lqiix14q468s",
@@ -113,6 +121,14 @@
       "summary": "英国 AI Security Institute 发布论文，测试合成攻击生成方式对监视器评估的影响。评估一个 OpenAI 前生产监视器时，同一监视器对不同攻击策略的漏报率从 0.2%（基础提示）到 23%（转录编辑）不等，优化程度也会显著改变结果。作者指出合成转录只是真实有害行为代理，其代表性难以证明，仅凭监视器评估不足以保证部署安全，需辅以能力限制、人工在环和沙箱等分层防护。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tl8v9gto8rd3e4x40xfbljj13",
       "pub_date": "2026-11-22",
       "author": "noreply@aihot.news (英国 AI Security Institute：Blog)",
+      "category": "论文"
+    },
+    {
+      "title": "Anthropic 访谈 58 家企业客户：AI 采用的价值、雇佣影响与组织重组",
+      "link": "https://aihot.news/items/gj8mzwrgqlkvim6xe382a35q2",
+      "summary": "Anthropic 研究团队对 58 家企业客户进行 66 次面对面访谈，分析企业采用 AI 的方式、瓶颈与组织变化。研究发现多数 AI 应用通过扩大产出而非削减成本创造价值；直接裁员案例很少，但约三分之二的公司因 AI 减少招聘，九家削减外包和离岸承包商；高价值应用通常需要更深度的组织重组，如拓宽岗位职责、把员工转向 AI 无法完成的瓶颈任务，以及为非技术员工建设数据和基础设施支持。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gj8mzwrgqlkvim6xe382a35q2",
+      "pub_date": "2026-11-22",
+      "author": "noreply@aihot.news (Anthropic：Research)",
       "category": "论文"
     },
     {
@@ -385,22 +401,6 @@
       "summary": "Perplexity CEO Aravind Srinivas 分享 Computer 中 Brain 智能体的自我改进技能研究：Brain 会读取历史会话轨迹（工具调用、推理、结果），识别重复模式，仅在证据足够时提议新技能或更新。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cty34utgc5ppbdnayf7cnjqlv",
       "pub_date": "2026-11-19",
       "author": "noreply@aihot.news (Aravind Srinivas)",
-      "category": "论文"
-    },
-    {
-      "title": "Runway 详解如何构建智能体驱动的软件工厂",
-      "link": "https://aihot.news/items/wnw22hxqlwsd58lzsm44psc6g",
-      "summary": "Runway 介绍了逐步把软件交付各环节交给智能体完成的实践。智能体 10 月驱动了 38% 的合并 PR（6 月仅 0.1%），首次批准等待中位数从超过 2 小时降至约 5 分钟；AI 单独批准的 PR 回滚率约千分之一，低于人工批准的约 1/200。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wnw22hxqlwsd58lzsm44psc6g",
-      "pub_date": "2026-11-19",
-      "author": "noreply@aihot.news (Runway：News)",
-      "category": "教程"
-    },
-    {
-      "title": "Reflection 与 Andon Labs 实测 Beam 智能体自主运营售货业务的安全风险",
-      "link": "https://aihot.news/items/w0ka422uzqyautrrsmzlmk9iq",
-      "summary": "Reflection 与 Andon Labs 合作开展真实环境评测，让 Beam 智能体自主运营纽约和旧金山办公室的售货业务，测试其无人干预下的自主性与失控风险。 🔗 阅读原文 via AIHOT · https://aihot.news/items/w0ka422uzqyautrrsmzlmk9iq",
-      "pub_date": "2026-11-19",
-      "author": "noreply@aihot.news (Reflection Blog)",
       "category": "论文"
     }
   ]

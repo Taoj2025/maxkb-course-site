@@ -1,7 +1,7 @@
 {
   "source": "aihot.news (FDE 相关筛选)",
-  "updated_at": "2026-11-24T05:03:02.232709+08:00",
-  "total": 22,
+  "updated_at": "2026-11-24T05:33:01.872230+08:00",
+  "total": 20,
   "items": [
     {
       "title": "Figma agent 正式开放至 FigJam 和 Figma Slides",
@@ -161,22 +161,6 @@
       "summary": "Perplexity CEO Aravind Srinivas 分享 Computer 中 Brain 智能体的自我改进技能研究：Brain 会读取历史会话轨迹（工具调用、推理、结果），识别重复模式，仅在证据足够时提议新技能或更新。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cty34utgc5ppbdnayf7cnjqlv",
       "pub_date": "2026-11-19",
       "author": "noreply@aihot.news (Aravind Srinivas)",
-      "category": "论文"
-    },
-    {
-      "title": "Runway 详解如何构建智能体驱动的软件工厂",
-      "link": "https://aihot.news/items/wnw22hxqlwsd58lzsm44psc6g",
-      "summary": "Runway 介绍了逐步把软件交付各环节交给智能体完成的实践。智能体 10 月驱动了 38% 的合并 PR（6 月仅 0.1%），首次批准等待中位数从超过 2 小时降至约 5 分钟；AI 单独批准的 PR 回滚率约千分之一，低于人工批准的约 1/200。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wnw22hxqlwsd58lzsm44psc6g",
-      "pub_date": "2026-11-19",
-      "author": "noreply@aihot.news (Runway：News)",
-      "category": "教程"
-    },
-    {
-      "title": "Reflection 与 Andon Labs 实测 Beam 智能体自主运营售货业务的安全风险",
-      "link": "https://aihot.news/items/w0ka422uzqyautrrsmzlmk9iq",
-      "summary": "Reflection 与 Andon Labs 合作开展真实环境评测，让 Beam 智能体自主运营纽约和旧金山办公室的售货业务，测试其无人干预下的自主性与失控风险。 🔗 阅读原文 via AIHOT · https://aihot.news/items/w0ka422uzqyautrrsmzlmk9iq",
-      "pub_date": "2026-11-19",
-      "author": "noreply@aihot.news (Reflection Blog)",
       "category": "论文"
     }
   ]
