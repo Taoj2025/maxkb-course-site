@@ -1,15 +1,15 @@
 {
   "source": "aihot.news (FDE 相关筛选)",
-  "updated_at": "2026-11-24T04:03:02.182112+08:00",
+  "updated_at": "2026-11-24T04:33:02.170059+08:00",
   "total": 22,
   "items": [
     {
-      "title": "Microsoft AI 详解自研 RL 框架 Rocket 的基础设施设计",
-      "link": "https://aihot.news/items/htuz0t2wpi2avil4105wus6u7",
-      "summary": "Microsoft AI 发布技术博客，介绍其自研强化学习框架 Rocket，用于将 MAI Base 2 从基座模型通过 RL 攀升能力，不依赖第三方模型蒸馏。 🔗 阅读原文 via AIHOT · https://aihot.news/items/htuz0t2wpi2avil4105wus6u7",
+      "title": "Figma agent 正式开放至 FigJam 和 Figma Slides",
+      "link": "https://aihot.news/items/zur9ndkrkvtk4lqiix14q468s",
+      "summary": "Figma agent 现已在 FigJam 和 Figma Slides 上对所有付费计划全面开放，支持连接器和附件，可将设计文件、会议记录或研究笔记等材料整理到 FigJam 白板或生成演示文稿初稿。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zur9ndkrkvtk4lqiix14q468s",
       "pub_date": "2026-11-23",
-      "author": "noreply@aihot.news (Microsoft AI：官方博客)",
-      "category": "论文"
+      "author": "noreply@aihot.news (Figma AI / Agent / Make)",
+      "category": "AI 产品"
     },
     {
       "title": "Google DeepMind 用 Gemini 4 智能体团队与 Lean 形式化验证改进量子算法",
