@@ -1,8 +1,16 @@
 {
   "source": "aihot.news (FDE 相关筛选)",
-  "updated_at": "2026-11-24T02:03:02.310877+08:00",
-  "total": 20,
+  "updated_at": "2026-11-24T02:33:02.429821+08:00",
+  "total": 22,
   "items": [
+    {
+      "title": "Microsoft AI 详解自研 RL 框架 Rocket 的基础设施设计",
+      "link": "https://aihot.news/items/htuz0t2wpi2avil4105wus6u7",
+      "summary": "Microsoft AI 发布技术报告，介绍自研强化学习框架 Rocket，用于将 MAI Base 2 从基座模型通过 RL 提升能力，不依赖第三方模型蒸馏。 🔗 阅读原文 via AIHOT · https://aihot.news/items/htuz0t2wpi2avil4105wus6u7",
+      "pub_date": "2026-11-23",
+      "author": "noreply@aihot.news (Microsoft AI：官方博客)",
+      "category": "论文"
+    },
     {
       "title": "Google DeepMind 用 Gemini 4 智能体团队与 Lean 形式化验证改进量子算法",
       "link": "https://aihot.news/items/pjpgapf3mbvmy98cywxhwf07n",
@@ -34,6 +42,14 @@
       "pub_date": "2026-11-23",
       "author": "noreply@aihot.news (404 Media)",
       "category": "行业动态"
+    },
+    {
+      "title": "AISI 红队论文：攻击策略选择会让 LLM 监视器评估结果失真",
+      "link": "https://aihot.news/items/tl8v9gto8rd3e4x40xfbljj13",
+      "summary": "英国 AI Security Institute 发布论文，测试合成攻击生成方式对监视器评估的影响。评估一个 OpenAI 前生产监视器时，同一监视器对不同攻击策略的漏报率从 0.2%（基础提示）到 23%（转录编辑）不等，优化程度也会显著改变结果。作者指出合成转录只是真实有害行为代理，其代表性难以证明，仅凭监视器评估不足以保证部署安全，需辅以能力限制、人工在环和沙箱等分层防护。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tl8v9gto8rd3e4x40xfbljj13",
+      "pub_date": "2026-11-22",
+      "author": "noreply@aihot.news (英国 AI Security Institute：Blog)",
+      "category": "论文"
     },
     {
       "title": "MiniCPM 8B 成为老挝国家模型，端侧小模型加速落地多国",
