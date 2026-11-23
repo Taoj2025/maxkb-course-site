@@ -1,8 +1,24 @@
 {
   "source": "aihot.news RSS",
-  "updated_at": "2026-11-24T01:33:01.608947+08:00",
+  "updated_at": "2026-11-24T02:03:02.309976+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Google Search AI Mode 支持连接 Google Wallet、Drive 和 Gemini 应用",
+      "link": "https://aihot.news/items/cyorgi8t8dm2fo6ee3b5a6qs2",
+      "summary": "Google 宣布在 Search 的 AI Mode 中扩展 Personal Intelligence，用户可选择安全连接 Google Wallet、Drive 和 Gemini 应用，Wallet 即日起开放，Drive 和 Gemini 应用将在未来数周跟进。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cyorgi8t8dm2fo6ee3b5a6qs2",
+      "pub_date": "2026-11-23",
+      "author": "noreply@aihot.news (Google Blog：AI)",
+      "category": "AI 产品"
+    },
+    {
+      "title": "Google DeepMind 用 Gemini 4 智能体团队与 Lean 形式化验证改进量子算法",
+      "link": "https://aihot.news/items/pjpgapf3mbvmy98cywxhwf07n",
+      "summary": "Google DeepMind 发布新论文，用多个 Gemini 4 智能体团队结合 Lean 形式化定理证明改进量子算法，生成经数学验证的高效量子电路，并在 GitHub 开源 Lean 库、问题规格和验证解法。 🔗 阅读原文 via AIHOT · https://aihot.news/items/pjpgapf3mbvmy98cywxhwf07n",
+      "pub_date": "2026-11-23",
+      "author": "noreply@aihot.news (Google DeepMind：Blog)",
+      "category": "论文"
+    },
     {
       "title": "a16z 实测 11,307 次 Agent 购物流程，总结企业赢得 B2A 经济的五条方法",
       "link": "https://aihot.news/items/qkxvs90ewfu3k430sdefndv56",
@@ -386,22 +402,6 @@
       "pub_date": "2026-11-19",
       "author": "noreply@aihot.news (MIT News)",
       "category": "论文"
-    },
-    {
-      "title": "Ai2 在 Asta 平台发布 Theorizer 科研理论生成智能体并开源代码",
-      "link": "https://aihot.news/items/nl1zxwjilx9vxvz7af13c1s9w",
-      "summary": "Ai2 于 11 月 19 日在科研智能体平台 Asta 中上线 Theorizer，该智能体检索文献并为无法解释的观测提出候选理论，所有论断均链接到支持文献，代码同步开源；通过网页界面使用时 Ai2 在限额内承担 token 费用，也可在本地运行开源库自行付费。 🔗 阅读原文 via AIHOT · https://aihot.news/items/nl1zxwjilx9vxvz7af13c1s9w",
-      "pub_date": "2026-11-19",
-      "author": "noreply@aihot.news (Ai2 / Allen Institute for AI)",
-      "category": "AI 产品"
-    },
-    {
-      "title": "OpenAI 详解 Codex 驱动的 Performance Factory 如何自动保持 ChatGPT 高性能",
-      "link": "https://aihot.news/items/alwgjr29158n454prl9tjmmw1",
-      "summary": "OpenAI 官方详解其 Performance Factory 系统，用 Codex 智能体在云端自动排查并修复 ChatGPT 的性能回归。其中 Regression Workflow 在三个多月内跟踪超过 1700 次调查、定位超过 600 个根因，相当于每天约 17 次自动调查。 🔗 阅读原文 via AIHOT · https://aihot.news/items/alwgjr29158n454prl9tjmmw1",
-      "pub_date": "2026-11-19",
-      "author": "noreply@aihot.news (OpenAI：官网动态)",
-      "category": "教程"
     }
   ]
 }
