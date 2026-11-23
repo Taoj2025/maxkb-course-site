@@ -1,8 +1,24 @@
 {
   "source": "aihot.news RSS",
-  "updated_at": "2026-11-23T23:33:01.609020+08:00",
+  "updated_at": "2026-11-24T00:03:02.024771+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "a16z 实测 11,307 次 Agent 购物流程，总结企业赢得 B2A 经济的五条方法",
+      "link": "https://aihot.news/items/qkxvs90ewfu3k430sdefndv56",
+      "summary": "a16z 联合 The Prompting Company 测试 Grok Bot、Muse、Instinct、Dots 等智能体在 1,270 条提示词、11,307 次完整运行中的购物表现，并比对 YipitData 消费数据。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qkxvs90ewfu3k430sdefndv56",
+      "pub_date": "2026-11-23",
+      "author": "noreply@aihot.news (a16z：News)",
+      "category": "教程"
+    },
+    {
+      "title": "特朗普支持黄仁勋重返英伟达CEO岗位，称美方无不当行为证据",
+      "link": "https://aihot.news/items/uop2ab4998l6dxugsgtg7w7rn",
+      "summary": "特朗普在社交平台表态支持英伟达董事会恢复黄仁勋CEO兼总裁职务，称美国政府没有理由认为其回归构成国家安全风险。他称司法部长已确认政府没有黄仁勋违法行为的证据，但该部长本人尚未正式发表声明。报道还梳理了英伟达董事会决策与白宫表态的先后关系，并提及特朗普要求英伟达继续就出口管制合规开展内部调查。 🔗 阅读原文 via AIHOT · https://aihot.news/items/uop2ab4998l6dxugsgtg7w7rn",
+      "pub_date": "2026-11-23",
+      "author": "noreply@aihot.news (TechCrunch：AI)",
+      "category": "行业动态"
+    },
     {
       "title": "Wiz Research 披露 ARTEX 智能体攻击框架的真实云入侵案例",
       "link": "https://aihot.news/items/gp8e9a8oitha0rbip8pzntuff",
@@ -386,22 +402,6 @@
       "pub_date": "2026-11-19",
       "author": "noreply@aihot.news (OpenAI：官网动态)",
       "category": "教程"
-    },
-    {
-      "title": "彭博社：黄仁勋离任英伟达 CEO 后日本 AI 股首当其冲",
-      "link": "https://aihot.news/items/gpufpm2kxcsxrewhivsjviz3a",
-      "summary": "彭博社 11 月 19 日报道称，英伟达管理层变动及黄仁勋离任引发全球 AI 概念股新一轮抛售，日本相关股票首当其冲，市场风向从“AI 溢价”转向“AI 折价”。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gpufpm2kxcsxrewhivsjviz3a",
-      "pub_date": "2026-11-19",
-      "author": "noreply@aihot.news (IT之家·人工智能)",
-      "category": "行业动态"
-    },
-    {
-      "title": "Nadella 解释向 6 万员工提供买断的原因：转型为 AI 优先的组织而非裁员",
-      "link": "https://aihot.news/items/g47lsydtqfsi16e0z920ghe2y",
-      "summary": "Microsoft CEO Satya Nadella 在 DealBook Summit 上解释，10 月向 6 万名员工提供买断是为了让员工在转型中拥有选择权，而非用 AI 取代员工，目标是让所有人都用 AI 工作、转向管理 AI 智能体。 🔗 阅读原文 via AIHOT · https://aihot.news/items/g47lsydtqfsi16e0z920ghe2y",
-      "pub_date": "2026-11-19",
-      "author": "noreply@aihot.news (TechCrunch：AI)",
-      "category": "行业动态"
     }
   ]
 }

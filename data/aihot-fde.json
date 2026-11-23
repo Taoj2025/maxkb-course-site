@@ -1,8 +1,16 @@
 {
   "source": "aihot.news (FDE 相关筛选)",
-  "updated_at": "2026-11-23T23:33:01.609951+08:00",
+  "updated_at": "2026-11-24T00:03:02.025705+08:00",
   "total": 21,
   "items": [
+    {
+      "title": "a16z 实测 11,307 次 Agent 购物流程，总结企业赢得 B2A 经济的五条方法",
+      "link": "https://aihot.news/items/qkxvs90ewfu3k430sdefndv56",
+      "summary": "a16z 联合 The Prompting Company 测试 Grok Bot、Muse、Instinct、Dots 等智能体在 1,270 条提示词、11,307 次完整运行中的购物表现，并比对 YipitData 消费数据。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qkxvs90ewfu3k430sdefndv56",
+      "pub_date": "2026-11-23",
+      "author": "noreply@aihot.news (a16z：News)",
+      "category": "教程"
+    },
     {
       "title": "Wiz Research 披露 ARTEX 智能体攻击框架的真实云入侵案例",
       "link": "https://aihot.news/items/gp8e9a8oitha0rbip8pzntuff",
@@ -162,14 +170,6 @@
       "pub_date": "2026-11-19",
       "author": "noreply@aihot.news (OpenAI：官网动态)",
       "category": "教程"
-    },
-    {
-      "title": "Nadella 解释向 6 万员工提供买断的原因：转型为 AI 优先的组织而非裁员",
-      "link": "https://aihot.news/items/g47lsydtqfsi16e0z920ghe2y",
-      "summary": "Microsoft CEO Satya Nadella 在 DealBook Summit 上解释，10 月向 6 万名员工提供买断是为了让员工在转型中拥有选择权，而非用 AI 取代员工，目标是让所有人都用 AI 工作、转向管理 AI 智能体。 🔗 阅读原文 via AIHOT · https://aihot.news/items/g47lsydtqfsi16e0z920ghe2y",
-      "pub_date": "2026-11-19",
-      "author": "noreply@aihot.news (TechCrunch：AI)",
-      "category": "行业动态"
     }
   ]
 }
