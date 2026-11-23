@@ -1,12 +1,20 @@
 {
   "source": "aihot.news RSS",
-  "updated_at": "2026-11-24T03:03:01.771791+08:00",
+  "updated_at": "2026-11-24T03:33:01.739451+08:00",
   "total": 50,
   "items": [
     {
+      "title": "俄勒冈州和弗吉尼亚州起诉 SpaceX 指控 Grok 生成色情深伪防护不足",
+      "link": "https://aihot.news/items/vlxrimiuixb91iodhjh5hxmte",
+      "summary": "俄勒冈州和弗吉尼亚州总检察长周一分别起诉 SpaceX，指控其忽视行业标准防护并虚假宣传 X 平台和 Grok AI 的安全性，两案均寻求经济赔偿。诉讼核心指向 Grok Imagine：xAI 于 2025 年 8 月为该工具推出生成色情内容的 spicy 模式，2026 年 1 月又允许 X 用户无需同意即可编辑任意图片，导致非自愿色情深伪泛滥。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vlxrimiuixb91iodhjh5hxmte",
+      "pub_date": "2026-11-23",
+      "author": "noreply@aihot.news (The Verge：AI)",
+      "category": "行业动态"
+    },
+    {
       "title": "Microsoft AI 详解自研 RL 框架 Rocket 的基础设施设计",
       "link": "https://aihot.news/items/htuz0t2wpi2avil4105wus6u7",
-      "summary": "Microsoft AI 发布技术报告，介绍自研强化学习框架 Rocket，用于将 MAI Base 2 从基座模型通过 RL 提升能力，不依赖第三方模型蒸馏。 🔗 阅读原文 via AIHOT · https://aihot.news/items/htuz0t2wpi2avil4105wus6u7",
+      "summary": "Microsoft AI 发布技术博客，介绍其自研强化学习框架 Rocket，用于将 MAI Base 2 从基座模型通过 RL 攀升能力，不依赖第三方模型蒸馏。 🔗 阅读原文 via AIHOT · https://aihot.news/items/htuz0t2wpi2avil4105wus6u7",
       "pub_date": "2026-11-23",
       "author": "noreply@aihot.news (Microsoft AI：官方博客)",
       "category": "论文"
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-19",
       "author": "noreply@aihot.news (METR：Research)",
       "category": "论文"
-    },
-    {
-      "title": "Anthropic IPO 检验 AI 循环融资模式，Amazon 和 Google 持股市值约 3079 亿美元",
-      "link": "https://aihot.news/items/a8d06cpj4vy2dkdzazgsqsrwx",
-      "summary": "TechCrunch 分析 Anthropic IPO 如何检验 AI 行业的循环融资模式。Amazon 14.7% 股份价值超 1590 亿美元，Google 13.7% 股份约 1490 亿美元；Nvidia、AMD、Microsoft、Broadcom、Micron、TSMC 还以 83 美元/股参与 260 亿美元私募。 🔗 阅读原文 via AIHOT · https://aihot.news/items/a8d06cpj4vy2dkdzazgsqsrwx",
-      "pub_date": "2026-11-19",
-      "author": "noreply@aihot.news (TechCrunch：AI)",
-      "category": "行业动态"
     }
   ]
 }

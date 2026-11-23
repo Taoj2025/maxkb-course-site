@@ -1,12 +1,12 @@
 {
   "source": "aihot.news (FDE 相关筛选)",
-  "updated_at": "2026-11-24T03:03:01.772706+08:00",
+  "updated_at": "2026-11-24T03:33:01.740389+08:00",
   "total": 22,
   "items": [
     {
       "title": "Microsoft AI 详解自研 RL 框架 Rocket 的基础设施设计",
       "link": "https://aihot.news/items/htuz0t2wpi2avil4105wus6u7",
-      "summary": "Microsoft AI 发布技术报告，介绍自研强化学习框架 Rocket，用于将 MAI Base 2 从基座模型通过 RL 提升能力，不依赖第三方模型蒸馏。 🔗 阅读原文 via AIHOT · https://aihot.news/items/htuz0t2wpi2avil4105wus6u7",
+      "summary": "Microsoft AI 发布技术博客，介绍其自研强化学习框架 Rocket，用于将 MAI Base 2 从基座模型通过 RL 攀升能力，不依赖第三方模型蒸馏。 🔗 阅读原文 via AIHOT · https://aihot.news/items/htuz0t2wpi2avil4105wus6u7",
       "pub_date": "2026-11-23",
       "author": "noreply@aihot.news (Microsoft AI：官方博客)",
       "category": "论文"
