@@ -1,7 +1,7 @@
 {
   "source": "aihot.news (FDE 相关筛选)",
-  "updated_at": "2026-11-24T07:03:02.055849+08:00",
-  "total": 20,
+  "updated_at": "2026-11-24T07:33:02.261191+08:00",
+  "total": 19,
   "items": [
     {
       "title": "Figma agent 正式开放至 FigJam 和 Figma Slides",
@@ -154,14 +154,6 @@
       "pub_date": "2026-11-19",
       "author": "noreply@aihot.news (Anthropic)",
       "category": "行业动态"
-    },
-    {
-      "title": "Perplexity Computer 的 Brain 智能体可自动编写和更新个人技能",
-      "link": "https://aihot.news/items/cty34utgc5ppbdnayf7cnjqlv",
-      "summary": "Perplexity CEO Aravind Srinivas 分享 Computer 中 Brain 智能体的自我改进技能研究：Brain 会读取历史会话轨迹（工具调用、推理、结果），识别重复模式，仅在证据足够时提议新技能或更新。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cty34utgc5ppbdnayf7cnjqlv",
-      "pub_date": "2026-11-19",
-      "author": "noreply@aihot.news (Aravind Srinivas)",
-      "category": "论文"
     }
   ]
 }
