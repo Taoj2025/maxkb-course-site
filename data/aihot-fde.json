@@ -1,7 +1,7 @@
 {
   "source": "aihot.news (FDE 相关筛选)",
-  "updated_at": "2026-11-23T12:03:01.611543+08:00",
-  "total": 20,
+  "updated_at": "2026-11-23T12:33:01.646739+08:00",
+  "total": 21,
   "items": [
     {
       "title": "MiniCPM 8B 成为老挝国家模型，端侧小模型加速落地多国",
@@ -114,6 +114,14 @@
       "pub_date": "2026-11-19",
       "author": "noreply@aihot.news (Runway：News)",
       "category": "教程"
+    },
+    {
+      "title": "Reflection 与 Andon Labs 实测 Beam 智能体自主运营售货业务的安全风险",
+      "link": "https://aihot.news/items/w0ka422uzqyautrrsmzlmk9iq",
+      "summary": "Reflection 与 Andon Labs 合作开展真实环境评测，让 Beam 智能体自主运营纽约和旧金山办公室的售货业务，测试其无人干预下的自主性与失控风险。 🔗 阅读原文 via AIHOT · https://aihot.news/items/w0ka422uzqyautrrsmzlmk9iq",
+      "pub_date": "2026-11-19",
+      "author": "noreply@aihot.news (Reflection Blog)",
+      "category": "论文"
     },
     {
       "title": "METR 发布 2026 年 11 月能力测量更新：AI R&D 相关能力每约 3.6 个月翻倍且更难测量",

@@ -1,6 +1,6 @@
 {
   "source": "aihot.news RSS",
-  "updated_at": "2026-11-23T12:03:01.610619+08:00",
+  "updated_at": "2026-11-23T12:33:01.645799+08:00",
   "total": 50,
   "items": [
     {
@@ -300,6 +300,14 @@
       "category": "教程"
     },
     {
+      "title": "Reflection 与 Andon Labs 实测 Beam 智能体自主运营售货业务的安全风险",
+      "link": "https://aihot.news/items/w0ka422uzqyautrrsmzlmk9iq",
+      "summary": "Reflection 与 Andon Labs 合作开展真实环境评测，让 Beam 智能体自主运营纽约和旧金山办公室的售货业务，测试其无人干预下的自主性与失控风险。 🔗 阅读原文 via AIHOT · https://aihot.news/items/w0ka422uzqyautrrsmzlmk9iq",
+      "pub_date": "2026-11-19",
+      "author": "noreply@aihot.news (Reflection Blog)",
+      "category": "论文"
+    },
+    {
       "title": "METR 发布 2026 年 11 月能力测量更新：AI R&D 相关能力每约 3.6 个月翻倍且更难测量",
       "link": "https://aihot.news/items/sn8qb9u8fqka3mpnmy0r1nz4b",
       "summary": "METR 发布截至 Opus 5.5 和 GPT-6 Astra 的能力评测更新，发现在 TH1.1 与 TH2 任务上模型时间视野约每 3.6 个月翻倍，可验证子集翻倍时间约 1.65 个月。 🔗 阅读原文 via AIHOT · https://aihot.news/items/sn8qb9u8fqka3mpnmy0r1nz4b",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-18",
       "author": "noreply@aihot.news (TechCrunch：AI)",
       "category": "行业动态"
-    },
-    {
-      "title": "OpenAI 团队成员 Tibo 评价 GPT-6.2 Astra 并转引 AMD 与 Jalapeño 芯片优化结果",
-      "link": "https://aihot.news/items/bnqsw7ispucfily4bdq9vz33j",
-      "summary": "OpenAI 成员 Tibo 转引团队结果并评价 GPT-6.2 Astra 擅长极难任务，同时承认收到对其沟通风格的反馈并正在改进。所引内容称与 AMD 合作在不到五个月内将旗舰 GPU IP 的 PPA 提升最高 14%，同样方法改进了 OpenAI 首款自研推理芯片 Jalapeño 且在真实硅片上验证，并与 Synopsys 合作把模型能力接入其 EDA 设计和验证工具，详情见 https://openai.com/index/advancing-chip-design-with-our-models/ 🔗 阅读原文 via AIHOT · https://aihot.news/items/bnqsw7ispucfily4bdq9vz33j",
-      "pub_date": "2026-11-18",
-      "author": "noreply@aihot.news (Tibo)",
-      "category": "AI 模型"
     }
   ]
 }
