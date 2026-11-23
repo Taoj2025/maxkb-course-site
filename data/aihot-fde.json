@@ -1,8 +1,16 @@
 {
   "source": "aihot.news (FDE 相关筛选)",
-  "updated_at": "2026-11-23T23:03:01.669212+08:00",
+  "updated_at": "2026-11-23T23:33:01.609951+08:00",
   "total": 21,
   "items": [
+    {
+      "title": "Wiz Research 披露 ARTEX 智能体攻击框架的真实云入侵案例",
+      "link": "https://aihot.news/items/gp8e9a8oitha0rbip8pzntuff",
+      "summary": "Wiz Research 发文介绍 ARTEX 等智能体攻击框架正在推动云入侵激增。文中分享了来自真实环境的案例，包括通过攻击操作者泄露的日志看到的一次攻击的双方视角、对 Black October 的更新，以及可捕捉这类嘈杂、机器速度攻击的检测方法。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gp8e9a8oitha0rbip8pzntuff",
+      "pub_date": "2026-11-23",
+      "author": "noreply@aihot.news (Wiz：Research)",
+      "category": "行业动态"
+    },
     {
       "title": "ARTEX 开源 AI 黑客框架遭滥用，FBI 发出警告但代码已广泛扩散",
       "link": "https://aihot.news/items/zb8hu8pp2ogojk5081g7z4en7",
@@ -162,14 +170,6 @@
       "pub_date": "2026-11-19",
       "author": "noreply@aihot.news (TechCrunch：AI)",
       "category": "行业动态"
-    },
-    {
-      "title": "Conductor 0.97.0 发布并宣布加入 Meta，本地工作区智能体新增 artifacts",
-      "link": "https://aihot.news/items/stnka187ae3za2qnx70vqheg7",
-      "summary": "Conductor 发布 0.97.0 更新，同时宣布 Conductor 加入 Meta。本地工作区的 Agent 现在可以生成 artifacts，即能在聊天中内联显示的 HTML 页面，默认开启，可在 Settings → Artifacts 关闭，通过 @ 名称调用；还支持高亮文本添加评论 pill 回复聊天的任意部分。 🔗 阅读原文 via AIHOT · https://aihot.news/items/stnka187ae3za2qnx70vqheg7",
-      "pub_date": "2026-11-19",
-      "author": "noreply@aihot.news (Conductor 官方更新)",
-      "category": "AI 产品"
     }
   ]
 }
