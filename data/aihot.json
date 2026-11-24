@@ -1,8 +1,16 @@
 {
   "source": "aihot.news RSS",
-  "updated_at": "2026-11-24T21:03:01.533088+08:00",
+  "updated_at": "2026-11-24T21:33:02.154132+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Amazon 报告黑客用开源框架 Cairn 驱动 AI 智能体在约 11 分钟内自主发现并利用 0-day",
+      "link": "https://aihot.news/items/ygbhvp086wl672gfxuhfgl23x",
+      "summary": "Amazon 威胁情报报告称，黑客在开源 AI 渗透测试框架 Cairn 上运行的 AI 智能体，仅凭一句「获取 shell 权限」的指令，就自主发现并利用了一个开源医学影像 AI 应用中未修补的路径遍历 0-day，从映射 API 到任意写文件仅用约 11 分钟，随后写入 Python 反向 shell payload 并以 root 权限获得控制。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ygbhvp086wl672gfxuhfgl23x",
+      "pub_date": "2026-11-24",
+      "author": "noreply@aihot.news (Ars Technica：AI)",
+      "category": "行业动态"
+    },
     {
       "title": "OpenAI 与 Cisco 发布开源 Linux 运行时 Shirudo，让 Agent 无停机防御系统",
       "link": "https://aihot.news/items/d41p6k2h48zm8u2kl5xdzqx5h",
@@ -393,14 +401,6 @@
       "summary": "Google 在 Gemini API 的 Interactions API 中以预览形式推出 Tool Retrieval，让智能体按需加载工具参数 schema，而不是每次请求都发送完整工具库，以减少输入 token 并在工具数量扩大时保持选择准确。 🔗 阅读原文 via AIHOT · https://aihot.news/items/n3npoqbr48wu58cke5p3ox18l",
       "pub_date": "2026-11-19",
       "author": "noreply@aihot.news (Google Blog：AI)",
-      "category": "AI 产品"
-    },
-    {
-      "title": "Google 在 Gemini API 与 AI Studio 上线 Genie 4 实时世界模型",
-      "link": "https://aihot.news/items/n1nzpfmd3f6zc4abq3s8yxrde",
-      "summary": "Philipp Schmid 宣布 Genie 4 正在 Gemini API 和 AI Studio 上推出，可从文本或图像生成 720p 24fps 的世界，并用 WASD、提示词和 48 kHz 立体声实时操控。可通过 WebRTC（浏览器加临时 token）或 WebSocket 串流，文档见 https://aistudio.google.com/docs/genie。 🔗 阅读原文 via AIHOT · https://aihot.news/items/n1nzpfmd3f6zc4abq3s8yxrde",
-      "pub_date": "2026-11-19",
-      "author": "noreply@aihot.news (Philipp Schmid)",
       "category": "AI 产品"
     }
   ]
