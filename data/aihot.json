@@ -1,8 +1,16 @@
 {
   "source": "aihot.news RSS",
-  "updated_at": "2026-11-24T10:03:02.366441+08:00",
+  "updated_at": "2026-11-24T10:33:01.796513+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "MiniMax 发布 H3 Family 系列模型，H3 开源百日衍生模型达 1472 个、下载量超 1.48 亿次",
+      "link": "https://aihot.news/items/f1380j6hyrxn0rnz6666nu3b8",
+      "summary": "MiniMax 推出 H3 Family，包含 H3、H3-Highspeed、H3-Lite、H3-Image、H3-Image Highspeed 等旗舰模型及 fal、Suno、HeyGen、Pika 等伙伴的多个扩展模型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/f1380j6hyrxn0rnz6666nu3b8",
+      "pub_date": "2026-11-24",
+      "author": "noreply@aihot.news (公众号：MiniMax)",
+      "category": "AI 产品"
+    },
     {
       "title": "ChinaTalk播客：Nvidia董事会恢复黄仁勋CEO职务，Megaspeed被列入实体清单",
       "link": "https://aihot.news/items/zto0pspydy8330r0bvwqb6j5z",
@@ -393,14 +401,6 @@
       "summary": "美国商务部收紧AI芯片出口管制并关闭第三方国家云算力通道后，亚洲多笔大型AI数据中心交易开始瓦解。Moonshot AI取消了与印尼云服务商的1.5亿美元合同，原计划租用Nvidia Blackwell Ultra B300集群训练Kimi K4，此前已预付约50%而非行业标准的15%。台积电和三星暂停向中国客户交付部分处理器，需申请许可；字节跳动、百度昆仑等客户受影响，非AI芯片豁免取消也波及小米、Oppo、vivo等智能手机处理器。 🔗 阅读原文 via AIHOT · https://aihot.news/items/h4bvsjw4ri6to1inm87srlf42",
       "pub_date": "2026-11-19",
       "author": "noreply@aihot.news (The Decoder：AI News)",
-      "category": "行业动态"
-    },
-    {
-      "title": "Anthropic CEO Dario Amodei 就公司 IPO 发表声明",
-      "link": "https://aihot.news/items/bj8r4lnrbcoi5cl1asnyn6qt5",
-      "summary": "Anthropic CEO Dario Amodei 就公司 IPO 发表声明，称今天让公司财务地位更稳固，并强调不会向商业或政治压力低头，将放慢 AI 训练与部署节奏以确保安全和人类可控。声明以生物学背景和 Claude 在科研中的应用为例阐述使命，同时承认滥用、经济冲击和失控等风险，倡导行业「向顶部竞赛」。 🔗 阅读原文 via AIHOT · https://aihot.news/items/bj8r4lnrbcoi5cl1asnyn6qt5",
-      "pub_date": "2026-11-19",
-      "author": "noreply@aihot.news (Anthropic)",
       "category": "行业动态"
     }
   ]

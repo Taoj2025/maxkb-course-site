@@ -1,7 +1,7 @@
 {
   "source": "aihot.news (FDE 相关筛选)",
-  "updated_at": "2026-11-24T10:03:02.367372+08:00",
-  "total": 19,
+  "updated_at": "2026-11-24T10:33:01.798374+08:00",
+  "total": 18,
   "items": [
     {
       "title": "Figma agent 正式开放至 FigJam 和 Figma Slides",
@@ -146,14 +146,6 @@
       "pub_date": "2026-11-19",
       "author": "noreply@aihot.news (Philipp Schmid)",
       "category": "AI 产品"
-    },
-    {
-      "title": "Anthropic CEO Dario Amodei 就公司 IPO 发表声明",
-      "link": "https://aihot.news/items/bj8r4lnrbcoi5cl1asnyn6qt5",
-      "summary": "Anthropic CEO Dario Amodei 就公司 IPO 发表声明，称今天让公司财务地位更稳固，并强调不会向商业或政治压力低头，将放慢 AI 训练与部署节奏以确保安全和人类可控。声明以生物学背景和 Claude 在科研中的应用为例阐述使命，同时承认滥用、经济冲击和失控等风险，倡导行业「向顶部竞赛」。 🔗 阅读原文 via AIHOT · https://aihot.news/items/bj8r4lnrbcoi5cl1asnyn6qt5",
-      "pub_date": "2026-11-19",
-      "author": "noreply@aihot.news (Anthropic)",
-      "category": "行业动态"
     }
   ]
 }
