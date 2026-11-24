@@ -1,6 +1,6 @@
 {
   "source": "aihot.news (FDE 相关筛选)",
-  "updated_at": "2026-11-25T05:03:02.290203+08:00",
+  "updated_at": "2026-11-25T05:33:01.798875+08:00",
   "total": 21,
   "items": [
     {
@@ -17,6 +17,14 @@
       "summary": "Amazon 威胁情报报告称，黑客在开源 AI 渗透测试框架 Cairn 上运行的 AI 智能体，仅凭一句「获取 shell 权限」的指令，就自主发现并利用了一个开源医学影像 AI 应用中未修补的路径遍历 0-day，从映射 API 到任意写文件仅用约 11 分钟，随后写入 Python 反向 shell payload 并以 root 权限获得控制。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ygbhvp086wl672gfxuhfgl23x",
       "pub_date": "2026-11-24",
       "author": "noreply@aihot.news (Ars Technica：AI)",
+      "category": "行业动态"
+    },
+    {
+      "title": "ChinaTalk 分析 BIS 租赁算力新规或为美国换取约六个月算力领先",
+      "link": "https://aihot.news/items/yz5va6l60tfkmdampmsiz0jq2",
+      "summary": "作者分析美国 BIS 于11月16日发布、11月19日生效的租赁算力临时最终规则，该规则要求向境外数据中心供应芯片需申领许可，门槛约为760块 H100 等效算力，覆盖 Hopper 和 Blackwell 级芯片，并关闭 Foundry Due-Diligence 漏洞。作者基于自建测算模型给出规则执行率与延迟月数的量化区间，并梳理柔佛数据中心和执法风险等关键变量。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yz5va6l60tfkmdampmsiz0jq2",
+      "pub_date": "2026-11-24",
+      "author": "noreply@aihot.news (ChinaTalk)",
       "category": "行业动态"
     },
     {
@@ -161,14 +169,6 @@
       "summary": "Thinking Machines Lab 发布开源权重模型 Inkling 2 Mini，采用循环 Transformer 架构，将中间 12 层每 token 运行三次，总参数 26.4B、激活 3.4B，内存占用约 20GB，可在 32GB 内存以上的 Mac 本地运行。 🔗 阅读原文 via AIHOT · https://aihot.news/items/y7nk77dxae51qwi826gpmvbho",
       "pub_date": "2026-11-20",
       "author": "noreply@aihot.news (Thinking Machines Lab：News)",
-      "category": "AI 模型"
-    },
-    {
-      "title": "腾讯混元开放 Hy4 权重",
-      "link": "https://aihot.news/items/jl6m0eymz9z0kleh54c3guowx",
-      "summary": "腾讯混元发布 Hy4 开放权重，定位原生多模态旗舰 MoE 模型，总参数 770B、激活 49B，支持 1M 上下文。同步发布含安全评估报告的 Hy4 System Card，并提供 GitHub、Hugging Face 权重与 GGUF 下载链接，团队将于本周五 8–10 AM PT 在 r/LocalLLaMA 举行 AMA。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jl6m0eymz9z0kleh54c3guowx",
-      "pub_date": "2026-11-20",
-      "author": "noreply@aihot.news (腾讯混元)",
       "category": "AI 模型"
     }
   ]
