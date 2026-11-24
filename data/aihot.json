@@ -1,6 +1,6 @@
 {
   "source": "aihot.news RSS",
-  "updated_at": "2026-11-24T21:33:02.154132+08:00",
+  "updated_at": "2026-11-24T22:03:01.420383+08:00",
   "total": 50,
   "items": [
     {
@@ -42,6 +42,14 @@
       "pub_date": "2026-11-24",
       "author": "noreply@aihot.news (ChinaTalk)",
       "category": "行业动态"
+    },
+    {
+      "title": "OpenClaw 联合多家机构发布真实任务基准 ShellBench，最强模型完成率约六成",
+      "link": "https://aihot.news/items/frmncgr2jcrvfm3t6jgabqhfh",
+      "summary": "OpenClaw 与 Hugging Face、Red Hat、UC Berkeley 等机构合作推出 ShellBench，基于超过 1000 万条匿名真实智能体交互构建 100 个日常任务，含 90 个 rubric 评分任务（721 项标准，其中 381 项安全标准）和 10 个代码测试任务，共 53,100 次评分运行。 🔗 阅读原文 via AIHOT · https://aihot.news/items/frmncgr2jcrvfm3t6jgabqhfh",
+      "pub_date": "2026-11-24",
+      "author": "noreply@aihot.news (OpenClaw：Blog)",
+      "category": "论文"
     },
     {
       "title": "ChatGPT 推出面向日常对话优化的 GPT-6.2 Sol",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-19",
       "author": "noreply@aihot.news (Aravind Srinivas)",
       "category": "行业动态"
-    },
-    {
-      "title": "Google 在 Gemini API 推出 Tool Retrieval 预览",
-      "link": "https://aihot.news/items/n3npoqbr48wu58cke5p3ox18l",
-      "summary": "Google 在 Gemini API 的 Interactions API 中以预览形式推出 Tool Retrieval，让智能体按需加载工具参数 schema，而不是每次请求都发送完整工具库，以减少输入 token 并在工具数量扩大时保持选择准确。 🔗 阅读原文 via AIHOT · https://aihot.news/items/n3npoqbr48wu58cke5p3ox18l",
-      "pub_date": "2026-11-19",
-      "author": "noreply@aihot.news (Google Blog：AI)",
-      "category": "AI 产品"
     }
   ]
 }
