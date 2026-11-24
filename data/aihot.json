@@ -1,6 +1,6 @@
 {
   "source": "aihot.news RSS",
-  "updated_at": "2026-11-25T04:03:01.915609+08:00",
+  "updated_at": "2026-11-25T04:33:01.769399+08:00",
   "total": 50,
   "items": [
     {
@@ -74,6 +74,14 @@
       "pub_date": "2026-11-24",
       "author": "noreply@aihot.news (ChinaTalk)",
       "category": "行业动态"
+    },
+    {
+      "title": "Claude 推出 Install as app：artifacts 可安装为 Mac 和 Windows 桌面应用",
+      "link": "https://aihot.news/items/zcpto4b7qb8sr6v6n223kd2sx",
+      "summary": "Anthropic 在 Mac 和 Windows 版 Claude 中以 beta 形式推出 Install as app，artifacts 可创建、运行并分享为独立桌面应用，拥有自己的图标和窗口，底层 artifact 更新时应用自动同步。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zcpto4b7qb8sr6v6n223kd2sx",
+      "pub_date": "2026-11-24",
+      "author": "noreply@aihot.news (Claude：Blog)",
+      "category": "AI 产品"
     },
     {
       "title": "Anthropic 为 Claude 推出 Skills over MCP 公测及 Tasks、Elicitation 等更新",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-20",
       "author": "noreply@aihot.news (腾讯混元)",
       "category": "AI 模型"
-    },
-    {
-      "title": "browser-use 1.0 发布：用一个 Python REPL 工具替代 24 个浏览器动作",
-      "link": "https://aihot.news/items/wibzzhd168cafn7o3gl8336di",
-      "summary": "Browser Use 发布 browser-use 1.0，用单一 python 持久 REPL 加原生 Chrome DevTools Protocol 访问替代 0.x 的 24 个浏览器动作。 🔗 阅读原文 via AIHOT · https://aihot.news/items/wibzzhd168cafn7o3gl8336di",
-      "pub_date": "2026-11-20",
-      "author": "noreply@aihot.news (Browser Use)",
-      "category": "AI 产品"
     }
   ]
 }
