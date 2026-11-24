@@ -986,5 +986,23 @@
     "source": "机器摘要 · OpenAI Blog",
     "file": "13354-advancing-chip-design-with-openai-models.md",
     "estimated_read_time": "1 分钟"
+  },
+  {
+    "id": 13355,
+    "title": "Introducing Supabase Knowledge Base",
+    "slug": "13355-introducing-supabase-knowledge-base",
+    "summary": "Migration guides, troubleshooting, FAQs, tutorials, and community guides for applied Supabase answers, all in one place your coding agent can read.",
+    "category": "最新动态",
+    "tags": [
+      "FDE",
+      "AI 资讯",
+      "前端部署"
+    ],
+    "color": "purple",
+    "date": "2026-11-24",
+    "author": "小Q（机器摘要）",
+    "source": "机器摘要 · Supabase Blog",
+    "file": "13355-introducing-supabase-knowledge-base.md",
+    "estimated_read_time": "1 分钟"
   }
 ]
