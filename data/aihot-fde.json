@@ -1,7 +1,7 @@
 {
   "source": "aihot.news (FDE 相关筛选)",
-  "updated_at": "2026-11-25T02:03:01.500075+08:00",
-  "total": 20,
+  "updated_at": "2026-11-25T02:33:01.659827+08:00",
+  "total": 21,
   "items": [
     {
       "title": "Amazon 报告黑客用开源框架 Cairn 驱动 AI 智能体在约 11 分钟内自主发现并利用 0-day",
@@ -26,6 +26,14 @@
       "pub_date": "2026-11-24",
       "author": "noreply@aihot.news (卡兹克)",
       "category": "教程"
+    },
+    {
+      "title": "Anthropic 为 Claude 推出 Skills over MCP 公测及 Tasks、Elicitation 等更新",
+      "link": "https://aihot.news/items/kjd2qp2iuk9zxdfqj5qk2a8f9",
+      "summary": "Anthropic 宣布 Skills over MCP 在 Claude 与 Claude Code 进入公开测试，MCP 服务器可在工具之外发布技能，按需加载以降低上下文占用。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kjd2qp2iuk9zxdfqj5qk2a8f9",
+      "pub_date": "2026-11-24",
+      "author": "noreply@aihot.news (Claude：Blog)",
+      "category": "AI 产品"
     },
     {
       "title": "OpenClaw 联合多家机构发布真实任务基准 ShellBench，最强模型完成率约六成",

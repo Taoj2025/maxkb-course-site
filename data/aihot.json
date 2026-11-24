@@ -1,6 +1,6 @@
 {
   "source": "aihot.news RSS",
-  "updated_at": "2026-11-25T02:03:01.499090+08:00",
+  "updated_at": "2026-11-25T02:33:01.658892+08:00",
   "total": 50,
   "items": [
     {
@@ -50,6 +50,14 @@
       "pub_date": "2026-11-24",
       "author": "noreply@aihot.news (ChinaTalk)",
       "category": "行业动态"
+    },
+    {
+      "title": "Anthropic 为 Claude 推出 Skills over MCP 公测及 Tasks、Elicitation 等更新",
+      "link": "https://aihot.news/items/kjd2qp2iuk9zxdfqj5qk2a8f9",
+      "summary": "Anthropic 宣布 Skills over MCP 在 Claude 与 Claude Code 进入公开测试，MCP 服务器可在工具之外发布技能，按需加载以降低上下文占用。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kjd2qp2iuk9zxdfqj5qk2a8f9",
+      "pub_date": "2026-11-24",
+      "author": "noreply@aihot.news (Claude：Blog)",
+      "category": "AI 产品"
     },
     {
       "title": "OpenClaw 联合多家机构发布真实任务基准 ShellBench，最强模型完成率约六成",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-19",
       "author": "noreply@aihot.news (Josh Woodward)",
       "category": "AI 产品"
-    },
-    {
-      "title": "Gemini 4 Neon 实测：Peter Gostev 对比 Opus、Fable 等模型的首发体验",
-      "link": "https://aihot.news/items/z0unnn7ryj39a3tuns8b1l4a6",
-      "summary": "Arena 分享 Gemini 4 Neon 发布后的第一手实测视频，Peter Gostev 在 3D 场景、游戏、UI 和数据可视化等任务中将其与 Opus、Fable、Astra、Sol 对比，并评估其接近前沿的程度。 🔗 阅读原文 via AIHOT · https://aihot.news/items/z0unnn7ryj39a3tuns8b1l4a6",
-      "pub_date": "2026-11-19",
-      "author": "noreply@aihot.news (Arena)",
-      "category": "AI 模型"
     }
   ]
 }
