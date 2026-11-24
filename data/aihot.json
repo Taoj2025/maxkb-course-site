@@ -1,8 +1,24 @@
 {
   "source": "aihot.news RSS",
-  "updated_at": "2026-11-25T02:33:01.658892+08:00",
+  "updated_at": "2026-11-25T03:03:01.624374+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Google Workspace MCP servers 与 gwscli 正式发布，Personal 模式一键开通",
+      "link": "https://aihot.news/items/nm8mi41auemid3iivue4tel3d",
+      "summary": "Philipp Schmid 宣布 Google Workspace MCP servers 与 gwscli 正式 GA，新增 Personal 模式一键开通，无需 Enterprise 计划或绑卡。共 8 个 server 覆盖 Gmail、Drive、Docs、Sheets、Slides、Calendar、Chat、Tasks，免费档为每产品每天 5,000 次请求，发送和分享内置 HITL 确认。他提到仍需经过 Google Cloud，但比旧的 OAuth 同意屏和应用审核流程好得多，欢迎试用反馈。 🔗 阅读原文 via AIHOT · https://aihot.news/items/nm8mi41auemid3iivue4tel3d",
+      "pub_date": "2026-11-24",
+      "author": "noreply@aihot.news (Philipp Schmid)",
+      "category": "AI 产品"
+    },
+    {
+      "title": "Anthropic 股价跌破 83 美元 IPO 发行价，上市不到一周最低跌至 76 美元",
+      "link": "https://aihot.news/items/jurm0kx9gczvzp4o14g0o35xo",
+      "summary": "Anthropic 股价跌破 83 美元的 IPO 发行价，周二午盘最低跌至 76 美元，较周一收盘下跌近 12%，距其在 Nasdaq 以 111.33 美元上市不到一周。风投界视其为公开市场对 AI 行业估值的晴雨表，若持续走弱可能压低 AI 初创公司私募估值和其他公司 IPO 前景。同日 Nvidia 也跌超 7%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jurm0kx9gczvzp4o14g0o35xo",
+      "pub_date": "2026-11-24",
+      "author": "noreply@aihot.news (TechCrunch：AI)",
+      "category": "行业动态"
+    },
     {
       "title": "Amazon 报告黑客用开源框架 Cairn 驱动 AI 智能体在约 11 分钟内自主发现并利用 0-day",
       "link": "https://aihot.news/items/ygbhvp086wl672gfxuhfgl23x",
@@ -145,14 +161,6 @@
       "summary": "Wiz Research 发文介绍 ARTEX 等智能体攻击框架正在推动云入侵激增。文中分享了来自真实环境的案例，包括通过攻击操作者泄露的日志看到的一次攻击的双方视角、对 Black October 的更新，以及可捕捉这类嘈杂、机器速度攻击的检测方法。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gp8e9a8oitha0rbip8pzntuff",
       "pub_date": "2026-11-23",
       "author": "noreply@aihot.news (Wiz：Research)",
-      "category": "行业动态"
-    },
-    {
-      "title": "ARTEX 开源 AI 黑客框架遭滥用，FBI 发出警告但代码已广泛扩散",
-      "link": "https://aihot.news/items/zb8hu8pp2ogojk5081g7z4en7",
-      "summary": "404 Media 报道，开源框架 ARTEX 让 AI 智能体以机器速度自动完成从侦察到窃取数据的整个入侵流程，FBI 称攻击者用它针对全球政府、医疗、电信、金融、半导体等行业，数小时内即可完成一次完整攻击。原作者 Autumn-27 已于 10 月将其从 GitHub 下架并转为闭源，但多个克隆版本仍在传播，有维护者表示不会删除仓库，理由是代码已被到处复制。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zb8hu8pp2ogojk5081g7z4en7",
-      "pub_date": "2026-11-23",
-      "author": "noreply@aihot.news (404 Media)",
       "category": "行业动态"
     },
     {
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-19",
       "author": "noreply@aihot.news (The Verge：AI)",
       "category": "行业动态"
-    },
-    {
-      "title": "Mac 版 Gemini 应用上线计算机操作功能，可代用户执行跨应用任务",
-      "link": "https://aihot.news/items/h5xjk79bhcu8vgnbrynj208uj",
-      "summary": "Google Labs VP Josh Woodward 宣布 Mac 版 Gemini 应用新增 computer use 功能，可跨文件夹、应用和网页代用户执行任务，屏幕和光标控制权仍归用户。官方演示显示 Gemini 能在后台窗口中点击、滚动和输入，把草图变成 Blender 里的绑定的 3D 模型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/h5xjk79bhcu8vgnbrynj208uj",
-      "pub_date": "2026-11-19",
-      "author": "noreply@aihot.news (Josh Woodward)",
-      "category": "AI 产品"
     }
   ]
 }
