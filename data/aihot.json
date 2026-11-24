@@ -1,8 +1,16 @@
 {
   "source": "aihot.news RSS",
-  "updated_at": "2026-11-24T17:03:02.154086+08:00",
+  "updated_at": "2026-11-24T17:33:01.825953+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "OpenAI 与 Cisco 发布开源 Linux 运行时 Shirudo，让 Agent 无停机防御系统",
+      "link": "https://aihot.news/items/d41p6k2h48zm8u2kl5xdzqx5h",
+      "summary": "OpenAI 宣布与 Cisco 合作推出开源 Linux 运行时 Shirudo，让 Agent 编写动态 eBPF 控制来抵御漏洞利用，同时保持服务不中断，为防御方争取测试和部署补丁的时间。作者称这是迈向自适应自防御基础设施的第一步，目标是让防御者与 AI Agent 协作定位受影响系统、测试并共享 shield、在不干扰工作负载的情况下部署。 🔗 阅读原文 via AIHOT · https://aihot.news/items/d41p6k2h48zm8u2kl5xdzqx5h",
+      "pub_date": "2026-11-24",
+      "author": "noreply@aihot.news (Tibo)",
+      "category": "AI 产品"
+    },
     {
       "title": "卡兹克分享两个优化用户体验和产品动效的 Prompt",
       "link": "https://aihot.news/items/jb7ohptrc5ctyx9maoimz2hn0",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-19",
       "author": "noreply@aihot.news (Philipp Schmid)",
       "category": "AI 产品"
-    },
-    {
-      "title": "indigo 转发 Dario Amodei 为 Anthropic IPO 在 Nasdaq 敲钟",
-      "link": "https://aihot.news/items/gp3hccimt42ak2uh82nrpty65",
-      "summary": "indigo 转发 @YahooFinance 的画面，Dario Amodei 在 Nasdaq 为 Anthropic IPO 敲响开市钟。作者恭喜这家最\"人类\"的科技公司上市，并调侃其敲钟鼓掌的样子怎么像是 AI 生成的。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gp3hccimt42ak2uh82nrpty65",
-      "pub_date": "2026-11-19",
-      "author": "noreply@aihot.news (indigo)",
-      "category": "行业动态"
     }
   ]
 }
