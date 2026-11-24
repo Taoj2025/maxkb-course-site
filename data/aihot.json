@@ -1,8 +1,16 @@
 {
   "source": "aihot.news RSS",
-  "updated_at": "2026-11-24T09:33:02.012588+08:00",
+  "updated_at": "2026-11-24T10:03:02.366441+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "ChinaTalk播客：Nvidia董事会恢复黄仁勋CEO职务，Megaspeed被列入实体清单",
+      "link": "https://aihot.news/items/zto0pspydy8330r0bvwqb6j5z",
+      "summary": "ChinaTalk主持Jordan Schneider邀请Chris McGuire和Peter Harrell录制播客，讨论Nvidia董事会全票恢复黄仁勋CEO职务（距其辞职仅十一天），以及美国商务部同日将Megaspeed列入实体清单。嘉宾围绕出口管制与制裁实务，分析了董事会决策背景、Megaspeed实体清单未附加外国直接产品规则（FDPR）等细节，并探讨了后续监管走向。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zto0pspydy8330r0bvwqb6j5z",
+      "pub_date": "2026-11-24",
+      "author": "noreply@aihot.news (ChinaTalk)",
+      "category": "行业动态"
+    },
     {
       "title": "ChatGPT 推出面向日常对话优化的 GPT-6.2 Sol",
       "link": "https://aihot.news/items/gl6fl6hsisrt26tg83li0j4gk",
@@ -393,14 +401,6 @@
       "summary": "Anthropic CEO Dario Amodei 就公司 IPO 发表声明，称今天让公司财务地位更稳固，并强调不会向商业或政治压力低头，将放慢 AI 训练与部署节奏以确保安全和人类可控。声明以生物学背景和 Claude 在科研中的应用为例阐述使命，同时承认滥用、经济冲击和失控等风险，倡导行业「向顶部竞赛」。 🔗 阅读原文 via AIHOT · https://aihot.news/items/bj8r4lnrbcoi5cl1asnyn6qt5",
       "pub_date": "2026-11-19",
       "author": "noreply@aihot.news (Anthropic)",
-      "category": "行业动态"
-    },
-    {
-      "title": "Anthropic 登陆纳斯达克，开盘价 111 美元较发行价高出 33%",
-      "link": "https://aihot.news/items/gklqioeodqeuqgz3lttg83ztv",
-      "summary": "Anthropic 在纳斯达克完成 IPO，开盘几分钟内股价达 111.50 美元，较 83 美元发行价高出 33%，发行价已超过公司此前 70 至 78 美元的预期区间。本次发行募资超过 810 亿美元，叠加同期私募融资后公司现金储备预计达 2200 亿美元；按开盘价计算市值超过 2 万亿美元，CEO Dario Amodei 在开盘致辞中强调公司对安全的承诺。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gklqioeodqeuqgz3lttg83ztv",
-      "pub_date": "2026-11-19",
-      "author": "noreply@aihot.news (TechCrunch：AI)",
       "category": "行业动态"
     }
   ]
