@@ -1,8 +1,16 @@
 {
   "source": "aihot.news RSS",
-  "updated_at": "2026-11-25T03:03:01.624374+08:00",
+  "updated_at": "2026-11-25T03:33:01.827492+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "GPT-6.2 Astra 用 22 分钟破解 1808 年素描画作者之谜",
+      "link": "https://aihot.news/items/eb9lfibaf8fpouyw0x3vh63st",
+      "summary": "研究者引述案例称，GPT-6.2 Astra 仅用 22 分钟和公开资料，将耶鲁 Beinecke 图书馆藏的 1808 年蒙特利尔至苏必利尔湖匿名素描画作者鉴定为 vicomte de Chabot，并找到其微缩胶片日记供验证。日记笔迹与素描题注吻合，1808 年 6 月 18 日日记明确写下“我画了一幅素描”；作者认为这标志着模型的研究发现能力正从数学等可验证领域扩展到历史等非确定性领域。 🔗 阅读原文 via AIHOT · https://aihot.news/items/eb9lfibaf8fpouyw0x3vh63st",
+      "pub_date": "2026-11-24",
+      "author": "noreply@aihot.news (Greg Brockman)",
+      "category": "观点"
+    },
     {
       "title": "Google Workspace MCP servers 与 gwscli 正式发布，Personal 模式一键开通",
       "link": "https://aihot.news/items/nm8mi41auemid3iivue4tel3d",
@@ -138,6 +146,14 @@
       "pub_date": "2026-11-23",
       "author": "noreply@aihot.news (Goodfire Research)",
       "category": "论文"
+    },
+    {
+      "title": "Cognition 发布 SWE-2.1 及高速版 SWE-2.1 Lightning",
+      "link": "https://aihot.news/items/gflb0kkwzma61spkzpp1uxmrk",
+      "summary": "Cognition 发布 SWE-2.1，基于 Kimi K3 纯强化学习训练，在 FrontierCode 2.0、Terminal-Bench 4.1 等基准上较 SWE-2 大幅提升，ExploitBench 达 80%、ExploitGym 捕获 27.3% flags，网络安全能力显著增强。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gflb0kkwzma61spkzpp1uxmrk",
+      "pub_date": "2026-11-23",
+      "author": "noreply@aihot.news (Cognition 模型 / Devin 博客)",
+      "category": "AI 模型"
     },
     {
       "title": "a16z 实测 11,307 次 Agent 购物流程，总结企业赢得 B2A 经济的五条方法",
@@ -386,22 +402,6 @@
       "pub_date": "2026-11-20",
       "author": "noreply@aihot.news (Browser Use)",
       "category": "AI 产品"
-    },
-    {
-      "title": "Google 回顾 Duplex 十年演进：如何在 Gemini Tasks 中替用户打电话给商家",
-      "link": "https://aihot.news/items/t68rgyv46hdbp52212ozxleh3",
-      "summary": "Google Research 回顾 Duplex 十年架构演进，并介绍本周在 Gemini App Tasks 中上线的自动致电商家功能。 🔗 阅读原文 via AIHOT · https://aihot.news/items/t68rgyv46hdbp52212ozxleh3",
-      "pub_date": "2026-11-20",
-      "author": "noreply@aihot.news (Google Research：Blog)",
-      "category": "AI 产品"
-    },
-    {
-      "title": "Nvidia 股价近期波动复盘：财报强劲但股价较 10 月高点跌近 40%",
-      "link": "https://aihot.news/items/w1q2gyqsel49b4vbqeodf0qmc",
-      "summary": "The Verge 梳理 Nvidia 近期股价波动：第三季度营收同比翻倍至 1158 亿美元，数据中心业务增长 110%，Vera Rubin 平台贡献近 200 亿美元收入；但受芯片股整体抛售、前 CEO 黄仁勋辞职及公司治理调查等因素影响，股价一度报约 150 美元，较 10 月 6 日历史高点跌近 40%，周四收于 145.98 美元，创 52 周新低。 🔗 阅读原文 via AIHOT · https://aihot.news/items/w1q2gyqsel49b4vbqeodf0qmc",
-      "pub_date": "2026-11-19",
-      "author": "noreply@aihot.news (The Verge：AI)",
-      "category": "行业动态"
     }
   ]
 }
