@@ -1,6 +1,6 @@
 {
   "source": "aihot.news RSS",
-  "updated_at": "2026-11-25T07:33:02.303397+08:00",
+  "updated_at": "2026-11-25T08:00:02.253891+08:00",
   "total": 50,
   "items": [
     {
@@ -42,6 +42,14 @@
       "pub_date": "2026-11-24",
       "author": "noreply@aihot.news (TechCrunch：AI)",
       "category": "行业动态"
+    },
+    {
+      "title": "Ed Zitron 撰文批评 NVIDIA 董事会在政府施压下恢复黄仁勋 CEO 职务",
+      "link": "https://aihot.news/items/lb66i6g7eq01l6hx0rr8f7k9r",
+      "summary": "Ed Zitron 撰文批评 NVIDIA 董事会在政府施压下未咨询高管即恢复黄仁勋 CEO 职务，认为此举旨在稳定股市，并指出 AI 行业面临的流动性问题并未因此改变。 🔗 阅读原文 via AIHOT · https://aihot.news/items/lb66i6g7eq01l6hx0rr8f7k9r",
+      "pub_date": "2026-11-24",
+      "author": "noreply@aihot.news (Ed Zitron 长文 / Where’s Your Ed At)",
+      "category": "观点"
     },
     {
       "title": "Amazon 报告黑客用开源框架 Cairn 驱动 AI 智能体在约 11 分钟内自主发现并利用 0-day",
@@ -97,6 +105,14 @@
       "summary": "Anthropic 在 Mac 和 Windows 版 Claude 中以 beta 形式推出 Install as app，artifacts 可创建、运行并分享为独立桌面应用，拥有自己的图标和窗口，底层 artifact 更新时应用自动同步。 🔗 阅读原文 via AIHOT · https://aihot.news/items/zcpto4b7qb8sr6v6n223kd2sx",
       "pub_date": "2026-11-24",
       "author": "noreply@aihot.news (Claude：Blog)",
+      "category": "AI 产品"
+    },
+    {
+      "title": "Claude 月度回顾转正，artifact 可装为桌面应用，连接器文件传输开启 beta",
+      "link": "https://aihot.news/items/w9zx5w4dj1xhxvjylbijskshq",
+      "summary": "Claude 应用发布说明宣布三项更新：月度回顾（Reflect）在 Web、桌面端和移动端对 Free、Pro、Max、Ultra 套餐转正，可纳入 Claude Code 会话和云端 Cowork 任务并支持删除。 🔗 阅读原文 via AIHOT · https://aihot.news/items/w9zx5w4dj1xhxvjylbijskshq",
+      "pub_date": "2026-11-24",
+      "author": "noreply@aihot.news (Claude 应用发布说明)",
       "category": "AI 产品"
     },
     {
@@ -386,22 +402,6 @@
       "pub_date": "2026-11-20",
       "author": "noreply@aihot.news (Hacker News：AI 热帖)",
       "category": "行业动态"
-    },
-    {
-      "title": "Thinking Machines Lab 发布可跑在笔记本上的开源权重模型 Inkling 2 Mini",
-      "link": "https://aihot.news/items/y7nk77dxae51qwi826gpmvbho",
-      "summary": "Thinking Machines Lab 发布开源权重模型 Inkling 2 Mini，采用循环 Transformer 架构，将中间 12 层每 token 运行三次，总参数 26.4B、激活 3.4B，内存占用约 20GB，可在 32GB 内存以上的 Mac 本地运行。 🔗 阅读原文 via AIHOT · https://aihot.news/items/y7nk77dxae51qwi826gpmvbho",
-      "pub_date": "2026-11-20",
-      "author": "noreply@aihot.news (Thinking Machines Lab：News)",
-      "category": "AI 模型"
-    },
-    {
-      "title": "MiniMax 内部模型 MIM 实现多项密码分析实用攻击并开源验证轨迹",
-      "link": "https://aihot.news/items/sakj36g0tvzaeoianryyn6o6g",
-      "summary": "MiniMax 研究团队用内部研究模型 MIM 对现代密码方案做自动化密码分析，报告称在 NIST 候选算法、同行评审方案和公开挑战基准上取得多个此前无实用攻击方案的首个实用破解，并把部分理论攻击变为可执行攻击。 🔗 阅读原文 via AIHOT · https://aihot.news/items/sakj36g0tvzaeoianryyn6o6g",
-      "pub_date": "2026-11-20",
-      "author": "noreply@aihot.news (MiniMax：Blog)",
-      "category": "论文"
     }
   ]
 }
