@@ -1,6 +1,6 @@
 {
   "source": "aihot.news RSS",
-  "updated_at": "2026-11-26T06:33:01.308132+08:00",
+  "updated_at": "2026-11-26T07:03:02.118727+08:00",
   "total": 50,
   "items": [
     {
@@ -146,6 +146,14 @@
       "pub_date": "2026-11-24",
       "author": "noreply@aihot.news (Anthropic：Research)",
       "category": "教程"
+    },
+    {
+      "title": "腾讯开源模型 Hy4 Flash 上线 Fireworks serverless",
+      "link": "https://aihot.news/items/dvu6olan4q58k1evvnp8t60t2",
+      "summary": "腾讯新开源模型 Hy4 Flash 现已在 Fireworks serverless 上可用。该模型为 MoE 架构，总参数约 220B、每 token 激活约 12B，1M token 上下文窗口（Fireworks 上线时为 512K），支持文本和图像输入，面向文档处理、研究、办公和 Agent 工作流。 🔗 阅读原文 via AIHOT · https://aihot.news/items/dvu6olan4q58k1evvnp8t60t2",
+      "pub_date": "2026-11-24",
+      "author": "noreply@aihot.news (Fireworks AI)",
+      "category": "AI 产品"
     },
     {
       "title": "OpenAI 发布预印本：GPT-6 模型展现内在蛋白质设计能力",
@@ -393,14 +401,6 @@
       "summary": "英国 AI Security Institute 发布论文，测试合成攻击生成方式对监视器评估的影响。评估一个 OpenAI 前生产监视器时，同一监视器对不同攻击策略的漏报率从 0.2%（基础提示）到 23%（转录编辑）不等，优化程度也会显著改变结果。作者指出合成转录只是真实有害行为代理，其代表性难以证明，仅凭监视器评估不足以保证部署安全，需辅以能力限制、人工在环和沙箱等分层防护。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tl8v9gto8rd3e4x40xfbljj13",
       "pub_date": "2026-11-22",
       "author": "noreply@aihot.news (英国 AI Security Institute：Blog)",
-      "category": "论文"
-    },
-    {
-      "title": "Anthropic 访谈 58 家企业客户：AI 采用的价值、雇佣影响与组织重组",
-      "link": "https://aihot.news/items/gj8mzwrgqlkvim6xe382a35q2",
-      "summary": "Anthropic 研究团队对 58 家企业客户进行 66 次面对面访谈，分析企业采用 AI 的方式、瓶颈与组织变化。研究发现多数 AI 应用通过扩大产出而非削减成本创造价值；直接裁员案例很少，但约三分之二的公司因 AI 减少招聘，九家削减外包和离岸承包商；高价值应用通常需要更深度的组织重组，如拓宽岗位职责、把员工转向 AI 无法完成的瓶颈任务，以及为非技术员工建设数据和基础设施支持。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gj8mzwrgqlkvim6xe382a35q2",
-      "pub_date": "2026-11-22",
-      "author": "noreply@aihot.news (Anthropic：Research)",
       "category": "论文"
     }
   ]
