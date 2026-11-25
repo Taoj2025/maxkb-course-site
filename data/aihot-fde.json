@@ -1,8 +1,16 @@
 {
   "source": "aihot.news (FDE 相关筛选)",
-  "updated_at": "2026-11-26T02:03:01.946559+08:00",
-  "total": 24,
+  "updated_at": "2026-11-26T02:33:01.718815+08:00",
+  "total": 25,
   "items": [
+    {
+      "title": "Anthropic 平台工程负责人 Katelyn Lesse 谈 2026 年如何用 Claude 构建软件",
+      "link": "https://aihot.news/items/rnanzlnaqxdr2icjqw0qwv9la",
+      "summary": "Pragmatic Engineer 发布对 Anthropic 平台工程负责人 Katelyn Lesse 的播客访谈，她团队负责 Claude API 及 Claude Code 和 Claude Desktop 的基础设施。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rnanzlnaqxdr2icjqw0qwv9la",
+      "pub_date": "2026-11-25",
+      "author": "noreply@aihot.news (Pragmatic Engineer)",
+      "category": "教程"
+    },
     {
       "title": "上下文漂移如何影响你的 AI Agent：470 项实验与一个免费的 MCP 解法",
       "link": "https://aihot.news/items/br6usy3mxv1q0mzxhgf9y8qam",
