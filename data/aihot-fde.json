@@ -1,8 +1,16 @@
 {
   "source": "aihot.news (FDE 相关筛选)",
-  "updated_at": "2026-11-25T15:33:01.623355+08:00",
+  "updated_at": "2026-11-25T16:03:01.774738+08:00",
   "total": 23,
   "items": [
+    {
+      "title": "Claude Code 团队发布实用指南讲解 Claude Ship 的 PR 审查与守护用法",
+      "link": "https://aihot.news/items/uyodjb16jngloilypsm1d3q0d",
+      "summary": "Anthropic Claude Code 团队刚推出 Claude Ship，包含三个智能体：Code Review（已全面开放）、PR Steward 和 Claude Approvals（beta），可审查 PR、处理失败 CI、合并冲突和审查意见，并按仓库策略文件批准常规改动。 🔗 阅读原文 via AIHOT · https://aihot.news/items/uyodjb16jngloilypsm1d3q0d",
+      "pub_date": "2026-11-25",
+      "author": "noreply@aihot.news (Addy Osmani)",
+      "category": "教程"
+    },
     {
       "title": "MIT 与 Microsoft 论文：GitHub Copilot 使初级软件工程师招聘下降约 40%",
       "link": "https://aihot.news/items/hyofqy3ukzks1eyr4bu317bez",
@@ -178,14 +186,6 @@
       "pub_date": "2026-11-21",
       "author": "noreply@aihot.news (Together AI 研究与产品博客)",
       "category": "AI 产品"
-    },
-    {
-      "title": "Figma 演示用 Specs 与 Figma agent 把上下文变成可实现的开发计划",
-      "link": "https://aihot.news/items/w612ivonntodntv1ydkt2lqwh",
-      "summary": "Figma 在 Workflow lab 中演示一个完整工作流：工程师用 Specs 在画布上汇集 PRD、Hex 数据、FigJam 图、标注设计和组件说明，再让 Figma agent 生成供编码智能体使用的实现计划。文中还提到 Specs 与 code layers 已开放 beta、覆盖所有套餐，最后通过 Figma MCP 把计划链接交给 Codex 读取全部上下文并实现功能。 🔗 阅读原文 via AIHOT · https://aihot.news/items/w612ivonntodntv1ydkt2lqwh",
-      "pub_date": "2026-11-20",
-      "author": "noreply@aihot.news (Figma AI / Agent / Make)",
-      "category": "教程"
     }
   ]
 }
