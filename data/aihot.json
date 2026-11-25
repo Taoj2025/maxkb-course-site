@@ -1,6 +1,6 @@
 {
   "source": "aihot.news RSS",
-  "updated_at": "2026-11-26T05:03:02.164699+08:00",
+  "updated_at": "2026-11-26T05:33:02.177600+08:00",
   "total": 50,
   "items": [
     {
@@ -50,6 +50,14 @@
       "pub_date": "2026-11-25",
       "author": "noreply@aihot.news (TechCrunch：AI)",
       "category": "行业动态"
+    },
+    {
+      "title": "Pydantic AI 发布终端编码智能体 Pax 与 Harness beta，迈向 1.0",
+      "link": "https://aihot.news/items/i5qr52169dlque8rb2sl4i5jo",
+      "summary": "Pydantic AI 发布终端编码智能体 Pax（pydantic-ai-pax），基于 Harness SDK，全部功能以插件形式组织，可 /plugins 开关 coder、sandbox、mcp、Logfire 观测等，并支持 --agent 换成代码库里任意 Pydantic AI Agent。 🔗 阅读原文 via AIHOT · https://aihot.news/items/i5qr52169dlque8rb2sl4i5jo",
+      "pub_date": "2026-11-25",
+      "author": "noreply@aihot.news (Pydantic AI 官方文章)",
+      "category": "AI 产品"
     },
     {
       "title": "Claude Code 团队发布实用指南讲解 Claude Ship 的 PR 审查与守护用法",
@@ -364,6 +372,14 @@
       "category": "AI 产品"
     },
     {
+      "title": "OpenRouter 实测用 MCP 连接器让 Claude 生成图像并对比四款模型",
+      "link": "https://aihot.news/items/jub44k9eeq0vdw8c37lcpbzwp",
+      "summary": "OpenRouter 发布教程演示如何通过 OpenRouter MCP 服务器（https://mcp.openrouter.ai/mcp）作为连接器让 Claude 调用图像模型生成真实图片，覆盖截至 2026 年 11 月 19 日的 74 款图像模型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jub44k9eeq0vdw8c37lcpbzwp",
+      "pub_date": "2026-11-23",
+      "author": "noreply@aihot.news (OpenRouter：Announcements)",
+      "category": "教程"
+    },
+    {
       "title": "卡兹克分享 Claude、GPT、Gemini 三模型协同调度方法",
       "link": "https://aihot.news/items/hz782dpcwhurj6584rtd13eaf",
       "summary": "自媒体作者卡兹克分享自己让 Claude、GPT 和 Gemini 协同工作的方法：把 Claude Opus 5.5 当总指挥负责沟通、拆解和验收，Gemini 4 Neon 当军师出方案和改界面文案，GPT 负责后端、算法、修 BUG 和代码审查。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hz782dpcwhurj6584rtd13eaf",
@@ -386,22 +402,6 @@
       "pub_date": "2026-11-22",
       "author": "noreply@aihot.news (Anthropic：Research)",
       "category": "论文"
-    },
-    {
-      "title": "MiniCPM 8B 成为老挝国家模型，端侧小模型加速落地多国",
-      "link": "https://aihot.news/items/dr26culfdd1cb21w56i8iruts",
-      "summary": "面壁智能转发并认同 @xiaoanlab 对 MiniCPM 端侧落地的观察：截至 2026 年 11 月 MiniCPM 下载量超过 7000 万，其 8B 老挝国家模型接入老挝政府 G-Chat v2 通讯软件，老挝翻译在国际基准上超过 GPT-4o。马来西亚用 VoxCPM2 做语音交互，肯尼亚一家银行在其上运行端侧风控 Agent，开发者基于它推出离线应用；小模型之争正从参数量转向谁真正嵌入日常系统。 🔗 阅读原文 via AIHOT · https://aihot.news/items/dr26culfdd1cb21w56i8iruts",
-      "pub_date": "2026-11-22",
-      "author": "noreply@aihot.news (面壁智能 OpenBMB)",
-      "category": "行业动态"
-    },
-    {
-      "title": "用户实测用 MiniCPM5-2B 在 Mac 上本地跑通体检报告分析",
-      "link": "https://aihot.news/items/g3vdho0vzm8rzriiz5grruy3m",
-      "summary": "用户@cxjwin 分享在 Mac（M4 Pro、48GB）上用 Homebrew 装 llama.cpp 跑 minicpm5-2b、colima 起 Docker 本地运行开源项目 Mirobody 的实测：14 页 PDF 首次处理漏掉 3 页扫描版化验单，截图单独上传后 58 行化验数值逐项与原件对上，其中 20 行成功映射到 LOINC 标准编码，肌酐因名称歧义留空未猜。问超标指标时 2B 模型走 11 步找到全部 5 项箭头指标，但把一项在范围内的血糖误判为超标。接 Claude Code 时改用演示账号避免数据上传。Mirobody 由 Theta Health 以 Apache-2.0 开源，网页版和微信小程序也基于它。 🔗 阅读原文 via AIHOT · https://aihot.news/items/g3vdho0vzm8rzriiz5grruy3m",
-      "pub_date": "2026-11-22",
-      "author": "noreply@aihot.news (面壁智能 OpenBMB)",
-      "category": "观点"
     }
   ]
 }
