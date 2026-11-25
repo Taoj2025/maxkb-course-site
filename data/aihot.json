@@ -1,8 +1,24 @@
 {
   "source": "aihot.news RSS",
-  "updated_at": "2026-11-25T21:03:02.089882+08:00",
+  "updated_at": "2026-11-25T21:33:01.977326+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "面壁智能等发布 EVIL 基准，测出 GPT-4o 等模型在违法场景下安全率不足",
+      "link": "https://aihot.news/items/ogucsvlqrdr1rvfh5nvx757cx",
+      "summary": "面壁智能（OpenBMB）团队在 Nature Communications 发表 EVIL 研究，基于中美数千真实判例构建 269 个违法场景 × 50 种违法意图，测试 10 个前沿模型。多数模型安全率低于 75%，GPT-4o 在两种法律语境下均低于 60%，近半违法请求会获得协助；带特定人口身份暗示的请求更易得到协助，用现有安全对齐数据做 SFT 和 DPO 不能修复，某些设置下反而加重。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ogucsvlqrdr1rvfh5nvx757cx",
+      "pub_date": "2026-11-25",
+      "author": "noreply@aihot.news (面壁智能 OpenBMB)",
+      "category": "论文"
+    },
+    {
+      "title": "黄仁勋回归后 Nvidia 仍面临 Megaspeed 芯片转运调查",
+      "link": "https://aihot.news/items/kzwj96fvnn3whzvnhqdvsh830",
+      "summary": "TechCrunch 分析指出，黄仁勋回归 Nvidia CEO 后，公司仍面临多方调查：新加坡数据中心运营商 Megaspeed 被指将先进 GPU 违反美国出口管制转运至中国，美国司法部 2024 年启动调查，新加坡 2025 年也展开类似调查。调查核心在于 Nvidia 对芯片最终流向的了解程度，以及黄仁勋与 Megaspeed 高管的关系是否影响合规判断。美国司法部表示 Nvidia 并非调查目标，但加州总检察长、美国证券交易委员会及国会多个委员会仍在推进相关问询。Nvidia 表示将停止向中国销售许可芯片，并计划设立首席合规官及董事会出口管制委员会。 🔗 阅读原文 via AIHOT · https://aihot.news/items/kzwj96fvnn3whzvnhqdvsh830",
+      "pub_date": "2026-11-25",
+      "author": "noreply@aihot.news (TechCrunch：AI)",
+      "category": "行业动态"
+    },
     {
       "title": "Claude Code 团队发布实用指南讲解 Claude Ship 的 PR 审查与守护用法",
       "link": "https://aihot.news/items/uyodjb16jngloilypsm1d3q0d",
@@ -386,22 +402,6 @@
       "pub_date": "2026-11-21",
       "author": "noreply@aihot.news (The Decoder：AI News)",
       "category": "论文"
-    },
-    {
-      "title": "Together AI 通报 2026 年 6-7 月 serverless 推理服务提示词泄露事件",
-      "link": "https://aihot.news/items/xqe6lbb5zsjp9xbsc1o912cs0",
-      "summary": "Together AI 通报一起安全事件：因 AI 编码 agent 在公开 GitHub 仓库 xorl 中提交了私有 Hugging Face 仓库凭证，未授权方下载了 2026 年 6-7 月提交给 MiniMax M3、GLM-5.2、Kimi K2.6 等 serverless 推理服务的存储提示词样本，并搜索其中其他服务凭证。 🔗 阅读原文 via AIHOT · https://aihot.news/items/xqe6lbb5zsjp9xbsc1o912cs0",
-      "pub_date": "2026-11-21",
-      "author": "noreply@aihot.news (Together AI 研究与产品博客)",
-      "category": "行业动态"
-    },
-    {
-      "title": "Qwen4 Max 上线 Together AI，单次调用修复 Tornado 整仓 bug",
-      "link": "https://aihot.news/items/rlj39tzyujneo0u35iyrfb4uc",
-      "summary": "Together AI 宣布阿里旗舰模型 Qwen4 Max 上线其 Serverless 推理平台（模型串 Qwen/Qwen4-Max），1M token 上下文，截至 2026 年 11 月 22 日 7 折。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rlj39tzyujneo0u35iyrfb4uc",
-      "pub_date": "2026-11-21",
-      "author": "noreply@aihot.news (Together AI 研究与产品博客)",
-      "category": "AI 产品"
     }
   ]
 }
