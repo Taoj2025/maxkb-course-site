@@ -1,8 +1,16 @@
 {
   "source": "aihot.news (FDE 相关筛选)",
-  "updated_at": "2026-11-26T01:03:01.474743+08:00",
-  "total": 23,
+  "updated_at": "2026-11-26T01:33:01.418712+08:00",
+  "total": 24,
   "items": [
+    {
+      "title": "上下文漂移如何影响你的 AI Agent：470 项实验与一个免费的 MCP 解法",
+      "link": "https://aihot.news/items/br6usy3mxv1q0mzxhgf9y8qam",
+      "summary": "Google AI 开发者 Patrick Kelly 通过 470 个任务实测区分 context rot 与 context drift，在 Gemini 3.8 Flash 和 Gemini Pro 的沙盒中发现：模型在 73% 的运行中内部察觉文件冲突，但 0% 会主动告知用户，95%-100% 的情况下任务级 skill 文件会覆盖 AGENTS.md 的严格规则。 🔗 阅读原文 via AIHOT · https://aihot.news/items/br6usy3mxv1q0mzxhgf9y8qam",
+      "pub_date": "2026-11-25",
+      "author": "noreply@aihot.news (Google AI：DEV 作者专属)",
+      "category": "教程"
+    },
     {
       "title": "OpenClaw 2026.11.10 发布，新增 Deep Research、Knowledge 记忆系统与 Browser handoff",
       "link": "https://aihot.news/items/vz3bvc1o7zuki3x2zw8lnnv78",
