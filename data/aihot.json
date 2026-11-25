@@ -1,6 +1,6 @@
 {
   "source": "aihot.news RSS",
-  "updated_at": "2026-11-25T08:03:01.469770+08:00",
+  "updated_at": "2026-11-25T08:33:02.232167+08:00",
   "total": 50,
   "items": [
     {
@@ -186,6 +186,14 @@
       "pub_date": "2026-11-23",
       "author": "noreply@aihot.news (Google DeepMind：Blog)",
       "category": "论文"
+    },
+    {
+      "title": "METR 解读 OpenAI 预训练损失加速：2026 年初以来下降速度约为此前 7 倍",
+      "link": "https://aihot.news/items/youah0x28ti3a58sj8ku26rdy",
+      "summary": "METR 分析 OpenAI 公布的 13 个模型在固定保留数据集上的 log-perplexity，发现 2026 年初以来预训练损失下降速度约为 2022–2025 年的 7 倍；按当前速度，GPT-3.5 到 GPT-4.1 花了三年的损失降幅约六个半月就能走完。 🔗 阅读原文 via AIHOT · https://aihot.news/items/youah0x28ti3a58sj8ku26rdy",
+      "pub_date": "2026-11-23",
+      "author": "noreply@aihot.news (METR：Blog)",
+      "category": "观点"
     },
     {
       "title": "Goodfire 用可解释性改进 BioReason-Pro 2 生物推理模型并用湿实验验证假设",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-20",
       "author": "noreply@aihot.news (可灵 Kling AI)",
       "category": "AI 模型"
-    },
-    {
-      "title": "MIT 数学面板讨论 AI 冲击下的数学研究未来",
-      "link": "https://aihot.news/items/qfwgfsg8m1r4vcf4vglgi03by",
-      "summary": "MIT 举办“AI 与社会：数学的未来”座谈，来自 MIT、哈佛、西北大学和纽约大学的数学家讨论 AI 对数学研究的影响。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qfwgfsg8m1r4vcf4vglgi03by",
-      "pub_date": "2026-11-20",
-      "author": "noreply@aihot.news (MIT News)",
-      "category": "观点"
     }
   ]
 }
