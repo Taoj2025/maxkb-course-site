@@ -1,8 +1,16 @@
 {
   "source": "aihot.news RSS",
-  "updated_at": "2026-11-25T12:33:02.154385+08:00",
+  "updated_at": "2026-11-25T13:03:02.318230+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "千问APP免费开放千问Go打电话服务，经授权可代打电话和定时来电",
+      "link": "https://aihot.news/items/cebavio3uyjwli5r3imsuq1si",
+      "summary": "千问APP宣布千问Go打电话服务免费开放，用户告知打给谁、要办什么事并经授权后，AI可代为拨打电话、沟通需求。文中示例包括定时提醒朋友带饮料、定时来电叫醒起床、代订包间或询问快递等场景，并邀请用户在评论区分享想安排的任务。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cebavio3uyjwli5r3imsuq1si",
+      "pub_date": "2026-11-25",
+      "author": "noreply@aihot.news (公众号：千问APP)",
+      "category": "AI 产品"
+    },
     {
       "title": "Anthropic 上市不到一周跌破 83 美元发行价",
       "link": "https://aihot.news/items/yhlpti07v4y216qat3ml1qmca",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-20",
       "author": "noreply@aihot.news (Ars Technica：AI)",
       "category": "论文"
-    },
-    {
-      "title": "ChatGPT 推出 Space：统一管理页面、幻灯片、图片与文件",
-      "link": "https://aihot.news/items/ekf0so0xitc52thkrxx3mwax1",
-      "summary": "ChatGPT 官方宣布侧边栏中的 Space 成为 pages、slides、images、files 和 uploads 的新家。用 ChatGPT 可写页面、做研究、生成图片并创建交互式图表，把想法变成带图片和图形的幻灯片并邀请他人协作；页面和幻灯片还可从已连接的工具自动更新。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ekf0so0xitc52thkrxx3mwax1",
-      "pub_date": "2026-11-20",
-      "author": "noreply@aihot.news (ChatGPT)",
-      "category": "AI 产品"
     }
   ]
 }
