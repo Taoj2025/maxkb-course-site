@@ -1,7 +1,7 @@
 {
   "source": "aihot.news (FDE 相关筛选)",
-  "updated_at": "2026-11-26T00:33:01.693573+08:00",
-  "total": 22,
+  "updated_at": "2026-11-26T01:03:01.474743+08:00",
+  "total": 23,
   "items": [
     {
       "title": "OpenClaw 2026.11.10 发布，新增 Deep Research、Knowledge 记忆系统与 Browser handoff",
@@ -42,6 +42,14 @@
       "pub_date": "2026-11-24",
       "author": "noreply@aihot.news (Philipp Schmid)",
       "category": "AI 产品"
+    },
+    {
+      "title": "Anthropic 复盘 Messages API 从 Python 迁移到 Rust 的校验方法",
+      "link": "https://aihot.news/items/h1ja45355xx1xf9rqf89cv1if",
+      "summary": "Anthropic 介绍如何将 Messages API 从 Python 迁移到 Rust，并把生产系统本身当作校验器。该 API 流量从 2024 年初到 2026 年秋增长约 1800 倍，迁移后每请求 CPU 降低约 70%，首 token 中位时间缩短约 20%，且未停服或冻结功能开发。 🔗 阅读原文 via AIHOT · https://aihot.news/items/h1ja45355xx1xf9rqf89cv1if",
+      "pub_date": "2026-11-24",
+      "author": "noreply@aihot.news (Anthropic：Research)",
+      "category": "教程"
     },
     {
       "title": "Amazon 报告黑客用开源框架 Cairn 驱动 AI 智能体在约 11 分钟内自主发现并利用 0-day",
