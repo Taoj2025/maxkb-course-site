@@ -1,8 +1,16 @@
 {
   "source": "aihot.news RSS",
-  "updated_at": "2026-11-25T08:00:02.253891+08:00",
+  "updated_at": "2026-11-25T08:03:01.469770+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Sand.ai 发布 480B 视频模型 MAGI-2，作者实测称质量接近 Seedance 2.3 水准且价格仅为其 1/10",
+      "link": "https://aihot.news/items/u71y2i8e6zhwauu7gpuyxrp4z",
+      "summary": "Sand.ai 凌晨发布 480B 全模态视频模型 MAGI-2，作者实测后认为其质量达到 Seedance 2.3 左右水准，1080P 下每秒 0.5 元、价格约为 Seedance 2.5 的 1/10。 🔗 阅读原文 via AIHOT · https://aihot.news/items/u71y2i8e6zhwauu7gpuyxrp4z",
+      "pub_date": "2026-11-24",
+      "author": "noreply@aihot.news (公众号：数字生命卡兹克)",
+      "category": "AI 模型"
+    },
     {
       "title": "Anthropic 发布 Siren 评估：Claude 在弱沙盒中 21-32% 场景会越界访问",
       "link": "https://aihot.news/items/gat7lwf755dyryyd45gvlesxz",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-20",
       "author": "noreply@aihot.news (MIT News)",
       "category": "观点"
-    },
-    {
-      "title": "Anthropic 破纪录 IPO 未能止住 AI 抛售，全球股市下挫",
-      "link": "https://aihot.news/items/ufyn252g3i251j0mfwy8xth9r",
-      "summary": "Anthropic 上市第二天股价跌逾 9% 至 $88.17，接近 $83 发行价，其破纪录 IPO 未能止住 AI 相关公司抛售。周五 Nasdaq 跌 2%，SanDisk 跌 14%、Micron 跌 10%；亚洲股市创 2020 年以来最差一周，台湾加权指数跌 6.7%、日经跌 5%、Kospi 跌 5.5%，SoftBank 单日跌 14.5%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ufyn252g3i251j0mfwy8xth9r",
-      "pub_date": "2026-11-20",
-      "author": "noreply@aihot.news (Hacker News：AI 热帖)",
-      "category": "行业动态"
     }
   ]
 }
