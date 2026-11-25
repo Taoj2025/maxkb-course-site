@@ -1,6 +1,6 @@
 {
   "source": "aihot.news RSS",
-  "updated_at": "2026-11-25T09:33:01.707711+08:00",
+  "updated_at": "2026-11-25T10:03:02.210074+08:00",
   "total": 50,
   "items": [
     {
@@ -82,6 +82,14 @@
       "pub_date": "2026-11-24",
       "author": "noreply@aihot.news (Tibo)",
       "category": "AI 产品"
+    },
+    {
+      "title": "Mantic 与 Thinking Machines 训练可扩展预测智能体，成本降 15 倍",
+      "link": "https://aihot.news/items/yh9lmlhqwoc77d1ii1mvr5d6x",
+      "summary": "Mantic 与 Thinking Machines 在 Tinker 上对 Inkling 2 Small 做后训练，得到一个端到端完成研究与预测的预测智能体，其准确度接近 Fable 5.2 (medium)，单次预测成本降低 15 倍。 🔗 阅读原文 via AIHOT · https://aihot.news/items/yh9lmlhqwoc77d1ii1mvr5d6x",
+      "pub_date": "2026-11-24",
+      "author": "noreply@aihot.news (Thinking Machines Lab：News)",
+      "category": "论文"
     },
     {
       "title": "卡兹克分享两个优化用户体验和产品动效的 Prompt",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-20",
       "author": "noreply@aihot.news (公众号：数字生命卡兹克)",
       "category": "论文"
-    },
-    {
-      "title": "Kling AI 发布 Kling Image 4.0：原生 8K 图像生成与高级文字渲染",
-      "link": "https://aihot.news/items/rhln87mprozseglkairsway74",
-      "summary": "Kling AI 发布 Kling Image 4.0，主打原生 8K、更强真实感、一致图像组和高级文字渲染。引用 Artificial Analysis 的评测显示其在文生图排名第 7、图像编辑排名第 6，较 Kling Image 3.0 Omni 两个榜单均提升超 225 Elo。黑五限时定价 2K 低至 $0.022/图、原生 8K 低至 $0.033/图。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rhln87mprozseglkairsway74",
-      "pub_date": "2026-11-20",
-      "author": "noreply@aihot.news (可灵 Kling AI)",
-      "category": "AI 模型"
     }
   ]
 }
