@@ -1,8 +1,16 @@
 {
   "source": "aihot.news RSS",
-  "updated_at": "2026-11-25T10:33:01.358849+08:00",
+  "updated_at": "2026-11-25T11:03:01.748140+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "矩阵乘法指数被证明精确为 9/4",
+      "link": "https://aihot.news/items/pdtslys0302mclldlo6l1dlr9",
+      "summary": "Greg Brockman 转发 OpenAI 的 Sebastien Bubeck 消息：在 10 月 6 日发布给出矩阵乘法指数 9/4 新上界后，模型继续工作于下界并宣布 9/4 是紧的，下界此前毫无已知结果。Bubeck 称这是他从未想过有生之年能看到的结果，并指出根据 Yin Tat Lee 等人的旧结果，这也意味着线性规划可在 n^{9/4} 时间内求解。 🔗 阅读原文 via AIHOT · https://aihot.news/items/pdtslys0302mclldlo6l1dlr9",
+      "pub_date": "2026-11-25",
+      "author": "noreply@aihot.news (Greg Brockman)",
+      "category": "论文"
+    },
     {
       "title": "Sand.ai 发布 480B 视频模型 MAGI-2，作者实测称质量接近 Seedance 2.3 水准且价格仅为其 1/10",
       "link": "https://aihot.news/items/u71y2i8e6zhwauu7gpuyxrp4z",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-20",
       "author": "noreply@aihot.news (ChatGPT)",
       "category": "AI 产品"
-    },
-    {
-      "title": "Anthropic数学家Alpöge宣布与Claude共同证明黎曼猜想，放出1737万行Lean代码",
-      "link": "https://aihot.news/items/vu6fw8wmrs3xcln4u9gwzf1f4",
-      "summary": "Anthropic数学家Levent Alpöge在其个人网站宣布与Claude共同给出黎曼猜想证明，未发论文，只放出175187个Lean文件、共1737万行代码。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vu6fw8wmrs3xcln4u9gwzf1f4",
-      "pub_date": "2026-11-20",
-      "author": "noreply@aihot.news (公众号：数字生命卡兹克)",
-      "category": "论文"
     }
   ]
 }
