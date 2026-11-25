@@ -1,6 +1,6 @@
 {
   "source": "aihot.news RSS",
-  "updated_at": "2026-11-25T08:33:02.232167+08:00",
+  "updated_at": "2026-11-25T09:03:01.585525+08:00",
   "total": 50,
   "items": [
     {
@@ -52,9 +52,9 @@
       "category": "行业动态"
     },
     {
-      "title": "Ed Zitron 撰文批评 NVIDIA 董事会在政府施压下恢复黄仁勋 CEO 职务",
+      "title": "Ed Zitron 分析 NVIDIA 董事会恢复黄仁勋 CEO 职位背后的行业流动性风险",
       "link": "https://aihot.news/items/lb66i6g7eq01l6hx0rr8f7k9r",
-      "summary": "Ed Zitron 撰文批评 NVIDIA 董事会在政府施压下未咨询高管即恢复黄仁勋 CEO 职务，认为此举旨在稳定股市，并指出 AI 行业面临的流动性问题并未因此改变。 🔗 阅读原文 via AIHOT · https://aihot.news/items/lb66i6g7eq01l6hx0rr8f7k9r",
+      "summary": "Ed Zitron 撰文分析 NVIDIA 董事会恢复黄仁勋 CEO 职位一事，认为此举是应对外部压力的符号性操作，并未解决 AI 行业面临的循环融资、流动性紧张及 OpenAI 亏损等根本问题。文章梳理了 NVIDIA 对 AI 行业的巨额资金支持、Anthropic 上市后表现及 OpenAI 的财务压力等证据，论证行业流动性风险并未消除。 🔗 阅读原文 via AIHOT · https://aihot.news/items/lb66i6g7eq01l6hx0rr8f7k9r",
       "pub_date": "2026-11-24",
       "author": "noreply@aihot.news (Ed Zitron 长文 / Where’s Your Ed At)",
       "category": "观点"
