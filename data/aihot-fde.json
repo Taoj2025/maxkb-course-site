@@ -1,8 +1,16 @@
 {
   "source": "aihot.news (FDE 相关筛选)",
-  "updated_at": "2026-11-25T22:03:02.339609+08:00",
-  "total": 21,
+  "updated_at": "2026-11-25T22:33:01.878192+08:00",
+  "total": 22,
   "items": [
+    {
+      "title": "OpenClaw 2026.11.10 发布，新增 Deep Research、Knowledge 记忆系统与 Browser handoff",
+      "link": "https://aihot.news/items/vz3bvc1o7zuki3x2zw8lnnv78",
+      "summary": "OpenClaw 发布 2026.11.10 版本，新增聊天内 Deep Research、新的 OpenClaw 记忆系统 Knowledge，以及 Browser handoff 功能。本次版本包含 7,671 个 PR、349 位贡献者，完整说明见 https://docs.openclaw.ai/releases/2026.11.10。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vz3bvc1o7zuki3x2zw8lnnv78",
+      "pub_date": "2026-11-25",
+      "author": "noreply@aihot.news (OpenClaw)",
+      "category": "AI 产品"
+    },
     {
       "title": "Claude Code 团队发布实用指南讲解 Claude Ship 的 PR 审查与守护用法",
       "link": "https://aihot.news/items/uyodjb16jngloilypsm1d3q0d",
