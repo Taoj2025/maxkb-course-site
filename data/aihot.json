@@ -1,6 +1,6 @@
 {
   "source": "aihot.news RSS",
-  "updated_at": "2026-11-26T12:33:01.779558+08:00",
+  "updated_at": "2026-11-26T13:03:01.852287+08:00",
   "total": 50,
   "items": [
     {
@@ -26,6 +26,14 @@
       "pub_date": "2026-11-25",
       "author": "noreply@aihot.news (公众号：数字生命卡兹克)",
       "category": "教程"
+    },
+    {
+      "title": "Dario Amodei 澄清不主张向 AI 交出人类自由意志",
+      "link": "https://aihot.news/items/e6gp31eup40d99unaon9umnpo",
+      "summary": "Anthropic 的 Dario Amodei 发长文否认其主张“向 AI 交出人类自由意志”，称其文章一贯主张 AI 须受合法民主程序治理。他区分了全球治理层面的交权与具体任务的自动化，后者持混合态度，包括对递归自我改进设限、警惕端到端部署带来的就业冲击，并称 Anthropic 曾拒绝让自家模型用于自主武器；文末批评部分 AI CEO 只喊“人类控制”等口号而无实质行动。Elon Musk 转发并评论 Interesting。 🔗 阅读原文 via AIHOT · https://aihot.news/items/e6gp31eup40d99unaon9umnpo",
+      "pub_date": "2026-11-25",
+      "author": "noreply@aihot.news (Elon Musk)",
+      "category": "观点"
     },
     {
       "title": "42 州总检察长介入 Character.AI 破产程序，反对拍卖用户私密聊天记录",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-23",
       "author": "noreply@aihot.news (TechCrunch：AI)",
       "category": "行业动态"
-    },
-    {
-      "title": "Anthropic 推出 Claude Ship 测试版，自动完成 PR 审查、修复与审批",
-      "link": "https://aihot.news/items/t7jlbaldqf2zcliuva1sofoks",
-      "summary": "Anthropic 发布 Claude Ship 测试版，由 Code Review（已正式可用）、PR Steward 和 Claude Approvals 两个 beta 智能体组成，可审查 PR、推送修复并按团队写进仓库的策略文件决定能否合并。 🔗 阅读原文 via AIHOT · https://aihot.news/items/t7jlbaldqf2zcliuva1sofoks",
-      "pub_date": "2026-11-23",
-      "author": "noreply@aihot.news (Claude：Blog)",
-      "category": "AI 产品"
     }
   ]
 }
