@@ -1,8 +1,16 @@
 {
   "source": "aihot.news (FDE 相关筛选)",
-  "updated_at": "2026-11-26T20:33:02.583204+08:00",
+  "updated_at": "2026-11-26T21:03:01.789307+08:00",
   "total": 26,
   "items": [
+    {
+      "title": "Google 强制 AI Agent 走 Workspace MCP 服务器，Gmail 服务器不能发邮件",
+      "link": "https://aihot.news/items/vboh9u5yjfjgj1ha6rl804tkh",
+      "summary": "Google 于 11 月 24 日将八个 Workspace MCP 服务器正式开放，并在 API 条款中新增条款，要求自 2027 年 2 月 1 日起由 AI Agent 驱动的工具必须通过这些服务器访问 Gmail、Drive 等 Workspace 服务，直接调用 REST API 将按 Standard 级配额受限。 🔗 阅读原文 via AIHOT · https://aihot.news/items/vboh9u5yjfjgj1ha6rl804tkh",
+      "pub_date": "2026-11-26",
+      "author": "noreply@aihot.news (Hacker News：AI 热帖)",
+      "category": "行业动态"
+    },
     {
       "title": "卡兹克把《人生意义设计课》做成AI Prompt，帮你设计人生的意义",
       "link": "https://aihot.news/items/mruv0rx3oxnkjy9ll805qaidc",
@@ -82,14 +90,6 @@
       "pub_date": "2026-11-24",
       "author": "noreply@aihot.news (Anthropic)",
       "category": "论文"
-    },
-    {
-      "title": "Google Workspace MCP servers 与 gwscli 正式发布，Personal 模式一键开通",
-      "link": "https://aihot.news/items/nm8mi41auemid3iivue4tel3d",
-      "summary": "Philipp Schmid 宣布 Google Workspace MCP servers 与 gwscli 正式 GA，新增 Personal 模式一键开通，无需 Enterprise 计划或绑卡。共 8 个 server 覆盖 Gmail、Drive、Docs、Sheets、Slides、Calendar、Chat、Tasks，免费档为每产品每天 5,000 次请求，发送和分享内置 HITL 确认。他提到仍需经过 Google Cloud，但比旧的 OAuth 同意屏和应用审核流程好得多，欢迎试用反馈。 🔗 阅读原文 via AIHOT · https://aihot.news/items/nm8mi41auemid3iivue4tel3d",
-      "pub_date": "2026-11-24",
-      "author": "noreply@aihot.news (Philipp Schmid)",
-      "category": "AI 产品"
     },
     {
       "title": "Anthropic 复盘 Messages API 从 Python 迁移到 Rust 的校验方法",
