@@ -1004,5 +1004,77 @@
     "source": "机器摘要 · Supabase Blog",
     "file": "13355-introducing-supabase-knowledge-base.md",
     "estimated_read_time": "1 分钟"
+  },
+  {
+    "id": 13356,
+    "title": "I gave Claude Code a poisoned GitHub issue. Twice.",
+    "slug": "13356-i-gave-claude-code-a-poisoned-github-iss",
+    "summary": "A coding agent reads issues, READMEs and web pages all day. Any of them can carry an instruction written for the agent, not for you. So I wrote one an",
+    "category": "最新动态",
+    "tags": [
+      "FDE",
+      "AI 资讯",
+      "前端部署"
+    ],
+    "color": "purple",
+    "date": "2026-11-26",
+    "author": "小Q（机器摘要）",
+    "source": "机器摘要 · Dev.to",
+    "file": "13356-i-gave-claude-code-a-poisoned-github-iss.md",
+    "estimated_read_time": "1 分钟"
+  },
+  {
+    "id": 13357,
+    "title": "Green CI, Wrong Code: 7 Ways AI Agent PRs Fool Reviewers (and the 2 Docs That Fix It)",
+    "slug": "13357-green-ci-wrong-code-7-ways-ai-agent-prs",
+    "summary": "The agent's pull request looked great. Clean diff, tidy description, every test green. I came close to skimming it and clicking merge. Then I read the",
+    "category": "最新动态",
+    "tags": [
+      "FDE",
+      "AI 资讯",
+      "前端部署"
+    ],
+    "color": "blue",
+    "date": "2026-11-26",
+    "author": "小Q（机器摘要）",
+    "source": "机器摘要 · Dev.to",
+    "file": "13357-green-ci-wrong-code-7-ways-ai-agent-prs.md",
+    "estimated_read_time": "1 分钟"
+  },
+  {
+    "id": 13358,
+    "title": "迈出“全民隐私智能”第一步：OpenAI 开测私有推理，目标打造“零窥探 AI”",
+    "slug": "13358-openai-ai",
+    "summary": "IT之家 11 月 26 日消息，OpenAI 首席执行官萨姆 · 奥尔特曼（Sam Altman）今天（11 月 26 日）在 X 平台发布推文，宣布已邀请部分客户测试“私有推理”（Private Inference），主要针对工作场景提升数据隐私保护。IT之家附上相关截图如下：该服务隶属于 Op",
+    "category": "最新动态",
+    "tags": [
+      "FDE",
+      "AI 资讯",
+      "前端部署"
+    ],
+    "color": "green",
+    "date": "2026-11-26",
+    "author": "小Q（机器摘要）",
+    "source": "机器摘要 · IT之家",
+    "file": "13358-openai-ai.md",
+    "estimated_read_time": "1 分钟"
+  },
+  {
+    "id": 13359,
+    "title": "SpaceX被曝下调Blackwell芯片租金最高约35%，并低价转租Anthropic退还的H200芯片",
+    "slug": "13359-spacex-blackwell-35-anthropic-h200",
+    "summary": "半导体研究机构SemiAnalysis本周在发给机构客户的报告中披露了两项变化：一是SpaceX下调了英伟达Blackwell GPU小规模集群的租金，二是AI大模型公司Anthropic决定不再续租SpaceX的一批H200。SemiAnalysis在报告中称，SpaceX已将小规模Blackwe",
+    "category": "最新动态",
+    "tags": [
+      "FDE",
+      "AI 资讯",
+      "前端部署"
+    ],
+    "color": "orange",
+    "date": "2026-11-26",
+    "author": "小Q（机器摘要）",
+    "source": "机器摘要 · 36氪快讯",
+    "file": "13359-spacex-blackwell-35-anthropic-h200.md",
+    "estimated_read_time": "1 分钟"
   }
 ]
