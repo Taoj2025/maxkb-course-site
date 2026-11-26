@@ -1,8 +1,16 @@
 {
   "source": "aihot.news RSS",
-  "updated_at": "2026-11-26T21:33:02.445621+08:00",
+  "updated_at": "2026-11-26T22:03:01.866787+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "Philipp Schmid 撰文解释为何在 Skills 与 CLI 兴起后仍更看好 MCP",
+      "link": "https://aihot.news/items/jcdfpftbam647yhc210dbace9",
+      "summary": "Philipp Schmid 撰文解释为何在 Skills 和 CLI 流行后依然看好 MCP：Linear 和 Notion 的 agent 每周创建约 240 万条 issue 和页面，Atlassian 每天 MCP 工具调用超 500 万次，其中 44% 用户来自软件团队之外，Notion 报告 60 倍 MCP 流量增长。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jcdfpftbam647yhc210dbace9",
+      "pub_date": "2026-11-26",
+      "author": "noreply@aihot.news (Philipp Schmid)",
+      "category": "观点"
+    },
     {
       "title": "MiniMax 推出 H3 Family：旗舰与扩展视频图像模型",
       "link": "https://aihot.news/items/cxodjj13xa8ey821rbnmumcrf",
@@ -393,14 +401,6 @@
       "summary": "Wiz Research 发文介绍 ARTEX 等智能体攻击框架正在推动云入侵激增。文中分享了来自真实环境的案例，包括通过攻击操作者泄露的日志看到的一次攻击的双方视角、对 Black October 的更新，以及可捕捉这类嘈杂、机器速度攻击的检测方法。 🔗 阅读原文 via AIHOT · https://aihot.news/items/gp8e9a8oitha0rbip8pzntuff",
       "pub_date": "2026-11-23",
       "author": "noreply@aihot.news (Wiz：Research)",
-      "category": "行业动态"
-    },
-    {
-      "title": "NVIDIA 宣布黄仁勋复任总裁兼 CEO 并重回董事会",
-      "link": "https://aihot.news/items/ajcxs84uezjqgsgxpdtr31o0l",
-      "summary": "NVIDIA 于 11 月 23 日宣布黄仁勋即刻复任总裁、CEO 及董事会成员，董事会一致投票通过，临时 CEO Colette Kress 继续担任 CFO。复职决定参考了美国政府高层意见，董事会认为其不构成国家安全风险，此前因黄仁勋成为外国情报行动目标而启动的独立董事调查将继续进行，董事会另设国家安全与出口管制委员会并招聘首席合规官。 🔗 阅读原文 via AIHOT · https://aihot.news/items/ajcxs84uezjqgsgxpdtr31o0l",
-      "pub_date": "2026-11-23",
-      "author": "noreply@aihot.news (X.PIN)",
       "category": "行业动态"
     }
   ]

@@ -1,8 +1,16 @@
 {
   "source": "aihot.news (FDE 相关筛选)",
-  "updated_at": "2026-11-26T21:33:02.446563+08:00",
-  "total": 26,
+  "updated_at": "2026-11-26T22:03:01.867699+08:00",
+  "total": 27,
   "items": [
+    {
+      "title": "Philipp Schmid 撰文解释为何在 Skills 与 CLI 兴起后仍更看好 MCP",
+      "link": "https://aihot.news/items/jcdfpftbam647yhc210dbace9",
+      "summary": "Philipp Schmid 撰文解释为何在 Skills 和 CLI 流行后依然看好 MCP：Linear 和 Notion 的 agent 每周创建约 240 万条 issue 和页面，Atlassian 每天 MCP 工具调用超 500 万次，其中 44% 用户来自软件团队之外，Notion 报告 60 倍 MCP 流量增长。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jcdfpftbam647yhc210dbace9",
+      "pub_date": "2026-11-26",
+      "author": "noreply@aihot.news (Philipp Schmid)",
+      "category": "观点"
+    },
     {
       "title": "Google 强制 AI Agent 走 Workspace MCP 服务器，Gmail 服务器不能发邮件",
       "link": "https://aihot.news/items/vboh9u5yjfjgj1ha6rl804tkh",
