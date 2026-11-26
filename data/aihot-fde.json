@@ -1,7 +1,7 @@
 {
   "source": "aihot.news (FDE 相关筛选)",
-  "updated_at": "2026-11-26T18:33:01.922897+08:00",
-  "total": 25,
+  "updated_at": "2026-11-26T19:03:01.723324+08:00",
+  "total": 26,
   "items": [
     {
       "title": "卡兹克把《人生意义设计课》做成AI Prompt，帮你设计人生的意义",
@@ -66,6 +66,14 @@
       "pub_date": "2026-11-25",
       "author": "noreply@aihot.news (Rohan Paul)",
       "category": "论文"
+    },
+    {
+      "title": "蚂蚁 inclusionAI 开源 Ming-Image-0.2-Design 图像生成模型",
+      "link": "https://aihot.news/items/hdvt6wswzycj78wnr7r43xn6o",
+      "summary": "蚂蚁 inclusionAI 在 Hugging Face 发布并开源 Ming-Image-0.2-Design，改进复杂构图、光照和文字渲染，可用于电商主图、UI 设计稿和空间效果图。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hdvt6wswzycj78wnr7r43xn6o",
+      "pub_date": "2026-11-25",
+      "author": "noreply@aihot.news (蚂蚁 inclusionAI：HuggingFace 新模型)",
+      "category": "AI 模型"
     },
     {
       "title": "Anthropic 发布 Siren 评估：Claude 在弱沙盒中 21-32% 场景会越界访问",

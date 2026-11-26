@@ -1,6 +1,6 @@
 {
   "source": "aihot.news RSS",
-  "updated_at": "2026-11-26T18:33:01.921933+08:00",
+  "updated_at": "2026-11-26T19:03:01.722401+08:00",
   "total": 50,
   "items": [
     {
@@ -122,6 +122,14 @@
       "pub_date": "2026-11-25",
       "author": "noreply@aihot.news (公众号：千问APP)",
       "category": "AI 产品"
+    },
+    {
+      "title": "蚂蚁 inclusionAI 开源 Ming-Image-0.2-Design 图像生成模型",
+      "link": "https://aihot.news/items/hdvt6wswzycj78wnr7r43xn6o",
+      "summary": "蚂蚁 inclusionAI 在 Hugging Face 发布并开源 Ming-Image-0.2-Design，改进复杂构图、光照和文字渲染，可用于电商主图、UI 设计稿和空间效果图。 🔗 阅读原文 via AIHOT · https://aihot.news/items/hdvt6wswzycj78wnr7r43xn6o",
+      "pub_date": "2026-11-25",
+      "author": "noreply@aihot.news (蚂蚁 inclusionAI：HuggingFace 新模型)",
+      "category": "AI 模型"
     },
     {
       "title": "Anthropic 上市不到一周跌破 83 美元发行价",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-23",
       "author": "noreply@aihot.news (X.PIN)",
       "category": "行业动态"
-    },
-    {
-      "title": "智谱发布GLM-5.4：首个Loop Transformer架构旗舰模型开启泛Coding",
-      "link": "https://aihot.news/items/d4hhqnlmrclsx7d6idtvq95wz",
-      "summary": "智谱发布旗舰模型GLM-5.4，为第一代采用Loop Transformer架构的模型，让28层共享权重循环执行两轮，在参数量不变下获得更深推理，智能水平达到2-3T级模型效果，并开启泛Coding能力。 🔗 阅读原文 via AIHOT · https://aihot.news/items/d4hhqnlmrclsx7d6idtvq95wz",
-      "pub_date": "2026-11-23",
-      "author": "noreply@aihot.news (公众号：智谱)",
-      "category": "AI 模型"
     }
   ]
 }
