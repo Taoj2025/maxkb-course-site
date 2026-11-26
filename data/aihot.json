@@ -1,6 +1,6 @@
 {
   "source": "aihot.news RSS",
-  "updated_at": "2026-11-26T11:03:01.409705+08:00",
+  "updated_at": "2026-11-26T11:33:02.257740+08:00",
   "total": 50,
   "items": [
     {
@@ -60,9 +60,9 @@
       "category": "行业动态"
     },
     {
-      "title": "Pydantic AI 发布终端编码智能体 Pax 与 Harness beta，迈向 1.0",
+      "title": "Pydantic AI 发布终端编码 agent Pax，并宣布 Harness 将在约一个月后进入 1.0",
       "link": "https://aihot.news/items/i5qr52169dlque8rb2sl4i5jo",
-      "summary": "Pydantic AI 发布终端编码智能体 Pax（pydantic-ai-pax），基于 Harness SDK，全部功能以插件形式组织，可 /plugins 开关 coder、sandbox、mcp、Logfire 观测等，并支持 --agent 换成代码库里任意 Pydantic AI Agent。 🔗 阅读原文 via AIHOT · https://aihot.news/items/i5qr52169dlque8rb2sl4i5jo",
+      "summary": "Pydantic AI 发布基于 Harness SDK 的终端编码 agent Pax（pydantic-ai-pax），一切皆插件，支持 --agent 接入自定义 Pydantic AI Agent、/sandbox 切换十余种云端或本地沙箱、ComputerUse 计算机使用和默认开启的 code mode。 🔗 阅读原文 via AIHOT · https://aihot.news/items/i5qr52169dlque8rb2sl4i5jo",
       "pub_date": "2026-11-25",
       "author": "noreply@aihot.news (Pydantic AI 官方文章)",
       "category": "AI 产品"
