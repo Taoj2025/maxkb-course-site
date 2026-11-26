@@ -1,7 +1,7 @@
 {
   "source": "aihot.news (FDE 相关筛选)",
-  "updated_at": "2026-11-26T12:03:01.505259+08:00",
-  "total": 26,
+  "updated_at": "2026-11-26T12:33:01.784271+08:00",
+  "total": 25,
   "items": [
     {
       "title": "卡兹克把《人生意义设计课》做成AI Prompt，帮你设计人生的意义",
@@ -202,14 +202,6 @@
       "pub_date": "2026-11-23",
       "author": "noreply@aihot.news (Claude：Blog)",
       "category": "AI 产品"
-    },
-    {
-      "title": "OpenRouter 实测用 MCP 连接器让 Claude 生成图像并对比四款模型",
-      "link": "https://aihot.news/items/jub44k9eeq0vdw8c37lcpbzwp",
-      "summary": "OpenRouter 发布教程演示如何通过 OpenRouter MCP 服务器（https://mcp.openrouter.ai/mcp）作为连接器让 Claude 调用图像模型生成真实图片，覆盖截至 2026 年 11 月 19 日的 74 款图像模型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/jub44k9eeq0vdw8c37lcpbzwp",
-      "pub_date": "2026-11-23",
-      "author": "noreply@aihot.news (OpenRouter：Announcements)",
-      "category": "教程"
     }
   ]
 }
