@@ -1,8 +1,16 @@
 {
   "source": "aihot.news RSS",
-  "updated_at": "2026-11-26T15:03:02.546762+08:00",
+  "updated_at": "2026-11-26T15:33:01.961757+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "FT 报道 Nvidia 暂停向东南亚四国发运服务器",
+      "link": "https://aihot.news/items/rlt60gq96bl1cf5b88o8rbj30",
+      "summary": "据 FT 报道，Nvidia 已通知 Dell、Supermicro 等制造伙伴停止向马来西亚、新加坡、泰国和印尼发运服务器，原因是美国要求这些国家及巴西的先进 AI 芯片需申请许可。此前中国 AI 实验室通过当地云厂商租用 Nvidia 算力绕开直接出口禁令，云厂商现有 90 天证明无受限用户但缺乏申请指引；Nvidia 2025 年经新加坡部门入账 $104B，同比增长 72%。 🔗 阅读原文 via AIHOT · https://aihot.news/items/rlt60gq96bl1cf5b88o8rbj30",
+      "pub_date": "2026-11-26",
+      "author": "noreply@aihot.news (Rohan Paul)",
+      "category": "行业动态"
+    },
     {
       "title": "Calif 披露 Tor Browser 15.0.22 UAF 漏洞链可致真实 IP 泄露",
       "link": "https://aihot.news/items/gv1y811sp5p9kl7p3ci7xjt5n",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-23",
       "author": "noreply@aihot.news (公众号：智谱)",
       "category": "AI 模型"
-    },
-    {
-      "title": "Anthropic IPO 前三家机构如何重注押注",
-      "link": "https://aihot.news/items/dus34samsjrld1qopq65v54uq",
-      "summary": "TechCrunch 报道 Notable Capital、GIC 和 Baillie Gifford 在 Anthropic IPO 前的重仓投资逻辑。 🔗 阅读原文 via AIHOT · https://aihot.news/items/dus34samsjrld1qopq65v54uq",
-      "pub_date": "2026-11-23",
-      "author": "noreply@aihot.news (TechCrunch：AI)",
-      "category": "行业动态"
     }
   ]
 }
