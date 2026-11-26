@@ -1,8 +1,16 @@
 {
   "source": "aihot.news RSS",
-  "updated_at": "2026-11-26T19:33:02.352560+08:00",
+  "updated_at": "2026-11-26T20:03:02.052730+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "MiniMax 推出 H3 Family：旗舰与扩展视频图像模型",
+      "link": "https://aihot.news/items/cxodjj13xa8ey821rbnmumcrf",
+      "summary": "MiniMax 发布 H3 Family，包含旗舰 H3、H3-Highspeed、H3-Lite、H3-Image 系列及 fal、Suno、HeyGen、Pika 等第三方的扩展模型。H3 开源 100 天已衍生 1,472 个模型、累计下载超 1.48 亿次，旗舰 H3 支持 2K 输出、起价 $0.08/秒，H3-Image Highspeed 最快 10 秒内生成 4K 图像。 🔗 阅读原文 via AIHOT · https://aihot.news/items/cxodjj13xa8ey821rbnmumcrf",
+      "pub_date": "2026-11-26",
+      "author": "noreply@aihot.news (MiniMax：Blog)",
+      "category": "AI 模型"
+    },
     {
       "title": "FT 报道 Nvidia 暂停向东南亚四国发运服务器",
       "link": "https://aihot.news/items/rlt60gq96bl1cf5b88o8rbj30",
@@ -250,14 +258,6 @@
       "pub_date": "2026-11-24",
       "author": "noreply@aihot.news (卡兹克)",
       "category": "教程"
-    },
-    {
-      "title": "MiniMax 发布 H3 Family 系列模型，H3 开源百日衍生模型达 1472 个、下载量超 1.48 亿次",
-      "link": "https://aihot.news/items/f1380j6hyrxn0rnz6666nu3b8",
-      "summary": "MiniMax 推出 H3 Family，包含 H3、H3-Highspeed、H3-Lite、H3-Image、H3-Image Highspeed 等旗舰模型及 fal、Suno、HeyGen、Pika 等伙伴的多个扩展模型。 🔗 阅读原文 via AIHOT · https://aihot.news/items/f1380j6hyrxn0rnz6666nu3b8",
-      "pub_date": "2026-11-24",
-      "author": "noreply@aihot.news (公众号：MiniMax)",
-      "category": "AI 产品"
     },
     {
       "title": "ChinaTalk 播客：Nvidia 董事会恢复黄仁勋职务，美商务部将 Megaspeed 列入实体清单",
