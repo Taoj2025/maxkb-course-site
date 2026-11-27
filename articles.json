@@ -1076,5 +1076,59 @@
     "source": "机器摘要 · 36氪快讯",
     "file": "13359-spacex-blackwell-35-anthropic-h200.md",
     "estimated_read_time": "1 分钟"
+  },
+  {
+    "id": 13360,
+    "title": "Anthropic set more than 1,700 traps for Claude — what it found is both reassuring and unsettling",
+    "slug": "13360-anthropic-set-more-than-1-700-traps-for",
+    "summary": "As coding agents take on longer-running engineering tasks, Anthropic is examining how models behave when their execution environments fail to The post",
+    "category": "最新动态",
+    "tags": [
+      "FDE",
+      "AI 资讯",
+      "前端部署"
+    ],
+    "color": "purple",
+    "date": "2026-11-27",
+    "author": "小Q（机器摘要）",
+    "source": "机器摘要 · The New Stack",
+    "file": "13360-anthropic-set-more-than-1-700-traps-for.md",
+    "estimated_read_time": "1 分钟"
+  },
+  {
+    "id": 13361,
+    "title": "OpenAI claims to have solved a 57-year-old math problem at the heart of AI computation",
+    "slug": "13361-openai-claims-to-have-solved-a-57-year-o",
+    "summary": "OpenAI claims to have solved a problem that has occupied theoretical computer scientists since 1969. In a preprint published Tuesday The post OpenAI c",
+    "category": "最新动态",
+    "tags": [
+      "FDE",
+      "AI 资讯",
+      "前端部署"
+    ],
+    "color": "blue",
+    "date": "2026-11-27",
+    "author": "小Q（机器摘要）",
+    "source": "机器摘要 · The New Stack",
+    "file": "13361-openai-claims-to-have-solved-a-57-year-o.md",
+    "estimated_read_time": "1 分钟"
+  },
+  {
+    "id": 13362,
+    "title": "LibreOffice 收紧 AI 辅助代码贡献政策",
+    "slug": "13362-libreoffice-ai",
+    "summary": "11 月 24 日，文档基金会（The Document Foundation，TDF）针对 AI 辅助代码贡献发布了更严格的规则。核心有几条： 贡献者在使用大语言模型之前，必须先获得批准； 提交代码时必须披露用了什么 AI 工具、是怎么审查的； 对借助 LLM 完成的补丁，贡献者要能用自己的语言解",
+    "category": "最新动态",
+    "tags": [
+      "FDE",
+      "AI 资讯",
+      "前端部署"
+    ],
+    "color": "green",
+    "date": "2026-11-27",
+    "author": "小Q（机器摘要）",
+    "source": "机器摘要 · 开源中国",
+    "file": "13362-libreoffice-ai.md",
+    "estimated_read_time": "1 分钟"
   }
 ]
