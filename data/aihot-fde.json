@@ -1,8 +1,16 @@
 {
   "source": "aihot.news (FDE 相关筛选)",
-  "updated_at": "2026-11-27T20:33:02.229719+08:00",
-  "total": 28,
+  "updated_at": "2026-11-27T21:03:02.462159+08:00",
+  "total": 29,
   "items": [
+    {
+      "title": "Antigravity 实用技巧：在 GEMINI.md 加一句话让模型边干活边汇报",
+      "link": "https://aihot.news/items/tiqf353lek6sib8ktn8uvc6nc",
+      "summary": "卡兹克分享一个 Antigravity 使用技巧，针对模型长时间闷头干活不输出信息的问题，只需在 GEMINI.md 中加一句话，要求动手前说要做什么、有发现、换方向、卡住或连干四五步时再说一句，即可获得类似 Claude 或 Codex 那种实时汇报进度的交互体验。 🔗 阅读原文 via AIHOT · https://aihot.news/items/tiqf353lek6sib8ktn8uvc6nc",
+      "pub_date": "2026-11-27",
+      "author": "noreply@aihot.news (卡兹克)",
+      "category": "教程"
+    },
     {
       "title": "Dragos 调查称 MiniMax 在用户请求不存储的情况下仍打开提示词中的私有链接",
       "link": "https://aihot.news/items/v5fxjqr2vapkk9vn1j9a8ke96",
