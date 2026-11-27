@@ -12,16 +12,29 @@
 
 ## 部署步骤
 
+**正常情况：什么都不用做。** 改了 HTML 外壳 → `git push` →
+Vercel 自动构建（坑七的 Ignored Build Step 会挡掉纯数据提交）→
+再跑一次别名指派：
+
+```bash
+npm run deploy:alias          # 把别名指到最新部署（见坑四）
+```
+
+手动部署（需要重新构建时）：
+
 ```bash
 vercel link --project maxkb-course-site-bk10 --yes   # 关联项目（写 .vercel/project.json）
 vercel --prod --yes                                  # 生产部署
 npm run deploy:alias                                 # 把别名指到这次部署（见坑四）
 ```
 
-> ⚠️ **只在 HTML 外壳改了才需要部署。**
+> ⚠️ **数据更新不需要部署。**
 > `data/` `articles/` `articles.json` 走 rewrites 实时回源站
 > （内容机器人推完就生效），Vercel 静态快照里根本没有这些文件。
-> 每次内容更新都部署 Vercel = 白烧 Hobby 的每日 100 次配额（坑五）。
+> Ignored Build Step 会自动跳过这类提交（坑七）。
+
+> ⚠️ **别名不会自己跟过去。** Hobby 计划的 `deployment-alias` 检查
+> 一直卡在 `pending`（坑四），所以每次部署完必须跑 `npm run deploy:alias`。
 
 > ⚠️ **国内网络要设代理**。`api.vercel.com` 直连会偶发连接超时，
 > Node 的 fetch 默认不认 `HTTP(S)_PROXY`：
@@ -171,17 +184,68 @@ print(collections.Counter(x['name'] for x in d))
 
 **修法（2026-11-28 实施）**：
 
-1. **删掉重复项目** `maxkb-course-site-bk9` —— 它没有任何域名，
+1. **断开重复项目** `maxkb-course-site-bk9` 的 GitHub 链接
+   （`DELETE /v9/projects/{id}/link`）—— 它没有任何域名，
    只是建站过程中留下的废弃项目，却占着一半配额。
-2. **关掉两个项目的 GitHub 自动部署**（`DELETE /v9/projects/{id}/link`）。
-   站点是「静态快照 + 实时转发」架构：`data/` `articles/` 走 rewrites
-   回源站，**内容更新根本不需要重新部署 Vercel** —— 只有 HTML 外壳改了才需要。
-   自动部署纯属白烧配额。
-3. 以后**只在 HTML 外壳改动时手动部署**：
-   `vercel --prod` → `npm run deploy:alias`。
+2. **bk10 保留 GitHub 自动部署，但加 Ignored Build Step**（见下面坑七）——
+   只有 HTML 外壳变了才构建，数据提交直接跳过。
+3. **HTML 外壳改完之后，必须跑 `npm run deploy:alias`**（坑四）。
 
-> ⚠️ 关掉自动部署后，**别名不会自己跟过去**了（这本来就是坑四）。
-> 每次部署完必须跑 `npm run deploy:alias`。
+### 坑七：Ignored Build Step —— 数据提交不构建，配额从 92/天降到 2/天
+
+站点是「静态快照 + 实时转发」架构：
+
+| 内容 | 怎么到用户面前 | 需要重新部署 Vercel 吗 |
+|---|---|---|
+| `data/` `articles/` `articles.json` | `vercel.json` 的 rewrites **实时转发源站** | **不需要** |
+| HTML 外壳（`*.html` `assets/` `api/` `proxy.js`） | Vercel 静态快照 | 需要 |
+
+内容机器人每 30 分钟推一次数据，一天 40+ 次 push。
+每次 push 都触发一次部署，但那些提交**一个字节都没改快照** —— 纯烧配额。
+
+**用 Vercel 的 Ignored Build Step 挡掉**：
+
+```bash
+# API 字段名是 commandForIgnoringBuildStep（不是 ignoreCommand！）
+curl -X PATCH "https://api.vercel.com/v9/projects/$PROJECT_ID?teamId=$TEAM_ID" \
+  -H "Authorization: Bearer $VERCEL_TOKEN" -H "Content-Type: application/json" \
+  -d '{"commandForIgnoringBuildStep":"bash scripts/ignore-build.sh"}'
+```
+
+> ⚠️ 用 `ignoreCommand` 这个字段名会被 API 拒：
+> `should NOT have additional property 'ignoreCommand'`。
+> `vercel.json` 里倒是可以用 `ignoreCommand`，但项目级设置要用上面那个长名字。
+
+判定逻辑在 `scripts/ignore-build.sh`：
+
+```bash
+# 只看会进快照的路径，diff 为空 = 跳过构建
+git diff --name-only "$VERCEL_GIT_PREVIOUS_SHA" "$VERCEL_GIT_COMMIT_SHA" -- . \
+  ':(exclude)data' ':(exclude)articles' ':(exclude)articles.json'
+```
+
+**几个必须注意的点**：
+
+- 退出码 **0 = 跳过构建**（部署标记为 CANCELED），**非 0 = 照常构建**。
+  跟直觉相反，写反了就是「永远跳过」。
+- **不能用 `git diff HEAD^ HEAD`**：Vercel 每次 push 只构建最后一个 commit，
+  `HEAD^` 可能不是上次部署的那个。用 `VERCEL_GIT_PREVIOUS_SHA`。
+- Vercel 用 `git clone --depth=10` 克隆，**上一次部署的 commit 可能不在克隆里**。
+  `scripts/ignore-build.sh` 里有两级兜底：先 `git fetch --depth=1` 单独拉，
+  拉不到就退化成比较「克隆窗口内最早 commit」和当前 commit 的外壳内容。
+- **失败要往「构建」的方向偏**：SHA 缺失、git 不可用、diff 报错 —— 一律构建。
+  特别注意 `git diff` 失败时输出是空的，而「空」会被当成「没变化 → 跳过」，
+  那会导致该更新的 HTML 没更新。所以必须检查 diff 的退出码。
+
+**实测效果**（2026-11-28 03:00 启用）：
+
+```
+bot 03:03 热点推送  → 无部署记录 ✅（跳过构建）
+bot 03:17 招聘推送  → 无部署记录 ✅（跳过构建）
+改 proxy.js 的提交   → 正常构建 ✅
+```
+
+配额用量从 **~92 次/天 降到 ~2 次/天**。
 
 ### 坑六：Supabase 集成被暂停 → 所有部署 BUILD_FAILED
 
