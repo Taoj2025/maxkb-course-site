@@ -2,7 +2,7 @@
 """
 AIHOT 实时热点抓取 —— 刷新 latest.html 的数据源
 
-数据源：https://aihot.virxact.com/feed.xml （AIHOT 精选 50 条 · TTL 30 分钟）
+数据源：https://aihot.news/feed.xml （AIHOT 精选 50 条 · TTL 30 分钟）
 
 输出（写入 SITE_DIR 下）：
   data/aihot.json      全部热点      —— latest.html 读这个
@@ -30,7 +30,7 @@ except ImportError:
     sys.exit("❌ 缺少 requests：pip install requests")
 
 # ── 配置 ──────────────────────────────────────────────────────────────
-FEED_URL = "https://aihot.virxact.com/feed.xml"
+FEED_URL = "https://aihot.news/feed.xml"
 SITE_DIR = Path(os.environ.get("SITE_DIR", Path(__file__).resolve().parent.parent))
 MAX_ITEMS = 50
 REQUEST_TIMEOUT = 30
@@ -174,8 +174,8 @@ def main() -> int:
     items = items[:MAX_ITEMS]
     fde_items = [i for i in items if is_fde(i)]
 
-    write_json(SITE_DIR / "data" / "aihot.json", "aihot.virxact.com RSS", items)
-    write_json(SITE_DIR / "data" / "aihot-fde.json", "aihot.virxact.com (FDE 相关筛选)", fde_items)
+    write_json(SITE_DIR / "data" / "aihot.json", "aihot.news RSS", items)
+    write_json(SITE_DIR / "data" / "aihot-fde.json", "aihot.news (FDE 相关筛选)", fde_items)
 
     newest = items[0]["pub_date"] if items else "?"
     log(f"✅ 全部 {len(items)} 条（FDE {len(fde_items)} 条）· 最新日期 {newest}")

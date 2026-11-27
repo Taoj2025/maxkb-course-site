@@ -30,7 +30,7 @@ echo "════════════════════════�
 
 run_aihot() {
   echo ""
-  echo "【AI 热点】刷新 aihot.virxact.com RSS…"
+  echo "【AI 热点】刷新 aihot.news RSS…"
   python3 "$SITE_DIR/scripts/fetch-aihot.py" || {
     echo "⚠️  AI 热点抓取失败，保留旧数据"
     return 0
