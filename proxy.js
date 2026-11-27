@@ -125,17 +125,42 @@ export default async function proxy(request) {
   }
 
   // ── 转发到源站 ──
+  //
+  // ⚠️ 源站在国内，Vercel 的边缘节点在境外。中间这条链路偶尔会抽风：
+  //    TCP 连接建不起来，fetch 抛 connect timeout（默认 10 秒），
+  //    表现为整站 /api/* 返回 502「源站不可达」。
+  //    2026-11-28 就撞上一次：连续 25 分钟全部 502，
+  //    而同一时刻 /data/* 的 rewrite 路径是通的（说明源站本身没挂）。
+  //
+  // 所以这里加两件事：
+  //   1. 缩短单次超时（8 秒），失败得快一点；
+  //   2. 失败后重试 —— 换个边缘节点/换条路由，大概率第二次就通。
+  const ATTEMPTS = 2;
+  const TIMEOUT_MS = 8000;
   let upstream;
-  try {
-    upstream = await fetch(target, {
-      method: request.method,
-      headers,
-      body,
-      redirect: 'manual',
-    });
-  } catch (err) {
+  let lastErr;
+  for (let attempt = 0; attempt < ATTEMPTS; attempt++) {
+    try {
+      upstream = await fetch(target, {
+        method: request.method,
+        headers,
+        body,
+        redirect: 'manual',
+        signal: AbortSignal.timeout(TIMEOUT_MS),
+      });
+      lastErr = null;
+      break;
+    } catch (err) {
+      lastErr = err;
+      if (attempt < ATTEMPTS - 1) {
+        // 换个节点再试
+        await new Promise((r) => setTimeout(r, 250));
+      }
+    }
+  }
+  if (!upstream) {
     return new Response(
-      JSON.stringify({ error: `源站不可达：${err.message}`, target }),
+      JSON.stringify({ error: `源站不可达：${lastErr?.message ?? '未知错误'}`, target }),
       {
         status: 502,
         headers: { 'Content-Type': 'application/json; charset=utf-8' },
