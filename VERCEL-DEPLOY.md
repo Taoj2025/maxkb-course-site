@@ -275,7 +275,35 @@ bot 03:17 招聘推送  → 无部署记录 ✅（跳过构建）
 **这是网络路由问题，不是代码问题** —— 源站、nginx、后端全都没问题，
 换条出口（走境外代理）就正常。
 
-**当前的缓解措施**（`proxy.js` 里）：
+**已实施的缓解措施**：
+
+1. **源站 CORS 白名单加上 `https://v.taotaoedu.ltd`**（2026-11-28）。
+
+   前端 `assets/js/api.js` 的 `resolveApiBase()` 本来就有兜底：
+   同源探不通就改用绝对地址 `https://taotaoedu.ltd` 跨域直连源站。
+   但源站 CORS 中间件（`backend/middleware/cors.js`）的白名单里
+   没有 `v.taotaoedu.ltd`，跨域请求被拒（500「CORS blocked」）——
+   兜底路径等于不存在。
+
+   加上之后：
+
+   ```
+   sin1 正常 → 同源，行为不变
+   sin1 挂掉 → 自动降级到跨域直连源站，绕开边缘节点
+   ```
+
+   实测（`Origin: https://v.taotaoedu.ltd`）：
+   `GET /api/health` `/api/articles` `/api/aihot` `/api/chapters` 全 200，
+   `POST /api/auth/login` 正常返回中文报错，OPTIONS 预检 204 且带
+   `Access-Control-Allow-Credentials: true`（登录态也走得通）。
+
+   ⚠️ 改这个要**重启后端**才生效（读的是进程启动时的 `process.env`）：
+   ```bash
+   # 改 /opt/maxkb-api/backend/.env 的 CORS_ORIGINS
+   systemctl restart maxkb-api
+   ```
+
+2. **`proxy.js` 里加重试**（同源路径能用时）：
 
 ```js
 const ATTEMPTS = 2;      // 失败重试一次
