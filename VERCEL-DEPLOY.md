@@ -18,6 +18,19 @@ vercel --prod --yes                                  # 生产部署
 npm run deploy:alias                                 # 把别名指到这次部署（见坑四）
 ```
 
+> ⚠️ **只在 HTML 外壳改了才需要部署。**
+> `data/` `articles/` `articles.json` 走 rewrites 实时回源站
+> （内容机器人推完就生效），Vercel 静态快照里根本没有这些文件。
+> 每次内容更新都部署 Vercel = 白烧 Hobby 的每日 100 次配额（坑五）。
+
+> ⚠️ **国内网络要设代理**。`api.vercel.com` 直连会偶发连接超时，
+> Node 的 fetch 默认不认 `HTTP(S)_PROXY`：
+> ```bash
+> export HTTPS_PROXY=http://127.0.0.1:8086 HTTP_PROXY=http://127.0.0.1:8086
+> ```
+> `scripts/assign-vercel-alias.mjs` 会自己检测代理变量并带上
+> `--use-env-proxy` 重新拉起（Node 24 才有这个开关）。
+
 部署后验证：
 
 ```bash
@@ -124,6 +137,88 @@ npm run deploy:alias
 
 `vercel inspect` 看不出这个问题（它显示的是这次部署自己的配置，
 不是线上实际在跑的那次）。
+
+### 坑五：Hobby 每天 100 次部署配额（团队级，两个项目一起算）
+
+Hobby 计划的部署上限是**每天 100 次**，而且是**整个团队共用**的 ——
+不是每个项目各 100。超了报：
+
+```
+Resource is limited - try again in 24 hours
+(more than 100, code: "api-deployments-free-per-day")
+```
+
+配额是**滚动 24 小时窗口**，不是每天零点清零。
+
+**这个站的坑在于：内容机器人每 30 分钟推一次**（`aihot` + `jobs` 两路 cron），
+每次 push 都触发一次 Vercel 自动部署 —— 一天就是 **90+ 次**，
+刚好顶到上限。更糟的是当时仓库里还留着重复项目
+`maxkb-course-site-bk9`，**它连着同一个 GitHub 仓库**，
+所以每次 push 部署两次 —— 配额瞬间打满。
+
+**排查方法**（看谁在吃配额）：
+
+```bash
+# 团队级部署列表，按小时/项目数
+curl -s -H "Authorization: Bearer $VERCEL_TOKEN" \
+  "https://api.vercel.com/v6/deployments?teamId=$TEAM_ID&limit=100" \
+  | python -c "
+import json,sys,collections
+d=json.load(sys.stdin)['deployments']
+print(collections.Counter(x['name'] for x in d))
+"
+```
+
+**修法（2026-11-28 实施）**：
+
+1. **删掉重复项目** `maxkb-course-site-bk9` —— 它没有任何域名，
+   只是建站过程中留下的废弃项目，却占着一半配额。
+2. **关掉两个项目的 GitHub 自动部署**（`DELETE /v9/projects/{id}/link`）。
+   站点是「静态快照 + 实时转发」架构：`data/` `articles/` 走 rewrites
+   回源站，**内容更新根本不需要重新部署 Vercel** —— 只有 HTML 外壳改了才需要。
+   自动部署纯属白烧配额。
+3. 以后**只在 HTML 外壳改动时手动部署**：
+   `vercel --prod` → `npm run deploy:alias`。
+
+> ⚠️ 关掉自动部署后，**别名不会自己跟过去**了（这本来就是坑四）。
+> 每次部署完必须跑 `npm run deploy:alias`。
+
+### 坑六：Supabase 集成被暂停 → 所有部署 BUILD_FAILED
+
+2026-11-05 起，**每一次**部署都失败，报：
+
+```
+BUILD_FAILED / Resource provisioning failed
+```
+
+看着像构建问题，其实是**集成资源 provision 失败**：
+项目上挂着一个 Supabase 集成（Marketplace），
+而那个 Supabase 项目已经被暂停了 —— Vercel 每次部署都要先 provision 它，
+provision 不回来，部署就整体失败。
+
+**根因在 `integrations` 字段里**（`vercel inspect` 看不出来）：
+
+```bash
+curl -s -H "Authorization: Bearer $VERCEL_TOKEN" \
+  "https://api.vercel.com/v13/deployments/{id}" | python -c "
+import json,sys
+d=json.load(sys.stdin)
+print(d.get('errorCode'), d.get('errorMessage'))
+print('integrations:', d.get('integrations'))   # status: error
+"
+```
+
+**修法**：这个站的前后端**根本没用 Supabase**（数据库是源站自建 PostgreSQL，
+前端只调 `/api/*`）。直接把集成资源从项目上摘掉：
+
+```bash
+# 断开连接（不删除 Supabase 项目本身）
+curl -X DELETE -H "Authorization: Bearer $VERCEL_TOKEN" \
+  "https://api.vercel.com/v1/storage/stores/{storeId}/connections/{connectionId}?teamId=$TEAM_ID"
+```
+
+断开后：集成 provision 不再是部署的前置条件 → 部署恢复 READY。
+对应的 `*_SUPABASE_*` 环境变量也会一并清掉（前端本来就不读）。
 
 ---
 

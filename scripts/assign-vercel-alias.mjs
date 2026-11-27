@@ -55,14 +55,46 @@ function readToken() {
 
 const TOKEN = readToken();
 
+// ── 代理：国内直连 api.vercel.com 会偶发连接超时 ──
+// fetch（undici）默认不读 HTTP(S)_PROXY，Node 24 才加了
+// `--use-env-proxy` 开关，而且这个开关只在进程启动时读一次 ——
+// 运行时改 process.env.NODE_USE_ENV_PROXY 不生效。
+// 所以：设了代理变量、又没带这个 flag ��话，就用同样的参数重新拉起自己。
+const hasProxy = !!(process.env.HTTPS_PROXY || process.env.https_proxy);
+if (hasProxy && !process.execArgv.includes('--use-env-proxy')) {
+  const { spawnSync } = await import('node:child_process');
+  const r = spawnSync(
+    process.execPath,
+    ['--use-env-proxy', ...process.argv.slice(1)],
+    { stdio: 'inherit', env: process.env },
+  );
+  process.exit(r.status ?? 1);
+}
+
 async function api(p, method = 'GET', body) {
   const data = body ? JSON.stringify(body) : undefined;
-  const res = await fetch(API + p, {
-    method,
-    headers: { Authorization: `Bearer ${TOKEN}`, 'Content-Type': 'application/json' },
-    body: data,
-  });
-  const text = await res.text();
+  const url = API + p;
+  let res, text;
+
+  // 最多试 3 次：边缘节点偶发闪断时重试比直接失败好。
+  for (let attempt = 0; attempt < 3; attempt++) {
+    try {
+      res = await fetch(url, {
+        method,
+        headers: { Authorization: `Bearer ${TOKEN}`, 'Content-Type': 'application/json' },
+        body: data,
+      });
+      text = await res.text();
+      break;
+    } catch (err) {
+      if (attempt === 2) {
+        const e = new Error(`${err.message}（${url}）`);
+        e.cause = err;
+        throw e;
+      }
+      await new Promise((r) => setTimeout(r, 1500 * (attempt + 1)));
+    }
+  }
   let json;
   try { json = JSON.parse(text); } catch { json = text; }
   if (!res.ok) {
