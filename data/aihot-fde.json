@@ -1,7 +1,7 @@
 {
   "source": "aihot.news (FDE 相关筛选)",
-  "updated_at": "2026-11-27T21:33:02.225352+08:00",
-  "total": 29,
+  "updated_at": "2026-11-27T22:03:01.873211+08:00",
+  "total": 28,
   "items": [
     {
       "title": "Antigravity 实用技巧：在 GEMINI.md 加一句话让模型边干活边汇报",
@@ -225,14 +225,6 @@
       "summary": "Google DeepMind 发布新论文，用多个 Gemini 4 智能体团队结合 Lean 形式化定理证明改进量子算法，生成经数学验证的高效量子电路，并在 GitHub 开源 Lean 库、问题规格和验证解法。 🔗 阅读原文 via AIHOT · https://aihot.news/items/pjpgapf3mbvmy98cywxhwf07n",
       "pub_date": "2026-11-23",
       "author": "noreply@aihot.news (Google DeepMind：Blog)",
-      "category": "论文"
-    },
-    {
-      "title": "Goodfire 用可解释性改进 BioReason-Pro 2 生物推理模型并用湿实验验证假设",
-      "link": "https://aihot.news/items/uz9j9ukn8j60mwkeeaibmmctw",
-      "summary": "Goodfire 与 NVIDIA、Arc Institute 合作开发 BioReason-Pro 2，以 Qwen3.5-9B 为骨干，用可解释性发现原模型过度依赖文本标注、蛋白质与文本嵌入尺度不匹配，据此移除训练输入中的 InterPro 标注、细化推理轨迹并将 ESM3 嵌入重新缩放。 🔗 阅读原文 via AIHOT · https://aihot.news/items/uz9j9ukn8j60mwkeeaibmmctw",
-      "pub_date": "2026-11-23",
-      "author": "noreply@aihot.news (Goodfire Research)",
       "category": "论文"
     }
   ]

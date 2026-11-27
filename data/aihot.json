@@ -1,8 +1,16 @@
 {
   "source": "aihot.news RSS",
-  "updated_at": "2026-11-27T21:33:02.224436+08:00",
+  "updated_at": "2026-11-27T22:03:01.872226+08:00",
   "total": 50,
   "items": [
+    {
+      "title": "OpenBMB 点评 InternLM 基于 MiniCPM-o 4.5 打造的 Sage-Interaction",
+      "link": "https://aihot.news/items/l9md8ugx8e2zlm5g1tuqthmaw",
+      "summary": "OpenBMB 转发并点评上海人工智能实验室 InternLM 团队发布的开源全双工语音视频模型 Sage-Interaction，该模型基于 MiniCPM-o 4.5 构建。OpenBMB 称赞其边说边听、在不打断对话的情况下把复杂任务交给后端模型，是迈向更自然 AI 交互的一步，并向 InternLM 团队致意。 🔗 阅读原文 via AIHOT · https://aihot.news/items/l9md8ugx8e2zlm5g1tuqthmaw",
+      "pub_date": "2026-11-27",
+      "author": "noreply@aihot.news (面壁智能 OpenBMB)",
+      "category": "行业动态"
+    },
     {
       "title": "Antigravity 实用技巧：在 GEMINI.md 加一句话让模型边干活边汇报",
       "link": "https://aihot.news/items/tiqf353lek6sib8ktn8uvc6nc",
@@ -394,14 +402,6 @@
       "pub_date": "2026-11-23",
       "author": "noreply@aihot.news (METR：Blog)",
       "category": "观点"
-    },
-    {
-      "title": "Goodfire 用可解释性改进 BioReason-Pro 2 生物推理模型并用湿实验验证假设",
-      "link": "https://aihot.news/items/uz9j9ukn8j60mwkeeaibmmctw",
-      "summary": "Goodfire 与 NVIDIA、Arc Institute 合作开发 BioReason-Pro 2，以 Qwen3.5-9B 为骨干，用可解释性发现原模型过度依赖文本标注、蛋白质与文本嵌入尺度不匹配，据此移除训练输入中的 InterPro 标注、细化推理轨迹并将 ESM3 嵌入重新缩放。 🔗 阅读原文 via AIHOT · https://aihot.news/items/uz9j9ukn8j60mwkeeaibmmctw",
-      "pub_date": "2026-11-23",
-      "author": "noreply@aihot.news (Goodfire Research)",
-      "category": "论文"
     }
   ]
 }
