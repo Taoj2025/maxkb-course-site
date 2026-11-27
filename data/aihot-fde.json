@@ -1,8 +1,16 @@
 {
   "source": "aihot.news (FDE 相关筛选)",
-  "updated_at": "2026-11-27T15:03:02.095670+08:00",
+  "updated_at": "2026-11-27T15:33:01.836690+08:00",
   "total": 28,
   "items": [
+    {
+      "title": "Dragos 调查称 MiniMax 在用户请求不存储的情况下仍打开提示词中的私有链接",
+      "link": "https://aihot.news/items/v5fxjqr2vapkk9vn1j9a8ke96",
+      "summary": "据美国安全公司 Dragos，MiniMax 收集并打开了用户提示词中的私有链接，即便用户要求不存储数据。 🔗 阅读原文 via AIHOT · https://aihot.news/items/v5fxjqr2vapkk9vn1j9a8ke96",
+      "pub_date": "2026-11-27",
+      "author": "noreply@aihot.news (Rohan Paul)",
+      "category": "行业动态"
+    },
     {
       "title": "实测支付宝 SkillPay：手把手教你怎么把 Skill 挂上去卖钱",
       "link": "https://aihot.news/items/cdkswjz368inpelrz3f52rekx",
@@ -218,14 +226,6 @@
       "pub_date": "2026-11-23",
       "author": "noreply@aihot.news (Goodfire Research)",
       "category": "论文"
-    },
-    {
-      "title": "a16z 实测 11,307 次 Agent 购物流程，总结企业赢得 B2A 经济的五条方法",
-      "link": "https://aihot.news/items/qkxvs90ewfu3k430sdefndv56",
-      "summary": "a16z 联合 The Prompting Company 测试 Grok Bot、Muse、Instinct、Dots 等智能体在 1,270 条提示词、11,307 次完整运行中的购物表现，并比对 YipitData 消费数据。 🔗 阅读原文 via AIHOT · https://aihot.news/items/qkxvs90ewfu3k430sdefndv56",
-      "pub_date": "2026-11-23",
-      "author": "noreply@aihot.news (a16z：News)",
-      "category": "教程"
     }
   ]
 }
