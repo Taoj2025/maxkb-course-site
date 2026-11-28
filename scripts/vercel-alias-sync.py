@@ -153,6 +153,30 @@ def api(path, method="GET", body=None, token=None, retries=3):
     return None, str(last)
 
 
+def api_retry(path, method="GET", body=None, token=None, attempts=6):
+    """调 API，网络抖动时多试几轮。
+
+    ⚠️ 国内到 api.vercel.com 的链路不稳 —— 实测同一个服务器上，
+    TCP 握手时通时不通，完整 API 调用偶尔连续失败二十多次。
+    单次调用失败就放弃的话，别名会一直停在旧部署上（线上还是老版本）。
+
+    所以这里分成两层：
+    · api() 内部重试 3 次（每次间隔 2s / 4s）
+    · 外面再套 6 轮，每轮之间等 15~30 秒
+
+    cron 每 10 分钟跑一次，单次运行最多花几分钟是可以接受的。
+    """
+    delay = 15
+    for round_no in range(attempts):
+        status, resp = api(path, method, body, token, retries=3)
+        if status is not None:
+            return status, resp
+        log(f"  ↻ 网络不通，第 {round_no + 1}/{attempts} 轮失败，{delay}s 后重试")
+        time.sleep(delay)
+        delay = min(delay * 2, 60)
+    return None, resp
+
+
 def main():
     dry = "--dry-run" in sys.argv
     token = read_token()
@@ -160,7 +184,7 @@ def main():
         return 2
 
     # ── 找最新的 READY production 部署 ──
-    status, data = api(
+    status, data = api_retry(
         f"/v6/deployments?projectId={PROJECT_ID}&target=production&limit=10",
         token=token,
     )
@@ -184,7 +208,7 @@ def main():
     # ── 看看别名现在指向哪 ──
     need = []
     for alias in ALIASES:
-        status, cur = api(f"/v4/aliases/{alias}?teamId={TEAM_ID}", token=token)
+        status, cur = api_retry(f"/v4/aliases/{alias}?teamId={TEAM_ID}", token=token)
         cur_id = (cur.get("deployment") or {}).get("id") if isinstance(cur, dict) else None
         if cur_id == did:
             log(f"  ✅ {alias} 已指向目标部署")
@@ -202,7 +226,7 @@ def main():
 
     bad = 0
     for alias in need:
-        status, resp = api(
+        status, resp = api_retry(
             f"/v2/deployments/{did}/aliases?teamId={TEAM_ID}",
             method="POST",
             body={"alias": alias},
@@ -217,7 +241,7 @@ def main():
     # ── 核对 ──
     log("核对：")
     for alias in ALIASES:
-        status, cur = api(f"/v4/aliases/{alias}?teamId={TEAM_ID}", token=token)
+        status, cur = api_retry(f"/v4/aliases/{alias}?teamId={TEAM_ID}", token=token)
         cur_id = (cur.get("deployment") or {}).get("id") if isinstance(cur, dict) else None
         ok = cur_id == did
         if not ok:
