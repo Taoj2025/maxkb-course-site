@@ -47,6 +47,7 @@ api.vercel.com 直连会偶发连接超时（这台机器上表现为 connect ti
 import json
 import os
 import ssl
+import subprocess
 import sys
 import time
 import urllib.error
@@ -71,17 +72,48 @@ def log(msg):
 
 
 def read_token():
-    """拿 Vercel token：先环境变量，再 CLI 的 auth.json。"""
+    """拿 Vercel token：先环境变量，再 CLI 的 auth.json（会自动续期）。"""
     tok = os.environ.get("VERCEL_TOKEN")
     if tok:
         return tok
     try:
         with open(CLI_AUTH, encoding="utf-8") as f:
-            return json.load(f).get("token")
+            data = json.load(f)
     except Exception as e:
         log(f"❌ 拿不到 Vercel token：{e}")
-        log(f"   装 CLI：npm i -g vercel；或设置环境变量 VERCEL_TOKEN")
+        log("   装 CLI：npm i -g vercel；或设置环境变量 VERCEL_TOKEN")
         return None
+
+    # token 过期了就让 CLI 续一次。
+    #
+    # ⚠️ CLI 自己会拿 auth.json 里的 refreshToken 换新 token 并写回文件，
+    #    所以调 `vercel whoami` 就能续期 —— 但它需要能连上 api.vercel.com。
+    #    这台服务器在国内，直连 api.vercel.com 时通时不通（10 次里大概 3~5 次能连上），
+    #    所以这里多试几次。
+    if data.get("expiresAt") and data["expiresAt"] < time.time() + 300:
+        log("token 已过期，尝试用 CLI 续期…")
+        for _ in range(6):
+            try:
+                subprocess.run(
+                    ["vercel", "whoami"],
+                    cwd="/tmp",
+                    stdout=subprocess.DEVNULL,
+                    stderr=subprocess.DEVNULL,
+                    timeout=90,
+                )
+            except Exception:
+                pass
+            try:
+                with open(CLI_AUTH, encoding="utf-8") as f:
+                    data = json.load(f)
+                if data.get("expiresAt", 0) > time.time() + 300:
+                    log("✅ token 已续期")
+                    break
+            except Exception:
+                pass
+            time.sleep(10)
+
+    return data.get("token")
 
 
 def api(path, method="GET", body=None, token=None, retries=3):

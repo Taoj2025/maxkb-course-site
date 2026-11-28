@@ -237,15 +237,60 @@ git diff --name-only "$VERCEL_GIT_PREVIOUS_SHA" "$VERCEL_GIT_COMMIT_SHA" -- . \
   特别注意 `git diff` 失败时输出是空的，而「空」会被当成「没变化 → 跳过」，
   那会导致该更新的 HTML 没更新。所以必须检查 diff 的退出码。
 
-**实测效果**（2026-11-28 03:00 启用）：
+### 坑七之二：`.vercelignore` 删掉 `.git` → Ignored Build Step 从未生效
+
+上面这个方案**第一次装上去是没效果的** —— 每个数据推送照样构建、照样烧配额。
+2026-11-28 09:47 才查出真凶。
+
+**症状**：构建日志里每一行都是
 
 ```
-bot 03:03 热点推送  → 无部署记录 ✅（跳过构建）
-bot 03:17 招聘推送  → 无部署记录 ✅（跳过构建）
-改 proxy.js 的提交   → 正常构建 ✅
+Removed 148 ignored files defined in .vercelignore
+/.git/config
+/.git/description
+/.git/FETCH_HEAD
+/.git/HEAD
+...
+Running "bash scripts/ignore-build.sh"
+not a git checkout — building to be safe
 ```
 
-配额用量从 **~92 次/天 降到 ~2 次/天**。
+**根因**：Vercel 在跑 Ignored Build Step **之前**就按 `.vercelignore`
+把 `.git` 整个删掉了。而脚本里判断「能不能算 diff」用的是
+`git rev-parse --git-dir` —— 仓库都被人删了，这命令当然失败，
+于是每次都走「保守起见，构建吧」的分支。
+
+**Ignored Build Step 形同虚设，配额照旧被烧光。**
+
+**修法**：
+
+1. `.vercelignore` 里**去掉 `.git/`**。`.git` 大约 12 MB，
+   但 Vercel 对 git 集成项目本来就要 clone 整个仓库，
+   不写进 `.vercelignore` 也不会让部署包变大 ——
+   真正决定部署包大小的是 `build-vercel-site.sh` 复制了哪些文件。
+2. 脚本里所有 git 调用加 `-c safe.directory='*'`：
+   构建用户 ≠ 仓库属主时，git 2.35+ 的 dubious ownership 保护
+   会拒绝**所有** git 命令。
+
+> 💡 排查这类问题时，`vercel inspect <部署ID> --logs` 比看页���有用得多 ——
+> 构建日志里直接写着脚本自己的判断过程，一眼就能看出它为什么没跳过。
+
+**修完之后的实测**（2026-11-28 10:03 起）：
+
+```
+10:18 数据推送 → CANCELED ✅（跳过构建，耗时 933ms）
+10:33 数据推送 → CANCELED ✅（跳过构建）
+10:03 含代码的提交 → READY  ✅（正常构建，耗时 8399ms）
+```
+
+构建日志里能看到它真的在算 diff 了：
+
+```
+ignore-build: prev=520f16d curr=acdb009
+only data/articles changed since 520f16d — skipping build
+```
+
+**配额用量从 ~92 次/天 降到 ~2 次/天**（只有改 HTML 外壳时才部署）。
 
 ### 坑八：`sin1`（新加坡）边缘节点连不上国内源站 → /api/* 全 502
 
