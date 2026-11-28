@@ -5,7 +5,7 @@
 #   bash scripts/ignore-build.sh
 #
 # 退出码约定（Vercel 的语义）：
-#   0 = 跳过构建（部署被标记为 CANCELED）
+#   0 = 跳过构建（部署标记为 CANCELED）
 #   1 = 照常构建
 #
 # ── 为什么需要这个 ──
@@ -28,7 +28,7 @@
 #   VERCEL_GIT_COMMIT_SHA    这次要部署的 commit
 #
 # ⚠️ 不能用 `git diff HEAD^ HEAD`：Vercel 每次 push 只构建最后一个 commit，
-#    HEAD^ 可能不是上次部署的那个。用 VERCEL_GIT_PREVIOUS_SHA 才对。
+#    HEAD^ 可能不是上次部署的那个。用 VERCEL_GIT_PREVIOUS_SHA。
 
 set -uo pipefail
 
@@ -43,13 +43,34 @@ readonly EXCLUDES=(
   ':(exclude).audit'
 )
 
+# ── 所有 git 调用都走这个包装 ──
+#
+# ⚠️ 必须带 `-c safe.directory=*`。
+#    Vercel 构建机上，仓库属主和跑构建的用户不是同一个
+#    （克隆是 root 干的，构建是别的用户跑的）。
+#    git 2.35+ 的「dubious ownership」保护会拒绝**所有** git 命令：
+#      $ git rev-parse --git-dir
+#      fatal: detected dubious ownership in repository at '/vercel/path0'
+#    仓库其实好好地在那儿（.git/config、.git/HEAD 都在），
+#    但命令一律非 0 退出。
+#
+#    2026-11-28 就栽在这：脚本每次都判定「not a git checkout」，
+#    于是每个数据推送都照常构建 —— Ignored Build Step 形同虚设，
+#    配额照旧被烧光。
+#
+#    用 `-c` 逐条带上，而不是 `git config --global --add`：
+#    前者不依赖 HOME 可写，也不留全局状态。
+git_() {
+  git -c safe.directory='*' -c core.quotepath=false "$@"
+}
+
 # 拿不到 SHA 或 git 不可用 → 老老实实构建
 if [ -z "$PREV" ] || [ -z "$CURR" ]; then
   echo "no git shas — building to be safe"
   exit 1
 fi
 
-if ! git rev-parse --git-dir >/dev/null 2>&1; then
+if ! git_ rev-parse --git-dir >/dev/null 2>&1; then
   echo "not a git checkout — building to be safe"
   exit 1
 fi
@@ -62,10 +83,14 @@ echo "ignore-build: prev=${PREV:0:7} curr=${CURR:0:7}"
 #    而「空」在下面会被当成「没变化 → 跳过构建」——
 #    那会导致该更新的 HTML 没更新。所以失败时一律走构建。
 diff_files() {
-  git diff --name-only "$1" "$2" -- . "${EXCLUDES[@]}" 2>/dev/null
+  git_ diff --name-only "$1" "$2" -- . "${EXCLUDES[@]}" 2>/dev/null
 }
 
-if git cat-file -e "$PREV^{commit}" 2>/dev/null; then
+has_commit() {
+  git_ cat-file -e "$1^{commit}" 2>/dev/null
+}
+
+if has_commit "$PREV"; then
   if ! CHANGED=$(diff_files "$PREV" "$CURR"); then
     echo "git diff failed — building to be safe"
     exit 1
@@ -79,20 +104,33 @@ if git cat-file -e "$PREV^{commit}" 2>/dev/null; then
   exit 1
 fi
 
-# ── 兜底：PREV 不在克隆里 ──
+# ── 兜底一：PREV 不在克隆里，单独把它拉下来 ──
 #
 # Vercel 用 `git clone --depth=10` 克隆，上一次部署的 commit
 # 很可能已经被截断掉了（内容机器人半小时推一次，10 个 commit 也就 5 小时）。
-#
-# 先试试能不能单独把那个 commit 拉下来。
-if git fetch --depth=1 origin "$PREV" >/dev/null 2>&1 &&
-   git cat-file -e "$PREV^{commit}" 2>/dev/null; then
+# GitHub 允许按 SHA 拉取可达的 commit。
+if git_ fetch --depth=1 origin "$PREV" >/dev/null 2>&1 && has_commit "$PREV"; then
   if ! CHANGED=$(diff_files "$PREV" "$CURR"); then
     echo "git diff failed after fetch — building to be safe"
     exit 1
   fi
   if [ -z "$CHANGED" ]; then
     echo "only data/articles changed since ${PREV:0:7} (fetched) — skipping build"
+    exit 0
+  fi
+  echo "shell changed since ${PREV:0:7} — building:"
+  echo "$CHANGED" | head -20
+  exit 1
+fi
+
+# ── 兜底二：连 SHA 都拉不到 → 把历史加深 ──
+if git_ fetch --deepen=200 origin main >/dev/null 2>&1 && has_commit "$PREV"; then
+  if ! CHANGED=$(diff_files "$PREV" "$CURR"); then
+    echo "git diff failed after deepen — building to be safe"
+    exit 1
+  fi
+  if [ -z "$CHANGED" ]; then
+    echo "only data/articles changed since ${PREV:0:7} (deepened) — skipping build"
     exit 0
   fi
   echo "shell changed since ${PREV:0:7} — building:"
@@ -112,13 +150,13 @@ fi
 #
 # 比内容而不是比文件名：初始提交会把所有文件都「新增」一遍，
 # 按文件名判会把这种一次性新增误当成「外壳变了」。
-OLDEST=$(git rev-list --max-parents=0 HEAD 2>/dev/null | tail -1)
+OLDEST=$(git_ rev-list --max-parents=0 HEAD 2>/dev/null | tail -1)
 if [ -z "$OLDEST" ]; then
   echo "cannot determine history — building to be safe"
   exit 1
 fi
 
-if ! CHANGED=$(git diff --name-only "$OLDEST" "$CURR" -- . "${EXCLUDES[@]}" 2>/dev/null); then
+if ! CHANGED=$(diff_files "$OLDEST" "$CURR"); then
   echo "git diff failed — building to be safe"
   exit 1
 fi

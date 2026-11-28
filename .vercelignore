@@ -1,8 +1,22 @@
 # Vercel 部署不需要的东西。
 # 注意：scripts/ 不能忽略 —— buildCommand 要用 scripts/build-vercel-site.sh。
 # api/ 也不能忽略 —— 那是边缘代理函数。
+#
+# ⚠️ .git/ 也不能忽略！—— 这是 2026-11-28 踩的坑：
+#    Vercel 在跑 Ignored Build Step **之前**就按 .vercelignore 把 .git 删掉了
+#    （构建日志里能看到 "Removed 148 ignored files" 后面跟着
+#    /.git/config、/.git/HEAD、/.git/FETCH_HEAD ...）。
+#    于是 scripts/ignore-build.sh 里 `git rev-parse --git-dir` 必然失败，
+#    每次都判定「not a git checkout — building to be safe」，
+#    于是每个数据推送都照常构建 —— Ignored Build Step 形同虚设，
+#    Hobby 的每日 100 次配额照旧被烧光。
+#
+#    .git 大约 12 MB，克隆时本来就会拉到构建沙箱里
+#    （Vercel 对 git 集成项目是 clone 整个仓库），
+#    不写进 .vercelignore 也不会让部署包变大 ——
+#    真正决定部署包大小的是 build-vercel-site.sh 复制了哪些文件。
+#    详见 VERCEL-DEPLOY.md 坑七。
 
-.git/
 .github/
 backend/
 _site/
